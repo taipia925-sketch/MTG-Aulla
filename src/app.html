@@ -4,7 +4,7 @@
 <meta name="theme-color" content="#0b0d12">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Outfit:wght@500;700;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
 <style>
 /* Layout: il tavolo da gioco occupa tutto lo schermo (pannelli giocatore ruotati verso il proprio posto, medaglione centrale);
    tutto il resto (menu, arbitro, impostazioni) sono strati che salgono dal basso o scorrono da destra sopra il tavolo.
@@ -32,13 +32,14 @@
   --shadow: 0 18px 50px rgba(0, 0, 0, .45), 0 2px 6px rgba(0, 0, 0, .3);
   --table: #07080b;
   /* mana: [colore chiaro, colore scuro, testo] uguali in entrambi i temi */
-  --W1: #f4ead0; --W2: #cdb98a; --Wt: #2a2214;
-  --U1: #2a78d0; --U2: #0d3570;
-  --B1: #4d405c; --B2: #18131f;
-  --R1: #e05535; --R2: #7c1d10;
-  --G1: #2f9a5e; --G2: #0f4a2a;
-  --M1: #d9a93a; --M2: #6f4d0c;
-  --C1: #8a93a6; --C2: #3c4250;
+  --W1: #efe3c2; --W2: #efe3c2; --Wt: #2a2214;
+  --U1: #1f6fd9; --U2: #1f6fd9;
+  --B1: #6e4bc9; --B2: #6e4bc9;
+  --R1: #d63a33; --R2: #d63a33;
+  --G1: #17834a; --G2: #17834a;
+  --M1: #f0a92a; --M2: #f0a92a; --Mt: #2a1a00;
+  --C1: #5f6878; --C2: #5f6878;
+  --f-life: "Outfit", "SF Pro Rounded", system-ui, -apple-system, sans-serif;
   --f-num: "Big Shoulders Display", "Barlow Condensed", "Arial Narrow", system-ui, sans-serif;
   --f-ui: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
   --f-read: "Source Serif 4", "Iowan Old Style", Georgia, serif;
@@ -74,13 +75,13 @@ svg.i.s { width: 18px; height: 18px; }
 svg.i.l { width: 28px; height: 28px; }
 
 /* ================= TAVOLO ================= */
-#game { position: fixed; inset: 0; background: var(--table); }
-.board { position: absolute; inset: 0; display: grid; gap: 5px; padding: max(5px, env(safe-area-inset-top, 0px)) max(5px, env(safe-area-inset-right, 0px)) max(5px, env(safe-area-inset-bottom, 0px)) max(5px, env(safe-area-inset-left, 0px)); }
-.pl { position: relative; container-type: size; border-radius: 22px; overflow: hidden; color: var(--pt, #fff); background: radial-gradient(130% 110% at 50% 0%, var(--p1) 0%, var(--p2) 100%); user-select: none; -webkit-user-select: none; touch-action: manipulation; isolation: isolate; transition: filter .35s var(--ease); }
+#game { position: fixed; inset: 0; background: #000; }
+.board { position: absolute; inset: 0; display: grid; gap: 6px; padding: max(6px, env(safe-area-inset-top, 0px)) max(5px, env(safe-area-inset-right, 0px)) max(5px, env(safe-area-inset-bottom, 0px)) max(5px, env(safe-area-inset-left, 0px)); }
+.pl { position: relative; container-type: size; border-radius: 18px; overflow: hidden; color: var(--pt, #fff); background: var(--p1); user-select: none; -webkit-user-select: none; touch-action: manipulation; isolation: isolate; transition: filter .35s var(--ease); }
 .pl::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
-  background: radial-gradient(80% 60% at 50% 46%, rgba(255,255,255,.10), transparent 70%), repeating-linear-gradient(135deg, rgba(255,255,255,.025) 0 2px, transparent 2px 9px); }
-.pl::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; box-shadow: inset 0 0 0 1px rgba(255,255,255,.10); transition: box-shadow .3s var(--ease); }
-.pl.active::after { box-shadow: inset 0 0 0 3px rgba(255,255,255,.92), inset 0 0 40px rgba(255,255,255,.18); }
+  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(0,0,0,.06)); }
+.pl::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; transition: box-shadow .3s var(--ease); }
+.pl.active::after { box-shadow: inset 0 0 0 3px rgba(255,255,255,.9); }
 .pl.out { filter: saturate(.15) brightness(.5); }
 .pl.flash { animation: flash .6s var(--ease); }
 @keyframes flash { 40% { filter: brightness(1.6); } }
@@ -93,27 +94,27 @@ svg.i.l { width: 28px; height: 28px; }
 .hit { position: absolute; top: 0; bottom: 0; width: 50%; border: 0; background: transparent; color: inherit; padding: 0; display: flex; align-items: center; touch-action: manipulation; }
 .hit.minus { left: 0; justify-content: flex-start; padding-left: 7cqw; }
 .hit.plus { right: 0; justify-content: flex-end; padding-right: 7cqw; }
-.hit::before { content: ""; position: absolute; inset: 0; background: radial-gradient(70% 70% at var(--hx, 50%) 50%, rgba(255,255,255,.22), transparent 70%); opacity: 0; transition: opacity .35s; }
+.hit::before { content: ""; position: absolute; inset: 0; background: rgba(255,255,255,.14); opacity: 0; transition: opacity .3s; }
 .hit.minus::before { --hx: 0%; } .hit.plus::before { --hx: 100%; }
 .hit.press::before { opacity: 1; transition: opacity .05s; }
-.hit .sign { font: 600 clamp(26px, 15cqh, 60px)/1 var(--f-num); opacity: .45; transition: opacity .2s, transform .15s var(--ease); }
+.hit .sign { font: 500 clamp(26px, 13cqh, 54px)/1 var(--f-life); opacity: .5; transition: opacity .2s, transform .15s var(--ease); }
 .hit.press .sign { opacity: 1; transform: scale(1.3); }
-.pname { position: absolute; top: max(10px, 4cqh); left: max(12px, 4cqw); max-width: 58cqw; display: inline-flex; align-items: center; gap: 6px; font: 700 clamp(12px, 6.4cqh, 18px)/1.2 var(--f-ui); letter-spacing: .02em; opacity: .92; pointer-events: none; white-space: nowrap; }
+.pname { position: absolute; top: max(44px, 6cqh); left: 50%; transform: translateX(-50%); max-width: 62cqw; display: inline-flex; align-items: center; gap: 6px; font: 600 clamp(12px, 6cqh, 17px)/1.2 var(--f-life); letter-spacing: .01em; opacity: .9; pointer-events: none; white-space: nowrap; }
 .pname span { overflow: hidden; text-overflow: ellipsis; }
 .pname svg { width: 1.15em; height: 1.15em; stroke: currentColor; fill: none; stroke-width: 2; flex: none; }
 .lifebox { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; pointer-events: none; }
-.life { font: 800 min(54cqh, 38cqw)/.8 var(--f-num); font-variant-numeric: tabular-nums; letter-spacing: -.01em; text-shadow: 0 6px 30px rgba(0,0,0,.25); transition: transform .14s var(--ease); padding-top: .06em; }
-.life.k3 { font-size: min(46cqh, 28cqw); }
+.life { font: 700 min(46cqh, 34cqw)/1 var(--f-life); font-variant-numeric: tabular-nums; letter-spacing: -.035em; transition: transform .14s var(--ease); }
+.life.k3 { font-size: min(36cqh, 24cqw); }
 .life.bump { transform: scale(1.05); }
-.delta { position: absolute; top: 50%; left: 50%; transform: translate(calc(min(20cqh, 15cqw) + 6cqw), -128%); font: 600 clamp(18px, 12cqh, 44px)/1 var(--f-num); background: rgba(0,0,0,.28); border-radius: 999px; padding: .12em .42em; opacity: 0; transition: opacity .25s; pointer-events: none; }
-.delta.on { opacity: 1; }
+.delta { position: absolute; top: 50%; left: 50%; transform: translate(-50%, calc(-1 * min(23cqh, 17cqw) - 105%)); font: 600 clamp(16px, 10cqh, 36px)/1 var(--f-life); font-variant-numeric: tabular-nums; opacity: 0; transition: opacity .3s; pointer-events: none; }
+.delta.on { opacity: .85; }
 .pfoot { position: absolute; left: 0; right: 0; bottom: max(8px, 3cqh); display: flex; align-items: flex-end; justify-content: space-between; gap: 6px; padding: 0 max(8px, 3cqw); pointer-events: none; }
-.pbtn { pointer-events: auto; width: clamp(40px, 15cqh, 50px); height: clamp(40px, 15cqh, 50px); border-radius: 50%; border: 0; background: rgba(0,0,0,.24); color: inherit; display: grid; place-items: center; transition: background .15s, transform .15s var(--ease); }
+.pbtn { pointer-events: auto; width: clamp(40px, 14cqh, 46px); height: clamp(40px, 14cqh, 46px); border-radius: 50%; border: 0; background: rgba(0,0,0,.16); color: inherit; display: grid; place-items: center; transition: background .15s, transform .15s var(--ease); }
 .pbtn:active { transform: scale(.92); background: rgba(0,0,0,.4); }
 .pbtn svg { width: 52%; height: 52%; stroke: currentColor; fill: none; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
 .pbtn.ghost { visibility: hidden; }
 .chips { pointer-events: auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 5px; min-width: 0; flex: 1; max-height: 24cqh; overflow: hidden; }
-.chip { display: inline-flex; align-items: center; gap: 3px; border: 0; color: inherit; background: rgba(0,0,0,.26); border-radius: 999px; padding: 3px 9px 3px 7px; font: 600 clamp(12px, 6.6cqh, 18px)/1.1 var(--f-num); letter-spacing: .02em; min-height: 30px; }
+.chip { display: inline-flex; align-items: center; gap: 3px; border: 0; color: inherit; background: rgba(0,0,0,.2); border-radius: 999px; padding: 3px 9px 3px 7px; font: 600 clamp(12px, 6cqh, 17px)/1.1 var(--f-life); letter-spacing: .02em; min-height: 30px; }
 .chip svg { width: 1.1em; height: 1.1em; stroke: currentColor; fill: none; stroke-width: 2; }
 .chip.hot { background: rgba(0,0,0,.55); box-shadow: 0 0 0 2px var(--brass); }
 .chip i { font-style: normal; opacity: .7; font-family: var(--f-ui); font-size: .8em; font-weight: 600; }
@@ -129,15 +130,15 @@ svg.i.l { width: 28px; height: 28px; }
 .cell { position: relative; border-radius: 14px; background: rgba(0,0,0,.28); display: grid; grid-template-columns: auto 1fr auto; align-items: center; min-height: 52px; overflow: hidden; }
 .cell .lab { position: absolute; top: 5px; left: 0; right: 0; text-align: center; font: 600 clamp(10px, 4.6cqh, 13px)/1.1 var(--f-ui); opacity: .85; display: flex; align-items: center; justify-content: center; gap: 4px; pointer-events: none; padding: 0 8px; white-space: nowrap; overflow: hidden; }
 .cell .lab svg { width: 1.2em; height: 1.2em; stroke: currentColor; fill: none; stroke-width: 2; flex: none; }
-.cell .val { text-align: center; font: 800 clamp(22px, 15cqh, 52px)/1 var(--f-num); font-variant-numeric: tabular-nums; padding-top: 10px; pointer-events: none; }
+.cell .val { text-align: center; font: 700 clamp(22px, 14cqh, 48px)/1 var(--f-life); font-variant-numeric: tabular-nums; padding-top: 10px; pointer-events: none; }
 .cell button { border: 0; background: transparent; color: inherit; height: 100%; min-width: 44px; width: clamp(44px, 12cqw, 64px); font: 600 clamp(20px, 10cqh, 34px)/1 var(--f-num); }
 .cell button:active { background: rgba(255,255,255,.12); }
-.cell.cmd { background: radial-gradient(120% 120% at 50% 0%, var(--p1), var(--p2)); color: var(--pt, #fff); box-shadow: inset 0 0 0 1px rgba(255,255,255,.18); }
+.cell.cmd { background: var(--p1); color: var(--pt, #fff); box-shadow: inset 0 0 0 1px rgba(255,255,255,.18); }
 .cell.cmd.hot { box-shadow: inset 0 0 0 3px #fff; }
 .pnote { font: 500 clamp(10px, 4.4cqh, 13px)/1.3 var(--f-ui); opacity: .85; text-align: center; }
 
 /* medaglione centrale */
-.hub { position: fixed; z-index: 5; width: 68px; height: 68px; border-radius: 50%; transform: translate(-50%, -50%); border: 0; padding: 0; background: radial-gradient(circle at 50% 35%, #2a2f3c, #12141b); color: #f6ead0; display: grid; place-items: center; box-shadow: 0 0 0 4px var(--table), 0 0 0 6px var(--hubc, var(--brass)), 0 10px 30px rgba(0,0,0,.6); transition: transform .18s var(--ease), box-shadow .3s; }
+.hub { position: fixed; z-index: 5; width: 58px; height: 58px; border-radius: 50%; transform: translate(-50%, -50%); border: 0; padding: 0; background: #0b0b0d; color: #fff; display: grid; place-items: center; box-shadow: 0 0 0 5px #000, 0 6px 22px rgba(0,0,0,.6); transition: transform .18s var(--ease), box-shadow .3s; }
 .hub:active { transform: translate(-50%, -50%) scale(.92); }
 .hub .t { font: 800 1.45rem/1 var(--f-num); letter-spacing: .02em; }
 .hub .t small { font: 700 .62rem/1 var(--f-ui); letter-spacing: .12em; display: block; text-align: center; opacity: .7; margin-bottom: 2px; }
@@ -312,6 +313,11 @@ mark { background: var(--mark); color: var(--mark-ink); border-radius: 3px; padd
 .ref { font: 500 .9em var(--f-mono); color: var(--brass); background: none; border: 0; padding: 0; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
 .acts { display: flex; flex-wrap: wrap; gap: 6px; }
 .gbox { border-radius: 18px; border: 1px solid var(--line); background: var(--surface); padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
+.ans { border-radius: 18px; border: 1px solid var(--brass); background: var(--brass-soft); padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; }
+.ans .lbl { color: var(--brass); }
+.ans p { margin: 0; font: 400 1.06rem/1.55 var(--f-read); color: var(--ink); }
+.ans .refs { display: flex; flex-wrap: wrap; gap: 6px; }
+.ans .refs .ref { text-decoration: none; border: 1px solid var(--brass); border-radius: 999px; padding: 6px 12px; min-height: 36px; font-size: .9rem; }
 .gbox dl { margin: 0; }
 .gbox dt { font-weight: 700; margin-top: 8px; }
 .gbox dt:first-child { margin-top: 0; }
@@ -521,7 +527,7 @@ const STR = {
     askLabel: "Descrivi la situazione o cerca una regola", askPh: "Descrivi la situazione o cerca una regola…", clear: "Cancella",
     tSearch: "Cerca", tToc: "Indice", tGloss: "Glossario", tSaved: "Salvate",
     searched: "Ho cercato", ignored: "ignorate", removeTerm: "Escludi «{t}» dalla ricerca", restoreTerm: "Includi di nuovo «{t}»",
-    best: "Regola più pertinente", related: "Altre regole collegate", ofN: "{n} di {t}", asked: "Regole richieste", gloss: "Glossario ufficiale",
+    answer: "Risposta", decides: "La regola che decide", best: "Regola più pertinente", related: "Altre regole collegate", ofN: "{n} di {t}", asked: "Regole richieste", gloss: "Glossario ufficiale",
     noRes: "Nessuna regola trovata. Usa i termini delle carte (es. «travolgere», «pila», «segnalino +1/+1») o scrivi un numero di regola (es. 702.19b).",
     topics: "Argomenti", recent: "Ricerche recenti", saved: "Salvata", save: "Salva", copy: "Copia", showEn: "Originale inglese", hideEn: "Nascondi inglese",
     copied: "Regola {id} copiata", copyFail: "Copia non riuscita: seleziona il testo a mano", example: "Esempio",
@@ -574,7 +580,7 @@ const STR = {
     askLabel: "Describe the situation or look up a rule", askPh: "Describe the situation or look up a rule…", clear: "Clear",
     tSearch: "Search", tToc: "Contents", tGloss: "Glossary", tSaved: "Saved",
     searched: "Searched for", ignored: "ignored", removeTerm: "Leave “{t}” out", restoreTerm: "Include “{t}” again",
-    best: "Most relevant rule", related: "Related rules", ofN: "{n} of {t}", asked: "Requested rules", gloss: "Official glossary",
+    answer: "Answer", decides: "The rule that decides it", best: "Most relevant rule", related: "Related rules", ofN: "{n} of {t}", asked: "Requested rules", gloss: "Official glossary",
     noRes: "No rules found. Use card terms (e.g. “trample”, “stack”, “+1/+1 counter”) or type a rule number (e.g. 702.19b).",
     topics: "Topics", recent: "Recent searches", saved: "Saved", save: "Save", copy: "Copy", showEn: "English original", hideEn: "Hide English",
     copied: "Rule {id} copied", copyFail: "Couldn't copy: select the text manually", example: "Example",
@@ -705,6 +711,7 @@ function stemIt(w) { for (const s of IT_SUFFIX) if (w.length - s.length >= 4 && 
 const itStems = s => norm(s).split(/[^a-z0-9]+/).filter(w => w.length > 2 && !IT_STOP.has(w)).map(stemIt);
 
 const IT_PHRASES = [
+  ["si attiva(no)?|si e attivat[ao]|si sono attivat[ae]|si innesca(no)?|scatta(no)?", "triggered ability", 1.5], ["all'inizio del(la|l')?", "at the beginning of", 1],
   ["(carte|mano) (a|alla) fine (del )?turno|tenere in mano|massimo di carte( in mano)?|limite (di carte )?(in|della) mano", "maximum hand size", 2.5],
   ["(pi[uù] effetti|ordine( degli effetti)?|chi sceglie( l'ordine)?)( di)? sostituzion[ei]|sostituzion[ei].{0,20}(chi sceglie|ordine)", "interaction of replacement and/or prevention effects", 3],
   ["(metto|mettere|metti) in fondo", "bottom of their library", 1.5],
@@ -880,6 +887,15 @@ function interpret(q, excluded) {
     .filter(w => w.length > 2 && !IT_STOP.has(w) && !/^[\d+\/-]+$/.test(w)).map(stemIt).filter(si => IDX.dfIt.has(si)))];
   return { concepts, unknown, ruleIds, itWords, itAll };
 }
+/*@@CASES@@*/
+const CASE_RX = new Map();
+function matchCases(q) {
+  const s = " " + norm(q).replace(/[^a-z0-9+\/'{}\- ]+/g, " ").replace(/\s+/g, " ") + " ";
+  const rx = p => { if (!CASE_RX.has(p)) CASE_RX.set(p, new RegExp(p)); return CASE_RX.get(p); };
+  return CASES.map(c => ({ c, ok: c[0].every(p => rx(p).test(s)), sc: c[0].length * 100 + c[0].join("").length }))
+    .filter(x => x.ok).sort((a, b) => b.sc - a.sc).slice(0, 2)
+    .map(({ c }) => ({ ids: c[1].filter(id => CR.byId[id]), it: c[2], en: c[3] })).filter(x => x.ids.length);
+}
 function search(q, excluded) {
   const it = interpret(q, excluded || new Set());
   const active = it.concepts.filter(c => !c.off);
@@ -909,7 +925,7 @@ function search(q, excluded) {
   for (const x of res) { const g = x.d.r.parent || x.d.r.id, n = per.get(g) || 0; if (n >= 3) continue; per.set(g, n + 1); top.push(x); if (top.length === 10) break; }
   const gloss = [];
   for (const c of active.filter(c => c.w >= 1.5)) { const g = CR.glossary.find(g => keyOf(g.term) === c.st.join(" ")); if (g && !gloss.includes(g)) gloss.push(g); }
-  return { it, top, gloss: gloss.slice(0, 3), total: res.length };
+  return { it, top, gloss: gloss.slice(0, 3), total: res.length, cases: matchCases(q) };
 }
 
 /* regole usate dal segnavita e dagli argomenti, trovate per contenuto (i numeri possono cambiare) */
@@ -962,7 +978,7 @@ function crumbOf(r) {
    Partita
    ============================================================ */
 const COLORS = ["U", "R", "G", "B", "W", "M", "C"];
-const pcVars = c => `--p1:var(--${c}1);--p2:var(--${c}2);--pt:${c === "W" ? "var(--Wt)" : "#fff"}`;
+const pcVars = c => `--p1:var(--${c}1);--p2:var(--${c}2);--pt:${c === "W" ? "var(--Wt)" : c === "M" ? "var(--Mt)" : "#fff"}`;
 const FORMATS = {
   standard: { life: 20, n: 2, cmd: false, poison: 10 },
   commander: { life: 40, n: 4, cmd: true, poison: 10 },
@@ -1106,7 +1122,7 @@ function placeHub() {
   hub.style.left = x + "px"; hub.style.top = y + "px";
   const ap = game.players[game.active];
   hub.style.setProperty("--hubc", n > 1 && ap ? `var(--${ap.color}1)` : "var(--brass)");
-  $("hubt").innerHTML = n > 1 ? `<small>${settings.lang === "it" ? "TURNO" : "TURN"}</small>${game.turn}` : raw("gear").replace("<svg", '<svg class="i"');
+  $("hubt").innerHTML = raw("d20").replace("<svg", '<svg class="i l"');
   $("hub").setAttribute("aria-label", t("menu") + (n > 1 ? " · " + t("turn", { n: game.turn }) : ""));
   const dn = $("hubdn"); dn.hidden = !game.day; if (game.day) dn.innerHTML = raw(game.day === "day" ? "sun" : "moon");
 }
@@ -1282,16 +1298,26 @@ function renderRulesBody(anim) {
   if (rulesState.tab === "gloss") return renderGloss();
   if (rulesState.tab === "saved") { const ids = store.get("saved", []).filter(id => CR.byId[id]); out.innerHTML = ids.length ? `<div class="res">${ids.map(id => card(CR.byId[id], null, false)).join("")}</div>` : `<div class="empty">${t("noSaved")}</div>`; return; }
   if (!q) { out.innerHTML = homeHTML(); return; }
-  const { it, top, gloss, total } = search(q, rulesState.excluded);
+  const { it, top, gloss, total, cases } = search(q, rulesState.excluded);
   const hl = hlSets(it); rulesState.hl = hl;
   let h = "";
   if (it.concepts.length || it.unknown.length) h += `<div class="sec" style="gap:8px"><h3 class="lbl">${t("searched")}</h3><div class="terms">` +
     it.concepts.map(c => { const from = c.labels.filter(l => norm(l) !== norm(c.en));
-      return `<button type="button" class="term${c.off ? " off" : ""}" data-act="term" data-key="${esc(c.key)}" aria-pressed="${!c.off}" title="${esc((c.off ? t("restoreTerm") : t("removeTerm")).replace("{t}", c.en))}"><span><b>${esc(c.en)}</b>${from.length ? ` <small>· ${esc(from.join(", "))}</small>` : ""}</span><span class="x" aria-hidden="true">${c.off ? "+" : "×"}</span></button>`; }).join("") +
+      return `<button type="button" class="term${c.off ? " off" : ""}" data-act="term" data-key="${esc(c.key)}" aria-pressed="${!c.off}" title="${esc((c.off ? t("restoreTerm") : t("removeTerm")).replace("{t}", c.en))}"><span>${settings.lang === "it" && from.length ? `<b>${esc(from.join(", "))}</b> <small>· ${esc(c.en)}</small>` : `<b>${esc(c.en)}</b>${from.length ? ` <small>· ${esc(from.join(", "))}</small>` : ""}`}</span><span class="x" aria-hidden="true">${c.off ? "+" : "×"}</span></button>`; }).join("") +
     (it.unknown.length ? `<span class="term unk">${t("ignored")}: ${esc(it.unknown.slice(0, 8).join(", "))}</span>` : "") + `</div></div>`;
   if (it.ruleIds.length) h += `<div class="res"><h3 class="lbl">${t("asked")}</h3>${it.ruleIds.map(id => CR.byId[id] ? card(CR.byId[id], hl, true) : `<button type="button" class="rc" data-act="open-rule" data-id="${id}"><div class="hd"><span class="num">${id}.</span><b>${esc(secTitle(id))}</b></div><span class="crumb">${t("rules", { n: CR.sections[id].rules.length })}</span></button>`).join("")}</div>`;
-  if (gloss.length) h += `<div class="gbox"><h3 class="lbl" style="color:var(--brass)">${t("gloss")}</h3><dl>${gloss.map(g => { const x = glossOf(g); return `<dt>${esc(x.term)}${x.en ? `<small>${esc(x.en)}</small>` : ""}</dt><dd>${richText(x.def)}</dd>`; }).join("")}</dl></div>`;
+  const shown = new Set();
+  for (const c of cases) {
+    c.ids.forEach(id => shown.add(id));
+    h += `<div class="ans"><h3 class="lbl">${t("answer")}</h3><p>${richText(settings.lang === "en" ? c.en : c.it)}</p><div class="refs">${c.ids.map(id => `<button type="button" class="ref" data-act="open-rule" data-id="${id}">${id}</button>`).join("")}</div></div>`;
+  }
+  if (cases.length) h += `<div class="res">${card(CR.byId[cases[0].ids[0]], hl, true, t("decides"))}</div>`;
+  if (gloss.length && !cases.length) h += `<div class="gbox"><h3 class="lbl" style="color:var(--brass)">${t("gloss")}</h3><dl>${gloss.map(g => { const x = glossOf(g); return `<dt>${esc(x.term)}${x.en ? `<small>${esc(x.en)}</small>` : ""}</dt><dd>${richText(x.def)}</dd>`; }).join("")}</dl></div>`;
   if (top.length) {
+    if (cases.length) { const rest = top.filter(x => !shown.has(x.d.r.id)); const extra = cases.flatMap(c => c.ids).slice(1).map(id => CR.byId[id]);
+      h += `<div class="res"><h3 class="lbl">${t("related")}</h3>${extra.map(r => card(r, hl, false)).join("")}${rest.slice(0, 6).map(x => card(x.d.r, hl, false)).join("")}</div>`;
+      if (trOn()) h += `<p class="tnote">${icon("info")}${t("trNote")}</p>`;
+      out.innerHTML = h; out.classList.toggle("stag", !!anim); return; }
     const first = it.ruleIds.length ? 0 : 1;
     if (first) h += `<div class="res">${card(top[0].d.r, hl, true, t("best"))}</div>`;
     if (top.length > first) h += `<div class="res"><h3 class="lbl">${t("related")} · ${t("ofN", { n: top.length, t: total })}</h3>${top.slice(first).map(x => card(x.d.r, hl, false)).join("")}</div>`;

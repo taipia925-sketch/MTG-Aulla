@@ -15,7 +15,7 @@
 <meta name="theme-color" content="#0b0d12">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Outfit:wght@500;700;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
 <style>
 /* Layout: il tavolo da gioco occupa tutto lo schermo (pannelli giocatore ruotati verso il proprio posto, medaglione centrale);
    tutto il resto (menu, arbitro, impostazioni) sono strati che salgono dal basso o scorrono da destra sopra il tavolo.
@@ -43,13 +43,14 @@
   --shadow: 0 18px 50px rgba(0, 0, 0, .45), 0 2px 6px rgba(0, 0, 0, .3);
   --table: #07080b;
   /* mana: [colore chiaro, colore scuro, testo] uguali in entrambi i temi */
-  --W1: #f4ead0; --W2: #cdb98a; --Wt: #2a2214;
-  --U1: #2a78d0; --U2: #0d3570;
-  --B1: #4d405c; --B2: #18131f;
-  --R1: #e05535; --R2: #7c1d10;
-  --G1: #2f9a5e; --G2: #0f4a2a;
-  --M1: #d9a93a; --M2: #6f4d0c;
-  --C1: #8a93a6; --C2: #3c4250;
+  --W1: #efe3c2; --W2: #efe3c2; --Wt: #2a2214;
+  --U1: #1f6fd9; --U2: #1f6fd9;
+  --B1: #6e4bc9; --B2: #6e4bc9;
+  --R1: #d63a33; --R2: #d63a33;
+  --G1: #17834a; --G2: #17834a;
+  --M1: #f0a92a; --M2: #f0a92a; --Mt: #2a1a00;
+  --C1: #5f6878; --C2: #5f6878;
+  --f-life: "Outfit", "SF Pro Rounded", system-ui, -apple-system, sans-serif;
   --f-num: "Big Shoulders Display", "Barlow Condensed", "Arial Narrow", system-ui, sans-serif;
   --f-ui: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
   --f-read: "Source Serif 4", "Iowan Old Style", Georgia, serif;
@@ -85,13 +86,13 @@ svg.i.s { width: 18px; height: 18px; }
 svg.i.l { width: 28px; height: 28px; }
 
 /* ================= TAVOLO ================= */
-#game { position: fixed; inset: 0; background: var(--table); }
-.board { position: absolute; inset: 0; display: grid; gap: 5px; padding: max(5px, env(safe-area-inset-top, 0px)) max(5px, env(safe-area-inset-right, 0px)) max(5px, env(safe-area-inset-bottom, 0px)) max(5px, env(safe-area-inset-left, 0px)); }
-.pl { position: relative; container-type: size; border-radius: 22px; overflow: hidden; color: var(--pt, #fff); background: radial-gradient(130% 110% at 50% 0%, var(--p1) 0%, var(--p2) 100%); user-select: none; -webkit-user-select: none; touch-action: manipulation; isolation: isolate; transition: filter .35s var(--ease); }
+#game { position: fixed; inset: 0; background: #000; }
+.board { position: absolute; inset: 0; display: grid; gap: 6px; padding: max(6px, env(safe-area-inset-top, 0px)) max(5px, env(safe-area-inset-right, 0px)) max(5px, env(safe-area-inset-bottom, 0px)) max(5px, env(safe-area-inset-left, 0px)); }
+.pl { position: relative; container-type: size; border-radius: 18px; overflow: hidden; color: var(--pt, #fff); background: var(--p1); user-select: none; -webkit-user-select: none; touch-action: manipulation; isolation: isolate; transition: filter .35s var(--ease); }
 .pl::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
-  background: radial-gradient(80% 60% at 50% 46%, rgba(255,255,255,.10), transparent 70%), repeating-linear-gradient(135deg, rgba(255,255,255,.025) 0 2px, transparent 2px 9px); }
-.pl::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; box-shadow: inset 0 0 0 1px rgba(255,255,255,.10); transition: box-shadow .3s var(--ease); }
-.pl.active::after { box-shadow: inset 0 0 0 3px rgba(255,255,255,.92), inset 0 0 40px rgba(255,255,255,.18); }
+  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(0,0,0,.06)); }
+.pl::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; transition: box-shadow .3s var(--ease); }
+.pl.active::after { box-shadow: inset 0 0 0 3px rgba(255,255,255,.9); }
 .pl.out { filter: saturate(.15) brightness(.5); }
 .pl.flash { animation: flash .6s var(--ease); }
 @keyframes flash { 40% { filter: brightness(1.6); } }
@@ -104,27 +105,27 @@ svg.i.l { width: 28px; height: 28px; }
 .hit { position: absolute; top: 0; bottom: 0; width: 50%; border: 0; background: transparent; color: inherit; padding: 0; display: flex; align-items: center; touch-action: manipulation; }
 .hit.minus { left: 0; justify-content: flex-start; padding-left: 7cqw; }
 .hit.plus { right: 0; justify-content: flex-end; padding-right: 7cqw; }
-.hit::before { content: ""; position: absolute; inset: 0; background: radial-gradient(70% 70% at var(--hx, 50%) 50%, rgba(255,255,255,.22), transparent 70%); opacity: 0; transition: opacity .35s; }
+.hit::before { content: ""; position: absolute; inset: 0; background: rgba(255,255,255,.14); opacity: 0; transition: opacity .3s; }
 .hit.minus::before { --hx: 0%; } .hit.plus::before { --hx: 100%; }
 .hit.press::before { opacity: 1; transition: opacity .05s; }
-.hit .sign { font: 600 clamp(26px, 15cqh, 60px)/1 var(--f-num); opacity: .45; transition: opacity .2s, transform .15s var(--ease); }
+.hit .sign { font: 500 clamp(26px, 13cqh, 54px)/1 var(--f-life); opacity: .5; transition: opacity .2s, transform .15s var(--ease); }
 .hit.press .sign { opacity: 1; transform: scale(1.3); }
-.pname { position: absolute; top: max(10px, 4cqh); left: max(12px, 4cqw); max-width: 58cqw; display: inline-flex; align-items: center; gap: 6px; font: 700 clamp(12px, 6.4cqh, 18px)/1.2 var(--f-ui); letter-spacing: .02em; opacity: .92; pointer-events: none; white-space: nowrap; }
+.pname { position: absolute; top: max(44px, 6cqh); left: 50%; transform: translateX(-50%); max-width: 62cqw; display: inline-flex; align-items: center; gap: 6px; font: 600 clamp(12px, 6cqh, 17px)/1.2 var(--f-life); letter-spacing: .01em; opacity: .9; pointer-events: none; white-space: nowrap; }
 .pname span { overflow: hidden; text-overflow: ellipsis; }
 .pname svg { width: 1.15em; height: 1.15em; stroke: currentColor; fill: none; stroke-width: 2; flex: none; }
 .lifebox { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; pointer-events: none; }
-.life { font: 800 min(54cqh, 38cqw)/.8 var(--f-num); font-variant-numeric: tabular-nums; letter-spacing: -.01em; text-shadow: 0 6px 30px rgba(0,0,0,.25); transition: transform .14s var(--ease); padding-top: .06em; }
-.life.k3 { font-size: min(46cqh, 28cqw); }
+.life { font: 700 min(46cqh, 34cqw)/1 var(--f-life); font-variant-numeric: tabular-nums; letter-spacing: -.035em; transition: transform .14s var(--ease); }
+.life.k3 { font-size: min(36cqh, 24cqw); }
 .life.bump { transform: scale(1.05); }
-.delta { position: absolute; top: 50%; left: 50%; transform: translate(calc(min(20cqh, 15cqw) + 6cqw), -128%); font: 600 clamp(18px, 12cqh, 44px)/1 var(--f-num); background: rgba(0,0,0,.28); border-radius: 999px; padding: .12em .42em; opacity: 0; transition: opacity .25s; pointer-events: none; }
-.delta.on { opacity: 1; }
+.delta { position: absolute; top: 50%; left: 50%; transform: translate(-50%, calc(-1 * min(23cqh, 17cqw) - 105%)); font: 600 clamp(16px, 10cqh, 36px)/1 var(--f-life); font-variant-numeric: tabular-nums; opacity: 0; transition: opacity .3s; pointer-events: none; }
+.delta.on { opacity: .85; }
 .pfoot { position: absolute; left: 0; right: 0; bottom: max(8px, 3cqh); display: flex; align-items: flex-end; justify-content: space-between; gap: 6px; padding: 0 max(8px, 3cqw); pointer-events: none; }
-.pbtn { pointer-events: auto; width: clamp(40px, 15cqh, 50px); height: clamp(40px, 15cqh, 50px); border-radius: 50%; border: 0; background: rgba(0,0,0,.24); color: inherit; display: grid; place-items: center; transition: background .15s, transform .15s var(--ease); }
+.pbtn { pointer-events: auto; width: clamp(40px, 14cqh, 46px); height: clamp(40px, 14cqh, 46px); border-radius: 50%; border: 0; background: rgba(0,0,0,.16); color: inherit; display: grid; place-items: center; transition: background .15s, transform .15s var(--ease); }
 .pbtn:active { transform: scale(.92); background: rgba(0,0,0,.4); }
 .pbtn svg { width: 52%; height: 52%; stroke: currentColor; fill: none; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
 .pbtn.ghost { visibility: hidden; }
 .chips { pointer-events: auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 5px; min-width: 0; flex: 1; max-height: 24cqh; overflow: hidden; }
-.chip { display: inline-flex; align-items: center; gap: 3px; border: 0; color: inherit; background: rgba(0,0,0,.26); border-radius: 999px; padding: 3px 9px 3px 7px; font: 600 clamp(12px, 6.6cqh, 18px)/1.1 var(--f-num); letter-spacing: .02em; min-height: 30px; }
+.chip { display: inline-flex; align-items: center; gap: 3px; border: 0; color: inherit; background: rgba(0,0,0,.2); border-radius: 999px; padding: 3px 9px 3px 7px; font: 600 clamp(12px, 6cqh, 17px)/1.1 var(--f-life); letter-spacing: .02em; min-height: 30px; }
 .chip svg { width: 1.1em; height: 1.1em; stroke: currentColor; fill: none; stroke-width: 2; }
 .chip.hot { background: rgba(0,0,0,.55); box-shadow: 0 0 0 2px var(--brass); }
 .chip i { font-style: normal; opacity: .7; font-family: var(--f-ui); font-size: .8em; font-weight: 600; }
@@ -140,15 +141,15 @@ svg.i.l { width: 28px; height: 28px; }
 .cell { position: relative; border-radius: 14px; background: rgba(0,0,0,.28); display: grid; grid-template-columns: auto 1fr auto; align-items: center; min-height: 52px; overflow: hidden; }
 .cell .lab { position: absolute; top: 5px; left: 0; right: 0; text-align: center; font: 600 clamp(10px, 4.6cqh, 13px)/1.1 var(--f-ui); opacity: .85; display: flex; align-items: center; justify-content: center; gap: 4px; pointer-events: none; padding: 0 8px; white-space: nowrap; overflow: hidden; }
 .cell .lab svg { width: 1.2em; height: 1.2em; stroke: currentColor; fill: none; stroke-width: 2; flex: none; }
-.cell .val { text-align: center; font: 800 clamp(22px, 15cqh, 52px)/1 var(--f-num); font-variant-numeric: tabular-nums; padding-top: 10px; pointer-events: none; }
+.cell .val { text-align: center; font: 700 clamp(22px, 14cqh, 48px)/1 var(--f-life); font-variant-numeric: tabular-nums; padding-top: 10px; pointer-events: none; }
 .cell button { border: 0; background: transparent; color: inherit; height: 100%; min-width: 44px; width: clamp(44px, 12cqw, 64px); font: 600 clamp(20px, 10cqh, 34px)/1 var(--f-num); }
 .cell button:active { background: rgba(255,255,255,.12); }
-.cell.cmd { background: radial-gradient(120% 120% at 50% 0%, var(--p1), var(--p2)); color: var(--pt, #fff); box-shadow: inset 0 0 0 1px rgba(255,255,255,.18); }
+.cell.cmd { background: var(--p1); color: var(--pt, #fff); box-shadow: inset 0 0 0 1px rgba(255,255,255,.18); }
 .cell.cmd.hot { box-shadow: inset 0 0 0 3px #fff; }
 .pnote { font: 500 clamp(10px, 4.4cqh, 13px)/1.3 var(--f-ui); opacity: .85; text-align: center; }
 
 /* medaglione centrale */
-.hub { position: fixed; z-index: 5; width: 68px; height: 68px; border-radius: 50%; transform: translate(-50%, -50%); border: 0; padding: 0; background: radial-gradient(circle at 50% 35%, #2a2f3c, #12141b); color: #f6ead0; display: grid; place-items: center; box-shadow: 0 0 0 4px var(--table), 0 0 0 6px var(--hubc, var(--brass)), 0 10px 30px rgba(0,0,0,.6); transition: transform .18s var(--ease), box-shadow .3s; }
+.hub { position: fixed; z-index: 5; width: 58px; height: 58px; border-radius: 50%; transform: translate(-50%, -50%); border: 0; padding: 0; background: #0b0b0d; color: #fff; display: grid; place-items: center; box-shadow: 0 0 0 5px #000, 0 6px 22px rgba(0,0,0,.6); transition: transform .18s var(--ease), box-shadow .3s; }
 .hub:active { transform: translate(-50%, -50%) scale(.92); }
 .hub .t { font: 800 1.45rem/1 var(--f-num); letter-spacing: .02em; }
 .hub .t small { font: 700 .62rem/1 var(--f-ui); letter-spacing: .12em; display: block; text-align: center; opacity: .7; margin-bottom: 2px; }
@@ -323,6 +324,11 @@ mark { background: var(--mark); color: var(--mark-ink); border-radius: 3px; padd
 .ref { font: 500 .9em var(--f-mono); color: var(--brass); background: none; border: 0; padding: 0; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
 .acts { display: flex; flex-wrap: wrap; gap: 6px; }
 .gbox { border-radius: 18px; border: 1px solid var(--line); background: var(--surface); padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
+.ans { border-radius: 18px; border: 1px solid var(--brass); background: var(--brass-soft); padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; }
+.ans .lbl { color: var(--brass); }
+.ans p { margin: 0; font: 400 1.06rem/1.55 var(--f-read); color: var(--ink); }
+.ans .refs { display: flex; flex-wrap: wrap; gap: 6px; }
+.ans .refs .ref { text-decoration: none; border: 1px solid var(--brass); border-radius: 999px; padding: 6px 12px; min-height: 36px; font-size: .9rem; }
 .gbox dl { margin: 0; }
 .gbox dt { font-weight: 700; margin-top: 8px; }
 .gbox dt:first-child { margin-top: 0; }
@@ -9907,7 +9913,7 @@ const STR = {
     askLabel: "Descrivi la situazione o cerca una regola", askPh: "Descrivi la situazione o cerca una regola…", clear: "Cancella",
     tSearch: "Cerca", tToc: "Indice", tGloss: "Glossario", tSaved: "Salvate",
     searched: "Ho cercato", ignored: "ignorate", removeTerm: "Escludi «{t}» dalla ricerca", restoreTerm: "Includi di nuovo «{t}»",
-    best: "Regola più pertinente", related: "Altre regole collegate", ofN: "{n} di {t}", asked: "Regole richieste", gloss: "Glossario ufficiale",
+    answer: "Risposta", decides: "La regola che decide", best: "Regola più pertinente", related: "Altre regole collegate", ofN: "{n} di {t}", asked: "Regole richieste", gloss: "Glossario ufficiale",
     noRes: "Nessuna regola trovata. Usa i termini delle carte (es. «travolgere», «pila», «segnalino +1/+1») o scrivi un numero di regola (es. 702.19b).",
     topics: "Argomenti", recent: "Ricerche recenti", saved: "Salvata", save: "Salva", copy: "Copia", showEn: "Originale inglese", hideEn: "Nascondi inglese",
     copied: "Regola {id} copiata", copyFail: "Copia non riuscita: seleziona il testo a mano", example: "Esempio",
@@ -9960,7 +9966,7 @@ const STR = {
     askLabel: "Describe the situation or look up a rule", askPh: "Describe the situation or look up a rule…", clear: "Clear",
     tSearch: "Search", tToc: "Contents", tGloss: "Glossary", tSaved: "Saved",
     searched: "Searched for", ignored: "ignored", removeTerm: "Leave “{t}” out", restoreTerm: "Include “{t}” again",
-    best: "Most relevant rule", related: "Related rules", ofN: "{n} of {t}", asked: "Requested rules", gloss: "Official glossary",
+    answer: "Answer", decides: "The rule that decides it", best: "Most relevant rule", related: "Related rules", ofN: "{n} of {t}", asked: "Requested rules", gloss: "Official glossary",
     noRes: "No rules found. Use card terms (e.g. “trample”, “stack”, “+1/+1 counter”) or type a rule number (e.g. 702.19b).",
     topics: "Topics", recent: "Recent searches", saved: "Saved", save: "Save", copy: "Copy", showEn: "English original", hideEn: "Hide English",
     copied: "Rule {id} copied", copyFail: "Couldn't copy: select the text manually", example: "Example",
@@ -10091,6 +10097,7 @@ function stemIt(w) { for (const s of IT_SUFFIX) if (w.length - s.length >= 4 && 
 const itStems = s => norm(s).split(/[^a-z0-9]+/).filter(w => w.length > 2 && !IT_STOP.has(w)).map(stemIt);
 
 const IT_PHRASES = [
+  ["si attiva(no)?|si e attivat[ao]|si sono attivat[ae]|si innesca(no)?|scatta(no)?", "triggered ability", 1.5], ["all'inizio del(la|l')?", "at the beginning of", 1],
   ["(carte|mano) (a|alla) fine (del )?turno|tenere in mano|massimo di carte( in mano)?|limite (di carte )?(in|della) mano", "maximum hand size", 2.5],
   ["(pi[uù] effetti|ordine( degli effetti)?|chi sceglie( l'ordine)?)( di)? sostituzion[ei]|sostituzion[ei].{0,20}(chi sceglie|ordine)", "interaction of replacement and/or prevention effects", 3],
   ["(metto|mettere|metti) in fondo", "bottom of their library", 1.5],
@@ -10266,6 +10273,225 @@ function interpret(q, excluded) {
     .filter(w => w.length > 2 && !IT_STOP.has(w) && !/^[\d+\/-]+$/.test(w)).map(stemIt).filter(si => IDX.dfIt.has(si)))];
   return { concepts, unknown, ruleIds, itWords, itAll };
 }
+/* Situazioni tipiche al tavolo: ogni caso ha gruppi di parole (tutti devono comparire nella domanda,
+   testo normalizzato senza accenti), le regole che lo decidono e una risposta breve in italiano e inglese. */
+const TRIG = "innesc|si attiv|attivan|attiva (all|quando|ogni)|trigger|abilita (di|del|all)|all'inizio|quando entra|ogni volta";
+const CASES = [
+  [[TRIG, "stess|contempora|insieme|due |entramb|piu abilita|tutte e|same time|both|two|multiple|simultane", "prima|ordine|quale|chi (decide|sceglie)|order|first|which"],
+    ["603.3b", "101.4", "405.5"],
+    "Si innescano tutte. Prima che qualcuno riceva la priorità, chi le controlla le mette in pila nell'ordine che preferisce: l'ultima messa in pila si risolve per prima. Se appartengono a giocatori diversi, prima il giocatore attivo mette in pila le sue, poi gli altri in ordine di turno (APNAP): quindi si risolvono per prime quelle dell'ultimo giocatore.",
+    "They all trigger. Before anyone gets priority, their controller puts them on the stack in any order; the last one put on the stack resolves first. If different players control them, the active player puts theirs on the stack first, then the others in turn order (APNAP), so the last player's resolve first."],
+  [["travolg|trample", "tocco letale|deathtouch"], ["702.2c", "702.19b"],
+    "Con tocco letale basta assegnare 1 danno a ogni creatura bloccante perché conti come danno letale; tutto il resto può andare al giocatore o al planeswalker attaccato.",
+    "With deathtouch, 1 damage to each blocker counts as lethal; the rest can be assigned to the player or planeswalker it's attacking."],
+  [["travolg|trample", "rimoss|muor|mort|distrutt|esce|non c'e piu|scompar|sacrific|removed|dies|died|gone|left|esiliat|rimbalz"], ["702.19d", "509.1h", "510.1c"],
+    "La creatura resta «bloccata» anche se il bloccante sparisce. Con travolgere assegna tutto il danno al giocatore (o planeswalker) che sta attaccando; senza travolgere non infligge danno da combattimento.",
+    "The attacker stays blocked even if the blocker is gone. With trample it assigns all its damage to the player or planeswalker it's attacking; without trample it deals no combat damage."],
+  [["bloccant|blocker|blocc", "rimoss|muor|mort|distrutt|esce|non c'e piu|scompar|sacrific|removed|dies|died|gone|esiliat|rimbalz", "dann|damage|giocatore|player|passa"], ["509.1h", "506.4", "510.1c", "702.19d"],
+    "Una creatura attaccante che è stata bloccata resta bloccata anche se il bloccante viene rimosso dal combattimento: senza travolgere non infligge danno da combattimento (con travolgere lo assegna tutto al giocatore).",
+    "An attacking creature that was blocked stays blocked even if the blocker leaves combat: without trample it deals no combat damage (with trample, all of it goes to the player)."],
+  [["travolg|trample", "protezion|protection|indistrutt|indestructible|previen"], ["702.19b"],
+    "Devi comunque assegnare al bloccante danno letale (pari alla sua costituzione meno il danno già segnato), anche se quel danno verrà prevenuto o non lo distruggerà; solo l'eccesso può andare al giocatore.",
+    "You must still assign lethal damage to the blocker (its toughness minus damage already marked), even if that damage will be prevented or won't destroy it; only the excess goes to the player."],
+  [["anti-?malocchio|hexproof", "mi[ae]|tu[ae]? |propri|stess|io |posso|own|my|i can"], ["702.11b", "702.11c"],
+    "Anti-malocchio protegge solo dalle magie e abilità degli avversari: tu puoi bersagliare i tuoi permanenti con anti-malocchio.",
+    "Hexproof only stops opponents' spells and abilities: you can target your own hexproof permanents."],
+  [["velo|shroud"], ["702.18a"],
+    "Velo: nessuno può bersagliare quel permanente o giocatore, nemmeno il suo controllore. Effetti senza bersaglio (es. «distruggi tutte le creature») lo colpiscono comunque.",
+    "Shroud: nobody can target it, not even its controller. Untargeted effects (e.g. \"destroy all creatures\") still affect it."],
+  [["debolezza|summoning|mal(attia)? da evocazione|appena (entrat|giocat|lanciat|evocat|messa)|stesso turno|questo turno|just (cast|played|came)|this turn", "attacc|tapp|\\{t\\}|attack|tap"], ["302.6", "702.10b", "702.10c"],
+    "Una creatura può attaccare, o attivare abilità con {T} o {Q} nel costo, solo se la controlli ininterrottamente dall'inizio del tuo turno più recente (debolezza da evocazione), a meno che non abbia rapidità. Può comunque bloccare e usare abilità senza {T}.",
+    "A creature can attack, or activate abilities with {T} or {Q} in the cost, only if you've controlled it continuously since your most recent turn began (summoning sickness), unless it has haste. It can still block and use abilities without {T}."],
+  [["manovr|crew|veicol|vehicle"], ["702.122a", "301.7", "302.6"],
+    "Manovrare N: TAPpi un qualsiasi numero di altre creature STAPpate con forza totale N o più, e il Veicolo diventa una creatura artefatto fino alla fine del turno. Si può manovrare anche con creature appena entrate (non è un'abilità {T} della creatura), ma per attaccare il Veicolo deve essere sotto il tuo controllo dall'inizio del turno.",
+    "Crew N: tap any number of other untapped creatures with total power N or more and the Vehicle becomes an artifact creature until end of turn. Summoning-sick creatures can crew, but the Vehicle itself needs to have been under your control since the turn began to attack."],
+  [["tappat|tapped", "blocc|block"], ["509.1a"],
+    "No: possono bloccare solo le creature STAPpate. Una creatura TAPpata non può bloccare.",
+    "No: only untapped creatures can block."],
+  [["frazione di secondo|split second"], ["702.61a", "702.61b"],
+    "Mentre una magia con frazione di secondo è in pila nessuno può lanciare magie né attivare abilità che non siano di mana. Si possono però attivare abilità di mana e fare azioni speciali (es. girare una metamorfosi), e le abilità innescate si innescano normalmente.",
+    "While a split second spell is on the stack, nobody can cast spells or activate non-mana abilities. Mana abilities and special actions (e.g. turning a morph face up) are allowed, and triggered abilities still trigger."],
+  [["leggend|legend", "stesso nome|due|uguale|copia|same name|two|copy|clone"], ["704.5j"],
+    "Regola delle leggende: se controlli due o più permanenti leggendari con lo stesso nome ne scegli uno e gli altri vanno nel cimitero (non è un sacrificio né una distruzione). Giocatori diversi possono controllare ciascuno la stessa leggenda.",
+    "Legend rule: if you control two or more legendary permanents with the same name, choose one; the rest go to the graveyard (not sacrificed or destroyed). Different players can each control the same legend."],
+  [["comandant|commander", "zona di comando|torna|muor|mort|cimitero|esili|mano|grimorio|command zone|dies|graveyard|exile|hand|library"], ["903.9a", "903.9b"],
+    "Se il comandante va nel cimitero o in esilio, il proprietario può spostarlo nella zona di comando (azione generata dallo stato: prima arriva nel cimitero, quindi le abilità «quando muore» si innescano). Se andrebbe in mano o nel grimorio, puoi invece metterlo subito nella zona di comando.",
+    "If your commander goes to the graveyard or exile, you may move it to the command zone (state-based action: it reaches the graveyard first, so \"dies\" triggers happen). If it would go to hand or library, you may put it into the command zone instead."],
+  [["tass|tax|costa di piu|quanto costa|costo aggiuntivo|seconda volta|terza volta|\\{2\\}", "comandant|commander"], ["903.8"],
+    "Tassa del comandante: lanciarlo dalla zona di comando costa {2} in più per ogni volta che l'hai già lanciato da lì in questa partita. Lanciarlo da altre zone non aumenta la tassa.",
+    "Commander tax: casting it from the command zone costs {2} more for each previous time you cast it from there this game. Casting it from elsewhere doesn't add tax."],
+  [["dann|damage", "comandant|commander", "21|perd|lose|morto|quant"], ["903.10a", "704.6c", "702.124d"],
+    "Perdi se hai subito in totale 21 o più danni da combattimento dallo stesso comandante nel corso della partita. Conta solo il danno da combattimento; i due comandanti partner si contano separatamente.",
+    "You lose after taking 21 or more combat damage from the same commander over the game. Only combat damage counts; partner commanders are tracked separately."],
+  [["grimorio|mazzo|library|deck", "vuot|finit|zero carte|nessuna carta|senza carte|non ho (piu )?carte|empty|no cards|ran out"], ["704.5b", "121.3", "701.17a"],
+    "Non si perde per avere il grimorio vuoto: si perde se si è tentato di pescare da un grimorio vuoto, alla successiva verifica delle azioni generate dallo stato. Macinare o cercare con grimorio vuoto non fa perdere.",
+    "An empty library alone doesn't lose the game: you lose if you attempted to draw from an empty library, the next time state-based actions are checked. Milling or searching with an empty library doesn't."],
+  [["(0|zero|meno|negativ|sotto) (punti )?vita|vita (a|va a|arriva a) (0|zero)|0 life|zero life|negative life|punti vita (a )?(0|zero)"], ["704.5a", "104.3b", "704.3"],
+    "Con 0 o meno punti vita perdi, ma solo quando vengono controllate le azioni generate dallo stato (subito prima che un giocatore riceva la priorità). Se scendi a 0 durante la risoluzione di una magia e prima che finisca torni sopra 0, non perdi.",
+    "At 0 or less life you lose, but only when state-based actions are checked (right before a player would get priority). If you hit 0 mid-resolution and go back above 0 before it finishes, you don't lose."],
+  [["veleno|poison|infett|infect|tossic|toxic"], ["704.5c", "702.90b", "702.164c", "704.6b"],
+    "Con 10 o più segnalini veleno perdi (15 per squadra in Two-Headed Giant). Il danno di una fonte con infettare a un giocatore dà segnalini veleno invece di fargli perdere vita; tossico dà segnalini veleno in aggiunta al danno da combattimento.",
+    "Ten or more poison counters loses the game (15 per team in Two-Headed Giant). Damage from an infect source gives poison instead of life loss; toxic gives poison in addition to combat damage."],
+  [["mano|hand", "fine (del )?turno|massim|sette|7 carte|scart|limit|max|quante carte|tenere"], ["514.1", "402.2"],
+    "Durante il turno puoi avere quante carte vuoi. Nella sottofase di cancellazione il giocatore attivo scarta fino al numero massimo di carte in mano, normalmente 7.",
+    "You can hold any number of cards during the turn. In the cleanup step the active player discards down to maximum hand size, normally seven."],
+  [["mulligan"], ["103.5", "103.5c"],
+    "Mulligan di Londra: rimescoli la mano nel grimorio e peschi 7 carte, poi metti in fondo al grimorio una carta per ogni mulligan fatto. In multigiocatore e in Brawl il primo mulligan è gratuito.",
+    "London mulligan: shuffle your hand away, draw seven, then put one card on the bottom for each mulligan taken. In multiplayer and Brawl the first mulligan is free."],
+  [["\\+1/\\+1", "-1/-1"], ["704.5q", "122.3"],
+    "Se un permanente ha sia segnalini +1/+1 sia -1/-1, si rimuovono a coppie (azione generata dallo stato) finché resta un solo tipo.",
+    "If a permanent has both +1/+1 and -1/-1 counters, they're removed in pairs (state-based action) until only one kind remains."],
+  [["indistrutt|indestructible"], ["702.12b", "704.5f", "701.21a"],
+    "Indistruttibile impedisce solo «distruggi» e la morte per danno letale. Il permanente va comunque nel cimitero se la sua costituzione è 0 o meno (es. -X/-X), se viene sacrificato, esiliato o rimesso in mano.",
+    "Indestructible only stops \"destroy\" and lethal damage. It still dies to 0 or less toughness (e.g. -X/-X), and can be sacrificed, exiled or bounced."],
+  [["dann|damage", "fine (del )?turno|resta|rimane|si cura|sparisce|end of turn|wear|stays|turno successivo|prossimo turno"], ["514.2", "120.6"],
+    "Il danno resta segnato sulla creatura fino alla sottofase di cancellazione del turno, poi viene rimosso insieme agli effetti «fino alla fine del turno».",
+    "Damage stays marked until the cleanup step, then it's removed along with \"until end of turn\" effects."],
+  [["bersagl|target", "illegal|non c'e piu|sparit|non esiste|rimoss|tolgo|tolto|elimin|esce|scompar|muor|mort|fizzl|non si risolve|non ha effetto|gone|left|died"], ["608.2b"],
+    "Quando sta per risolversi, la magia o abilità ricontrolla i bersagli. Se tutti sono diventati illegali non si risolve e non fa nulla (non è neutralizzata). Se solo alcuni sono illegali, si risolve ma non fa nulla a quelli.",
+    "On resolution the spell or ability rechecks its targets. If all are illegal it doesn't resolve (it isn't \"countered\"). If only some are, it resolves but does nothing to those."],
+  [["livell|layer|ordine degli effetti|effetti continui|forza e costituzione|imposta|setta|sets? (power|base)"], ["613.1", "613.4", "613.7", "613.8"],
+    "Gli effetti continui si applicano per livelli: 1 copia, 2 controllo, 3 testo, 4 tipo, 5 colore, 6 abilità, 7 forza/costituzione (7a definire, 7b impostare a un valore, 7c modificare e segnalini, 7d scambiare). Dentro lo stesso livello vale l'ordine delle marche temporali, salvo dipendenze.",
+    "Continuous effects apply in layers: 1 copy, 2 control, 3 text, 4 type, 5 color, 6 abilities, 7 power/toughness (7a CDA, 7b set, 7c modify and counters, 7d switch). Within a layer, timestamp order unless there's a dependency."],
+  [["muor|mort|dies|die ", "esili|mano|rimbalz|significa|vuol dire|conta come|cosa vuol|definiz|exile|bounce|mean|count"], ["700.4", "603.6c"],
+    "«Muore» significa «viene messo in un cimitero dal campo di battaglia». Una creatura esiliata o rimessa in mano non muore.",
+    "\"Dies\" means \"is put into a graveyard from the battlefield\". A creature that's exiled or bounced doesn't die."],
+  [["pedin|token", "mano|cimitero|esili|torna|rimbalz|lascia|muor|mort|bounce|hand|graveyard|exile|return|leave|dies"], ["704.5d", "111.7", "603.6c"],
+    "Una pedina che lascia il campo di battaglia va per un attimo nella nuova zona (le abilità «quando muore» o «quando lascia» si innescano), poi cessa di esistere: non può tornare.",
+    "A token that leaves the battlefield briefly goes to the new zone (dies/leaves triggers happen), then ceases to exist; it can't come back."],
+  [["quando posso|posso lanciar|in che momento|in quale momento|timing|velocita|durante il turno (dell'|di un )?avversari|turno avversario|opponent'?s turn|when can i (cast|play)"], ["117.1a", "307.1", "304.1", "702.8a"],
+    "Istantanei, carte con lampo e abilità attivate: in qualsiasi momento in cui hai la priorità, anche nel turno avversario. Stregonerie, creature, artefatti, incantesimi, planeswalker e terre: solo nella tua fase principale con la pila vuota.",
+    "Instants, flash cards and activated abilities: any time you have priority, even on an opponent's turn. Sorceries, creatures, artifacts, enchantments, planeswalkers and lands: only in your main phase with an empty stack."],
+  [["volar|volant|flying|vola", "blocc|block"], ["702.9b", "702.17b"],
+    "Una creatura con volare può essere bloccata solo da creature con volare e/o raggiungere. Una creatura con volare può bloccare qualsiasi creatura.",
+    "A flyer can be blocked only by creatures with flying and/or reach. A flyer can block any creature."],
+  [["minacci|menace"], ["702.111b"],
+    "Una creatura con minacciare non può essere bloccata se non da due o più creature.",
+    "A creature with menace can't be blocked except by two or more creatures."],
+  [["piu |due |tre |multipl|several|two|three", "bloccant|blocc|blocker", "dann|assegn|divid|damage|assign"], ["510.1c", "510.1d", "702.19b"],
+    "Il danno si divide come vuoi tra le creature bloccanti (non esiste più l'ordine di assegnazione del danno). Per far passare danno al giocatore con travolgere devi prima assegnare danno letale a tutti i bloccanti.",
+    "Divide the damage however you like among the blockers (there's no damage assignment order anymore). To trample over, you must first assign lethal damage to every blocker."],
+  [["pila|stack", "ordine|prima|risolv|chi|quale|order|first|resolve"], ["405.5", "117.4", "608.1"],
+    "La pila si risolve dall'alto: l'ultima magia o abilità aggiunta si risolve per prima, e solo quando tutti i giocatori passano la priorità in successione senza fare nulla. Dopo ogni risoluzione il giocatore attivo riceve di nuovo la priorità.",
+    "The stack resolves top-down: the last spell or ability added resolves first, once all players pass in succession. After each resolution the active player gets priority again."],
+  [["abilita di mana|mana ability|mana abilit|rispond.*mana|mana.*rispond"], ["605.3b", "605.3a"],
+    "Le abilità di mana non usano la pila: si risolvono subito e non si può rispondere loro né neutralizzarle.",
+    "Mana abilities don't use the stack: they resolve immediately and can't be responded to or countered."],
+  [["terr[ae]|land", "quant|due|seconda|piu di una|per turno|one|two|second|per turn"], ["305.2", "305.1"],
+    "Normalmente puoi giocare una sola terra per turno, nella tua fase principale con la pila vuota (salvo effetti che lo aumentano). Mettere una terra sul campo con un effetto non conta come giocarla.",
+    "You can normally play one land per turn, in your main phase with an empty stack (unless effects allow more). Putting a land onto the battlefield with an effect isn't playing it."],
+  [["sostituzion|replacement|invece|instead", "due|piu|ordine|quale|chi sceglie|prima|entramb|both|two|order|which"], ["616.1", "616.1e"],
+    "Se più effetti di sostituzione vogliono modificare lo stesso evento, il controllore dell'oggetto interessato (o il giocatore interessato) sceglie quale applicare per primo; poi si ricontrollano gli altri sull'evento modificato.",
+    "If several replacement effects would modify the same event, the affected object's controller (or the affected player) chooses one to apply, then the rest are rechecked against the modified event."],
+  [["planeswalker", "attacc|dann|attack|damage"], ["506.3", "508.1b", "120.3c", "704.5i"],
+    "I planeswalker si attaccano direttamente, scegliendolo quando dichiari gli attaccanti. Il danno inflitto a un planeswalker rimuove altrettanti segnalini fedeltà; con fedeltà 0 va nel cimitero.",
+    "Planeswalkers are attacked directly (chosen when declaring attackers). Damage to a planeswalker removes that many loyalty counters; at 0 loyalty it goes to the graveyard."],
+  [["fedelta|loyalty|planeswalker", "quante volte|due volte|una volta|piu abilita|seconda|turno|once|twice|per turn"], ["606.3"],
+    "Puoi attivare un'abilità di fedeltà di ogni planeswalker una sola volta per turno, solo quando potresti lanciare una stregoneria (tua fase principale, pila vuota).",
+    "You can activate one loyalty ability of each planeswalker once per turn, only at sorcery speed."],
+  [["equipaggiament|equipment|aura", "muor|mort|lascia|esce|distrutt|rimoss|cosa succede|dies|leaves|destroyed"], ["704.5n", "704.5m"],
+    "Se la creatura lascia il campo di battaglia, l'Equipaggiamento resta sul campo non assegnato (puoi riequipaggiarlo); l'Aura invece va nel cimitero del suo proprietario.",
+    "If the creature leaves, Equipment stays on the battlefield unattached (you can re-equip it); an Aura goes to its owner's graveyard."],
+  [["protezion|protection"], ["702.16b", "702.16c", "702.16d", "702.16e", "702.16f"],
+    "Protezione da [qualità]: non può essere bersagliato, incantato o equipaggiato, né bloccato da ciò che ha quella qualità, e il danno da fonti con quella qualità viene prevenuto. Non ferma gli effetti senza bersaglio (es. «distruggi tutte le creature»).",
+    "Protection from [quality]: can't be targeted, enchanted/equipped, or blocked by things with that quality, and damage from such sources is prevented. It doesn't stop untargeted effects (e.g. \"destroy all creatures\")."],
+  [["copi|copy", "lanciat|lancia|cast|tempesta|storm|ogni volta che lanci|innesc|trigger"], ["707.10", "707.10c"],
+    "Una copia di una magia non è «lanciata»: non fa innescare le abilità «ogni volta che lanci» e non conta per tempesta. Mantiene le scelte dell'originale (modi, X, costi pagati) e spesso puoi sceglierle nuovi bersagli.",
+    "A copy of a spell isn't \"cast\": it doesn't trigger \"whenever you cast\" and doesn't count for storm. It keeps the original's choices (modes, X, costs paid) and you can often choose new targets."],
+  [["senza pagare|gratis|gratuit|cascata|cascade|scoprire|discover|without paying|free", "\\bx\\b"], ["107.3b"],
+    "Se lanci una magia senza pagare il suo costo di mana, X vale 0.",
+    "If you cast a spell without paying its mana cost, X is 0."],
+  [["riduz|riduc|cost[ao] (di )?meno|reduc|cheaper|less"], ["601.2f", "118.7"],
+    "Il costo totale si calcola così: costo di mana (o alternativo) più aumenti, meno riduzioni. Una riduzione di mana generico non può ridurre i simboli colorati.",
+    "Total cost = mana (or alternative) cost plus increases minus reductions. A generic reduction can't reduce colored symbols."],
+  [["rispond|in risposta|respond", "uccid|distrugg|rimuov|esili|kill|destroy|remove|fonte|source", "abilit"], ["113.7a"],
+    "Una volta attivata o innescata, l'abilità esiste in pila indipendentemente dalla sua fonte: eliminare la fonte non la ferma (usa le ultime informazioni conosciute della fonte).",
+    "Once activated or triggered, an ability exists on the stack independently of its source: removing the source doesn't stop it (it uses last known information)."],
+  [["sacrific|costo|cost", "rispond|in risposta|respond|prima che"], ["601.2h", "602.2b", "117.1"],
+    "I costi si pagano mentre lanci la magia o attivi l'abilità, quindi non si può rispondere al loro pagamento: per esempio, la creatura sacrificata come costo è già nel cimitero quando puoi rispondere.",
+    "Costs are paid while casting or activating, so you can't respond to paying them: a creature sacrificed as a cost is already gone when you can respond."],
+  [["esili.*torna|torna.*esili|flicker|blink|rimbalz|nuovo oggetto|segnalini (restano|spariscono)|perde (i )?segnalini|new object"], ["400.7"],
+    "Un oggetto che cambia zona diventa un oggetto nuovo, senza memoria del precedente: perde segnalini, Aure, danno ed effetti, e torna come una creatura «appena entrata».",
+    "An object that changes zones becomes a new object with no memory of its past: counters, Auras, damage and effects are gone."],
+  [["salvaguard|ward"], ["702.21a", "702.21b"],
+    "Salvaguardia si innesca quando il permanente diventa bersaglio di una magia o abilità di un avversario: se quel giocatore non paga il costo, la magia o abilità viene neutralizzata. Non si innesca per le tue magie.",
+    "Ward triggers when the permanent becomes the target of an opponent's spell or ability: unless they pay the cost, it's countered. Your own spells don't trigger it."],
+  [["identita|colori del (mazzo|comandante)|color identity|che carte posso|posso mettere nel mazzo"], ["903.4", "903.5c"],
+    "Nel mazzo Commander ogni carta deve avere un'identità di colore inclusa in quella del comandante. L'identità comprende i simboli di mana nel costo e nel testo delle regole (non nel testo di richiamo), l'indicatore di colore e la faccia posteriore delle carte bifronte.",
+    "In Commander every card's color identity must be within the commander's. It includes mana symbols in cost and rules text (not reminder text), color indicators and back faces."],
+  [["ibrid|hybrid|phyrexian|phyrexiano"], ["107.4e", "107.4f"],
+    "Un simbolo ibrido si paga con uno qualsiasi dei due tipi di mana indicati. Un simbolo di mana phyrexiano si paga con un mana di quel colore oppure con 2 punti vita. Entrambi contano come simboli colorati.",
+    "A hybrid symbol can be paid with either of its components. A Phyrexian symbol can be paid with that color or 2 life. Both are colored symbols."],
+  [["a faccia in giu|faccia in giu|metamorfosi|morph|manifest|travestiment|disguise|celar|cloak|face.?down"], ["708.3", "702.37e", "708.2a"],
+    "Una creatura a faccia in giù è una 2/2 senza nome, testo, tipo e costo. Entra a faccia in giù, quindi le sue abilità di ingresso non si innescano; girarla a faccia in su (se ha metamorfosi/travestimento) è un'azione speciale che non usa la pila e non la fa «entrare».",
+    "A face-down creature is a 2/2 with no name, text, types or cost. Its ETB abilities don't trigger; turning it face up (morph/disguise) is a special action that doesn't use the stack and doesn't make it \"enter\"."],
+  [["insieme|stesso momento|contempora|tutte le creature|distrugg[ie] tutt|wrath|simultaneously|at the same time", "muor|mort|lascia|dies|leave"], ["603.10a", "603.6c"],
+    "Le abilità «quando muore/lascia il campo di battaglia» guardano indietro nel tempo: vedono tutti i permanenti che lasciano il campo insieme a loro. Se più creature muoiono insieme, ognuna vede morire anche le altre.",
+    "Leaves-the-battlefield triggers look back in time: they see everything that left at the same time. Creatures dying together all see each other die."],
+  [["turni? extra|extra turn|turno aggiuntivo|altro turno"], ["500.7"],
+    "I turni extra vengono aggiunti subito dopo il turno indicato; se ce ne sono diversi, si gioca per primo quello creato per ultimo.",
+    "Extra turns are added right after the specified turn; with several, the most recently created one is taken first."],
+  [["legame vitale|lifelink"], ["702.15b", "702.15e", "120.3f"],
+    "Legame vitale: il danno inflitto da quella fonte (anche non da combattimento) fa guadagnare altrettanti punti vita al suo controllore, nello stesso momento del danno. Più fonti con legame vitale causano guadagni di vita separati.",
+    "Lifelink: damage dealt by that source (combat or not) gains its controller that much life, at the same time as the damage. Multiple lifelink sources are separate life-gain events."],
+  [["tocco letale|deathtouch"], ["702.2b", "702.2c", "702.2d"],
+    "Qualsiasi quantità di danno (anche 1, anche non da combattimento, es. lottare) inflitta da una fonte con tocco letale distrugge la creatura, come azione generata dallo stato.",
+    "Any amount of damage (even 1, even noncombat, e.g. fight) from a deathtouch source destroys the creature as a state-based action."],
+  [["attacco improvviso|doppio attacco|first strike|double strike"], ["702.7b", "702.4b", "510.4"],
+    "Se qualcuno ha attacco improvviso o doppio attacco ci sono due sottofasi di danno: nella prima infliggono danno solo le creature con attacco improvviso o doppio attacco, nella seconda tutte le altre ancora in combattimento più quelle con doppio attacco.",
+    "With first strike or double strike there are two combat damage steps: first only first/double strikers deal damage, then all others still in combat plus double strikers."],
+  [["aizz|goad"], ["701.15a", "701.15b"],
+    "Una creatura aizzata deve attaccare ogni combattimento, se possibile, e deve attaccare un giocatore diverso da chi l'ha aizzata, se possibile, fino al turno successivo di quel giocatore.",
+    "A goaded creature must attack each combat if able, and attack a player other than the goader if able, until the goader's next turn."],
+  [["monarca|monarch"], ["725.2", "725.3"],
+    "Il monarca pesca una carta all'inizio della sua sottofase finale. Se una creatura infligge danno da combattimento al monarca, il controllore di quella creatura diventa il monarca.",
+    "The monarch draws a card at the beginning of their end step. Dealing combat damage to the monarch makes the creature's controller the monarch."],
+  [["iniziativa|initiative|sottocitta|undercity"], ["726.2"],
+    "Chi ha l'iniziativa si avventura nella Sottocittà quando la prende e all'inizio del proprio mantenimento. Se delle creature infliggono danno da combattimento a chi ha l'iniziativa, il loro controllore la prende.",
+    "The initiative holder ventures into Undercity when they take it and at the beginning of their upkeep. Combat damage to them steals it."],
+  [["giorno|notte|day|night"], ["731.2", "731.2a", "731.2b"],
+    "Nella sottofase di STAP: se è giorno e il giocatore attivo del turno precedente non ha lanciato magie, diventa notte; se è notte e ne ha lanciate due o più, diventa giorno.",
+    "During the untap step: if it's day and last turn's active player cast no spells, it becomes night; if it's night and they cast two or more, it becomes day."],
+  [["mutar|mutate|mutaz"], ["702.140c", "702.140e"],
+    "Una magia che muta, se il bersaglio è ancora legale, si fonde con la creatura (sopra o sotto, a tua scelta) e non «entra». La creatura risultante ha le caratteristiche della carta in cima e tutte le abilità di tutte le carte.",
+    "A mutating spell with a legal target merges with the creature (over or under) and doesn't \"enter\". It has the top card's characteristics and every card's abilities."],
+  [["concede|arrend|abbandon(o|are) la partita"], ["104.3a"],
+    "Un giocatore può concedere in qualsiasi momento: lascia subito la partita e la perde.",
+    "A player can concede at any time; they leave the game immediately and lose."],
+  [["infinit|loop|ciclo (infinito|obbligatorio)|all'infinito"], ["732.4", "104.4b", "732.2a"],
+    "Se un ciclo contiene solo azioni obbligatorie, la partita è un pareggio. Se qualcuno può interromperlo con una scelta facoltativa, deve indicare quante volte ripeterlo (scorciatoia) e poi fermarsi.",
+    "A loop of only mandatory actions is a draw. If someone can stop it with an optional choice, they state how many times to repeat it (shortcut) and then stop."],
+  [["prolifer"], ["701.34a"],
+    "Proliferare: scegli un qualsiasi numero di permanenti e/o giocatori che hanno segnalini e dai a ciascuno un segnalino in più di ogni tipo che ha già.",
+    "Proliferate: choose any number of permanents and/or players with counters and give each one more of each kind it already has."],
+  [["profetizz|scry|sorvegli|surveil"], ["701.22a", "701.25a"],
+    "Profetizzare N: guardi le prime N carte e ne metti quante vuoi in fondo, le altre in cima in qualsiasi ordine. Sorvegliare N: lo stesso, ma quelle che scarti vanno nel cimitero.",
+    "Scry N: look at the top N, put any number on the bottom and the rest on top in any order. Surveil N: same, but the ones you remove go to the graveyard."],
+  [["cerc|passare in rassegna|search", "trovar|non trov|devo|obbligat|find|must"], ["701.23b"],
+    "Se cerchi in una zona nascosta (es. il grimorio) una carta con una certa qualità, puoi anche non trovarla, anche se c'è.",
+    "When searching a hidden zone for a card with a stated quality, you may choose not to find it even if it's there."],
+  [["lott|fight"], ["701.14a"],
+    "Lottare: ognuna delle due creature infligge all'altra danno pari alla propria forza. Non è danno da combattimento.",
+    "Fight: each creature deals damage equal to its power to the other. It isn't combat damage."],
+  [["rigener|regenerat"], ["701.19a"],
+    "Rigenerare crea uno «scudo» per il turno: la prossima volta che il permanente verrebbe distrutto, invece viene TAPpato, rimosso dal combattimento e perde tutto il danno. Non salva da sacrificio, costituzione 0 o effetti che dicono «non può essere rigenerato».",
+    "Regeneration sets up a shield for the turn: next time it would be destroyed, instead tap it, remove it from combat and remove all damage. It doesn't stop sacrifice, 0 toughness or \"can't be regenerated\"."],
+  [["simultane|stesso momento|contempora|insieme", "dann|damage|muoion|mort"], ["510.2"],
+    "Tutto il danno da combattimento della stessa sottofase viene inflitto simultaneamente: due creature che si bloccano a vicenda si infliggono danno nello stesso momento, e nessuno può rispondere in mezzo.",
+    "All combat damage in a step is dealt simultaneously, so two creatures fighting in combat damage each other at the same time; nobody can act in between."],
+  [["two-headed|2hg|gigante a due teste|due teste"], ["810.4", "810.8d", "810.9"],
+    "Two-Headed Giant: ogni squadra ha 30 punti vita condivisi e perde con 15 segnalini veleno. Danno e perdita di vita si applicano a ciascun giocatore ma vengono sottratti al totale condiviso.",
+    "Two-Headed Giant: each team shares 30 life and loses at 15 poison. Damage and life loss happen to each player but come off the shared total."],
+];
+
+const CASE_RX = new Map();
+function matchCases(q) {
+  const s = " " + norm(q).replace(/[^a-z0-9+\/'{}\- ]+/g, " ").replace(/\s+/g, " ") + " ";
+  const rx = p => { if (!CASE_RX.has(p)) CASE_RX.set(p, new RegExp(p)); return CASE_RX.get(p); };
+  return CASES.map(c => ({ c, ok: c[0].every(p => rx(p).test(s)), sc: c[0].length * 100 + c[0].join("").length }))
+    .filter(x => x.ok).sort((a, b) => b.sc - a.sc).slice(0, 2)
+    .map(({ c }) => ({ ids: c[1].filter(id => CR.byId[id]), it: c[2], en: c[3] })).filter(x => x.ids.length);
+}
 function search(q, excluded) {
   const it = interpret(q, excluded || new Set());
   const active = it.concepts.filter(c => !c.off);
@@ -10295,7 +10521,7 @@ function search(q, excluded) {
   for (const x of res) { const g = x.d.r.parent || x.d.r.id, n = per.get(g) || 0; if (n >= 3) continue; per.set(g, n + 1); top.push(x); if (top.length === 10) break; }
   const gloss = [];
   for (const c of active.filter(c => c.w >= 1.5)) { const g = CR.glossary.find(g => keyOf(g.term) === c.st.join(" ")); if (g && !gloss.includes(g)) gloss.push(g); }
-  return { it, top, gloss: gloss.slice(0, 3), total: res.length };
+  return { it, top, gloss: gloss.slice(0, 3), total: res.length, cases: matchCases(q) };
 }
 
 /* regole usate dal segnavita e dagli argomenti, trovate per contenuto (i numeri possono cambiare) */
@@ -10348,7 +10574,7 @@ function crumbOf(r) {
    Partita
    ============================================================ */
 const COLORS = ["U", "R", "G", "B", "W", "M", "C"];
-const pcVars = c => `--p1:var(--${c}1);--p2:var(--${c}2);--pt:${c === "W" ? "var(--Wt)" : "#fff"}`;
+const pcVars = c => `--p1:var(--${c}1);--p2:var(--${c}2);--pt:${c === "W" ? "var(--Wt)" : c === "M" ? "var(--Mt)" : "#fff"}`;
 const FORMATS = {
   standard: { life: 20, n: 2, cmd: false, poison: 10 },
   commander: { life: 40, n: 4, cmd: true, poison: 10 },
@@ -10492,7 +10718,7 @@ function placeHub() {
   hub.style.left = x + "px"; hub.style.top = y + "px";
   const ap = game.players[game.active];
   hub.style.setProperty("--hubc", n > 1 && ap ? `var(--${ap.color}1)` : "var(--brass)");
-  $("hubt").innerHTML = n > 1 ? `<small>${settings.lang === "it" ? "TURNO" : "TURN"}</small>${game.turn}` : raw("gear").replace("<svg", '<svg class="i"');
+  $("hubt").innerHTML = raw("d20").replace("<svg", '<svg class="i l"');
   $("hub").setAttribute("aria-label", t("menu") + (n > 1 ? " · " + t("turn", { n: game.turn }) : ""));
   const dn = $("hubdn"); dn.hidden = !game.day; if (game.day) dn.innerHTML = raw(game.day === "day" ? "sun" : "moon");
 }
@@ -10668,16 +10894,26 @@ function renderRulesBody(anim) {
   if (rulesState.tab === "gloss") return renderGloss();
   if (rulesState.tab === "saved") { const ids = store.get("saved", []).filter(id => CR.byId[id]); out.innerHTML = ids.length ? `<div class="res">${ids.map(id => card(CR.byId[id], null, false)).join("")}</div>` : `<div class="empty">${t("noSaved")}</div>`; return; }
   if (!q) { out.innerHTML = homeHTML(); return; }
-  const { it, top, gloss, total } = search(q, rulesState.excluded);
+  const { it, top, gloss, total, cases } = search(q, rulesState.excluded);
   const hl = hlSets(it); rulesState.hl = hl;
   let h = "";
   if (it.concepts.length || it.unknown.length) h += `<div class="sec" style="gap:8px"><h3 class="lbl">${t("searched")}</h3><div class="terms">` +
     it.concepts.map(c => { const from = c.labels.filter(l => norm(l) !== norm(c.en));
-      return `<button type="button" class="term${c.off ? " off" : ""}" data-act="term" data-key="${esc(c.key)}" aria-pressed="${!c.off}" title="${esc((c.off ? t("restoreTerm") : t("removeTerm")).replace("{t}", c.en))}"><span><b>${esc(c.en)}</b>${from.length ? ` <small>· ${esc(from.join(", "))}</small>` : ""}</span><span class="x" aria-hidden="true">${c.off ? "+" : "×"}</span></button>`; }).join("") +
+      return `<button type="button" class="term${c.off ? " off" : ""}" data-act="term" data-key="${esc(c.key)}" aria-pressed="${!c.off}" title="${esc((c.off ? t("restoreTerm") : t("removeTerm")).replace("{t}", c.en))}"><span>${settings.lang === "it" && from.length ? `<b>${esc(from.join(", "))}</b> <small>· ${esc(c.en)}</small>` : `<b>${esc(c.en)}</b>${from.length ? ` <small>· ${esc(from.join(", "))}</small>` : ""}`}</span><span class="x" aria-hidden="true">${c.off ? "+" : "×"}</span></button>`; }).join("") +
     (it.unknown.length ? `<span class="term unk">${t("ignored")}: ${esc(it.unknown.slice(0, 8).join(", "))}</span>` : "") + `</div></div>`;
   if (it.ruleIds.length) h += `<div class="res"><h3 class="lbl">${t("asked")}</h3>${it.ruleIds.map(id => CR.byId[id] ? card(CR.byId[id], hl, true) : `<button type="button" class="rc" data-act="open-rule" data-id="${id}"><div class="hd"><span class="num">${id}.</span><b>${esc(secTitle(id))}</b></div><span class="crumb">${t("rules", { n: CR.sections[id].rules.length })}</span></button>`).join("")}</div>`;
-  if (gloss.length) h += `<div class="gbox"><h3 class="lbl" style="color:var(--brass)">${t("gloss")}</h3><dl>${gloss.map(g => { const x = glossOf(g); return `<dt>${esc(x.term)}${x.en ? `<small>${esc(x.en)}</small>` : ""}</dt><dd>${richText(x.def)}</dd>`; }).join("")}</dl></div>`;
+  const shown = new Set();
+  for (const c of cases) {
+    c.ids.forEach(id => shown.add(id));
+    h += `<div class="ans"><h3 class="lbl">${t("answer")}</h3><p>${richText(settings.lang === "en" ? c.en : c.it)}</p><div class="refs">${c.ids.map(id => `<button type="button" class="ref" data-act="open-rule" data-id="${id}">${id}</button>`).join("")}</div></div>`;
+  }
+  if (cases.length) h += `<div class="res">${card(CR.byId[cases[0].ids[0]], hl, true, t("decides"))}</div>`;
+  if (gloss.length && !cases.length) h += `<div class="gbox"><h3 class="lbl" style="color:var(--brass)">${t("gloss")}</h3><dl>${gloss.map(g => { const x = glossOf(g); return `<dt>${esc(x.term)}${x.en ? `<small>${esc(x.en)}</small>` : ""}</dt><dd>${richText(x.def)}</dd>`; }).join("")}</dl></div>`;
   if (top.length) {
+    if (cases.length) { const rest = top.filter(x => !shown.has(x.d.r.id)); const extra = cases.flatMap(c => c.ids).slice(1).map(id => CR.byId[id]);
+      h += `<div class="res"><h3 class="lbl">${t("related")}</h3>${extra.map(r => card(r, hl, false)).join("")}${rest.slice(0, 6).map(x => card(x.d.r, hl, false)).join("")}</div>`;
+      if (trOn()) h += `<p class="tnote">${icon("info")}${t("trNote")}</p>`;
+      out.innerHTML = h; out.classList.toggle("stag", !!anim); return; }
     const first = it.ruleIds.length ? 0 : 1;
     if (first) h += `<div class="res">${card(top[0].d.r, hl, true, t("best"))}</div>`;
     if (top.length > first) h += `<div class="res"><h3 class="lbl">${t("related")} · ${t("ofN", { n: top.length, t: total })}</h3>${top.slice(first).map(x => card(x.d.r, hl, false)).join("")}</div>`;

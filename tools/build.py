@@ -91,6 +91,7 @@ def main():
     for k, v in ICONS.items(): page = page.replace(k, v)
     js = json.dumps(tr, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     page = page.replace("@@RULES@@", text).replace("@@TRANSLATION@@", js)
+    page = page.replace("/*@@CASES@@*/", (ROOT / "src/cases.js").read_text(encoding="utf-8"))
     print(f"regole tradotte: {len(tr['r'])}/{len(rules)} · glossario: {len(tr['g'])}/{len(gloss)} · sezioni: {len(tr['s'])}")
     if "--artifact" in sys.argv:
         out = pathlib.Path(sys.argv[sys.argv.index("--artifact") + 1]); out.write_text(page, encoding="utf-8"); print("artifact:", out)
