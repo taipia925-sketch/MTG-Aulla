@@ -1,0 +1,161 @@
+@801.9
+Un Equipaggiamento non può equipaggiare un oggetto fuori dal raggio d'influenza del suo controllore, e una Fortificazione non può fortificare un oggetto fuori dal raggio d'influenza del suo controllore. Se un Equipaggiamento o una Fortificazione è assegnato a un permanente illegale, viene staccato da quel permanente ma resta sul campo di battaglia. Questa è un'azione generata dallo stato. Vedi regola 704.
+@801.10
+Magie e abilità non possono influenzare oggetti o giocatori fuori dal raggio d'influenza del loro controllore. Le parti dell'effetto che tentano di influenzare un oggetto o giocatore fuori raggio non fanno nulla. Il resto dell'effetto funziona normalmente.
+Esempio: In una partita a sei giocatori in cui ogni giocatore ha raggio d'influenza 1, Alex lancia Pyroclasm, che dice «Pyroclasm infligge 2 danni a ogni creatura». Pyroclasm infligge 2 danni a ogni creatura controllata da Alex, dal giocatore alla sinistra di Alex e dal giocatore alla destra di Alex. A nessun'altra creatura viene inflitto danno.
+@801.11
+Se una magia o abilità richiede informazioni dalla partita, ottiene solo informazioni provenienti dal raggio d'influenza del suo controllore. Non vede oggetti o eventi fuori dal raggio d'influenza del suo controllore.
+Esempio: In una partita a sei giocatori in cui ogni giocatore ha raggio d'influenza 1, Alex controlla Coat of Arms, che dice «Ogni creatura prende +1/+1 per ogni altra creatura sul campo di battaglia che ha almeno un tipo di creatura in comune con essa». Coat of Arms potenzia le creature di Alex basandosi solo su quali creature sono controllate da Alex, dal giocatore alla sinistra di Alex e dal giocatore alla destra di Alex. Non tiene conto di altre creature.
+Esempio: Nella stessa partita, Rob è seduto alla destra di Alex. Coat of Arms potenzia le creature di Rob basandosi su quali creature sono controllate dai giocatori nel raggio d'influenza di Alex, incluso il giocatore seduto alla sinistra di Alex, che è fuori dal raggio d'influenza di Rob.
+@801.12
+La «regola dei mondi» (vedi regola 704.5k) si applica a un permanente solo se altri permanenti mondo sono nel raggio d'influenza del suo controllore.
+@801.13
+Gli effetti di sostituzione e di prevenzione attendono che avvenga un particolare evento e poi sostituiscono completamente o parzialmente quell'evento. L'opzione del raggio d'influenza limitato può far sì che l'evento modificato contenga istruzioni che non possono essere eseguite, nel qual caso il giocatore ignora semplicemente le istruzioni impossibili. Vedi regola 614, «Effetti di sostituzione», e regola 615, «Effetti di prevenzione».
+@801.13a
+Se un effetto di sostituzione tenta di far influenzare a una magia o abilità un oggetto o giocatore fuori dal raggio d'influenza del suo controllore, quella parte dell'evento non fa nulla.
+Esempio: Alex lancia Lava Axe («Lava Axe infligge 5 danni a un giocatore o planeswalker bersaglio») bersagliando Rob. In risposta, Rob lancia Captain's Maneuver («I prossimi X danni che verrebbero inflitti a una creatura, un planeswalker o un giocatore bersaglio in questo turno vengono invece inflitti a un'altra creatura, planeswalker o giocatore bersaglio») con X pari a 3, bersagliando Carissa. Carissa non è nel raggio d'influenza di Alex. Quando Lava Axe si risolve, infligge 2 danni a Rob e nessun danno a Carissa.
+@801.13b
+Se una magia o abilità crea un effetto che previene il danno che verrebbe inflitto da una fonte, può influenzare solo le fonti nel raggio d'influenza del controllore della magia o abilità. Se una magia o abilità crea un effetto che previene il danno che verrebbe inflitto a un permanente o giocatore, può influenzare solo i permanenti e i giocatori nel raggio d'influenza del controllore della magia o abilità. Se una magia o abilità crea un effetto che previene il danno, ma non è specificata né la fonte né il destinatario del danno, previene il danno solo se sia la fonte sia il destinatario di quel danno sono nel raggio d'influenza del controllore della magia o abilità.
+Esempio: Rob è nel raggio d'influenza di Alex, ma Carissa no. Alex controlla un incantesimo che dice «Previeni tutto il danno che verrebbe inflitto dalle creature». Carissa attacca Rob con una creatura. La creatura infligge danno da combattimento a Rob.
+Esempio: Rob è nel raggio d'influenza di Alex, ma Carissa no. Carissa lancia Lightning Blast («Lightning Blast infligge 4 danni a qualsiasi bersaglio») bersagliando Rob. In risposta, Alex lancia Mending Hands («Previeni i prossimi 4 danni che verrebbero inflitti a qualsiasi bersaglio in questo turno») bersagliando Rob. Il danno a Rob viene prevenuto.
+Esempio: Rob è nel raggio d'influenza di Alex, ma Carissa no. Carissa attacca Rob con una creatura, e Rob blocca con una creatura. Alex lancia Fog («Previeni tutto il danno da combattimento che verrebbe inflitto in questo turno»). Le creature di Carissa e di Rob si infliggono a vicenda danno da combattimento.
+@801.14
+Se un effetto stabilisce che un giocatore vince la partita, invece tutti gli avversari di quel giocatore nel suo raggio d'influenza perdono la partita.
+@801.15
+Se l'effetto di una magia o abilità stabilisce che la partita è un pareggio, la partita è un pareggio per il controllore di quella magia o abilità e per tutti i giocatori nel raggio d'influenza di quel giocatore. Questi lasciano la partita. Tutti i giocatori rimanenti continuano a giocare la partita.
+@801.16
+Se in qualche modo la partita entra in un «ciclo» di azioni obbligatorie, ripetendo una sequenza di eventi senza alcun modo di fermarsi, la partita è un pareggio per ogni giocatore che controlla un oggetto coinvolto in quel ciclo, così come per ogni giocatore nel raggio d'influenza di uno qualsiasi di quei giocatori. Questi lasciano la partita. Tutti i giocatori rimanenti continuano a giocare la partita.
+@801.17
+Gli effetti che fanno ricominciare la partita (vedi regola 727) sono esenti dall'opzione del raggio d'influenza limitato. Tutti i giocatori della partita saranno coinvolti nella nuova partita.
+@801.18
+Nelle partite Planechase multigiocatore diverse dalle partite Grand Melee, le carte piano e le carte fenomeno sono esenti dall'opzione del raggio d'influenza limitato. Le loro abilità, e gli effetti di quelle abilità, influenzano tutti gli oggetti e i giocatori applicabili della partita. Vedi regola 901, «Planechase».
+@802
+Opzione di attacco a più giocatori
+@802.1
+Alcune partite multigiocatore permettono al giocatore attivo di attaccare più altri giocatori. Se viene usata questa opzione, un giocatore può anche scegliere di attaccare un solo giocatore durante un particolare combattimento.
+@802.2
+All'inizio della fase di combattimento, il giocatore attaccante non sceglie un avversario che diventi il giocatore in difesa. Invece, tutti gli avversari del giocatore attaccante sono giocatori in difesa durante la fase di combattimento.
+@802.2a
+Qualsiasi regola, oggetto o effetto che fa riferimento a un «giocatore in difesa» fa riferimento a uno specifico giocatore in difesa, non a tutti i giocatori in difesa. Se un'abilità di una creatura attaccante fa riferimento a un giocatore in difesa, o una magia o abilità fa riferimento sia a una creatura attaccante sia a un giocatore in difesa, allora, salvo diversa indicazione, il giocatore in difesa a cui si riferisce è il giocatore che quella creatura sta attaccando, il controllore del planeswalker che quella creatura sta attaccando o il protettore della battaglia che quel giocatore sta attaccando. Se quella creatura non sta più attaccando, il giocatore in difesa a cui si riferisce è il giocatore che quella creatura stava attaccando prima di essere rimossa dal combattimento, il controllore del planeswalker che quella creatura stava attaccando prima di essere rimossa dal combattimento o il protettore della battaglia che quel giocatore stava attaccando prima di essere rimossa dal combattimento. Se una magia o abilità potrebbe applicarsi a più creature attaccanti, il giocatore in difesa appropriato viene determinato individualmente per ciascuna di quelle creature attaccanti. Se ci sono più giocatori in difesa che potrebbero essere scelti, il controllore della magia o abilità ne sceglie uno.
+Esempio: Rob attacca Alex con Runeclaw Bear e attacca Carissa con una creatura con passamontagne. Il fatto che la creatura con passamontagne possa essere bloccata dipende solo dal fatto che Carissa controlli una Montagna.
+@802.3
+Mentre il giocatore attaccante dichiara ogni creatura attaccante, sceglie un giocatore in difesa, un planeswalker controllato da un giocatore in difesa o una battaglia protetta da un giocatore in difesa da farle attaccare. Vedi regola 508, «Sottofase di dichiarazione degli attaccanti».
+@802.3a
+Le restrizioni e i requisiti che non si applicano all'attacco a un giocatore specifico vengono valutati in base all'intero gruppo di creature attaccanti. Le restrizioni e i requisiti che si applicano all'attacco a un giocatore specifico si applicano solo alle creature che attaccano quel giocatore. L'intero gruppo di creature attaccanti deve comunque essere legale. Vedi regola 508.1.
+@802.3b
+Le creature in un gruppo non possono attaccare giocatori diversi. Vedi regola 702.22, «Unione».
+@802.4
+Se viene attaccato più di un giocatore, o più giocatori controllano un planeswalker attaccato o proteggono una battaglia attaccata, ogni giocatore in difesa nell'ordine APNAP dichiara i bloccanti all'inizio della sottofase di dichiarazione dei bloccanti. (Vedi regola 101.4 e regola 509, «Sottofase di dichiarazione dei bloccanti».) Il primo giocatore in difesa dichiara tutti i suoi blocchi, poi il secondo giocatore in difesa, e così via.
+@802.4a
+Un giocatore in difesa può bloccare solo con creature che controlla. Quelle creature possono bloccare solo creature che attaccano quel giocatore, un planeswalker che quel giocatore controlla o una battaglia che quel giocatore protegge.
+@802.4b
+Nello stabilire se i blocchi di un giocatore in difesa sono legali, ignora le creature che attaccano altri giocatori e le creature bloccanti controllate da altri giocatori.
+@802.5
+Il danno da combattimento viene assegnato nell'ordine APNAP. A parte questo, la sottofase di danno da combattimento procede esattamente come in una partita a due giocatori. Vedi regola 510, «Sottofase di danno da combattimento».
+@803
+Opzioni di attacco a sinistra e attacco a destra
+@803.1
+Alcune partite multigiocatore usano le regole facoltative di attacco a sinistra o attacco a destra.
+@803.1a
+Se viene usata l'opzione di attacco a sinistra, un giocatore può attaccare solo un avversario seduto immediatamente alla sua sinistra, un planeswalker che quel giocatore controlla o una battaglia che quel giocatore protegge. Se l'avversario più vicino alla sinistra di un giocatore è a più di un posto di distanza, il giocatore non può attaccare.
+@803.1b
+Se viene usata l'opzione di attacco a destra, un giocatore può attaccare solo un avversario seduto immediatamente alla sua destra, un planeswalker che quel giocatore controlla o una battaglia che quel giocatore protegge. Se l'avversario più vicino alla destra di un giocatore è a più di un posto di distanza, il giocatore non può attaccare.
+@804
+Opzione di schieramento delle creature
+@804.1
+La variante Imperatore usa sempre l'opzione di schieramento delle creature, e può essere usata in altre varianti che permettono ai giocatori di competere in squadre. I formati multigiocatore in cui i giocatori competono individualmente di solito non usano questa opzione.
+@804.2
+Ogni creatura ha l'abilità «{T}: Un compagno di squadra bersaglio ottiene il controllo di questa creatura. Attiva solo come una stregoneria».
+@805
+Opzione dei turni di squadra condivisi
+@805.1
+Alcune partite multigiocatore tra squadre usano l'opzione dei turni di squadra condivisi. Viene sempre usata nella variante Two-Headed Giant (vedi regola 810) e nella variante casual Archenemy (vedi regola 904). Può essere usata solo se i membri di ciascuna squadra sono seduti in posti adiacenti.
+@805.2
+All'interno di ogni squadra, il giocatore seduto nel posto più a destra dal punto di vista di quella squadra è il giocatore principale. Se i giocatori di una squadra non riescono ad accordarsi su una scelta, come quali creature attaccano o in quale ordine le abilità innescate vengono messe in pila, quella scelta viene fatta dal giocatore principale.
+@805.3
+I metodi descritti nella regola 103.1 vengono usati per stabilire quale squadra giocherà il primo turno. La squadra determinata in questo modo è la squadra iniziale.
+@805.3a
+Il procedimento per gestire i mulligan viene modificato di conseguenza. Prima, ogni giocatore della squadra iniziale, nell'ordine preferito da quella squadra, dichiara se farà mulligan. Poi i giocatori di ogni altra squadra nell'ordine di turno fanno lo stesso. I compagni di squadra possono consultarsi mentre prendono le loro decisioni. Poi tutti i mulligan vengono fatti nello stesso momento. I compagni di squadra possono consultarsi mentre scelgono quali carte, se ce ne sono, mettere in fondo al loro grimorio. Un giocatore può fare mulligan anche dopo che un compagno di squadra ha deciso di tenere la sua mano iniziale. Vedi regola 103.5.
+@805.3b
+Il procedimento per gestire le carte che permettono a un giocatore di iniziare la partita con esse sul campo di battaglia viene modificato di conseguenza. Prima, ogni giocatore della squadra iniziale, nell'ordine preferito da quella squadra, può mettere sul campo di battaglia dalla sua mano iniziale alcune o tutte quelle carte. I compagni di squadra possono consultarsi mentre prendono le loro decisioni. Poi ogni giocatore di ogni altra squadra nell'ordine di turno fa lo stesso.
+@805.4
+Sono le squadre a giocare i turni, invece dei singoli giocatori.
+@805.4a
+La squadra di cui è il turno è la squadra attiva. Ogni altra squadra è una squadra non attiva.
+@805.4b
+Ogni giocatore di una squadra pesca una carta durante la sottofase di acquisizione di quella squadra.
+@805.4c
+Ogni giocatore di una squadra può giocare una terra durante ciascuno dei turni di quella squadra.
+@805.4d
+Un'abilità che si innesca all'inizio di una sottofase o fase può innescarsi più volte se si innesca all'inizio della sottofase o fase «di ogni giocatore» o «di ogni avversario». Queste abilità si innescano una volta per ogni giocatore appropriato se la condizione di innesco, l'effetto o la clausola «se» interposta dell'abilità fa riferimento a «quel giocatore», «quell'avversario» o simili.
+@805.5
+Sono le squadre ad avere la priorità, non i singoli giocatori.
+@805.5a
+Un giocatore può lanciare una magia, attivare un'abilità o compiere un'azione speciale quando la sua squadra ha la priorità.
+@805.5b
+Se una squadra ha la priorità e nessun giocatore di quella squadra desidera fare qualcosa, quella squadra passa. Se tutte le squadre passano in successione (cioè se tutte le squadre passano senza che nessun giocatore compia azioni tra un passaggio e l'altro), l'oggetto in cima alla pila si risolve, poi la squadra attiva riceve la priorità. Se la pila è vuota quando tutte le squadre passano in successione, la fase o sottofase termina e inizia quella successiva.
+@805.6
+La regola dell'ordine Giocatore Attivo, Giocatore Non Attivo (vedi regola 101.4) viene modificata se viene usata l'opzione dei turni di squadra condivisi. Se più squadre dovessero fare scelte e/o compiere azioni nello stesso momento, prima la squadra attiva fa le scelte richieste, poi ogni squadra non attiva nell'ordine di turno fa le scelte richieste. Se più giocatori dovessero fare scelte e/o compiere azioni nello stesso momento, prima ogni giocatore della squadra attiva fa le scelte richieste nell'ordine che preferisce, poi i giocatori di ogni squadra non attiva nell'ordine di turno fanno lo stesso. Una volta fatte tutte le scelte, le azioni avvengono simultaneamente.
+@805.6a
+Se a più di un giocatore viene detto di pescare carte in una partita che usa l'opzione dei turni di squadra condivisi, prima ogni giocatore della squadra attiva, nell'ordine preferito da quella squadra, effettua le sue pescate, poi ogni giocatore di ogni squadra non attiva nell'ordine di turno fa lo stesso.
+@805.7
+Se più abilità innescate si sono innescate dall'ultima volta che una squadra ha ricevuto la priorità, i membri della squadra attiva mettono in pila tutte le abilità innescate controllate da uno qualsiasi di loro nell'ordine che scelgono, poi i membri di ogni squadra non attiva nell'ordine di turno fanno lo stesso.
+@805.8
+Se un effetto dà a un giocatore un turno extra o aggiunge una fase o sottofase al turno di quel giocatore, la squadra di quel giocatore gioca il turno, la fase o la sottofase extra. Se un effetto fa saltare a un giocatore una sottofase, fase o turno, lo fa la squadra di quel giocatore. Se un singolo effetto fa aggiungere o saltare la stessa sottofase, fase o turno a più di un giocatore della stessa squadra, quella squadra aggiunge o salta solo quella sottofase, fase o turno. Se un effetto fa controllare a un giocatore un altro giocatore, il primo giocatore controlla la squadra del giocatore influenzato.
+@805.9
+Qualsiasi abilità che fa riferimento al «giocatore attivo» fa riferimento a uno specifico giocatore attivo, non a tutti i giocatori attivi. Il controllore dell'abilità sceglie a quale si riferisce l'abilità nel momento in cui il suo effetto viene applicato.
+@805.10
+L'opzione dei turni di squadra condivisi usa regole di combattimento diverse dalle altre opzioni multigiocatore.
+@805.10a
+Le creature di ogni squadra attaccano l'altra squadra come gruppo. Durante la fase di combattimento, la squadra attiva è la squadra attaccante e ogni giocatore della squadra attiva è un giocatore attaccante. Allo stesso modo, la squadra non attiva è la squadra in difesa e ogni giocatore della squadra non attiva è un giocatore in difesa.
+@805.10b
+All'inizio della sottofase di dichiarazione degli attaccanti, la squadra attiva dichiara gli attaccanti. Per ogni creatura attaccante, la squadra attaccante annuncia quale giocatore in difesa, planeswalker o battaglia quella creatura sta attaccando. La squadra attiva ha un unico attacco combinato, e quell'insieme di creature attaccanti deve essere legale nel suo complesso. Vedi regola 508.1.
+@805.10c
+Qualsiasi regola, oggetto o effetto che fa riferimento a un «giocatore attaccante» fa riferimento a uno specifico giocatore attaccante, non a tutti i giocatori attaccanti. Se un'abilità di una creatura bloccante fa riferimento a un giocatore attaccante, o una magia o abilità fa riferimento sia a una creatura bloccante sia a un giocatore attaccante, allora, salvo diversa indicazione, il giocatore attaccante a cui si riferisce è il giocatore che controlla la creatura attaccante che quella creatura bloccante sta bloccando. Se una magia o abilità potrebbe applicarsi a più creature bloccanti, il giocatore attaccante appropriato viene determinato individualmente per ciascuna di quelle creature bloccanti. Se ci sono più giocatori attaccanti che potrebbero essere scelti, il controllore della magia o abilità ne sceglie uno.
+@805.10d
+All'inizio della sottofase di dichiarazione dei bloccanti, la squadra in difesa dichiara i bloccanti. Le creature controllate dai giocatori in difesa possono bloccare creature che attaccano qualsiasi giocatore della squadra in difesa, un planeswalker controllato da uno di quei giocatori o una battaglia protetta da uno di quei giocatori. La squadra in difesa ha un unico blocco combinato, e quell'insieme di creature bloccanti deve essere legale nel suo complesso. Vedi regola 509.1.
+@805.10e
+Qualsiasi regola, oggetto o effetto che fa riferimento a un «giocatore in difesa» fa riferimento a uno specifico giocatore in difesa, non a tutti i giocatori in difesa. Se un'abilità di una creatura attaccante fa riferimento a un giocatore in difesa, o una magia o abilità fa riferimento sia a una creatura attaccante sia a un giocatore in difesa, allora, salvo diversa indicazione, il giocatore in difesa a cui si riferisce è il giocatore che quella creatura sta attaccando, il controllore del planeswalker che quella creatura sta attaccando o il protettore della battaglia che quella creatura sta attaccando. Se quella creatura non sta più attaccando, il giocatore in difesa a cui si riferisce è il giocatore che quella creatura stava attaccando prima di essere rimossa dal combattimento, il controllore del planeswalker che quella creatura stava attaccando prima di essere rimossa dal combattimento o il protettore della battaglia che quella creatura stava attaccando prima di essere rimossa dal combattimento. Se una magia o abilità potrebbe applicarsi a più creature attaccanti, il giocatore in difesa appropriato viene determinato individualmente per ciascuna di quelle creature attaccanti. Se ci sono più giocatori in difesa che potrebbero essere scelti, il controllore della magia o abilità ne sceglie uno.
+@805.10f
+All'inizio della sottofase di danno da combattimento, la squadra attiva annuncia come ogni creatura attaccante assegnerà il suo danno da combattimento. Poi la squadra in difesa annuncia come ogni creatura bloccante assegnerà il suo danno da combattimento. Vedi regola 510.1.
+@806
+Variante Tutti contro tutti (Free-for-All)
+@806.1
+Nelle partite multigiocatore Tutti contro tutti, un gruppo di giocatori compete individualmente gli uni contro gli altri.
+@806.2
+Le eventuali opzioni multigiocatore usate vengono stabilite prima dell'inizio della partita. La variante Tutti contro tutti usa le seguenti opzioni predefinite.
+@806.2a
+L'opzione del raggio d'influenza limitato di solito non viene usata nelle partite Tutti contro tutti. Se viene usata, ogni giocatore ha lo stesso raggio d'influenza, stabilito prima dell'inizio della partita. Vedi regola 801, «Opzione del raggio d'influenza limitato».
+@806.2b
+Deve essere usata esattamente una tra le opzioni di attacco a sinistra, attacco a destra e attacco a più giocatori. Vedi regola 803, «Opzioni di attacco a sinistra e attacco a destra», e regola 802, «Opzione di attacco a più giocatori».
+@806.2c
+L'opzione di schieramento delle creature non viene usata nella variante Tutti contro tutti.
+@806.3
+I giocatori vengono fatti sedere intorno al tavolo in ordine casuale.
+@807
+Variante Grand Melee
+@807.1
+La variante Grand Melee è una modifica della variante Tutti contro tutti, in cui un gruppo di giocatori compete individualmente gli uni contro gli altri. Grand Melee viene normalmente usata solo nelle partite iniziate con dieci o più giocatori.
+@807.2
+Le eventuali opzioni multigiocatore usate vengono decise prima dell'inizio della partita. La variante Grand Melee usa le seguenti opzioni predefinite.
+@807.2a
+Ogni giocatore ha raggio d'influenza 1 (vedi regola 801).
+@807.2b
+Viene usata l'opzione di attacco a sinistra (vedi regola 803).
+@807.2c
+Le opzioni di attacco a più giocatori e di schieramento delle creature non vengono usate nella variante Grand Melee.
+@807.3
+I giocatori vengono fatti sedere in ordine casuale.
+@807.4
+La variante Grand Melee permette a più giocatori di giocare i turni nello stesso momento. Dei segnaturno mobili tengono traccia di quali giocatori stanno giocando un turno. Ogni segnaturno rappresenta il turno di un giocatore attivo.
+@807.4a
+C'è un segnaturno per ogni gruppo completo di quattro giocatori nella partita.
+Esempio: Una partita Grand Melee con sedici giocatori ha quattro segnaturno. Una partita con quindici giocatori ha tre segnaturno.
+@807.4b
+Il giocatore iniziale della partita riceve il primo segnaturno. Il giocatore quattro posti alla sua sinistra (il quinto giocatore) prende il secondo segnaturno, e così via finché tutti i segnaturno non sono stati distribuiti. In questo modo a ogni segnaturno viene assegnato un numero. Poi tutti i giocatori con un segnaturno iniziano i loro turni nello stesso momento.
+@807.4c
+Dopo che un giocatore ha terminato il suo turno, quel giocatore passa il segnaturno al giocatore alla sua sinistra. Se un giocatore con un segnaturno lascia la partita durante il suo turno, il giocatore alla sua sinistra prende il segnaturno dopo la fine di quel turno. Se un giocatore con un segnaturno lascia la partita prima dell'inizio del suo turno, il giocatore alla sua sinistra prende immediatamente il segnaturno.
+@807.4d
+Un giocatore che riceve un segnaturno non può iniziare il suo turno se un qualsiasi giocatore nei tre posti alla sua sinistra ha un segnaturno. In tal caso, quel giocatore attende finché il giocatore quattro posti alla sua sinistra non prende l'altro segnaturno.
+@807.4e
+Se un giocatore lascia la partita e questa uscita ridurrebbe il numero di segnaturno nella partita, il segnaturno immediatamente alla destra del giocatore uscito viene designato per la rimozione. Se più di un giocatore lascia la partita simultaneamente, l'uscita di quei giocatori ridurrebbe il numero di segnaturno nella partita e ci sono più segnaturno che potrebbero essere rimossi, viene designato per la rimozione il segnaturno con il numero più basso. Un segnaturno può essere designato per la rimozione più volte.

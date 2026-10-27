@@ -1,0 +1,135 @@
+@731.2a
+Se è giorno e il giocatore attivo del turno precedente non ha lanciato magie durante quel turno, diventa notte. Le partite multigiocatore che usano l'opzione dei turni di squadra condivisi (vedi regola 805) usano una regola modificata: se è giorno e nessun giocatore della squadra attiva del turno precedente ha lanciato una magia durante quel turno, diventa notte.
+@731.2b
+Se è notte e il giocatore attivo del turno precedente ha lanciato due o più magie durante il turno precedente, diventa giorno. Le partite multigiocatore che usano l'opzione dei turni di squadra condivisi (vedi regola 805) usano una regola modificata: se è notte e un qualsiasi giocatore della squadra attiva del turno precedente ha lanciato due o più magie durante quel turno, diventa giorno.
+@731.2c
+Se non è né giorno né notte, questo controllo non avviene e la partita resta senza nessuna delle due designazioni.
+@732
+Usare scorciatoie
+@732.1
+Durante una partita, i giocatori di solito fanno uso di scorciatoie comprese da tutti invece di identificare esplicitamente ogni scelta di gioco (compiere un'azione o passare la priorità) che un giocatore fa.
+@732.1a
+Le regole per usare scorciatoie sono in gran parte informali. Finché ogni giocatore della partita comprende l'intenzione di ciascun altro giocatore, qualsiasi sistema di scorciatoie usino è accettabile.
+@732.1b
+A volte la partita arriva in uno stato in cui un insieme di azioni potrebbe essere ripetuto all'infinito (creando così un «ciclo»). In quel caso, le regole sulle scorciatoie possono essere usate per stabilire quante volte quelle azioni vengono ripetute senza doverle compiere effettivamente, e come il ciclo viene interrotto.
+@732.1c
+I tornei usano una versione modificata delle regole su scorciatoie e cicli. Queste regole sono trattate nelle Regole dei tornei di Magic: The Gathering (che si trovano su WPN.wizards.com/en/rules-documents). Ogni volta che durante un torneo le Regole dei tornei contraddicono queste regole, hanno la precedenza le Regole dei tornei.
+@732.2
+Usare una scorciatoia segue il procedimento seguente.
+@732.2a
+In qualsiasi momento della partita, il giocatore con la priorità può proporre una scorciatoia descrivendo una sequenza di scelte di gioco, per tutti i giocatori, che possono essere fatte legalmente in base allo stato di gioco attuale e ai risultati prevedibili della sequenza di scelte. Questa sequenza può essere una serie di scelte non ripetitiva, un ciclo che si ripete un numero specificato di volte, più cicli o cicli annidati, e può persino estendersi su più turni. Non può includere azioni condizionali, in cui l'esito di un evento di gioco determina l'azione successiva che un giocatore compie. Il punto finale di questa sequenza deve essere un momento in cui un giocatore ha la priorità, anche se non deve necessariamente essere il giocatore che propone la scorciatoia.
+Esempio: Un giocatore controlla una creatura incantata da Presence of Gond, che conferisce alla creatura l'abilità «{T}: Crea una pedina creatura Elfo Guerriero 1/1 verde», e un altro giocatore controlla Intruder Alarm, che dice, tra l'altro, «Ogni volta che entra una creatura, STAPpa tutte le creature». Quando il giocatore ha la priorità, può proporre «Creo un milione di pedine», indicando la sequenza di attivare l'abilità della creatura, tutti i giocatori che passano la priorità, l'abilità della creatura che si risolve e crea una pedina (facendo innescare l'abilità di Intruder Alarm), il controllore di Intruder Alarm che mette in pila quell'abilità innescata, tutti i giocatori che passano la priorità, l'abilità innescata di Intruder Alarm che si risolve, tutti i giocatori che passano la priorità finché il giocatore che propone la scorciatoia non ha la priorità, e la ripetizione di quella sequenza altre 999.999 volte, terminando subito dopo la risoluzione dell'ultima abilità che crea pedine.
+@732.2b
+Ogni altro giocatore, nell'ordine di turno a partire da quello dopo il giocatore che ha proposto la scorciatoia, può accettare la sequenza proposta oppure accorciarla indicando un punto in cui farà una scelta di gioco diversa da quella proposta. (Il giocatore non deve specificare in quel momento quale sarà la nuova scelta.) Quel punto diventa il nuovo punto finale della sequenza proposta.
+Esempio: Il giocatore attivo pesca una carta durante la sua sottofase di acquisizione, poi dice «Vai». Il giocatore non attivo ha in mano Into the Fray (un istantaneo che dice «Una creatura bersaglio attacca in questo turno, se è in grado di farlo») e dice «Vorrei lanciare una magia durante la tua sottofase di inizio combattimento». La scorciatoia attualmente proposta è che tutti i giocatori passino la priorità in ogni occasione durante il turno finché il giocatore non attivo non ha la priorità durante la sottofase di inizio combattimento.
+@732.2c
+Una volta che l'ultimo giocatore ha accettato o accorciato la proposta di scorciatoia, la scorciatoia viene usata. La partita avanza fino all'ultimo punto finale proposto, con tutte le scelte di gioco contenute nella proposta di scorciatoia considerate come fatte. Se la scorciatoia è stata accorciata rispetto alla proposta originale, il giocatore che ora ha la priorità deve fare una scelta di gioco diversa da quella originariamente proposta per quel giocatore.
+@732.3
+A volte un ciclo può essere frammentato, cioè ogni giocatore coinvolto nel ciclo compie un'azione indipendente che porta a raggiungere più volte lo stesso stato di gioco. Se ciò accade, il giocatore attivo (o, se il giocatore attivo non è coinvolto nel ciclo, il primo giocatore nell'ordine di turno che è coinvolto) deve poi fare una scelta di gioco diversa in modo che il ciclo non continui.
+Esempio: In una partita a due giocatori, il giocatore attivo controlla una creatura con l'abilità «{0}: Questa creatura ottiene volare», il giocatore non attivo controlla un permanente con l'abilità «{0}: Una creatura bersaglio perde volare», e nulla nella partita tiene conto di quante volte un'abilità è stata attivata. Diciamo che il giocatore attivo attiva l'abilità della sua creatura, che si risolve, poi la giocatrice non attiva attiva l'abilità del suo permanente bersagliando quella creatura, e si risolve. Ciò riporta la partita a uno stato di gioco in cui si trovava già. Il giocatore attivo deve fare una scelta di gioco diversa (in altre parole, qualsiasi cosa tranne attivare di nuovo l'abilità di quella creatura). La creatura non ha volare. Nota che la giocatrice non attiva avrebbe potuto evitare il ciclo frammentato semplicemente non attivando l'abilità del suo permanente, nel qual caso la creatura avrebbe avuto volare. Il giocatore non attivo ha sempre l'ultima scelta ed è quindi in grado di stabilire se la creatura ha volare.
+@732.4
+Se un ciclo contiene solo azioni obbligatorie, la partita finisce in pareggio. (Vedi regole 104.4b e 104.4f.)
+@732.5
+Nessun giocatore può essere costretto a compiere un'azione che interromperebbe un ciclo, tranne le azioni richieste dagli oggetti coinvolti nel ciclo.
+Esempio: Un giocatore controlla Seal of Cleansing, un incantesimo che dice «Sacrifica Seal of Cleansing: Distruggi un artefatto o un incantesimo bersaglio». Inizia un ciclo obbligatorio che coinvolge un artefatto. Il giocatore non è costretto a sacrificare Seal of Cleansing per distruggere l'artefatto e interrompere il ciclo.
+@732.6
+Se un ciclo contiene un effetto che dice «[A] a meno che [B]», dove [A] e [B] sono ciascuna delle azioni, nessun giocatore può essere costretto a compiere [B] per interrompere il ciclo. Se nessun giocatore sceglie di compiere [B], il ciclo continua come se [A] fosse obbligatoria.
+@733
+Gestire le azioni illegali
+@733.1
+Se un giocatore compie un'azione illegale o inizia a compiere un'azione ma non può completarla legalmente, l'intera azione viene annullata e tutti i pagamenti già effettuati vengono cancellati. Nessuna abilità si innesca e nessun effetto si applica come risultato di un'azione annullata. Se l'azione era il lancio di una magia, la magia torna nella zona da cui proveniva. Ogni giocatore può anche annullare le abilità di mana legali che ha attivato mentre compiva la giocata illegale, a meno che il mana di quelle abilità o di abilità di mana innescate che hanno fatto innescare non sia stato speso per un'altra abilità di mana che non è stata annullata. I giocatori non possono annullare azioni che hanno spostato carte in un grimorio, spostato carte da un grimorio in una zona diversa dalla pila, fatto mescolare un grimorio o fatto rivelare carte da un grimorio.
+@733.2
+Quando si annullano magie e abilità illegali, il giocatore che aveva la priorità la mantiene e può compiere un'altra azione o passare. Il giocatore può ripetere l'azione annullata in modo legale o compiere qualsiasi altra azione consentita dalle regole.
+@#8
+Regole multigiocatore
+@800
+Generale
+@800.1
+Una partita multigiocatore è una partita che inizia con più di due giocatori. Questa sezione contiene regole facoltative aggiuntive che possono essere usate per il gioco multigiocatore.
+@800.2
+Queste regole consistono in una serie di opzioni che possono essere aggiunte a una partita multigiocatore e in diverse varianti di gioco multigiocatore. Una singola partita può usare più opzioni ma una sola variante.
+@800.3
+Molti tornei multigiocatore di Magic hanno regole aggiuntive non incluse qui, comprese le regole di costruzione del mazzo. Vedi le Regole dei tornei di Magic: The Gathering più aggiornate per maggiori informazioni. Si trovano su WPN.wizards.com/en/rules-documents.
+@800.4
+A differenza delle partite a due giocatori, le partite multigiocatore possono continuare dopo che uno o più giocatori hanno lasciato la partita.
+@800.4a
+Quando un giocatore lascia la partita, tutti gli oggetti (vedi regola 109) posseduti da quel giocatore lasciano la partita e terminano tutti gli effetti che danno a quel giocatore il controllo di oggetti o giocatori. Poi, se quel giocatore controllava oggetti in pila non rappresentati da carte, quegli oggetti cessano di esistere. Poi, se ci sono oggetti ancora controllati da quel giocatore, quegli oggetti vengono esiliati. Questa non è un'azione generata dallo stato. Avviene non appena il giocatore lascia la partita. Se il giocatore che ha lasciato la partita aveva la priorità nel momento in cui l'ha lasciata, la priorità passa al giocatore successivo nell'ordine di turno che è ancora nella partita.
+Esempio: Alex lancia Mind Control, un'Aura che dice «Controlli la creatura incantata», sull'Assault Griffin di Bianca. Se Alex lascia la partita, la lascia anche Mind Control, e Assault Griffin torna sotto il controllo di Bianca. Se invece è Bianca a lasciare la partita, la lascia anche Assault Griffin, e Mind Control viene messa nel cimitero di Alex.
+Esempio: Alex lancia Act of Treason, che dice, tra l'altro, «Ottieni il controllo di una creatura bersaglio fino alla fine del turno», bersagliando i Runeclaw Bears di Bianca. Se Alex lascia la partita, l'effetto di cambio di controllo di Act of Treason termina e i Runeclaw Bears tornano sotto il controllo di Bianca.
+Esempio: Alex lancia Bribery, che dice «Passa in rassegna il grimorio di un avversario bersaglio per una carta creatura e metti quella carta sul campo di battaglia sotto il tuo controllo. Poi quel giocatore rimescola il suo grimorio», bersagliando Bianca. Alex mette Serra Angel sul campo di battaglia dal grimorio di Bianca. Se Bianca lascia la partita, anche Serra Angel lascia la partita. Se invece è Alex a lasciare la partita, Serra Angel viene esiliato.
+Esempio: Alex controlla Genesis Chamber, che dice «Ogni volta che entra una creatura non pedina, se Genesis Chamber è STAPpata, il controllore di quella creatura crea una pedina creatura artefatto Myr 1/1 incolore». Se Alex lascia la partita, tutte le pedine Myr di questo tipo entrate nel campo di battaglia sotto il controllo di Alex lasciano la partita, e tutte le pedine Myr di questo tipo entrate nel campo di battaglia sotto il controllo di qualsiasi altro giocatore restano nella partita.
+@800.4b
+Se un oggetto dovesse passare sotto il controllo di un giocatore che ha lasciato la partita, non lo fa. Se una pedina dovesse essere creata sotto il controllo di un giocatore che ha lasciato la partita, non viene creata alcuna pedina. Se un oggetto dovesse essere messo sul campo di battaglia o in pila sotto il controllo di un giocatore che ha lasciato la partita, quell'oggetto resta nella sua zona attuale. Se un giocatore dovesse essere controllato da un giocatore che ha lasciato la partita, non lo è.
+@800.4c
+Se termina un effetto che dà a un giocatore ancora nella partita il controllo di un oggetto, non c'è nessun altro effetto che dà il controllo di quell'oggetto a un altro giocatore nella partita, e il giocatore che controllava quell'oggetto per impostazione predefinita ha lasciato la partita, l'oggetto viene esiliato. Questa non è un'azione generata dallo stato. Avviene non appena termina l'effetto di cambio di controllo.
+@800.4d
+Se un oggetto che sarebbe posseduto da un giocatore che ha lasciato la partita dovesse essere creato in una qualsiasi zona, non viene creato. Se un'abilità innescata che sarebbe controllata da un giocatore che ha lasciato la partita dovesse essere messa in pila, non viene messa in pila.
+Esempio: Astral Slide è un incantesimo che dice «Ogni volta che un giocatore cicla una carta, puoi esiliare una creatura bersaglio. Se lo fai, fai tornare quella creatura sul campo di battaglia sotto il controllo del suo proprietario all'inizio della prossima sottofase finale». Durante il turno di Alex, Bianca usa l'abilità di Astral Slide per esiliare l'Hypnotic Specter di Alex. Prima della fine di quel turno, Bianca lascia la partita. All'inizio della sottofase finale, l'abilità innescata ritardata generata da Astral Slide che farebbe tornare Hypnotic Specter sul campo di battaglia si innesca, ma non viene messa in pila. Hypnotic Specter non torna mai sul campo di battaglia.
+@800.4e
+Se del danno da combattimento dovesse essere assegnato a un giocatore che ha lasciato la partita, quel danno non viene assegnato.
+@800.4f
+Se un oggetto richiede che un giocatore che ha lasciato la partita paghi un costo o scelga se pagare un costo, quel costo non viene pagato.
+@800.4g
+Se un oggetto richiede che un giocatore che ha lasciato la partita faccia una scelta diversa dal pagare o meno un costo, il controllore dell'oggetto sceglie un altro giocatore che faccia quella scelta. Se la scelta originale doveva essere fatta da un avversario del controllore dell'oggetto, quel giocatore sceglie un altro avversario, se possibile.
+@800.4h
+Se una regola richiede che un giocatore che ha lasciato la partita faccia una scelta, quella scelta viene fatta dal giocatore successivo nell'ordine di turno.
+@800.4i
+Se un effetto richiede informazioni su un giocatore specifico, l'effetto usa le informazioni attuali su quel giocatore se è ancora nella partita; altrimenti, l'effetto usa le ultime informazioni conosciute su quel giocatore prima che lasciasse la partita. Se un effetto richiede informazioni dalla partita sulle azioni compiute dai giocatori, l'effetto può trovare le azioni compiute da un giocatore che ha lasciato la partita. Se un effetto richiede informazioni dalla partita sulle azioni compiute dai giocatori durante il loro «ultimo turno», può trovare le azioni compiute da un giocatore che ha lasciato la partita solo finché non sarebbe iniziato il turno successivo di quel giocatore dopo aver lasciato la partita.
+@800.4j
+Se un giocatore lascia la partita durante il suo turno, quel turno continua fino al suo completamento senza un giocatore attivo. Se il giocatore attivo dovesse ricevere la priorità, invece la riceve il giocatore successivo nell'ordine di turno, oppure si risolve l'oggetto in cima alla pila, oppure termina la fase o la sottofase, a seconda di cosa sia appropriato.
+@800.4k
+Se un giocatore che ha lasciato la partita dovesse iniziare un turno, quel turno non inizia.
+@800.4m
+Quando un giocatore lascia la partita, tutti gli effetti continui con durata fino al turno successivo di quel giocatore o fino a un momento specifico di quel turno durano finché quel turno non sarebbe iniziato. Non scadono immediatamente né durano indefinitamente.
+@800.4n
+Quando un giocatore lascia la partita, gli oggetti che quel giocatore possiede nella zona della posta non lasciano la partita. Questa è un'eccezione alla regola 800.4a. Vedi regola 407, «Posta».
+@800.4p
+In una partita Planechase, se il giocatore designato come controllore planare dovesse lasciare la partita, invece il giocatore successivo nell'ordine di turno che non lascerebbe la partita diventa il controllore planare, poi il vecchio controllore planare lascia la partita. Vedi regola 311.5.
+@800.5
+Salvo diversa indicazione di una variante o opzione scelta, l'ordine dei posti viene determinato con qualsiasi metodo concordato da tutti. Per esempio, i giocatori potrebbero accordarsi per restare dove si trovavano prima dell'inizio della partita, tirare dei dadi per determinare l'ordine dei posti e così via.
+@800.6
+In una partita multigiocatore, il primo mulligan che un giocatore fa non conta ai fini del numero di carte che quel giocatore metterà in fondo al suo grimorio né del numero di mulligan che quel giocatore può fare. I mulligan successivi vengono contati normalmente.
+@800.7
+In una partita multigiocatore diversa da una partita Two-Headed Giant, il giocatore iniziale non salta la sottofase di acquisizione del suo primo turno. In una partita Two-Headed Giant, la squadra che gioca per prima salta la sottofase di acquisizione del suo primo turno. Vedi regola 103.8.
+@801
+Opzione del raggio d'influenza limitato
+@801.1
+Il raggio d'influenza limitato è un'opzione che può essere applicata alla maggior parte delle partite multigiocatore. Viene sempre usata nella variante Imperatore (vedi regola 809), e viene usata spesso nelle partite con cinque o più giocatori.
+@801.2
+Il raggio d'influenza di un giocatore è la distanza massima da quel giocatore, misurata in posti, che il giocatore può influenzare. I giocatori entro quel numero di posti dal giocatore sono nel raggio d'influenza di quel giocatore. Anche gli oggetti controllati da giocatori nel raggio d'influenza di un giocatore sono nel raggio d'influenza di quel giocatore. Il raggio d'influenza riguarda magie, abilità, effetti, infliggere danno, attaccare, fare scelte e vincere la partita.
+@801.2a
+I raggi d'influenza limitati scelti più comunemente sono 1 posto e 2 posti. Giocatori diversi possono avere raggi d'influenza diversi.
+Esempio: Un raggio d'influenza di 1 significa che solo tu e i giocatori seduti direttamente accanto a te siete nel tuo raggio d'influenza.
+Esempio: Un raggio d'influenza di 2 significa che tu, i due giocatori alla tua sinistra e i due giocatori alla tua destra siete nel tuo raggio d'influenza.
+@801.2b
+Un giocatore è sempre nel proprio raggio d'influenza.
+@801.2c
+I giocatori specifici nel raggio d'influenza di ciascun giocatore vengono determinati all'inizio di ogni turno.
+Esempio: In una partita con raggio d'influenza 1, Alex è seduto alla sinistra di Rob, e Carissa è seduta alla destra di Rob. Carissa non è nel raggio d'influenza di Alex. Se Rob lascia la partita, Carissa entrerà nel raggio d'influenza di Alex all'inizio del turno successivo.
+@801.2d
+Un oggetto è nel raggio d'influenza di un giocatore se è controllato da quel giocatore o da un altro giocatore entro quel numero di posti da quel giocatore. Inoltre, una battaglia è nel raggio d'influenza di un giocatore se è protetta da quel giocatore o da un altro giocatore entro quel numero di posti da quel giocatore.
+@801.3
+Le creature possono attaccare solo gli avversari nel raggio d'influenza del loro controllore, i planeswalker controllati da quegli avversari e le battaglie protette da quegli avversari. Se nessun avversario è nel raggio d'influenza di un giocatore, le creature controllate da quel giocatore non possono attaccare.
+@801.4
+Oggetti e giocatori fuori dal raggio d'influenza di un giocatore non possono essere bersagli di magie o abilità controllate da quel giocatore.
+@801.5
+Alcune carte richiedono ai giocatori di fare delle scelte. Queste carte funzionano in modo diverso quando viene usata l'opzione del raggio d'influenza limitato.
+@801.5a
+Se a un giocatore viene chiesto di scegliere un oggetto o un giocatore, deve sceglierne uno nel suo raggio d'influenza.
+Esempio: In una partita con raggio d'influenza 1, Alex è seduto alla sinistra di Rob. Alex attiva l'abilità di Cuombajj Witches, che dice «{T}: Cuombajj Witches infligge 1 danno a qualsiasi bersaglio e 1 danno a qualsiasi bersaglio a scelta di un avversario», bersagliando Rob e scegliendo Rob come avversario che sceglie l'altro bersaglio. Rob deve scegliere un bersaglio che sia sia nel suo raggio d'influenza sia nel raggio d'influenza del controllore di Cuombajj Witches. Deve quindi scegliere se stesso, Alex o una creatura controllata da lui o da Alex.
+@801.5b
+Se a un giocatore viene chiesto di scegliere tra una o più opzioni (e non tra uno o più oggetti o giocatori), può scegliere tra quelle opzioni anche se quelle opzioni fanno riferimento a oggetti o giocatori fuori dal raggio d'influenza del giocatore.
+Esempio: Alex, che ha raggio d'influenza 2, è seduto alla sinistra di Rob, e Carissa, che ha raggio d'influenza 1, è seduta alla destra di Rob. Alex lancia una magia che dice «Un avversario sceglie uno — Peschi due carte; oppure ogni creatura che controlli prende +2/+2 fino alla fine del turno», e sceglie Carissa per fare quella scelta. Carissa può scegliere il modo anche se Alex è fuori dal suo raggio.
+@801.5c
+Se un effetto richiede una scelta e non c'è nessun giocatore nel raggio d'influenza del suo controllore che possa fare quella scelta, quella scelta viene fatta dal giocatore appropriato più vicino alla sinistra del suo controllore.
+Esempio: In una partita Imperatore in cui tutti i giocatori hanno raggio d'influenza 1, un imperatore lancia Fact or Fiction, che dice «Rivela le prime cinque carte del tuo grimorio. Un avversario separa quelle carte in due pile. Aggiungi una pila alla tua mano e metti l'altra nel tuo cimitero». Poiché nessun avversario è nel raggio d'influenza dell'imperatore, l'avversario più vicino alla sinistra dell'imperatore separa le carte in pile.
+@801.6
+Un giocatore non può attivare le abilità attivate di un oggetto fuori dal suo raggio d'influenza.
+@801.7
+Un'abilità innescata non si innesca a meno che il suo evento di innesco non avvenga interamente nel raggio d'influenza del controllore della sua fonte.
+Esempio: In una partita in cui tutti i giocatori hanno raggio d'influenza 1, Alex è seduto alla sinistra di Rob. Rob controlla due Aure assegnate al Runeclaw Bear di Alex: una con la condizione di innesco «Ogni volta che la creatura incantata viene bloccata» e una con la condizione di innesco «Ogni volta che la creatura incantata viene bloccata da una creatura». Il Runeclaw Bear di Alex attacca il giocatore alla sinistra di Alex e viene bloccato. L'abilità della prima Aura di Rob si innesca perché l'intero evento (Runeclaw Bear viene bloccato) avviene nel raggio d'influenza di Rob. L'abilità della seconda Aura di Rob, invece, non si innesca, perché quell'evento include la creatura bloccante, che è fuori dal raggio di Rob.
+@801.7a
+Se un evento di innesco include un oggetto che esce o entra nel raggio d'influenza di un giocatore, si usa lo stato di gioco prima o dopo l'evento, a seconda dei casi, per stabilire se l'abilità innescata si innescherà. Vedi regole 603.6 e 603.10.
+Esempio: Carissa e Alex sono ciascuno fuori dal raggio d'influenza dell'altro. Carissa controlla un Runeclaw Bear posseduto da Alex ed entrambi controllano un Extractor Demon, una creatura che dice, tra l'altro, «Ogni volta che un'altra creatura lascia il campo di battaglia, puoi far macinare due carte a un giocatore bersaglio». Il Runeclaw Bear viene distrutto e messo nel cimitero di Alex. L'abilità dell'Extractor Demon di Alex non si innesca perché l'evento di uscita dal campo di battaglia era fuori dal raggio d'influenza di Alex. L'abilità dell'Extractor Demon di Carissa si innesca, anche se la creatura sta andando in un cimitero fuori dal suo raggio, perché l'evento di uscita dal campo di battaglia era nel suo raggio.
+@801.8
+Un'Aura non può incantare un oggetto o giocatore fuori dal raggio d'influenza del suo controllore. Se un'Aura è assegnata a un oggetto o giocatore illegale, l'Aura viene messa nel cimitero del suo proprietario come azione generata dallo stato. Vedi regola 704.

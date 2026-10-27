@@ -1,0 +1,182 @@
+@723.5
+Mentre controlla un altro giocatore, un giocatore fa tutte le scelte e prende tutte le decisioni che il giocatore controllato può fare o a cui è chiamato dalle regole o da qualsiasi oggetto. Ciò include scelte e decisioni su cosa giocare, e le scelte e decisioni richieste da magie e abilità.
+Esempio: Il controllore di un altro giocatore decide quali magie lancia quel giocatore e cosa bersagliano quelle magie, e prende le decisioni richieste quando quelle magie si risolvono.
+Esempio: Il controllore di un altro giocatore decide quali creature di quel giocatore attaccano, quale giocatore o planeswalker attacca ciascuna e come quelle creature attaccanti assegnano il loro danno da combattimento.
+@723.5a
+Il controllore di un altro giocatore può usare solo le risorse di quel giocatore (carte, mana e così via) per pagare i costi per quel giocatore.
+Esempio: Se il controllore di un giocatore decide che il giocatore controllato lancerà una magia con un costo aggiuntivo di scartare carte, le carte vengono scartate dalla mano del giocatore controllato.
+@723.5b
+Il controllore di un altro giocatore non può fare scelte o prendere decisioni per quel giocatore che non siano richieste dalle regole o da qualche oggetto. Il controllore inoltre non può fare scelte o prendere decisioni per il giocatore che sarebbero richieste dalle regole di torneo.
+Esempio: Il giocatore controllato decide comunque se allontanarsi per andare in bagno, scambiare una carta con qualcun altro, accettare un pareggio intenzionale o chiamare un giudice per un errore o un'infrazione.
+@723.6
+Il controllore di un altro giocatore non può far concedere la partita a quel giocatore. Un giocatore può concedere la partita in qualsiasi momento, anche se è controllato da un altro giocatore. Vedi regola 104.3a.
+@723.7
+L'effetto che dà il controllo di un giocatore a un altro giocatore può limitare le azioni che il giocatore controllato può compiere o specificare azioni che il giocatore controllato deve compiere.
+@723.8
+Un giocatore che controlla un altro giocatore continua anche a fare le proprie scelte e a prendere le proprie decisioni.
+@723.9
+Un effetto può dare a un giocatore il controllo di se stesso. Quel giocatore prenderà le proprie decisioni e farà le proprie scelte normalmente.
+@724
+Terminare turni e fasi
+@724.1
+Alcune carte terminano il turno. Quando un effetto termina il turno, segui questi passi in ordine, poiché differiscono dal normale procedimento di risoluzione di magie e abilità (vedi regola 608, «Risoluzione di magie e abilità»).
+@724.1a
+Se ci sono abilità innescate che si sono innescate prima dell'inizio di questo procedimento ma non sono ancora state messe in pila, quelle abilità cessano di esistere. Non verranno messe in pila. Questa regola non si applica alle abilità che si innescano durante questo procedimento (vedi regola 724.1f).
+@724.1b
+Esilia ogni oggetto in pila, incluso l'oggetto che si sta risolvendo. Tutti gli oggetti non sul campo di battaglia o nella zona di comando che non sono rappresentati da carte cessano di esistere la volta successiva in cui vengono controllate le azioni generate dallo stato (vedi regola 704, «Azioni generate dallo stato»).
+@724.1c
+Controlla le azioni generate dallo stato. Nessun giocatore riceve la priorità, e nessuna abilità innescata viene messa in pila.
+@724.1d
+La fase e/o la sottofase in corso termina. Se ciò avviene durante il combattimento, rimuovi tutte le creature e i planeswalker dal combattimento. La partita passa direttamente alla sottofase di cancellazione; salta tutte le fasi o sottofasi tra questa fase o sottofase e la sottofase di cancellazione. Se un effetto termina il turno durante la sottofase di cancellazione, inizia una nuova sottofase di cancellazione.
+@724.1e
+Anche se il turno termina, le abilità innescate «all'inizio della sottofase finale» non si innescano perché la sottofase finale viene saltata.
+@724.1f
+Nessun giocatore riceve la priorità durante questo procedimento, quindi le abilità innescate non vengono messe in pila. Se delle abilità innescate si sono innescate dall'inizio di questo procedimento, quelle abilità vengono messe in pila durante la sottofase di cancellazione, poi il giocatore attivo riceve la priorità e i giocatori possono lanciare magie e attivare abilità. Poi ci sarà un'altra sottofase di cancellazione prima che il turno termini definitivamente. Se nessuna abilità innescata si è innescata durante questo procedimento, nessun giocatore riceve la priorità durante la sottofase di cancellazione. Vedi regola 514, «Sottofase di cancellazione».
+@724.2
+Una carta (Mandate of Peace) termina la fase di combattimento. Quando un effetto termina la fase di combattimento, segui questi passi in ordine, poiché differiscono dal normale procedimento di risoluzione di magie e abilità (vedi regola 608, «Risoluzione di magie e abilità»).
+@724.2a
+Se ci sono abilità innescate che si sono innescate prima dell'inizio di questo procedimento ma non sono ancora state messe in pila, quelle abilità cessano di esistere. Non verranno messe in pila. Questa regola non si applica alle abilità che si innescano durante questo procedimento (vedi regola 724.2f).
+@724.2b
+Esilia ogni oggetto in pila, incluso l'oggetto che si sta risolvendo. Tutti gli oggetti non sul campo di battaglia o nella zona di comando che non sono rappresentati da carte cessano di esistere la volta successiva in cui vengono controllate le azioni generate dallo stato (vedi regola 704, «Azioni generate dallo stato»).
+@724.2c
+Controlla le azioni generate dallo stato. Nessun giocatore riceve la priorità, e nessuna abilità innescata viene messa in pila.
+@724.2d
+La fase di combattimento in corso termina. Rimuovi tutte le creature e i planeswalker dal combattimento. Gli effetti che durano «fino alla fine del combattimento» scadono. La partita passa direttamente alla fase successiva, di solito la fase principale postcombattimento; salta tutte le sottofasi tra questa sottofase e quella fase.
+@724.2e
+Anche se la fase di combattimento termina, le abilità innescate «alla fine del combattimento» non si innescano perché la sottofase di fine combattimento viene saltata.
+@724.2f
+Nessun giocatore riceve la priorità durante questo procedimento, quindi le abilità innescate non vengono messe in pila. Se delle abilità innescate si sono innescate dall'inizio di questo procedimento, quelle abilità vengono messe in pila durante la fase successiva, poi il giocatore attivo riceve la priorità e i giocatori possono lanciare magie e attivare abilità.
+@724.2g
+Se un effetto tenta di terminare la fase di combattimento in un momento che non è una fase di combattimento, non succede nulla.
+@725
+Il monarca
+@725.1
+Il monarca è una designazione che un giocatore può avere. In una partita non c'è un monarca finché un effetto non istruisce un giocatore a diventare il monarca.
+@725.2
+Ci sono due abilità innescate intrinseche associate all'essere il monarca. Queste abilità innescate non hanno fonte e sono controllate dal giocatore che era il monarca nel momento in cui le abilità si sono innescate. Questa è un'eccezione alla regola 113.8. I testi completi di queste abilità sono «All'inizio della sottofase finale del monarca, quel giocatore pesca una carta» e «Ogni volta che una creatura infligge danno da combattimento al monarca, il suo controllore diventa il monarca».
+@725.3
+Un solo giocatore alla volta può essere il monarca. Quando un giocatore diventa il monarca, il monarca attuale smette di essere il monarca.
+@725.4
+Se il monarca lascia la partita, il giocatore attivo diventa il monarca nello stesso momento in cui quel giocatore lascia la partita. Se è il giocatore attivo a lasciare la partita o se non c'è un giocatore attivo, diventa il monarca il giocatore successivo nell'ordine di turno che può diventare il monarca. Se nessun giocatore ancora nella partita può diventare il monarca, la partita continua senza monarca.
+@725.5
+Se il risultato di un effetto continuo generato da un'abilità statica è determinato in base a chi è attualmente il monarca, ma non c'è un monarca nella partita quando quell'effetto inizia ad applicarsi, quell'effetto non fa nulla finché un giocatore non diventa il monarca. Vedi regola 613, «Effetti continui».
+@726
+L'iniziativa
+@726.1
+L'iniziativa è una designazione che un giocatore può avere. In una partita non c'è l'iniziativa finché un effetto non istruisce un giocatore a prendere l'iniziativa. Un giocatore che ha attualmente la designazione iniziativa si dice che ha l'iniziativa.
+@726.2
+Ci sono tre abilità innescate intrinseche associate all'avere l'iniziativa. Queste abilità innescate non hanno fonte e sono controllate dal giocatore che aveva l'iniziativa nel momento in cui le abilità si sono innescate. Questa è un'eccezione alla regola 113.8. I testi completi di queste abilità sono «All'inizio del mantenimento del giocatore che ha l'iniziativa, quel giocatore si avventura nella Sottocittà», «Ogni volta che una o più creature controllate da un giocatore infliggono danno da combattimento al giocatore che ha l'iniziativa, il controllore di quelle creature prende l'iniziativa» e «Ogni volta che un giocatore prende l'iniziativa, quel giocatore si avventura nella Sottocittà». Vedi regola 701.49, «Avventurarsi nel dungeon».
+@726.3
+Un solo giocatore alla volta può avere l'iniziativa. Quando un giocatore prende l'iniziativa, il giocatore che la ha attualmente smette di averla.
+@726.4
+Se il giocatore che ha l'iniziativa lascia la partita, il giocatore attivo prende l'iniziativa nello stesso momento in cui quel giocatore lascia la partita. Se è il giocatore attivo a lasciare la partita o se non c'è un giocatore attivo, prende l'iniziativa il giocatore successivo nell'ordine di turno.
+@726.5
+Se al giocatore che ha attualmente l'iniziativa viene detto di prendere l'iniziativa, ciò fa innescare l'ultima abilità innescata della 726.2 ma non crea una seconda designazione iniziativa.
+@727
+Ricominciare la partita
+@727.1
+Una carta (Karn Liberated) fa ricominciare la partita. Una partita che ricomincia termina immediatamente. Nessun giocatore in quella partita vince, perde o pareggia quella partita. Tutti i giocatori che erano nella partita quando è terminata iniziano quindi una nuova partita seguendo i procedimenti stabiliti nella regola 103, «Iniziare la partita», con la seguente eccezione:
+@727.1a
+Il giocatore iniziale nella nuova partita è il giocatore che controllava la magia o abilità che ha fatto ricominciare la partita.
+@727.2
+Tutte le carte di Magic coinvolte nella partita ricominciata al momento della sua fine, inclusi i permanenti fuori fase e le carte di Magic non tradizionali, sono coinvolte nella nuova partita, anche se quelle carte non erano coinvolte originariamente nella partita ricominciata. La proprietà delle carte nella nuova partita non cambia, indipendentemente da dove si trovano quando inizia la nuova partita.
+Esempio: Un giocatore lancia Living Wish, portando nella partita una carta creatura da fuori dalla partita. Poi quella partita ricomincia. La carta creatura farà parte del grimorio di quel giocatore quando inizia la nuova partita.
+@727.3
+Poiché ogni giocatore pesca sette carte quando inizia la nuova partita, ogni giocatore con meno di sette carte nel suo grimorio perderà la partita quando verranno controllate le azioni generate dallo stato durante la sottofase di mantenimento del primo turno, indipendentemente dai mulligan che quel giocatore fa. (Vedi regola 704, «Azioni generate dallo stato».)
+@727.4
+L'effetto che fa ricominciare la partita finisce di risolversi subito prima della sottofase di STAP del primo turno. Se la magia o abilità che ha generato quell'effetto ha istruzioni aggiuntive, quelle istruzioni vengono seguite in quel momento. Nessun giocatore ha la priorità, e le abilità innescate che si innescano di conseguenza vanno in pila la volta successiva in cui un giocatore riceve la priorità, di solito durante la sottofase di mantenimento del primo turno.
+@727.5
+Gli effetti possono esentare certe carte dal procedimento che fa ricominciare la partita. Queste carte non sono nel mazzo del loro proprietario quando inizia la nuova partita.
+@727.5a
+In una partita Commander, un comandante che è stato esentato dal procedimento che fa ricominciare la partita non inizia la nuova partita nella zona di comando. Tuttavia, resta il comandante di quel mazzo per la nuova partita. Vedi regola 903, «Commander».
+@727.6
+Se una sottopartita di Magic (vedi regola 729) ricomincia, la partita principale non ne è influenzata. Gli effetti della partita principale che fanno riferimento al vincitore o al perdente della sottopartita ora fanno riferimento al vincitore o al perdente della sottopartita ricominciata.
+@727.7
+Se ricomincia una partita multigiocatore che usa l'opzione del raggio d'influenza limitato (vedi regola 801), sono coinvolti tutti i giocatori della partita, indipendentemente dal raggio d'influenza del giocatore che controlla l'abilità che ha fatto ricominciare la partita.
+@728
+Segnalini radiazione
+@728.1
+I segnalini radiazione sono un tipo di segnalino che un giocatore può avere (vedi regola 122, «Segnalini»). C'è un'abilità innescata intrinseca associata ai segnalini radiazione. Questa abilità non ha fonte ed è controllata dal giocatore attivo. Questa è un'eccezione alla regola 113.8. Il testo completo di questa abilità è «All'inizio della fase principale precombattimento di ogni giocatore, se quel giocatore ha uno o più segnalini radiazione, quel giocatore macina un numero di carte pari al numero di segnalini radiazione che ha. Per ogni carta non terra macinata in questo modo, quel giocatore perde 1 punto vita e rimuove un segnalino radiazione da se stesso».
+@728.1a
+Una carta che fa riferimento alla perdita di punti vita «da radiazione» si riferisce ai punti vita persi come risultato dell'abilità innescata associata ai segnalini radiazione.
+@729
+Sottopartite
+@729.1
+Una carta (Shahrazad) permette ai giocatori di giocare una sottopartita di Magic.
+@729.1a
+Una «sottopartita» è una partita di Magic completamente separata creata da un effetto. In sostanza, è una partita dentro una partita. La «partita principale» è la partita in cui è stata lanciata o attivata la magia o abilità che ha creato la sottopartita. La partita principale viene temporaneamente interrotta mentre la sottopartita è in corso. Riprende quando la sottopartita termina.
+@729.1b
+Nessun effetto o definizione creato nella partita principale o nella sottopartita ha significato nell'altra, tranne quanto definito dall'effetto che ha creato la sottopartita. Per esempio, l'effetto può dire che nella partita principale succede qualcosa al vincitore o al perdente della sottopartita.
+@729.2
+All'inizio della sottopartita, viene creato un insieme completamente nuovo di zone di gioco. Ogni giocatore prende tutte le carte nel suo grimorio della partita principale, le sposta nel suo grimorio della sottopartita e le mescola. Nessun'altra carta in una zona della partita principale viene spostata nella zona corrispondente della sottopartita, tranne quanto specificato nelle regole 729.2a–c. Determina casualmente quale giocatore inizia. La sottopartita procede come una partita normale, seguendo tutte le altre regole della regola 103, «Iniziare la partita».
+@729.2a
+All'inizio di una sottopartita, se vengono usati uno o più mazzi supplementari di carte non tradizionali, ogni giocatore sposta ciascuno dei suoi mazzi supplementari dalla zona di comando della partita principale alla zona di comando della sottopartita e lo mescola. (Le carte non tradizionali a faccia in su restano nella zona di comando della partita principale.)
+@729.2b
+All'inizio di una sottopartita di una partita Vanguard, ogni giocatore sposta la sua carta vanguard dalla zona di comando della partita principale alla zona di comando della sottopartita.
+@729.2c
+All'inizio di una sottopartita di una partita Commander, ogni giocatore sposta il suo comandante dalla zona di comando della partita principale (se si trova lì) alla zona di comando della sottopartita.
+@729.3
+Poiché ogni giocatore pesca sette carte all'inizio di una partita, ogni giocatore con meno di sette carte nel suo mazzo perderà la sottopartita quando verranno controllate le azioni generate dallo stato durante la sottofase di mantenimento del primo turno, indipendentemente dai mulligan che quel giocatore fa. (Vedi regola 704, «Azioni generate dallo stato».)
+@729.4
+Tutti gli oggetti nella partita principale e tutte le carte fuori dalla partita principale sono considerati fuori dalla sottopartita (tranne quelli portati specificamente nella sottopartita). Tutti i giocatori che attualmente non sono nella sottopartita sono considerati fuori dalla sottopartita.
+@729.4a
+Alcuni effetti possono portare carte in una partita da fuori di essa. Se una carta viene portata in una sottopartita da una partita principale, le abilità della partita principale che si innescano quando oggetti lasciano una zona della partita principale si innescano, ma non vengono messe in pila finché la partita principale non riprende.
+@729.4b
+I segnalini di un giocatore nella partita principale non sono considerati parte della sottopartita, anche se il giocatore li avrà ancora quando la partita principale riprende. Allo stesso modo, tutti i segnalini che un giocatore ottiene durante una sottopartita cessano di esistere quando la sottopartita termina.
+@729.5
+Alla fine di una sottopartita, ogni giocatore prende tutte le carte tradizionali che possiede che si trovano nella sottopartita, tranne quelle nella zona di comando della sottopartita, le mette nel suo grimorio della partita principale e poi le mescola. Ciò include le carte nella zona di esilio della sottopartita e le carte che rappresentano permanenti fuori fase quando la sottopartita termina. Tranne quanto specificato nelle regole 729.5a–c, tutti gli altri oggetti nella sottopartita cessano di esistere, così come le zone create per la sottopartita. La partita principale continua dal punto in cui era stata interrotta: per prima cosa, la magia o abilità che ha creato la sottopartita finisce di risolversi, anche se è stata creata da una carta magia che non è più in pila. Poi, se delle abilità della partita principale si sono innescate mentre la sottopartita era in corso a causa di carte rimosse dalla partita principale, quelle abilità vengono messe in pila.
+Esempio: Se una carta è stata portata nella sottopartita dalla partita principale o da fuori dalla partita principale, quella carta verrà messa nel grimorio della partita principale del suo proprietario quando la sottopartita termina.
+@729.5a
+Alla fine di una sottopartita, ogni carta non tradizionale che non si trova in un mazzo supplementare e che ha iniziato la sottopartita in un mazzo supplementare viene girata a faccia in giù e messa in fondo a quel mazzo. Poi ogni giocatore sposta ciascuno dei suoi mazzi supplementari dalla zona di comando della sottopartita alla zona di comando della partita principale e lo mescola.
+@729.5b
+Alla fine di una sottopartita di una partita Vanguard, ogni giocatore sposta la sua carta vanguard dalla zona di comando della sottopartita alla zona di comando della partita principale. Questa è un'eccezione alla regola 313.2.
+@729.5c
+Alla fine di una sottopartita di una partita Commander, ogni giocatore sposta il suo comandante dalla zona di comando della sottopartita (se si trova lì) alla zona di comando della partita principale.
+@729.6
+Si può creare una sottopartita all'interno di una sottopartita. La sottopartita esistente diventa la partita principale rispetto alla nuova sottopartita.
+@730
+Fondersi con i permanenti
+@730.1
+Una parola chiave fa fondere un oggetto con un permanente. Vedi regola 702.140, «Mutare».
+@730.2
+Per fondere un oggetto con un permanente, metti quell'oggetto sopra o sotto quel permanente. Quel permanente diventa un permanente fuso rappresentato dalla carta o dalla copia che rappresentava quell'oggetto in aggiunta a tutti gli altri componenti che lo rappresentavano.
+@730.2a
+Un permanente fuso ha solo le caratteristiche del suo componente più in alto, salvo diversa indicazione dell'effetto che li ha fatti fondere. Questo è un effetto copiabile la cui marca temporale è il momento in cui gli oggetti si sono fusi. (Vedi regola 613.2.)
+@730.2b
+Quando un oggetto si fonde con un permanente, quell'oggetto lascia la sua zona precedente e diventa parte di un oggetto sul campo di battaglia, ma il permanente risultante non è considerato appena entrato nel campo di battaglia.
+@730.2c
+Poiché un permanente fuso è lo stesso oggetto che era prima, non è appena passato sotto il controllo di un giocatore, tutti gli effetti continui che lo influenzavano continuano a farlo, e così via.
+@730.2d
+Se un permanente fuso contiene una pedina, il permanente risultante è una pedina solo se il componente più in alto è una pedina.
+@730.2e
+Se un permanente fuso contiene componenti a faccia in su e a faccia in giù, lo stato del permanente è determinato dal suo componente più in alto. Se un permanente a faccia in giù diventa un permanente a faccia in su come risultato della fusione di un oggetto con esso, gli altri effetti non lo considerano come girato a faccia in su.
+@730.2f
+Se un permanente fuso viene girato a faccia in giù, ogni componente a faccia in su che lo rappresenta viene girato a faccia in giù. Se un permanente fuso a faccia in giù viene girato a faccia in su, ogni componente a faccia in giù che lo rappresenta viene girato a faccia in su.
+@730.2g
+Un permanente fuso a faccia in giù che contiene una carta istantaneo o stregoneria non può essere girato a faccia in su. Se tale permanente dovesse essere girato a faccia in su, il suo controllore lo rivela e lo lascia a faccia in giù. Le abilità che si innescano quando un permanente viene girato a faccia in su non si innescano.
+@730.2h
+Se un permanente fuso contiene una carta capovolgibile (vedi regola 710), le caratteristiche alternative di quel componente vengono usate al posto delle sue caratteristiche normali se il permanente fuso è capovolto.
+@730.2i
+Un permanente fuso non è un permanente bifronte anche se contiene uno o più componenti bifronte. Se un permanente fuso contiene uno o più componenti bifronte che possono trasformarsi (vedi regola 712), trasformare o convertire quel permanente fa girare ciascuno di quei componenti bifronte in modo che sia rivolta verso l'alto la sua altra faccia.
+@730.2j
+Un permanente fuso a faccia in su che contiene un componente bifronte non può essere girato a faccia in giù. Se una magia o abilità tenta di girare a faccia in giù un permanente fuso a faccia in su che contiene un componente bifronte, non succede nulla e quell'effetto non modifica nessuna delle sue caratteristiche né i loro valori copiabili.
+@730.3
+Se un permanente fuso lascia il campo di battaglia, un permanente lascia il campo di battaglia e ciascuno dei singoli componenti viene messo nella zona appropriata.
+@730.3a
+Se un permanente fuso viene messo nel cimitero o nel grimorio del suo proprietario, quel giocatore può disporre i nuovi oggetti in qualsiasi ordine. Se viene messo nel grimorio del suo proprietario, quel giocatore non rivela l'ordine.
+@730.3b
+Se un giocatore esilia un permanente fuso, quel giocatore determina in quel momento l'ordine relativo delle marche temporali delle carte. Questa è un'eccezione al procedimento descritto nella regola 613.7m.
+@730.3c
+Se un effetto può trovare il nuovo oggetto che un permanente fuso diventa quando lascia il campo di battaglia, trova tutti quegli oggetti. (Vedi regola 400.7.) Se quell'effetto fa compiere azioni su quegli oggetti, le stesse azioni vengono compiute su ciascuno di essi.
+@730.3d
+Se più effetti di sostituzione potrebbero applicarsi all'evento di un permanente fuso che lascia il campo di battaglia o viene messo nella nuova zona, applicare uno di quegli effetti di sostituzione all'oggetto lo applica a tutti i componenti dell'oggetto. Se il permanente fuso è un comandante, può essere esentato da questa regola; vedi regole 903.9b–c.
+@730.3e
+Se un effetto di sostituzione si applica a una «carta» che viene messa in una zona senza includere anche le pedine, quell'effetto si applica a tutti i componenti del permanente fuso se non è una pedina, inclusi i componenti che sono pedine. Se il permanente fuso è una pedina ma alcuni dei suoi componenti sono carte, il permanente fuso e i suoi componenti pedina vengono messi nella zona appropriata, e i componenti che sono carte vengono spostati dall'effetto di sostituzione.
+@731
+Giorno e notte
+@731.1
+Giorno e notte sono designazioni che la partita stessa può avere. La partita inizia senza nessuna delle due designazioni. «Diventa giorno» e «diventa notte» si riferiscono al fatto che la partita ottiene la designazione giorno o notte. Può diventare giorno o notte tramite le abilità chiave diurno e notturno (vedi regola 702.145). Anche altri effetti possono far diventare giorno o notte. Una volta diventato giorno o notte, da quel momento in poi la partita avrà esattamente una di quelle designazioni.
+@731.1a
+Le espressioni «il giorno diventa notte» e «la notte diventa giorno» si riferiscono al fatto che la partita perde la prima designazione e ottiene la seconda.
+@731.2
+Come seconda parte della sottofase di STAP, la partita controlla il turno precedente per vedere se la designazione giorno/notte della partita deve cambiare. Vedi regola 502, «Sottofase di STAP».

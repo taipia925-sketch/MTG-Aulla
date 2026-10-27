@@ -1,0 +1,207 @@
+@807.4f
+Al fine di stabilire se l'uscita dalla partita di uno o più giocatori ridurrebbe il numero di segnaturno nella partita (vedi regola 807.4e), non si tiene conto dei segnaturno già designati per la rimozione.
+@807.4g
+Se un giocatore che sta giocando un turno ha un segnaturno designato per la rimozione, quel segnaturno viene rimosso invece di essere passato al termine di quel turno. Se un giocatore che non sta giocando un turno ha un segnaturno designato per la rimozione, quel segnaturno viene rimosso immediatamente. Se un segnaturno rimosso era stato designato per la rimozione più volte, il segnaturno alla sua destra viene designato per la rimozione quel numero di volte meno uno.
+@807.4h
+Se uno o più giocatori seduti consecutivamente lasciano la partita, i giocatori che erano ai lati di quei posti non entrano l'uno nel raggio d'influenza dell'altro fino all'inizio del turno successivo.
+@807.4i
+Se un effetto fa giocare a un giocatore con un segnaturno un turno extra dopo quello in corso, quel giocatore mantiene il segnaturno e inizia il suo turno successivo dopo la fine del turno in corso, a meno che in quel momento un altro segnaturno non sia troppo vicino da una delle due parti. Se un segnaturno si trova entro tre posti alla sinistra del giocatore, il turno extra attende di iniziare finché il giocatore quattro posti alla sua sinistra non prende l'altro segnaturno. Se un segnaturno si trova entro tre posti alla destra del giocatore, il giocatore passa il segnaturno alla sua sinistra alla fine del turno invece di tenerlo, e il giocatore giocherà il turno extra subito prima del suo turno successivo.
+@807.4j
+Se un effetto dovesse far giocare a un giocatore un turno extra dopo il turno in corso, ma quel giocatore non avrebbe un segnaturno all'inizio di quel turno, quel giocatore giocherà invece il turno extra subito prima del suo turno successivo.
+Esempio: Durante il suo turno, Alex lancia Time Walk, che gli fa giocare un turno extra dopo questo. Durante lo stesso turno, il giocatore alla sinistra di Alex lascia la partita, il che riduce il numero di segnaturno. Dopo la fine del turno attuale di Alex, il suo segnaturno viene rimosso. Non giocherà il turno extra di Time Walk fino a subito prima del suo turno normale, la prossima volta che riceverà un segnaturno.
+@807.5
+Invece di avere un'unica pila, le partite Grand Melee contengono più pile. Ogni segnaturno rappresenta una propria pila.
+@807.5a
+Un giocatore riceve la priorità per la pila di un particolare segnaturno solo se il segnaturno è nel suo raggio d'influenza o un oggetto in quella pila è controllato da un giocatore nel suo raggio d'influenza.
+@807.5b
+Se un giocatore ha la priorità per più pile e lancia una magia, attiva un'abilità o si innesca un'abilità innescata che controlla, il giocatore deve specificare in quale di quelle pile viene messa la magia o abilità. Se un oggetto in una di quelle pile ha fatto innescare l'abilità innescata, il giocatore deve metterla in quella pila. Se una magia o abilità che si risolve in una di quelle pile fa lanciare a un giocatore una magia o creare una copia di una magia, la nuova magia deve essere messa nella stessa pila. Se una magia o abilità bersaglia un oggetto in una di quelle pile, deve essere messa nella stessa pila del suo bersaglio; non può bersagliare oggetti in più pile.
+@808
+Variante Squadra contro squadra
+@808.1
+Le partite Squadra contro squadra si giocano con due o più squadre. Ogni squadra può avere un qualsiasi numero di giocatori.
+@808.2
+Ogni squadra siede insieme su un lato del tavolo. Ogni squadra decide l'ordine in cui siedono i suoi giocatori.
+@808.3
+Le eventuali opzioni multigiocatore usate vengono stabilite prima dell'inizio della partita. La variante Squadra contro squadra usa le seguenti opzioni predefinite.
+@808.3a
+Viene usata l'opzione di attacco a più giocatori (vedi regola 802).
+@808.3b
+Le opzioni di schieramento delle creature e di raggio d'influenza limitato di solito non vengono usate nella variante Squadra contro squadra.
+@808.4
+Per stabilire quale giocatore inizia, scegli casualmente una squadra. Se quella squadra ha un numero dispari di giocatori, inizia il giocatore nel posto centrale. Se quella squadra ha un numero pari di giocatori, inizia il giocatore alla sinistra del suo punto centrale. L'ordine di turno procede verso la sinistra dei giocatori.
+@808.5
+Nella variante Squadra contro squadra, le risorse di una squadra (carte in mano, mana e così via) non sono condivise. I compagni di squadra possono guardare le mani l'uno dell'altro e discutere strategie in qualsiasi momento. I compagni di squadra non possono manipolare le carte o i permanenti l'uno dell'altro.
+@809
+Variante Imperatore (Emperor)
+@809.1
+La variante Imperatore coinvolge due o più squadre di tre giocatori ciascuna.
+@809.2
+Ogni squadra siede insieme su un lato del tavolo. Ogni squadra decide l'ordine in cui siede. Ogni squadra ha un imperatore, che siede al centro della squadra. Gli altri giocatori della squadra sono generali il cui compito è proteggere l'imperatore.
+@809.3
+La variante Imperatore usa le seguenti opzioni predefinite.
+@809.3a
+Il raggio d'influenza è limitato a 2 per gli imperatori e a 1 per i generali. Vedi regola 801, «Opzione del raggio d'influenza limitato».
+@809.3b
+Le partite Imperatore usano l'opzione di schieramento delle creature (vedi regola 804).
+@809.3c
+Un giocatore può attaccare solo un avversario seduto immediatamente accanto a lui, un planeswalker controllato da un giocatore seduto immediatamente accanto a lui o una battaglia protetta da un giocatore seduto immediatamente accanto a lui.
+Esempio: All'inizio di una partita Imperatore, nessuno dei due imperatori può attaccare alcun avversario, anche se entrambi i generali avversari sono nel raggio delle loro magie.
+@809.4
+Determina casualmente quale imperatore inizia. L'ordine di turno procede verso la sinistra dei giocatori.
+@809.5
+La variante Imperatore include le seguenti specifiche per vincere e perdere la partita. Si applicano anche tutte le altre regole per la fine della partita. (Vedi regola 104.)
+@809.5a
+Una squadra vince la partita se vince il suo imperatore.
+@809.5b
+Una squadra perde la partita se perde il suo imperatore.
+@809.5c
+La partita è un pareggio per una squadra se la partita è un pareggio per il suo imperatore.
+@809.6
+La variante Imperatore può essere giocata anche con un qualsiasi numero di squadre della stessa dimensione. Se le squadre hanno più di tre giocatori, il raggio d'influenza di ogni giocatore deve essere adattato.
+@809.6a
+Il raggio d'influenza di ogni generale deve essere il numero minimo che permette a un generale di una squadra avversaria di iniziare la partita nel suo raggio d'influenza. Il raggio d'influenza di ogni imperatore deve essere il numero minimo che permette a due generali di squadre avversarie di iniziare la partita nel suo raggio d'influenza. I giocatori devono essere fatti sedere in modo che nessun imperatore inizi la partita nel raggio d'influenza di un altro imperatore.
+Esempio: In una partita Imperatore tra due squadre di quattro giocatori ciascuna, la disposizione dei giocatori (in senso orario o antiorario intorno al tavolo) deve essere: generale 1 squadra A, imperatore squadra A, generale 2 squadra A, generale 3 squadra A, generale 1 squadra B, imperatore squadra B, generale 2 squadra B, generale 3 squadra B. Ogni imperatore ha raggio d'influenza 3. Ogni generale 2 ha raggio d'influenza 2. Ogni generale 1 e generale 3 ha raggio d'influenza 1.
+@809.7
+Nella variante Imperatore, le risorse di una squadra (carte in mano, mana e così via) non sono condivise. I compagni di squadra possono guardare le mani l'uno dell'altro e discutere strategie in qualsiasi momento. I compagni di squadra non possono manipolare le carte o i permanenti l'uno dell'altro.
+@810
+Variante Two-Headed Giant
+@810.1
+Le partite Two-Headed Giant si giocano con due squadre di due giocatori ciascuna.
+@810.2
+La variante Two-Headed Giant usa l'opzione dei turni di squadra condivisi. (Vedi regola 805.)
+@810.3
+Ogni squadra siede insieme su un lato del tavolo. Ogni squadra decide l'ordine in cui siedono i suoi giocatori.
+@810.4
+Ogni squadra ha un totale di punti vita condiviso, che parte da 30 punti vita.
+@810.5
+Ad eccezione del totale di punti vita e dei segnalini veleno, nella variante Two-Headed Giant le risorse di una squadra (carte in mano, mana e così via) non sono condivise. I compagni di squadra possono guardare le mani l'uno dell'altro e discutere strategie in qualsiasi momento. I compagni di squadra non possono manipolare le carte o i permanenti l'uno dell'altro.
+@810.6
+La squadra che gioca per prima salta la sottofase di acquisizione del suo primo turno.
+@810.7
+La variante Two-Headed Giant usa le regole di combattimento dell'opzione dei turni di squadra condivisi (vedi regola 805.10). Questa è una modifica rispetto alle regole precedenti.
+@810.8
+La variante Two-Headed Giant usa le normali regole per vincere o perdere la partita (vedi regola 104), con le seguenti aggiunte e specifiche.
+@810.8a
+I giocatori vincono e perdono la partita solo come squadra, non individualmente. Se uno dei giocatori di una squadra perde la partita, la squadra perde la partita. Se uno dei giocatori di una squadra vince la partita, l'intera squadra vince la partita. Se un effetto dice che un giocatore non può vincere la partita, la squadra di quel giocatore non può vincere la partita. Se un effetto dice che un giocatore non può perdere la partita, la squadra di quel giocatore non può perdere la partita.
+Esempio: In una partita Two-Headed Giant, un giocatore controlla Transcendence, che dice, tra l'altro, «Non perdi la partita per avere 0 o meno punti vita». Se il totale di punti vita della squadra di quel giocatore è 0 o meno, quella squadra non perde la partita.
+Esempio: In una partita Two-Headed Giant, un giocatore tenta di pescare una carta mentre non ci sono carte nel suo grimorio. Quel giocatore perde la partita, quindi l'intera squadra di quel giocatore perde la partita.
+Esempio: In una partita Two-Headed Giant, un giocatore controlla Platinum Angel, che dice «Non puoi perdere la partita e i tuoi avversari non possono vincere la partita». Né quel giocatore né il suo compagno di squadra possono perdere la partita finché Platinum Angel è sul campo di battaglia, e nessuno dei giocatori della squadra avversaria può vincere la partita.
+@810.8b
+Se un giocatore concede, la sua squadra lascia immediatamente la partita. Quella squadra perde la partita.
+@810.8c
+Se il totale di punti vita di una squadra è 0 o meno, la squadra perde la partita. (Questa è un'azione generata dallo stato. Vedi regola 704.)
+@810.8d
+Se una squadra ha quindici o più segnalini veleno, quella squadra perde la partita. (Questa è un'azione generata dallo stato. Vedi regola 704.)
+@810.9
+Danno, perdita di punti vita e guadagno di punti vita riguardano ciascun giocatore individualmente. Il risultato viene applicato al totale di punti vita condiviso della squadra.
+Esempio: In una partita Two-Headed Giant, un giocatore lancia Flame Rift, che dice «Flame Rift infligge 4 danni a ogni giocatore». A ogni squadra vengono inflitti in totale 8 danni.
+@810.9a
+Se un costo o un effetto ha bisogno di conoscere il valore del totale di punti vita di un singolo giocatore, quel costo o effetto usa invece il totale di punti vita della squadra.
+Esempio: In una partita Two-Headed Giant, un giocatore di una squadra che ha 17 punti vita è bersaglio di Beacon of Immortality, che dice, tra l'altro, «Raddoppia il totale di punti vita di un giocatore bersaglio». Quel giocatore guadagna 17 punti vita, quindi la squadra arriva a 34 punti vita.
+Esempio: In una partita Two-Headed Giant, un giocatore controlla Test of Endurance, un incantesimo che dice «All'inizio del tuo mantenimento, se hai 50 o più punti vita, vinci la partita». All'inizio del mantenimento di quel giocatore, la squadra del giocatore vince la partita se il totale di punti vita della squadra è 50 o più.
+Esempio: In una partita Two-Headed Giant, un giocatore di una squadra che ha 11 punti vita controlla Lurking Evil, un incantesimo che dice «Paga metà dei tuoi punti vita, arrotondando per eccesso: Lurking Evil diventa una creatura Orrore 4/4 con volare». Per attivare l'abilità, quel giocatore deve pagare 6 punti vita. La squadra arriva a 5 punti vita.
+@810.9b
+Se un costo o un effetto permette a entrambi i membri di una squadra di pagare punti vita simultaneamente, la quantità totale di punti vita che pagano non può superare il totale di punti vita della loro squadra. (I giocatori possono sempre pagare 0 punti vita.)
+@810.9c
+Se un effetto imposta il totale di punti vita di un singolo giocatore a un numero specifico, il giocatore guadagna o perde la quantità di punti vita necessaria per arrivare al nuovo totale. Il totale di punti vita della squadra viene adeguato della quantità di punti vita guadagnata o persa da quel giocatore.
+Esempio: In una partita Two-Headed Giant, un giocatore di una squadra che ha 25 punti vita è bersaglio di un'abilità che dice «Il totale di punti vita di un giocatore bersaglio diventa 10». Il totale di punti vita di quel giocatore è considerato 25, quindi quel giocatore perde 15 punti vita. La squadra arriva a 10 punti vita.
+@810.9d
+Se un effetto imposterebbe a un numero il totale di punti vita di ogni giocatore di una squadra, quella squadra sceglie uno dei suoi membri. In quella squadra, viene influenzato solo quel giocatore.
+Esempio: In una partita Two-Headed Giant, una squadra ha 7 punti vita e l'altra squadra ha 13 punti vita. Un giocatore lancia Repay in Kind, che dice «Il totale di punti vita di ogni giocatore diventa il totale di punti vita più basso tra tutti i giocatori». Ogni squadra sceglie uno dei suoi membri da influenzare. Il risultato è che il giocatore scelto della squadra che ha 13 punti vita perde 6 punti vita, quindi il totale di punti vita di quella squadra arriva a 7.
+@810.9e
+Un giocatore non può scambiare il totale di punti vita con il suo compagno di squadra. Se un effetto dovesse causare ciò, lo scambio non avviene.
+@810.9f
+Se un effetto istruisce un giocatore a ridistribuire i totali di punti vita di un qualsiasi numero di giocatori, quel giocatore non può influenzare in questo modo più di un membro di ciascuna squadra.
+@810.9g
+Se un effetto dice che un giocatore non può guadagnare punti vita, nessun giocatore della squadra di quel giocatore può guadagnare punti vita.
+@810.9h
+Se un effetto dice che un giocatore non può perdere punti vita, nessun giocatore della squadra di quel giocatore può perdere punti vita o pagare una quantità di punti vita diversa da 0.
+@810.10
+Gli effetti che fanno prendere segnalini veleno ai giocatori riguardano ciascun giocatore individualmente. I segnalini veleno sono condivisi dalla squadra.
+@810.10a
+Se un effetto ha bisogno di sapere quanti segnalini veleno ha un singolo giocatore, quell'effetto usa il numero di segnalini veleno che ha la squadra di quel giocatore. Se un effetto ha bisogno di sapere quanti segnalini veleno hanno gli avversari di un giocatore, quell'effetto usa il numero di segnalini veleno che hanno le squadre avversarie.
+@810.10b
+Se un effetto dice che un giocatore perde segnalini veleno, la squadra di quel giocatore perde altrettanti segnalini veleno.
+@810.10c
+Se un effetto dice che un giocatore non può prendere segnalini veleno, nessun giocatore della squadra di quel giocatore può prendere segnalini veleno.
+@810.10d
+Se una regola o un effetto ha bisogno di sapere che tipi di segnalini ha un singolo giocatore, quell'effetto usa i tipi di segnalini che ha quel giocatore e i tipi di segnalini che ha la squadra di quel giocatore. Un giocatore è «avvelenato» se la squadra di quel giocatore ha uno o più segnalini veleno.
+@810.11
+La variante Two-Headed Giant può essere giocata anche con squadre della stessa dimensione formate da più di due giocatori. Per ogni giocatore oltre il secondo di una squadra, il totale di punti vita iniziale di quella squadra aumenta di 15 e il numero di segnalini veleno necessari perché la squadra perda aumenta di cinque. (Queste varianti si chiamano Three-Headed Giant, Four-Headed Giant e così via.)
+@811
+Variante a squadre alternate
+@811.1
+Le partite a squadre alternate si giocano con due o più squadre della stessa dimensione.
+@811.2
+Le eventuali opzioni multigiocatore usate vengono stabilite prima dell'inizio della partita. La variante a squadre alternate usa le seguenti opzioni predefinite.
+@811.2a
+Il raggio d'influenza consigliato è 2. Vedi regola 801, «Opzione del raggio d'influenza limitato».
+@811.2b
+Deve essere usata esattamente una tra le opzioni di attacco a sinistra, attacco a destra e attacco a più giocatori. Vedi regola 803, «Opzioni di attacco a sinistra e attacco a destra», e regola 802, «Opzione di attacco a più giocatori».
+@811.2c
+L'opzione di schieramento delle creature normalmente non viene usata nella variante a squadre alternate.
+@811.3
+All'inizio della partita, i giocatori vengono fatti sedere in modo che nessuno sia accanto a un compagno di squadra e ogni squadra sia distribuita in modo uniforme.
+Esempio: In una partita a squadre alternate con tre squadre, A, B e C, la disposizione intorno al tavolo all'inizio della partita è A1, B1, C1, A2, B2, C2, A3, B3, C3 e così via.
+@811.4
+Un giocatore non può attaccare avversari che non sono seduti accanto a lui, planeswalker che non sono controllati da avversari seduti accanto a lui o battaglie che non sono protette da avversari seduti accanto a lui.
+@811.5
+Nella variante a squadre alternate, le risorse di una squadra (carte in mano, mana e così via) non sono condivise. I compagni di squadra non possono guardare le mani l'uno dell'altro a meno che non siano seduti l'uno accanto all'altro. I compagni di squadra possono discutere strategie in qualsiasi momento. I compagni di squadra non possono manipolare le carte o i permanenti l'uno dell'altro.
+@#9
+Varianti casual
+@900
+Generale
+@900.1
+Questa sezione contiene regole facoltative aggiuntive che possono essere usate per alcune varianti di gioco casual. Non è in alcun modo esaustiva.
+@900.2
+Le varianti casual qui descritte usano zone, regole, carte e altri strumenti di gioco supplementari non usati nelle partite tradizionali di Magic.
+@901
+Planechase
+@901.1
+Nella variante Planechase, le carte piano e le carte fenomeno aggiungono abilità e casualità alla partita. La variante Planechase usa tutte le normali regole di una partita di Magic, con le seguenti aggiunte.
+@901.2
+Una partita Planechase può essere una partita a due giocatori o una partita multigiocatore. La configurazione multigiocatore predefinita è la variante Tutti contro tutti con l'opzione di attacco a più giocatori e senza l'opzione del raggio d'influenza limitato. Vedi regola 806, «Variante Tutti contro tutti».
+@901.3
+Oltre ai normali materiali di gioco, ogni giocatore ha bisogno di un mazzo planare supplementare di almeno dieci carte piano e/o fenomeno e la partita ha bisogno di un dado planare. Non più di due carte di un mazzo planare possono essere carte fenomeno. Ogni carta di un mazzo planare deve avere un nome inglese diverso. (Vedi regola 311, «Piani», e regola 312, «Fenomeni».)
+@901.3a
+Un dado planare è un dado a sei facce. Una faccia ha il simbolo Planeswalker. Una faccia ha il simbolo del caos. Le altre facce sono vuote.
+@901.4
+Tutte le carte piano e fenomeno restano nella zona di comando per tutta la partita, sia mentre fanno parte di un mazzo planare sia mentre sono a faccia in su.
+@901.5
+Una volta che tutti i giocatori hanno tenuto le loro mani iniziali e usato le abilità delle carte che permettono loro di compiere un'azione con quelle carte dalle loro mani iniziali, il giocatore iniziale toglie la prima carta del suo mazzo planare da quel mazzo e la gira a faccia in su. Se è una carta fenomeno, il giocatore mette quella carta in fondo al suo mazzo planare e ripete questo procedimento finché non viene girata a faccia in su una carta piano. (Vedi regola 103.7.) Nessuna abilità delle carte girate a faccia in su in questo modo si innesca durante questo procedimento. La carta piano a faccia in su diventa il piano iniziale.
+@901.6
+Il proprietario di una carta piano o fenomeno è il giocatore che ha iniziato la partita con essa nel suo mazzo planare. Il controllore di una carta piano o fenomeno a faccia in su è il giocatore designato come controllore planare. Normalmente, il controllore planare è chiunque sia il giocatore attivo. Tuttavia, se l'attuale controllore planare dovesse lasciare la partita, invece il giocatore successivo nell'ordine di turno che non lascerebbe la partita diventa il controllore planare, poi il vecchio controllore planare lascia la partita. Il nuovo controllore planare mantiene quella designazione finché non lascia la partita o un giocatore diverso diventa il giocatore attivo, a seconda di cosa avviene prima.
+@901.7
+Tutte le abilità di una carta piano o di una carta fenomeno a faccia in su nella zona di comando funzionano da quella zona. Le abilità statiche della carta influenzano la partita, le sue abilità innescate possono innescarsi e le sue abilità attivate possono essere attivate.
+@901.7a
+Una carta piano o fenomeno a faccia in su che viene girata a faccia in giù diventa un nuovo oggetto.
+@901.8
+Le partite Planechase hanno un'abilità innescata intrinseca detta «abilità di viaggio planare». Il testo completo di questa abilità è «Ogni volta che ottieni il simbolo Planeswalker sul dado planare, viaggia tra i piani». (Vedi regola 701.31, «Viaggiare tra i piani».) Questa abilità non ha fonte ed è controllata dal giocatore il cui tiro del dado planare l'ha fatta innescare. Questa è un'eccezione alla regola 113.8.
+@901.9
+In qualsiasi momento in cui il giocatore attivo ha la priorità e la pila è vuota, ma solo durante una fase principale del suo turno, quel giocatore può tirare il dado planare. Compiere questa azione costa a un giocatore una quantità di mana pari al numero di volte in cui ha già compiuto questa azione in quel turno. Questa è un'azione speciale e non usa la pila. Nota che questo numero non sarà pari al numero di volte in cui il giocatore ha tirato il dado planare in quel turno se un effetto gli ha fatto tirare il dado planare in quel turno. (Vedi regola 116.2i.)
+@901.9a
+Se il tiro dà una faccia vuota, non succede nulla. Il giocatore attivo riceve la priorità.
+@901.9b
+Se il tiro dà il simbolo del caos, si scatena il caos (vedi regola 311.7). Il giocatore attivo riceve la priorità.
+@901.9c
+Se il tiro dà il simbolo Planeswalker, l'«abilità di viaggio planare» si innesca e viene messa in pila. Il giocatore attivo riceve la priorità. (Vedi regola 901.8.)
+@901.9d
+Tirare il dado planare fa innescare qualsiasi abilità che si innesca ogni volta che un giocatore tira uno o più dadi. Tuttavia, qualsiasi effetto che fa riferimento a un risultato numerico di un tiro di dado, inclusi quelli che confrontano i risultati di quel tiro con altri tiri o con un numero dato, ignora il tiro del dado planare. Vedi 706, «Tirare un dado».
+@901.10
+Quando un giocatore lascia la partita, tutti gli oggetti posseduti da quel giocatore, tranne le abilità dei fenomeni, lasciano la partita. (Vedi regola 800.4a.) Se ciò include una carta piano o una carta fenomeno a faccia in su, il controllore planare gira a faccia in su la prima carta del suo mazzo planare. Questa non è un'azione generata dallo stato. Avviene non appena il giocatore lascia la partita.
+@901.10a
+Se un piano lascia la partita mentre un'«abilità di viaggio planare» è in pila, quell'abilità cessa di esistere.
+@901.10b
+Le abilità dei fenomeni posseduti da un giocatore che ha lasciato la partita restano in pila controllate dal nuovo controllore planare.
+@901.11
+Dopo l'inizio della partita, se un giocatore toglie la prima carta del suo mazzo planare da quel mazzo e la gira a faccia in su, quel giocatore «ha viaggiato tra i piani». Gli effetti continui con durata fino a quando un giocatore viaggia tra i piani terminano. Le abilità che si innescano quando un giocatore viaggia tra i piani si innescano. Vedi regola 701.31.
+@901.11a
+Un giocatore può viaggiare tra i piani come risultato dell'«abilità di viaggio planare» (vedi regola 901.8), perché il proprietario di una carta piano o fenomeno a faccia in su lascia la partita (vedi regola 901.10) o perché l'abilità innescata di un fenomeno lascia la pila (vedi regola 704.6f). Anche le abilità possono istruire un giocatore a viaggiare tra i piani.
+@901.11b
+La carta piano che viene girata a faccia in su è il piano verso cui il giocatore viaggia. La carta piano o fenomeno che viene girata a faccia in giù, o che lascia la partita, è il piano o il fenomeno da cui il giocatore si allontana.
+@901.11c
+Se un giocatore viaggia tra i piani quando c'è più di una carta piano a faccia in su, quel giocatore si allontana da tutti quei piani.
+@901.12
+Una partita Planechase Two-Headed Giant usa tutte le regole della variante multigiocatore Two-Headed Giant e tutte le regole della variante casual Planechase, con le seguenti aggiunte.
+@901.12a
+Ogni giocatore ha il proprio mazzo planare.
