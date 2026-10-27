@@ -63,7 +63,7 @@ Se un giocatore vuole scegliere il nome alternativo di una carta capovolgibile, 
 @201.4d
 Se un giocatore vuole scegliere il nome della faccia posteriore di una carta bifronte, può farlo. (Vedi regola 712.) Se a un giocatore viene detto di scegliere un nome di carta con determinate caratteristiche, per stabilire se quel nome può essere scelto si usano solo le caratteristiche della faccia posteriore.
 @201.4e
-Se un giocatore vuole scegliere il nome della faccia posteriore combinata di una coppia da fondere, può farlo. (Vedi regola 713.) Se a un giocatore viene detto di scegliere un nome di carta con determinate caratteristiche, per stabilire se quel nome può essere scelto si usano solo le caratteristiche della faccia posteriore combinata.
+Se un giocatore vuole scegliere il nome della faccia posteriore combinata di una coppia da combinare, può farlo. (Vedi regola 713.) Se a un giocatore viene detto di scegliere un nome di carta con determinate caratteristiche, per stabilire se quel nome può essere scelto si usano solo le caratteristiche della faccia posteriore combinata.
 @201.4f
 Se un giocatore vuole scegliere il nome alternativo di una carta avventuriero, può farlo. (Vedi regola 715.) Se a un giocatore viene detto di scegliere un nome di carta con determinate caratteristiche, per stabilire se quel nome può essere scelto si usano le caratteristiche della carta modificate dalle sue caratteristiche alternative.
 @201.4g
@@ -76,7 +76,7 @@ Esempio: Gutter Grime ha un'abilità che dice «Ogni volta che una creatura non 
 @201.5b
 Se un'abilità di un oggetto fa riferimento a quell'oggetto per nome, e un oggetto con un nome diverso ottiene quell'abilità, ogni occorrenza del primo nome nell'abilità ottenuta che si riferisce per nome al primo oggetto va trattata come il secondo nome.
 Esempio: Quicksilver Elemental dice, tra l'altro, «{U}: Questa creatura ottiene tutte le abilità attivate di una creatura bersaglio fino alla fine del turno». Se ottiene un'abilità che dice «{B}{B}: Rigenera Skithiryx», attivare quell'abilità rigenera Quicksilver Elemental, non Skithiryx, the Blight Dragon da cui ha ottenuto l'abilità.
-Esempio: Glacial Ray è un istantaneo con innestare su Arcano che dice «Glacial Ray infligge 2 danni a un qualsiasi bersaglio». Se viene innestato su un Kodama's Reach, quel Kodama's Reach infligge 2 danni al bersaglio.
+Esempio: Glacial Ray è un istantaneo con giuntura sull'Arcano che dice «Glacial Ray infligge 2 danni a un qualsiasi bersaglio». Se viene giuntato su un Kodama's Reach, quel Kodama's Reach infligge 2 danni al bersaglio.
 Esempio: The Ever-Changing 'Dane dice «{1}, Sacrifica un'altra creatura: The Ever-Changing 'Dane diventa una copia della creatura sacrificata, tranne per il fatto che ha questa abilità». La sua abilità viene attivata sacrificando un Runeclaw Bear. The Ever-Changing 'Dane diventa una copia di Runeclaw Bear e ottiene un'abilità che va trattata come se dicesse «{1}, Sacrifica un'altra creatura: Runeclaw Bear diventa una copia della creatura sacrificata, tranne per il fatto che ha questa abilità».
 @201.5c
 Il testo stampato su alcune carte fa riferimento a quella carta con una versione abbreviata del suo nome. Le occorrenze del nome abbreviato di una carta usate in questo modo vengono trattate come se usassero il nome completo della carta.
@@ -109,14 +109,14 @@ Gli effetti possono cambiare il colore di un oggetto, dare un colore a un oggett
 Il valore di mana di un oggetto è un numero pari alla quantità totale di mana nel suo costo di mana, indipendentemente dal colore.
 Esempio: Un costo di mana di {3}{U}{U} corrisponde a un valore di mana di 5.
 @202.3a
-Il valore di mana di un oggetto senza costo di mana è 0, a meno che quell'oggetto non sia la faccia posteriore di un permanente o di una magia bifronte non modale, oppure un permanente fuso.
+Il valore di mana di un oggetto senza costo di mana è 0, a meno che quell'oggetto non sia la faccia posteriore di un permanente o di una magia bifronte non modale, oppure un permanente combinato.
 @202.3b
 Il valore di mana della faccia posteriore di un permanente o di una magia bifronte non modale viene calcolato come se avesse il costo di mana della sua faccia anteriore. Se un permanente o una magia è una copia della faccia posteriore di un oggetto bifronte non modale (anche se la carta che rappresenta quella copia è a sua volta una carta bifronte), il valore di mana della copia è 0.
 Esempio: Huntmaster of the Fells è una carta bifronte non modale con costo di mana {2}{R}{G}. Il suo valore di mana è 4. Dopo che si è trasformata nell'altra faccia (Ravager of the Fells), il suo valore di mana resta 4.
 Esempio: Un Clone entra nel campo di battaglia come copia di Ravager of the Fells. Il suo valore di mana è 0.
 Esempio: Insectile Aberration è la faccia posteriore di una carta bifronte non modale la cui faccia anteriore ha costo di mana {U}. Diventa una copia di Ravager of the Fells. Il suo valore di mana diventa 0.
 @202.3c
-Il valore di mana di un permanente fuso viene calcolato come se avesse il costo di mana combinato delle facce anteriori di ciascuna carta che lo rappresenta. Se un permanente è una copia di un permanente fuso (anche se quella copia è rappresentata da altre due carte da fondere), il valore di mana della copia è 0.
+Il valore di mana di un permanente combinato viene calcolato come se avesse il costo di mana combinato delle facce anteriori di ciascuna carta che lo rappresenta. Se un permanente è una copia di un permanente combinato (anche se quella copia è rappresentata da altre due carte da fondere), il valore di mana della copia è 0.
 @202.3d
 Il valore di mana di una carta divisa che non è in pila, o di una magia divisa fusa in pila, è determinato dai costi di mana combinati delle sue metà. Altrimenti, mentre una carta divisa è in pila, il valore di mana della magia è determinato dal costo di mana della metà scelta per il lancio. Vedi regola 709, «Carte divise».
 @202.3e

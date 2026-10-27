@@ -7,19 +7,19 @@ La fase iniziale è composta da tre sottofasi, in quest'ordine: STAP, mantenimen
 @502
 Sottofase di STAP
 @502.1
-Primo, tutti i permanenti in fase con fasare controllati dal giocatore attivo vanno fuori fase, e tutti i permanenti fuori fase che il giocatore attivo controllava quando sono andati fuori fase rientrano in fase. Tutto questo avviene simultaneamente. Questa azione generata dal turno non usa la pila. Vedi regola 702.26, «Fasare».
+Primo, tutti i permanenti in fase con intermittenza controllati dal giocatore attivo vanno fuori fase, e tutti i permanenti fuori fase che il giocatore attivo controllava quando sono andati fuori fase rientrano in fase. Tutto questo avviene simultaneamente. Questa azione basata sul turno non usa la pila. Vedi regola 702.26, «Intermittenza».
 @502.2
-Secondo, se è giorno e il giocatore attivo del turno precedente non ha lanciato magie durante quel turno, diventa notte. Se è notte e il giocatore attivo del turno precedente ha lanciato due o più magie durante quel turno, diventa giorno. Se non è né giorno né notte, questo controllo non avviene e non resta né giorno né notte. Questa azione generata dal turno non usa la pila. Vedi regola 731, «Giorno e notte».
+Secondo, se è giorno e il giocatore attivo del turno precedente non ha lanciato magie durante quel turno, diventa notte. Se è notte e il giocatore attivo del turno precedente ha lanciato due o più magie durante quel turno, diventa giorno. Se non è né giorno né notte, questo controllo non avviene e non resta né giorno né notte. Questa azione basata sul turno non usa la pila. Vedi regola 731, «Giorno e notte».
 @502.2a
-Le partite multigiocatore che usano l'opzione dei turni di squadra condivisi usano una regola modificata. Se è giorno e nessun giocatore della squadra attiva del turno precedente ha lanciato una magia durante quel turno, diventa notte. Se è notte e un qualsiasi giocatore della squadra attiva del turno precedente ha lanciato due o più magie durante il turno precedente, diventa giorno. Se non è né giorno né notte, questo controllo non avviene e non resta né giorno né notte. Questa azione generata dal turno non usa la pila.
+Le partite multigiocatore che usano l'opzione dei turni di squadra condivisi usano una regola modificata. Se è giorno e nessun giocatore della squadra attiva del turno precedente ha lanciato una magia durante quel turno, diventa notte. Se è notte e un qualsiasi giocatore della squadra attiva del turno precedente ha lanciato due o più magie durante il turno precedente, diventa giorno. Se non è né giorno né notte, questo controllo non avviene e non resta né giorno né notte. Questa azione basata sul turno non usa la pila.
 @502.3
-Terzo, il giocatore attivo stabilisce quali permanenti che controlla verranno STAPpati. Poi li STAPpa tutti simultaneamente. Questa azione generata dal turno non usa la pila. Normalmente si STAPpano tutti i permanenti di un giocatore, ma degli effetti possono impedire che uno o più permanenti di un giocatore si STAPpino.
+Terzo, il giocatore attivo stabilisce quali permanenti che controlla verranno STAPpati. Poi li STAPpa tutti simultaneamente. Questa azione basata sul turno non usa la pila. Normalmente si STAPpano tutti i permanenti di un giocatore, ma degli effetti possono impedire che uno o più permanenti di un giocatore si STAPpino.
 @502.4
 Nessun giocatore riceve la priorità durante la sottofase di STAP, quindi nessuna magia può essere lanciata o risolversi e nessuna abilità può essere attivata o risolversi. Qualsiasi abilità che si innesca durante questa sottofase viene trattenuta fino alla prossima volta che un giocatore riceverebbe la priorità, che di solito è durante la sottofase di mantenimento. (Vedi regola 503, «Sottofase di mantenimento».)
 @503
 Sottofase di mantenimento
 @503.1
-La sottofase di mantenimento non ha azioni generate dal turno. Una volta iniziata, il giocatore attivo riceve la priorità. (Vedi regola 117, «Tempistica e priorità».)
+La sottofase di mantenimento non ha azioni basate sul turno. Una volta iniziata, il giocatore attivo riceve la priorità. (Vedi regola 117, «Tempistica e priorità».)
 @503.1a
 Tutte le abilità che si sono innescate durante la sottofase di STAP e tutte le abilità che si sono innescate all'inizio del mantenimento vengono messe in pila prima che il giocatore attivo riceva la priorità; l'ordine in cui si sono innescate non ha importanza. (Vedi regola 603, «Gestire le abilità innescate».)
 @503.2
@@ -27,7 +27,7 @@ Se una magia stabilisce che può essere lanciata solo «dopo la sottofase di man
 @504
 Sottofase di acquisizione
 @504.1
-Primo, il giocatore attivo pesca una carta. Questa azione generata dal turno non usa la pila.
+Primo, il giocatore attivo pesca una carta. Questa azione basata sul turno non usa la pila.
 @504.2
 Secondo, il giocatore attivo riceve la priorità. (Vedi regola 117, «Tempistica e priorità».)
 @505
@@ -41,11 +41,11 @@ Espressioni come «prima fase principale», «seconda fase principale» e così 
 @505.2
 La fase principale non ha sottofasi, quindi una fase principale termina quando tutti i giocatori passano in successione mentre la pila è vuota. (Vedi regola 500.2.)
 @505.3
-Primo, ma solo se i giocatori stanno giocando una partita Archenemy (vedi regola 904), il giocatore attivo è l'archenemy ed è la fase principale pre-combattimento del giocatore attivo, il giocatore attivo mette in moto la prima carta del proprio mazzo dei piani malvagi (vedi regola 701.32). Questa azione generata dal turno non usa la pila.
+Primo, ma solo se i giocatori stanno giocando una partita Archenemy (vedi regola 904), il giocatore attivo è l'archenemy ed è la fase principale pre-combattimento del giocatore attivo, il giocatore attivo mette in moto la prima carta del proprio mazzo dei piani malvagi (vedi regola 701.32). Questa azione basata sul turno non usa la pila.
 @505.4
-Secondo, se il giocatore attivo controlla uno o più incantesimi Saga ed è la fase principale pre-combattimento del giocatore attivo, il giocatore attivo mette un segnalino sapere su ogni Saga che controlla con una o più abilità di capitolo. (Vedi regola 714, «Carte Saga».) Questa azione generata dal turno non usa la pila.
+Secondo, se il giocatore attivo controlla uno o più incantesimi Saga ed è la fase principale pre-combattimento del giocatore attivo, il giocatore attivo mette un segnalino sapere su ogni Saga che controlla con una o più abilità di capitolo. (Vedi regola 714, «Carte Saga».) Questa azione basata sul turno non usa la pila.
 @505.5
-Terzo, se il giocatore attivo controlla una o più Attrazioni ed è la fase principale pre-combattimento del giocatore attivo, il giocatore attivo tira il dado per visitare le sue Attrazioni. (Vedi regola 701.52, «Tirare per visitare le tue Attrazioni».) Questa azione generata dal turno non usa la pila.
+Terzo, se il giocatore attivo controlla una o più Attrazioni ed è la fase principale pre-combattimento del giocatore attivo, il giocatore attivo tira il dado per visitare le sue Attrazioni. (Vedi regola 701.52, «Tirare per visitare le tue Attrazioni».) Questa azione basata sul turno non usa la pila.
 @505.6
 Quarto, il giocatore attivo riceve la priorità. (Vedi regola 117, «Tempistica e priorità».)
 @505.6a
@@ -59,7 +59,7 @@ La fase di combattimento ha cinque sottofasi, che si svolgono in ordine: inizio 
 @506.2
 Durante la fase di combattimento, il giocatore attivo è il giocatore attaccante; le creature che controlla possono attaccare. Durante la fase di combattimento di una partita a due giocatori, il giocatore non attivo è il giocatore in difesa; quel giocatore, i planeswalker che controlla e le battaglie che protegge possono essere attaccati.
 @506.2a
-Durante la fase di combattimento di una partita multigiocatore ci possono essere uno o più giocatori in difesa, a seconda della variante giocata e delle opzioni scelte. A meno che tutti gli avversari del giocatore attaccante non diventino automaticamente giocatori in difesa durante la fase di combattimento, il giocatore attaccante sceglie uno dei suoi avversari come azione generata dal turno durante la sottofase di inizio del combattimento. (Nota che la scelta può essere imposta dalla variante giocata o dalle opzioni scelte.) Quel giocatore diventa il giocatore in difesa. Vedi regola 802, «Opzione di attacco a più giocatori», regola 803, «Opzioni di attacco a sinistra e attacco a destra», e regola 809, «Variante Emperor».
+Durante la fase di combattimento di una partita multigiocatore ci possono essere uno o più giocatori in difesa, a seconda della variante giocata e delle opzioni scelte. A meno che tutti gli avversari del giocatore attaccante non diventino automaticamente giocatori in difesa durante la fase di combattimento, il giocatore attaccante sceglie uno dei suoi avversari come azione basata sul turno durante la sottofase di inizio del combattimento. (Nota che la scelta può essere imposta dalla variante giocata o dalle opzioni scelte.) Quel giocatore diventa il giocatore in difesa. Vedi regola 802, «Opzione di attacco a più giocatori», regola 803, «Opzioni di attacco a sinistra e attacco a destra», e regola 809, «Variante Emperor».
 @506.2b
 Nelle partite multigiocatore che usano l'opzione dei turni di squadra condivisi, la squadra attiva è la squadra attaccante e la squadra non attiva è la squadra in difesa. Vedi regola 805, «Opzione dei turni di squadra condivisi».
 @506.3
@@ -99,9 +99,9 @@ Alcune abilità controllano se una creatura «ha dovuto attaccare» durante una 
 @506.8
 Alcune magie stabiliscono che possono essere lanciate «solo [prima/dopo] [un determinato momento della fase di combattimento]», dove quel momento può essere «la dichiarazione degli attaccanti», «la dichiarazione dei bloccanti», «la sottofase del danno da combattimento», «la sottofase di fine del combattimento», «la fase di combattimento» o «il combattimento».
 @506.8a
-Una magia che stabilisce di poter essere lanciata «solo prima (o dopo) la dichiarazione degli attaccanti» si riferisce all'azione generata dal turno di dichiarare gli attaccanti. Può essere lanciata solo prima (o dopo) l'inizio della sottofase di dichiarazione degli attaccanti, indipendentemente dal fatto che vengano effettivamente dichiarati attaccanti. (Vedi regola 508.)
+Una magia che stabilisce di poter essere lanciata «solo prima (o dopo) la dichiarazione degli attaccanti» si riferisce all'azione basata sul turno di dichiarare gli attaccanti. Può essere lanciata solo prima (o dopo) l'inizio della sottofase di dichiarazione degli attaccanti, indipendentemente dal fatto che vengano effettivamente dichiarati attaccanti. (Vedi regola 508.)
 @506.8b
-Una magia che stabilisce di poter essere lanciata «solo prima (o dopo) la dichiarazione dei bloccanti» si riferisce all'azione generata dal turno di dichiarare i bloccanti. Può essere lanciata solo prima (o dopo) l'inizio della sottofase di dichiarazione dei bloccanti, indipendentemente dal fatto che vengano effettivamente dichiarati bloccanti. (Vedi regola 509.)
+Una magia che stabilisce di poter essere lanciata «solo prima (o dopo) la dichiarazione dei bloccanti» si riferisce all'azione basata sul turno di dichiarare i bloccanti. Può essere lanciata solo prima (o dopo) l'inizio della sottofase di dichiarazione dei bloccanti, indipendentemente dal fatto che vengano effettivamente dichiarati bloccanti. (Vedi regola 509.)
 @506.8c
 Alcune magie stabiliscono che possono essere lanciate solo «durante il combattimento» o «durante la fase di combattimento di un determinato giocatore», oltre ai criteri descritti nella regola 506.8. Se un turno ha più fasi di combattimento, queste magie possono essere lanciate in un momento appropriato durante una qualsiasi di esse.
 @506.8d
@@ -115,13 +115,13 @@ Le regole 506.8 e 506.8a–f si applicano alle abilità che stabiliscono di pote
 @507
 Sottofase di inizio del combattimento
 @507.1
-Primo, se la partita giocata è una partita multigiocatore in cui gli avversari del giocatore attivo non diventano tutti automaticamente giocatori in difesa, il giocatore attivo sceglie uno dei suoi avversari. Quel giocatore diventa il giocatore in difesa. Questa azione generata dal turno non usa la pila. (Vedi regola 506.2.)
+Primo, se la partita giocata è una partita multigiocatore in cui gli avversari del giocatore attivo non diventano tutti automaticamente giocatori in difesa, il giocatore attivo sceglie uno dei suoi avversari. Quel giocatore diventa il giocatore in difesa. Questa azione basata sul turno non usa la pila. (Vedi regola 506.2.)
 @507.2
 Secondo, il giocatore attivo riceve la priorità. (Vedi regola 117, «Tempistica e priorità».)
 @508
 Sottofase di dichiarazione degli attaccanti
 @508.1
-Primo, il giocatore attivo dichiara gli attaccanti. Questa azione generata dal turno non usa la pila. Per dichiarare gli attaccanti, il giocatore attivo segue in ordine i passaggi indicati qui sotto. Se in un qualsiasi momento durante la dichiarazione degli attaccanti il giocatore attivo non è in grado di rispettare uno dei passaggi elencati, la dichiarazione è illegale; la partita torna al momento precedente la dichiarazione (vedi regola 733, «Gestire le azioni illegali»).
+Primo, il giocatore attivo dichiara gli attaccanti. Questa azione basata sul turno non usa la pila. Per dichiarare gli attaccanti, il giocatore attivo segue in ordine i passaggi indicati qui sotto. Se in un qualsiasi momento durante la dichiarazione degli attaccanti il giocatore attivo non è in grado di rispettare uno dei passaggi elencati, la dichiarazione è illegale; la partita torna al momento precedente la dichiarazione (vedi regola 733, «Gestire le azioni illegali»).
 @508.1a
 Il giocatore attivo sceglie quali creature che controlla, se ce ne sono, attaccheranno. Le creature scelte devono essere STAPpate, non possono essere anche battaglie, e ognuna deve avere rapidità oppure essere stata controllata continuativamente dal giocatore attivo dall'inizio del turno.
 @508.1b
@@ -133,7 +133,7 @@ Esempio: Un giocatore controlla due creature, ognuna con una restrizione che dic
 Il giocatore attivo controlla ogni creatura che controlla per vedere se è soggetta a requisiti (effetti che dicono che una creatura attacca se possibile, o che attacca se si verifica una certa condizione). Se il numero di requisiti rispettati è inferiore al numero massimo possibile di requisiti che si potrebbero rispettare senza violare alcuna restrizione, la dichiarazione degli attaccanti è illegale. Se una creatura non può attaccare a meno che un giocatore non paghi un costo, quel giocatore non è obbligato a pagare quel costo, anche se attaccare con quella creatura aumenterebbe il numero di requisiti rispettati. Se un requisito che dice che una creatura attacca se possibile durante un certo turno si riferisce a un turno con più fasi di combattimento, la creatura attacca se possibile durante ogni sottofase di dichiarazione degli attaccanti di quel turno.
 Esempio: Un giocatore controlla due creature: una che «attacca se possibile» e una senza abilità. Un effetto dice «Non più di una creatura può attaccare in ogni turno». L'unico attacco legale è quello in cui attacca solo la creatura che «attacca se possibile». È illegale attaccare con l'altra creatura, attaccare con entrambe o non attaccare con nessuna.
 @508.1e
-Se una delle creature scelte ha fasciare o un'abilità «fasciare con altri», il giocatore attivo annuncia quali creature, se ce ne sono, sono fasciate con quali. (Vedi regola 702.22, «Fasciare».)
+Se una delle creature scelte ha unione o un'abilità «si unisce con altre», il giocatore attivo annuncia quali creature, se ce ne sono, formano un gruppo con quali. (Vedi regola 702.22, «Unione».)
 @508.1f
 Il giocatore attivo TAPpa le creature scelte. TAPpare una creatura quando viene dichiarata come attaccante non è un costo; attaccare fa semplicemente TAPpare le creature.
 @508.1g

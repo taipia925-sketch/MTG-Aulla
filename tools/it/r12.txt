@@ -31,7 +31,7 @@ Se nessuna creatura viene dichiarata come attaccante o messa sul campo di battag
 @509
 Sottofase di dichiarazione dei bloccanti
 @509.1
-Primo, il giocatore in difesa dichiara i bloccanti. Questa azione generata dal turno non usa la pila. Per dichiarare i bloccanti, il giocatore in difesa segue in ordine i passaggi indicati qui sotto. Se in un qualsiasi momento durante la dichiarazione dei bloccanti il giocatore in difesa non è in grado di rispettare uno dei passaggi elencati, la dichiarazione è illegale; la partita torna al momento precedente la dichiarazione (vedi regola 733, «Gestire le azioni illegali»).
+Primo, il giocatore in difesa dichiara i bloccanti. Questa azione basata sul turno non usa la pila. Per dichiarare i bloccanti, il giocatore in difesa segue in ordine i passaggi indicati qui sotto. Se in un qualsiasi momento durante la dichiarazione dei bloccanti il giocatore in difesa non è in grado di rispettare uno dei passaggi elencati, la dichiarazione è illegale; la partita torna al momento precedente la dichiarazione (vedi regola 733, «Gestire le azioni illegali»).
 @509.1a
 Il giocatore in difesa sceglie quali creature che controlla, se ce ne sono, bloccheranno. Le creature scelte devono essere STAPpate e non possono essere anche battaglie. Per ciascuna delle creature scelte, il giocatore in difesa sceglie una creatura da bloccare che sta attaccando lui, un planeswalker che controlla o una battaglia che protegge.
 @509.1b
@@ -82,7 +82,7 @@ Una creatura che viene messa sul campo di battaglia bloccante non è soggetta ai
 @510
 Sottofase del danno da combattimento
 @510.1
-Primo, il giocatore attivo annuncia come ogni creatura attaccante assegna il proprio danno da combattimento, poi il giocatore in difesa annuncia come ogni creatura bloccante assegna il proprio danno da combattimento. Questa azione generata dal turno non usa la pila. Un giocatore assegna il danno da combattimento di una creatura secondo le regole seguenti:
+Primo, il giocatore attivo annuncia come ogni creatura attaccante assegna il proprio danno da combattimento, poi il giocatore in difesa annuncia come ogni creatura bloccante assegna il proprio danno da combattimento. Questa azione basata sul turno non usa la pila. Un giocatore assegna il danno da combattimento di una creatura secondo le regole seguenti:
 @510.1a
 Ogni creatura attaccante e ogni creatura bloccante assegna un danno da combattimento pari alla propria forza. Le creature che in questo modo assegnerebbero 0 o meno danni non assegnano affatto danno da combattimento.
 @510.1b
@@ -95,7 +95,7 @@ Una creatura bloccante assegna danno da combattimento alle creature che sta bloc
 @510.1e
 Una volta che un giocatore ha assegnato il danno da combattimento di ogni creatura attaccante o bloccante che controlla, si controlla l'assegnazione complessiva del danno (non solo l'assegnazione di una singola creatura attaccante o bloccante) per vedere se rispetta le regole precedenti. Se non le rispetta, l'assegnazione del danno da combattimento è illegale; la partita torna al momento precedente l'inizio dell'assegnazione del danno da combattimento da parte di quel giocatore. (Vedi regola 733, «Gestire le azioni illegali».)
 @510.2
-Secondo, tutto il danno da combattimento assegnato viene inflitto simultaneamente. Questa azione generata dal turno non usa la pila. Nessun giocatore ha la possibilità di lanciare magie o attivare abilità tra il momento in cui il danno da combattimento viene assegnato e quello in cui viene inflitto.
+Secondo, tutto il danno da combattimento assegnato viene inflitto simultaneamente. Questa azione basata sul turno non usa la pila. Nessun giocatore ha la possibilità di lanciare magie o attivare abilità tra il momento in cui il danno da combattimento viene assegnato e quello in cui viene inflitto.
 @510.3
 Terzo, il giocatore attivo riceve la priorità. (Vedi regola 117, «Tempistica e priorità».)
 @510.3a
@@ -105,7 +105,7 @@ Se all'inizio della sottofase del danno da combattimento almeno una creatura att
 @511
 Sottofase di fine del combattimento
 @511.1
-La sottofase di fine del combattimento non ha azioni generate dal turno. Una volta iniziata, il giocatore attivo riceve la priorità. (Vedi regola 117, «Tempistica e priorità».)
+La sottofase di fine del combattimento non ha azioni basate sul turno. Una volta iniziata, il giocatore attivo riceve la priorità. (Vedi regola 117, «Tempistica e priorità».)
 @511.2
 Le abilità che si innescano «alla fine del combattimento» si innescano quando inizia la sottofase di fine del combattimento. Gli effetti che durano «fino alla fine del combattimento» terminano alla fine della fase di combattimento.
 @511.3
@@ -117,7 +117,7 @@ La fase finale è composta da due sottofasi: finale e cancellazione.
 @513
 Sottofase finale
 @513.1
-La sottofase finale non ha azioni generate dal turno. Una volta iniziata, il giocatore attivo riceve la priorità. (Vedi regola 117, «Tempistica e priorità».)
+La sottofase finale non ha azioni basate sul turno. Una volta iniziata, il giocatore attivo riceve la priorità. (Vedi regola 117, «Tempistica e priorità».)
 @513.1a
 In passato, le abilità che si innescavano all'inizio della sottofase finale erano stampate con la condizione di innesco «alla fine del turno». Le carte stampate con quel testo hanno ricevuto errata nel riferimento Oracle per dire «all'inizio della sottofase finale» o «all'inizio della prossima sottofase finale».
 @513.2
@@ -125,9 +125,9 @@ Se durante questa sottofase entra nel campo di battaglia un permanente con un'ab
 @514
 Sottofase di cancellazione
 @514.1
-Primo, se la mano del giocatore attivo contiene più carte della sua dimensione massima della mano (normalmente sette), quel giocatore scarta carte finché la sua mano non scende a quel numero. Questa azione generata dal turno non usa la pila.
+Primo, se la mano del giocatore attivo contiene più carte della sua numero massimo di carte in mano (normalmente sette), quel giocatore scarta carte finché la sua mano non scende a quel numero. Questa azione basata sul turno non usa la pila.
 @514.2
-Secondo, avvengono simultaneamente le azioni seguenti: tutto il danno segnato sui permanenti (compresi i permanenti fuori fase) viene rimosso e tutti gli effetti «fino alla fine del turno» e «in questo turno» terminano. Questa azione generata dal turno non usa la pila.
+Secondo, avvengono simultaneamente le azioni seguenti: tutto il danno segnato sui permanenti (compresi i permanenti fuori fase) viene rimosso e tutti gli effetti «fino alla fine del turno» e «in questo turno» terminano. Questa azione basata sul turno non usa la pila.
 @514.3
 Normalmente nessun giocatore riceve la priorità durante la sottofase di cancellazione, quindi non si possono lanciare magie né attivare abilità. Tuttavia, questa regola ha l'eccezione seguente:
 @514.3a

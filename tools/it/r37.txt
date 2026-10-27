@@ -151,7 +151,7 @@ Le partite Commander Draft seguono le stesse regole delle partite Commander. Ved
 @904
 Archenemy
 @904.1
-Nella variante Archenemy, una squadra di giocatori affronta un singolo avversario rafforzato da potenti carte piano. La variante Archenemy usa tutte le normali regole di una partita di Magic, con le seguenti aggiunte.
+Nella variante Archenemy, una squadra di giocatori affronta un singolo avversario rafforzato da potenti carte piano malvagio. La variante Archenemy usa tutte le normali regole di una partita di Magic, con le seguenti aggiunte.
 @904.2
 La configurazione predefinita di una partita Archenemy è la variante multigiocatore Squadra contro squadra (vedi regola 808) con esattamente due squadre. Vengono usate l'opzione di attacco a più giocatori (vedi regola 802) e l'opzione dei turni di squadra condivisi (vedi regola 805); non vengono usate altre opzioni multigiocatore.
 @904.2a
@@ -159,27 +159,27 @@ Una delle squadre è formata da esattamente un giocatore, che viene designato co
 @904.2b
 L'altra squadra è formata da un qualsiasi numero di giocatori.
 @904.3
-Oltre ai normali materiali di gioco, l'arcinemico ha bisogno di un mazzo dei piani supplementare di almeno venti carte piano. Un mazzo dei piani non può contenere più di due copie di una carta con un particolare nome inglese. (Vedi regola 314, «Piani malvagi».)
+Oltre ai normali materiali di gioco, l'arcinemico ha bisogno di un mazzo dei piani malvagi supplementare di almeno venti carte piano malvagio. Un mazzo dei piani malvagi non può contenere più di due copie di una carta con un particolare nome inglese. (Vedi regola 314, «Piani malvagi».)
 @904.4
-Tutte le carte piano restano nella zona di comando per tutta la partita, sia mentre fanno parte di un mazzo dei piani sia mentre sono a faccia in su.
+Tutte le carte piano malvagio restano nella zona di comando per tutta la partita, sia mentre fanno parte di un mazzo dei piani malvagi sia mentre sono a faccia in su.
 @904.5
 Il totale di punti vita iniziale dell'arcinemico è 40. Il totale di punti vita iniziale di ogni altro giocatore è 20.
 @904.6
 Invece di un giocatore determinato casualmente, è l'arcinemico a giocare il primo turno della partita.
 @904.7
-Il proprietario di una carta piano è il giocatore che ha iniziato la partita con essa nella zona di comando. Il controllore di una carta piano a faccia in su è il suo proprietario.
+Il proprietario di una carta piano malvagio è il giocatore che ha iniziato la partita con essa nella zona di comando. Il controllore di una carta piano malvagio a faccia in su è il suo proprietario.
 @904.8
-Tutte le abilità di una carta piano a faccia in su nella zona di comando funzionano da quella zona. Le abilità statiche della carta influenzano la partita, le sue abilità innescate possono innescarsi e le sue abilità attivate possono essere attivate.
+Tutte le abilità di una carta piano malvagio a faccia in su nella zona di comando funzionano da quella zona. Le abilità statiche della carta influenzano la partita, le sue abilità innescate possono innescarsi e le sue abilità attivate possono essere attivate.
 @904.9
-Subito dopo l'inizio della fase principale precombattimento dell'arcinemico durante ciascuno dei suoi turni, quel giocatore toglie la prima carta del suo mazzo dei piani da quel mazzo e la gira a faccia in su. Questo si chiama «mettere in moto quel piano». (Vedi regola 701.32.) Questa azione basata sul turno non usa la pila. Le abilità di quella carta piano che si innescano «Quando metti in moto questo piano» si innescano.
+Subito dopo l'inizio della fase principale precombattimento dell'arcinemico durante ciascuno dei suoi turni, quel giocatore toglie la prima carta del suo mazzo dei piani malvagi da quel mazzo e la gira a faccia in su. Questo si chiama «mettere in moto quel piano malvagio». (Vedi regola 701.32.) Questa azione basata sul turno non usa la pila. Le abilità di quella carta piano malvagio che si innescano «Quando metti in moto questo piano malvagio» si innescano.
 @904.10
-Se una carta piano non continuativo è a faccia in su nella zona di comando, e nessuna abilità innescata di alcun piano è in pila o in attesa di essere messa in pila, quella carta piano viene girata a faccia in giù e messa in fondo al mazzo dei piani del suo proprietario la volta successiva in cui un giocatore dovrebbe ricevere la priorità. (Questa è un'azione generata dallo stato. Vedi regola 704.)
+Se una carta piano malvagio non continuativo è a faccia in su nella zona di comando, e nessuna abilità innescata di alcun piano malvagio è in pila o in attesa di essere messa in pila, quella carta piano malvagio viene girata a faccia in giù e messa in fondo al mazzo dei piani malvagi del suo proprietario la volta successiva in cui un giocatore dovrebbe ricevere la priorità. (Questa è un'azione generata dallo stato. Vedi regola 704.)
 @904.11
-Una volta messa in moto, una carta piano continuativo resta a faccia in su nella zona di comando finché un'abilità non la fa abbandonare (vedi regola 701.33).
+Una volta messa in moto, una carta piano malvagio continuativo resta a faccia in su nella zona di comando finché un'abilità non la fa abbandonare (vedi regola 701.33).
 @904.12
 Opzione Supervillain Rumble
 @904.12a
-Come opzione alternativa, i giocatori possono giocare una partita Tutti contro tutti in cui ogni giocatore ha il proprio mazzo dei piani. Viene usata l'opzione di attacco a più giocatori (vedi regola 802); non vengono usate altre opzioni multigiocatore.
+Come opzione alternativa, i giocatori possono giocare una partita Tutti contro tutti in cui ogni giocatore ha il proprio mazzo dei piani malvagi. Viene usata l'opzione di attacco a più giocatori (vedi regola 802); non vengono usate altre opzioni multigiocatore.
 @904.12b
 Ogni giocatore di questa partita è un arcinemico.
 @904.12c
@@ -193,7 +193,7 @@ L'arcinemico inizia con 60 punti vita. La squadra avversaria ha un totale di pun
 @904.13c
 I segnalini veleno non sono condivisi. Se l'arcinemico ha dieci o più segnalini veleno, perde la partita. Se un singolo membro della squadra avversaria ha dieci o più segnalini veleno, perde la partita. (Questa è un'azione generata dallo stato. Vedi regola 704.)
 @904.13d
-Il mazzo dei piani dell'arcinemico deve contenere almeno dieci carte, e ogni carta deve avere un nome inglese diverso.
+Il mazzo dei piani malvagi dell'arcinemico deve contenere almeno dieci carte, e ogni carta deve avere un nome inglese diverso.
 @905
 Conspiracy Draft
 @905.1

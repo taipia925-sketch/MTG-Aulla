@@ -27,7 +27,7 @@ Un'abilità chiave che ti permette di esiliare una carta creatura dal tuo cimite
 Piano malvagio (Scheme)
 Un tipo di carta presente solo su carte di Magic non tradizionali nella variante casual Archenemy. Una carta piano malvagio non è un permanente. Vedi regola 314, «Piani malvagi».
 @@Scheme Deck
-Mazzo dei piani
+Mazzo dei piani malvagi
 Un mazzo di almeno venti carte piano malvagio necessario per giocare la variante casual Archenemy. Vedi regola 904.3.
 @@Scry
 Profetizzare
@@ -43,7 +43,7 @@ Mettere da parte (obsoleto)
 «Metti [qualcosa] da parte» è un termine obsoleto per «esilia [qualcosa]». Le carte con quel testo hanno ricevuto errata nel riferimento Oracle. Vedi Esilio.
 @@Set in Motion
 Mettere in moto
-Togliere una carta piano malvagio dalla cima del tuo mazzo dei piani e girarla a faccia in su. Vedi regola 701.32, «Mettere in moto».
+Togliere una carta piano malvagio dalla cima del tuo mazzo dei piani malvagi e girarla a faccia in su. Vedi regola 701.32, «Mettere in moto».
 @@Shadow
 Ombra
 Un'abilità chiave che limita il modo in cui una creatura può essere bloccata e quali creature può bloccare. Vedi regola 702.28, «Ombra».
@@ -243,8 +243,8 @@ Una caratteristica che appare prima del tipo di carta sulla riga del tipo di una
 Supervillain Rumble
 Una partita Tutti contro tutti in cui ogni giocatore è un arcinemico. Vedi regola 806, «Tutti contro tutti», e regola 904, «Archenemy».
 @@Support
-Sostenere (Support)
-Un'azione chiave che ti permette di mettere segnalini +1/+1 su creature. Vedi regola 701.41, «Sostenere».
+Supportare (Support)
+Un'azione chiave che ti permette di mettere segnalini +1/+1 su creature. Vedi regola 701.41, «Supportare».
 @@Surge
 Impeto (Surge)
 Un'abilità chiave che fornisce un costo alternativo per lanciare una carta se tu o uno dei tuoi compagni di squadra avete lanciato un'altra magia nello stesso turno. Vedi regola 702.117, «Impeto».

@@ -24,7 +24,7 @@ Alcune abilità innescate controllano se a un permanente è stato inflitto danno
 @121
 Pescare una carta
 @121.1
-Un giocatore pesca una carta mettendo la prima carta del suo grimorio nella sua mano. Questo avviene come azione generata dal turno durante la sottofase di acquisizione di ogni giocatore. Può avvenire anche come parte di un costo o di un effetto di una magia o abilità.
+Un giocatore pesca una carta mettendo la prima carta del suo grimorio nella sua mano. Questo avviene come azione basata sul turno durante la sottofase di acquisizione di ogni giocatore. Può avvenire anche come parte di un costo o di un effetto di una magia o abilità.
 @121.2
 Le carte possono essere pescate solo una alla volta. Se a un giocatore viene detto di pescare più carte, quel giocatore esegue altrettante pescate singole.
 @121.2a
@@ -126,11 +126,11 @@ Alcune regole ed effetti fanno riferimento a un oggetto «con adesivi». Un ogge
 @123.5
 Gli adesivi su un oggetto non vengono mantenuti quando quell'oggetto si sposta in una zona nascosta. Gli adesivi vengono mantenuti quando quell'oggetto si sposta in una zona pubblica e continuano ad applicarsi al nuovo oggetto che diventa in quella zona; questa è un'eccezione alla regola 400.7.
 @123.5a
-Se una o più carte con adesivi entrano nel campo di battaglia come parte di un permanente fuso, tutti quegli adesivi si trovano sul permanente che quell'oggetto diventa sul campo di battaglia. Mantengono il loro ordine cronologico relativo.
+Se una o più carte con adesivi entrano nel campo di battaglia come parte di un permanente combinato, tutti quegli adesivi si trovano sul permanente che quell'oggetto diventa sul campo di battaglia. Mantengono il loro ordine cronologico relativo.
 @123.5b
 Se un oggetto con un adesivo diventa una componente di un permanente unito sul campo di battaglia, quell'adesivo si trova su quel permanente unito.
 @123.5c
-Se un permanente fuso o unito con uno o più adesivi si sposta dal campo di battaglia a un'altra zona pubblica, solo uno degli oggetti che diventa manterrà quegli adesivi. Il suo proprietario sceglie quale degli oggetti che diventa nella nuova zona mantiene gli adesivi che si trovano su di esso. Gli effetti di quegli adesivi continueranno ad applicarsi solo a quell'oggetto.
+Se un permanente combinato o fuso con uno o più adesivi si sposta dal campo di battaglia a un'altra zona pubblica, solo uno degli oggetti che diventa manterrà quegli adesivi. Il suo proprietario sceglie quale degli oggetti che diventa nella nuova zona mantiene gli adesivi che si trovano su di esso. Gli effetti di quegli adesivi continueranno ad applicarsi solo a quell'oggetto.
 @123.6
 Un adesivo nome consiste solo di una o più parole. Un adesivo nome su un permanente o su una carta in una zona diversa dal campo di battaglia fa aggiungere la parola di quell'adesivo al testo del nome di quell'oggetto. Questo è un effetto che cambia il testo. Vedi regola 613.1c e regola 612, «Effetti che cambiano il testo».
 @123.6a

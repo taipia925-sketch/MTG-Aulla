@@ -53,7 +53,7 @@ Se un effetto fa ottenere a un giocatore il controllo di una magia permanente di
 @110.3
 Le caratteristiche di un permanente che non è una pedina sono quelle stampate sulla sua carta, modificate da eventuali effetti continui. Vedi regola 613, «Interazione degli effetti continui».
 @110.4
-Ci sono sei tipi di permanente: artefatto, battaglia, creatura, incantesimo, terra e planeswalker. Le carte istantaneo e stregoneria non possono entrare nel campo di battaglia e quindi non possono essere permanenti. Alcune carte kindred possono entrare nel campo di battaglia e altre no, a seconda degli altri loro tipi di carta. Vedi la sezione 3, «Tipi di carta».
+Ci sono sei tipi di permanente: artefatto, battaglia, creatura, incantesimo, terra e planeswalker. Le carte istantaneo e stregoneria non possono entrare nel campo di battaglia e quindi non possono essere permanenti. Alcune carte tribali possono entrare nel campo di battaglia e altre no, a seconda degli altri loro tipi di carta. Vedi la sezione 3, «Tipi di carta».
 @110.4a
 L'espressione «carta permanente» indica una carta che potrebbe essere messa sul campo di battaglia. In particolare, si intende una carta artefatto, battaglia, creatura, incantesimo, terra o planeswalker.
 @110.4b
@@ -67,7 +67,7 @@ Lo stato non è una caratteristica, anche se può influire sulle caratteristiche
 @110.5b
 I permanenti entrano nel campo di battaglia STAPpati, non capovolti, a faccia in su e in fase, a meno che una magia o abilità non dica altrimenti.
 @110.5c
-Un permanente mantiene il proprio stato finché una magia, un'abilità o un'azione generata dal turno non lo cambia, anche se quello stato non è rilevante per esso.
+Un permanente mantiene il proprio stato finché una magia, un'abilità o un'azione basata sul turno non lo cambia, anche se quello stato non è rilevante per esso.
 Esempio: Dimir Doppelganger dice «{1}{U}{B}: Esilia una carta creatura bersaglio da un cimitero. Questa creatura diventa una copia di quella carta, tranne per il fatto che ha questa abilità». Diventa una copia di Jushi Apprentice, una carta capovolgibile. Usando l'abilità di Jushi Apprentice, questa creatura si capovolge, diventando una copia di Tomoya the Revealer con l'abilità di Dimir Doppelganger. Se poi questo permanente diventa una copia di Runeclaw Bear, manterrà il suo stato capovolto anche se non ha alcuna rilevanza per Runeclaw Bear. Se la sua abilità di copia viene attivata di nuovo, stavolta prendendo come bersaglio una carta Nezumi Shortfang (un'altra carta capovolgibile), lo stato capovolto di questo permanente fa sì che abbia le caratteristiche di Stabwhisker the Odious (la versione capovolta di Nezumi Shortfang) con l'abilità di Dimir Doppelganger.
 @110.5d
 Solo i permanenti hanno uno stato. Le carte che non sono sul campo di battaglia non ce l'hanno. Anche se una carta esiliata può essere a faccia in giù, questo non ha alcun legame con lo stato a faccia in giù di un permanente. Allo stesso modo, le carte che non sono sul campo di battaglia non sono né TAPpate né STAPpate, indipendentemente dalla loro posizione fisica.

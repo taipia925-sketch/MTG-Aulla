@@ -66,7 +66,7 @@ Mano
 @402.1
 La mano è il luogo in cui un giocatore tiene le carte pescate. Le carte possono essere messe nella mano di un giocatore anche da altri effetti. All'inizio della partita, ogni giocatore pesca un numero di carte pari alla propria dimensione della mano iniziale, normalmente sette. (Vedi regola 103, «Iniziare la partita».)
 @402.2
-Ogni giocatore ha una dimensione massima della mano, che normalmente è sette carte. Un giocatore può avere in mano un numero qualsiasi di carte, ma durante la propria sottofase di cancellazione deve scartare le carte in eccesso fino alla dimensione massima della mano.
+Ogni giocatore ha una numero massimo di carte in mano, che normalmente è sette carte. Un giocatore può avere in mano un numero qualsiasi di carte, ma durante la propria sottofase di cancellazione deve scartare le carte in eccesso fino alla numero massimo di carte in mano.
 @402.3
 Un giocatore può disporre la propria mano nel modo che preferisce e guardarla in qualsiasi momento. Un giocatore non può guardare le carte nella mano di un altro giocatore, ma può contarle in qualsiasi momento.
 @403
@@ -112,7 +112,7 @@ Le abilità di mana si risolvono immediatamente. Se un'abilità di mana produce 
 @405.6d
 Le azioni speciali non usano la pila; avvengono immediatamente. Vedi regola 116, «Azioni speciali».
 @405.6e
-Le azioni generate dal turno non usano la pila; avvengono automaticamente quando iniziano determinate sottofasi o fasi. Vengono gestite prima che un giocatore riceva la priorità (vedi regola 117.3a). Le azioni generate dal turno avvengono automaticamente anche alla fine di ogni sottofase e fase; dopo di esse nessun giocatore riceve la priorità. Vedi regola 703.
+Le azioni basate sul turno non usano la pila; avvengono automaticamente quando iniziano determinate sottofasi o fasi. Vengono gestite prima che un giocatore riceva la priorità (vedi regola 117.3a). Le azioni basate sul turno avvengono automaticamente anche alla fine di ogni sottofase e fase; dopo di esse nessun giocatore riceve la priorità. Vedi regola 703.
 @405.6f
 Le azioni generate dallo stato non usano la pila; avvengono automaticamente quando si verificano determinate condizioni. Vedi regola 704. Vengono gestite prima che un giocatore riceva la priorità. Vedi regola 117.5.
 @405.6g
@@ -158,7 +158,7 @@ La zona di comando è un'area di gioco riservata a determinati oggetti speciali 
 @408.2
 Gli emblemi possono essere creati nella zona di comando. Vedi regola 114, «Emblemi».
 @408.3
-Nelle varianti amichevoli Planechase, Vanguard, Commander, Archenemy e Conspiracy Draft, le carte di Magic non tradizionali e/o le carte designate in modo speciale iniziano la partita nella zona di comando. Ogni variante ha regole proprie riguardanti tali carte. Vedi la sezione 9, «Varianti amichevoli».
+Nelle varianti casual Planechase, Vanguard, Commander, Archenemy e Conspiracy Draft, le carte di Magic non tradizionali e/o le carte designate in modo speciale iniziano la partita nella zona di comando. Ogni variante ha regole proprie riguardanti tali carte. Vedi la sezione 9, «Varianti casual».
 @#5
 Struttura del turno
 @500
@@ -172,7 +172,7 @@ Una sottofase in cui nessun giocatore riceve la priorità termina quando tutte l
 @500.4
 Quando inizia una sottofase o una fase, se ci sono effetti che durano fino a quella sottofase o fase, quegli effetti terminano.
 @500.5
-Quando una sottofase o una fase termina, se ci sono effetti che durano fino alla fine di quella sottofase o fase, quegli effetti terminano. Poi il mana non speso rimasto nella riserva di mana di un giocatore si svuota. Questa è un'azione generata dal turno che non usa la pila (vedi regola 703.4q).
+Quando una sottofase o una fase termina, se ci sono effetti che durano fino alla fine di quella sottofase o fase, quegli effetti terminano. Poi il mana non speso rimasto nella riserva di mana di un giocatore si svuota. Questa è un'azione basata sul turno che non usa la pila (vedi regola 703.4q).
 @500.5a
 Gli effetti che durano «fino alla fine del combattimento» terminano alla fine della fase di combattimento, non all'inizio della sottofase di fine combattimento.
 @500.5b

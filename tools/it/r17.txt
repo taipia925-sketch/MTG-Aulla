@@ -1,7 +1,7 @@
 @612.9
 Un adesivo nome su un permanente o su una carta che non è sul campo di battaglia crea un effetto continuo che aggiunge una parola al testo che rappresenta il nome dell'oggetto. (Vedi regola 123.6.)
 @612.10
-Un'abilità innestare cambia il testo di una magia aggiungendo alla magia il testo delle regole della carta con innestare, dopo il testo delle regole della magia stessa. Non modifica né sostituisce alcuna parte del testo proprio di quella magia. (Vedi regola 702.47, «Innestare».)
+Un'abilità giuntura cambia il testo di una magia aggiungendo alla magia il testo delle regole della carta con giuntura, dopo il testo delle regole della magia stessa. Non modifica né sostituisce alcuna parte del testo proprio di quella magia. (Vedi regola 702.47, «Innestare».)
 @613
 Interazione degli effetti continui
 @613.1
@@ -97,7 +97,7 @@ Esempio: Un effetto dice «Le creature bianche prendono +1/+1», e un altro dice
 @613.10
 Alcuni effetti continui interessano i giocatori invece degli oggetti. Per esempio, un effetto potrebbe dare a un giocatore protezione dal rosso. Tutti questi effetti si applicano in ordine cronologico dopo la determinazione delle caratteristiche degli oggetti. Vedi anche le regole sull'ordine cronologico e sulla dipendenza (regole 613.7 e 613.8).
 @613.11
-Alcuni effetti continui interessano le regole del gioco invece degli oggetti. Per esempio, gli effetti possono modificare la dimensione massima della mano di un giocatore, o dire che una creatura deve attaccare in questo turno se possibile. Questi effetti si applicano dopo che sono stati applicati tutti gli altri effetti continui. Gli effetti continui che influiscono sui costi di magie o abilità si applicano secondo l'ordine indicato nella regola 601.2f. Tutti gli altri effetti di questo tipo si applicano in ordine cronologico. Vedi anche le regole sull'ordine cronologico e sulla dipendenza (regole 613.7 e 613.8).
+Alcuni effetti continui interessano le regole del gioco invece degli oggetti. Per esempio, gli effetti possono modificare la numero massimo di carte in mano di un giocatore, o dire che una creatura deve attaccare in questo turno se possibile. Questi effetti si applicano dopo che sono stati applicati tutti gli altri effetti continui. Gli effetti continui che influiscono sui costi di magie o abilità si applicano secondo l'ordine indicato nella regola 601.2f. Tutti gli altri effetti di questo tipo si applicano in ordine cronologico. Vedi anche le regole sull'ordine cronologico e sulla dipendenza (regole 613.7 e 613.8).
 @614
 Effetti di sostituzione
 @614.1

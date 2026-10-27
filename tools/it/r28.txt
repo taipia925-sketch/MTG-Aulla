@@ -161,7 +161,7 @@ Subito dopo che la partita ha controllato se la sua designazione giorno o notte 
 @703.4d
 Subito dopo l'inizio della sottofase di acquisizione, il giocatore attivo pesca una carta. Vedi regola 504.1.
 @703.4e
-In una partita Archenemy (vedi regola 904), subito dopo l'inizio della fase principale precombattimento dell'arcinemico, quel giocatore mette in moto la prima carta del suo mazzo dei piani. Vedi regola 701.32.
+In una partita Archenemy (vedi regola 904), subito dopo l'inizio della fase principale precombattimento dell'arcinemico, quel giocatore mette in moto la prima carta del suo mazzo dei piani malvagi. Vedi regola 701.32.
 @703.4f
 Subito dopo l'inizio della fase principale precombattimento di un giocatore, quel giocatore mette un segnalino sapere su ogni incantesimo Saga che controlla con una o più abilità di capitolo. In una partita Archenemy, ciò avviene dopo l'azione del piano dell'arcinemico. Vedi regola 714, «Carte Saga».
 @703.4g

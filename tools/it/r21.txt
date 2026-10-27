@@ -192,15 +192,15 @@ Esempio: Spirit Water Revival è una magia che costa {1}{U}{U} e dice, tra l'alt
 @701.67c
 Un'abilità che si innesca ogni volta che un giocatore domina l'acqua si innesca ogni volta che quel giocatore paga un costo di dominare l'acqua, indipendentemente da come ha pagato quel costo.
 @701.68
-Avvizzire (Blight)
+Deperire (Blight)
 @701.68a
-«Blight N» significa mettere N segnalini -1/-1 su una creatura che controlli.
+«Deperire N» significa mettere N segnalini -1/-1 su una creatura che controlli.
 @701.68b
-Se a un giocatore viene data la scelta di fare blight ma non può mettere N segnalini -1/-1 su una creatura che controlla (di solito perché non controlla creature), non può scegliere di fare blight.
+Se a un giocatore viene data la scelta di deperire ma non può mettere N segnalini -1/-1 su una creatura che controlla (di solito perché non controlla creature), non può scegliere di deperire.
 @701.68c
-Alcune magie e abilità che istruiscono un giocatore a fare blight fanno riferimento alla «creatura colpita da blight». Questa espressione si riferisce all'oggetto su cui il giocatore che doveva fare blight ha scelto di mettere i segnalini -1/-1 facendo blight.
+Alcune magie e abilità che istruiscono un giocatore a deperire fanno riferimento alla «creatura deperita». Questa espressione si riferisce all'oggetto su cui il giocatore che doveva deperire ha scelto di mettere i segnalini -1/-1 deperendo.
 @701.68d
-Un'abilità che si innesca ogni volta che un giocatore fa blight si innesca dopo che il procedimento descritto nella regola 701.68a è completato, indipendentemente dagli eventi effettivamente avvenuti.
+Un'abilità che si innesca ogni volta che un giocatore deperisce si innesca dopo che il procedimento descritto nella regola 701.68a è completato, indipendentemente dagli eventi effettivamente avvenuti.
 @701.69
 Curare
 @701.69a
@@ -219,7 +219,7 @@ Abilità chiave
 La maggior parte delle abilità descrive esattamente ciò che fa nel testo delle regole della carta. Alcune, però, sono molto comuni o richiederebbero troppo spazio per essere definite sulla carta. In questi casi, l'oggetto riporta solo il nome dell'abilità come «parola chiave»; a volte il testo di richiamo riassume la regola di gioco.
 @702.1a
 Se un effetto fa riferimento a un «costo di [abilità chiave]», si riferisce solo ai costi variabili di quella parola chiave.
-Esempio: Varolz, the Scar-Striped ha un'abilità che dice «Ogni carta creatura nel tuo cimitero ha saccheggiare. Il costo di saccheggiare è pari al suo costo di mana». Il costo di saccheggiare di una carta creatura è una quantità di mana pari al suo costo di mana, e il costo di attivazione dell'abilità saccheggiare è quella quantità di mana più «Esilia questa carta dal tuo cimitero».
+Esempio: Varolz, the Scar-Striped ha un'abilità che dice «Ogni carta creatura nel tuo cimitero ha sciacallare. Il costo di sciacallare è pari al suo costo di mana». Il costo di sciacallare di una carta creatura è una quantità di mana pari al suo costo di mana, e il costo di attivazione dell'abilità sciacallare è quella quantità di mana più «Esilia questa carta dal tuo cimitero».
 @702.1b
 Un effetto che conferisce a un oggetto un'abilità chiave può definire una variabile in quell'abilità in base alle caratteristiche di quell'oggetto o ad altre informazioni sullo stato di gioco. Per queste abilità, il valore di quella variabile viene costantemente rivalutato.
 Esempio: Volcano Hellion ha l'abilità «Questa creatura ha eco {X}, dove X è il tuo totale di punti vita». Se il tuo totale di punti vita è 10 quando si innesca l'abilità eco di Volcano Hellion ma è 5 quando si risolve, il costo di eco da pagare è {5}.

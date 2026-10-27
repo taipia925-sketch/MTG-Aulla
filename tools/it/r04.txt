@@ -13,7 +13,7 @@ Le abilità innescate possono innescarsi in qualsiasi momento, anche mentre una 
 @117.2b
 Le abilità statiche influiscono continuamente sulla partita. La priorità non si applica a esse. (Vedi regola 604, «Gestire le abilità statiche», e regola 611, «Effetti continui».)
 @117.2c
-Le azioni generate dal turno avvengono automaticamente quando iniziano determinate sottofasi o fasi. Vengono gestite prima che un giocatore riceva la priorità. Vedi regola 117.3a. Le azioni generate dal turno avvengono automaticamente anche alla fine di ogni sottofase e fase; dopo di esse nessun giocatore riceve la priorità. Vedi regola 703, «Azioni generate dal turno».
+Le azioni basate sul turno avvengono automaticamente quando iniziano determinate sottofasi o fasi. Vengono gestite prima che un giocatore riceva la priorità. Vedi regola 117.3a. Le azioni basate sul turno avvengono automaticamente anche alla fine di ogni sottofase e fase; dopo di esse nessun giocatore riceve la priorità. Vedi regola 703, «Azioni generate dal turno».
 @117.2d
 Le azioni generate dallo stato avvengono automaticamente quando si verificano determinate condizioni. Vedi regola 704. Vengono gestite prima che un giocatore riceva la priorità. Vedi regola 117.5.
 @117.2e
@@ -21,7 +21,7 @@ Le magie e abilità che si risolvono possono istruire i giocatori a fare scelte 
 @117.3
 Quale giocatore abbia la priorità è determinato dalle regole seguenti:
 @117.3a
-Il giocatore attivo riceve la priorità all'inizio della maggior parte delle sottofasi e fasi, dopo che sono state gestite le eventuali azioni generate dal turno (come pescare una carta durante la sottofase di acquisizione; vedi regola 703) e dopo che le abilità che si innescano all'inizio di quella fase o sottofase sono state messe in pila. Nessun giocatore riceve la priorità durante la sottofase di STAP. Di solito i giocatori non ricevono la priorità durante la sottofase di cancellazione (vedi regola 514.3).
+Il giocatore attivo riceve la priorità all'inizio della maggior parte delle sottofasi e fasi, dopo che sono state gestite le eventuali azioni basate sul turno (come pescare una carta durante la sottofase di acquisizione; vedi regola 703) e dopo che le abilità che si innescano all'inizio di quella fase o sottofase sono state messe in pila. Nessun giocatore riceve la priorità durante la sottofase di STAP. Di solito i giocatori non ricevono la priorità durante la sottofase di cancellazione (vedi regola 514.3).
 @117.3b
 Il giocatore attivo riceve la priorità dopo che una magia o abilità (diversa da un'abilità di mana) si è risolta.
 @117.3c

@@ -43,13 +43,13 @@ Se una magia, un'abilità o un effetto stabilisce che un giocatore può fare qua
 @307.5a
 Allo stesso modo, se un effetto controlla se una magia è stata lanciata «in un momento in cui non si sarebbe potuta lanciare una stregoneria», controlla solo se il controllore della magia l'ha lanciata senza avere la priorità, durante una fase diversa dalla sua fase principale, o mentre un altro oggetto era in pila.
 @308
-Kindred
+Tribali (Kindred)
 @308.1
-Ogni carta kindred ha anche un altro tipo di carta. Il lancio e la risoluzione di una carta kindred seguono le regole per il lancio e la risoluzione di una carta dell'altro tipo di carta.
+Ogni carta tribale ha anche un altro tipo di carta. Il lancio e la risoluzione di una carta tribale seguono le regole per il lancio e la risoluzione di una carta dell'altro tipo di carta.
 @308.2
-I sottotipi kindred di solito sono di una sola parola e sono elencati dopo un trattino lungo: «Incantesimo Kindred — Tritone». L'insieme dei sottotipi kindred è lo stesso dei sottotipi di creatura; questi sottotipi sono detti tipi di creatura. Le carte kindred possono avere più sottotipi. Vedi regola 205.3m per l'elenco completo dei tipi di creatura.
+I sottotipi tribali di solito sono di una sola parola e sono elencati dopo un trattino lungo: «Incantesimo Tribale — Tritone». L'insieme dei sottotipi tribali è lo stesso dei sottotipi di creatura; questi sottotipi sono detti tipi di creatura. Le carte tribali possono avere più sottotipi. Vedi regola 205.3m per l'elenco completo dei tipi di creatura.
 @308.3
-Alcune carte kindred più vecchie sono state stampate con il tipo di carta «tribale» (tribal). Le carte stampate con quel tipo hanno ricevuto errata nel riferimento Oracle.
+Alcune carte tribali più vecchie sono state stampate con il tipo di carta «tribale» (tribal). Le carte stampate con quel tipo hanno ricevuto errata nel riferimento Oracle.
 @309
 Dungeon
 @309.1
@@ -137,7 +137,7 @@ Gli Assedi hanno l'abilità intrinseca «Quando l'ultimo segnalino difesa viene 
 @311
 Piani
 @311.1
-Piano è un tipo di carta presente solo sulle carte di Magic non tradizionali. Solo la variante amichevole Planechase usa le carte piano. Vedi regola 901, «Planechase».
+Piano è un tipo di carta presente solo sulle carte di Magic non tradizionali. Solo la variante casual Planechase usa le carte piano. Vedi regola 901, «Planechase».
 @311.2
 Le carte piano restano nella zona di comando per tutta la partita, sia mentre fanno parte di un mazzo planare sia mentre sono a faccia in su. Non sono permanenti. Non possono essere lanciate. Se una carta piano dovesse lasciare la zona di comando, resta nella zona di comando.
 @311.3
@@ -153,7 +153,7 @@ Ogni carta piano ha un'abilità innescata che si innesca «Ogni volta che si sca
 @312
 Fenomeni
 @312.1
-Fenomeno è un tipo di carta presente solo sulle carte di Magic non tradizionali. Solo la variante amichevole Planechase usa le carte fenomeno. Vedi regola 901, «Planechase».
+Fenomeno è un tipo di carta presente solo sulle carte di Magic non tradizionali. Solo la variante casual Planechase usa le carte fenomeno. Vedi regola 901, «Planechase».
 @312.2
 Le carte fenomeno restano nella zona di comando per tutta la partita, sia mentre fanno parte di un mazzo planare sia mentre sono a faccia in su. Non sono permanenti. Non possono essere lanciate. Se una carta fenomeno dovesse lasciare la zona di comando, resta nella zona di comando.
 @312.3
@@ -169,7 +169,7 @@ Se una carta fenomeno è a faccia in su nella zona di comando, e non è la fonte
 @313
 Vanguard
 @313.1
-Vanguard è un tipo di carta presente solo sulle carte di Magic non tradizionali. Solo la variante amichevole Vanguard usa le carte vanguard. Vedi regola 902, «Vanguard».
+Vanguard è un tipo di carta presente solo sulle carte di Magic non tradizionali. Solo la variante casual Vanguard usa le carte vanguard. Vedi regola 902, «Vanguard».
 @313.2
 Le carte vanguard restano nella zona di comando per tutta la partita. Non sono permanenti. Non possono essere lanciate. Se una carta vanguard dovesse lasciare la zona di comando, resta nella zona di comando.
 @313.3
@@ -179,13 +179,13 @@ Una carta vanguard può avere un numero qualsiasi di abilità statiche, innescat
 @313.5
 Il proprietario di una carta vanguard è il giocatore che ha iniziato la partita con essa nella zona di comando. Il controllore di una carta vanguard a faccia in su è il suo proprietario.
 @313.6
-Ogni carta vanguard ha un modificatore della mano stampato nel suo angolo in basso a sinistra. È un numero preceduto da un segno più, un numero preceduto da un segno meno, oppure uno zero. Questo modificatore si applica alla dimensione della mano iniziale e alla dimensione massima della mano del proprietario della carta vanguard (normalmente sette). Il numero risultante indica sia quante carte quel giocatore pesca all'inizio della partita sia la sua dimensione massima della mano. Vedi regola 103.5.
+Ogni carta vanguard ha un modificatore della mano stampato nel suo angolo in basso a sinistra. È un numero preceduto da un segno più, un numero preceduto da un segno meno, oppure uno zero. Questo modificatore si applica alla dimensione della mano iniziale e alla numero massimo di carte in mano del proprietario della carta vanguard (normalmente sette). Il numero risultante indica sia quante carte quel giocatore pesca all'inizio della partita sia la sua numero massimo di carte in mano. Vedi regola 103.5.
 @313.7
 Ogni carta vanguard ha un modificatore dei punti vita stampato nel suo angolo in basso a destra. È un numero preceduto da un segno più, un numero preceduto da un segno meno, oppure uno zero. Questo modificatore si applica quando si determina il totale di punti vita iniziale del proprietario della carta vanguard (normalmente 20). Vedi regola 103.4.
 @314
 Piani malvagi
 @314.1
-Piano malvagio (scheme) è un tipo di carta presente solo sulle carte di Magic non tradizionali. Solo la variante amichevole Archenemy usa le carte piano malvagio. Vedi regola 904, «Archenemy».
+Piano malvagio (scheme) è un tipo di carta presente solo sulle carte di Magic non tradizionali. Solo la variante casual Archenemy usa le carte piano malvagio. Vedi regola 904, «Archenemy».
 @314.2
 Le carte piano malvagio restano nella zona di comando per tutta la partita, sia mentre fanno parte di un mazzo dei piani malvagi sia mentre sono a faccia in su. Non sono permanenti. Non possono essere lanciate. Se una carta piano malvagio dovesse lasciare la zona di comando, resta nella zona di comando.
 @314.3
@@ -195,7 +195,7 @@ Una carta piano malvagio può avere un numero qualsiasi di abilità statiche, in
 @314.5
 Il proprietario di una carta piano malvagio è il giocatore che ha iniziato la partita con essa nella zona di comando. Il controllore di una carta piano malvagio a faccia in su è il suo proprietario.
 @314.6
-Se una carta piano malvagio non continuo è a faccia in su nella zona di comando, e nessuna abilità innescata di alcun piano malvagio è in pila o in attesa di essere messa in pila, quella carta piano malvagio viene girata a faccia in giù e messa in fondo al mazzo dei piani malvagi del suo proprietario la prossima volta che un giocatore riceverebbe la priorità. (Questa è un'azione generata dallo stato. Vedi regola 704.)
+Se una carta piano malvagio non continuativo è a faccia in su nella zona di comando, e nessuna abilità innescata di alcun piano malvagio è in pila o in attesa di essere messa in pila, quella carta piano malvagio viene girata a faccia in giù e messa in fondo al mazzo dei piani malvagi del suo proprietario la prossima volta che un giocatore riceverebbe la priorità. (Questa è un'azione generata dallo stato. Vedi regola 704.)
 @314.7
 Se un'abilità di una carta piano malvagio include il testo «questo piano malvagio», si intende la carta piano malvagio nella zona di comando che è la fonte di quell'abilità. Questa è un'eccezione alla regola 109.2.
 @315
@@ -203,7 +203,7 @@ Cospirazioni
 @315.1
 Le carte cospirazione sono usate solo nel gioco limitato, in particolare nella variante Conspiracy Draft (vedi regola 905). Le carte cospirazione non sono usate nel gioco costruito.
 @315.2
-All'inizio di una partita, prima che i mazzi vengano mescolati, ogni giocatore può mettere un qualsiasi numero di carte cospirazione dal proprio sideboard nella zona di comando. Le carte cospirazione con piano nascosto vengono messe nella zona di comando a faccia in giù. (Vedi regola 702.106, «Piano nascosto».)
+All'inizio di una partita, prima che i mazzi vengano mescolati, ogni giocatore può mettere un qualsiasi numero di carte cospirazione dal proprio sideboard nella zona di comando. Le carte cospirazione con agenda nascosta vengono messe nella zona di comando a faccia in giù. (Vedi regola 702.106, «Agenda nascosta».)
 @315.3
 Le carte cospirazione restano nella zona di comando per tutta la partita. Non sono permanenti. Non possono essere lanciate né incluse in un mazzo. Se una carta cospirazione dovesse lasciare la zona di comando, resta nella zona di comando. Le carte cospirazione che non sono in partita non possono essere portate in partita.
 @315.4

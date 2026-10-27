@@ -28,7 +28,7 @@ In una partita Commander, un giocatore a cui sono stati inflitti 21 o più danni
 @704.6d
 In una partita Commander, se un comandante è in un cimitero o in esilio e quell'oggetto è stato messo in quella zona dall'ultima volta che sono state controllate le azioni generate dallo stato, il suo proprietario può metterlo nella zona di comando. Vedi regola 903, «Commander».
 @704.6e
-In una partita Archenemy, se una carta piano non continuativo è a faccia in su nella zona di comando, e nessuna abilità innescata di alcun piano è in pila o in attesa di essere messa in pila, quella carta piano viene girata a faccia in giù e messa in fondo al mazzo dei piani del suo proprietario. Vedi regola 904, «Archenemy».
+In una partita Archenemy, se una carta piano malvagio non continuativo è a faccia in su nella zona di comando, e nessuna abilità innescata di alcun piano malvagio è in pila o in attesa di essere messa in pila, quella carta piano malvagio viene girata a faccia in giù e messa in fondo al mazzo dei piani malvagi del suo proprietario. Vedi regola 904, «Archenemy».
 @704.6f
 In una partita Planechase, se una carta fenomeno è a faccia in su nella zona di comando, e non è la fonte di un'abilità innescata che si è innescata ma non ha ancora lasciato la pila, il controllore planare viaggia tra i piani. Vedi regola 901, «Planechase».
 @704.7

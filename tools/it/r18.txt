@@ -75,7 +75,7 @@ Se uno qualsiasi degli effetti di sostituzione e/o di prevenzione modificherebbe
 @616.1c
 Se uno qualsiasi degli effetti di sostituzione e/o di prevenzione farebbe diventare un oggetto una copia di un altro oggetto mentre entra nel campo di battaglia, deve essere scelto uno di essi. Altrimenti, prosegui con la regola 616.1d.
 @616.1d
-Se uno qualsiasi degli effetti di sostituzione e/o di prevenzione farebbe entrare una carta nel campo di battaglia con la faccia posteriore rivolta in su, deve essere scelto uno di essi (vedi regola 701.27, «Trasformare», e regola 701.28, «Convertire»). Altrimenti, prosegui con la regola 616.1e.
+Se uno qualsiasi degli effetti di sostituzione e/o di prevenzione farebbe entrare una carta nel campo di battaglia con la faccia posteriore rivolta verso l'alto, deve essere scelto uno di essi (vedi regola 701.27, «Trasformare», e regola 701.28, «Convertire»). Altrimenti, prosegui con la regola 616.1e.
 @616.1e
 Si può scegliere uno qualsiasi degli effetti di sostituzione e/o di prevenzione applicabili.
 @616.1f
@@ -87,7 +87,7 @@ Mentre si seguono i passaggi delle regole 616.1a–f, un effetto di sostituzione
 Esempio: A un giocatore viene detto di creare una pedina che è una copia di Voice of All, che ha l'abilità «Mentre questa creatura entra, scegli un colore». Doubling Season ha un'abilità che dice «Se un effetto sta per creare una o più pedine sotto il tuo controllo, crea invece il doppio di quelle pedine». Poiché entrare nel campo di battaglia è un evento contenuto nell'evento di creazione di una pedina, deve essere applicato prima l'effetto di Doubling Season, e poi gli effetti delle due pedine Voice of All possono essere applicati in qualsiasi ordine.
 @616.2
 Un effetto di sostituzione o di prevenzione può diventare applicabile a un evento come risultato di un altro effetto di sostituzione o di prevenzione che modifica l'evento.
-Esempio: Un effetto dice «Se stai per guadagnare punti vita, pesca invece altrettante carte», e un altro dice «Se stai per pescare una carta, riprendi invece in mano una carta dal tuo cimitero». Entrambi gli effetti si combinano (indipendentemente dall'ordine in cui sono comparsi): invece di guadagnare 1 punto vita, il giocatore mette in mano una carta dal suo cimitero.
+Esempio: Un effetto dice «Se stai per guadagnare punti vita, pesca invece altrettante carte», e un altro dice «Se stai per pescare una carta, invece fai tornare nella tua mano una carta dal tuo cimitero». Entrambi gli effetti si combinano (indipendentemente dall'ordine in cui sono comparsi): invece di guadagnare 1 punto vita, il giocatore mette in mano una carta dal suo cimitero.
 @#7
 Regole aggiuntive
 @700

@@ -83,7 +83,7 @@ STAPpare un permanente significa riportarlo in posizione verticale dalla posizio
 @701.27
 Trasformare
 @701.27a
-Trasformare un permanente significa girarlo in modo che sia rivolta in su l'altra faccia. Solo i permanenti rappresentati da pedine bifronte e carte bifronte possono trasformarsi. (Vedi regola 712, «Carte bifronte».)
+Trasformare un permanente significa girarlo in modo che sia rivolta verso l'alto l'altra faccia. Solo i permanenti rappresentati da pedine bifronte e carte bifronte possono trasformarsi. (Vedi regola 712, «Carte bifronte».)
 @701.27b
 Anche se trasformare un permanente usa la stessa azione fisica del girare un permanente a faccia in su o a faccia in giù, sono azioni di gioco diverse. Le abilità che si innescano quando un permanente viene girato a faccia in giù non si innescano quando quel permanente si trasforma, e così via.
 @701.27c
@@ -95,11 +95,11 @@ Alcune abilità innescate si innescano quando un oggetto «si trasforma in» un 
 @701.27f
 Se un'abilità attivata o innescata di un permanente che non è un'abilità innescata ritardata di quel permanente cerca di trasformarlo, il permanente si trasforma solo se non si è trasformato né convertito da quando l'abilità è stata messa in pila. Se un'abilità innescata ritardata di un permanente cerca di trasformare quel permanente, il permanente si trasforma solo se non si è trasformato né convertito da quando quell'abilità innescata ritardata è stata creata. In entrambi i casi, se il permanente si è già trasformato o convertito, l'istruzione di fare l'una o l'altra cosa viene ignorata.
 @701.27g
-Alcune magie e abilità fanno riferimento a un «permanente trasformato». Questa espressione si riferisce a un permanente bifronte sul campo di battaglia con la faccia posteriore rivolta in su. Un permanente con la faccia anteriore rivolta in su non è mai considerato un permanente trasformato, anche se in precedenza aveva la faccia posteriore rivolta in su. Allo stesso modo, un oggetto rappresentato da più di una carta, come un permanente fuso o unito, non è mai considerato un permanente trasformato, anche se ha componenti con la faccia posteriore rivolta in su. Vedi regole 701.42, «Fondere», e 730, «Unirsi ai permanenti».
+Alcune magie e abilità fanno riferimento a un «permanente trasformato». Questa espressione si riferisce a un permanente bifronte sul campo di battaglia con la faccia posteriore rivolta verso l'alto. Un permanente con la faccia anteriore rivolta verso l'alto non è mai considerato un permanente trasformato, anche se in precedenza aveva la faccia posteriore rivolta verso l'alto. Allo stesso modo, un oggetto rappresentato da più di una carta, come un permanente fuso o unito, non è mai considerato un permanente trasformato, anche se ha componenti con la faccia posteriore rivolta verso l'alto. Vedi regole 701.42, «Fondere», e 730, «Unirsi ai permanenti».
 @701.28
 Convertire
 @701.28a
-Convertire un permanente significa girarlo in modo che sia rivolta in su l'altra faccia. Questo segue le regole 701.27a–f, 712.9–10 e 712.18. Quelle regole si applicano alla conversione di un permanente esattamente come si applicano alla trasformazione di un permanente.
+Convertire un permanente significa girarlo in modo che sia rivolta verso l'alto l'altra faccia. Questo segue le regole 701.27a–f, 712.9–10 e 712.18. Quelle regole si applicano alla conversione di un permanente esattamente come si applicano alla trasformazione di un permanente.
 @701.28b
 Anche se convertire un permanente usa la stessa azione fisica del girare un permanente a faccia in su o a faccia in giù, sono azioni di gioco diverse. Le abilità che si innescano quando un permanente viene girato a faccia in giù non si innescano quando quel permanente si converte, e così via.
 @701.28c
@@ -145,7 +145,7 @@ I piani malvagi possono essere messi in moto solo uno alla volta. Se a un giocat
 @701.33
 Abbandonare
 @701.33a
-Solo una carta piano malvagio continuo a faccia in su può essere abbandonata, e solo durante una partita Archenemy. Vedi regola 314, «Piani malvagi», e regola 904, «Archenemy».
+Solo una carta piano malvagio continuativo a faccia in su può essere abbandonata, e solo durante una partita Archenemy. Vedi regola 314, «Piani malvagi», e regola 904, «Archenemy».
 @701.33b
 Per abbandonare un piano malvagio, giralo a faccia in giù e mettilo in fondo al mazzo dei piani malvagi del suo proprietario.
 @701.34
@@ -209,14 +209,14 @@ Supportare
 @701.41a
 «Supporta N» su un permanente significa «Metti un segnalino +1/+1 su ciascuna di fino a N altre creature bersaglio». «Supporta N» su una magia istantaneo o stregoneria significa «Metti un segnalino +1/+1 su ciascuna di fino a N creature bersaglio».
 @701.42
-Fondere (Meld)
+Combinare (Meld)
 @701.42a
-Fondere è un'azione chiave che compare in un'abilità di una carta di una coppia da fondere. Per fondere le due carte di una coppia da fondere, mettile sul campo di battaglia con le facce posteriori rivolte in su e combinate. Il permanente risultante è un unico oggetto rappresentato da due carte. Vedi regola 712, «Carte bifronte».
+Combinare è un'azione chiave che compare in un'abilità di una carta di una coppia da combinare. Per combinare le due carte di una coppia da combinare, mettile sul campo di battaglia con le facce posteriori rivolte in su e combinate. Il permanente risultante è un unico oggetto rappresentato da due carte. Vedi regola 712, «Carte bifronte».
 @701.42b
-Possono essere fuse solo due carte appartenenti alla stessa coppia da fondere. Le pedine, le carte che non sono carte da fondere o le carte da fondere che non formano una coppia da fondere non possono essere fuse.
+Possono essere combinate solo due carte appartenenti alla stessa coppia da combinare. Le pedine, le carte che non sono carte da combinare o le carte da combinare che non formano una coppia da combinare non possono essere combinate.
 @701.42c
-Se un effetto istruisce un giocatore a fondere oggetti che non possono essere fusi, questi restano nella loro zona attuale.
-Esempio: Un giocatore possiede e controlla Midnight Scavengers e una pedina che è una copia di Graf Rats. All'inizio del combattimento, entrambi vengono esiliati ma non possono essere fusi. Midnight Scavengers resta in esilio e la pedina esiliata cessa di esistere.
+Se un effetto istruisce un giocatore a combinare oggetti che non possono essere combinati, questi restano nella loro zona attuale.
+Esempio: Un giocatore possiede e controlla Midnight Scavengers e una pedina che è una copia di Graf Rats. All'inizio del combattimento, entrambi vengono esiliati ma non possono essere combinati. Midnight Scavengers resta in esilio e la pedina esiliata cessa di esistere.
 @701.43
 Sfiancare (Exert)
 @701.43a

@@ -27,17 +27,17 @@ Mischia è un'abilità innescata. «Mischia» significa «Ogni volta che questa 
 @702.121b
 Se una creatura ha più istanze di mischia, ognuna si innesca separatamente.
 @702.122
-Equipaggio (Crew)
+Manovrare (Crew)
 @702.122a
-Equipaggio è un'abilità attivata delle carte Veicolo. «Equipaggio N» significa «TAPpa un qualsiasi numero di altre creature STAPpate che controlli con forza totale pari o superiore a N: Questo permanente diventa una creatura artefatto fino alla fine del turno».
+Manovrare è un'abilità attivata delle carte Veicolo. «Manovrare N» significa «TAPpa un qualsiasi numero di altre creature STAPpate che controlli con forza totale pari o superiore a N: Questo permanente diventa una creatura artefatto fino alla fine del turno».
 @702.122b
-Una creatura «manovra un Veicolo» quando viene TAPpata per pagare il costo di attivazione dell'abilità equipaggio di un Veicolo.
+Una creatura «manovra un Veicolo» quando viene TAPpata per pagare il costo di attivazione dell'abilità manovrare di un Veicolo.
 @702.122c
-Un Veicolo è «manovrato da» una creatura se quella creatura è stata TAPpata per pagare il costo di attivazione dell'abilità equipaggio di quel Veicolo.
+Un Veicolo è «manovrato da» una creatura se quella creatura è stata TAPpata per pagare il costo di attivazione dell'abilità manovrare di quel Veicolo.
 @702.122d
-Se un effetto stabilisce che una creatura «non può manovrare Veicoli», quella creatura non può essere TAPpata per pagare il costo di equipaggio di un Veicolo.
+Se un effetto stabilisce che una creatura «non può manovrare Veicoli», quella creatura non può essere TAPpata per pagare il costo di manovrare di un Veicolo.
 @702.122e
-Alcuni Veicoli hanno abilità che si innescano quando vengono manovrati. «Ogni volta che [questo Veicolo] viene manovrato» significa «Ogni volta che si risolve un'abilità equipaggio di [questo Veicolo]». Se quell'abilità ha una clausola «se» interposta che fa riferimento a informazioni sulle creature che l'hanno manovrato, si intendono solo le creature che sono state TAPpate per pagare il costo dell'abilità equipaggio che l'ha fatta innescare.
+Alcuni Veicoli hanno abilità che si innescano quando vengono manovrati. «Ogni volta che [questo Veicolo] viene manovrato» significa «Ogni volta che si risolve un'abilità manovrare di [questo Veicolo]». Se quell'abilità ha una clausola «se» interposta che fa riferimento a informazioni sulle creature che l'hanno manovrato, si intendono solo le creature che sono state TAPpate per pagare il costo dell'abilità manovrare che l'ha fatta innescare.
 @702.123
 Fabbricare
 @702.123a

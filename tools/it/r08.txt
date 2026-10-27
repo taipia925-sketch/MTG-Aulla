@@ -26,7 +26,7 @@ Ogni carta battaglia ha un numero di difesa stampato nel suo angolo in basso a d
 @211
 Modificatore della mano
 @211.1
-Ogni carta vanguard ha un modificatore della mano stampato nel suo angolo in basso a sinistra. È un numero preceduto da un segno più, un numero preceduto da un segno meno, oppure uno zero. Questo modificatore si applica quando si determinano la dimensione della mano iniziale e la dimensione massima della mano del proprietario della carta vanguard. Vedi regola 103.5.
+Ogni carta vanguard ha un modificatore della mano stampato nel suo angolo in basso a sinistra. È un numero preceduto da un segno più, un numero preceduto da un segno meno, oppure uno zero. Questo modificatore si applica quando si determinano la dimensione della mano iniziale e la numero massimo di carte in mano del proprietario della carta vanguard. Vedi regola 103.5.
 @212
 Modificatore dei punti vita
 @212.1
@@ -54,13 +54,13 @@ Tipi di carta
 @300
 Generale
 @300.1
-I tipi di carta sono artefatto, battaglia, cospirazione, creatura, dungeon, incantesimo, istantaneo, kindred, terra, fenomeno, piano, planeswalker, piano malvagio, stregoneria e vanguard.
+I tipi di carta sono artefatto, battaglia, cospirazione, creatura, dungeon, incantesimo, istantaneo, tribale, terra, fenomeno, piano, planeswalker, piano malvagio, stregoneria e vanguard.
 @300.2
 Alcuni oggetti hanno più di un tipo di carta (per esempio, una creatura artefatto). Questi oggetti combinano gli aspetti di ciascuno di quei tipi di carta e sono soggetti alle magie e alle abilità che influiscono su uno qualsiasi o su tutti quei tipi di carta.
 @300.2a
 Un oggetto che è sia una terra sia un altro tipo di carta (per esempio, una terra artefatto) può essere giocato solo come terra. Non può essere lanciato come magia.
 @300.2b
-Ogni carta kindred ha anche un altro tipo di carta. Il lancio e la risoluzione di una carta kindred seguono le regole per il lancio e la risoluzione di una carta dell'altro tipo di carta.
+Ogni carta tribale ha anche un altro tipo di carta. Il lancio e la risoluzione di una carta tribale seguono le regole per il lancio e la risoluzione di una carta dell'altro tipo di carta.
 @301
 Artefatti
 @301.1

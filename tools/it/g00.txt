@@ -1,6 +1,6 @@
 @@Abandon
 Abbandonare
-Girare a faccia in giù una carta piano continuativo a faccia in su e metterla in fondo al mazzo dei piani del suo proprietario. Vedi regola 701.33, «Abbandonare».
+Girare a faccia in giù una carta piano continuativo a faccia in su e metterla in fondo al mazzo dei piani malvagi del suo proprietario. Vedi regola 701.33, «Abbandonare».
 @@Ability
 Abilità
 1. Testo su un oggetto che spiega cosa fa o può fare quell'oggetto. 2. Un'abilità attivata o innescata in pila. Questo tipo di abilità è un oggetto. Vedi regola 113, «Abilità», e sezione 6, «Magie, abilità ed effetti».
@@ -84,7 +84,7 @@ Ordine APNAP
 Vedi Ordine Giocatore Attivo, Giocatore Non Attivo.
 @@Archenemy
 Archenemy (Arcinemico)
-1. Una variante casual in cui una squadra di giocatori affronta un singolo avversario rafforzato da potenti carte piano. Vedi regola 904, «Archenemy». 2. Un giocatore in una partita Archenemy che gioca con un mazzo dei piani.
+1. Una variante casual in cui una squadra di giocatori affronta un singolo avversario rafforzato da potenti carte piano. Vedi regola 904, «Archenemy». 2. Un giocatore in una partita Archenemy che gioca con un mazzo dei piani malvagi.
 @@Archenemy Commander
 Archenemy Commander
 Una partita Commander che segue una versione modificata delle regole Archenemy. Vedi regola 903, «Commander», e regola 904, «Archenemy».
@@ -209,8 +209,8 @@ Un'azione chiave che permette a un giocatore di scegliere un permanente che cont
 Conferire (Bestow)
 Un'abilità chiave che permette di lanciare una carta creatura come Aura. Vedi regola 702.103, «Conferire».
 @@Blight
-Avvizzire (Blight)
-Un'azione chiave. Fare blight N significa mettere N segnalini -1/-1 su una creatura che controlli. Vedi regola 701.68, «Avvizzire».
+Deperire (Blight)
+Un'azione chiave. Deperire N significa mettere N segnalini -1/-1 su una creatura che controlli. Vedi regola 701.68, «Deperire».
 @@Blitz
 Blitz
 Un'abilità chiave presente su carte creatura che permette di lanciarle per un costo alternativo. Vedi regola 702.152, «Blitz».
@@ -324,7 +324,7 @@ Fendere (Cleave)
 Un'abilità chiave che ti permette di pagare un costo alternativo per rimuovere parte del testo di una magia. Vedi regola 702.148, «Fendere».
 @@Cloak
 Celare (Cloak)
-Un'azione chiave che mette una carta sul campo di battaglia a faccia in giù come creatura 2/2 con custode {2}. Vedi regola 701.58, «Celare», e regola 708, «Magie e permanenti a faccia in giù».
+Un'azione chiave che mette una carta sul campo di battaglia a faccia in giù come creatura 2/2 con salvaguardia {2}. Vedi regola 701.58, «Celare», e regola 708, «Magie e permanenti a faccia in giù».
 @@Clue Token
 Pedina Indizio
 Una pedina Indizio è una pedina artefatto incolore con «{2}, Sacrifica questa pedina: Pesca una carta». Per maggiori informazioni sulle pedine predefinite, vedi regola 111.10.

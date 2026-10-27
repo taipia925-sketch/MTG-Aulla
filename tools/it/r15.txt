@@ -37,7 +37,7 @@ Un oggetto può avere due abilità stampate tali che una faccia compiere azioni 
 @607.1a
 Un'abilità stampata su un oggetto all'interno di un'altra abilità che conferisce quell'abilità a quell'oggetto è considerata «stampata» su quell'oggetto ai fini di queste regole.
 @607.1b
-Un'abilità stampata su una delle due facce di un oggetto bifronte non modale (vedi regola 712) è considerata «stampata» su quell'oggetto ai fini di queste regole, indipendentemente da quale faccia sia rivolta in su.
+Un'abilità stampata su una delle due facce di un oggetto bifronte non modale (vedi regola 712) è considerata «stampata» su quell'oggetto ai fini di queste regole, indipendentemente da quale faccia sia rivolta verso l'alto.
 @607.1c
 Un'abilità stampata su un oggetto che soddisfa entrambi i criteri descritti nella regola 607.1 è collegata a se stessa.
 @607.1d

@@ -95,7 +95,7 @@ Esempio: {W/P}{W/P} può essere pagato spendendo {W}{W}, spendendo {W} e pagando
 @107.4g
 Nel testo delle regole, il simbolo phyrexiano {H} senza sfondo colorato indica uno qualsiasi dei quindici simboli di mana phyrexiano.
 @107.4h
-Quando è usato in un costo, il simbolo di mana neve {S} rappresenta un costo che può essere pagato con un mana di qualsiasi tipo prodotto da una fonte neve (vedi regola 106.3). Gli effetti che riducono la quantità di mana generico che paghi non influiscono sui costi {S}. Il simbolo {S} può essere usato anche per indicare mana di qualsiasi tipo prodotto da una fonte neve e speso per pagare un costo. Neve non è né un colore né un tipo di mana.
+Quando è usato in un costo, il simbolo di mana neve {S} rappresenta un costo che può essere pagato con un mana di qualsiasi tipo prodotto da una fonte innevata (vedi regola 106.3). Gli effetti che riducono la quantità di mana generico che paghi non influiscono sui costi {S}. Il simbolo {S} può essere usato anche per indicare mana di qualsiasi tipo prodotto da una fonte innevata e speso per pagare un costo. Neve non è né un colore né un tipo di mana.
 @107.5
 Il simbolo di TAP è {T}. Il simbolo di TAP in un costo di attivazione significa «TAPpa questo permanente». Un permanente già TAPpato non può essere TAPpato di nuovo per pagare il costo. Un'abilità attivata di una creatura con il simbolo di TAP nel suo costo di attivazione non può essere attivata a meno che la creatura non sia stata continuativamente sotto il controllo del suo controllore dall'inizio del suo turno più recente. Vedi regola 302.6.
 @107.6
@@ -113,9 +113,9 @@ Un'icona a forma di lapide compare a sinistra del nome di molte carte del blocco
 @107.10
 Un'icona del tipo compare nell'angolo in alto a sinistra di ogni carta dell'espansione Future Sight™ stampata con la cornice alternativa «timeshifted». Se la carta ha un solo tipo di carta, questa icona indica quale: segni di artigli per creatura, una fiamma per stregoneria, un fulmine per istantaneo, un'alba per incantesimo, un calice per artefatto e una coppia di cime montuose per terra. Se la carta ha più tipi di carta, lo indica una croce bianca e nera. Questa icona non ha alcun effetto sul gioco.
 @107.11
-Il simbolo Planeswalker è {PW}. Compare su una faccia del dado planare usato nella variante amichevole Planechase. Ha cinque punte in alto e si restringe in una punta in basso. Vedi regola 901, «Planechase».
+Il simbolo Planeswalker è {PW}. Compare su una faccia del dado planare usato nella variante casual Planechase. Ha cinque punte in alto e si restringe in una punta in basso. Vedi regola 901, «Planechase».
 @107.12
-Il simbolo del caos è {CHAOS}. Compare su una faccia del dado planare usato nella variante amichevole Planechase, e nelle abilità che fanno riferimento ai risultati del lancio del dado planare. Ha l'aspetto di un vortice. Vedi regola 901, «Planechase».
+Il simbolo del caos è {CHAOS}. Compare su una faccia del dado planare usato nella variante casual Planechase, e nelle abilità che fanno riferimento ai risultati del lancio del dado planare. Ha l'aspetto di un vortice. Vedi regola 901, «Planechase».
 @107.13
 Un indicatore di colore è un simbolo circolare che compare a sinistra della riga del tipo su alcune carte. Il colore del simbolo definisce il colore o i colori della carta. Vedi regola 202, «Costo di mana e colore».
 @107.14

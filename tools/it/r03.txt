@@ -27,7 +27,7 @@ Una condizione di innesco che non può innescarsi dal campo di battaglia funzion
 Esempio: Absolver Thrull ha l'abilità «Quando questa creatura entra o la creatura che infesta muore, distruggi un incantesimo bersaglio». La prima condizione di innesco funziona dal campo di battaglia e la seconda funziona dalla zona di esilio. (Vedi regola 702.55, «Infestare».)
 @113.6m
 Un'abilità il cui costo o effetto specifica che sposta l'oggetto su cui si trova fuori da una determinata zona funziona solo in quella zona, a meno che la sua condizione di innesco o una parte precedente del suo costo o effetto non specifichi che l'oggetto viene messo in quella zona o, se l'oggetto è un'Aura, che l'oggetto che incanta lascia il campo di battaglia. Lo stesso vale se l'effetto di quell'abilità crea un'abilità innescata ritardata il cui effetto sposta l'oggetto fuori da una determinata zona.
-Esempio: Reassembling Skeleton dice «{1}{B}: Riprendi questa carta dal tuo cimitero e mettila sul campo di battaglia TAPpata». Un giocatore può attivare questa abilità solo se Reassembling Skeleton è nel suo cimitero.
+Esempio: Reassembling Skeleton dice «{1}{B}: Fai tornare questa carta dal tuo cimitero sul campo di battaglia TAPpata». Un giocatore può attivare questa abilità solo se Reassembling Skeleton è nel suo cimitero.
 @113.6n
 Un'abilità che modifica le regole di costruzione del mazzo funziona prima che la partita inizi. Un'abilità del genere modifica non solo le Comprehensive Rules, ma anche le Magic: The Gathering Tournament Rules e qualsiasi altro documento che stabilisca le regole di costruzione del mazzo per un formato specifico. Tuttavia, un'abilità del genere non può influire sulla legalità di una carta in un formato, compreso il fatto che sia bandita o limitata. Le Magic: The Gathering Tournament Rules attuali si trovano su WPN.Wizards.com/en/rules-documents.
 @113.6p
@@ -71,7 +71,7 @@ Bersagli
 Alcune magie e abilità richiedono che il loro controllore scelga uno o più bersagli. I bersagli sono gli oggetti e/o i giocatori su cui la magia o abilità avrà effetto. Questi bersagli vengono dichiarati come parte del procedimento con cui la magia o abilità viene messa in pila. I bersagli non possono essere cambiati, se non da un'altra magia o abilità che dica esplicitamente di poterlo fare.
 @115.1a
 Una magia istantaneo o stregoneria ha bersagli se la sua abilità della magia identifica qualcosa su cui avrà effetto usando l'espressione «[qualcosa] bersaglio», dove «qualcosa» è un'espressione che descrive un oggetto e/o un giocatore. Il bersaglio o i bersagli vengono scelti quando la magia viene lanciata; vedi regola 601.2c. (Se un'abilità attivata o innescata di un istantaneo o di una stregoneria usa la parola bersaglio, quell'abilità ha bersagli, ma la magia no.)
-Esempio: Una carta stregoneria ha l'abilità «Quando ricicli questa carta, una creatura bersaglio prende -1/-1 fino alla fine del turno». Questa abilità innescata ha un bersaglio, ma questo non fa sì che la carta su cui si trova abbia un bersaglio.
+Esempio: Una carta stregoneria ha l'abilità «Quando cicli questa carta, una creatura bersaglio prende -1/-1 fino alla fine del turno». Questa abilità innescata ha un bersaglio, ma questo non fa sì che la carta su cui si trova abbia un bersaglio.
 @115.1b
 Le magie Aura hanno sempre un bersaglio. Il bersaglio di un'Aura è specificato dalla sua abilità chiave incanta (vedi regola 702.5, «Incanta»). Il bersaglio viene scelto quando la magia viene lanciata; vedi regola 601.2c. Un permanente Aura non ha bersagli; solo la magia ha un bersaglio. (Anche un'abilità attivata o innescata di un permanente Aura può avere bersagli.)
 @115.1c
@@ -124,7 +124,7 @@ In particolare, la parola «tu» nel testo di un oggetto non indica un bersaglio
 @116
 Azioni speciali
 @116.1
-Le azioni speciali sono azioni che un giocatore può compiere quando ha la priorità e che non usano la pila. Non vanno confuse con le azioni generate dal turno e con le azioni generate dallo stato, che la partita genera automaticamente. (Vedi regola 703, «Azioni generate dal turno», e regola 704, «Azioni generate dallo stato».)
+Le azioni speciali sono azioni che un giocatore può compiere quando ha la priorità e che non usano la pila. Non vanno confuse con le azioni basate sul turno e con le azioni generate dallo stato, che la partita genera automaticamente. (Vedi regola 703, «Azioni generate dal turno», e regola 704, «Azioni generate dallo stato».)
 @116.2
 Ci sono dodici azioni speciali:
 @116.2a

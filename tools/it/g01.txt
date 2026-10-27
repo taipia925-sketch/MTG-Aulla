@@ -44,8 +44,8 @@ Un tipo di carta. Una creatura è un permanente. Vedi regola 302, «Creature».
 Tipo di creatura
 Un sottotipo correlato al tipo di carta creatura e al tipo di carta tribale. Vedi regola 302, «Creature», e regola 308, «Tribali». Vedi regola 205.3m per l'elenco dei tipi di creatura.
 @@Crew
-Equipaggio (Crew)
-Un'abilità chiave che ti permette di TAPpare creature per trasformare un Veicolo in una creatura artefatto. Vedi regola 301, «Artefatti», e regola 702.122, «Equipaggio».
+Manovrare (Crew)
+Un'abilità chiave che ti permette di TAPpare creature per trasformare un Veicolo in una creatura artefatto. Vedi regola 301, «Artefatti», e regola 702.122, «Manovrare».
 @@Crime
 Crimine
 Bersagliare un avversario, qualsiasi cosa controllata da quell'avversario e/o qualsiasi carta nel cimitero di un avversario è un crimine. Vedi regola 700.13.
@@ -151,7 +151,7 @@ Scoprire
 Un'abilità chiave che può permettere a un giocatore di lanciare gratis una magia casuale. Vedi regola 701.57, «Scoprire».
 @@Disguise
 Travestimento (Disguise)
-Un'abilità chiave che permette di lanciare una carta a faccia in giù come creatura 2/2 con custode {2}. Vedi regola 702.168, «Travestimento», e regola 708, «Magie e permanenti a faccia in giù».
+Un'abilità chiave che permette di lanciare una carta a faccia in giù come creatura 2/2 con salvaguardia {2}. Vedi regola 702.168, «Travestimento», e regola 708, «Magie e permanenti a faccia in giù».
 @@Disturb
 Disturbare
 Un'abilità chiave che permette a un giocatore di lanciare dal cimitero una carta bifronte trasformata. Vedi regola 702.146, «Disturbare».
@@ -361,14 +361,14 @@ A faccia in su
 Dissolvenza (Fading)
 Un'abilità chiave che limita per quanto tempo un permanente resta sul campo di battaglia. Vedi regola 702.32, «Dissolvenza».
 @@Fateseal
-Suggellare il fato (Fateseal)
-Manipolare alcune delle carte in cima al grimorio di un avversario. Vedi regola 701.29, «Suggellare il fato».
+Sigillare il fato (Fateseal)
+Manipolare alcune delle carte in cima al grimorio di un avversario. Vedi regola 701.29, «Sigillare il fato».
 @@Fear
 Paura
 Un'abilità chiave che limita il modo in cui una creatura può essere bloccata. Vedi regola 702.36, «Paura».
 @@Fight
-Combattere
-Quando due creature combattono, ciascuna infligge all'altra danno pari alla propria forza. Vedi regola 701.14, «Combattere».
+Lottare
+Quando due creature lottano, ciascuna infligge all'altra danno pari alla propria forza. Vedi regola 701.14, «Lottare».
 @@Finality Counter
 Segnalino finalità
 Un segnalino che esilia il permanente su cui si trova se quel permanente dovesse andare nel cimitero dal campo di battaglia. Vedi regola 122.1h.

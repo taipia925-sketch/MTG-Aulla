@@ -17,9 +17,9 @@ Nel gioco limitato (un modo di giocare in cui ogni giocatore riceve la stessa qu
 @100.2c
 I mazzi Commander sono soggetti a ulteriori restrizioni e requisiti di costruzione. Vedi la regola 903, «Commander», per i dettagli.
 @100.2d
-Alcuni formati e varianti amichevoli permettono ai giocatori di usare un mazzo supplementare di carte di Magic non tradizionali (vedi regola 108.2a). Questi mazzi supplementari hanno proprie regole di costruzione. Vedi la regola 717, «Carte Attrazione»; la regola 901, «Planechase»; e la regola 904, «Archenemy».
+Alcuni formati e varianti casual permettono ai giocatori di usare un mazzo supplementare di carte di Magic non tradizionali (vedi regola 108.2a). Questi mazzi supplementari hanno proprie regole di costruzione. Vedi la regola 717, «Carte Attrazione»; la regola 901, «Planechase»; e la regola 904, «Archenemy».
 @100.3
-Alcune carte richiedono monete o dadi tradizionali. Alcune varianti amichevoli richiedono oggetti aggiuntivi, come carte designate in modo speciale, carte di Magic non tradizionali e dadi speciali.
+Alcune carte richiedono monete o dadi tradizionali. Alcune varianti casual richiedono oggetti aggiuntivi, come carte designate in modo speciale, carte di Magic non tradizionali e dadi speciali.
 @100.4
 Ogni giocatore può avere anche un sideboard, cioè un gruppo di carte aggiuntive che il giocatore può usare per modificare il proprio mazzo tra una partita e l'altra di un incontro. Le regole e le restrizioni sul sideboard di alcuni formati sono modificate dalle Magic: The Gathering Tournament Rules (disponibili su WPN.Wizards.com/en/rules-documents).
 @100.4a

@@ -125,10 +125,10 @@ Passaterre è un termine generico che appare nel testo delle regole di un oggett
 @702.14b
 Passaterre è un'abilità di evasione.
 @702.14c
-Una creatura con passaterre non può essere bloccata finché il giocatore in difesa controlla almeno una terra con il tipo di terra specificato (come in «passaisole»), con il tipo o supertipo specificato (come in «passa-terre artefatto»), senza il tipo o supertipo specificato (come in «passa-terre non base») o con sia il tipo o supertipo specificato sia il sottotipo specificato (come in «passa-paludi innevate»). (Vedi regola 509, «Sottofase di dichiarazione dei bloccanti».)
+Una creatura con passaterre non può essere bloccata finché il giocatore in difesa controlla almeno una terra con il tipo di terra specificato (come in «passaisole»), con il tipo o supertipo specificato (come in «passaterre artefatto»), senza il tipo o supertipo specificato (come in «passaterre non base») o con sia il tipo o supertipo specificato sia il sottotipo specificato (come in «passapaludi innevate»). (Vedi regola 509, «Sottofase di dichiarazione dei bloccanti».)
 @702.14d
 Le abilità passaterre non si «annullano» a vicenda.
-Esempio: Se un giocatore controlla una Foresta innevata, quel giocatore non può bloccare una creatura attaccante con passa-foreste innevate anche se controlla a sua volta una creatura con passa-foreste innevate.
+Esempio: Se un giocatore controlla una Foresta innevata, quel giocatore non può bloccare una creatura attaccante con passaforeste innevate anche se controlla a sua volta una creatura con passaforeste innevate.
 @702.14e
 Più istanze dello stesso tipo di passaterre sulla stessa creatura sono ridondanti.
 @702.15
@@ -218,11 +218,11 @@ Attaccare non fa TAPpare le creature con cautela. (Vedi regola 508, «Sottofase 
 @702.20c
 Più istanze di cautela sulla stessa creatura sono ridondanti.
 @702.21
-Custode (Ward)
+Salvaguardia (Ward)
 @702.21a
-Custode è un'abilità innescata. Custode [costo] significa «Ogni volta che questo permanente diventa bersaglio di una magia o abilità controllata da un avversario, neutralizza quella magia o abilità a meno che quel giocatore non paghi [costo]».
+Salvaguardia è un'abilità innescata. Salvaguardia [costo] significa «Ogni volta che questo permanente diventa bersaglio di una magia o abilità controllata da un avversario, neutralizza quella magia o abilità a meno che quel giocatore non paghi [costo]».
 @702.21b
-Alcune abilità custode includono una X nel loro costo e indicano a cosa è pari X. Questo valore viene determinato nel momento in cui l'abilità si risolve, non fissato quando l'abilità si innesca.
+Alcune abilità salvaguardia includono una X nel loro costo e indicano a cosa è pari X. Questo valore viene determinato nel momento in cui l'abilità si risolve, non fissato quando l'abilità si innesca.
 @702.22
 Unione (Banding)
 @702.22a

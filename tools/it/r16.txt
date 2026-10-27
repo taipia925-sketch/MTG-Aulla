@@ -81,7 +81,7 @@ Esempio: Due Banisher Priest hanno esiliato ciascuno una carta. Tutte le creatur
 @610.4
 Alcuni effetti singoli fanno andare fuori fase un permanente «finché» non avviene un evento specificato. Subito dopo l'evento specificato viene creato un secondo effetto singolo. Questo secondo effetto singolo fa rientrare in fase il permanente.
 @610.4a
-Un permanente andato fuori fase in questo modo non rientra in fase come risultato dell'azione generata dal turno durante la sottofase di STAP di un giocatore (vedi regola 502.1). Altri effetti possono farlo rientrare in fase. Se un permanente andato fuori fase in questo modo rientra in fase a causa di un altro effetto, il secondo effetto singolo non avviene, anche se quel permanente è andato di nuovo fuori fase.
+Un permanente andato fuori fase in questo modo non rientra in fase come risultato dell'azione basata sul turno durante la sottofase di STAP di un giocatore (vedi regola 502.1). Altri effetti possono farlo rientrare in fase. Se un permanente andato fuori fase in questo modo rientra in fase a causa di un altro effetto, il secondo effetto singolo non avviene, anche se quel permanente è andato di nuovo fuori fase.
 @610.4b
 Se una magia o un'abilità attivata che si risolve crea l'effetto singolo iniziale che fa andare fuori fase il permanente, e l'evento specificato è già avvenuto prima che quell'effetto singolo avesse luogo ma dopo che quella magia o abilità è stata messa in pila, il permanente non va fuori fase.
 @610.4c
