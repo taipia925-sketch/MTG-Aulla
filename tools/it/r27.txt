@@ -1,0 +1,215 @@
+@702.146b
+Una magia bifronte che si risolve ed è stata lanciata usando la sua abilità disturbare entra nel campo di battaglia con la faccia posteriore rivolta verso l'alto.
+@702.147
+Decomposto (Decayed)
+@702.147a
+Decomposto rappresenta un'abilità statica e un'abilità innescata. «Decomposto» significa «Questa creatura non può bloccare» e «Quando questa creatura attacca, sacrificala alla fine del combattimento».
+@702.148
+Fendere (Cleave)
+@702.148a
+Fendere è una parola chiave che rappresenta due abilità statiche che funzionano mentre una magia con fendere è in pila. «Fendere [costo]» significa «Puoi lanciare questa magia pagando [costo] invece di pagare il suo costo di mana» e «Se è stato pagato il costo di fendere di questa magia, modificane il testo rimuovendo tutto il testo racchiuso tra parentesi quadre nel testo delle regole della magia». Lanciare una magia per il suo costo di fendere segue le regole per il pagamento dei costi alternativi delle regole 601.2b e 601.2f–h.
+@702.148b
+La seconda abilità di fendere è un effetto di modifica del testo. Vedi regola 612, «Effetti di modifica del testo».
+@702.149
+Addestramento (Training)
+@702.149a
+Addestramento è un'abilità innescata. «Addestramento» significa «Ogni volta che questa creatura e almeno un'altra creatura con forza maggiore della forza di questa creatura attaccano, metti un segnalino +1/+1 su questa creatura».
+@702.149b
+Se una creatura ha più istanze di addestramento, ognuna si innesca separatamente.
+@702.149c
+Alcune creature con addestramento hanno abilità che si innescano quando si addestrano. «Quando questa creatura si addestra» significa «Quando un'abilità addestramento che si risolve mette uno o più segnalini +1/+1 su questa creatura».
+@702.150
+Completato (Compleated)
+@702.150a
+Completato è un'abilità statica presente su alcune carte planeswalker. Completato significa «Se questo permanente dovesse entrare con uno o più segnalini fedeltà su di sé e il giocatore che l'ha lanciato ha scelto di pagare punti vita per una parte qualsiasi del suo costo rappresentata da simboli di mana phyrexiano, entra invece nel campo di battaglia con quel numero di segnalini fedeltà meno due per ciascuno di quei simboli di mana».
+@702.151
+Riconfigurare
+@702.151a
+Riconfigurare rappresenta due abilità attivate. Riconfigurare [costo] significa «[Costo]: Assegna questo permanente a un'altra creatura bersaglio che controlli. Attiva solo come una stregoneria» e «[Costo]: Stacca questo permanente. Attiva solo se questo permanente è assegnato a una creatura e solo come una stregoneria».
+@702.151b
+Assegnare un Equipaggiamento con riconfigurare a un'altra creatura fa smettere all'Equipaggiamento di essere una creatura finché non viene staccato da quella creatura.
+@702.152
+Blitz
+@702.152a
+Blitz rappresenta tre abilità: due abilità statiche che funzionano mentre la carta con blitz è in pila, una delle quali può creare un'abilità innescata ritardata, e un'abilità statica che funziona mentre l'oggetto con blitz è sul campo di battaglia. «Blitz [costo]» significa «Puoi lanciare questa carta pagando [costo] invece del suo costo di mana», «Se è stato pagato il costo di blitz di questa magia, sacrifica il permanente che questa magia diventa all'inizio della prossima sottofase finale» e «Finché è stato pagato il costo di blitz di questo permanente, ha rapidità e "Quando questo permanente viene messo in un cimitero dal campo di battaglia, pesca una carta"». Lanciare una magia per il suo costo di blitz segue le regole per il pagamento dei costi alternativi delle regole 601.2b e 601.2f–h.
+@702.152b
+Se una magia ha più istanze di blitz, solo una può essere usata per lanciare quella magia. Se un permanente ha più istanze di blitz, ognuna fa riferimento solo ai pagamenti fatti per quell'abilità blitz quando la magia è stata lanciata, non ai pagamenti fatti per altre istanze di blitz.
+@702.153
+Vittima (Casualty)
+@702.153a
+Vittima è una parola chiave che rappresenta due abilità. La prima è un'abilità statica che funziona mentre la magia con vittima è in pila. La seconda è un'abilità innescata che funziona mentre la magia con vittima è in pila. Vittima N significa «Come costo aggiuntivo per lanciare questa magia, puoi sacrificare una creatura con forza pari o superiore a N» e «Quando lanci questa magia, se è stato pagato un costo di vittima per essa, copiala. Se la magia ha dei bersagli, puoi scegliere nuovi bersagli per la copia». Pagare il costo di vittima di una magia segue le regole per il pagamento dei costi aggiuntivi delle regole 601.2b e 601.2f–h.
+@702.153b
+Se una magia ha più istanze di vittima, ognuna viene pagata separatamente e si innesca in base ai pagamenti fatti per essa, non per altre istanze di vittima.
+@702.154
+Arruolare (Enlist)
+@702.154a
+Arruolare rappresenta un'abilità statica e un'abilità innescata. Arruolare significa «Mentre questa creatura attacca, puoi TAPpare fino a una creatura STAPpata che controlli che non hai scelto per attaccare e che ha rapidità o è stata sotto il tuo controllo ininterrottamente dall'inizio di questo turno. Quando lo fai, questa creatura prende +X/+0 fino alla fine del turno, dove X è la forza della creatura TAPpata».
+@702.154b
+L'abilità statica di arruolare rappresenta un costo facoltativo per attaccare (vedi regola 508.1g). La sua abilità innescata è collegata a quell'abilità statica (vedi regola 607.2h).
+@702.154c
+Una creatura «arruola» un'altra creatura quando paghi il costo dell'abilità arruolare della creatura TAPpando l'altra creatura. Nota che una creatura non può arruolare se stessa.
+@702.154d
+Più istanze di arruolare su una singola creatura funzionano indipendentemente. L'abilità innescata rappresentata da ogni istanza di arruolare si innesca una sola volta e solo per il costo associato a quell'abilità arruolare.
+@702.155
+Leggere in anticipo (Read ahead)
+@702.155a
+Leggere in anticipo è una parola chiave presente su alcune carte Saga. «Leggere in anticipo» significa «Le abilità di capitolo di questa Saga non possono innescarsi nel turno in cui è entrata nel campo di battaglia a meno che non abbia su di sé esattamente il numero di segnalini sapere indicato nel simbolo di capitolo di quell'abilità». Vedi regola 714, «Carte Saga».
+@702.155b
+Ogni Saga con leggere in anticipo ha le abilità intrinseche «Mentre questa Saga entra, scegli un numero tra uno e il numero del capitolo finale di questa Saga» e «Questa Saga entra con il numero scelto di segnalini sapere su di sé». Vedi regola 714.3b.
+@702.155c
+Più istanze di leggere in anticipo sullo stesso oggetto sono ridondanti.
+@702.156
+Famelico (Ravenous)
+@702.156a
+Famelico è una parola chiave presente su alcune carte creatura con {X} nel loro costo di mana. Famelico rappresenta sia un effetto di sostituzione sia un'abilità innescata. «Famelico» significa «Questo permanente entra con X segnalini +1/+1 su di sé» e «Quando questo permanente entra, se X è 5 o più, pesca una carta». Vedi regola 107.3m.
+@702.157
+Squadra (Squad)
+@702.157a
+Squadra è una parola chiave che rappresenta due abilità collegate. La prima è un'abilità statica che funziona mentre la magia creatura con squadra è in pila. La seconda è un'abilità innescata che funziona quando la creatura con squadra entra nel campo di battaglia. «Squadra [costo]» significa «Come costo aggiuntivo per lanciare questa magia, puoi pagare [costo] un qualsiasi numero di volte» e «Quando questa creatura entra, se è stato pagato il suo costo di squadra, crea una pedina che è una sua copia per ogni volta che è stato pagato il suo costo di squadra». Pagare il costo di squadra di una magia segue le regole per il pagamento dei costi aggiuntivi delle regole 601.2b e 601.2f–h.
+@702.157b
+Se una magia ha più istanze di squadra, ognuna viene pagata separatamente. Se un permanente ha più istanze di squadra, ognuna si innesca in base ai pagamenti fatti per quell'abilità squadra quando è stato lanciato, non in base ai pagamenti per altre istanze di squadra.
+@702.158
+Scultore spaziale (Space sculptor)
+@702.158a
+Una carta (Space Beleren) ha l'abilità scultore spaziale. Questa abilità chiave fa ottenere alle creature designazioni di settore.
+@702.158b
+Una designazione di settore è una designazione che un permanente può avere. Le designazioni di settore sono settore alfa, settore beta e settore gamma. Solo i permanenti possono avere una designazione di settore. Una volta che un permanente ottiene una designazione di settore, la mantiene finché nessun giocatore controlla un permanente con scultore spaziale o un'abilità la cui fonte ha scultore spaziale. Una designazione di settore non fa parte dei valori copiabili del permanente.
+@702.158c
+In qualsiasi momento in cui un permanente con scultore spaziale e delle creature senza designazione di settore sono sul campo di battaglia nello stesso momento, ogni giocatore che controlla una o più di quelle creature e non controlla un permanente con scultore spaziale sceglie una designazione di settore per ciascuna di quelle creature che controlla. Poi, ogni altro giocatore che controlla una o più di quelle creature sceglie una designazione di settore per ciascuna di quelle creature che controlla. Questa è un'azione generata dallo stato (vedi regola 704.5u).
+@702.158d
+Alcune abilità includono un'istruzione di scegliere un settore insieme a un'istruzione di compiere un'azione su ogni creatura in quel settore. Per farlo, scegli una delle tre designazioni di settore, poi compi quell'azione su ogni creatura con quella designazione di settore.
+@702.158e
+Due permanenti sono nello stesso settore se hanno la stessa designazione di settore.
+@702.159
+Visita
+@702.159a
+Visita è un'abilità chiave presente sulle carte Attrazione (vedi regola 717). «Visita — [Effetto]» significa «Ogni volta che tiri per visitare le tue Attrazioni, se il risultato è uguale a un numero illuminato su questa Attrazione, [effetto]». Vedi regola 701.52, «Tirare per visitare le tue Attrazioni».
+@702.159b
+Alcune Attrazioni istruiscono un giocatore a «riscuotere il premio», seguito da un secondo paragrafo che inizia con la parola «Premio» e un trattino lungo. Questo testo fa parte della sua abilità visita. Per riscuotere il premio di un'Attrazione, compi le azioni elencate dopo il trattino lungo.
+@702.160
+Prototipo
+@702.160a
+Prototipo è un'abilità statica che compare sulle carte prototipo che hanno un insieme secondario di caratteristiche di forza, costituzione e costo di mana. Un giocatore che lancia una magia con prototipo può scegliere di lanciare quella carta «come prototipo». Se lo fa, viene usato l'insieme alternativo delle sue caratteristiche di forza, costituzione e costo di mana. Vedi 718, «Carte prototipo».
+@702.161
+Metallo vivente (Living metal)
+@702.161a
+Metallo vivente è un'abilità chiave presente su alcuni Veicoli. «Metallo vivente» significa «Durante il tuo turno, questo permanente è una creatura artefatto in aggiunta ai suoi altri tipi».
+@702.162
+More Than Meets the Eye
+@702.162a
+More Than Meets the Eye rappresenta un'abilità statica che funziona in qualsiasi zona da cui la magia può essere lanciata. «More Than Meets the Eye [costo]» significa «Puoi lanciare questa carta convertita pagando [costo] invece del suo costo di mana». Lanciare una magia usando la sua abilità More Than Meets the Eye segue le regole per il pagamento dei costi alternativi (vedi 601.2b e 601.2f–h). Vedi regola 701.28, «Convertire».
+@702.163
+Per Mirrodin! (For Mirrodin!)
+@702.163a
+Per Mirrodin! è un'abilità innescata. «Per Mirrodin!» significa «Quando questo Equipaggiamento entra, crea una pedina creatura Ribelle 2/2 rossa, poi assegna questo Equipaggiamento a essa».
+@702.164
+Tossico
+@702.164a
+Tossico è un'abilità statica. È scritta «tossico N», dove N è un numero.
+@702.164b
+Alcune regole ed effetti fanno riferimento al «valore tossico totale» di una creatura. Il valore tossico totale di una creatura è la somma di tutti i valori N delle abilità tossico che quella creatura ha.
+Esempio: Se una creatura con tossico 2 ottiene tossico 1 a causa di un altro effetto, il suo valore tossico totale è 3.
+@702.164c
+Il danno da combattimento inflitto a un giocatore da una creatura con tossico fa sì che il controllore di quella creatura dia al giocatore un numero di segnalini veleno pari al valore tossico totale di quella creatura, in aggiunta agli altri risultati del danno. Vedi regola 120.3.
+@702.165
+Supporto (Backup)
+@702.165a
+Supporto è un'abilità innescata. «Supporto N» significa «Quando questa creatura entra, metti N segnalini +1/+1 su una creatura bersaglio. Se è un'altra creatura, ottiene anche fino alla fine del turno le abilità diverse da supporto di questa creatura stampate sotto questa». Le carte con supporto hanno una o più abilità stampate dopo l'abilità supporto. (Alcune carte con supporto hanno anche abilità stampate prima dell'abilità supporto.)
+@702.165b
+Se un permanente entra nel campo di battaglia come copia di un permanente con un'abilità supporto o viene creata una pedina che è una copia di quel permanente, l'ordine delle abilità stampate su di esso viene mantenuto.
+@702.165c
+Solo le abilità stampate sull'oggetto con supporto vengono conferite dalla sua abilità supporto. Le abilità ottenute da un permanente, sia a causa di un effetto di copia, di un effetto che conferisce un'abilità a un permanente o di un effetto che crea una pedina con certe abilità, non vengono conferite da un'abilità supporto.
+@702.165d
+Le abilità conferite da un'abilità supporto vengono determinate quando l'abilità viene messa in pila. Non cambiano se il permanente con supporto perde delle abilità dopo che l'abilità è stata messa in pila ma prima che si risolva.
+@702.166
+Patto (Bargain)
+@702.166a
+Patto è un'abilità statica che funziona mentre la magia con patto è in pila. «Patto» significa «Come costo aggiuntivo per lanciare questa magia, puoi sacrificare un artefatto, un incantesimo o una pedina». Pagare il costo di patto di una magia segue le regole per il pagamento dei costi aggiuntivi delle regole 601.2b e 601.2f–h.
+@702.166b
+Se il controllore di una magia dichiara l'intenzione di pagare il costo di patto di quella magia, quella magia è stata «pattuita». Vedi regola 601.2b.
+@702.166c
+Gli oggetti con patto hanno abilità aggiuntive che specificano cosa succede se sono stati pattuiti. Queste abilità sono collegate all'abilità patto stampata su quell'oggetto: possono fare riferimento solo a quella specifica abilità patto. Vedi regola 607, «Abilità collegate».
+@702.166d
+Se parte dell'abilità di una magia ha effetto solo se quella magia è stata pattuita e quella parte dell'abilità include dei bersagli, il controllore della magia sceglie quei bersagli solo se la magia è stata pattuita. Altrimenti, la magia viene lanciata come se non avesse quei bersagli. Vedi regola 601.2c.
+@702.167
+Forgiare (Craft)
+@702.167a
+Forgiare rappresenta un'abilità attivata. È scritta «Forgiare con [materiali] [costo]», dove [materiali] è una descrizione di uno o più oggetti. Significa «[Costo], Esilia questo permanente, Esilia [materiali] tra i permanenti che controlli e/o le carte nel tuo cimitero: Fai tornare questa carta sul campo di battaglia trasformata sotto il controllo del suo proprietario. Attiva solo come una stregoneria».
+@702.167b
+Se un oggetto nei [materiali] di un'abilità forgiare è descritto usando solo un tipo di carta o un sottotipo senza la parola «carta», si riferisce a un permanente sul campo di battaglia di quel tipo o sottotipo oppure a una carta in un cimitero di quel tipo o sottotipo. Questa è un'eccezione alla regola 109.2.
+@702.167c
+Un'abilità di un permanente può fare riferimento alle carte esiliate usate per forgiarlo. Si riferisce alle carte in esilio che sono state esiliate per pagare il costo di attivazione dell'abilità forgiare che ha messo questo permanente sul campo di battaglia.
+@702.168
+Travestimento (Disguise)
+@702.168a
+Travestimento è un'abilità statica che funziona in qualsiasi zona da cui potresti giocare la carta su cui si trova, e l'effetto di travestimento funziona ogni volta che la carta è a faccia in giù. «Travestimento [costo]» significa «Puoi lanciare questa carta come una creatura a faccia in giù 2/2 con custode {2}, senza nome, senza sottotipi e senza costo di mana pagando {3} invece di pagare il suo costo di mana». (Vedi regola 708, «Magie e permanenti a faccia in giù».)
+@702.168b
+Per lanciare una carta usando la sua abilità travestimento, gira la carta a faccia in giù e annuncia che stai usando un'abilità travestimento. Diventa una carta creatura a faccia in giù 2/2 con custode {2}, senza nome, senza sottotipi e senza costo di mana. Qualsiasi effetto o divieto che si applicherebbe al lancio di una carta con queste caratteristiche (e non con le caratteristiche della carta a faccia in su) si applica al lancio di questa carta. Questi valori sono i valori copiabili delle caratteristiche di quell'oggetto. (Vedi regola 613, «Interazione degli effetti continui», e regola 707, «Copiare oggetti».) Mettila in pila (come magia a faccia in giù con le stesse caratteristiche) e paga {3} invece di pagare il suo costo di mana. Ciò segue le regole per il pagamento dei costi alternativi. Puoi usare un'abilità travestimento per lanciare una carta da qualsiasi zona da cui potresti normalmente lanciarla. Quando la magia si risolve, entra nel campo di battaglia con le stesse caratteristiche che aveva la magia. L'effetto di travestimento si applica all'oggetto a faccia in giù ovunque si trovi, e termina quando il permanente viene girato a faccia in su.
+@702.168c
+Normalmente non puoi lanciare una carta a faccia in giù. Un'abilità travestimento ti permette di farlo.
+@702.168d
+In qualsiasi momento in cui hai la priorità, puoi girare a faccia in su un permanente a faccia in giù con un'abilità travestimento che controlli. Questa è un'azione speciale; non usa la pila (vedi regola 116). Per farlo, mostra a tutti i giocatori quale sarebbe il costo di travestimento del permanente se fosse a faccia in su, paga quel costo, poi gira il permanente a faccia in su. (Se il permanente non avrebbe un costo di travestimento se fosse a faccia in su, non può essere girato a faccia in su in questo modo.) L'effetto di travestimento su di esso termina, e riprende le sue normali caratteristiche. Le abilità relative all'ingresso del permanente nel campo di battaglia non si innescano quando viene girato a faccia in su e non hanno alcun effetto, perché il permanente è già entrato nel campo di battaglia.
+@702.168e
+Se il costo di travestimento di un permanente include X, anche altre abilità di quel permanente possono fare riferimento a X. Il valore di X in quelle abilità è pari al valore di X scelto quando è stata compiuta l'azione speciale di travestimento.
+@702.168f
+Vedi regola 708, «Magie e permanenti a faccia in giù», per maggiori informazioni su come lanciare carte con un'abilità travestimento.
+@702.169
+Risolto (Solved)
+@702.169a
+Risolto è un'abilità chiave presente sulle carte Caso. Vedi regola 719, «Carte Caso». «Risolto» è seguito da un testo di abilità. Insieme, rappresentano un'abilità statica, un'abilità innescata o un'abilità attivata.
+@702.169b
+Per un'abilità statica, «Risolto — [Testo dell'abilità]» significa «Finché questo Caso è risolto, [testo dell'abilità]».
+@702.169c
+Per un'abilità innescata, «Risolto — [Testo dell'abilità]» significa «[Testo dell'abilità]. Questa abilità si innesca solo se questo Caso è risolto».
+@702.169d
+Per un'abilità attivata, «Risolto — [Testo dell'abilità]» significa «[Testo dell'abilità]. Attiva solo se questo Caso è risolto».
+@702.170
+Complotto (Plot)
+@702.170a
+Complotto è un'abilità chiave che funziona mentre la carta con complotto è nella mano di un giocatore. «Complotto [costo]» significa «In qualsiasi momento in cui hai la priorità durante la tua fase principale mentre la pila è vuota, puoi esiliare questa carta dalla tua mano e pagare [costo]. Diventa una carta complottata».
+@702.170b
+Esiliare una carta usando la sua abilità complotto è un'azione speciale, che non usa la pila. Vedi regola 116, «Azioni speciali».
+@702.170c
+Oltre all'azione speciale di complotto, alcune magie e abilità fanno diventare complottata una carta in esilio.
+@702.170d
+Il proprietario di una carta complottata può lanciarla dall'esilio senza pagare il suo costo di mana durante la sua fase principale mentre la pila è vuota, in qualsiasi turno successivo a quello in cui è diventata complottata. Lanciare una magia in questo modo segue le regole per il pagamento dei costi alternativi delle regole 601.2b e 601.2f–h. Una carta complottata può essere lanciata in questo modo anche se non ha l'abilità complotto mentre è in esilio.
+@702.170e
+Se un effetto fa riferimento al complottare una carta, si intende compiere l'azione speciale associata a un'abilità complotto.
+@702.170f
+Un effetto può permettere all'abilità complotto di una carta di funzionare in una zona diversa dalla mano di un giocatore. In quel caso, la carta viene esiliata dalla zona in cui si trova quando viene compiuta l'azione, invece che dalla mano del suo proprietario.
+@702.171
+Sellare (Saddle)
+@702.171a
+Sellare è un'abilità attivata. «Sellare N» significa «TAPpa un qualsiasi numero di altre creature STAPpate che controlli con forza totale pari o superiore a N: Questo permanente diventa sellato fino alla fine del turno. Attiva solo come una stregoneria».
+@702.171b
+Sellato è una designazione che non ha alcun significato nelle regole se non quello di fare da indicatore che magie e abilità possono identificare. Solo i permanenti possono essere o diventare sellati. Una volta che un permanente è diventato sellato, resta sellato fino alla fine del turno o finché non lascia il campo di battaglia. Essere sellato non fa parte dei valori copiabili del permanente.
+@702.171c
+Una creatura «sella» un permanente quando viene TAPpata per pagare il costo di attivazione dell'abilità sellare di un permanente.
+@702.172
+Baldoria (Spree)
+@702.172a
+Baldoria è un'abilità statica presente su alcune magie modali (vedi regola 700.2) che si applica mentre la magia è in pila. Baldoria significa «Scegli uno o più modi. Come costo aggiuntivo per lanciare questa magia, paga i costi associati a quei modi».
+@702.172b
+Le carte con l'abilità baldoria hanno un'icona con il segno più nell'angolo in alto a destra della carta, e usano un segno più (+) invece dei tradizionali punti elenco. Questi simboli sono un promemoria visivo del fatto che questa carta richiede un costo aggiuntivo per essere lanciata, e non hanno ulteriore significato nelle regole.
+@702.173
+Corsa libera (Freerunning)
+@702.173a
+Corsa libera è un'abilità statica che funziona in pila. «Corsa libera [costo]» significa «Puoi pagare [costo] invece del costo di mana di questa magia se in questo turno a un giocatore è stato inflitto danno da combattimento da una creatura che, nel momento in cui ha inflitto quel danno, era una creatura Assassino o un comandante sotto il tuo controllo». Lanciare una magia per il suo costo di corsa libera segue le regole per il pagamento dei costi alternativi delle regole 601.2b e 601.2f–h.
+@702.174
+Dono (Gift)
+@702.174a
+Dono è una parola chiave che rappresenta due abilità. È scritta «Dona un [qualcosa]». La prima abilità è un'abilità statica che funziona mentre la carta con dono è in pila, e la seconda è un'abilità che funziona mentre la carta con dono è in pila oppure un'abilità innescata che funziona mentre la carta con dono è sul campo di battaglia. La prima abilità è sempre «Come costo aggiuntivo per lanciare questa magia, puoi scegliere un avversario». Pagare il costo di dono di una magia segue le regole per il pagamento dei costi aggiuntivi delle regole 601.2b e 601.2f–h. La seconda abilità dipende dal [qualcosa] indicato e dal fatto che l'oggetto con l'abilità sia un permanente oppure una magia istantaneo o stregoneria.
+@702.174b
+Su un permanente, la seconda abilità rappresentata da dono è «Quando questo permanente entra, se è stato pagato il suo costo di dono, [effetto]». Su una magia istantaneo o stregoneria, la seconda abilità rappresentata da dono è «Se è stato pagato il costo di dono di questa magia, [effetto]». L'effetto specifico è definito dal [qualcosa] indicato.
+@702.174c
+Alcuni effetti si innescano ogni volta che un giocatore fa un dono. Tale abilità si innesca ogni volta che si risolve una magia istantaneo o stregoneria controllata da quel giocatore il cui costo di dono è stato pagato. Si innesca anche ogni volta che si risolve l'abilità innescata di dono di un permanente controllato da quel giocatore.
+@702.174d
+«Dona un Cibo» significa che l'effetto è «Il giocatore scelto crea una pedina Cibo».
+@702.174e
+«Dona una carta» significa che l'effetto è «Il giocatore scelto pesca una carta».
+@702.174f
+«Dona un Pesce TAPpato» significa che l'effetto è «Il giocatore scelto crea una pedina creatura Pesce 1/1 blu TAPpata».
+@702.174g
+«Dona un turno extra» significa che l'effetto è «Il giocatore scelto gioca un turno extra dopo questo».
+@702.174h
+«Dona un Tesoro» significa che l'effetto è «Il giocatore scelto crea una pedina Tesoro».

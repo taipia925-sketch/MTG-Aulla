@@ -1,0 +1,229 @@
+@702.174i
+«Dona un Polpo» significa che l'effetto è «Il giocatore scelto crea una pedina creatura Polpo 8/8 blu».
+@702.174j
+Per le magie istantaneo e stregoneria, l'effetto di un'abilità dono avviene sempre prima di qualsiasi altra abilità di magia della carta. Se la magia viene neutralizzata o lascia altrimenti la pila prima di risolversi, l'effetto del dono non avviene.
+@702.174k
+Se il controllore di una magia dichiara l'intenzione di pagare il costo di dono di una magia, il dono di quella magia è stato promesso.
+@702.174m
+Se parte dell'abilità di una magia ha effetto solo se il suo dono è stato promesso, e quella parte dell'abilità include dei bersagli, il controllore della magia sceglie quei bersagli solo se il dono è stato promesso.
+@702.175
+Progenie (Offspring)
+@702.175a
+Progenie rappresenta due abilità. «Progenie [costo]» significa «Puoi pagare un [costo] aggiuntivo mentre lanci questa magia» e «Quando questo permanente entra, se è stato pagato il suo costo di progenie, crea una pedina che è una sua copia, tranne per il fatto che è 1/1».
+@702.175b
+Se una magia ha più istanze di progenie, ognuna viene pagata separatamente e si innesca in base ai pagamenti fatti per essa, non per altre istanze di progenie.
+@702.176
+Imminente (Impending)
+@702.176a
+Imminente è una parola chiave che rappresenta quattro abilità. La prima è un'abilità statica che funziona mentre la magia con imminente è in pila. La seconda è un'abilità statica che crea un effetto di sostituzione che può applicarsi al permanente con imminente mentre entra nel campo di battaglia dalla pila. La terza è un'abilità statica che funziona sul campo di battaglia. La quarta è un'abilità innescata che funziona sul campo di battaglia. «Imminente N—[costo]» significa «Puoi scegliere di pagare [costo] invece del costo di mana di questa magia», «Se hai scelto di pagare il costo di imminente di questo permanente, entra con N segnalini tempo su di sé», «Finché è stato pagato il costo di imminente di questo permanente e ha un segnalino tempo su di sé, non è una creatura» e «All'inizio della tua sottofase finale, se è stato pagato il costo di imminente di questo permanente e ha un segnalino tempo su di sé, rimuovi un segnalino tempo da esso». Lanciare una magia per il suo costo di imminente segue le regole per il pagamento dei costi alternativi delle regole 601.2b e 601.2f–h.
+@702.177
+Esaurire (Exhaust)
+@702.177a
+Esaurire è una parola chiave che aggiunge regole aggiuntive all'abilità attivata che la segue. «Esaurire — [Costo]: [Effetto]» significa «[Costo]: [Effetto]. Attiva solo una volta».
+@702.177b
+Un effetto può permetterti di compiere un'azione finché non hai attivato un'abilità esaurire in questo turno. Tale effetto permette quell'azione solo se non hai iniziato ad attivare un'abilità esaurire in questo turno.
+Esempio: Elvish Refueler ha un'abilità esaurire che costa mana e ha anche un'abilità che dice «Durante il tuo turno, finché non hai attivato un'abilità esaurire in questo turno, puoi attivare le abilità esaurire come se non fossero state attivate». Loot, the Pathfinder ha un'abilità esaurire che è anche un'abilità di mana. Se hai già attivato entrambe queste abilità in un turno precedente, non puoi attivare l'abilità di mana di Loot durante il procedimento di attivazione dell'abilità esaurire di Elvish Refueler, perché hai già iniziato ad attivare un'altra abilità esaurire.
+@702.178
+Velocità massima (Max speed)
+@702.178a
+Un'abilità velocità massima è un'abilità statica. «Velocità massima — [Abilità]» significa «Finché la tua velocità è 4, questo oggetto ha "[Abilità]"». Vedi regola 702.179, «Accendete i motori!».
+@702.178b
+Se un'abilità conferita da un'abilità velocità massima indica da quali zone funziona, l'abilità velocità massima che conferisce quell'abilità funziona da quelle zone. (Vedi regola 113.6c.)
+@702.179
+Accendete i motori! (Start Your Engines!)
+@702.179a
+Accendete i motori! è un'abilità statica. Se un giocatore controlla un permanente con accendete i motori! e quel giocatore non ha velocità, la sua velocità diventa 1. Questa è un'azione generata dallo stato. Vedi regola 704.
+@702.179b
+I giocatori non hanno velocità finché una regola o un effetto non imposta la loro velocità a un valore specifico.
+@702.179c
+Se un giocatore non ha velocità e gli viene detto di aumentare la sua velocità di un certo valore, la sua velocità diventa quel valore.
+@702.179d
+Esiste un'abilità innescata intrinseca associata a un giocatore che ha velocità 1 o superiore. Questa abilità non ha fonte ed è controllata da quel giocatore. Quell'abilità è «Ogni volta che uno o più avversari perdono punti vita durante il tuo turno, se la tua velocità è inferiore a 4, la tua velocità aumenta di 1. Questa abilità si innesca solo una volta per turno».
+@702.179e
+Regole ed effetti possono fare riferimento al fatto che un giocatore abbia «velocità massima». Un giocatore ha velocità massima se la sua velocità è 4.
+@702.179f
+Alcuni effetti fanno riferimento alla velocità di un giocatore. Se quel giocatore non ha velocità, la sua velocità è 0 ai fini di un effetto che fa riferimento alla velocità.
+@702.180
+Armonizzare (Harmonize)
+@702.180a
+Armonizzare rappresenta tre abilità statiche: una che funziona mentre la carta è nel cimitero di un giocatore e due che funzionano mentre la magia con armonizzare è in pila. «Armonizzare [costo]» significa «Puoi lanciare questa carta dal tuo cimitero pagando [costo] e TAPpando fino a una creatura STAPpata che controlli invece di pagare il costo di mana di questa magia», «Se lanci questa magia usando la sua abilità armonizzare, il suo costo totale è ridotto di una quantità di mana generico pari alla forza della creatura TAPpata» e «Se è stato pagato il costo di armonizzare, esilia questa carta invece di metterla altrove ogni volta che dovesse lasciare la pila». Lanciare una magia usando la sua abilità armonizzare segue le regole per il pagamento dei costi alternativi delle regole 601.2b e 601.2f–h.
+@702.180b
+Scegli quale creatura TAPpare mentre scegli di pagare il costo di armonizzare di una magia (vedi regola 601.2b), e poi TAPpi quella creatura mentre paghi il costo totale.
+@702.181
+Mobilitare (Mobilize)
+@702.181a
+Mobilitare è un'abilità innescata. «Mobilitare N» significa «Ogni volta che questa creatura attacca, crea N pedine creatura Guerriero 1/1 rosse. Quelle pedine entrano TAPpate e attaccanti. Sacrificale all'inizio della prossima sottofase finale».
+@702.182
+Scelta del mestiere (Job select)
+@702.182a
+Scelta del mestiere è un'abilità innescata. «Scelta del mestiere» significa «Quando questo Equipaggiamento entra, crea una pedina creatura Eroe 1/1 incolore, poi assegna questo Equipaggiamento a essa».
+@702.183
+A livelli (Tiered)
+@702.183a
+A livelli è un'abilità statica presente su alcune magie modali (vedi regola 700.2) che si applica mentre la magia è in pila. A livelli significa «Scegli uno. Come costo aggiuntivo per lanciare questa magia, paga il costo associato a quel modo».
+@702.184
+Stazione (Station)
+@702.184a
+Stazione è un'abilità attivata. «Stazione» significa «TAPpa un'altra creatura STAPpata che controlli: Metti su questo permanente un numero di segnalini carica pari alla forza della creatura TAPpata. Attiva solo come una stregoneria».
+@702.184b
+Ogni carta stampata con un'abilità stazione è detta carta stazione. Ha un layout non standard e include simboli di stazione che sono essi stessi abilità chiave. Vedi regola 721, «Carte stazione».
+@702.184c
+Le abilità statiche possono modificare il risultato di un'abilità stazione facendole usare una caratteristica diversa dalla forza della creatura TAPpata per determinare il numero di segnalini messi sul permanente con l'abilità stazione.
+Esempio: Tapestry Warden ha un'abilità che dice «Ogni creatura che controlli con costituzione maggiore della sua forza fa da stazione ai permanenti usando la sua costituzione invece della sua forza».
+@702.185
+Curvatura (Warp)
+@702.185a
+Curvatura rappresenta due abilità statiche che funzionano mentre la carta con curvatura è in pila, una delle quali può creare un'abilità innescata ritardata. «Curvatura [costo]» significa «Puoi lanciare questa carta dalla tua mano pagando [costo] invece del suo costo di mana» e «Se è stato pagato il costo di curvatura di questa magia, esilia il permanente che questa magia diventa all'inizio della prossima sottofase finale. Il suo proprietario può lanciare questa carta dopo la fine del turno in corso finché resta esiliata». Lanciare una magia per il suo costo di curvatura segue le regole per il pagamento dei costi alternativi delle regole 601.2b e 601.2f–h.
+@702.185b
+Alcuni effetti fanno riferimento a carte «curvate» in esilio. Una carta curvata in esilio è una carta che è stata esiliata dall'abilità innescata ritardata creata da un'abilità curvatura.
+@702.185c
+Alcuni effetti fanno riferimento al fatto che «una magia sia stata curvata in questo turno». Ciò significa che in questo turno una magia è stata lanciata per il suo costo di curvatura.
+@702.186
+∞ (Infinito)
+@702.186a
+∞ (il simbolo matematico dell'infinito) è una parola chiave presente sulle carte Infinito. «∞» è seguito da un testo di abilità. Insieme, rappresentano un'abilità statica.
+@702.186b
+«∞ — [Abilità]» significa «Finché questo permanente è imbrigliato, ha [abilità]». Vedi regola 701.64, «Imbrigliare».
+@702.187
+Caos (Mayhem)
+@702.187a
+Caos è un'abilità statica che funziona mentre la carta con caos è nel cimitero di un giocatore.
+@702.187b
+«Caos [costo]» significa «Finché hai scartato questa carta in questo turno, puoi lanciarla dal tuo cimitero pagando [costo] invece di pagare il suo costo di mana». Lanciare una magia usando la sua abilità caos segue le regole per il pagamento dei costi alternativi delle regole 601.2b e 601.2f–h.
+@702.187c
+«Caos» senza un costo significa «Puoi giocare questa carta dal tuo cimitero se l'hai scartata in questo turno».
+@702.188
+Lancio della ragnatela (Web-slinging)
+@702.188a
+Lancio della ragnatela è un'abilità statica che funziona mentre la magia con lancio della ragnatela è in pila. «Lancio della ragnatela [costo]» significa «Puoi lanciare questa magia pagando [costo] e facendo tornare nella mano del suo proprietario una creatura TAPpata che controlli invece di pagare il suo costo di mana». Lanciare una magia usando la sua abilità lancio della ragnatela segue le regole per il pagamento dei costi alternativi delle regole 601.2b e 601.2f–h.
+@702.189
+Dominare il fuoco (Firebending)
+@702.189a
+Dominare il fuoco è un'abilità innescata. «Dominare il fuoco N» significa «Ogni volta che questa creatura attacca, aggiungi N {R}. Fino alla fine del combattimento, non perdi questo mana al termine di sottofasi e fasi».
+@702.189b
+Un'abilità che si innesca ogni volta che un giocatore domina il fuoco si innesca ogni volta che si risolve un'abilità dominare il fuoco che controlla.
+@702.190
+Sgattaiolare (Sneak)
+@702.190a
+Sgattaiolare è una parola chiave che rappresenta un'abilità statica che funziona mentre la magia con sgattaiolare è in pila. «Sgattaiolare [costo]» significa «In qualsiasi momento in cui potresti lanciare un istantaneo durante la tua sottofase di dichiarazione dei bloccanti, puoi lanciare questa magia pagando [costo] e facendo tornare nella mano del suo proprietario una creatura non bloccata che controlli invece di pagare il costo di mana di questa magia».
+@702.190b
+Una magia permanente il cui costo di sgattaiolare è stato pagato entra nel campo di battaglia TAPpata e attaccante (vedi regola 506.3a). Attaccherà lo stesso giocatore, planeswalker o battaglia della creatura che è tornata nella mano del suo proprietario per pagare il costo di sgattaiolare della magia che è diventata quel permanente.
+@702.191
+Incremento (Increment)
+@702.191a
+Incremento è un'abilità innescata. «Incremento» significa «Ogni volta che lanci una magia, se questo permanente è una creatura e la quantità di mana spesa per lanciare quella magia è maggiore della forza o della costituzione di questa creatura, metti un segnalino +1/+1 su questa creatura».
+@702.191b
+Se una creatura ha più istanze di incremento, ognuna si innesca separatamente.
+@702.192
+Paradigma (Paradigm)
+@702.192a
+Paradigma rappresenta due abilità di magia, una delle quali crea un'abilità innescata ritardata. Paradigma significa «Se è la prima volta in questa partita che si risolve una magia che controlli con il nome di questa magia, all'inizio di ogni tua fase principale precombattimento per il resto della partita, crea una copia di questo oggetto in esilio. Puoi lanciare la copia senza pagare il suo costo di mana» e «Esilia questa magia». Vedi regola 707.10.
+@702.193
+Power-up
+@702.193a
+Power-up è una parola chiave che aggiunge regole aggiuntive all'abilità attivata che la segue. «Power-up — [Costo]: [Effetto]» significa «[Costo]: [Effetto]. Se questo permanente è entrato in questo turno, il costo di questa abilità è ridotto del costo di mana di questo permanente. Attiva questa abilità solo una volta».
+@702.193b
+Il mana generico nel costo di mana del permanente riduce il mana generico nel costo per attivare la sua abilità power-up. Il mana colorato e incolore nel costo di mana del permanente riduce il mana dello stesso tipo, e l'eventuale eccesso riduce altrettanto mana generico. (Vedi regola 118.7.)
+@702.194
+Lavoro di squadra (Teamwork)
+@702.194a
+Lavoro di squadra rappresenta un'abilità statica che funziona mentre la magia con lavoro di squadra è in pila. «Lavoro di squadra N» significa «Come costo aggiuntivo per lanciare questa magia, puoi TAPpare un qualsiasi numero di creature che controlli con forza totale pari o superiore a N». Pagare il costo di lavoro di squadra di una magia segue le regole per il pagamento dei costi aggiuntivi delle regole 601.2b e 601.2f–h.
+@702.194b
+Le abilità possono fare riferimento a una magia lanciata «usando lavoro di squadra» o simili. Tali espressioni si riferiscono al fatto che il giocatore che ha lanciato la magia abbia dichiarato l'intenzione di pagare il costo di lavoro di squadra della magia mentre la lanciava.
+@702.194c
+Se parte dell'abilità di una magia ha effetto solo se è stato usato lavoro di squadra per lanciarla, e quella parte dell'abilità include dei bersagli, il controllore della magia sceglie quei bersagli solo se è stato usato lavoro di squadra per lanciare quella magia. Altrimenti, la magia viene lanciata come se non avesse quei bersagli. Vedi regola 601.2c.
+@702.195
+Storied
+@702.195a
+Storied è un'abilità statica. Significa «In qualsiasi momento in cui controlli tre o più permanenti che sono artefatti, Saghe e/o leggendari e non hai una storia duratura, hai una storia duratura per il resto della partita».
+@702.195b
+Storia duratura è una designazione che non ha alcun significato nelle regole se non quello di fare da indicatore che altre regole ed effetti possono identificare. Un qualsiasi numero di giocatori può avere la designazione storia duratura nello stesso momento.
+@702.195c
+Dopo che un giocatore ottiene una storia duratura, gli effetti continui vengono riapplicati prima che la partita controlli se lo stato di gioco o gli eventi precedenti hanno soddisfatto delle condizioni di innesco.
+@703
+Azioni basate sul turno
+@703.1
+Le azioni basate sul turno sono azioni di gioco che avvengono automaticamente quando iniziano certe sottofasi o fasi, o quando termina ogni sottofase e fase. Le azioni basate sul turno non usano la pila.
+@703.1a
+Le abilità che attendono l'inizio di una determinata sottofase o fase sono abilità innescate, non azioni basate sul turno. (Vedi regola 603, «Gestire le abilità innescate».)
+@703.2
+Le azioni basate sul turno non sono controllate da nessun giocatore.
+@703.3
+Ogni volta che inizia una sottofase o fase, se è una sottofase o fase a cui sono associate azioni basate sul turno, quelle azioni basate sul turno vengono gestite automaticamente per prime. Ciò avviene prima che vengano controllate le azioni generate dallo stato, prima che le abilità innescate vengano messe in pila e prima che i giocatori ricevano priorità.
+@703.4
+Le azioni basate sul turno sono le seguenti:
+@703.4a
+Subito dopo l'inizio della sottofase di STAP, tutti i permanenti in fase con intermittenza controllati dal giocatore attivo escono di fase, e tutti i permanenti fuori fase che il giocatore attivo controllava quando sono usciti di fase rientrano in fase. Tutto ciò avviene simultaneamente. Vedi regola 502.1.
+@703.4b
+Subito dopo che è stata completata l'azione di intermittenza durante la sottofase di STAP, se la partita ha la designazione giorno o notte, controlla se quella designazione deve cambiare. Se non è né giorno né notte, questo controllo non avviene. Vedi regola 502.2.
+@703.4c
+Subito dopo che la partita ha controllato se la sua designazione giorno o notte deve cambiare durante la sottofase di STAP oppure, se la partita non ha una designazione giorno o notte, subito dopo che è stata completata l'azione di intermittenza durante la sottofase di STAP, il giocatore attivo stabilisce quali permanenti che controlla verranno STAPpati. Poi li STAPpa tutti simultaneamente. Vedi regola 502.3.
+@703.4d
+Subito dopo l'inizio della sottofase di acquisizione, il giocatore attivo pesca una carta. Vedi regola 504.1.
+@703.4e
+In una partita Archenemy (vedi regola 904), subito dopo l'inizio della fase principale precombattimento dell'arcinemico, quel giocatore mette in moto la prima carta del suo mazzo dei piani. Vedi regola 701.32.
+@703.4f
+Subito dopo l'inizio della fase principale precombattimento di un giocatore, quel giocatore mette un segnalino sapere su ogni incantesimo Saga che controlla con una o più abilità di capitolo. In una partita Archenemy, ciò avviene dopo l'azione del piano dell'arcinemico. Vedi regola 714, «Carte Saga».
+@703.4g
+Subito dopo che è stata completata l'azione di mettere i segnalini sapere, se il giocatore attivo controlla delle Attrazioni, quel giocatore tira per visitare le sue Attrazioni. Vedi regola 701.52, «Tirare per visitare le tue Attrazioni».
+@703.4h
+Subito dopo l'inizio della sottofase di inizio combattimento, se la partita in corso è una partita multigiocatore in cui gli avversari del giocatore attivo non diventano tutti automaticamente giocatori in difesa, il giocatore attivo sceglie uno dei suoi avversari. Quel giocatore diventa il giocatore in difesa. Vedi regola 507.1.
+@703.4i
+Subito dopo l'inizio della sottofase di dichiarazione degli attaccanti, il giocatore attivo dichiara gli attaccanti. Vedi regola 508.1.
+@703.4j
+Subito dopo l'inizio della sottofase di dichiarazione dei bloccanti, il giocatore in difesa dichiara i bloccanti. Vedi regola 509.1.
+@703.4k
+Subito dopo l'inizio della sottofase di danno da combattimento, ogni giocatore nell'ordine APNAP annuncia come ogni creatura attaccante o bloccante che controlla assegna il suo danno da combattimento. Vedi regola 510.1.
+@703.4m
+Subito dopo che il danno da combattimento è stato assegnato durante la sottofase di danno da combattimento, tutto il danno da combattimento viene inflitto simultaneamente. Vedi regola 510.2.
+@703.4n
+Subito dopo l'inizio della sottofase di cancellazione, se la mano del giocatore attivo contiene più carte del suo numero massimo di carte in mano (normalmente sette), scarta abbastanza carte da ridurre la sua mano a quel numero. Vedi regola 514.1.
+@703.4p
+Subito dopo che il giocatore attivo ha scartato carte (se necessario) durante la sottofase di cancellazione, tutto il danno viene rimosso dai permanenti e tutti gli effetti «fino alla fine del turno» e «in questo turno» terminano. Queste azioni avvengono simultaneamente. Vedi regola 514.2.
+@703.4q
+Al termine di ogni sottofase o fase, l'eventuale mana non speso rimasto nella riserva di mana di un giocatore si svuota. Vedi regola 500.5.
+@704
+Azioni generate dallo stato
+@704.1
+Le azioni generate dallo stato sono azioni di gioco che avvengono automaticamente ogni volta che si verificano certe condizioni (elencate sotto). Le azioni generate dallo stato non usano la pila.
+@704.1a
+Le abilità che attendono un determinato stato di gioco sono abilità innescate, non azioni generate dallo stato. (Vedi regola 603, «Gestire le abilità innescate».)
+@704.2
+Le azioni generate dallo stato vengono controllate durante tutta la partita e non sono controllate da nessun giocatore.
+@704.3
+Ogni volta che un giocatore dovrebbe ricevere la priorità (vedi regola 117, «Tempistica e priorità»), la partita controlla se si verifica una qualsiasi delle condizioni elencate per le azioni generate dallo stato, poi compie simultaneamente tutte le azioni generate dallo stato applicabili come un singolo evento. Se a seguito di un controllo viene compiuta un'azione generata dallo stato, il controllo viene ripetuto; altrimenti tutte le abilità innescate in attesa di essere messe in pila vengono messe in pila, poi il controllo viene ripetuto. Quando a seguito di un controllo non vengono più compiute azioni generate dallo stato e nessuna abilità innescata è in attesa di essere messa in pila, il giocatore appropriato riceve la priorità. Questo procedimento avviene anche durante la sottofase di cancellazione (vedi regola 514), tranne che se a seguito del primo controllo della sottofase non vengono compiute azioni generate dallo stato e nessuna abilità innescata è in attesa di essere messa in pila, allora nessun giocatore riceve la priorità e la sottofase termina.
+@704.4
+A differenza delle abilità innescate, le azioni generate dallo stato non tengono conto di ciò che accade durante la risoluzione di una magia o abilità.
+Esempio: Un giocatore controlla Maro, una creatura con l'abilità «La forza e la costituzione di Maro sono ciascuna pari al numero di carte nella tua mano», e lancia una magia il cui effetto è «Scarta la tua mano, poi pesca sette carte». Maro avrà temporaneamente costituzione 0 a metà della risoluzione della magia, ma tornerà a costituzione 7 quando la magia avrà finito di risolversi. Quindi Maro sopravvive quando vengono controllate le azioni generate dallo stato. Al contrario, un'abilità che si innesca quando il giocatore non ha carte in mano va in pila dopo che la magia si è risolta, perché il suo evento di innesco è avvenuto durante la risoluzione.
+@704.5
+Le azioni generate dallo stato sono le seguenti:
+@704.5a
+Se un giocatore ha 0 o meno punti vita, quel giocatore perde la partita.
+@704.5b
+Se un giocatore ha tentato di pescare una carta da un grimorio senza carte dall'ultima volta che sono state controllate le azioni generate dallo stato, quel giocatore perde la partita.
+@704.5c
+Se un giocatore ha dieci o più segnalini veleno, quel giocatore perde la partita. Ignora questa regola nelle partite Two-Headed Giant; vedi invece regola 704.6b.
+@704.5d
+Se una pedina si trova in una zona diversa dal campo di battaglia, cessa di esistere.
+@704.5e
+Se una copia di una magia si trova in una zona diversa dalla pila, cessa di esistere. Se una copia di una carta si trova in una zona diversa dalla pila o dal campo di battaglia, cessa di esistere.
+@704.5f
+Se una creatura ha costituzione 0 o inferiore, viene messa nel cimitero del suo proprietario. La rigenerazione non può sostituire questo evento.
+@704.5g
+Se una creatura ha costituzione superiore a 0, ha del danno segnato su di sé e il danno totale segnato su di essa è maggiore o uguale alla sua costituzione, a quella creatura è stato inflitto danno letale e viene distrutta. La rigenerazione può sostituire questo evento.
+@704.5h
+Se una creatura ha costituzione superiore a 0 e le è stato inflitto danno da una fonte con tocco letale dall'ultima volta che sono state controllate le azioni generate dallo stato, quella creatura viene distrutta. La rigenerazione può sostituire questo evento.
+@704.5i
+Se un planeswalker ha fedeltà 0, viene messo nel cimitero del suo proprietario.
+@704.5j
+Se due o più permanenti leggendari con lo stesso nome sono controllati dallo stesso giocatore, quel giocatore ne sceglie uno, e gli altri vengono messi nei cimiteri dei rispettivi proprietari. Questa è detta «regola delle leggende».
+@704.5k
+Se due o più permanenti hanno il supertipo mondo, tutti tranne quello che ha il supertipo mondo da meno tempo vengono messi nei cimiteri dei rispettivi proprietari. In caso di parità per il tempo minore, vengono messi tutti nei cimiteri dei rispettivi proprietari. Questa è detta «regola dei mondi».
+@704.5m
+Se un'Aura è assegnata a un oggetto o giocatore illegale, o non è assegnata a un oggetto o giocatore, quell'Aura viene messa nel cimitero del suo proprietario.
+@704.5n
+Se un Equipaggiamento o una Fortificazione è assegnato a un permanente illegale o a un giocatore, viene staccato da quel permanente o giocatore. Resta sul campo di battaglia.
+@704.5p
+Se una battaglia o una creatura è assegnata a un oggetto o giocatore, viene staccata e resta sul campo di battaglia. Allo stesso modo, se un permanente non battaglia e non creatura che non è né un'Aura, né un Equipaggiamento, né una Fortificazione è assegnato a un oggetto o giocatore, viene staccato e resta sul campo di battaglia.
+@704.5q
+Se un permanente ha su di sé sia un segnalino +1/+1 sia un segnalino -1/-1, vengono rimossi da esso N segnalini +1/+1 e N segnalini -1/-1, dove N è il minore tra il numero di segnalini +1/+1 e il numero di segnalini -1/-1 su di esso.
