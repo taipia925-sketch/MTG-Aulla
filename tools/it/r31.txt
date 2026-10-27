@@ -1,0 +1,167 @@
+@710.2
+In ogni zona diversa dal campo di battaglia, e anche sul campo di battaglia prima che il permanente si capovolga, una carta capovolgibile ha solo le normali caratteristiche della carta. Una volta che un permanente è capovolto, il suo nome normale, il riquadro di testo, la riga del tipo, la forza e la costituzione non si applicano e si applicano invece le versioni alternative di quelle caratteristiche.
+Esempio: Akki Lavarunner è una creatura non leggendaria che si capovolge in una creatura leggendaria chiamata Tok-Tok, Volcano Born. Un effetto che dice «Passa in rassegna il tuo grimorio per una carta leggendaria» non può trovare questa carta capovolgibile. Un effetto che dice «Le creature leggendarie prendono +2/+2» non influenza Akki Lavarunner, ma influenza Tok-Tok.
+@710.3
+Devi assicurarti che sia sempre chiaro se un permanente che controlli è capovolto o meno, sia quando è STAPpato sia quando è TAPpato. Metodi comuni per distinguere tra permanenti capovolti e non capovolti includono usare monete o dadi per contrassegnare gli oggetti capovolti.
+@710.4
+Capovolgere un permanente è un procedimento a senso unico. Una volta che un permanente è capovolto, è impossibile che torni non capovolto. Tuttavia, se un permanente capovolto lascia il campo di battaglia, non conserva memoria del suo stato. Vedi regola 110.5.
+@710.5
+Se un effetto istruisce un giocatore a scegliere un nome di carta e il giocatore vuole scegliere il nome alternativo di una carta capovolgibile, il giocatore può farlo.
+@711
+Carte livellatrici
+@711.1
+Ogni carta livellatrice ha un riquadro di testo a fasce e tre riquadri di forza/costituzione. Il riquadro di testo di una carta livellatrice contiene due simboli di livello.
+@711.2
+Un simbolo di livello è un'abilità chiave che rappresenta un'abilità statica. Il simbolo di livello include un intervallo di numeri, indicato qui come «N1-N2», oppure un singolo numero seguito da un segno più, indicato qui come «N3+». Tutte le abilità stampate nella stessa fascia del riquadro di testo di un simbolo di livello fanno parte della sua abilità statica. Lo stesso vale per il riquadro di forza/costituzione stampato in quella fascia, indicato qui come «[F/C]».
+@711.2a
+«{LIVELLO N1-N2} [Abilità] [F/C]» significa «Finché questa creatura ha almeno N1 segnalini livello su di sé, ma non più di N2 segnalini livello su di sé, ha forza e costituzione base [F/C] e ha [abilità]».
+@711.2b
+«{LIVELLO N3+} [Abilità] [F/C]» significa «Finché questa creatura ha N3 o più segnalini livello su di sé, ha forza e costituzione base [F/C] e ha [abilità]».
+@711.3
+Le fasce del riquadro di testo non hanno alcun significato di gioco se non quello di delimitare chiaramente quali abilità e quale riquadro di forza/costituzione sono associati a quale simbolo di livello. Le carte livellatrici contengono ciascuna un solo riquadro di testo.
+@711.4
+Qualsiasi abilità di una carta livellatrice che non è preceduta da un simbolo di livello viene trattata normalmente. In particolare, ogni permanente livellatore ha sempre la sua abilità aumentare di livello (vedi regola 702.87); può essere attivata indipendentemente da quanti segnalini livello ci sono su quel permanente.
+@711.5
+Se il numero di segnalini livello su una creatura livellatrice è inferiore a N1 (il primo numero stampato nel suo simbolo {LIVELLO N1-N2}), ha la forza e la costituzione indicate dal suo riquadro di forza/costituzione più in alto.
+@711.6
+In ogni zona diversa dal campo di battaglia, una carta livellatrice ha la forza e la costituzione indicate dal suo riquadro di forza/costituzione più in alto.
+@711.7
+Alcuni incantesimi hanno il sottotipo Classe e abilità associate che danno loro un livello di classe. Queste non sono abilità aumentare di livello e i livelli di classe non interagiscono con i segnalini livello. Vedi regola 716, «Carte Classe».
+@712
+Carte bifronte
+@712.1
+Una carta bifronte ha una faccia di carta di Magic su un lato e, sull'altro, una faccia di carta di Magic oppure metà di una faccia di carta sovradimensionata. (Non ha il retro delle carte di Magic.) Esistono tre tipi di carte bifronte: carte bifronte non modali (in precedenza chiamate «carte bifronte trasformabili»), carte bifronte modali e carte da combinare.
+@712.2
+Le carte bifronte non modali hanno una faccia di carta di Magic su ciascun lato e includono abilità su una o entrambe le facce che permettono alla carta di «trasformarsi» o «convertirsi» (girarsi sull'altra faccia) e/o permettono alla carta di essere lanciata o di entrare nel campo di battaglia «trasformata» o «convertita» (con la faccia posteriore rivolta verso l'alto).
+@712.2a
+La faccia anteriore di una carta bifronte non modale è contrassegnata da un simbolo di faccia anteriore nell'angolo in alto a sinistra. Sulle carte stampate a partire dall'uscita di The Brothers' War™, quel simbolo è un singolo triangolo bianco rivolto verso l'alto dentro un cerchio nero. Le carte bifronte non modali stampate in espansioni più vecchie hanno simboli di faccia anteriore diversi. Sulle carte bifronte di Magic Origins™ e Core Set 2019, il simbolo di faccia anteriore è un'icona Planeswalker modificata. Sulle carte del blocco di Innistrad®, dell'espansione Shadows over Innistrad e dell'espansione Innistrad: Midnight Hunt, oltre che su Ulrich of the Krallenhorde dell'espansione Eldritch Moon™, il simbolo di faccia anteriore è un sole. Sulle altre carte bifronte di Eldritch Moon, il simbolo di faccia anteriore è una luna piena. Sulle carte di Ixalan® e Rivals of Ixalan™, il simbolo di faccia anteriore è una rosa dei venti. Sulle carte bifronte di Kamigawa®: Neon Dynasty, il simbolo di faccia anteriore è un ventaglio chiuso.
+@712.2b
+La faccia posteriore di una carta bifronte non modale è contrassegnata da un simbolo di faccia posteriore nell'angolo in alto a sinistra o in alto a destra. Sulle carte stampate a partire dall'uscita di The Brothers' War, quel simbolo è un singolo triangolo bianco rivolto verso il basso dentro un cerchio nero. Le carte bifronte non modali stampate in espansioni più vecchie hanno simboli diversi. Sulle carte bifronte di Magic Origins e Core Set 2019, il simbolo di faccia posteriore è un'icona Planeswalker completa. Sulle carte del blocco di Innistrad, dell'espansione Shadows over Innistrad e dell'espansione Innistrad: Midnight Hunt, oltre che su Ulrich, Uncontested Alpha dell'espansione Eldritch Moon, il simbolo di faccia posteriore è una luna crescente. Sulle altre carte bifronte di Eldritch Moon, il simbolo di faccia posteriore è un'immagine stilizzata di Emrakul. Sulle carte di Ixalan e Rivals of Ixalan, il simbolo di faccia posteriore è un'icona di terra. Sulle carte bifronte di Kamigawa: Neon Dynasty, il simbolo di faccia posteriore è un ventaglio aperto.
+@712.2c
+La faccia anteriore di una carta bifronte non modale la cui faccia posteriore è una creatura ha la forza e la costituzione della faccia posteriore stampate in grigio sopra il riquadro di forza e costituzione. Questo è testo di richiamo e non ha alcun effetto sul gioco.
+@712.3
+Le carte bifronte modali hanno una faccia di carta di Magic su ciascun lato. Queste facce di solito sono indipendenti l'una dall'altra, ma possono avere un'abilità che permette loro di «trasformarsi» o «convertirsi» su una delle due facce.
+@712.3a
+La faccia anteriore di una carta bifronte modale è contrassegnata da un simbolo di faccia anteriore nell'angolo in alto a sinistra. Il simbolo di faccia anteriore è un singolo triangolo nero dentro una goccia orizzontale.
+@712.3b
+La faccia posteriore di una carta bifronte modale è contrassegnata da un simbolo di faccia posteriore nell'angolo in alto a sinistra. Il simbolo di faccia posteriore è formato da due triangoli bianchi dentro una goccia orizzontale.
+@712.3c
+Ogni faccia di una carta bifronte modale include una barra di suggerimento nell'angolo in basso a sinistra con informazioni sulla faccia opposta. Questo è testo di richiamo e non ha alcun effetto sul gioco.
+@712.4
+Le carte da combinare hanno una faccia di carta di Magic su un lato e metà di una faccia di carta sovradimensionata sull'altro.
+@712.4a
+Una carta di ogni coppia da combinare ha un'abilità che esilia sia quell'oggetto sia la sua controparte e li combina. Per combinare le due carte di una coppia da combinare, mettile sul campo di battaglia con le facce posteriori rivolte verso l'alto e unite (vedi regola 701.42, «Combinare»). Il permanente risultante è un singolo oggetto rappresentato da due carte.
+@712.4b
+Le facce posteriori di una coppia da combinare vengono usate solo per determinare le caratteristiche del permanente combinato che quella coppia diventa sul campo di battaglia. Se una regola o un effetto fa riferimento alla faccia posteriore di una carta da combinare quando non fa parte di un permanente combinato sul campo di battaglia, non riesce a determinarne le caratteristiche, indipendentemente da quali parti del permanente combinato siano rappresentate sulla faccia posteriore di quella carta.
+@712.4c
+A differenza delle altre carte bifronte, le carte da combinare non possono essere trasformate o convertite. Eventuali istruzioni in tal senso vengono ignorate.
+@712.5
+Esistono sette coppie da combinare specifiche.
+@712.5a
+Midnight Scavengers e Graf Rats si combinano formando Chittering Host.
+@712.5b
+Hanweir Garrison e Hanweir Battlements si combinano formando Hanweir, the Writhing Township.
+@712.5c
+Bruna, the Fading Light e Gisela, the Broken Blade si combinano formando Brisela, Voice of Nightmares.
+@712.5d
+Phyrexian Dragon Engine e Mishra, Claimed by Gix si combinano formando Mishra, Lost to Phyrexia.
+@712.5e
+The Mightstone and Weakstone e Urza, Lord Protector si combinano formando Urza, Planeswalker.
+@712.5f
+Argoth, Sanctum of Nature e Titania, Voice of Gaea si combinano formando Titania, Gaea Incarnate.
+@712.5g
+Fang, Fearless l'Cie e Vanille, Cheerful l'Cie si combinano formando Ragnarok, Divine Deliverance.
+@712.6
+I giocatori a cui è permesso guardare una carta bifronte possono guardarne entrambi i lati.
+@712.7
+I giocatori devono assicurarsi che le carte bifronte nelle zone nascoste siano indistinguibili dalle altre carte nella stessa zona. Per farlo, il proprietario di una carta bifronte può usare bustine protettive completamente opache e/o una carta sostitutiva (vedi regola 713). I tornei sanzionati hanno regole aggiuntive per giocare con le carte bifronte. Vedi regola 100.6.
+@712.8
+Ogni faccia di una carta bifronte che non è una carta da combinare ha il proprio insieme di caratteristiche. La faccia anteriore di ogni carta da combinare e la faccia unita formata da una coppia da combinare hanno ciascuna il proprio insieme di caratteristiche.
+@712.8a
+Mentre una carta bifronte è fuori dalla partita o in una zona diversa dal campo di battaglia o dalla pila, ha solo le caratteristiche della sua faccia anteriore.
+@712.8b
+Una carta da combinare in pila ha solo le caratteristiche della sua faccia anteriore.
+@712.8c
+Normalmente, una magia bifronte non modale ha la faccia anteriore rivolta verso l'alto mentre è in pila e ha solo le caratteristiche della sua faccia anteriore. Tuttavia, se un effetto permette a un giocatore di lanciare una carta bifronte non modale «trasformata» o «convertita», la magia risultante avrà la faccia posteriore rivolta verso l'alto e avrà solo le caratteristiche della sua faccia posteriore. Il suo valore di mana viene calcolato usando il costo di mana della sua faccia anteriore.
+@712.8d
+Mentre un permanente bifronte ha la faccia anteriore rivolta verso l'alto, ha solo le caratteristiche della sua faccia anteriore.
+@712.8e
+Mentre un permanente bifronte non modale ha la faccia posteriore rivolta verso l'alto, ha solo le caratteristiche della sua faccia posteriore. Tuttavia, il suo valore di mana viene calcolato usando il costo di mana della sua faccia anteriore. Se un permanente sta copiando la faccia posteriore di un permanente bifronte non modale (anche se l'oggetto che rappresenta quella copia è esso stesso un permanente bifronte), il valore di mana di quel permanente è 0. Vedi regola 202.3b.
+@712.8f
+Mentre una magia bifronte modale è in pila o un permanente bifronte modale è sul campo di battaglia, ha solo le caratteristiche della faccia rivolta verso l'alto.
+@712.8g
+Mentre le due carte di una coppia da combinare sono sul campo di battaglia come permanente combinato, l'oggetto rappresentato da quelle carte ha solo le caratteristiche della faccia posteriore unita, e il suo valore di mana è la somma dei valori di mana delle sue facce anteriori. Se un permanente sta copiando un permanente combinato, il valore di mana della copia è 0. Vedi regola 202.3c.
+@712.9
+Solo i permanenti rappresentati da pedine bifronte e da carte bifronte che non sono carte da combinare possono trasformarsi o convertirsi. (Vedi regola 701.27, «Trasformare», e regola 701.28, «Convertire».) Se una magia o abilità istruisce un giocatore a trasformare o convertire un permanente che non è rappresentato da una pedina bifronte o da una carta bifronte, non succede nulla.
+Esempio: Un Clone entra nel campo di battaglia come copia di Wildblood Pack (la faccia posteriore di una carta bifronte). Il Clone sarà una copia di Wildblood Pack. Poiché il Clone non è esso stesso una carta bifronte, non può trasformarsi.
+Esempio: Un giocatore lancia Cytoshape, facendo diventare un Kruin Outlaw (la faccia anteriore di una carta bifronte) una copia di Elite Vanguard (una creatura Umano Soldato 2/1) fino alla fine del turno. Il giocatore poi lancia Moonmist, che dice, tra l'altro, «Trasforma tutti gli Umani». Poiché la copia di Elite Vanguard è una carta bifronte, si trasforma. Il permanente risultante avrà la faccia posteriore rivolta verso l'alto, ma per quel turno sarà ancora una copia di Elite Vanguard.
+@712.10
+Se una magia o abilità istruisce un giocatore a trasformare o convertire un permanente, e la faccia in cui quel permanente si trasformerebbe o convertirebbe è una faccia di carta istantaneo o stregoneria, oppure è una pedina bifronte creata con una faccia istantaneo o stregoneria, non succede nulla.
+@712.11
+Una magia bifronte viene lanciata per impostazione predefinita con la faccia anteriore rivolta verso l'alto. Vedi regola 601, «Lanciare magie».
+@712.11a
+Se una carta bifronte o una copia di una carta bifronte viene lanciata come magia «trasformata» o «convertita», viene messa in pila con la faccia posteriore rivolta verso l'alto.
+@712.11b
+Un giocatore che lancia come magia una carta bifronte modale o una copia di una carta bifronte modale sceglie quale faccia sta lanciando prima di metterla in pila.
+@712.11c
+Solo la faccia che sarà rivolta verso l'alto in pila viene valutata per stabilire se può essere lanciata. Solo quella faccia è considerata messa in pila.
+@712.11d
+Se un'abilità della faccia anteriore di una carta bifronte le permette di essere lanciata «trasformata» o «convertita», quell'abilità viene considerata anche nel valutare quella magia per stabilire se può essere lanciata. Questa è un'eccezione alla 712.11c.
+@712.12
+Un giocatore che gioca come terra una carta bifronte modale o una copia di una carta bifronte modale sceglie una delle sue facce che sia una terra prima di metterla sul campo di battaglia. Entra nel campo di battaglia con quella faccia rivolta verso l'alto. Vedi regola 305, «Terre».
+@712.13
+Per impostazione predefinita, una magia bifronte che si risolve e diventa un permanente viene messa sul campo di battaglia con rivolta verso l'alto la stessa faccia che era rivolta verso l'alto in pila.
+@712.13a
+Alcune abilità possono far entrare nel campo di battaglia trasformata o convertita una magia bifronte con la faccia anteriore rivolta verso l'alto in pila. Se la faccia posteriore della carta che rappresenta quella magia è una faccia istantaneo o stregoneria, o quella magia è una copia di una carta bifronte creata con una faccia posteriore istantaneo o stregoneria, non entra nel campo di battaglia e viene invece messa nel cimitero del suo proprietario.
+Esempio: Un giocatore controlla sia Mycosynth Lattice sia March of the Machines, i cui effetti combinati rendono tutti i permanenti creature artefatto in aggiunta ai loro altri tipi. Controlla anche sul campo di battaglia un Clone che è una copia di Bird Admirer, una creatura con diurno. Attualmente è notte, ma quel permanente non può trasformarsi perché non è rappresentato da una carta bifronte. Il suo controllore lancia Mystic Reflection bersagliandolo, poi lancia Invasion of Kylem, una battaglia Assedio la cui faccia posteriore è una stregoneria. Poiché Invasion of Kylem sta entrando nel campo di battaglia come creatura, l'effetto di sostituzione di Mystic Reflection si applica a essa e tenta di farla entrare nel campo di battaglia come copia di Bird Admirer. Poiché è notte, l'abilità diurno normalmente la farebbe entrare con la faccia posteriore rivolta verso l'alto. Tuttavia, poiché la sua faccia posteriore è una stregoneria, viene invece messa nel cimitero del suo proprietario.
+@712.14
+Una carta bifronte messa sul campo di battaglia da una zona diversa dalla pila entra nel campo di battaglia per impostazione predefinita con la faccia anteriore rivolta verso l'alto.
+@712.14a
+Se una magia o abilità mette sul campo di battaglia una carta bifronte «trasformata» o «convertita», entra nel campo di battaglia con la faccia posteriore rivolta verso l'alto. Se a un giocatore viene detto di mettere sul campo di battaglia trasformata o convertita una carta che non è una carta bifronte, quella carta resta nella sua zona attuale.
+@712.14b
+Se a un giocatore viene detto di mettere sul campo di battaglia una carta bifronte modale e la sua faccia anteriore non è una carta permanente, la carta resta nella sua zona attuale.
+@712.14c
+Se una carta da combinare viene combinata con la sua controparte, quelle carte entrano nel campo di battaglia come un unico permanente con le facce posteriori rivolte verso l'alto.
+@712.15
+Se un effetto permette a un giocatore di lanciare una carta bifronte come magia creatura a faccia in giù, o se una carta bifronte entra nel campo di battaglia a faccia in giù, avrà le caratteristiche datele dalla regola o dall'effetto che l'ha resa a faccia in giù. Quella carta resta nascosta, usando una carta sostitutiva a faccia in giù (vedi regola 713) e/o bustine opache. Vedi regola 708, «Magie e permanenti a faccia in giù».
+@712.15a
+Mentre è a faccia in giù, un permanente bifronte non può trasformarsi o convertirsi. Se viene girato a faccia in su, avrà la faccia anteriore rivolta verso l'alto.
+@712.16
+I permanenti combinati e gli altri permanenti bifronte non possono essere girati a faccia in giù. Se una magia o abilità tenta di girare a faccia in giù un permanente bifronte, non succede nulla e quell'effetto non modifica nessuna delle sue caratteristiche né i loro valori copiabili.
+@712.17
+Una carta bifronte esiliata a faccia in giù resta nascosta, usando una carta sostitutiva a faccia in giù e/o bustine opache. Vedi regola 713, «Carte sostitutive».
+@712.18
+Quando un permanente bifronte si trasforma o si converte, non diventa un nuovo oggetto. Tutti gli effetti che si applicavano a quel permanente continuano ad applicarsi.
+Esempio: Un effetto dà a Village Ironsmith (la faccia anteriore di una carta bifronte) +2/+2 fino alla fine del turno e poi Village Ironsmith si trasforma in Ironfang. Ironfang continua a prendere +2/+2 fino alla fine del turno.
+@712.19
+Se un effetto istruisce un giocatore a scegliere un nome di carta, il giocatore può scegliere il nome di una delle due facce di una carta bifronte, ma non di entrambe. Il giocatore può scegliere il nome della faccia posteriore unita di una coppia da combinare.
+@712.20
+Se una carta bifronte avrebbe un'abilità «Mentre [questo permanente] si trasforma...» dopo essersi trasformata o convertita, quell'abilità viene applicata mentre quel permanente si sta trasformando o convertendo, non dopo.
+@712.21
+Se un permanente combinato lascia il campo di battaglia, un permanente lascia il campo di battaglia e due carte vengono messe nella zona appropriata.
+Esempio: Chittering Host, un permanente combinato, muore. Un'abilità che si innesca «ogni volta che una creatura muore» si innesca una volta. Un'abilità che si innesca «ogni volta che una carta viene messa in un cimitero da qualsiasi zona» si innesca due volte.
+@712.21a
+Se un permanente combinato viene messo nel cimitero o nel grimorio del suo proprietario, quel giocatore può disporre le due carte in qualsiasi ordine. Se viene messo nel grimorio del suo proprietario, quel giocatore non rivela l'ordine.
+@712.21b
+Se un giocatore esilia un permanente combinato, quel giocatore determina in quel momento l'ordine relativo delle marche temporali delle due carte. Questa è un'eccezione al procedimento descritto nella regola 613.7m.
+Esempio: Duplicant è una carta con le abilità «Quando Duplicant entra, puoi esiliare una creatura non pedina bersaglio» e «Finché una carta esiliata con Duplicant è una carta creatura, Duplicant ha la forza, la costituzione e i tipi di creatura dell'ultima carta creatura esiliata con Duplicant. È ancora un Mutaforma». Mentre la prima abilità di Duplicant esilia Chittering Host, un permanente combinato, il controllore di Duplicant sceglie se l'ultima carta creatura esiliata è Midnight Scavengers o Graf Rats.
+@712.21c
+Se un effetto può trovare il nuovo oggetto che un permanente combinato diventa quando lascia il campo di battaglia, trova entrambe le carte. (Vedi regola 400.7.) Se quell'effetto fa compiere azioni su quelle carte, le stesse azioni vengono compiute su ciascuna di esse.
+Esempio: Otherworldly Journey è un istantaneo che dice «Esilia una creatura bersaglio. All'inizio della prossima sottofase finale, fai tornare quella carta sul campo di battaglia sotto il controllo del suo proprietario con un segnalino +1/+1 su di essa». Un giocatore lancia Otherworldly Journey bersagliando Chittering Host, un permanente combinato. Chittering Host viene esiliato. All'inizio della prossima sottofase finale, Midnight Scavengers e Graf Rats tornano entrambi sul campo di battaglia, ciascuno con un segnalino +1/+1 su di sé.
+Esempio: False Demise è un'Aura con l'abilità «Quando la creatura incantata muore, fai tornare quella carta sul campo di battaglia sotto il tuo controllo». Un Chittering Host incantato da False Demise muore. L'abilità innescata fa tornare sul campo di battaglia sia Midnight Scavengers sia Graf Rats.
+Esempio: Mimic Vat è un artefatto che dice, tra l'altro, «Ogni volta che una creatura non pedina muore, puoi esiliare quella carta». Un Chittering Host muore. Mentre l'abilità innescata di Mimic Vat si risolve, il suo controllore fa un'unica scelta ed entrambe le carte che rappresentavano Chittering Host vengono esiliate oppure no.
+@712.21d
+Se più effetti di sostituzione potrebbero applicarsi all'evento di un permanente combinato che lascia il campo di battaglia o viene messo nella nuova zona, applicare uno di quegli effetti di sostituzione a una delle due carte influenza entrambe le carte. Se il permanente combinato è un comandante, può essere esentato da questa regola; vedi regole 903.9b–c.
+Esempio: Leyline of the Void è un incantesimo che dice, tra l'altro, «Se una carta dovesse essere messa nel cimitero di un avversario da qualsiasi zona, esiliala invece». Wheel of Sun and Moon è un'Aura con incanta giocatore e l'abilità «Se una carta dovesse essere messa nel cimitero del giocatore incantato da qualsiasi zona, invece quella carta viene rivelata e messa in fondo al grimorio del suo proprietario». Se il controllore di Chittering Host è influenzato dagli effetti di entrambe le carte, quel giocatore sceglie un effetto da applicare all'evento e Midnight Scavengers e Graf Rats vengono spostati entrambi nella zona appropriata.
+@712.21e
+Se un effetto ha bisogno di sapere il numero di oggetti che hanno cambiato zona, un permanente combinato tra quegli oggetti conta come un oggetto spostato. Se l'effetto ha bisogno di sapere il numero di carte che hanno cambiato zona, quel permanente combinato conta come due carte spostate.
+@713
+Carte sostitutive
+@713.1
+Una carta sostitutiva è un supplemento di gioco che può essere usato per rappresentare una carta bifronte o una carta da combinare. Una carta sostitutiva ha il normale retro delle carte di Magic.
+@713.2
+Ogni carta sostitutiva deve indicare chiaramente il nome almeno della faccia anteriore della carta che rappresenta. Anche altre informazioni della carta stampata (per esempio tipo di carta, costo di mana, forza e costituzione) possono essere scritte sulla carta sostitutiva.
+@713.2a
+Alcune carte sostitutive elencano i nomi e i costi di mana delle carte che possono rappresentare. Deve essere contrassegnato esattamente uno dei cerchietti da riempire per indicare quale carta rappresenta la carta sostitutiva. Questo stile di carta sostitutiva si trovava nei prodotti Magic usciti tra il 2011 e il 2018.
+@713.2b
+Alcune carte sostitutive rappresentano una specifica carta indicata. Questo stile di carta sostitutiva si trovava nell'uscita di Core Set 2019, e rappresenta la carta Nicol Bolas, the Ravager.

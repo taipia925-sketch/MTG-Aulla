@@ -1,0 +1,220 @@
+@713.2c
+Alcune carte sostitutive possono rappresentare qualsiasi carta bifronte modale. Queste carte sostitutive includono i simboli di faccia anteriore e posteriore sulla faccia anteriore della carta. Per usarne una, scrivi il nome di ciascuna faccia della carta che rappresenta. Questo stile di carta sostitutiva si trova nell'uscita di Zendikar Rising.
+@713.3
+Se in un mazzo viene usata una carta sostitutiva, la carta che rappresenta viene messa da parte prima dell'inizio della partita (vedi regola 103.2a) e deve restare disponibile per tutta la partita. Una carta sostitutiva non può essere inclusa in un mazzo a meno che non rappresenti una carta bifronte o una carta da combinare.
+@713.4
+A tutti i fini di gioco, la carta sostitutiva è considerata la carta che rappresenta.
+@713.5
+Se la carta sostitutiva è a faccia in su in una zona pubblica, deve essere messa da parte e deve essere usata al suo posto la carta bifronte o la carta da combinare che rappresenta.
+@714
+Carte Saga
+@714.1
+Ogni carta Saga ha un riquadro di testo a fasce che contiene un certo numero di simboli di capitolo. La sua illustrazione è orientata verticalmente sul lato destro della carta, e la sua riga del tipo si trova lungo il bordo inferiore della carta.
+@714.1a
+Gli incantesimi Saga che hanno anche il tipo creatura sono stampati con un riquadro di forza e costituzione e un riquadro di testo aggiuntivo sotto la riga del tipo. Le abilità in quel riquadro di testo sono indipendenti dai suoi simboli di capitolo.
+@714.2
+Un simbolo di capitolo è un'abilità chiave che rappresenta un'abilità innescata detta abilità di capitolo.
+@714.2a
+Un simbolo di capitolo include un numero romano, indicato qui come «{rN}». Il numero I rappresenta 1, II rappresenta 2, III rappresenta 3 e così via.
+@714.2b
+«{rN}—[Effetto]» significa «Quando uno o più segnalini sapere vengono messi su questa Saga, se il numero di segnalini sapere su di essa era inferiore a N ed è diventato almeno N, [effetto]».
+@714.2c
+«{rN1}, {rN2}—[Effetto]» significa la stessa cosa di «{rN1}—[Effetto]» e «{rN2}—[Effetto]».
+@714.2d
+Il numero del capitolo finale di una Saga è il valore più alto tra le abilità di capitolo che ha. Se in qualche modo una Saga non ha abilità di capitolo, il numero del suo capitolo finale è 0.
+@714.2e
+L'abilità di capitolo finale di una Saga è l'abilità di capitolo che ha il numero del capitolo finale nel suo simbolo di capitolo.
+@714.3
+Le Saghe usano i segnalini sapere per tenere traccia del loro progresso.
+@714.3a
+Ogni Saga senza leggere in anticipo ha l'abilità intrinseca «Questa Saga entra con un segnalino sapere su di sé». Questa abilità crea un effetto di sostituzione (vedi regola 614.1c).
+@714.3b
+Ogni Saga con leggere in anticipo ha le abilità intrinseche «Mentre questa Saga entra, scegli un numero tra uno e il numero del capitolo finale di questa Saga» e «Questa Saga entra con il numero scelto di segnalini sapere su di sé». (Vedi regola 702.155, «Leggere in anticipo».) Queste abilità creano effetti di sostituzione (vedi regola 614.1c).
+@714.3c
+All'inizio della fase principale precombattimento di un giocatore, quel giocatore mette un segnalino sapere su ogni Saga che controlla con una o più abilità di capitolo. Questa azione basata sul turno non usa la pila.
+@714.4
+Se il numero di segnalini sapere su un permanente Saga con una o più abilità di capitolo è maggiore o uguale al numero del suo capitolo finale, e non è la fonte di un'abilità di capitolo che si è innescata ma non ha ancora lasciato la pila, il controllore di quella Saga la sacrifica. Questa azione generata dallo stato non usa la pila.
+@715
+Carte avventuriero
+@715.1
+Le carte avventuriero hanno una cornice in due parti, con una cornice più piccola inserita nel riquadro di testo.
+@715.2
+Il testo che appare nella cornice inserita a sinistra definisce caratteristiche alternative che l'oggetto può avere mentre è una magia. Le caratteristiche normali della carta appaiono come di consueto, anche se con un riquadro di testo più piccolo a destra.
+@715.2a
+Se un effetto fa riferimento a una carta, magia o permanente che «ha un'Avventura», si riferisce a un oggetto che ha le caratteristiche alternative di una magia Avventura, anche se l'oggetto attualmente non le usa.
+@715.2b
+L'esistenza e i valori di queste caratteristiche alternative fanno parte dei valori copiabili dell'oggetto.
+@715.2c
+Anche se le carte avventuriero sono stampate con più insiemi di caratteristiche, ogni carta avventuriero è una sola carta. Per esempio, un giocatore che ha pescato o scartato una carta avventuriero ha pescato o scartato una carta, non due.
+@715.3
+Mentre un giocatore gioca una carta avventuriero, il giocatore sceglie se giocare la carta normalmente o come Avventura.
+@715.3a
+Quando si lancia una carta avventuriero come Avventura, solo le caratteristiche alternative vengono valutate per vedere se può essere lanciata.
+@715.3b
+Mentre è in pila come Avventura, la magia ha solo le sue caratteristiche alternative.
+@715.3c
+Se una magia Avventura viene copiata, anche la copia è un'Avventura. Ha le caratteristiche alternative della magia e non le caratteristiche normali della carta che rappresenta la magia Avventura. Qualsiasi regola o effetto che fa riferimento a una magia lanciata come Avventura fa riferimento anche alla copia.
+@715.3d
+Invece di mettere nel cimitero del suo proprietario una magia lanciata come Avventura mentre si risolve, il suo controllore la esilia. Finché quella carta resta esiliata, quel giocatore può giocarla. Non può essere lanciata come Avventura in questo modo, anche se altri effetti che permettono a un giocatore di lanciarla possono permettergli di lanciarla come Avventura.
+@715.4
+In ogni zona tranne la pila, e mentre è in pila non come Avventura, una carta avventuriero ha solo le sue caratteristiche normali.
+@715.5
+Se un effetto istruisce un giocatore a scegliere un nome di carta e il giocatore vuole scegliere il nome alternativo di una carta avventuriero, il giocatore può farlo.
+@716
+Carte Classe
+@716.1
+Ogni carta Classe ha un riquadro di testo a fasce che contiene due barre di livello di classe. La sua illustrazione è orientata verticalmente sul lato sinistro della carta, e la sua riga del tipo si trova lungo il bordo inferiore della carta.
+@716.2
+Una barra di livello di classe è un'abilità chiave che rappresenta sia un'abilità attivata sia un'abilità statica. Una barra di livello di classe include il costo di attivazione della sua abilità attivata e un numero di livello. Tutte le abilità stampate nella stessa sezione del riquadro di testo della barra di livello di classe fanno parte della sua abilità statica.
+@716.2a
+«[Costo]: Livello N — [Abilità]» significa «[Costo]: Il livello di questa Classe diventa N. Attiva solo se questa Classe è di livello N-1 e solo come una stregoneria» e «Finché questa Classe è di livello N o superiore, ha [abilità]».
+@716.2b
+Un livello è una designazione che qualsiasi permanente può avere. Una Classe mantiene il suo livello anche se smette di essere una Classe. I livelli non sono una caratteristica copiabile.
+@716.2c
+L'espressione «ottenere un livello di Classe» significa «attivare un'abilità indicata da una barra di livello di classe».
+@716.2d
+Se una regola o un effetto fa riferimento al livello di un permanente e quel permanente non ha un livello, viene trattato come se il suo livello fosse 1.
+@716.3
+Qualsiasi abilità stampata su una carta Classe che non è preceduta da una barra di livello di classe viene trattata normalmente. In particolare, la Classe ha sempre l'abilità stampata nella sezione superiore del suo riquadro di testo. Quell'abilità può influenzare la partita se è un'abilità statica, può innescarsi se è un'abilità innescata e può essere attivata se è un'abilità attivata.
+@716.4
+Alcune carte creatura più vecchie, dette carte livellatrici, hanno abilità aumentare di livello che aggiungono loro segnalini livello. Queste non sono la stessa cosa delle abilità di livello di classe. I segnalini livello non interagiscono con le carte Classe, e i livelli di classe non interagiscono con le carte livellatrici. Vedi regola 702.87, «Aumentare di livello», e regola 711, «Carte livellatrici».
+@717
+Carte Attrazione
+@717.1
+Attrazione è un sottotipo di artefatto presente solo su carte di Magic non tradizionali. Ogni Attrazione ha un retro «Astrotorium» invece del retro tradizionale delle carte di Magic e ha una colonna di numeri cerchiati sul lato destro del suo riquadro di testo. I numeri in bianco su uno sfondo dai colori vivaci si dicono «illuminati» su quelle carte. Nota che più carte Attrazione con lo stesso nome inglese possono avere numeri illuminati diversi. Puoi vedere le possibili combinazioni di luci di ogni carta Attrazione su Gatherer.Wizards.com.
+@717.2
+Le carte Attrazione non iniziano la partita nel mazzo di un giocatore e non contano ai fini delle dimensioni massime o minime del mazzo. Invece, un giocatore che sceglie di giocare con le carte Attrazione inizia la partita con un mazzo delle Attrazioni supplementare che si trova nella zona di comando. Ogni mazzo delle Attrazioni viene mescolato prima dell'inizio della partita (vedi regola 103.3a).
+@717.2a
+Nel gioco costruito, un mazzo delle Attrazioni deve contenere almeno dieci carte Attrazione e ogni carta in un mazzo delle Attrazioni deve avere un nome inglese diverso.
+@717.2b
+Nel gioco limitato, un mazzo delle Attrazioni deve contenere almeno tre carte Attrazione del pool di carte di quel giocatore, e può contenere più carte Attrazione con lo stesso nome inglese.
+@717.3
+Gli effetti possono far entrare una carta Attrazione nel campo di battaglia dalla zona di comando. Vedi regola 701.51, «Aprire un'Attrazione».
+@717.4
+All'inizio della fase principale precombattimento di un giocatore, un giocatore che controlla una o più Attrazioni tira per visitare le sue Attrazioni. Vedi regole 703.4g e 701.52, «Tirare per visitare le tue Attrazioni». Questa azione basata sul turno non usa la pila.
+@717.5
+Ogni carta Attrazione ha nel suo testo delle regole un'abilità che inizia con la parola «Visita» seguita da un trattino lungo. Questa è un'abilità visita. Un'abilità visita si innesca ogni volta che tiri per visitare le tue Attrazioni e il risultato corrisponde a uno dei numeri illuminati. Vedi regola 702.159, «Visita».
+@717.6
+Se una carta con retro Astrotorium dovesse essere messa da qualsiasi zona in una zona diversa dal campo di battaglia, dall'esilio o dalla zona di comando, invece il suo proprietario la mette nella zona di comando. Questo effetto di sostituzione può applicarsi più di una volta allo stesso evento. Questa è un'eccezione alla regola 614.5.
+@717.6a
+Ogni carta posseduta dallo stesso giocatore che è stata messa nella zona di comando in questo modo viene tenuta in un'unica pila a faccia in su separata dal mazzo delle Attrazioni di qualsiasi giocatore. Questa pila viene chiamata informalmente lo «sfasciacarrozze» di quel giocatore. La pila non è una zona a sé.
+@718
+Carte prototipo
+@718.1
+Le carte prototipo hanno una cornice in due parti, con una cornice più piccola inserita sotto la riga del tipo della carta. La cornice inserita contiene l'abilità chiave prototipo e un secondo insieme di caratteristiche di forza, costituzione e costo di mana.
+@718.2
+Il costo di mana, la forza e la costituzione nella cornice inserita rappresentano caratteristiche alternative che l'oggetto può avere mentre è una magia o mentre è un permanente sul campo di battaglia. Le caratteristiche normali della carta appaiono come di consueto.
+@718.2a
+L'esistenza e i valori di queste caratteristiche alternative fanno parte dei valori copiabili dell'oggetto.
+@718.3
+Mentre un giocatore lancia una carta prototipo, il giocatore sceglie se lanciare la carta normalmente o come magia prototipo usando l'abilità chiave prototipo (vedi regola 702.160, «Prototipo»).
+@718.3a
+Mentre si lancia una magia prototipo, si usano solo la sua forza, costituzione e costo di mana alternativi nel valutare quelle caratteristiche per vedere se può essere lanciata.
+@718.3b
+Sia una magia prototipo sia il permanente che diventa hanno solo il loro insieme alternativo di caratteristiche di forza, costituzione e costo di mana. Se quel costo di mana include uno o più simboli di mana colorato, la magia e il permanente che diventa sono anche di quel colore o di quei colori (vedi regola 105.2).
+@718.3c
+Se una magia prototipo viene copiata, anche la copia è una magia prototipo. Ha le caratteristiche alternative di forza, costituzione e costo di mana della magia e non le caratteristiche normali di forza, costituzione e costo di mana della carta che rappresenta la magia prototipo. Qualsiasi regola o effetto che fa riferimento a una magia prototipo fa riferimento anche alla copia.
+@718.3d
+Se viene copiato un permanente che era una magia prototipo, la copia ha le caratteristiche alternative di forza, costituzione e costo di mana del permanente e non le caratteristiche normali di forza e costituzione della carta che rappresenta quel permanente. Qualsiasi regola o effetto che fa riferimento a un permanente che era una magia prototipo fa riferimento anche alla copia.
+@718.4
+In ogni zona tranne la pila o il campo di battaglia, e mentre è in pila o sul campo di battaglia quando non è stata lanciata come magia prototipo, una carta prototipo ha solo le sue caratteristiche normali.
+@718.5
+Le caratteristiche di una carta prototipo diverse da forza, costituzione e costo di mana (e diverse dal colore) restano le stesse sia che sia stata lanciata come magia prototipo sia che sia stata lanciata normalmente.
+@719
+Carte Caso
+@719.1
+L'illustrazione di ogni carta Caso è orientata verticalmente sul lato sinistro della carta, e la sua riga del tipo si trova lungo il bordo inferiore della carta.
+@719.2
+La cornice Caso non ha ulteriore significato nelle regole.
+@719.3
+Le carte Caso hanno due abilità chiave speciali che appaiono prima di un trattino lungo e rappresentano un'abilità innescata e un'abilità che può essere statica, innescata o attivata.
+@719.3a
+«Per risolverlo — [Condizione]» significa «All'inizio della tua sottofase finale, se [condizione] e questo Caso non è risolto, questo Caso diventa risolto».
+@719.3b
+Risolto è una designazione che un permanente può avere. Non ha alcun significato nelle regole se non quello di fare da indicatore che magie e abilità possono identificare. Una volta che un permanente diventa risolto, resta risolto finché non lascia il campo di battaglia. La designazione risolto non è un'abilità né fa parte dei valori copiabili del permanente.
+@719.3c
+Se un Caso ha la designazione risolto, «Risolto — [Testo dell'abilità]» è un'abilità che può influenzare la partita se è un'abilità statica, può innescarsi se è un'abilità innescata e può essere attivata se è un'abilità attivata. Vedi regola 702.169, «Risolto».
+@720
+Carte Presagio (Omen)
+@720.1
+Le carte Presagio hanno una cornice in due parti, con una cornice più piccola inserita nel riquadro di testo.
+@720.2
+Il testo che appare nella cornice inserita a sinistra definisce caratteristiche alternative che l'oggetto può avere mentre è una magia. Le caratteristiche normali della carta appaiono come di consueto, anche se con un riquadro di testo più piccolo a destra.
+@720.2a
+Se un effetto fa riferimento a una carta, magia o permanente che «ha un Presagio», si riferisce a un oggetto che ha le caratteristiche alternative di una magia Presagio, anche se l'oggetto attualmente non le usa.
+@720.2b
+L'esistenza e i valori di queste caratteristiche alternative fanno parte dei valori copiabili dell'oggetto.
+@720.2c
+Anche se le carte Presagio sono stampate con più insiemi di caratteristiche, ogni carta Presagio è una sola carta. Per esempio, un giocatore che ha pescato o scartato una carta Presagio ha pescato o scartato una carta, non due.
+@720.3
+Mentre un giocatore lancia una carta Presagio, il giocatore sceglie se lanciare la carta normalmente o come Presagio.
+@720.3a
+Quando si lancia una carta Presagio come Presagio, solo le caratteristiche alternative vengono valutate per vedere se può essere lanciata.
+@720.3b
+Mentre è in pila come Presagio, la magia ha solo le sue caratteristiche alternative.
+@720.3c
+Se una magia Presagio viene copiata, anche la copia è un Presagio. Ha le caratteristiche alternative della magia e non le caratteristiche normali della carta che rappresenta la magia Presagio. Qualsiasi regola o effetto che fa riferimento a una magia lanciata come Presagio fa riferimento anche alla copia.
+@720.3d
+Mentre una magia Presagio si risolve, il suo controllore la mescola nel grimorio del suo proprietario invece di metterla nel cimitero del suo proprietario.
+@720.4
+In ogni zona tranne la pila, e mentre è in pila non come Presagio, una carta Presagio ha solo le sue caratteristiche normali.
+@720.5
+Se un effetto istruisce un giocatore a scegliere un nome di carta e il giocatore vuole scegliere il nome alternativo di una carta Presagio, il giocatore può farlo.
+@721
+Carte stazione
+@721.1
+Ogni carta stazione ha un riquadro di testo a fasce e può avere uno o più riquadri di forza/costituzione. Il riquadro di testo di una carta stazione contiene uno o due simboli di stazione. Le carte stazione di solito hanno anche l'abilità chiave stazione (vedi regola 702.184).
+@721.2
+Un simbolo di stazione rappresenta un'abilità statica. Il simbolo di stazione include un singolo numero seguito da un segno più, indicato qui come «{N+}». Tutte le abilità stampate nella stessa fascia del riquadro di testo di un simbolo di stazione fanno parte della sua abilità statica. Lo stesso vale per gli eventuali riquadri di forza e costituzione stampati in quella fascia, indicati qui come [F/C].
+@721.2a
+«{N+}[abilità]» significa «Finché questo permanente ha N o più segnalini carica su di sé, ha [abilità]».
+@721.2b
+«{N+}[abilità][F/C]» significa «Finché questo permanente ha N o più segnalini carica su di sé, ha [abilità] ed è una creatura con forza e costituzione base [F/C] in aggiunta ai suoi altri tipi».
+@721.2c
+Mentre si trovano in una zona diversa dal campo di battaglia, le carte stazione non hanno forza né costituzione.
+@721.3
+Le fasce del riquadro di testo non hanno alcun significato di gioco se non quello di delimitare chiaramente quali abilità e quale riquadro di forza/costituzione sono associati a quale simbolo di stazione. Le carte stazione contengono ciascuna un solo riquadro di testo.
+@721.4
+Qualsiasi abilità di una carta stazione che non è preceduta da un simbolo di stazione viene trattata normalmente. In particolare, ogni carta stazione ha sempre la sua abilità stazione (vedi regola 702.184). Quell'abilità può essere attivata indipendentemente da quanti segnalini carica ci sono su di essa.
+@722
+Carte preparazione
+@722.1
+Le carte preparazione hanno una cornice in due parti, con una cornice più piccola inserita nel riquadro di testo.
+@722.2
+Il testo che appare nella cornice inserita a destra definisce caratteristiche alternative che l'oggetto può avere mentre è una magia. Le caratteristiche normali della carta appaiono come di consueto, anche se con un riquadro di testo più piccolo a sinistra.
+@722.2a
+La cornice inserita di una carta preparazione è detta «magia di preparazione». Se una regola o un effetto fa riferimento a una carta, magia o permanente che ha una magia di preparazione, si riferisce a un oggetto per cui esistono queste caratteristiche alternative, anche se l'oggetto attualmente non le usa.
+@722.2b
+L'esistenza e i valori di queste caratteristiche alternative fanno parte dei valori copiabili dell'oggetto.
+@722.2c
+Anche se le carte preparazione sono stampate con più insiemi di caratteristiche, ogni carta preparazione è una sola carta. Per esempio, un giocatore che ha pescato o scartato una carta preparazione ha pescato o scartato una carta, non due.
+@722.3
+Le carte preparazione non possono essere lanciate usando le caratteristiche alternative presenti nelle loro cornici inserite. Queste caratteristiche vengono invece usate per definire le caratteristiche delle copie che possono essere lanciate.
+@722.3a
+Alcune magie e abilità fanno diventare preparato un permanente con una magia di preparazione o stabiliscono che un permanente entra preparato. Se quel permanente ha le caratteristiche alternative di una magia di preparazione, ciò dà al permanente la designazione «preparato». Preparato è una designazione che fa da indicatore che regole ed effetti possono identificare. Un permanente non può ottenere questa designazione a meno che non abbia una magia di preparazione. Inoltre, un permanente non può ottenere questa designazione se ce l'ha già.
+@722.3b
+Una regola o un effetto può far diventare «non preparato» un permanente. Ciò rimuove la designazione preparato da quel permanente.
+@722.3c
+Mentre un permanente con una magia di preparazione ottiene la designazione preparato o rientra in fase preparato, il suo controllore crea una copia di quell'oggetto in esilio, tranne per il fatto che quella copia ha solo le caratteristiche della magia di preparazione di quel permanente, ignorando altre eccezioni al procedimento di copia che si applicano a quel permanente. Quelle caratteristiche diventano le caratteristiche normali della copia. Questa copia resta in esilio finché il permanente preparato resta sul campo di battaglia e ha la designazione preparato. Questa è un'eccezione alla regola 704.5e. Finché la copia resta in esilio, il controllore del permanente preparato può lanciare la copia. Quel permanente perde la designazione preparato nel momento in cui la magia diventa lanciata (vedi regola 601.2i).
+Esempio: Un giocatore lancia Croaking Counterpart bersagliando un Encouraging Aviator. Croaking Counterpart è un istantaneo che dice, tra l'altro, «Crea una pedina che è una copia di una creatura non Rana bersaglio, tranne per il fatto che è una Rana 1/1 verde». Encouraging Aviator è una carta creatura preparazione che dice, tra l'altro, «Ogni volta che questa creatura attacca, diventa preparata». La sua magia di preparazione è un istantaneo chiamato Jump che dice «Una creatura bersaglio ottiene volare fino alla fine del turno». Il giocatore poi attacca con la pedina copia di Encouraging Aviator. Mentre la pedina copia di Encouraging Aviator diventa preparata, la copia creata in esilio è un istantaneo blu chiamato Jump che dice «Una creatura bersaglio ottiene volare fino alla fine del turno». Non è verde, né ha forza e costituzione 1/1 o il tipo di creatura Rana.
+@722.3d
+Se una magia di preparazione viene copiata, anche la copia è una magia di preparazione. Qualsiasi regola o effetto che fa riferimento a una magia lanciata come magia di preparazione fa riferimento anche alla copia.
+@722.4
+In ogni zona, una carta preparazione ha solo le sue caratteristiche normali.
+@722.5
+Se un effetto istruisce un giocatore a scegliere un nome di carta e il giocatore vuole scegliere il nome alternativo di una carta preparazione, il giocatore può farlo.
+@723
+Controllare un altro giocatore
+@723.1
+Alcune carte permettono a un giocatore di controllare un altro giocatore durante il turno successivo di quel giocatore. Questo effetto si applica al turno successivo che il giocatore influenzato gioca effettivamente. Il giocatore influenzato è controllato per l'intero turno; l'effetto non termina fino all'inizio del turno successivo.
+@723.1a
+Più effetti di controllo di un giocatore che influenzano lo stesso giocatore si sovrascrivono a vicenda. Funziona l'ultimo a essere stato creato.
+@723.1b
+Se un turno viene saltato, gli effetti di controllo di un giocatore in sospeso attendono finché il giocatore che sarebbe influenzato non gioca effettivamente un turno.
+@723.2
+Due carte (Word of Command e Opposition Agent) permettono a un giocatore di controllare un altro giocatore per una durata limitata.
+@723.3
+Cambia solo il controllo del giocatore. Tutti gli oggetti sono controllati dai loro normali controllori. Un giocatore controllato durante il suo turno è comunque il giocatore attivo.
+@723.4
+Se informazioni su un oggetto nella partita sarebbero visibili al giocatore controllato, sono visibili sia a quel giocatore sia al controllore del giocatore. Se informazioni su carte fuori dalla partita sarebbero visibili al giocatore controllato, sono visibili solo a quel giocatore, non al controllore del giocatore.
+Esempio: Il controllore di un giocatore può vedere la mano di quel giocatore e la faccia di qualsiasi creatura a faccia in giù che controlla.

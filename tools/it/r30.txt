@@ -1,0 +1,131 @@
+@707.9d
+Quando si applica un effetto di copia che non copia una certa caratteristica, mantiene uno o più valori originali per una certa caratteristica o fornisce un insieme specifico di valori per una certa caratteristica, le abilità che definiscono caratteristiche (vedi regola 604.3) dell'oggetto copiato che definiscono quella caratteristica non vengono copiate. Se quella caratteristica è il colore, non viene copiato nemmeno l'eventuale indicatore di colore (vedi regola 204) di quell'oggetto. Questa regola non si applica agli effetti di copia con eccezioni che stabiliscono che l'oggetto è di un certo tipo di carta, supertipo e/o sottotipo «in aggiunta ai suoi altri tipi». In quei casi, le abilità che definiscono caratteristiche che definiscono tipo di carta, supertipo e/o sottotipo vengono copiate.
+Esempio: Quicksilver Gargantuan è una creatura che dice «Puoi far entrare questa creatura come copia di una qualsiasi creatura sul campo di battaglia, tranne per il fatto che è 7/7». Quicksilver Gargantuan entra nel campo di battaglia come copia di Tarmogoyf, che ha un'abilità che definisce caratteristiche che ne definisce forza e costituzione. Quicksilver Gargantuan non ha quell'abilità. Sarà 7/7.
+Esempio: Glasspool Mimic è una creatura che dice «Puoi far entrare questa creatura come copia di una creatura che controlli, tranne per il fatto che è un Mutaforma Furfante in aggiunta ai suoi altri tipi». Glasspool Mimic entra come copia di una creatura con mutaforma. Glasspool Mimic avrà mutaforma e avrà tutti i tipi di creatura.
+@707.9e
+Alcuni effetti di sostituzione che generano effetti di copia includono un'eccezione che è un effetto aggiuntivo invece di una modifica delle caratteristiche dell'oggetto influenzato. Se a quell'oggetto viene applicato un altro effetto di copia dopo aver applicato l'effetto di copia con quell'eccezione, l'effetto dell'eccezione non avviene.
+Esempio: Altered Ego dice «Puoi far entrare questa creatura come copia di una qualsiasi creatura sul campo di battaglia, tranne per il fatto che entra con X segnalini +1/+1 aggiuntivi su di sé». Scegli di farla entrare nel campo di battaglia come copia di Clone, che dice «Puoi far entrare questa creatura come copia di una qualsiasi creatura sul campo di battaglia», per il quale non è stata scelta alcuna creatura quando è entrato nel campo di battaglia. Se poi scegli una creatura da copiare mentre applichi l'effetto di sostituzione che Altered Ego ottiene copiando Clone, l'effetto di sostituzione di Altered Ego non la fa entrare nel campo di battaglia con segnalini +1/+1.
+@707.9f
+Alcune eccezioni al procedimento di copia si applicano solo se la copia è o ha certe caratteristiche. Per stabilire se tale eccezione si applica, considera quali sarebbero le caratteristiche del permanente risultante se l'effetto di copia fosse applicato senza quell'eccezione, tenendo conto di eventuali altre eccezioni incluse in quell'effetto.
+Esempio: Moritte of the Frost dice, tra l'altro, «Puoi far entrare Moritte come copia di un permanente che controlli, tranne per il fatto che è leggendario e innevato in aggiunta ai suoi altri tipi e, se è una creatura, entra con due segnalini +1/+1 aggiuntivi su di sé e ha mutaforma». Moritte of the Frost copia una terra che è diventata una creatura fino alla fine del turno. Entrerebbe come permanente non creatura, quindi non entra con due segnalini +1/+1 aggiuntivi su di sé e non ha mutaforma, anche se diventa una creatura più avanti nel turno.
+@707.9g
+Alcuni effetti di sostituzione che generano effetti di copia sono collegati ad abilità innescate scritte nello stesso paragrafo. (Vedi regola 603.11.) Se a quell'oggetto viene applicato un altro effetto di copia dopo aver applicato l'effetto di copia con l'abilità innescata collegata, l'abilità non si innesca.
+@707.10
+Copiare una magia, un'abilità attivata o un'abilità innescata significa metterne una copia in pila; una copia di una magia non viene lanciata e una copia di un'abilità attivata non viene attivata. Una copia di una magia o abilità copia sia le caratteristiche della magia o abilità sia tutte le decisioni prese per essa, inclusi modi, bersagli, valore di X e costi aggiuntivi o alternativi. (Vedi regola 601, «Lanciare magie».) Le scelte che normalmente vengono fatte alla risoluzione non vengono copiate. Se un effetto della copia fa riferimento agli oggetti usati per pagare i suoi costi, usa gli oggetti usati per pagare i costi della magia o abilità originale. Una copia di una magia è posseduta dal giocatore sotto il cui controllo è stata messa in pila. Una copia di una magia o abilità è controllata dal giocatore sotto il cui controllo è stata messa in pila. Una copia di una magia è essa stessa una magia, anche se non ha una carta magia associata. Una copia di un'abilità è essa stessa un'abilità.
+Esempio: Un giocatore lancia Fork, bersagliando un Emerald Charm. Fork dice «Copia una magia istantaneo o stregoneria bersaglio, tranne per il fatto che la copia è rossa. Puoi scegliere nuovi bersagli per la copia». Emerald Charm è un istantaneo verde modale. Quando Fork si risolve, mette in pila una copia di Emerald Charm, tranne per il fatto che la copia è rossa, non verde. La copia ha lo stesso modo scelto per l'Emerald Charm originale. Non ha necessariamente lo stesso bersaglio, ma solo perché Fork permette di scegliere nuovi bersagli.
+Esempio: Fling è un istantaneo che dice «Come costo aggiuntivo per lanciare questa magia, sacrifica una creatura» e «Fling infligge danno pari alla forza della creatura sacrificata a qualsiasi bersaglio». Nello stabilire quanto danno infligge una copia di Fling, si controlla la forza della creatura sacrificata per pagare il Fling originale.
+Esempio: Dawnglow Infusion è una stregoneria che dice «Guadagni X punti vita se è stato speso {G} per lanciare questa magia e X punti vita se è stato speso {W} per lanciarla». Poiché il mana non è un oggetto, una copia di Dawnglow Infusion non ti fa guadagnare punti vita, indipendentemente dal mana speso per lanciare la magia originale.
+@707.10a
+Se una copia di una magia si trova in una zona diversa dalla pila, cessa di esistere. Se una copia di una carta si trova in una zona diversa dalla pila o dal campo di battaglia, cessa di esistere. Queste sono azioni generate dallo stato. Vedi regola 704.
+@707.10b
+Una copia di un'abilità ha la stessa fonte dell'abilità originale. Se l'abilità fa riferimento alla sua fonte per nome, la copia fa riferimento a quello stesso oggetto e non a un altro oggetto con lo stesso nome. La copia è considerata la stessa abilità dagli effetti che contano quante volte quell'abilità si è risolta durante il turno.
+@707.10c
+Alcuni effetti copiano una magia o abilità e stabiliscono che il suo controllore può scegliere nuovi bersagli per la copia. Il giocatore può lasciare invariati un qualsiasi numero di bersagli, anche se quei bersagli sarebbero illegali. Se il giocatore sceglie di cambiare alcuni o tutti i bersagli, i nuovi bersagli devono essere legali. Una volta che il giocatore ha deciso quali saranno i bersagli della copia, la copia viene messa in pila con quei bersagli.
+@707.10d
+Alcuni effetti copiano una magia o abilità per ogni giocatore o oggetto che «potrebbe bersagliare». Le copie vengono messe in pila con quei bersagli nell'ordine scelto dal loro controllore. Se la magia o abilità ha più di un bersaglio, ciascuno dei suoi bersagli deve essere lo stesso giocatore o oggetto. Se quel giocatore o oggetto non è un bersaglio legale per ogni occorrenza della parola «bersaglio», non viene creata una copia per quel giocatore o oggetto.
+@707.10e
+Alcuni effetti copiano una magia o abilità e specificano un nuovo bersaglio per la copia. Se la magia o abilità ha più di un bersaglio, ciascuno dei bersagli della copia deve essere quel giocatore o oggetto. Se quel giocatore o oggetto non è un bersaglio legale per ogni occorrenza della parola «bersaglio», la copia non viene creata. Nel caso in cui un effetto di sostituzione faccia bersagliare alla copia più di un oggetto, il controllore della copia ne sceglie uno come nuovo bersaglio. Il bersaglio scelto deve essere un bersaglio legale per quella magia o abilità.
+Esempio: Frontline Heroism è un incantesimo con l'abilità «Ogni volta che lanci una magia che bersaglia solo una singola creatura che controlli, crea una pedina creatura Soldato 1/1 rossa con rapidità, poi copia quella magia. La copia bersaglia quella pedina». Anointed Procession è un incantesimo con l'abilità «Se un effetto dovesse creare una o più pedine sotto il tuo controllo, crea invece il doppio di quelle pedine». Se li controlli entrambi e lanci Moment of Triumph bersagliando una creatura che controlli, l'abilità di Frontline Heroism si innesca. Mentre quell'abilità si risolve, crei due pedine creatura Soldato 1/1 rosse con rapidità, poi copi Moment of Triumph e la copia bersaglia una di quelle pedine a tua scelta. La copia non bersaglia entrambe le pedine.
+@707.10f
+Alcuni effetti copiano una magia permanente. Mentre quella copia si risolve, smette di essere una copia di una magia e diventa un permanente pedina. (Vedi regola 608.3f.)
+@707.10g
+Se un effetto crea una copia di una magia permanente bifronte, anche la copia è una magia permanente bifronte che ha sia una faccia anteriore sia una faccia posteriore. Le caratteristiche delle sue facce anteriore e posteriore sono determinate dai valori copiabili della stessa faccia della magia di cui è copia, come modificati da eventuali altri effetti di copia. Se la magia di cui è copia ha la faccia posteriore rivolta verso l'alto, la copia viene creata con la faccia posteriore rivolta verso l'alto. La pedina che viene messa sul campo di battaglia quando quella magia si risolve è una pedina bifronte.
+@707.11
+Se un effetto fa riferimento a un permanente per nome, l'effetto continua a seguire quel permanente anche se cambia nome o diventa una copia di qualcos'altro.
+Esempio: Un Unstable Shapeshifter copia un'Olivia Voldaren. Olivia Voldaren dice «{1}{R}: Olivia Voldaren infligge 1 danno a un'altra creatura bersaglio. Quella creatura diventa un Vampiro in aggiunta ai suoi altri tipi. Metti un segnalino +1/+1 su Olivia Voldaren». Se questa abilità dello Shapeshifter viene attivata, lo Shapeshifter infligge 1 danno e metti un segnalino +1/+1 su di esso, anche se in quel momento non è più una copia di Olivia Voldaren.
+@707.12
+Un effetto che istruisce un giocatore a lanciare una copia di un oggetto (e non solo a copiare una magia) segue le regole per lanciare magie, tranne per il fatto che la copia viene creata nella stessa zona in cui si trova l'oggetto e poi lanciata mentre un'altra magia o abilità si sta risolvendo. Lanciare una copia di un oggetto segue i passi 601.2a–h della regola 601, «Lanciare magie», e poi la copia diventa lanciata. Una volta lanciata, la copia è una magia in pila e, come qualsiasi altra magia, può risolversi o essere neutralizzata.
+@707.12a
+Un effetto che crea più copie e dice che un giocatore «può lanciare» quegli oggetti permette a quel giocatore di scegliere individualmente, per ciascuno di quegli oggetti, se lanciarlo o meno.
+@707.13
+Una carta (Garth One-Eye) istruisce un giocatore a creare una copia di una carta definita per nome invece che indicando un oggetto da copiare. Per farlo, il giocatore usa il riferimento Oracle per determinare le caratteristiche della copia e crea la copia fuori dalla partita.
+@707.14
+Una carta (Magar of the Magic Strings) istruisce un giocatore ad annotare il nome di una particolare carta in un cimitero e a creare una copia della carta con il nome annotato. Per farlo, usa le caratteristiche di quella carta come esisteva per l'ultima volta nel cimitero per determinare i valori copiabili della copia. (Vedi regola 608.2h.)
+@708
+Magie e permanenti a faccia in giù
+@708.1
+Alcune carte permettono a magie e permanenti di essere a faccia in giù.
+@708.2
+Le magie a faccia in giù e i permanenti a faccia in giù non hanno caratteristiche diverse da quelle elencate dall'abilità o dalle regole che hanno permesso alla magia o al permanente di essere a faccia in giù. Le caratteristiche elencate sono i valori copiabili delle caratteristiche di quell'oggetto. (Vedi regola 613, «Interazione degli effetti continui», e regola 707, «Copiare oggetti».)
+@708.2a
+Se un permanente a faccia in su viene girato a faccia in giù da una magia o abilità che non elenca alcuna caratteristica per quell'oggetto, diventa una creatura a faccia in giù 2/2 senza testo, senza nome, senza sottotipi e senza costo di mana. Anche un permanente che entra nel campo di battaglia a faccia in giù ha queste caratteristiche, salvo diversa indicazione dell'effetto che l'ha messo sul campo di battaglia a faccia in giù o che ha permesso di lanciarlo a faccia in giù. Questi valori sono i valori copiabili delle caratteristiche di quell'oggetto.
+@708.2b
+Un permanente a faccia in giù non può essere girato a faccia in giù. Se una magia o abilità tenta di girare a faccia in giù un permanente a faccia in giù, non succede nulla e quell'effetto non modifica nessuna delle sue caratteristiche né i loro valori copiabili.
+@708.3
+Gli oggetti messi sul campo di battaglia a faccia in giù vengono girati a faccia in giù prima di entrare nel campo di battaglia, quindi le abilità di ingresso nel campo di battaglia del permanente non si innescano (se innescate) né hanno alcun effetto (se statiche).
+@708.4
+Gli oggetti lanciati a faccia in giù vengono girati a faccia in giù prima di essere messi in pila, quindi gli effetti che tengono conto delle caratteristiche di una magia vedono solo le caratteristiche della magia a faccia in giù. Qualsiasi effetto o divieto che si applicherebbe al lancio di un oggetto con queste caratteristiche (e non con le caratteristiche dell'oggetto a faccia in su) si applica al lancio di questo oggetto. Il permanente che la magia diventa sarà un permanente a faccia in giù.
+@708.5
+In qualsiasi momento, puoi guardare una magia a faccia in giù che controlli in pila o un permanente a faccia in giù che controlli (anche se è fuori fase). Non puoi guardare le carte a faccia in giù in nessun'altra zona né le magie o i permanenti a faccia in giù controllati da un altro giocatore.
+@708.6
+Se controlli più magie a faccia in giù o permanenti a faccia in giù, devi assicurarti in ogni momento che le tue magie e i tuoi permanenti a faccia in giù possano essere facilmente distinti l'uno dall'altro. Ciò include, senza limitarsi a questo, sapere quale abilità o regola ha fatto diventare a faccia in giù i permanenti, l'ordine in cui le magie sono state lanciate, l'ordine in cui i permanenti a faccia in giù sono entrati nel campo di battaglia, quale creatura o quali creature hanno attaccato nel turno precedente e qualsiasi altra differenza tra magie o permanenti a faccia in giù. Metodi comuni per distinguere gli oggetti a faccia in giù includono usare segnalini o dadi per contrassegnare i diversi oggetti, o disporre chiaramente quegli oggetti in ordine sul tavolo.
+@708.7
+L'abilità o le regole che permettono a un permanente di essere a faccia in giù possono anche permettere al controllore del permanente di girarlo a faccia in su. Normalmente le magie non possono essere girate a faccia in su.
+@708.8
+Mentre un permanente a faccia in giù viene girato a faccia in su, i suoi valori copiabili tornano ai suoi normali valori copiabili. Tutti gli effetti che sono stati applicati al permanente a faccia in giù continuano ad applicarsi al permanente a faccia in su. Le abilità relative all'ingresso del permanente nel campo di battaglia non si innescano e non hanno alcun effetto, perché il permanente è già entrato nel campo di battaglia.
+@708.9
+Se un permanente a faccia in giù o un componente a faccia in giù di un permanente fuso si sposta dal campo di battaglia in qualsiasi altra zona, il suo proprietario deve rivelarlo a tutti i giocatori mentre lo sposta. Se una magia a faccia in giù si sposta dalla pila in una zona diversa dal campo di battaglia, il suo proprietario deve rivelarla a tutti i giocatori mentre la sposta. Se un giocatore lascia la partita, tutti i permanenti a faccia in giù, i componenti a faccia in giù di permanenti fusi e le magie a faccia in giù posseduti da quel giocatore devono essere rivelati a tutti i giocatori. Alla fine di ogni partita, tutti i permanenti a faccia in giù, i componenti a faccia in giù di permanenti fusi e le magie a faccia in giù devono essere rivelati a tutti i giocatori.
+@708.10
+Se un permanente a faccia in giù diventa una copia di un altro permanente, i suoi valori copiabili diventano i valori copiabili di quel permanente, come modificati dal suo stato a faccia in giù. Le sue caratteristiche quindi restano le stesse: le caratteristiche elencate dall'abilità o dalle regole che hanno permesso di girarlo a faccia in giù. Tuttavia, se viene girato a faccia in su, i suoi valori copiabili diventano i valori che ha copiato dall'altro permanente. Vedi regola 707.3.
+@708.11
+Se un permanente a faccia in giù avrebbe un'abilità «Mentre [questo permanente] viene girato a faccia in su...» dopo essere stato girato a faccia in su, quell'abilità viene applicata mentre quel permanente viene girato a faccia in su, non dopo.
+@708.12
+Se una magia o abilità che istruisce un giocatore a rivelare un permanente a faccia in giù ha bisogno di informazioni sull'oggetto rivelato, usa le caratteristiche di quell'oggetto ignorando qualsiasi effetto continuo che potrebbe applicarsi a esso.
+@709
+Carte divise
+@709.1
+Le carte divise hanno due facce su un'unica carta. Il retro di una carta divisa è il normale retro delle carte di Magic.
+@709.2
+Anche se le carte divise hanno due metà lanciabili, ogni carta divisa è una sola carta. Per esempio, un giocatore che ha pescato o scartato una carta divisa ha pescato o scartato una carta, non due.
+@709.3
+Un giocatore sceglie quale metà di una carta divisa sta lanciando prima di metterla in pila.
+@709.3a
+Solo la metà scelta viene valutata per vedere se può essere lanciata. Solo quella metà è considerata messa in pila.
+@709.3b
+Mentre è in pila, esistono solo le caratteristiche della metà lanciata. Le caratteristiche dell'altra metà sono trattate come se non esistessero.
+@709.3c
+Un effetto può creare una copia di una carta divisa e permettere a un giocatore di lanciare la copia. Quella copia mantiene le caratteristiche delle due metà separate nelle stesse due metà della carta originale. (Vedi regola 707.12.)
+@709.4
+In ogni zona tranne la pila, le caratteristiche di una carta divisa sono quelle delle sue due metà combinate.
+@709.4a
+Ogni carta divisa ha due nomi. Se un effetto istruisce un giocatore a scegliere un nome di carta e il giocatore vuole scegliere il nome di una carta divisa, il giocatore deve scegliere uno di quei nomi e non entrambi. Un oggetto ha il nome scelto se uno dei suoi nomi è il nome scelto.
+@709.4b
+Il costo di mana di una carta divisa è la combinazione dei costi di mana delle sue due metà. I colori e il valore di mana di una carta divisa sono determinati dal suo costo di mana combinato. Un effetto che fa riferimento specificamente ai simboli nel costo di mana di una carta divisa vede i simboli separati invece dell'intero costo di mana.
+Esempio: Il costo di mana di Assault//Battery è {3}{R}{G}. È una carta rossa e verde con valore di mana 5. Se lanci Assault, la magia risultante è una magia rossa con valore di mana 1.
+Esempio: Il costo di mana di Fire//Ice è {2}{U}{R}. Ha lo stesso costo di mana di Steam Augury, ma un effetto come quello di Jegantha, the Wellspring vede che contiene due volte il simbolo di mana {1}.
+@709.4c
+Una carta divisa ha ogni tipo di carta specificato su una qualsiasi delle sue metà e ogni abilità nel riquadro di testo di ciascuna metà.
+@709.4d
+Le caratteristiche di una magia divisa fusa in pila sono anch'esse quelle delle sue due metà combinate (vedi regola 702.102, «Fusione»).
+@709.5
+Alcune carte divise sono carte permanente con un'unica riga del tipo condivisa. Una riga del tipo condivisa su tale oggetto rappresenta due abilità statiche che funzionano sul campo di battaglia. Queste sono «Finché questo permanente non ha la designazione "metà sinistra sbloccata", non ha il nome, il costo di mana o il testo delle regole della metà sinistra di questo oggetto» e «Finché questo permanente non ha la designazione "metà destra sbloccata", non ha il nome, il costo di mana o il testo delle regole della metà destra di questo oggetto». Queste abilità, così come la metà di quel permanente in cui si trova una caratteristica, fanno parte dei valori copiabili di quell'oggetto.
+@709.5a
+Ciascuna metà di una carta divisa con una riga del tipo condivisa ha i tipi e i sottotipi elencati sulla riga del tipo condivisa di quella carta.
+@709.5b
+L'esistenza di ciascuna metà di un oggetto con una riga del tipo condivisa fa parte dei valori copiabili di quell'oggetto, anche se quell'oggetto è una magia in pila. Questa è un'eccezione alla regola 709.3b.
+@709.5c
+«Metà sinistra sbloccata» e «metà destra sbloccata» sono designazioni che un permanente sul campo di battaglia può avere. Insieme, sono dette designazioni di sblocco. Una particolare metà di un permanente si dice «sbloccata» se ha la designazione di sblocco appropriata. Altrimenti, quella metà si dice «bloccata».
+@709.5d
+A un permanente con una riga del tipo condivisa viene data la designazione «metà sinistra sbloccata» mentre entra nel campo di battaglia se la sua metà sinistra è stata lanciata come magia. Gli viene data la designazione «metà destra sbloccata» mentre entra nel campo di battaglia se la sua metà destra è stata lanciata come magia. Se sta entrando nel campo di battaglia e nessuna delle due metà è stata lanciata come magia, entra senza nessuna delle due designazioni di sblocco.
+@709.5e
+Un giocatore che controlla un permanente che ha una o più metà bloccate può pagare il costo di mana di una metà bloccata di quel permanente per dare a quel permanente la designazione di sblocco appropriata. Questo costo è detto «costo di sblocco». Questa è un'azione speciale (vedi regola 116). Un giocatore può compiere questa azione in qualsiasi momento in cui ha la priorità e la pila è vuota durante una fase principale del suo turno.
+@709.5f
+Alcune magie e abilità istruiscono un giocatore a «sbloccare» metà di un permanente. Per sbloccare metà di un permanente, un giocatore sceglie una metà bloccata di quel permanente, e a quel permanente viene data la designazione di sblocco appropriata.
+@709.5g
+Alcune magie e abilità istruiscono un giocatore a «bloccare» metà di un permanente. Per bloccare metà di un permanente, un giocatore sceglie una metà sbloccata di quel permanente, e quel permanente perde la designazione di sblocco appropriata.
+@709.5h
+Alcune abilità si innescano quando un giocatore sblocca una particolare metà di un permanente. Queste abilità si innescano quando a quel permanente viene data la designazione di sblocco appropriata, indipendentemente dal fatto che gli sia stata data mentre entrava nel campo di battaglia o dopo esservi entrato.
+@709.5i
+Alcune abilità si innescano quando un giocatore «sblocca completamente» un permanente con una riga del tipo condivisa. Tale abilità si innesca quando quel permanente ha una delle due designazioni di sblocco e ottiene l'altra, oppure quando non ha nessuna delle due designazioni e le ottiene entrambe.
+@709.5j
+Alcune carte fanno riferimento a una «porta» di un permanente Stanza. Una porta è una metà di quel permanente.
+@710
+Carte capovolgibili
+@710.1
+Le carte capovolgibili hanno una cornice in due parti su un'unica carta. Il testo che appare dritto sulla carta definisce le normali caratteristiche della carta. Altre caratteristiche alternative appaiono capovolte sulla carta. Il retro di una carta capovolgibile è il normale retro delle carte di Magic.
+@710.1a
+La metà superiore di una carta capovolgibile contiene il nome normale della carta, il riquadro di testo, la riga del tipo, la forza e la costituzione. Il riquadro di testo di solito contiene un'abilità che fa «capovolgere» il permanente se si verificano certe condizioni.
+@710.1b
+La metà inferiore di una carta capovolgibile contiene un nome alternativo, un riquadro di testo, una riga del tipo, una forza e una costituzione. Queste caratteristiche vengono usate solo se il permanente è sul campo di battaglia e solo se il permanente è capovolto.
+@710.1c
+Il colore e il costo di mana di una carta capovolgibile non cambiano se il permanente viene capovolto. Inoltre, eventuali modifiche apportate da effetti esterni continuano ad applicarsi.

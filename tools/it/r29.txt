@@ -1,0 +1,133 @@
+@704.5r
+Se un permanente con un'abilità che dice che non può avere più di N segnalini di un certo tipo su di sé ha più di N segnalini di quel tipo su di sé, vengono rimossi da esso tutti quei segnalini tranne N.
+@704.5s
+Se il numero di segnalini sapere su un permanente Saga con una o più abilità di capitolo è maggiore o uguale al numero del suo capitolo finale e non è la fonte di un'abilità di capitolo che si è innescata ma non ha ancora lasciato la pila, il controllore di quella Saga la sacrifica. Vedi regola 714, «Carte Saga».
+@704.5t
+Se il segnalino avventura di un giocatore si trova nella stanza più in basso di una carta dungeon, e quella carta dungeon non è la fonte di un'abilità di stanza che si è innescata ma non ha ancora lasciato la pila, il proprietario della carta dungeon la rimuove dalla partita. Vedi regola 309, «Dungeon».
+@704.5u
+Se un permanente con scultore spaziale e delle creature senza designazione di settore sono sul campo di battaglia, ogni giocatore che controlla una o più di quelle creature e non controlla un permanente con scultore spaziale sceglie una designazione di settore per ciascuna di quelle creature che controlla. Poi, ogni altro giocatore che controlla una o più di quelle creature sceglie una designazione di settore per ciascuna di quelle creature che controlla. Vedi regola 702.158, «Scultore spaziale».
+@704.5v
+Se una battaglia Assedio ha difesa 0 e non è la fonte di un'abilità che si è innescata ma non ha ancora lasciato la pila, viene messa nel cimitero del suo proprietario.
+@704.5w
+Se una battaglia non Assedio ha difesa 0, viene messa nel cimitero del suo proprietario.
+@704.5x
+Se una battaglia non ha nessun giocatore nella partita designato come suo protettore e nessuna creatura attaccante sta attualmente attaccando quella battaglia, il controllore di quella battaglia sceglie un giocatore appropriato come suo protettore in base al suo tipo di battaglia. Se la battaglia non ha un tipo di battaglia, deve essere scelto il suo controllore. Se in questo modo non può essere scelto nessun giocatore, la battaglia viene messa nel cimitero del suo proprietario. Vedi regola 310, «Battaglie».
+@704.5y
+Se il protettore di una battaglia è un giocatore che non può esserne il protettore, il controllore di quella battaglia sceglie un giocatore appropriato che diventi il suo protettore. Se in questo modo non può essere scelto nessun giocatore, la battaglia viene messa nel cimitero del suo proprietario. Vedi regola 310, «Battaglie».
+@704.5z
+Se a un permanente sono assegnati più Ruoli controllati dallo stesso giocatore, ciascuno di quei Ruoli tranne quello con la marca temporale più recente viene messo nel cimitero del suo proprietario.
+704.5aa Se un giocatore controlla un permanente con accendete i motori! e quel giocatore non ha velocità, la velocità di quel giocatore diventa 1. Vedi regola 702.179, «Accendete i motori!».
+@704.6
+Alcune varianti di gioco includono azioni generate dallo stato aggiuntive che normalmente non si applicano:
+@704.6a
+In una partita Two-Headed Giant, se una squadra ha 0 o meno punti vita, quella squadra perde la partita. Vedi regola 810, «Variante Two-Headed Giant».
+@704.6b
+In una partita Two-Headed Giant, se una squadra ha quindici o più segnalini veleno, quella squadra perde la partita. Vedi regola 810, «Variante Two-Headed Giant».
+@704.6c
+In una partita Commander, un giocatore a cui sono stati inflitti 21 o più danni da combattimento dallo stesso comandante nel corso della partita perde la partita. Vedi regola 903, «Commander».
+@704.6d
+In una partita Commander, se un comandante è in un cimitero o in esilio e quell'oggetto è stato messo in quella zona dall'ultima volta che sono state controllate le azioni generate dallo stato, il suo proprietario può metterlo nella zona di comando. Vedi regola 903, «Commander».
+@704.6e
+In una partita Archenemy, se una carta piano non continuativo è a faccia in su nella zona di comando, e nessuna abilità innescata di alcun piano è in pila o in attesa di essere messa in pila, quella carta piano viene girata a faccia in giù e messa in fondo al mazzo dei piani del suo proprietario. Vedi regola 904, «Archenemy».
+@704.6f
+In una partita Planechase, se una carta fenomeno è a faccia in su nella zona di comando, e non è la fonte di un'abilità innescata che si è innescata ma non ha ancora lasciato la pila, il controllore planare viaggia tra i piani. Vedi regola 901, «Planechase».
+@704.7
+Se più azioni generate dallo stato dovessero avere lo stesso risultato nello stesso momento, un singolo effetto di sostituzione le sostituisce tutte.
+Esempio: Controlli Lich's Mirror, che dice «Se dovessi perdere la partita, invece rimescola la tua mano, il tuo cimitero e tutti i permanenti che possiedi nel tuo grimorio, poi pesca sette carte e il tuo totale di punti vita diventa 20». C'è una carta nel tuo grimorio e il tuo totale di punti vita è 1. Una magia ti fa pescare due carte e perdere 2 punti vita. La volta successiva in cui vengono controllate le azioni generate dallo stato, perderesti la partita per la regola 704.5a e per la regola 704.5b. Invece, Lich's Mirror sostituisce quella sconfitta e continui a giocare.
+@704.8
+Se un'azione generata dallo stato fa sì che un permanente lasci il campo di battaglia nello stesso momento in cui sono state compiute altre azioni generate dallo stato, le ultime informazioni conosciute di quel permanente derivano dallo stato di gioco prima che fosse compiuta una qualsiasi di quelle azioni generate dallo stato.
+Esempio: Controlli Young Wolf, una creatura 1/1 con non morto, che ha un segnalino +1/+1 su di sé. Una magia mette tre segnalini -1/-1 su Young Wolf. Prima che vengano compiute le azioni generate dallo stato, Young Wolf ha un segnalino +1/+1 e tre segnalini -1/-1 su di sé. Dopo che sono state compiute le azioni generate dallo stato, Young Wolf è nel cimitero. Quando era sul campo di battaglia per l'ultima volta, aveva un segnalino +1/+1 su di sé, quindi non morto non si innesca.
+@705
+Lanciare una moneta
+@705.1
+Alcune carte fanno riferimento al lancio di una moneta. Una moneta usata per un lancio deve essere un oggetto con due facce facilmente distinguibili e con uguale probabilità che una delle due facce finisca verso l'alto. Se la moneta da lanciare non ha un'evidente «testa» o «croce», designa una faccia come «testa» e l'altra come «croce». Al lancio di una moneta possono essere sostituiti altri metodi casuali, purché ci siano due esiti possibili ugualmente probabili e tutti i giocatori siano d'accordo sulla sostituzione. Per esempio, il giocatore può tirare un dado con un numero pari di facce e dichiarare «dispari» o «pari», oppure tirare un dado con un numero pari di facce e stabilire che «dispari» significa «testa» e «pari» significa «croce».
+@705.2
+Alcuni effetti che istruiscono un giocatore a lanciare una moneta tengono conto solo del fatto che la moneta dia testa o croce. Per questo tipo di effetto nessun giocatore vince o perde un lancio di moneta. Per tutti gli altri effetti che istruiscono un giocatore a lanciare una moneta, il giocatore che lancia la moneta dichiara «testa» o «croce». Se la dichiarazione corrisponde al risultato, il giocatore vince il lancio. Altrimenti, il giocatore perde il lancio. Solo il giocatore che lancia la moneta vince o perde il lancio; nessun altro giocatore è coinvolto.
+@705.3
+Un effetto può stabilire che un lancio di moneta ha un certo risultato e/o che un certo giocatore vince un lancio di moneta. In quel caso, ignora il risultato effettivo di quel lancio e usa invece il risultato indicato. Ciò può far vincere a un giocatore un lancio che altrimenti non potrebbe essere vinto.
+@706
+Tirare un dado
+@706.1
+Un effetto che istruisce un giocatore a tirare un dado specifica che tipo di dado tirare e quanti di quei dadi tirare.
+@706.1a
+Tale effetto può fare riferimento a un «dado a N facce», a «dadi a N facce» o a uno o più «dN», dove N è un intero positivo. In quei casi, il dado deve avere N esiti ugualmente probabili, numerati da 1 a N. Per esempio, un d20 è un dado a venti facce con esiti possibili da 1 a 20.
+@706.1b
+I giocatori possono accordarsi per usare un metodo alternativo per tirare un dado, incluso un sostituto digitale, purché il metodo usato abbia lo stesso numero di esiti ugualmente probabili del dado specificato nell'istruzione.
+@706.2
+Dopo il tiro, il numero indicato sulla faccia superiore del dado prima di qualsiasi modificatore è il risultato naturale. L'istruzione può includere modificatori al tiro che aggiungono o sottraggono dal risultato naturale. I modificatori possono anche provenire da altre fonti. Dopo aver considerato tutti i modificatori applicabili, il numero finale è il risultato del tiro di dado.
+@706.2a
+I modificatori possono essere facoltativi e/o avere costi associati. Se un modificatore ha un costo di mana associato, il giocatore che ha tirato ha la possibilità di attivare abilità di mana prima di applicarlo.
+@706.2b
+Se due o più effetti tentano di modificare il risultato naturale, il giocatore che ha tirato ne sceglie uno da applicare, seguendo questi passi: per primi, considera gli effetti che modificano il risultato di un tiro di dado ritirando quel dado. Per secondi, considera gli effetti che modificano il risultato di un tiro di dado aumentandolo o diminuendolo di una quantità specificata.
+@706.3
+Alcune abilità che istruiscono un giocatore a tirare uno o più dadi includono una tabella dei risultati.
+@706.3a
+La tabella dei risultati appare come un elenco o come uno schema a più fasce. Ogni voce o fascia include i risultati possibili e un effetto associato a quei risultati. I risultati possibili indicati possono essere un singolo numero, un intervallo di numeri con due estremi nella forma «N1–N2» o un intervallo con un solo estremo nella forma «N+». Ciascuno significa «Se il risultato è in questo intervallo, [effetto]». Dopo un tiro di dado, usa il risultato per stabilire quale effetto elencato nella tabella dei risultati avviene, se ce n'è uno.
+@706.3b
+Un'istruzione di tirare uno o più dadi, le eventuali istruzioni per modificare quel tiro stampate nello stesso paragrafo, le eventuali istruzioni aggiuntive basate sul risultato del tiro e la tabella dei risultati associata fanno tutte parte di un'unica abilità.
+@706.3c
+Alcuni effetti nelle tabelle dei risultati includono il testo «Tira di nuovo». Questo tiro aggiuntivo usa lo stesso tipo e numero di dadi richiesti originariamente, inclusi i modificatori applicabili.
+@706.4
+Alcune abilità che istruiscono un giocatore a tirare uno o più dadi non includono una tabella dei risultati. Il testo di quelle abilità indica come usare i risultati dei tiri di dado, se vanno usati.
+@706.5
+Una carta (Celebr-8000) ha un'abilità che istruisce un giocatore a tirare due dadi e ha un effetto aggiuntivo se quel giocatore «ha fatto un doppio». Un giocatore ha fatto un doppio se il risultato di ciascuno di quei tiri è uguale all'altro.
+@706.6
+Se a un giocatore viene detto di ignorare un tiro, quel tiro viene considerato come mai avvenuto. Nessuna abilità si innesca a causa del tiro ignorato, e nessun effetto si applica a quel tiro. Se a quel giocatore è stato detto di ignorare il tiro più basso e più risultati sono a pari merito come più bassi, il giocatore sceglie quale di quei tiri ignorare.
+@706.7
+In una partita Planechase, tirare il dado planare fa innescare qualsiasi abilità che si innesca ogni volta che un giocatore tira uno o più dadi. Tuttavia, qualsiasi effetto che fa riferimento a un risultato numerico di un tiro di dado, inclusi quelli che scambiano i risultati di quel tiro con un altro valore o confrontano i risultati di quel tiro con altri tiri o con un numero dato, ignora il tiro del dado planare. Vedi regola 901, «Planechase».
+@706.8
+Una carta (Centaur of Attention) ha un'abilità che istruisce un giocatore a tirare dei dadi e a «memorizzare» quei risultati su di essa e un'altra abilità che permette a un giocatore di ritirare un qualsiasi numero di quei risultati.
+@706.8a
+Memorizzare il risultato di un tiro di dado su un permanente significa annotare sia il tipo di dado tirato sia il risultato di quel tiro. Quell'informazione annotata è considerata un «risultato memorizzato» di quel permanente, e il risultato è il «valore» di quel risultato memorizzato.
+@706.8b
+Per ritirare uno o più risultati memorizzati di un permanente, tira un dado del tipo annotato per ciascuno di essi. Se un tipo di dado è annotato per più di uno di quei risultati, tira altrettanti dadi di quel tipo. I risultati che hai ritirato smettono di essere risultati memorizzati, e memorizzi su quel permanente i risultati di ciascuno dei nuovi tiri.
+@706.8c
+Se un permanente ha un'abilità che memorizza risultati su di esso e un'altra abilità che fa riferimento ai risultati memorizzati, quelle abilità sono collegate. (Vedi regola 607.2e.)
+@707
+Copiare oggetti
+@707.1
+Alcuni oggetti diventano, o trasformano un altro oggetto in, una «copia» di una magia, di un permanente o di una carta. Alcuni effetti creano una pedina che è una copia di un altro oggetto. (Alcune carte più vecchie sono state stampate con l'espressione «cerca una copia». Questa sezione non riguarda quelle carte, che hanno ricevuto un nuovo testo nel riferimento Oracle.)
+@707.2
+Quando si copia un oggetto, la copia acquisisce i valori copiabili delle caratteristiche dell'oggetto originale e, per un oggetto in pila, le scelte fatte nel lanciarlo o attivarlo (modo, bersagli, valore di X, se è stato potenziato, come influenzerà più bersagli e così via). I valori copiabili sono i valori derivati dal testo stampato sull'oggetto (cioè nome, costo di mana, indicatore di colore, tipo di carta, sottotipo, supertipo, testo delle regole, forza, costituzione e/o fedeltà), come modificati da altri effetti di copia, dal suo stato a faccia in giù e dalle abilità «mentre ... entra» e «mentre ... viene girato a faccia in su» che stabiliscono forza e costituzione (e possono stabilire anche altre caratteristiche). Altri effetti (inclusi gli effetti di cambio di tipo e di modifica del testo), lo stato, i segnalini e gli adesivi non vengono copiati.
+Esempio: Chimeric Staff è un artefatto che dice «{X}: Questo artefatto diventa una creatura artefatto Costrutto X/X fino alla fine del turno». Clone è una creatura che dice «Puoi far entrare questa creatura come copia di una qualsiasi creatura sul campo di battaglia». Dopo che uno Staff è diventato una creatura artefatto Costrutto 5/5, un Clone entra nel campo di battaglia come sua copia. Il Clone è un artefatto, non una creatura artefatto Costrutto 5/5. (La copia ha però l'abilità dello Staff, e diventerà una creatura se quell'abilità viene attivata.)
+Esempio: Clone entra nel campo di battaglia come copia di un Grinning Demon a faccia in giù (una creatura con metamorfosi {2}{B}{B}). Il Clone è una creatura 2/2 incolore senza nome, senza tipi, senza abilità e senza costo di mana. Resta comunque a faccia in su. Il suo controllore non può pagare {2}{B}{B} per girarlo a faccia in su.
+@707.2a
+Una copia acquisisce il colore dell'oggetto che copia perché quel valore deriva dal suo costo di mana o dal suo indicatore di colore. Una copia acquisisce le abilità dell'oggetto che copia perché quei valori derivano dal suo testo delle regole. Una copia non finisce per avere due valori per ogni abilità (cioè non copia le abilità dell'oggetto e il suo testo delle regole per poi far definire a quel testo un nuovo insieme di abilità).
+@707.2b
+Una volta che un oggetto è stato copiato, modificare i valori copiabili dell'oggetto originale non fa cambiare la copia.
+@707.2c
+Se un'abilità statica genera un effetto continuo che è un effetto di copia, i valori copiabili conferiti da quell'effetto vengono determinati solo nel momento in cui quell'effetto inizia ad applicarsi.
+@707.3
+I valori copiabili della copia diventano le informazioni copiate, come modificate dallo stato della copia (vedi regola 110.5). Gli oggetti che copiano l'oggetto usano i nuovi valori copiabili.
+Esempio: Vesuvan Doppelganger dice «Puoi far entrare questa creatura come copia di una qualsiasi creatura sul campo di battaglia, tranne per il fatto che non copia il colore di quella creatura e ha "All'inizio del tuo mantenimento, puoi far diventare questa creatura una copia di una creatura bersaglio, tranne per il fatto che non copia il colore di quella creatura e ha questa abilità"». Un Vesuvan Doppelganger entra nel campo di battaglia come copia di Runeclaw Bear (una creatura Orso 2/2 verde senza abilità). Poi un Clone entra nel campo di battaglia come copia del Doppelganger. Il Clone è un Orso 2/2 blu chiamato Runeclaw Bear che ha l'abilità innescata nel mantenimento del Doppelganger.
+Esempio: Tomoya the Revealer (una carta capovolgibile capovolta) diventa una copia di Nezumi Shortfang (una carta capovolgibile non capovolta). Le caratteristiche di Tomoya diventano le caratteristiche di Stabwhisker the Odious, che è la versione capovolta di Nezumi Shortfang.
+Esempio: Un Grinning Demon a faccia in giù (una creatura con metamorfosi) diventa una copia di un Branchsnap Lorian a faccia in su (una creatura 4/1 verde con travolgere e metamorfosi {G}). Le caratteristiche del Demon diventano le caratteristiche di Branchsnap Lorian. Tuttavia, poiché la creatura è a faccia in giù, resta una creatura 2/2 incolore senza nome, tipi o abilità e senza costo di mana. Può essere girata a faccia in su per {G}. Se viene girata a faccia in su, avrà le caratteristiche di Branchsnap Lorian.
+Esempio: Un Grinning Demon a faccia in giù (una creatura con metamorfosi) diventa una copia di Wandering Ones (una creatura Spirito 1/1 blu che non ha metamorfosi). Sarà un Wandering Ones a faccia in giù. Resta una creatura 2/2 incolore senza nome, tipi o abilità e senza costo di mana. Il suo controllore non può girarla a faccia in su come azione speciale. Se un effetto la gira a faccia in su, avrà le caratteristiche di Wandering Ones.
+@707.4
+Alcuni effetti fanno sì che un permanente che sta copiando un permanente copi un oggetto diverso pur restando sul campo di battaglia. Il cambiamento non fa innescare abilità di ingresso o di uscita dal campo di battaglia. Inoltre non modifica gli effetti diversi dalla copia che attualmente influenzano il permanente.
+Esempio: Unstable Shapeshifter dice «Ogni volta che entra un'altra creatura, questa creatura diventa una copia di quella creatura, tranne per il fatto che ha questa abilità». È influenzato da Giant Growth, che dice «Una creatura bersaglio prende +3/+3 fino alla fine del turno». Se più tardi nel turno entra nel campo di battaglia una creatura, Unstable Shapeshifter diventa una copia di quella creatura, ma prende comunque +3/+3 da Giant Growth.
+@707.5
+Un oggetto che entra nel campo di battaglia «come copia» o «che è una copia» di un altro oggetto diventa una copia mentre entra nel campo di battaglia. Non entra nel campo di battaglia per poi diventare una copia di quel permanente. Se il testo copiato include abilità che sostituiscono l'evento di ingresso nel campo di battaglia (come le abilità «entra con» o «mentre [questo] entra»), quelle abilità hanno effetto. Inoltre, le eventuali abilità innescate di ingresso nel campo di battaglia della copia hanno la possibilità di innescarsi.
+Esempio: Skyshroud Behemoth dice «Dissolvenza 2 (Questa creatura entra con due segnalini dissolvenza. All'inizio del tuo mantenimento, rimuovi un segnalino dissolvenza da essa. Se non puoi, sacrificala.)» e «Questa creatura entra TAPpata». Un Clone che entra nel campo di battaglia come copia di uno Skyshroud Behemoth entra anch'esso nel campo di battaglia TAPpato con due segnalini dissolvenza su di sé.
+Esempio: Wall of Omens dice «Quando questa creatura entra, pesca una carta». Un Clone entra nel campo di battaglia come copia di Wall of Omens. Il Clone ha l'abilità innescata di ingresso nel campo di battaglia del Wall, quindi il controllore del Clone pesca una carta.
+@707.6
+Quando si copia un permanente, le scelte che sono state fatte per quel permanente non vengono copiate. Invece, se un oggetto entra nel campo di battaglia come copia di un altro permanente, il controllore dell'oggetto può fare per esso le scelte «mentre [questo] entra nel campo di battaglia».
+Esempio: Un Clone entra nel campo di battaglia come copia di Adaptive Automaton. Adaptive Automaton dice, tra l'altro, «Mentre questa creatura entra, scegli un tipo di creatura». Il Clone non copia la scelta del tipo di creatura dell'Automaton; il controllore del Clone potrà invece fare una nuova scelta.
+@707.7
+Se viene copiata una coppia di abilità collegate, quelle abilità saranno collegate allo stesso modo l'una all'altra sull'oggetto che le ha copiate. Un'abilità fa riferimento solo alle azioni compiute o agli oggetti influenzati dall'altra. Non possono essere collegate a nessun'altra abilità, indipendentemente dalle altre abilità che la copia può avere attualmente o può aver avuto in passato. Vedi regola 607, «Abilità collegate».
+@707.8
+Quando si copia un permanente combinato o un altro permanente bifronte, si usano i valori copiabili della faccia attualmente rivolta verso l'alto per determinare le caratteristiche della copia. Vedi regola 712, «Carte bifronte».
+@707.8a
+Se un effetto crea una pedina che è una copia di un permanente bifronte o di una carta bifronte che non è sul campo di battaglia, la pedina risultante è una pedina bifronte che ha sia una faccia anteriore sia una faccia posteriore. Le caratteristiche di ciascuna faccia sono determinate dai valori copiabili della stessa faccia del permanente o della carta di cui è copia, come modificati da qualsiasi altro effetto di copia che si applica a quell'oggetto. Se la pedina è una copia di un permanente bifronte con la faccia posteriore rivolta verso l'alto, la pedina entra nel campo di battaglia con la faccia posteriore rivolta verso l'alto. Questa regola non si applica alle pedine che vengono create con un proprio insieme di caratteristiche ed entrano nel campo di battaglia come copia di un oggetto bifronte a causa di un effetto di sostituzione.
+Esempio: Afflicted Deserter è la faccia anteriore di una carta bifronte, e il nome della sua faccia posteriore è Werewolf Ransacker. Se un effetto crea una pedina che è una copia di quel permanente, anche la pedina ha le stesse due facce e può trasformarsi. Entra nel campo di battaglia con rivolta verso l'alto la stessa faccia del permanente di cui è copia.
+Esempio: Clone non è una carta bifronte, quindi una pedina creata come copia di un Clone non è una pedina bifronte, anche se entra nel campo di battaglia come copia di un permanente a causa dell'effetto di sostituzione di Clone.
+@707.9
+Gli effetti di copia possono includere modifiche o eccezioni al procedimento di copia.
+@707.9a
+Alcuni effetti di copia fanno ottenere alla copia un'abilità come parte del procedimento di copia. Questa abilità diventa parte dei valori copiabili della copia, insieme a tutte le altre abilità copiate.
+Esempio: Quirion Elves entra nel campo di battaglia e un Unstable Shapeshifter lo copia. I valori copiabili dello Shapeshifter ora corrispondono a quelli degli Elves, tranne per il fatto che lo Shapeshifter ha anche l'abilità «Ogni volta che entra un'altra creatura, questa creatura diventa una copia di quella creatura, tranne per il fatto che ha questa abilità». Poi un Clone entra nel campo di battaglia come copia dell'Unstable Shapeshifter. Il Clone copia i nuovi valori copiabili dello Shapeshifter, inclusa l'abilità che lo Shapeshifter si è dato quando ha copiato gli Elves.
+@707.9b
+Alcuni effetti di copia modificano una caratteristica come parte del procedimento di copia. L'insieme finale di valori di quella caratteristica diventa parte dei valori copiabili della copia.
+Esempio: Copy Artifact è un incantesimo che dice «Puoi far entrare questo incantesimo come copia di un qualsiasi artefatto sul campo di battaglia, tranne per il fatto che è un incantesimo in aggiunta ai suoi altri tipi». Entra nel campo di battaglia come copia di Juggernaut. I valori copiabili di Copy Artifact ora corrispondono a quelli di Juggernaut con una modifica: i suoi tipi ora sono artefatto, creatura e incantesimo.
+@707.9c
+Alcuni effetti di copia stabiliscono specificamente che non copiano certe caratteristiche e gli oggetti influenzati mantengono invece i loro valori originali. Gli effetti di copia possono anche semplicemente stabilire che certe caratteristiche non vengono copiate.
