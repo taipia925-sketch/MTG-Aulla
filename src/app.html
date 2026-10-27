@@ -705,6 +705,9 @@ function stemIt(w) { for (const s of IT_SUFFIX) if (w.length - s.length >= 4 && 
 const itStems = s => norm(s).split(/[^a-z0-9]+/).filter(w => w.length > 2 && !IT_STOP.has(w)).map(stemIt);
 
 const IT_PHRASES = [
+  ["(carte|mano) (a|alla) fine (del )?turno|tenere in mano|massimo di carte( in mano)?|limite (di carte )?(in|della) mano", "maximum hand size", 2.5],
+  ["(pi[uù] effetti|ordine( degli effetti)?|chi sceglie( l'ordine)?)( di)? sostituzion[ei]|sostituzion[ei].{0,20}(chi sceglie|ordine)", "interaction of replacement and/or prevention effects", 3],
+  ["(metto|mettere|metti) in fondo", "bottom of their library", 1.5],
   ["tocco letale", "deathtouch", 2], ["legame vitale", "lifelink", 2], ["doppio attacco", "double strike", 2],
   ["attacco improvviso", "first strike", 2], ["anti[- ]?malocchio", "hexproof", 2], ["protezione da", "protection", 2],
   ["campo di battaglia", "battlefield", 1], ["zona di comando", "command zone", 1.5], ["tassa del comandante", "commander tax", 2],
@@ -872,7 +875,10 @@ function interpret(q, excluded) {
     if (w.length > 1) unknown.push(w0);
   });
   for (const c of concepts) c.off = excluded.has(c.key);
-  return { concepts, unknown, ruleIds, itWords };
+  /* tutte le parole italiane della domanda, per il punteggio sul testo tradotto */
+  const itAll = settings.lang === "en" ? [] : [...new Set(words.map(w => w.replace(/^[a-z]+'/, "").replace(/'$/, ""))
+    .filter(w => w.length > 2 && !IT_STOP.has(w) && !/^[\d+\/-]+$/.test(w)).map(stemIt).filter(si => IDX.dfIt.has(si)))];
+  return { concepts, unknown, ruleIds, itWords, itAll };
 }
 function search(q, excluded) {
   const it = interpret(q, excluded || new Set());
@@ -880,7 +886,7 @@ function search(q, excluded) {
   const { docs, df, dfIt, N, avg, avgIt } = IDX, k1 = 1.2, b = 0.6;
   const idf = (m, s) => { const n = m.get(s) || 0; return Math.log(1 + (N - n + .5) / (n + .5)); };
   const res = [];
-  if (active.length) for (const d of docs) {
+  if (active.length || it.itAll.length > 1) for (const d of docs) {
     let score = 0, matched = 0;
     for (const c of active) {
       let cs = 0;
@@ -893,7 +899,10 @@ function search(q, excluded) {
       }
       if (cs > 0) { matched++; score += cs * c.w; }
     }
-    if (matched) { score *= 1 + 0.75 * (matched - 1); res.push({ d, score }); }
+    let si = 0, mi = 0;
+    if (d.tfIt) for (const s of it.itAll) { const f = d.tfIt.get(s); if (f) { mi++; si += idf(dfIt, s) * (f * (k1 + 1)) / (f + k1 * (1 - b + b * d.lenIt / avgIt)); } }
+    if (mi) score += 0.5 * si * (1 + 0.3 * (mi - 1));
+    if (matched || mi > 1) { score *= 1 + 0.75 * Math.max(0, matched - 1); res.push({ d, score }); }
   }
   res.sort((a, b) => b.score - a.score);
   const per = new Map(), top = [];
