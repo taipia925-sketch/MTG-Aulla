@@ -1,0 +1,202 @@
+@901.12b
+Il controllore planare è normalmente il giocatore principale della squadra attiva. Tuttavia, se la squadra dell'attuale controllore planare dovesse lasciare la partita, invece il giocatore principale della squadra successiva nell'ordine di turno che non lascerebbe la partita diventa il controllore planare, poi la squadra del vecchio controllore planare lascia la partita. Il nuovo controllore planare mantiene quella designazione finché non lascia la partita o una squadra diversa diventa la squadra attiva, a seconda di cosa avviene prima.
+@901.12c
+Anche se il piano o fenomeno a faccia in su è controllato da un solo giocatore, qualsiasi abilità di quel piano o fenomeno che fa riferimento a «te» si applica a entrambi i membri della squadra del controllore planare.
+@901.12d
+Poiché ogni membro della squadra attiva è un giocatore attivo, ciascuno di loro può tirare il dado planare. Il costo per tirare il dado planare di ogni giocatore si basa sul numero di volte in cui quel particolare giocatore ha già tirato il dado planare in quel turno.
+@901.13
+Nei formati multigiocatore diversi da Grand Melee, le carte piano e le carte fenomeno sono esenti dall'opzione del raggio d'influenza limitato. Le loro abilità, e gli effetti di quelle abilità, influenzano tutti gli oggetti e i giocatori applicabili della partita. (Vedi regola 801, «Opzione del raggio d'influenza limitato».)
+@901.14
+Nelle partite Planechase Grand Melee, più carte piano o carte fenomeno possono essere a faccia in su nello stesso momento.
+@901.14a
+Prima del primo turno della partita, ogni giocatore che inizierà la partita con un segnaturno stabilisce un piano iniziale (vedi regola 901.5). Ciascuno di loro è un controllore planare.
+@901.14b
+Se un giocatore dovesse lasciare la partita e la sua uscita ridurrebbe il numero di segnaturno nella partita, quel giocatore prima smette di essere un controllore planare (ma nessun altro giocatore diventa controllore planare), poi quel giocatore lascia la partita. Ogni carta piano o carta fenomeno a faccia in su controllata da quel giocatore viene messa in fondo al mazzo planare del suo proprietario. Nessun giocatore è considerato aver viaggiato tra i piani.
+@901.15
+Opzione del mazzo planare unico
+@901.15a
+Come opzione alternativa, una partita Planechase può essere giocata con un unico mazzo planare comune. In quel caso, il numero di carte nel mazzo planare deve essere almeno quaranta o almeno dieci volte il numero di giocatori della partita, a seconda di quale sia minore. Il mazzo planare non può contenere più carte fenomeno del doppio del numero di giocatori della partita. Ogni carta del mazzo planare deve avere un nome inglese diverso.
+@901.15b
+In una partita Planechase che usa l'opzione del mazzo planare unico, il controllore planare è considerato il proprietario di tutte le carte del mazzo planare.
+@901.15c
+Se una regola o un'abilità fa riferimento al mazzo planare di un giocatore, si usa il mazzo planare comune.
+@902
+Vanguard
+@902.1
+Nella variante Vanguard, una carta vanguard permette a ogni giocatore di interpretare il ruolo di un personaggio famoso. Ogni giocatore avrà una carta vanguard a faccia in su le cui abilità e altre caratteristiche influenzano la partita. La variante Vanguard usa tutte le normali regole di una partita di Magic, con le seguenti aggiunte.
+@902.2
+Una partita Vanguard può essere una partita a due giocatori o una partita multigiocatore.
+@902.3
+Oltre ai normali materiali di gioco, ogni giocatore ha bisogno di una carta vanguard. Ogni carta vanguard viene messa a faccia in su accanto al grimorio del suo proprietario prima dell'inizio della partita. Tutte le carte vanguard restano nella zona di comando per tutta la partita.
+@902.4
+Il totale di punti vita iniziale di ogni giocatore è 20 più o meno il modificatore di punti vita della sua carta vanguard.
+Esempio: Il modificatore di punti vita della carta vanguard di un giocatore è -3. Il totale di punti vita iniziale di quel giocatore è 17.
+@902.5
+La dimensione della mano iniziale di ogni giocatore è di sette carte, modificata dal modificatore di mano della sua carta vanguard.
+@902.5a
+Se un giocatore fa mulligan in una partita Vanguard, proprio come in una partita normale, quel giocatore rimescola la sua mano nel suo grimorio, poi pesca una nuova mano pari alla dimensione della sua mano iniziale. (In una partita multigiocatore, il primo mulligan di un giocatore è per lo stesso numero di carte che aveva prima.) Vedi regola 103.5.
+Esempio: Il modificatore di mano della carta vanguard di un giocatore è +2. Quel giocatore inizia la partita con una mano di 9 carte. Se il giocatore fa mulligan tre volte prima di tenere, pesca una nuova mano di nove carte e ne mette tre in fondo al suo grimorio.
+@902.5b
+Il numero massimo di carte in mano di un giocatore è sette, modificato dal modificatore di mano della sua carta vanguard.
+Esempio: Il modificatore di mano della carta vanguard di un giocatore è -1. Il numero massimo di carte in mano di quel giocatore è sei. Se quel giocatore ha più di sei carte in mano all'inizio della sua sottofase di cancellazione, le scarterà tutte tranne sei.
+@902.6
+Il proprietario di una carta vanguard è il giocatore che ha iniziato la partita con essa nella zona di comando. Il controllore di una carta vanguard a faccia in su è il suo proprietario.
+@902.7
+Tutte le abilità di una carta vanguard a faccia in su nella zona di comando funzionano da quella zona. Le abilità statiche della carta influenzano la partita, le sue abilità innescate possono innescarsi e le sue abilità attivate possono essere attivate.
+@903
+Commander
+@903.1
+Nella variante Commander, una variante creata e resa popolare dai fan, ogni mazzo è guidato da una creatura leggendaria designata come comandante di quel mazzo. La variante Commander usa tutte le normali regole di una partita di Magic, con le seguenti aggiunte.
+@903.2
+Una partita Commander può essere una partita a due giocatori o una partita multigiocatore. La configurazione multigiocatore predefinita è la variante Tutti contro tutti con l'opzione di attacco a più giocatori e senza l'opzione del raggio d'influenza limitato. Vedi regola 806, «Variante Tutti contro tutti».
+@903.3
+Ogni mazzo ha una carta leggendaria designata come suo comandante. Quella carta deve essere (a) una carta creatura, (b) una carta Veicolo oppure (c) una carta Astronave con uno o più riquadri di forza/costituzione. Questa designazione non è una caratteristica dell'oggetto rappresentato dalla carta; è invece un attributo della carta stessa. La carta mantiene questa designazione anche quando cambia zona.
+Esempio: Un comandante che è stato girato a faccia in giù (per esempio a causa dell'effetto di Ixidron) è ancora un comandante. Un comandante che sta copiando un'altra carta (per esempio a causa dell'effetto di Cytoshape) è ancora un comandante. Un permanente che sta copiando un comandante (come un Body Double che copia un comandante nel cimitero di un giocatore) non è un comandante.
+@903.3a
+Alcune carte hanno un'abilità che stabilisce che la carta può essere il tuo comandante. Questa abilità modifica le regole di costruzione del mazzo, e funziona prima dell'inizio della partita. Vedi anche regola 113.6n.
+@903.3b
+Se il comandante di un giocatore è una carta da combinare ed è combinato con l'altro membro della sua coppia, il permanente combinato risultante è il comandante di quel giocatore.
+@903.3c
+Se il comandante di un giocatore è un componente di un permanente fuso, il permanente fuso risultante è il comandante di quel giocatore.
+@903.3d
+Se un effetto fa riferimento al controllare un comandante, si riferisce a un permanente sul campo di battaglia che è un comandante. Se un effetto fa riferimento al lanciare un comandante, si riferisce a una magia che è un comandante. Se un effetto fa riferimento a un comandante in una zona specifica, si riferisce a una carta in quella zona che è un comandante.
+@903.3e
+Se un effetto fa riferimento a una caratteristica del «tuo comandante», può trovare il comandante del giocatore appropriato e vederne le caratteristiche attuali, come modificate dagli effetti continui e da altre regole, in tutte le zone, inclusi il grimorio e la mano di quel giocatore.
+@903.4
+La variante Commander usa l'identità di colore per stabilire quali carte possono stare in un mazzo con un certo comandante. L'identità di colore di una carta è il colore o i colori di tutti i simboli di mana nel costo di mana o nel testo delle regole di quella carta, più gli eventuali colori definiti dalle sue abilità che definiscono caratteristiche (vedi regola 604.3) o dal suo indicatore di colore (vedi regola 204).
+Esempio: Bosh, Iron Golem è una creatura artefatto leggendaria con costo di mana {8} e l'abilità «{3}{R}, Sacrifica un artefatto: Bosh, Iron Golem infligge danno pari al valore di mana dell'artefatto sacrificato a qualsiasi bersaglio». L'identità di colore di Bosh è rossa.
+@903.4a
+L'identità di colore viene stabilita prima dell'inizio della partita. Se una regola o un effetto fa riferimento all'identità di colore di un oggetto nella partita rappresentato da una carta, usa l'identità di colore stabilita per quella carta all'inizio della partita.
+@903.4b
+Se un comandante ha un'abilità statica che fa scegliere a un giocatore il suo colore prima dell'inizio della partita, quella scelta si applica durante la costruzione del mazzo e per tutta la partita, anche quando il comandante cambia zona. Quella scelta influenza l'identità di colore del comandante. Il giocatore rivela quella scelta mentre mette il suo comandante nella zona di comando prima dell'inizio della partita. Vedi regole 103.2c e 607.2p.
+@903.4c
+Il testo di richiamo viene ignorato nel determinare l'identità di colore di una carta. Vedi regola 207.2.
+@903.4d
+La faccia posteriore di una carta bifronte (vedi regola 712) viene inclusa nel determinare l'identità di colore di una carta. Questa è un'eccezione alla regola 712.8a.
+Esempio: Civilized Scholar è la faccia anteriore di una carta bifronte con costo di mana {2}{U}. Homicidal Brute è la faccia posteriore di quella carta bifronte e ha un indicatore di colore rosso. L'identità di colore della carta è blu e rossa.
+@903.4e
+Se una carta ha caratteristiche alternative, come quelle delle carte avventuriero (vedi regola 715, «Carte avventuriero»), quelle caratteristiche vengono incluse nel determinare l'identità di colore della carta.
+@903.4f
+Se un'abilità fa riferimento ai colori o al numero di colori nell'identità di colore di un comandante, quella qualità è indefinita se quel giocatore non ha un comandante. Quella parte dell'abilità non fa nulla. I costi che fanno riferimento a quella qualità non possono essere pagati.
+@903.5
+Ogni mazzo Commander è soggetto alle seguenti regole di costruzione del mazzo.
+@903.5a
+Ogni mazzo deve contenere esattamente 100 carte, incluso il suo comandante. In altre parole, la dimensione minima e la dimensione massima del mazzo sono entrambe 100.
+@903.5b
+Tranne le terre base, ogni carta in un mazzo Commander deve avere un nome inglese diverso. Ai fini della costruzione del mazzo, le carte con nomi intercambiabili hanno lo stesso nome inglese (vedi regola 201.3).
+@903.5c
+Una carta può essere inclusa in un mazzo Commander solo se ogni colore della sua identità di colore si trova anche nell'identità di colore del comandante del mazzo.
+Esempio: Wort, the Raidmother è una creatura leggendaria con costo di mana {4}{R/G}{R/G}. L'identità di colore di Wort è rossa e verde. Ogni carta in un mazzo Commander di Wort deve essere solo rossa, solo verde, sia rossa sia verde, oppure incolore. Ogni simbolo di mana nel costo di mana o nel testo delle regole di una carta di questo mazzo deve essere solo rosso, solo verde, sia rosso sia verde, oppure incolore.
+@903.5d
+Una carta con un tipo di terra base può essere inclusa in un mazzo Commander solo se ogni colore di mana che potrebbe produrre è incluso nell'identità di colore del comandante.
+Esempio: L'identità di colore di Wort, the Raidmother è rossa e verde. Un mazzo Commander di Wort può includere carte terra con i tipi di terra base Montagna e/o Foresta. Non può includere carte terra con i tipi di terra base Pianura, Isola o Palude.
+@903.5e
+Le partite Commander non usano sideboard.
+@903.6
+All'inizio della partita, ogni giocatore mette a faccia in su nella zona di comando il suo comandante preso dal mazzo. Poi ogni giocatore mescola le carte rimanenti del suo mazzo in modo che siano in ordine casuale. Quelle carte diventano il grimorio del giocatore.
+@903.7
+Una volta stabilito il giocatore iniziale, ogni giocatore imposta il suo totale di punti vita a 40 e pesca una mano di sette carte.
+@903.8
+Un giocatore può lanciare dalla zona di comando un comandante che possiede. Un comandante lanciato dalla zona di comando costa {2} in più per ogni volta precedente in cui il giocatore che lo lancia lo ha lanciato dalla zona di comando in quella partita. Questo costo aggiuntivo è detto informalmente «tassa del comandante».
+@903.9
+Un comandante può tornare nella zona di comando durante una partita Commander.
+@903.9a
+Se un comandante è in un cimitero o in esilio e quell'oggetto è stato messo in quella zona dall'ultima volta che sono state controllate le azioni generate dallo stato, il suo proprietario può metterlo nella zona di comando. Questa è un'azione generata dallo stato. Vedi regola 704.
+@903.9b
+Se un comandante dovesse essere messo nella mano o nel grimorio del suo proprietario da qualsiasi zona, il suo proprietario può invece metterlo nella zona di comando. Questo effetto di sostituzione può applicarsi più di una volta allo stesso evento. Questa è un'eccezione alla regola 614.5.
+@903.9c
+Se un comandante è un permanente combinato o un permanente fuso e il suo proprietario sceglie di metterlo nella zona di comando usando l'effetto di sostituzione descritto nella regola 903.9b, quel permanente e ogni componente che lo rappresenta che non è un comandante vengono messi nella zona appropriata, e la carta che lo rappresenta ed è un comandante viene messa nella zona di comando.
+@903.10
+La variante Commander include la seguente specifica per vincere e perdere la partita. Si applicano anche tutte le altre regole per la fine della partita. (Vedi regola 104.)
+@903.10a
+Un giocatore a cui sono stati inflitti 21 o più danni da combattimento dallo stesso comandante nel corso della partita perde la partita. (Questa è un'azione generata dallo stato. Vedi regola 704.)
+@903.11
+Tranne che tramite regole, azioni speciali ed effetti che portano specificamente carte nelle partite Commander da fuori dalla partita, le carte tradizionali da fuori dalla partita non possono essere portate in una partita Commander.
+@903.11a
+Se a un giocatore è permesso portare in una partita Commander una carta da fuori dalla partita, quel giocatore non può portare una carta nella partita in questo modo se ha lo stesso nome di una carta che quel giocatore aveva nel suo mazzo iniziale, se ha lo stesso nome di una carta che il giocatore possiede nella partita in corso o se un qualsiasi colore della sua identità di colore non è nell'identità di colore del comandante del giocatore.
+@903.12
+Opzione Brawl
+@903.12a
+Brawl è un'opzione per uno stile diverso di partita Commander. Le partite Brawl usano le normali regole della variante Commander con le seguenti modifiche.
+@903.12b
+I mazzi Brawl di solito vengono costruiti usando carte del formato Standard.
+@903.12c
+Ogni mazzo ha una carta leggendaria designata come suo comandante. Quella carta deve essere (a) una carta creatura, (b) una carta planeswalker, (c) una carta Veicolo oppure (d) una carta Astronave con uno o più riquadri di forza/costituzione.
+@903.12d
+Il mazzo di un giocatore deve contenere esattamente 60 carte, incluso il suo comandante. In altre parole, la dimensione minima e la dimensione massima del mazzo sono entrambe 60.
+@903.12e
+Se il comandante di un giocatore non ha colori nella sua identità di colore, il mazzo di quel giocatore può contenere un qualsiasi numero di terre base di un tipo di terra base a sua scelta. Questa è un'eccezione alla regola 903.5d.
+@903.12f
+In una partita Brawl a due giocatori, il totale di punti vita iniziale di ogni giocatore è 25. In una partita Brawl multigiocatore, il totale di punti vita iniziale di ogni giocatore è 30.
+@903.12g
+In qualsiasi partita Brawl, il primo mulligan che un giocatore fa non conta ai fini del numero di carte che quel giocatore metterà in fondo al suo grimorio né del numero di mulligan che quel giocatore può fare. I mulligan successivi vengono contati normalmente.
+@903.12h
+Le partite Brawl non usano l'azione generata dallo stato descritta nella regola 704.6c, che fa perdere la partita a un giocatore se gli sono stati inflitti 21 o più danni da combattimento da un comandante.
+@903.13
+Commander Draft
+@903.13a
+Commander Draft è un'opzione per uno stile diverso di partita Commander. Consiste in un draft (uno stile di gioco limitato in cui i giocatori scelgono carte da buste sigillate per costruire i loro mazzi) seguito da una partita multigiocatore. L'opzione Commander Draft usa per impostazione predefinita buste di Commander Legends.
+@903.13b
+Un draft di solito consiste in tre turni di draft. In ogni turno di draft, ogni giocatore apre una busta, sceglie due carte mettendole in una pila a faccia in giù davanti a sé, poi passa le carte rimanenti al giocatore successivo. Ogni giocatore poi sceglie due carte dalla busta che gli è stata passata e passa le carte rimanenti. Questo procedimento continua finché tutte le carte di quel turno di draft non sono state scelte.
+@903.13c
+Nel primo e nel terzo turno di draft, le buste vengono passate alla sinistra di ogni giocatore. Nel secondo turno di draft, le buste vengono passate alla destra di ogni giocatore.
+@903.13d
+Durante il draft, un giocatore può guardare solo le carte della busta da cui sta scegliendo in quel momento e le carte che ha già scelto. Un giocatore non può rivelare le carte scelte agli altri giocatori a meno che un'abilità non gli dica di farlo.
+@903.13e
+Dopo la fine del draft, le carte scelte da un giocatore diventano il pool di carte di quel giocatore. Se il draft conteneva buste da draft di Commander Legends o Commander Masters, ogni giocatore può aggiungere al suo pool di carte fino a due carte chiamate The Prismatic Piper, ma solo se quelle carte vengono usate come comandante o comandanti del giocatore. Se il draft conteneva buste da draft di Commander Legends: Battle for Baldur's Gate®, ogni giocatore può aggiungere al suo pool di carte fino a due carte chiamate Faceless One, ma solo se quelle carte vengono usate come comandante o comandanti del giocatore.
+@903.13f
+La costruzione del mazzo in Commander Draft segue le stesse regole della costruzione del mazzo Commander (vedi regola 903.5) con tre eccezioni: (1) Il mazzo di un giocatore deve contenere almeno 60 carte. Non c'è una dimensione massima del mazzo. (2) Il mazzo di un giocatore può includere un qualsiasi numero di carte del pool di quel giocatore con lo stesso nome. (3) Se il draft conteneva buste da draft di Commander Masters, qualsiasi carta che può essere da sola il comandante di un giocatore e la cui identità di colore include al massimo un colore è considerata avere l'abilità partner ai fini della costruzione del mazzo. (Vedi regola 702.124, «Partner».)
+@903.13g
+Le partite Commander Draft seguono le stesse regole delle partite Commander. Vedi regole 903.6–903.11.
+@904
+Archenemy
+@904.1
+Nella variante Archenemy, una squadra di giocatori affronta un singolo avversario rafforzato da potenti carte piano. La variante Archenemy usa tutte le normali regole di una partita di Magic, con le seguenti aggiunte.
+@904.2
+La configurazione predefinita di una partita Archenemy è la variante multigiocatore Squadra contro squadra (vedi regola 808) con esattamente due squadre. Vengono usate l'opzione di attacco a più giocatori (vedi regola 802) e l'opzione dei turni di squadra condivisi (vedi regola 805); non vengono usate altre opzioni multigiocatore.
+@904.2a
+Una delle squadre è formata da esattamente un giocatore, che viene designato come arcinemico.
+@904.2b
+L'altra squadra è formata da un qualsiasi numero di giocatori.
+@904.3
+Oltre ai normali materiali di gioco, l'arcinemico ha bisogno di un mazzo dei piani supplementare di almeno venti carte piano. Un mazzo dei piani non può contenere più di due copie di una carta con un particolare nome inglese. (Vedi regola 314, «Piani malvagi».)
+@904.4
+Tutte le carte piano restano nella zona di comando per tutta la partita, sia mentre fanno parte di un mazzo dei piani sia mentre sono a faccia in su.
+@904.5
+Il totale di punti vita iniziale dell'arcinemico è 40. Il totale di punti vita iniziale di ogni altro giocatore è 20.
+@904.6
+Invece di un giocatore determinato casualmente, è l'arcinemico a giocare il primo turno della partita.
+@904.7
+Il proprietario di una carta piano è il giocatore che ha iniziato la partita con essa nella zona di comando. Il controllore di una carta piano a faccia in su è il suo proprietario.
+@904.8
+Tutte le abilità di una carta piano a faccia in su nella zona di comando funzionano da quella zona. Le abilità statiche della carta influenzano la partita, le sue abilità innescate possono innescarsi e le sue abilità attivate possono essere attivate.
+@904.9
+Subito dopo l'inizio della fase principale precombattimento dell'arcinemico durante ciascuno dei suoi turni, quel giocatore toglie la prima carta del suo mazzo dei piani da quel mazzo e la gira a faccia in su. Questo si chiama «mettere in moto quel piano». (Vedi regola 701.32.) Questa azione basata sul turno non usa la pila. Le abilità di quella carta piano che si innescano «Quando metti in moto questo piano» si innescano.
+@904.10
+Se una carta piano non continuativo è a faccia in su nella zona di comando, e nessuna abilità innescata di alcun piano è in pila o in attesa di essere messa in pila, quella carta piano viene girata a faccia in giù e messa in fondo al mazzo dei piani del suo proprietario la volta successiva in cui un giocatore dovrebbe ricevere la priorità. (Questa è un'azione generata dallo stato. Vedi regola 704.)
+@904.11
+Una volta messa in moto, una carta piano continuativo resta a faccia in su nella zona di comando finché un'abilità non la fa abbandonare (vedi regola 701.33).
+@904.12
+Opzione Supervillain Rumble
+@904.12a
+Come opzione alternativa, i giocatori possono giocare una partita Tutti contro tutti in cui ogni giocatore ha il proprio mazzo dei piani. Viene usata l'opzione di attacco a più giocatori (vedi regola 802); non vengono usate altre opzioni multigiocatore.
+@904.12b
+Ogni giocatore di questa partita è un arcinemico.
+@904.12c
+Come in una normale partita Tutti contro tutti, il giocatore iniziale viene determinato casualmente. Tutte le altre regole che si applicano all'arcinemico in una partita Archenemy si applicano a ogni giocatore in una partita Supervillain Rumble.
+@904.13
+Opzione Archenemy Commander
+@904.13a
+Come opzione alternativa, i giocatori possono giocare una partita Commander (vedi regola 903, «Commander») usando le regole Archenemy. Si applicano le normali regole di Commander, come modificate dalle regole Archenemy, con le seguenti eccezioni.
+@904.13b
+L'arcinemico inizia con 60 punti vita. La squadra avversaria ha un totale di punti vita condiviso che parte da 60 punti vita invece di totali individuali. L'uso di un totale di punti vita condiviso è descritto nelle regole 810.8 e 810.9 della variante Two-Headed Giant.
+@904.13c
+I segnalini veleno non sono condivisi. Se l'arcinemico ha dieci o più segnalini veleno, perde la partita. Se un singolo membro della squadra avversaria ha dieci o più segnalini veleno, perde la partita. (Questa è un'azione generata dallo stato. Vedi regola 704.)
+@904.13d
+Il mazzo dei piani dell'arcinemico deve contenere almeno dieci carte, e ogni carta deve avere un nome inglese diverso.
+@905
+Conspiracy Draft
+@905.1
+La variante Conspiracy Draft consiste in un draft (uno stile di gioco limitato in cui i giocatori scelgono carte da buste sigillate per costruire i loro mazzi) seguito da una partita multigiocatore. La variante Conspiracy Draft usa per impostazione predefinita buste di Magic: The Gathering—Conspiracy® e/o Conspiracy: Take the Crown.
+@905.1a
+Un draft di solito consiste in tre turni di draft. In ogni turno di draft, ogni giocatore apre una busta, sceglie una carta mettendola in una pila a faccia in giù davanti a sé, poi passa le carte rimanenti al giocatore successivo. Ogni giocatore poi sceglie una carta dalla busta che gli è stata passata e passa le carte rimanenti. Questo procedimento continua finché tutte le carte di quel turno di draft non sono state scelte.

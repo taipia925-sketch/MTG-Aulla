@@ -1,0 +1,24 @@
+@905.1b
+Nel primo e nel terzo turno di draft, le buste vengono passate alla sinistra di ogni giocatore. Nel secondo turno di draft, le buste vengono passate alla destra di ogni giocatore.
+@905.1c
+Durante il draft, un giocatore può guardare solo le carte della busta da cui sta scegliendo in quel momento, le carte che ha già scelto, le carte attualmente rivelate come descritto nella regola 905.2b e le carte scelte a faccia in su come descritto nella regola 905.2c. Un giocatore non può rivelare le carte scelte agli altri giocatori a meno che un'abilità non gli dica di farlo.
+@905.1d
+Dopo il draft e tutte le azioni che possono essere compiute durante o dopo il draft, tutte le carte scelte da un giocatore diventano il pool di carte di quel giocatore. Il giocatore costruisce il suo mazzo solo con queste carte e un qualsiasi numero di carte terra base. Vedi regole 100.2b e 100.4b.
+@905.2
+Alcune carte hanno abilità che funzionano durante il draft.
+@905.2a
+Durante un draft non c'è un giocatore attivo né un sistema di priorità. Se più giocatori desiderano compiere un'azione nello stesso momento durante il draft e non riescono ad accordarsi su un ordine, quelle azioni vengono compiute in ordine casuale.
+@905.2b
+Alcune carte istruiscono i giocatori a rivelarle quando vengono scelte e poi ad annotare alcune informazioni, come un numero o un colore. Queste informazioni possono essere richiamate da altre abilità durante la partita. Qualsiasi giocatore può guardare queste informazioni in qualsiasi momento durante il draft o la partita. Dopo che le informazioni sono state annotate, la carta scelta viene girata a faccia in giù e aggiunta alla pila delle carte scelte del giocatore.
+@905.2c
+Alcune carte istruiscono i giocatori a sceglierle a faccia in su. Ognuna di queste carte resta a faccia in su finché il draft non è completato, un effetto non istruisce il giocatore che l'ha scelta a girarla a faccia in giù o la carta non lascia la pila delle carte scelte di quel giocatore. Mentre la carta è a faccia in su, tutti i giocatori possono guardarla.
+@905.3
+Una partita Conspiracy Draft è una partita multigiocatore. La configurazione multigiocatore predefinita è la variante Tutti contro tutti con l'opzione di attacco a più giocatori e senza l'opzione del raggio d'influenza limitato. Vedi regola 806, «Variante Tutti contro tutti».
+@905.4
+All'inizio della partita, prima che i mazzi vengano mescolati, ogni giocatore può mettere un qualsiasi numero di carte cospirazione dalla sua sideboard nella zona di comando.
+@905.4a
+Le carte cospirazione con agenda nascosta vengono messe nella zona di comando a faccia in giù. In qualsiasi momento in cui un giocatore ha la priorità, può girare a faccia in su una carta cospirazione a faccia in giù che controlla. Vedi regola 702.106, «Agenda nascosta».
+@905.5
+Il proprietario di una carta cospirazione è il giocatore che l'ha messa nella zona di comando all'inizio della partita. Il controllore di una carta cospirazione è il suo proprietario.
+@905.6
+Una volta stabilito il giocatore iniziale, ogni giocatore imposta il suo totale di punti vita a 20 e pesca una mano di sette carte.
