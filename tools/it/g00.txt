@@ -1,0 +1,402 @@
+@@Abandon
+Abbandonare
+Girare a faccia in giù una carta piano continuativo a faccia in su e metterla in fondo al mazzo dei piani del suo proprietario. Vedi regola 701.33, «Abbandonare».
+@@Ability
+Abilità
+1. Testo su un oggetto che spiega cosa fa o può fare quell'oggetto. 2. Un'abilità attivata o innescata in pila. Questo tipo di abilità è un oggetto. Vedi regola 113, «Abilità», e sezione 6, «Magie, abilità ed effetti».
+@@Ability Word
+Parola di abilità
+Una parola in corsivo senza significato nelle regole che collega abilità su carte diverse che hanno funzionalità simili. Vedi regola 207.2c.
+@@Absorb
+Assorbire
+Un'abilità chiave che previene il danno. Vedi regola 702.64, «Assorbire».
+@@Activate
+Attivare
+Mettere in pila un'abilità attivata e pagarne i costi, in modo che alla fine si risolva e abbia il suo effetto. Vedi regola 602, «Attivare le abilità attivate».
+@@Activated Ability
+Abilità attivata
+Un tipo di abilità. Le abilità attivate sono scritte nella forma «[Costo]: [Effetto.] [Istruzioni di attivazione (se presenti).]». Vedi regola 113, «Abilità», e regola 602, «Attivare le abilità attivate».
+@@Activation Cost
+Costo di attivazione
+Tutto ciò che appare prima dei due punti nel testo di un'abilità attivata. Deve essere pagato per attivare l'abilità. Vedi regola 118, «Costi», e regola 602, «Attivare le abilità attivate».
+@@Active Player
+Giocatore attivo
+Il giocatore di cui è il turno. Vedi regola 102.1.
+@@Active Player, Nonactive Player Order
+Ordine Giocatore Attivo, Giocatore Non Attivo (APNAP)
+Un sistema che stabilisce l'ordine in cui i giocatori fanno le scelte se più giocatori devono fare scelte nello stesso momento. Vedi regola 101.4. Questa regola è modificata per le partite che usano l'opzione dei turni di squadra condivisi; vedi regola 805.6.
+@@Active Team
+Squadra attiva
+La squadra di cui è il turno in una partita che usa l'opzione dei turni di squadra condivisi. Vedi regola 805.4a.
+@@Adapt
+Adattarsi
+Un'azione chiave che mette segnalini +1/+1 su una creatura che non ne ha ancora. Vedi regola 701.46, «Adattarsi».
+@@Additional Cost
+Costo aggiuntivo
+Un costo che una magia può avere e che il suo controllore può pagare (o, in alcuni casi, deve pagare) oltre al suo costo di mana per lanciare quella magia. Vedi regola 118, «Costi», e regola 601, «Lanciare magie».
+@@Adventurer Card
+Carta avventuriero
+Carte con una cornice in due parti (una delle quali è inserita a sinistra) su un'unica carta, in cui le caratteristiche alternative includono il tipo di magia Avventura. Vedi regola 715, «Carte avventuriero».
+@@Affinity
+Affinità
+Un'abilità chiave che riduce la quantità di mana che devi spendere per lanciare una magia. Vedi regola 702.41, «Affinità».
+@@Afflict
+Affliggere
+Un'abilità chiave che fa perdere punti vita al giocatore in difesa quando blocca. Vedi regola 702.130, «Affliggere».
+@@Afterlife
+Aldilà (Afterlife)
+Un'abilità chiave che lascia pedine creatura Spirito quando certe creature muoiono. Vedi regola 702.135, «Aldilà».
+@@Aftermath
+Conseguenza (Aftermath)
+Un'abilità chiave che permette a un giocatore di lanciare una metà di una carta divisa solo dal suo cimitero. Vedi regola 702.127, «Conseguenza».
+@@Airbend
+Dominare l'aria (Airbend)
+Un'azione chiave che esilia uno o più permanenti e/o magie. Il proprietario di ogni carta esiliata con dominare l'aria può lanciarla dall'esilio pagando {2} invece di pagare il suo costo di mana. Vedi regola 701.65, «Dominare l'aria».
+@@Alternate Name
+Nome alternativo
+Un nome diverso usato su versioni promozionali o con illustrazione alternativa di alcune carte. Questo nome non ha significato nelle regole. Vedi regola 201.6.
+@@Alternating Teams Variant
+Variante a squadre alternate
+Una variante multigiocatore giocata tra due o più squadre della stessa dimensione. Vedi regola 811, «Variante a squadre alternate».
+@@Alternative Cost
+Costo alternativo
+Un costo che una magia può avere e che il suo controllore può pagare invece del suo costo di mana. Vedi regola 118, «Costi», e regola 601, «Lanciare magie».
+@@Amass
+Ammassare
+Un'azione chiave che ti dà una pedina creatura Zombie Esercito o fa crescere un Esercito che hai già. Vedi regola 701.47, «Ammassare».
+@@Amplify
+Amplificare
+Un'abilità chiave che può far entrare una creatura nel campo di battaglia con segnalini +1/+1 su di sé. Vedi regola 702.38, «Amplificare».
+@@Anchor Word
+Parola àncora
+Una parola che precede una delle due abilità con cui un permanente può entrare nel campo di battaglia. Vedi regola 614.12b.
+@@Annihilator
+Annientatore
+Un'abilità chiave che può rendere una creatura particolarmente brutale quando attacca. Vedi regola 702.86, «Annientatore».
+@@Ante
+Posta
+1. Una zona usata solo quando si gioca «sul serio» (per tenersi le carte vinte). 2. Mettere una carta nella zona della posta. Vedi regola 407, «Posta».
+@@Any Target
+Qualsiasi bersaglio
+Una magia o abilità può richiedere «qualsiasi bersaglio». «Qualsiasi bersaglio» equivale a «creatura, giocatore, planeswalker o battaglia bersaglio». Vedi regola 115.4.
+@@APNAP Order
+Ordine APNAP
+Vedi Ordine Giocatore Attivo, Giocatore Non Attivo.
+@@Archenemy
+Archenemy (Arcinemico)
+1. Una variante casual in cui una squadra di giocatori affronta un singolo avversario rafforzato da potenti carte piano. Vedi regola 904, «Archenemy». 2. Un giocatore in una partita Archenemy che gioca con un mazzo dei piani.
+@@Archenemy Commander
+Archenemy Commander
+Una partita Commander che segue una versione modificata delle regole Archenemy. Vedi regola 903, «Commander», e regola 904, «Archenemy».
+@@Artifact
+Artefatto
+Un tipo di carta. Un artefatto è un permanente. Vedi regola 301, «Artefatti».
+@@Artifact Creature
+Creatura artefatto
+Una combinazione di artefatto e creatura soggetta alle regole di entrambi. Vedi regola 301, «Artefatti», e regola 302, «Creature».
+@@Artifact Land
+Terra artefatto
+Una combinazione di artefatto e terra soggetta alle regole di entrambi. Le terre artefatto possono essere giocate solo come terre, non lanciate come magie. Vedi regola 301, «Artefatti», e regola 305, «Terre».
+@@Artifact Type
+Tipo di artefatto
+Un sottotipo correlato al tipo di carta artefatto. Vedi regola 301, «Artefatti». Vedi regola 205.3g per l'elenco dei tipi di artefatto.
+@@As Though
+Come se
+Testo usato per indicare che la partita, per uno scopo specifico, tratta una condizione come vera anche se non lo è. Vedi regola 609.4.
+@@Ascend
+Ascesa (Ascend)
+Una parola chiave che fa ottenere a un giocatore la designazione della benedizione della città una volta che controlla dieci permanenti. Vedi regola 702.131, «Ascesa».
+@@Assemble
+Assemblare
+Assemblare è un'azione chiave dell'espansione Unstable che mette Congegni sul campo di battaglia. Le carte e le meccaniche dell'espansione Unstable non sono incluse in queste regole.
+@@Assign Combat Damage
+Assegnare il danno da combattimento
+Stabilire come una creatura attaccante o bloccante infliggerà il suo danno da combattimento. Vedi regola 510, «Sottofase di danno da combattimento».
+@@Assist
+Assistere
+Un'abilità chiave che permette a un altro giocatore di aiutarti a pagare una magia. Vedi regola 702.132, «Assistere».
+@@At End of Turn (Obsolete)
+Alla fine del turno (obsoleto)
+Una condizione di innesco stampata su abilità che si innescavano all'inizio della sottofase finale (che non è l'ultima cosa che avviene nel turno). Le carte stampate con quel testo hanno ricevuto errata nel riferimento Oracle e ora dicono «all'inizio della sottofase finale» o «all'inizio della prossima sottofase finale». Vedi regola 513, «Sottofase finale».
+@@Attach
+Assegnare
+Prendere un'Aura, un Equipaggiamento o una Fortificazione da dove si trova e metterlo su un oggetto o giocatore specificato. Vedi regola 701.3, «Assegnare».
+@@Attack
+Attaccare
+Mandare in combattimento una creatura in modo offensivo. Una creatura può attaccare un giocatore o un planeswalker. Vedi regola 508, «Sottofase di dichiarazione degli attaccanti».
+@@Attack Alone
+Attaccare da sola
+Una creatura «attacca da sola» se è l'unica creatura dichiarata come attaccante durante la sottofase di dichiarazione degli attaccanti. Una creatura «sta attaccando da sola» se sta attaccando ma nessun'altra creatura lo sta facendo. Vedi regola 506.5.
+@@Attack Left Option
+Opzione di attacco a sinistra
+Un'opzione che può essere usata in alcune varianti multigiocatore. Vedi regola 803, «Opzioni di attacco a sinistra e attacco a destra».
+@@Attack Multiple Players Option
+Opzione di attacco a più giocatori
+Un'opzione che può essere usata in alcune varianti multigiocatore. Vedi regola 802, «Opzione di attacco a più giocatori».
+@@Attack Right Option
+Opzione di attacco a destra
+Un'opzione che può essere usata in alcune varianti multigiocatore. Vedi regola 803, «Opzioni di attacco a sinistra e attacco a destra».
+@@Attacking Creature
+Creatura attaccante
+Una creatura che è stata dichiarata come parte di un attacco legale durante la fase di combattimento (una volta pagati gli eventuali costi per attaccare), oppure una creatura messa sul campo di battaglia attaccante. Resta una creatura attaccante finché non viene rimossa dal combattimento o finché non termina la fase di combattimento, a seconda di cosa avviene prima. Vedi regola 508, «Sottofase di dichiarazione degli attaccanti».
+@@Attacking Team
+Squadra attaccante
+La squadra che può attaccare durante la fase di combattimento di una partita multigiocatore che usa l'opzione dei turni di squadra condivisi. Vedi regola 805, «Opzione dei turni di squadra condivisi».
+@@Attacks and Isn’t Blocked
+Attacca e non viene bloccata
+Un'abilità che si innesca quando una creatura «attacca e non viene bloccata» si innesca quando la creatura diventa una creatura attaccante non bloccata. Vedi regola 509.1h.
+@@Attraction
+Attrazione
+Un tipo di artefatto presente solo su carte di Magic non tradizionali dell'espansione Unfinity. Vedi regola 717, «Carte Attrazione», regola 701.51, «Aprire un'Attrazione», e regola 701.52, «Tirare per visitare le tue Attrazioni».
+@@Attraction Deck
+Mazzo delle Attrazioni
+Un mazzo facoltativo di almeno tre (nel gioco limitato) o dieci (nel gioco costruito) carte Attrazione che può essere usato per giocare con alcune carte dell'espansione Unfinity. Vedi regola 717.2.
+@@Aura
+Aura
+Un sottotipo di incantesimo. Le magie Aura bersagliano oggetti o giocatori, e i permanenti Aura sono assegnati a oggetti o giocatori. Vedi regola 303, «Incantesimi», e regola 702.5, «Incanta».
+@@Aura Swap
+Scambio di Aura (Aura swap)
+Un'abilità chiave che ti permette di scambiare un'Aura sul campo di battaglia con una nella tua mano. Vedi regola 702.65, «Scambio di Aura».
+@@Awaken
+Risvegliare (Awaken)
+Un'abilità chiave che ti permette di trasformare in creatura una terra che controlli. Vedi regola 702.113, «Risvegliare».
+@@Background
+Background
+Un tipo di incantesimo che, in combinazione con l'abilità «scegli un Background», può permettere a una carta incantesimo leggendario di essere il tuo comandante. Vedi regola 702.124, «Partner», e regola 903, «Commander».
+@@Backup
+Supporto (Backup)
+Un'abilità chiave che permette a una creatura di dare segnalini +1/+1 a se stessa o a un'altra quando entra nel campo di battaglia. Se viene scelta una creatura diversa, quella creatura ottiene anche temporaneamente una o più abilità. Vedi regola 702.165, «Supporto».
+@@Banding, “Bands with Other”
+Unione, «Si unisce con altre» (Banding)
+Unione è un'abilità chiave che modifica le regole per dichiarare gli attaccanti e assegnare il danno da combattimento. «Si unisce con altre» è una versione specializzata dell'abilità. Vedi regola 702.22, «Unione».
+@@Bargain
+Patto (Bargain)
+Patto è un'abilità chiave che rappresenta un costo aggiuntivo facoltativo di sacrificare un artefatto, un incantesimo o una pedina. Una magia è stata pattuita se il suo controllore ha dichiarato l'intenzione di pagare quel costo. Vedi regola 702.166, «Patto».
+@@Base Power, Base Toughness
+Forza base, costituzione base
+Gli effetti che modificano la forza base e/o la costituzione base di una creatura impostano uno o entrambi quei valori a un numero specifico. Vedi regola 613, «Interazione degli effetti continui».
+@@Basic
+Base
+Un supertipo che normalmente è rilevante sulle terre. Qualsiasi terra con questo supertipo è una terra base. Vedi regola 205.4, «Supertipi».
+@@Basic Land Type
+Tipo di terra base
+Ci sono cinque «tipi di terra base»: Pianura, Isola, Palude, Montagna e Foresta. A ognuno è associata un'abilità di mana. Vedi regola 305, «Terre».
+@@Basic Landcycling
+Ciclo terra base
+Vedi Ciclo di tipo.
+@@Battle
+Battaglia
+Un tipo di carta. Una battaglia è un permanente. Vedi regola 310, «Battaglie».
+@@Battle Cry
+Grido di battaglia
+Un'abilità chiave che rende migliori in combattimento le altre creature attaccanti. Vedi regola 702.91, «Grido di battaglia».
+@@Battlefield
+Campo di battaglia
+Una zona. Il campo di battaglia è la zona in cui esistono i permanenti. Un tempo era nota come zona «in gioco». Vedi regola 403, «Campo di battaglia».
+@@Becomes
+Diventa
+Una parola usata in alcuni eventi di innesco per indicare un cambiamento di stato o di caratteristiche. Vedi regola 603.2e.
+@@Beginning of Combat Step
+Sottofase di inizio combattimento
+Parte del turno. Questa sottofase è la prima sottofase della fase di combattimento. Vedi regola 507, «Sottofase di inizio combattimento».
+@@Beginning Phase
+Fase iniziale
+Parte del turno. Questa fase è la prima fase del turno. Vedi regola 501, «Fase iniziale».
+@@Behold
+Mostrare (Behold)
+Un'azione chiave che permette a un giocatore di scegliere un permanente che controlla con una particolare qualità o di rivelare dalla sua mano una carta con quella qualità, di solito per pagare un costo o ottenere un effetto aggiuntivo. Vedi regola 701.4, «Mostrare».
+@@Bestow
+Conferire (Bestow)
+Un'abilità chiave che permette di lanciare una carta creatura come Aura. Vedi regola 702.103, «Conferire».
+@@Blight
+Avvizzire (Blight)
+Un'azione chiave. Fare blight N significa mettere N segnalini -1/-1 su una creatura che controlli. Vedi regola 701.68, «Avvizzire».
+@@Blitz
+Blitz
+Un'abilità chiave presente su carte creatura che permette di lanciarle per un costo alternativo. Vedi regola 702.152, «Blitz».
+@@Block
+Bloccare
+Mandare in combattimento una creatura in modo difensivo. Una creatura può bloccare una creatura attaccante. Vedi regola 509, «Sottofase di dichiarazione dei bloccanti».
+@@Block Alone
+Bloccare da sola
+Una creatura «blocca da sola» se è l'unica creatura dichiarata come bloccante durante la sottofase di dichiarazione dei bloccanti. Una creatura «sta bloccando da sola» se sta bloccando ma nessun'altra creatura lo sta facendo. Vedi regola 506.5.
+@@Blocked Creature
+Creatura bloccata
+Una creatura attaccante che un'altra creatura blocca o che un effetto fa diventare bloccata. Resta una creatura bloccata finché non viene rimossa dal combattimento, un effetto non dice che diventa non bloccata o non termina la fase di combattimento, a seconda di cosa avviene prima. Vedi regola 509, «Sottofase di dichiarazione dei bloccanti».
+@@Blocking Creature
+Creatura bloccante
+Una creatura che è stata dichiarata come parte di un blocco legale durante la fase di combattimento (una volta pagati gli eventuali costi per bloccare), oppure una creatura messa sul campo di battaglia bloccante. Resta una creatura bloccante finché non viene rimossa dal combattimento o finché non termina la fase di combattimento, a seconda di cosa avviene prima. Vedi regola 509, «Sottofase di dichiarazione dei bloccanti».
+@@Blood Token
+Pedina Sangue
+Una pedina Sangue è una pedina artefatto incolore con «{1}, {T}, Scarta una carta, Sacrifica questa pedina: Pesca una carta». Per maggiori informazioni sulle pedine predefinite, vedi regola 111.10.
+@@Bloodthirst
+Sete di sangue
+Un'abilità chiave che può far entrare una creatura nel campo di battaglia con segnalini +1/+1 su di sé. Vedi regola 702.54, «Sete di sangue».
+@@Boast
+Vanto (Boast)
+Un'abilità attivata che può essere attivata solo una volta per turno se la creatura con l'abilità vanto ha attaccato in quel turno. Vedi regola 702.142, «Vanto».
+@@Bolster
+Rafforzare (Bolster)
+Un'azione chiave che mette segnalini +1/+1 sulla creatura più debole controllata da un giocatore. Vedi regola 701.39, «Rafforzare».
+@@Booster Pack
+Busta
+Un gruppo di carte di Magic non aperte di una particolare espansione. Le buste vengono usate nei formati limitati. Vedi regola 100.2b.
+@@Brawl
+Brawl
+Un'opzione della variante casual Commander. Vedi regola 903.12, «Opzione Brawl».
+@@Bury (Obsolete)
+Seppellire (obsoleto)
+Un termine che significava «metti [un permanente] nel cimitero del suo proprietario». In generale, le carte stampate con il termine «seppellire» hanno ricevuto errata nel riferimento Oracle e ora dicono «Distruggi [un permanente]. Non può essere rigenerato» oppure «Sacrifica [un permanente]».
+@@Bushido
+Bushido
+Un'abilità chiave che può rendere una creatura migliore in combattimento. Vedi regola 702.45, «Bushido».
+@@Buyback
+Riacquisto (Buyback)
+Un'abilità chiave di istantanei e stregonerie che può far tornare la magia nella mano del suo proprietario mentre si risolve. Vedi regola 702.27, «Riacquisto».
+@@Card
+Carta
+Il componente standard del gioco. Le carte di Magic possono essere tradizionali o non tradizionali. Le pedine non sono considerate carte. Nel testo di magie o abilità, il termine «carta» viene usato solo per indicare una carta che non è sul campo di battaglia o in pila, come una carta creatura nella mano di un giocatore. Vedi regola 108, «Carte».
+@@Card Pool
+Pool di carte
+In un formato limitato, le carte che un giocatore può usare, oltre alle carte terra base, per costruire il suo mazzo.
+@@Card Type
+Tipo di carta
+Una caratteristica. Fatta eccezione per le abilità in pila, ogni oggetto ha un tipo di carta, anche se quell'oggetto non è una carta. Ogni tipo di carta ha le proprie regole. Vedi regola 205, «Riga del tipo», e sezione 3, «Tipi di carta».
+@@Cascade
+Cascata
+Un'abilità chiave che può permettere a un giocatore di lanciare gratis una magia extra casuale. Vedi regola 702.85, «Cascata».
+@@Case
+Caso
+Un sottotipo di incantesimo. I Casi hanno un'abilità «per risolverlo» che stabilisce una condizione che il loro controllore deve soddisfare perché l'abilità «risolto» abbia effetto. Vedi regola 719, «Carte Caso».
+@@Cast
+Lanciare
+Prendere una carta da dove si trova (di solito la mano), metterla in pila e pagarne i costi, in modo che alla fine si risolva e abbia il suo effetto. Vedi regola 601, «Lanciare magie».
+@@Caster (Obsolete)
+Lanciatore (obsoleto)
+Un termine obsoleto che indicava il giocatore che ha lanciato una magia. In generale, le carte stampate con il termine «lanciatore» hanno ricevuto errata nel riferimento Oracle e ora dicono «controllore».
+@@Casting Cost (Obsolete)
+Costo di lancio (obsoleto)
+Un termine obsoleto per costo di mana. Le carte stampate con questo testo hanno ricevuto errata nel riferimento Oracle.
+@@Casualty
+Vittima (Casualty)
+Un'abilità chiave che ti permette di sacrificare una creatura per creare una copia di una magia. Vedi 702.153, «Vittima».
+@@Champion, Championed
+Campione, sostenuto come campione
+«Campione» è un'abilità chiave che permette a una creatura di sostituirne temporaneamente un'altra. Un permanente è «sostenuto come campione» da un altro permanente se quest'ultimo esilia il primo come risultato diretto di un'abilità campione. Vedi regola 702.72, «Campione».
+@@Change a Target
+Cambiare un bersaglio
+Scegliere un nuovo bersaglio legale per una magia o abilità. Vedi regola 115.7.
+@@Changeling
+Mutaforma (Changeling)
+Un'abilità che definisce caratteristiche che conferisce all'oggetto su cui si trova ogni tipo di creatura. Vedi regola 702.73, «Mutaforma».
+@@Chaos Ability
+Abilità del caos
+Un'abilità di una carta piano che si innesca «Ogni volta che si scatena il caos» nella variante casual Planechase. Vedi regola 311.7.
+@@Chaos Symbol
+Simbolo del caos
+Il simbolo del caos compare sul dado planare e vicino ad alcune abilità innescate delle carte piano nella variante casual Planechase. Vedi regola 107.12.
+@@Characteristic-Defining Ability
+Abilità che definisce caratteristiche
+Un tipo di abilità statica che fornisce informazioni sulle caratteristiche di un oggetto che normalmente si troverebbero altrove su quell'oggetto (come nel suo costo di mana, nella riga del tipo o nel riquadro di forza/costituzione). Vedi regola 604.3.
+@@Characteristics
+Caratteristiche
+Informazioni che definiscono un oggetto. Vedi regola 109.3.
+@@Choose a Background
+Scegli un Background
+Una variante dell'abilità partner che permette a due carte permanente leggendarie di essere il tuo comandante nella variante Commander invece di una, se una di esse ha l'abilità «scegli un Background» e l'altra è una carta incantesimo Background. Vedi regola 702.124, «Partner», e regola 903, «Commander».
+@@Cipher
+Cifrare (Cipher)
+Un'abilità chiave che ti permette di codificare una carta su una creatura e di lanciare quella carta ogni volta che quella creatura infligge danno da combattimento a un giocatore. Vedi regola 702.99, «Cifrare».
+@@City’s Blessing
+Benedizione della città
+Una designazione che un giocatore può avere. La parola chiave ascesa fa ottenere a un giocatore questa designazione una volta che controlla dieci permanenti. Vedi regola 702.131, «Ascesa».
+@@Clash
+Scontro (Clash)
+Fare una piccola sfida che coinvolge le prime carte dei grimori dei giocatori. Vedi regola 701.30, «Scontro».
+@@Class
+Classe
+Un sottotipo di incantesimo. Le Classi hanno diverse abilità di livello di classe che ne aumentano il livello e conferiscono loro nuove abilità. Vedi regola 716, «Carte Classe».
+@@Cleanup Step
+Sottofase di cancellazione
+Parte del turno. Questa sottofase è la seconda e ultima sottofase della fase finale. Vedi regola 514, «Sottofase di cancellazione».
+@@Cleave
+Fendere (Cleave)
+Un'abilità chiave che ti permette di pagare un costo alternativo per rimuovere parte del testo di una magia. Vedi regola 702.148, «Fendere».
+@@Cloak
+Celare (Cloak)
+Un'azione chiave che mette una carta sul campo di battaglia a faccia in giù come creatura 2/2 con custode {2}. Vedi regola 701.58, «Celare», e regola 708, «Magie e permanenti a faccia in giù».
+@@Clue Token
+Pedina Indizio
+Una pedina Indizio è una pedina artefatto incolore con «{2}, Sacrifica questa pedina: Pesca una carta». Per maggiori informazioni sulle pedine predefinite, vedi regola 111.10.
+@@Collect Evidence
+Raccogliere prove
+Un'azione chiave. «Raccogliere prove N» significa esiliare dal tuo cimitero un qualsiasi numero di carte con valore di mana totale pari o superiore a N. Vedi regola 701.59, «Raccogliere prove».
+@@Collector Number
+Numero da collezione
+Un numero stampato sulla maggior parte delle carte che non ha alcun effetto sul gioco. Vedi regola 213, «Informazioni sotto il riquadro di testo».
+@@Color
+Colore
+1. Una caratteristica di un oggetto. Vedi regola 105, «Colori», e regola 202, «Costo di mana e colore». 2. Un attributo che il mana può avere. Vedi regola 106, «Mana».
+@@Color Identity
+Identità di colore
+Un insieme di colori che stabilisce quali carte possono essere incluse in un mazzo per la variante casual Commander. Vedi regola 903.4.
+@@Color Indicator
+Indicatore di colore
+Una caratteristica di un oggetto. Vedi regola 105, «Colori», e regola 204, «Indicatore di colore».
+@@Colorless
+Incolore
+1. Un oggetto senza colore è incolore. Incolore non è un colore. Vedi regola 105, «Colori», e regola 202, «Costo di mana e colore». 2. Un tipo di mana. Vedi regola 106, «Mana», e regola 107.4c.
+@@Combat Damage
+Danno da combattimento
+Il danno inflitto durante la sottofase di danno da combattimento dalle creature attaccanti e bloccanti come conseguenza del combattimento. Vedi regola 510, «Sottofase di danno da combattimento».
+@@Combat Damage Step
+Sottofase di danno da combattimento
+Parte del turno. Questa sottofase è la quarta sottofase della fase di combattimento. Vedi regola 510, «Sottofase di danno da combattimento».
+@@Combat Phase
+Fase di combattimento
+Parte del turno. Questa fase è la terza fase del turno. Vedi regola 506, «Fase di combattimento».
+@@Command
+Comando
+Una zona per alcuni oggetti specializzati che hanno un effetto generale sulla partita, ma non sono permanenti e non possono essere distrutti. Vedi regola 408, «Comando».
+@@Commander
+Commander, comandante
+1. Una variante casual in cui ogni mazzo è guidato da una carta leggendaria (di solito una creatura). Vedi regola 903, «Commander». 2. Una designazione data a una carta leggendaria nel mazzo di ogni giocatore nella variante casual Commander.
+@@Commander Draft
+Commander Draft
+Una variante casual in cui i giocatori partecipano a un draft di buste e poi giocano partite multigiocatore. Vedi regola 903.13, «Commander Draft».
+@@Commander Ninjutsu
+Ninjutsu del comandante
+Una variante dell'abilità ninjutsu. Vedi regola 702.49, «Ninjutsu».
+@@Commander Tax
+Tassa del comandante
+Termine informale per il costo aggiuntivo per lanciare un comandante, basato sul numero di volte in cui un giocatore lo ha lanciato in precedenza in questa partita. Vedi regola 903.8.
+@@Companion
+Compagno (Companion)
+Un'abilità chiave che permette a un giocatore di scegliere una carta creatura da fuori dalla partita come compagno se è soddisfatta la restrizione dell'abilità compagno di quella carta. Una volta che un giocatore ha scelto un compagno, quel giocatore può pagare {3} per aggiungerlo alla sua mano una volta durante la partita. Vedi regola 702.139, «Compagno».
+@@Compleated
+Completato (Compleated)
+Un'abilità chiave che fa entrare un planeswalker nel campo di battaglia con meno segnalini fedeltà se un giocatore ha scelto di pagare punti vita per i simboli di mana phyrexiano nel suo costo. Vedi regola 702.150, «Completato».
+@@Complete a Dungeon
+Completare un dungeon
+Rimuovere una carta dungeon dalla partita dopo aver raggiunto la stanza più in basso di quella carta dungeon. Vedi regola 309, «Dungeon».
+@@Concede
+Concedere
+Abbandonare la partita. Concedere una partita fa sì che quel giocatore lasci immediatamente quella partita e la perda. Vedi regola 104, «Fine della partita».
+@@Connive
+Tramare (Connive)
+Un'azione chiave che fa pescare una carta a un giocatore, fargli scartare una carta e poi mettere un segnalino +1/+1 su una creatura se in questo modo è stata scartata una carta non terra. Vedi regola 701.50, «Tramare».
+@@Conspiracy
+Cospirazione
+Un tipo di carta usato nei formati limitati come Conspiracy Draft. Una carta cospirazione non è un permanente. Vedi regola 315, «Cospirazioni».
+@@Conspiracy Draft
+Conspiracy Draft
+Una variante casual in cui i giocatori partecipano a un draft di buste e poi giocano partite multigiocatore. Vedi regola 905, «Conspiracy Draft».
+@@Conspire
+Cospirare
+Un'abilità chiave che crea una copia di una magia. Vedi regola 702.78, «Cospirare».
+@@Constructed
+Costruito
+Un modo di giocare in cui ogni giocatore crea il proprio mazzo in anticipo. Vedi regola 100.2a.
+@@Continuous Artifact (Obsolete)
+Artefatto continuo (obsoleto)
+Un termine obsoleto che compariva sulla riga del tipo degli artefatti senza abilità attivate. Le carte stampate con questo testo hanno ricevuto errata nel riferimento Oracle e ora dicono semplicemente «Artefatto».

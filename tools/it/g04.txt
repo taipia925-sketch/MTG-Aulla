@@ -1,0 +1,454 @@
+@@Room
+Stanza
+1. Una sottosezione di una carta dungeon. Vedi regola 309, «Dungeon».
+2. Un sottotipo di incantesimo presente su alcune carte divise. Vedi regola 709, «Carte divise».
+@@Room Ability
+Abilità di stanza
+Un'abilità innescata che si innesca ogni volta che un giocatore sposta il suo segnalino avventura in una stanza di una carta dungeon. Vedi regola 309, «Dungeon».
+@@Rules Text
+Testo delle regole
+Una caratteristica che definisce le abilità di una carta. Vedi regola 207.1.
+@@Sacrifice
+Sacrificare
+Spostare un permanente che controlli nel cimitero del suo proprietario. Vedi regola 701.21, «Sacrificare».
+@@Saddle
+Sellare (Saddle)
+Un'abilità chiave che ti permette di TAPpare creature per rendere un'altra creatura «sellata» fino alla fine del turno. Vedi regola 702.171, «Sellare».
+@@Saddled
+Sellata
+Una designazione data a una creatura la cui abilità sellare si è risolta. Vedi regola 702.171, «Sellare».
+@@Saga
+Saga
+Un sottotipo di incantesimo. Le Saghe hanno diverse abilità di capitolo che hanno effetto nel corso di più turni per raccontare una storia. Vedi regola 714, «Carte Saga».
+@@Scavenge
+Sciacallare (Scavenge)
+Un'abilità chiave che ti permette di esiliare una carta creatura dal tuo cimitero per mettere segnalini +1/+1 su una creatura. Vedi regola 702.97, «Sciacallare».
+@@Scheme
+Piano malvagio (Scheme)
+Un tipo di carta presente solo su carte di Magic non tradizionali nella variante casual Archenemy. Una carta piano malvagio non è un permanente. Vedi regola 314, «Piani malvagi».
+@@Scheme Deck
+Mazzo dei piani
+Un mazzo di almeno venti carte piano malvagio necessario per giocare la variante casual Archenemy. Vedi regola 904.3.
+@@Scry
+Profetizzare
+Manipolare alcune delle carte in cima al tuo grimorio. Vedi regola 701.22, «Profetizzare».
+@@Search
+Passare in rassegna
+Guardare tutte le carte in una zona indicata ed eventualmente trovare una carta che corrisponde a una certa descrizione. Vedi regola 701.23, «Passare in rassegna».
+@@Secondary Title Bar
+Barra del titolo secondaria
+Una riga del nome più piccola con il nome di riferimento Oracle di una carta che ha un nome alternativo nel suo angolo in alto a sinistra. Vedi regola 201.6.
+@@Set Aside (Obsolete)
+Mettere da parte (obsoleto)
+«Metti [qualcosa] da parte» è un termine obsoleto per «esilia [qualcosa]». Le carte con quel testo hanno ricevuto errata nel riferimento Oracle. Vedi Esilio.
+@@Set in Motion
+Mettere in moto
+Togliere una carta piano malvagio dalla cima del tuo mazzo dei piani e girarla a faccia in su. Vedi regola 701.32, «Mettere in moto».
+@@Shadow
+Ombra
+Un'abilità chiave che limita il modo in cui una creatura può essere bloccata e quali creature può bloccare. Vedi regola 702.28, «Ombra».
+@@Shard Token
+Pedina Scheggia (Shard)
+Una pedina Scheggia è una pedina incantesimo incolore con «{2}, Sacrifica questa pedina: Profetizza 1, poi pesca una carta». Per maggiori informazioni sulle pedine predefinite, vedi regola 111.10.
+@@Shared Life Total
+Totale di punti vita condiviso
+Nella variante multigiocatore Two-Headed Giant, ogni squadra ha un «totale di punti vita condiviso» invece di un totale di punti vita individuale per ciascun giocatore. Vedi regola 810, «Variante Two-Headed Giant».
+@@Shared Team Turns Option
+Opzione dei turni di squadra condivisi
+Un'opzione che può essere usata in alcune varianti multigiocatore, come Two-Headed Giant e Archenemy. Vedi regola 805, «Opzione dei turni di squadra condivisi».
+@@Shield Counter
+Segnalino scudo
+Un segnalino che protegge un permanente dall'essere danneggiato o distrutto. Vedi regola 122.1c.
+@@Shortcut
+Scorciatoia
+Un modo compreso da tutti per far avanzare la partita di un certo numero di scelte di gioco (compiere un'azione o passare la priorità) senza che i giocatori debbano identificare esplicitamente ciascuna di quelle scelte. Vedi regola 732, «Usare scorciatoie».
+@@Shroud
+Velo
+Un'abilità chiave che impedisce che un permanente o un giocatore venga bersagliato. Vedi regola 702.18, «Velo».
+@@Shuffle
+Mescolare
+Rendere casuale l'ordine delle carte di un mazzo (prima di una partita) o di un grimorio (durante una partita). Vedi regola 103.3 e regola 701.24.
+@@Sideboard
+Sideboard
+Carte extra che possono essere usate per modificare un mazzo tra le partite di un incontro. Vedi regole 100.4.
+@@Siege
+Assedio
+Un sottotipo di battaglia. Solo un avversario del controllore di un Assedio può esserne il protettore. Quando viene rimosso l'ultimo segnalino difesa, il suo controllore esilia l'Assedio, poi può lanciarlo trasformato senza pagare il suo costo di mana. Vedi regola 310.12.
+@@Silver-Bordered
+Bordo argentato
+Le carte di alcune espansioni e alcune carte promozionali sono stampate con un bordo argentato. Le carte con bordo argentato sono pensate per il gioco casual e possono avere caratteristiche e testi non coperti da queste regole.
+@@Skip
+Saltare
+Gli effetti che usano la parola «saltare» sono effetti di sostituzione. La parola «saltare» indica quali eventi, sottofasi, fasi o turni verranno sostituiti da nulla. Vedi regola 614, «Effetti di sostituzione».
+@@Skulk
+Furtività (Skulk)
+Un'abilità chiave che limita il modo in cui una creatura può essere bloccata. Vedi regola 702.118, «Furtività».
+@@Slivercycling
+Ciclo Sliver
+Vedi Ciclo di tipo.
+@@Sneak
+Sgattaiolare (Sneak)
+Un'abilità chiave che permette di lanciare una magia per un costo alternativo, che include far tornare nella mano del suo proprietario una creatura attaccante non bloccata. Le creature lanciate in questo modo entrano TAPpate e attaccanti.
+@@Snow
+Innevato
+Un supertipo che normalmente è rilevante sui permanenti. Vedi regola 205.4, «Supertipi».
+@@Snow Mana Symbol
+Simbolo di mana neve
+Il simbolo di mana neve {S} rappresenta un costo che può essere pagato con un mana prodotto da una fonte innevata. Può anche rappresentare mana proveniente da una fonte innevata speso per pagare un costo. Vedi regola 107.4h.
+@@Snow-Covered (Obsolete)
+Coperto di neve (obsoleto)
+Alcune carte più vecchie sono state stampate con il termine «coperto di neve» nel loro testo delle regole. Tranne quando fanno riferimento a nomi di carte, tali carte hanno ricevuto errata nel riferimento Oracle e ora fanno riferimento invece al supertipo «innevato». Vedi Innevato.
+@@Solved
+Risolto
+1. Una designazione che un Caso può avere e che permette alla sua ultima abilità di influenzare la partita. Vedi regola 719, «Carte Caso». 2. Un'abilità chiave delle carte Caso che influenza la partita solo se il Caso ha la designazione risolto. Vedi regola 702.169, «Risolto».
+@@Sorcery
+Stregoneria
+Un tipo di carta. Una stregoneria non è un permanente. Vedi regola 307, «Stregonerie».
+@@Soulbond
+Legame d'anima (Soulbond)
+Un'abilità chiave che migliora le creature abbinandole tra loro. Vedi regola 702.95, «Legame d'anima».
+@@Soulshift
+Trasmigrazione (Soulshift)
+Un'abilità chiave che permette a un giocatore di far tornare una carta dal suo cimitero nella sua mano. Vedi regola 702.46, «Trasmigrazione».
+@@Source of an Ability
+Fonte di un'abilità
+L'oggetto che ha generato quell'abilità. Vedi regola 113.7.
+@@Source of Damage
+Fonte di danno
+L'oggetto che ha inflitto quel danno. Vedi regola 609.7.
+@@Source of Mana
+Fonte di mana
+La magia che ha prodotto il mana o la fonte dell'abilità che ha prodotto il mana. Vedi regola 106.3.
+@@Space Sculptor
+Scultore spaziale (Space sculptor)
+Un'abilità chiave che divide in settori le creature sul campo di battaglia. Vedi regola 702.158, «Scultore spaziale».
+@@Special Action
+Azione speciale
+Un'azione che un giocatore può compiere e che non usa la pila. Vedi regola 116, «Azioni speciali».
+@@Spectacle
+Spettacolo
+Un'abilità chiave che permette di lanciare certe magie per un costo alternativo se un avversario ha perso punti vita. Vedi regola 702.137, «Spettacolo».
+@@Speed
+Velocità
+La velocità è un valore che un giocatore può avere. Vedi regola 702.179, «Accendete i motori!».
+@@Spell
+Magia
+Una carta in pila. Anche una copia (di una carta o di un'altra magia) in pila. Vedi regola 112, «Magie».
+@@Spell Ability
+Abilità di magia
+Un tipo di abilità. Le abilità di magia sono abilità che vengono seguite come istruzioni mentre si risolve una magia istantaneo o stregoneria. Vedi regola 113.3a.
+@@Spell Type
+Tipo di magia
+Un sottotipo correlato ai tipi di carta istantaneo e stregoneria. Vedi regola 304, «Istantanei», e regola 307, «Stregonerie». Vedi regola 205.3k per l'elenco dei tipi di magia.
+@@Splice
+Giuntura (Splice)
+Un'abilità chiave che permette a un giocatore di aggiungere il testo delle regole di una carta a un'altra magia. Vedi regola 702.47, «Giuntura».
+@@Split Cards
+Carte divise
+Carte con due facce su un'unica carta. Vedi regola 709, «Carte divise».
+@@Split Second
+Frazione di secondo (Split second)
+Un'abilità chiave che rende quasi impossibile per un giocatore rispondere a una magia. Vedi regola 702.61, «Frazione di secondo».
+@@Spree
+Baldoria (Spree)
+Un'abilità presente su alcune magie modali che ti permette di scegliere uno o più modi e ti richiede di pagare costi aggiuntivi per quei modi. Vedi regola 702.172, «Baldoria».
+@@Squad
+Squadra (Squad)
+Un'abilità chiave che crea copie di una creatura quando entra nel campo di battaglia. Vedi regola 702.157, «Squadra».
+@@Stack
+Pila
+Una zona. La pila è la zona in cui magie, abilità attivate e abilità innescate attendono di risolversi. Vedi regola 405, «Pila».
+@@Start Your Engines!
+Accendete i motori! (Start Your Engines!)
+Un'abilità chiave che dà a un giocatore velocità 1 se non ha velocità. Una volta che un giocatore ha velocità, la sua velocità aumenta una volta in ciascuno dei suoi turni quando un avversario perde punti vita. Vedi regola 702.179, «Accendete i motori!».
+@@Starting Deck
+Mazzo iniziale
+Dopo che un giocatore ha messo da parte la sua sideboard, il mazzo rimanente diventa il suo mazzo iniziale. Vedi regola 103.2a.
+@@Starting Hand Size
+Dimensione della mano iniziale
+Il numero di carte che un giocatore pesca all'inizio di una partita. Nella maggior parte delle partite, la dimensione della mano iniziale di ogni giocatore è sette. Vedi regola 103.5.
+@@Starting Life Total
+Totale di punti vita iniziale
+La quantità di punti vita che un giocatore ha all'inizio di una partita. Nella maggior parte delle partite, il totale di punti vita iniziale di ogni giocatore è 20. Vedi regola 103.4.
+@@Starting Player
+Giocatore iniziale
+Il giocatore scelto per giocare il primo turno di una partita. Vedi regola 103.1.
+@@Starting Team
+Squadra iniziale
+La squadra scelta per giocare il primo turno di una partita che usa l'opzione dei turni di squadra condivisi. Vedi regola 103.1.
+@@State Trigger
+Innesco di stato
+Un'abilità innescata che si innesca quando uno stato di gioco è vero invece di innescarsi quando avviene un evento. Vedi regola 603.8.
+@@State-Based Actions
+Azioni generate dallo stato
+Azioni di gioco che avvengono automaticamente ogni volta che si verificano certe condizioni. Vedi regola 704, «Azioni generate dallo stato».
+@@Static Ability
+Abilità statica
+Un tipo di abilità. Le abilità statiche fanno qualcosa in ogni momento invece di essere attivate o innescate. Vedi regola 113, «Abilità», e regola 604, «Gestire le abilità statiche».
+@@Station
+Stazione (Station)
+Un'abilità chiave che ti permette di TAPpare creature per aggiungere segnalini carica alle carte stazione. Vedi regola 702.184, «Stazione», e regola 721, «Carte stazione».
+@@Station Cards
+Carte stazione
+Carte con riquadri di testo a fasce, uno o più simboli di stazione e l'abilità stazione. Vedi regola 721, «Carte stazione».
+@@Status
+Stato
+La condizione fisica di un permanente. Vedi regola 110.5.
+@@Step
+Sottofase
+Una sottosezione di una fase. Vedi sezione 5, «Struttura del turno».
+@@Sticker
+Adesivo
+Un indicatore messo su un oggetto che ne modifica le caratteristiche o interagisce con una regola o un effetto. Vedi regola 123, «Adesivi».
+@@Sticker Kicker
+Potenziamento adesivo (Sticker kicker)
+Una variante di potenziamento che può aggiungere un adesivo alla magia con l'abilità e dare a un giocatore un segnalino biglietto. Vedi regola 702.33h.
+@@Sticker Sheet
+Foglio di adesivi
+L'insieme di adesivi presenti su un inserto nelle buste di Unfinity. Vedi regola 123, «Adesivi».
+@@Storied
+Storied
+Una parola chiave che fa ottenere a un giocatore la designazione storia duratura una volta che controlla tre o più permanenti che sono artefatti, Saghe e/o leggendari. Vedi regola 702.195, «Storied».
+@@Storm
+Tempesta
+Un'abilità chiave che crea copie di una magia. Vedi regola 702.40, «Tempesta».
+@@Stun Counter
+Segnalino stordimento
+Un segnalino che impedisce a un permanente di STAPparsi. Vedi regola 122.1d.
+@@Subgame
+Sottopartita
+Una partita di Magic completamente separata creata da un effetto. Vedi regola 729, «Sottopartite».
+@@Substitute Card
+Carta sostitutiva
+Un supplemento di gioco con il retro delle carte di Magic che può essere usato per rappresentare una carta bifronte o una carta da combinare. Vedi regola 713, «Carte sostitutive».
+@@Subtype
+Sottotipo
+Una caratteristica che appare dopo il tipo di carta e un trattino lungo sulla riga del tipo di una carta. Vedi regola 205.3, «Sottotipi».
+@@Successfully Cast (Obsolete)
+Lanciata con successo (obsoleto)
+Un termine stampato su alcune carte più vecchie. In generale, le carte che facevano riferimento a una magia «lanciata con successo» hanno ricevuto errata nel riferimento Oracle e ora fanno semplicemente riferimento a una magia «lanciata».
+@@Summon (Obsolete)
+Evoca (obsoleto)
+Le carte creatura più vecchie erano stampate con «Evoca [tipo di creatura]» sulla riga del tipo. Tutte quelle carte hanno ricevuto errata nel riferimento Oracle e ora dicono «Creatura — [tipo di creatura]». (Anche i tipi di creatura di molte di queste carte sono stati aggiornati.) Vedi Creatura.
+@@Summoning Sickness Rule
+Regola della debolezza da evocazione
+Termine informale per l'impossibilità di un giocatore di attaccare con una creatura o di attivarne le abilità che includono il simbolo di TAP o il simbolo di STAP, a meno che la creatura non sia sotto il controllo di quel giocatore dall'inizio del suo turno più recente. Vedi regola 302.6. Vedi anche Rapidità.
+@@Sunburst
+Sprazzo di sole (Sunburst)
+Un'abilità chiave che può far entrare un permanente nel campo di battaglia con segnalini +1/+1 o segnalini carica su di sé. Vedi regola 702.44, «Sprazzo di sole».
+@@Supertype
+Supertipo
+Una caratteristica che appare prima del tipo di carta sulla riga del tipo di una carta. La maggior parte delle carte non ha un supertipo. Vedi regola 205.4, «Supertipi».
+@@Supervillain Rumble
+Supervillain Rumble
+Una partita Tutti contro tutti in cui ogni giocatore è un arcinemico. Vedi regola 806, «Tutti contro tutti», e regola 904, «Archenemy».
+@@Support
+Sostenere (Support)
+Un'azione chiave che ti permette di mettere segnalini +1/+1 su creature. Vedi regola 701.41, «Sostenere».
+@@Surge
+Impeto (Surge)
+Un'abilità chiave che fornisce un costo alternativo per lanciare una carta se tu o uno dei tuoi compagni di squadra avete lanciato un'altra magia nello stesso turno. Vedi regola 702.117, «Impeto».
+@@Surveil
+Sorvegliare
+Manipolare alcune delle carte in cima al tuo grimorio, mandandone alcune nel tuo cimitero e riordinando le altre. Vedi regola 701.25, «Sorvegliare».
+@@Suspend
+Sospendere
+Un'abilità chiave che fornisce un modo alternativo per giocare una carta. Vedi regola 702.62, «Sospendere». Una carta è «sospesa» se si trova nella zona di esilio, ha sospendere e ha un segnalino tempo su di sé.
+@@Swamp
+Palude
+Uno dei cinque tipi di terra base. Qualsiasi terra con questo sottotipo ha l'abilità «{T}: Aggiungi {B}». Vedi regola 305.6.
+@@Swampcycling
+Ciclopalude
+Vedi Ciclo di tipo.
+@@Swampwalk
+Passapaludi
+Vedi Passaterre.
+@@Tap
+TAPpare
+Ruotare di lato un permanente dalla posizione verticale. Vedi regola 701.26, «TAPpare e STAPpare».
+@@Tap Symbol
+Simbolo di TAP
+Il simbolo di TAP {T} in un costo di attivazione significa «TAPpa questo permanente». Vedi regola 107.5.
+@@Tapped
+TAPpato
+Uno stato che un permanente può avere. Vedi regola 110.5 e regola 701.26, «TAPpare e STAPpare». Vedi anche STAPpato.
+@@Target
+Bersaglio
+Un oggetto o giocatore preselezionato che una magia o abilità influenzerà. Vedi regola 115, «Bersagli».
+@@Team
+Squadra
+Un gruppo di giocatori che condividono una condizione di vittoria comune in una partita multigiocatore. Vedi regola 808, «Variante Squadra contro squadra», regola 809, «Variante Imperatore», regola 810, «Variante Two-Headed Giant», e regola 811, «Variante a squadre alternate».
+@@Team vs. Team Variant
+Variante Squadra contro squadra
+Una variante multigiocatore giocata tra due o più squadre, ciascuna delle quali siede insieme. Vedi regola 808, «Variante Squadra contro squadra».
+@@Teammate
+Compagno di squadra
+In una partita multigiocatore tra squadre, i compagni di squadra di un giocatore sono gli altri giocatori della sua squadra. Vedi regola 102.3.
+@@Teamwork
+Lavoro di squadra (Teamwork)
+Un'abilità chiave che rappresenta un costo aggiuntivo facoltativo di TAPpare creature. Vedi regola 702.194, «Lavoro di squadra».
+@@Text Box
+Riquadro di testo
+Parte di una carta. Il riquadro di testo è stampato nella metà inferiore della carta e contiene il testo delle regole, il testo di richiamo e il testo di colore della carta. Vedi regola 207, «Riquadro di testo».
+@@Text-Changing Effect
+Effetto di modifica del testo
+Un effetto continuo che modifica il testo che appare nel riquadro di testo e/o nella riga del tipo di un oggetto. Vedi regola 612, «Effetti di modifica del testo».
+@@Threshold
+Soglia (Threshold)
+«Soglia» era un'abilità chiave. Ora è una parola di abilità e non ha significato nelle regole. Tutte le carte stampate con la parola chiave soglia hanno ricevuto errata nel riferimento Oracle.
+@@Ticket Symbol
+Simbolo del biglietto
+Il simbolo del biglietto {TK} senza numeri rappresenta un segnalino biglietto. Il simbolo del biglietto con un numero rappresenta un costo in biglietti. Per pagare un costo in biglietti, un giocatore rimuove da se stesso altrettanti segnalini biglietto.
+@@Tiered
+A livelli (Tiered)
+Un'abilità chiave presente su alcune magie modali che ti richiede di pagare un costo aggiuntivo per il modo che scegli. Vedi regola 702.183, «A livelli».
+@@Time Travel
+Viaggiare nel tempo
+Aggiungere o rimuovere un segnalino tempo da un qualsiasi numero di permanenti che controlli con un segnalino tempo su di sé o di carte sospese che possiedi in esilio con segnalini tempo su di sé. Vedi regola 701.56, «Viaggiare nel tempo».
+@@Timestamp Order
+Ordine delle marche temporali
+Un sistema usato per stabilire in quale ordine vengono applicati gli effetti continui nello stesso livello o sottolivello. Vedi regola 613.7. Vedi anche Dipendenza.
+@@Token
+Pedina
+Un indicatore usato per rappresentare qualsiasi permanente che non è rappresentato da una carta. Vedi regola 111, «Pedine».
+@@Tombstone Icon
+Icona della lapide
+Un'icona che compare in alto a sinistra su alcune carte del blocco di Odyssey e che non ha alcun effetto sul gioco. Vedi regola 107.9.
+@@Total Casting Cost (Obsolete)
+Costo di lancio totale (obsoleto)
+Un termine obsoleto per valore di mana. Le carte stampate con questo termine hanno ricevuto errata nel riferimento Oracle.
+@@Total Cost
+Costo totale
+Ciò che un giocatore deve effettivamente pagare, in termini pratici, per lanciare una magia o attivare un'abilità: il costo di mana, il costo di attivazione o il costo alternativo, più tutti gli aumenti di costo (inclusi i costi aggiuntivi) e meno tutte le riduzioni di costo. Vedi regola 601.2f.
+@@Totem Armor (Obsolete)
+Armatura totemica (obsoleto)
+Un'abilità chiave obsoleta che è stata rinominata. Vedi regola 702.89, «Armatura d'ombra».
+@@Toughness
+Costituzione
+1. Parte di una carta presente solo sulle carte creatura. La costituzione di una carta creatura è stampata dopo la barra nel suo angolo in basso a destra. Vedi regola 208, «Forza/Costituzione». 2. Una caratteristica che hanno solo le creature. Vedi regola 302.4.
+@@Tournament
+Torneo
+Un'attività di gioco organizzato in cui i giocatori competono contro altri giocatori. Vedi regola 100.6.
+@@Tournament Rules
+Regole dei tornei
+Regole aggiuntive che si applicano alle partite giocate in un torneo sanzionato. Vedi regola 100.6.
+@@Toxic
+Tossico
+Un'abilità chiave che fa prendere segnalini veleno a un giocatore a causa del danno da combattimento delle creature con l'abilità. Vedi regola 702.164, «Tossico».
+@@Traditional Magic Card
+Carta di Magic tradizionale
+Una carta di Magic che misura circa 6,3 per 8,8 centimetri (2,5 per 3,5 pollici) e che è inclusa nei mazzi dei giocatori. Vedi regola 108.2.
+@@Training
+Addestramento (Training)
+Un'abilità chiave che significa «Ogni volta che questa creatura e almeno un'altra creatura con forza maggiore della forza di questa creatura attaccano, metti un segnalino +1/+1 su questa creatura». Vedi regola 702.149, «Addestramento».
+@@Trample
+Travolgere
+Un'abilità chiave che modifica il modo in cui una creatura assegna il danno da combattimento. Vedi regola 702.19, «Travolgere».
+@@Trample Over Planeswalkers
+Travolgere sui planeswalker
+Una variante di travolgere che modifica il modo in cui una creatura assegna il danno da combattimento se sta attaccando un planeswalker. Vedi regola 702.19, «Travolgere».
+@@Transfigure
+Trasfigurare
+Un'abilità chiave che permette a un giocatore di passare in rassegna il suo grimorio per una carta creatura sostitutiva. Vedi regola 702.71, «Trasfigurare».
+@@Transform
+Trasformare
+Girare una carta bifronte in modo che sia rivolta verso l'alto la sua altra faccia. Vedi regola 701.27, «Trasformare».
+@@Transforming Double-Faced Cards (Obsolete)
+Carte bifronte trasformabili (obsoleto)
+Un vecchio nome delle carte bifronte non modali. Vedi regola 712, «Carte bifronte».
+@@Transmute
+Trasmutare
+Un'abilità chiave che permette a un giocatore di passare in rassegna il suo grimorio per una carta sostitutiva. Vedi regola 702.53, «Trasmutare».
+@@Treasure Token
+Pedina Tesoro
+Una pedina Tesoro è una pedina artefatto incolore con «{T}, Sacrifica questa pedina: Aggiungi un mana di un qualsiasi colore». Per maggiori informazioni sulle pedine predefinite, vedi regola 111.10.
+@@Tribal (Obsolete)
+Tribale (vecchio nome)
+Un tipo di carta obsoleto che è stato rinominato. Vedi regola 308, «Tribali».
+@@Tribute
+Tributo
+Un'abilità chiave che permette a un avversario di scegliere tra far entrare una creatura nel campo di battaglia con segnalini +1/+1 o un'abilità aggiuntiva. Vedi regola 702.104, «Tributo».
+@@Trigger
+Innescarsi
+Ogni volta che un evento di gioco o uno stato di gioco corrisponde all'evento di innesco di un'abilità innescata, quell'abilità «si innesca» automaticamente. Ciò significa che il suo controllore la mette in pila la volta successiva in cui un giocatore dovrebbe ricevere la priorità. Vedi regola 603, «Gestire le abilità innescate».
+@@Trigger Condition
+Condizione di innesco
+La prima parte di un'abilità innescata, formata da «quando», «ogni volta che» o «all'inizio di» seguiti da un evento di innesco. Vedi regola 603, «Gestire le abilità innescate».
+@@Trigger Event
+Evento di innesco
+L'evento che un'abilità innescata attende. Ogni volta che avviene l'evento di innesco, l'abilità innescata si innesca. Vedi regola 603, «Gestire le abilità innescate».
+@@Triggered Ability
+Abilità innescata
+Un tipo di abilità. Le abilità innescate iniziano con la parola «quando», «ogni volta che» o «all'inizio di». Sono scritte nella forma «[Condizione di innesco], [effetto]». Vedi regola 113, «Abilità», e regola 603, «Gestire le abilità innescate».
+@@Triple
+Triplicare
+Un'azione chiave che aumenta la forza e/o la costituzione di una creatura. Vedi regola 701.11, «Triplicare».
+@@Turn Markers
+Segnaturno
+Indicatori usati per tenere traccia di quali giocatori stanno giocando un turno in una partita Grand Melee. Vedi regola 807.4.
+@@Turn-Based Actions
+Azioni basate sul turno
+Azioni di gioco che avvengono automaticamente quando iniziano certe sottofasi o fasi, o quando termina ogni sottofase o fase. Vedi regola 703, «Azioni basate sul turno».
+@@Two-Headed Giant Variant
+Variante Two-Headed Giant
+Una variante multigiocatore giocata tra squadre di due giocatori che hanno ciascuna un totale di punti vita condiviso e giocano un turno simultaneo. Vedi regola 810, «Variante Two-Headed Giant».
+@@Type
+Tipo
+1. Il tipo di carta di un oggetto o, in senso più ampio, il suo tipo di carta, sottotipo e/o supertipo. Vedi regola 205, «Riga del tipo», e sezione 3, «Tipi di carta». 2. Un attributo che ha il mana. Vedi regola 106, «Mana».
+@@Type Icon
+Icona del tipo
+Un'icona che compare in alto a sinistra su alcune carte di Future Sight e che non ha alcun effetto sul gioco. Vedi regola 107.10.
+@@Type Line
+Riga del tipo
+Parte di una carta. La riga del tipo è stampata direttamente sotto l'illustrazione e contiene il tipo o i tipi di carta, il sottotipo o i sottotipi e/o il supertipo o i supertipi della carta. Vedi regola 205, «Riga del tipo».
+@@Type-Changing Effect
+Effetto di cambio di tipo
+Un effetto che modifica il tipo di carta, il sottotipo e/o il supertipo di un oggetto. Vedi regole 205.1a–b, 305.7 e 613.1d.
+@@Typecycling
+Ciclo di tipo
+Una variante dell'abilità ciclo. Vedi regola 702.29, «Ciclo».
+@@Umbra Armor
+Armatura d'ombra (Umbra armor)
+Un'abilità chiave che permette a un'Aura di proteggere il permanente che sta incantando. Vedi regola 702.89, «Armatura d'ombra».
+@@Unattach
+Staccare
+Spostare un Equipaggiamento dalla creatura a cui è assegnato in modo che l'Equipaggiamento sia sul campo di battaglia ma non equipaggi nulla. Vedi regola 701.3d.
+@@Unblockable (Obsolete)
+Imbloccabile (obsoleto)
+Un termine che significava «non può essere bloccata». Le carte che usavano questo termine hanno ricevuto errata nel riferimento Oracle.
+@@Unblocked Creature
+Creatura non bloccata
+Una creatura attaccante una volta che nessuna creatura è stata dichiarata come bloccante per essa, a meno che un effetto non l'abbia fatta diventare bloccata. Resta una creatura non bloccata finché non viene rimossa dal combattimento o finché non termina la fase di combattimento, a seconda di cosa avviene prima. Vedi regola 509, «Sottofase di dichiarazione dei bloccanti».
+@@Undaunted
+Impavido (Undaunted)
+Un'abilità chiave che riduce il costo di una magia in base al numero di avversari che hai. Vedi regola 702.125, «Impavido».
+@@Undying
+Non morto (Undying)
+Un'abilità chiave che può far tornare una creatura dal cimitero sul campo di battaglia. Vedi regola 702.93, «Non morto».
+@@Unearth
+Dissotterrare (Unearth)
+Un'abilità chiave che permette a un giocatore di far tornare una carta creatura dal suo cimitero sul campo di battaglia. Vedi regola 702.84, «Dissotterrare».
+@@Unflipped
+Non capovolto
+Uno stato predefinito che un permanente può avere. Vedi regola 110.5 e regola 710, «Carte capovolgibili». Vedi anche Capovolto.
+@@Unleash
+Scatenare
+Un'abilità chiave che permette a una creatura di entrare nel campo di battaglia con un segnalino +1/+1 su di sé e le impedisce di bloccare se ha un segnalino +1/+1 su di sé. Vedi regola 702.98, «Scatenare».
+@@Unless
+A meno che
+Un'espressione usata per indicare un certo tipo di costo. Vedi regola 118.12a.
+@@Unlock
+Sbloccare
+Dare una designazione di sblocco a un permanente che ha una o più metà bloccate. Vedi regola 709.5f.
+@@Unlocked
+Sbloccata
+Una metà di un permanente diviso è «sbloccata» se ha la designazione di sblocco appropriata. Vedi regola 709.5.
+@@Unprepared
+Non preparato
+Un permanente che diventa non preparato perde la designazione preparato. Vedi regola 722, «Carte preparazione». Vedi anche Preparato.
+@@Untap
+STAPpare
+Riportare un permanente in posizione verticale da una posizione laterale. Vedi regola 701.26, «TAPpare e STAPpare».
+@@Untap Step
+Sottofase di STAP
+Parte del turno. Questa sottofase è la prima sottofase della fase iniziale. Vedi regola 502, «Sottofase di STAP».

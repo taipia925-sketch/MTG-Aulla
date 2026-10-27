@@ -1,0 +1,431 @@
+@@Continuous Effect
+Effetto continuo
+Un effetto che modifica le caratteristiche degli oggetti, modifica il controllo degli oggetti o influenza i giocatori o le regole del gioco, per un periodo fisso o indefinito. Vedi regola 611, «Effetti continui».
+@@Control, Controller
+Controllo, controllore
+Il «controllo» è il sistema che stabilisce chi può usare un oggetto nella partita. Il «controllore» di un oggetto è il giocatore che attualmente lo controlla. Vedi regola 108.4.
+@@Control Another Player
+Controllare un altro giocatore
+Fare tutte le scelte e prendere tutte le decisioni che quel giocatore può fare o a cui è chiamato dalle regole o da qualsiasi oggetto. Vedi regola 723, «Controllare un altro giocatore».
+@@Convert
+Convertire
+Girare una carta bifronte in modo che sia rivolta verso l'alto la sua altra faccia. Vedi regola 701.28, «Convertire».
+@@Converted Mana Cost (Obsolete)
+Costo di mana convertito (obsoleto)
+Un termine obsoleto per valore di mana. Le carte stampate con questo termine hanno ricevuto errata nel riferimento Oracle.
+@@Convoke
+Convocare
+Un'abilità chiave che ti permette di TAPpare creature invece di pagare mana per lanciare una magia. Vedi regola 702.51, «Convocare».
+@@Copiable Values
+Valori copiabili
+I valori delle caratteristiche di un oggetto che vengono controllati dagli effetti di copia. Vedi regole 613.2, 707.2 e 707.3.
+@@Copy
+Copia, copiare
+1. Creare un nuovo oggetto i cui valori copiabili sono stati impostati su quelli di un altro oggetto. 2. Un oggetto i cui valori copiabili sono stati impostati su quelli di un altro oggetto. Vedi regola 707, «Copiare oggetti».
+@@Cost
+Costo
+Un'azione o un pagamento necessario per compiere un'altra azione o per impedire che avvenga un'altra azione. Vedi regola 118, «Costi».
+@@Counter
+Neutralizzare, segnalino
+1. Annullare una magia o abilità in modo che non si risolva e nessuno dei suoi effetti avvenga. Vedi regola 701.6, «Neutralizzare». 2. Un indicatore messo su un oggetto o su un giocatore che ne modifica le caratteristiche o interagisce con una regola o un'abilità. Vedi regola 122, «Segnalini».
+@@Counts As (Obsolete)
+Conta come (obsoleto)
+Alcune carte più vecchie sono state stampate con un testo che diceva che la carta «conta come» qualcosa. Le carte stampate con questo testo hanno ricevuto errata nel riferimento Oracle per dire che la carta è effettivamente quella cosa.
+@@Craft
+Forgiare (Craft)
+Forgiare è un'abilità attivata che permette a un giocatore di esiliare carte dal suo cimitero e/o permanenti che controlla per esiliare il permanente con l'abilità forgiare e farlo tornare sul campo di battaglia trasformato. Vedi regola 702.167, «Forgiare».
+@@Create
+Creare
+Creare una pedina significa mettere una pedina sul campo di battaglia. Vedi regola 701.7, «Creare».
+@@Creature
+Creatura
+Un tipo di carta. Una creatura è un permanente. Vedi regola 302, «Creature».
+@@Creature Type
+Tipo di creatura
+Un sottotipo correlato al tipo di carta creatura e al tipo di carta tribale. Vedi regola 302, «Creature», e regola 308, «Tribali». Vedi regola 205.3m per l'elenco dei tipi di creatura.
+@@Crew
+Equipaggio (Crew)
+Un'abilità chiave che ti permette di TAPpare creature per trasformare un Veicolo in una creatura artefatto. Vedi regola 301, «Artefatti», e regola 702.122, «Equipaggio».
+@@Crime
+Crimine
+Bersagliare un avversario, qualsiasi cosa controllata da quell'avversario e/o qualsiasi carta nel cimitero di un avversario è un crimine. Vedi regola 700.13.
+@@Cumulative Upkeep
+Mantenimento cumulativo
+Un'abilità chiave che impone un costo crescente per tenere un permanente sul campo di battaglia. Vedi regola 702.24, «Mantenimento cumulativo».
+@@Cycling
+Ciclo (Cycling)
+Un'abilità chiave che permette di scartare una carta e sostituirla con una carta nuova. Vedi regola 702.29, «Ciclo».
+@@Damage
+Danno
+Gli oggetti possono infliggere «danno» a creature, planeswalker e giocatori. In genere è dannoso per l'oggetto o il giocatore che riceve quel danno. Vedi regola 120, «Danno».
+@@Damage Assignment Order (Obsolete)
+Ordine di assegnazione del danno (obsoleto)
+In precedenza, se una creatura bloccava o veniva bloccata da più creature, il controllore della creatura doveva scegliere un ordine in cui avrebbe assegnato il danno da combattimento alle creature che la bloccavano o che bloccava. Ora il suo controllore non deve più stabilire un ordine, e divide semplicemente il suo danno da combattimento a sua scelta tra tutte le creature che sta bloccando o da cui è bloccata. Vedi regole 510.1c-d.
+@@Dash
+Scatto (Dash)
+Un'abilità chiave presente su carte creatura che permette di lanciarle per un costo alternativo. Vedi regola 702.109, «Scatto».
+@@Day
+Giorno
+Insieme alla notte, una designazione che la partita può avere. Vedi regola 731, «Giorno e notte», e regola 702.145, «Diurno e Notturno».
+@@Daybound
+Diurno (Daybound)
+Un'abilità presente sulla faccia anteriore di alcune carte bifronte. Le carte con diurno e notturno sono a faccia in su quando è giorno e a faccia in giù quando è notte. Vedi regola 702.145, «Diurno e Notturno», e regola 731, «Giorno e notte».
+@@Deal
+Infliggere
+Vedi Danno.
+@@Deathtouch
+Tocco letale
+Un'abilità chiave che rende particolarmente efficace il danno inflitto da un oggetto. Vedi regola 702.2, «Tocco letale».
+@@Decayed
+Decomposto (Decayed)
+Un'abilità chiave che significa «Questa creatura non può bloccare» e «Quando questa creatura attacca, sacrificala alla fine del combattimento». Vedi regola 702.147, «Decomposto».
+@@Deck
+Mazzo
+L'insieme di carte con cui un giocatore inizia la partita; diventa il grimorio di quel giocatore. Vedi regola 100, «Generale», e regola 103, «Iniziare la partita».
+@@Declare Attackers
+Dichiarare gli attaccanti
+Scegliere un insieme di creature che attaccheranno, dichiarare se ciascuna creatura sta attaccando il giocatore in difesa o un planeswalker che quel giocatore controlla, e pagare i costi richiesti per permettere a quelle creature di attaccare. Vedi regola 508.1.
+@@Declare Attackers Step
+Sottofase di dichiarazione degli attaccanti
+Parte del turno. Questa sottofase è la seconda sottofase della fase di combattimento. Vedi regola 508, «Sottofase di dichiarazione degli attaccanti».
+@@Declare Blockers
+Dichiarare i bloccanti
+Scegliere un insieme di creature che bloccheranno, dichiarare quale creatura attaccante blocca ciascuna creatura, e pagare i costi richiesti per permettere a quelle creature di bloccare. Vedi regola 509.1.
+@@Declare Blockers Step
+Sottofase di dichiarazione dei bloccanti
+Parte del turno. Questa sottofase è la terza sottofase della fase di combattimento. Vedi regola 509, «Sottofase di dichiarazione dei bloccanti».
+@@Defender
+Difensore
+Un'abilità chiave che impedisce a una creatura di attaccare. Vedi regola 702.3, «Difensore».
+@@Defending Player
+Giocatore in difesa
+Il giocatore che può essere attaccato, e i cui planeswalker possono essere attaccati, durante la fase di combattimento. Vedi regola 506.2. In alcune partite multigiocatore possono esserci più giocatori in difesa; vedi regola 802, «Opzione di attacco a più giocatori», e regola 805.10.
+@@Defending Team
+Squadra in difesa
+La squadra che può essere attaccata, e i cui planeswalker possono essere attaccati, durante la fase di combattimento di una partita multigiocatore che usa l'opzione dei turni di squadra condivisi. Vedi regola 805, «Opzione dei turni di squadra condivisi».
+@@Defense
+Difesa
+1. Parte di una carta presente solo sulle carte battaglia. La difesa di una carta battaglia è stampata nel suo angolo in basso a destra. Vedi regola 210, «Difesa».
+2. Una caratteristica che solo le battaglie possono avere. Vedi regola 310, «Battaglie».
+@@Delayed Triggered Ability
+Abilità innescata ritardata
+Un'abilità creata da effetti generati quando si risolvono alcune magie o abilità, o quando vengono applicati alcuni effetti di sostituzione, che fa qualcosa in un momento successivo invece che in quel momento. Vedi regola 603.7.
+@@Delve
+Esumare (Delve)
+Un'abilità chiave che ti permette di esiliare carte dal tuo cimitero invece di pagare mana generico per lanciare una magia. Vedi regola 702.66, «Esumare».
+@@Demonstrate
+Dimostrare (Demonstrate)
+Un'abilità innescata presente su alcune magie che permette al suo controllore di copiarla e di scegliere un avversario che la copi a sua volta. Vedi regola 702.144, «Dimostrare».
+@@Dependency
+Dipendenza
+Un sistema che può essere usato per stabilire in quale ordine vengono applicati gli effetti continui nello stesso livello o sottolivello. Vedi regola 613.8. Vedi anche Ordine delle marche temporali.
+@@Deploy Creatures Option
+Opzione di schieramento delle creature
+Un'opzione che può essere usata in alcune varianti multigiocatore per passare il controllo delle creature tra compagni di squadra. Vedi regola 804, «Opzione di schieramento delle creature».
+@@Destroy
+Distruggere
+Spostare un permanente dal campo di battaglia al cimitero del suo proprietario. Vedi regola 701.8, «Distruggere».
+@@Detain
+Trattenere (Detain)
+Un'azione chiave che impedisce temporaneamente a un permanente di attaccare, bloccare o attivare le sue abilità attivate. Vedi regola 701.35, «Trattenere».
+@@Dethrone
+Detronizzare
+Un'abilità chiave che mette un segnalino +1/+1 su una creatura quando attacca il giocatore con più punti vita. Vedi regola 702.105, «Detronizzare».
+@@Devoid
+Vacuità (Devoid)
+Un'abilità che definisce caratteristiche che rende incolore un oggetto. Vedi regola 702.114, «Vacuità».
+@@Devotion
+Devozione
+Un valore numerico che un giocatore ha, pari al numero di simboli di mana di un certo colore tra i costi di mana dei permanenti che quel giocatore controlla. Vedi regola 700.5.
+@@Devour
+Divorare
+Un'abilità chiave che può far entrare una creatura nel campo di battaglia con segnalini +1/+1 su di sé. Vedi regola 702.82, «Divorare».
+@@Dies
+Muore
+Una creatura o un planeswalker «muore» se viene messo in un cimitero dal campo di battaglia. Vedi regola 700.4.
+@@Discard
+Scartare
+Spostare una carta dalla mano del suo proprietario al cimitero di quel giocatore. Vedi regola 701.9, «Scartare».
+@@Discover
+Scoprire
+Un'abilità chiave che può permettere a un giocatore di lanciare gratis una magia casuale. Vedi regola 701.57, «Scoprire».
+@@Disguise
+Travestimento (Disguise)
+Un'abilità chiave che permette di lanciare una carta a faccia in giù come creatura 2/2 con custode {2}. Vedi regola 702.168, «Travestimento», e regola 708, «Magie e permanenti a faccia in giù».
+@@Disturb
+Disturbare
+Un'abilità chiave che permette a un giocatore di lanciare dal cimitero una carta bifronte trasformata. Vedi regola 702.146, «Disturbare».
+@@Doctor’s Companion
+Compagno del Dottore (Doctor's companion)
+Un'abilità partner che permette a un giocatore di giocare con due carte creatura leggendaria come suo comandante se una di esse ha compagno del Dottore e l'altra è un Signore del Tempo Dottore senza altri tipi di creatura.
+@@Door
+Porta
+Una porta è una metà di un permanente Stanza. Vedi regola 709, «Carte divise».
+@@Double
+Raddoppiare
+Un'azione chiave usata in vari contesti. Vedi regola 701.10, «Raddoppiare».
+@@Double Agenda
+Doppia agenda
+Una variante dell'abilità agenda nascosta. Vedi regola 702.106, «Agenda nascosta».
+@@Double Strike
+Doppio attacco
+Un'abilità chiave che permette a una creatura di infliggere due volte il suo danno da combattimento. Vedi regola 702.4, «Doppio attacco».
+@@Double-Faced Cards
+Carte bifronte
+Carte con due facce, una su ciascun lato della carta, e senza il retro delle carte di Magic. Vedi regola 712, «Carte bifronte».
+@@Draft
+Draft
+1. Un formato limitato in cui i giocatori scelgono carte una alla volta dalle buste, poi costruiscono un mazzo esclusivamente con le carte scelte e con carte terra base.
+2. Scegliere una carta durante un draft e metterla nel proprio pool di carte.
+@@Draft Round
+Turno di draft
+Parte di un draft in cui ogni giocatore apre una busta non aperta e le carte di quelle buste vengono scelte. Vedi regole 905.1a e 905.1b.
+@@Draw
+Pescare, pareggio
+1. Mettere nella mano di un giocatore la prima carta del suo grimorio come azione basata sul turno o come risultato di un effetto che usa la parola «pescare». Vedi regola 121, «Pescare una carta». 2. Il risultato di una partita in cui nessun giocatore vince o perde. Vedi regola 104.4.
+@@Draw Step
+Sottofase di acquisizione
+Parte del turno. Questa sottofase è la terza e ultima sottofase della fase iniziale. Vedi regola 504, «Sottofase di acquisizione».
+@@Dredge
+Dragare (Dredge)
+Un'abilità chiave che permette a un giocatore di far tornare una carta dal suo cimitero nella sua mano. Vedi regola 702.52, «Dragare».
+@@Dungeon
+Dungeon
+Un tipo di carta presente su carte di Magic non tradizionali. Una carta dungeon non è un permanente. Vedi regola 309, «Dungeon».
+@@During (Obsolete)
+Durante (obsoleto)
+Alcune carte più vecchie usavano l'espressione «durante [fase], [azione]». Queste abilità erano dette «abilità di fase». In generale, le carte stampate con abilità di fase hanno ricevuto errata nel riferimento Oracle in modo da avere abilità che si innescano all'inizio di una sottofase o fase. «Durante» compare ancora nel testo delle carte attuali, ma solo nel suo normale significato e non come terminologia di gioco.
+@@Earthbend
+Dominare la terra (Earthbend)
+Un'azione chiave che fa diventare una terra una creatura 0/0 con rapidità in aggiunta ai suoi altri tipi e mette un certo numero di segnalini +1/+1 su di essa. Quando quella terra muore o viene messa in esilio, falla tornare sul campo di battaglia TAPpata sotto il tuo controllo. Vedi 701.66, «Dominare la terra».
+@@Echo
+Eco
+Un'abilità chiave che impone un costo per tenere un permanente sul campo di battaglia. Vedi regola 702.30, «Eco».
+@@EDH (Obsolete)
+EDH (obsoleto)
+Un vecchio nome della variante casual Commander. Vedi regola 903, «Commander».
+@@Effect
+Effetto
+Qualcosa che accade nella partita come risultato di una magia o abilità. Vedi regola 609, «Effetti».
+@@Embalm
+Imbalsamare
+Un'abilità chiave che permette a un giocatore di esiliare una carta creatura dal suo cimitero per creare una versione pedina mummificata di quella carta. Vedi regola 702.128, «Imbalsamare».
+@@Emblem
+Emblema
+Un emblema è un indicatore usato per rappresentare un oggetto che ha una o più abilità, ma nessun'altra caratteristica. Vedi regola 114, «Emblemi».
+@@Emerge
+Emergere
+Un'abilità chiave che permette a un giocatore di lanciare una magia a un costo inferiore sacrificando una creatura. Vedi regola 702.119, «Emergere».
+@@Emperor
+Imperatore
+Il giocatore centrale di ogni squadra in una partita Imperatore. Vedi regola 809, «Variante Imperatore».
+@@Emperor Variant
+Variante Imperatore
+Una variante multigiocatore giocata tra squadre di tre giocatori. Vedi regola 809, «Variante Imperatore».
+@@Empower Jace
+Potenziare Jace (Empower Jace)
+Un'azione chiave che ti dà una pedina planeswalker Jace e/o mette segnalini fedeltà su una pedina Jace che hai già. Vedi regola 701.71, «Potenziare Jace».
+@@Enchant
+Incanta
+Un'abilità chiave che definisce cosa può bersagliare una magia Aura e a cosa può essere assegnato un permanente Aura. Vedi regola 303, «Incantesimi», e regola 702.5, «Incanta».
+@@Enchantment
+Incantesimo
+Un tipo di carta. Un incantesimo è un permanente. Vedi regola 303, «Incantesimi». Vedi anche Aura.
+@@Enchantment Type
+Tipo di incantesimo
+Un sottotipo correlato al tipo di carta incantesimo. Vedi regola 303, «Incantesimi». Vedi regola 205.3h per l'elenco dei tipi di incantesimo.
+@@Encoded
+Codificata
+Un termine che descrive la relazione tra un permanente e una carta esiliata da un'abilità cifrare. Vedi regola 702.99, «Cifrare».
+@@Encore
+Bis (Encore)
+Un'abilità chiave che permette a un giocatore di esiliare una carta creatura dal suo cimitero per creare, per ogni avversario, una pedina che è una copia di quella carta e che attacca quell'avversario. Vedi regola 702.141, «Bis».
+@@Encounter
+Incontrare
+Togliere una carta fenomeno dalla cima di un mazzo planare e girarla a faccia in su. Vedi regola 312, «Fenomeni».
+@@End of Combat Step
+Sottofase di fine combattimento
+Parte del turno. Questa sottofase è la quinta e ultima sottofase della fase di combattimento. Vedi regola 511, «Sottofase di fine combattimento».
+@@End Step
+Sottofase finale
+Parte del turno. Questa sottofase è la prima sottofase della fase finale. Vedi regola 513, «Sottofase finale».
+@@End the Combat Phase
+Terminare la fase di combattimento
+«Terminare la fase di combattimento» come risultato di un effetto significa eseguire un procedimento accelerato che salta tutto il resto che avverrebbe in quella fase. Vedi regola 724, «Terminare turni e fasi».
+@@End the Turn
+Terminare il turno
+«Terminare il turno» come risultato di un effetto significa eseguire un procedimento accelerato che salta quasi tutto il resto che avverrebbe in quel turno. Vedi regola 724, «Terminare turni e fasi».
+@@Ending Phase
+Fase finale
+Parte del turno. Questa fase è la quinta e ultima fase del turno. Vedi regola 512, «Fase finale».
+@@Endure
+Resistere (Endure)
+Un'abilità chiave che ti permette di scegliere se mettere segnalini +1/+1 su una creatura o creare una pedina creatura Spirito. Vedi regola 701.63, «Resistere».
+@@Enduring Story
+Storia duratura
+Una designazione che un giocatore può avere. La parola chiave storied fa ottenere a un giocatore questa designazione una volta che controlla tre permanenti che sono artefatti, Saghe e/o leggendari. Vedi regola 702.195, «Storied».
+@@Energy Symbol
+Simbolo di energia
+Il simbolo di energia {E} rappresenta un segnalino energia. Per pagare {E}, un giocatore rimuove un segnalino energia da se stesso.
+@@Enlist
+Arruolare (Enlist)
+Un'abilità chiave che permette a una creatura che avrebbe potuto attaccare di supportare un'altra creatura. Vedi regola 702.154, «Arruolare».
+@@Enter
+Entrare
+Nel testo delle regole, entrare nel campo di battaglia. Vedi «Entra nel campo di battaglia».
+@@Enters the Battlefield
+Entra nel campo di battaglia
+Un permanente non pedina entra nel campo di battaglia quando viene spostato sul campo di battaglia da un'altra zona. Una pedina entra nel campo di battaglia quando viene creata. Vedi regole 403.3, 603.6a, 603.6d e 614.12. Nella maggior parte dei contesti, nel testo delle regole sulle carte questa espressione è stata abbreviata semplicemente in «entra».
+@@Entwine
+Intreccio (Entwine)
+Un'abilità chiave che permette a un giocatore di scegliere tutti i modi di una magia invece del solo numero indicato. Vedi regola 702.42, «Intreccio».
+@@Epic
+Epico
+Un'abilità chiave che permette a un giocatore di copiare una magia all'inizio di ogni suo mantenimento, a costo di non poter lanciare altre magie per il resto della partita. Vedi regola 702.50, «Epico».
+@@Equip
+Equipaggiare
+Un'abilità chiave che permette a un giocatore di assegnare un Equipaggiamento a una creatura che controlla. Vedi regola 301, «Artefatti», e regola 702.6, «Equipaggiare».
+@@Equipment
+Equipaggiamento
+Un sottotipo di artefatto. Gli Equipaggiamenti possono essere assegnati alle creature. Vedi regola 301, «Artefatti», e regola 702.6, «Equipaggiare».
+@@Escalate
+Escalation
+Un'abilità chiave di alcune magie modali che aggiunge un costo per la scelta di modi aggiuntivi. Vedi regola 702.120, «Escalation».
+@@Escape
+Fuga (Escape)
+Un'abilità chiave che permette a un giocatore di lanciare una carta dal suo cimitero. Vedi regola 702.138, «Fuga».
+@@Eternalize
+Eternare
+Un'abilità chiave che permette a un giocatore di esiliare una carta creatura dal suo cimitero per creare una versione pedina eternata di quella carta. Vedi regola 702.129, «Eternare».
+@@Evasion Ability
+Abilità di evasione
+Un'abilità che limita quali creature possono bloccare una creatura attaccante. Vedi regole 509.1b–c.
+@@Event
+Evento
+Qualsiasi cosa accada in una partita. Vedi regola 700.1.
+@@Evoke
+Evocare
+Un'abilità chiave che fa sacrificare un permanente quando entra nel campo di battaglia. Vedi regola 702.74, «Evocare».
+@@Evolve
+Evolvere
+Un'abilità chiave che ti permette di mettere un segnalino +1/+1 su una creatura quando una creatura più grande entra nel campo di battaglia sotto il tuo controllo. Vedi regola 702.100, «Evolvere».
+@@Exalted
+Esaltato
+Un'abilità chiave che può rendere una creatura migliore in combattimento. Vedi regola 702.83, «Esaltato».
+@@Excess Damage
+Danno in eccesso
+Il danno inflitto a una creatura superiore a quello che sarebbe danno letale, o il danno inflitto a un planeswalker superiore alla sua fedeltà. Vedi regola 120.4a.
+@@Exchange
+Scambiare
+Scambiare due cose, come oggetti, insiemi di oggetti o totali di punti vita. Vedi regola 701.12, «Scambiare».
+@@Exert
+Sfiancare (Exert)
+Un'azione chiave che impedisce a un permanente di STAPparsi durante la successiva sottofase di STAP del giocatore che lo ha sfiancato. Vedi regola 701.43, «Sfiancare».
+@@Exhaust
+Esaurire (Exhaust)
+Un'abilità attivata che può essere attivata una sola volta. Vedi regola 702.177, «Esaurire».
+@@Exile
+Esilio, esiliare
+1. Una zona. L'esilio è essenzialmente un'area di deposito per le carte. Un tempo era nota come zona delle carte «rimosse dalla partita». 2. Mettere un oggetto nella zona di esilio da qualsiasi zona in cui si trovi. Una carta «esiliata» è una carta che è stata messa nella zona di esilio. Vedi regola 406, «Esilio».
+@@Expansion Symbol
+Simbolo dell'espansione
+Il simbolo dell'espansione di una carta è una piccola icona normalmente stampata sotto il bordo destro dell'illustrazione che non ha alcun effetto sul gioco. Vedi regola 206, «Simbolo dell'espansione».
+@@Expend
+Spendere (Expend)
+Una parola presente su alcune abilità che tengono conto di quanto mana un giocatore ha speso per lanciare magie in questo turno. Vedi regola 700.14.
+@@Exploit
+Sfruttare
+Un'abilità chiave che ti permette di sacrificare una creatura in cambio di un beneficio. Vedi regola 702.110, «Sfruttare».
+@@Explore
+Esplorare
+Un'azione chiave che fa rivelare a un giocatore la prima carta del suo grimorio e poi compiere azioni diverse a seconda che in questo modo venga rivelata o meno una carta terra. Vedi regola 701.44, «Esplorare».
+@@Extort
+Estorsione
+Un'abilità chiave che ti permette di guadagnare punti vita e far perdere punti vita agli avversari ogni volta che lanci una magia. Vedi regola 702.101, «Estorsione».
+@@Extra Turn
+Turno extra
+Un turno creato da un effetto di una magia o abilità. Vedi regola 500.7. Per le regole sui turni extra in una partita multigiocatore che usa l'opzione dei turni di squadra condivisi, vedi 805.8. Per le regole sui turni extra in una partita Grand Melee, vedi regola 807.4.
+@@Fabricate
+Fabbricare
+Un'abilità chiave che ti permette di scegliere se creare pedine Servitore o mettere segnalini +1/+1 su una creatura. Vedi regola 702.123, «Fabbricare».
+@@Face a Villainous Choice
+Affrontare una scelta malvagia
+Un'azione chiave che fa scegliere a un giocatore una di due scelte elencate. Vedi regola 701.55, «Affrontare una scelta malvagia».
+@@Face Down
+A faccia in giù
+1. Una carta è «a faccia in giù» se è fisicamente posizionata in modo che sia visibile il retro. Le carte in alcune zone sono normalmente tenute a faccia in giù. Vedi sezione 4, «Zone». 2. Uno stato che un permanente può avere. Vedi regola 110.5 e regola 702.37, «Metamorfosi». 3. Le magie a faccia in giù hanno regole aggiuntive. Vedi regola 708, «Magie e permanenti a faccia in giù», e regola 702.37, «Metamorfosi».
+@@Face Up
+A faccia in su
+1. Una carta è «a faccia in su» se è fisicamente posizionata in modo che sia visibile il fronte. Le carte in alcune zone sono normalmente tenute a faccia in su. Vedi sezione 4, «Zone». 2. Uno stato predefinito che un permanente può avere. Vedi regola 110.5 e regola 702.37, «Metamorfosi».
+@@Fading
+Dissolvenza (Fading)
+Un'abilità chiave che limita per quanto tempo un permanente resta sul campo di battaglia. Vedi regola 702.32, «Dissolvenza».
+@@Fateseal
+Suggellare il fato (Fateseal)
+Manipolare alcune delle carte in cima al grimorio di un avversario. Vedi regola 701.29, «Suggellare il fato».
+@@Fear
+Paura
+Un'abilità chiave che limita il modo in cui una creatura può essere bloccata. Vedi regola 702.36, «Paura».
+@@Fight
+Combattere
+Quando due creature combattono, ciascuna infligge all'altra danno pari alla propria forza. Vedi regola 701.14, «Combattere».
+@@Finality Counter
+Segnalino finalità
+Un segnalino che esilia il permanente su cui si trova se quel permanente dovesse andare nel cimitero dal campo di battaglia. Vedi regola 122.1h.
+@@Firebending
+Dominare il fuoco (Firebending)
+Un'abilità chiave che aggiunge mana rosso fino alla fine del combattimento ogni volta che una creatura con quell'abilità attacca. Vedi regola 702.189, «Dominare il fuoco».
+@@First Strike
+Attacco improvviso
+Un'abilità chiave che permette a una creatura di infliggere il suo danno da combattimento prima delle altre creature. Vedi regola 702.7, «Attacco improvviso».
+@@Flanking
+Fiancheggiare
+Un'abilità chiave che può rendere una creatura migliore in combattimento. Vedi regola 702.25, «Fiancheggiare».
+@@Flash
+Lampo
+Un'abilità chiave che permette a un giocatore di giocare una carta in qualsiasi momento in cui potrebbe lanciare un istantaneo. Vedi regola 702.8, «Lampo».
+@@Flashback
+Flashback
+Un'abilità chiave che permette a un giocatore di lanciare una carta dal suo cimitero. Vedi regola 702.34, «Flashback».
+@@Flavor Text
+Testo di colore
+Testo in corsivo (ma non tra parentesi) nel riquadro di testo di una carta che non ha alcun effetto sul gioco. Vedi regola 207.2.
+@@Flavor Word
+Parola di colore
+Una parola in corsivo senza significato nelle regole che fornisce una descrizione d'atmosfera di un'abilità. Vedi regola 207.2d.
+@@Flip Cards
+Carte capovolgibili
+Carte con una cornice in due parti (una delle quali stampata capovolta) su un'unica carta. Vedi regola 710, «Carte capovolgibili».
+@@Flipped
+Capovolto
+Uno stato che un permanente può avere. Vedi regola 110.5 e regola 710, «Carte capovolgibili». Vedi anche Non capovolto.
+@@Flipping a Coin
+Lanciare una moneta
+Un metodo casuale con due esiti possibili ugualmente probabili. Vedi regola 705, «Lanciare una moneta».
+@@Flying
+Volare
+Un'abilità chiave che limita il modo in cui una creatura può essere bloccata. Vedi regola 702.9, «Volare».
+@@Food Token
+Pedina Cibo
+Una pedina Cibo è una pedina artefatto incolore con «{2}, {T}, Sacrifica questa pedina: Guadagni 3 punti vita». Per maggiori informazioni sulle pedine predefinite, vedi regola 111.10.
+@@For Mirrodin!
+Per Mirrodin! (For Mirrodin!)
+Un'abilità chiave che crea una pedina creatura Ribelle 2/2 rossa e poi assegna a quella pedina l'Equipaggiamento con l'abilità. Vedi regola 702.163, «Per Mirrodin!».
+@@Forage
+Foraggiare (Forage)
+Pagare un costo esiliando tre carte dal tuo cimitero o sacrificando un Cibo. Vedi regola 701.61, «Foraggiare».
+@@Forecast
+Previsione (Forecast)
+Un'abilità chiave che permette di attivare un'abilità attivata dalla mano di un giocatore. Vedi regola 702.57, «Previsione».
+@@Forest
+Foresta
+Uno dei cinque tipi di terra base. Qualsiasi terra con questo sottotipo ha l'abilità «{T}: Aggiungi {G}». Vedi regola 305.6.
+@@Forestcycling
+Cicloforesta
+Vedi Ciclo di tipo.
+@@Forestwalk
+Passaforeste
+Vedi Passaterre.
+@@Foretell
+Presagio (Foretell)
+Un'abilità chiave che permette a un giocatore di esiliare carte dalla sua mano e lanciarle per un costo alternativo nei turni futuri. Vedi regola 702.143, «Presagio».

@@ -1,0 +1,93 @@
+@@Untap Symbol
+Simbolo di STAP
+Il simbolo di STAP {Q} in un costo di attivazione significa «STAPpa questo permanente». Vedi regola 107.6.
+@@Untapped
+STAPpato
+Uno stato predefinito che un permanente può avere. Vedi regola 110.5 e regola 701.26, «TAPpare e STAPpare». Vedi anche TAPpato.
+@@Upkeep Step
+Sottofase di mantenimento
+Parte del turno. Questa sottofase è la seconda sottofase della fase iniziale. Vedi regola 503, «Sottofase di mantenimento».
+@@Vanguard
+Vanguard
+1. Una variante casual in cui ogni giocatore interpreta il ruolo di un personaggio famoso. Vedi regola 902, «Vanguard». 2. Un tipo di carta presente solo su carte di Magic non tradizionali nella variante casual Vanguard. Una carta vanguard non è un permanente. Vedi regola 313, «Vanguard».
+@@Vanishing
+Svanire (Vanishing)
+Un'abilità chiave che limita per quanto tempo un permanente resta sul campo di battaglia. Vedi regola 702.63, «Svanire».
+@@Variant
+Variante
+Un insieme di regole aggiuntive che stabilisce lo stile di una partita multigiocatore. Vedi regola 800.2.
+@@Vehicle
+Veicolo
+Un sottotipo di artefatto. I Veicoli possono diventare creature artefatto. Vedi regola 301, «Artefatti», e regola 702.122, «Equipaggio».
+@@Venture into [Quality]
+Avventurarsi in [qualità]
+Una variante dell'abilità avventurarsi nel dungeon che permette a un giocatore di portare nella partita una carta dungeon con [qualità] o di spostare il segnalino avventura di un giocatore. Vedi regola 701.49, «Avventurarsi nel dungeon».
+@@Venture into the Dungeon
+Avventurarsi nel dungeon
+Un'azione chiave che può portare nella partita carte dungeon da fuori dalla partita o spostare il segnalino avventura di un giocatore. Vedi regola 701.49, «Avventurarsi nel dungeon».
+@@Venture Marker
+Segnalino avventura
+Un indicatore usato per tenere traccia della stanza di una carta dungeon in cui si trova attualmente un giocatore. Vedi regola 309, «Dungeon».
+@@Vibranium Token
+Pedina Vibranio (Vibranium)
+Una pedina Vibranio è una pedina artefatto Vibranio incolore con indistruttibile e «{T}: Aggiungi {C}. Questo mana non può essere speso per lanciare una magia non artefatto». Per maggiori informazioni sulle pedine predefinite, vedi regola 111.10.
+@@Vigilance
+Cautela
+Un'abilità chiave che permette a una creatura di attaccare senza TAPparsi. Vedi regola 702.20, «Cautela».
+@@Visit
+Visita
+Un'abilità chiave presente sulle carte Attrazione. Fornisce un effetto ogni volta che tiri per visitare le tue Attrazioni e ottieni certi risultati. Vedi regola 702.159, «Visita».
+@@Vote
+Votare
+Alcune carte istruiscono i giocatori a votare tra le opzioni indicate. Vedi regola 701.38, «Votare».
+@@Walker Token
+Pedina Vagante (Walker)
+Una pedina Vagante è una pedina creatura Zombie 2/2 nera chiamata Walker. Per maggiori informazioni sulle pedine predefinite, vedi regola 111.10.
+@@Wall
+Muro
+Un tipo di creatura senza particolare significato nelle regole. Le carte più vecchie con il tipo di creatura Muro ma senza difensore avevano un'abilità non scritta che impediva loro di attaccare. Quelle carte hanno ricevuto errata nel riferimento Oracle e ora hanno difensore. Anche alcune carte più vecchie che facevano riferimento al tipo di creatura Muro hanno ricevuto errata. Vedi Difensore.
+@@Ward
+Custode (Ward)
+Un'abilità innescata che può neutralizzare le magie o abilità che bersagliano il permanente con custode. Vedi regola 702.21, «Custode».
+@@Warp
+Curvatura (Warp)
+Un'abilità chiave presente su carte permanente che permette di lanciarle per un costo alternativo. Vedi regola 702.185, «Curvatura».
+@@Waterbend
+Dominare l'acqua (Waterbend)
+Un'azione chiave. «Domina l'acqua [costo]» significa pagare quel costo e, per ogni {1} in quel costo, puoi TAPpare un artefatto o una creatura STAPpati che controlli invece di pagare mana. Vedi regola 701.67, «Dominare l'acqua».
+@@Web-slinging
+Lancio della ragnatela (Web-slinging)
+Un'abilità chiave che permette di lanciare magie per un costo alternativo facendo tornare nella mano del suo proprietario una creatura TAPpata che controlli. Vedi regola 702.188, «Lancio della ragnatela».
+@@Win the Game
+Vincere la partita
+Ci sono diversi modi per vincere la partita. Vedi regola 104, «Fine della partita», e regole 810.8 (per le regole aggiuntive delle partite Two-Headed Giant) e regola 809.5 (per le regole aggiuntive delle partite Imperatore).
+@@Wither
+Avvizzire (Wither)
+Un'abilità chiave che influenza il modo in cui un oggetto infligge danno a una creatura. Vedi regola 702.80, «Avvizzire».
+@@Wizardcycling
+Ciclo Mago
+Vedi Ciclo di tipo.
+@@World
+Mondo
+Un supertipo che normalmente è rilevante sugli incantesimi. Vedi regola 205.4, «Supertipi». Vedi anche Regola dei mondi.
+@@World Rule
+Regola dei mondi
+Un'azione generata dallo stato che fa sì che tutti i permanenti con il supertipo mondo tranne quello che ha il supertipo mondo da meno tempo vengano messi nei cimiteri dei rispettivi proprietari. Vedi regola 704.5k.
+@@Worthy
+Degno
+Un termine delle regole usato per descrivere una creatura che è leggendaria, non è un Cattivo ed è rossa e/o bianca. Vedi regola 700.16.
+@@X
+X
+Un segnaposto per un numero che deve essere determinato. Vedi regola 107.3.
+@@Y
+Y
+Vedi X.
+@@You, Your
+Tu, tuo
+Parole che si riferiscono al controllore di un oggetto, al suo futuro controllore (se un giocatore sta tentando di lanciarlo o attivarlo) o al suo proprietario (se non ha controllore). Vedi regola 109.5.
+@@Zone
+Zona
+Un luogo in cui possono trovarsi gli oggetti durante una partita. Vedi sezione 4, «Zone».
+@@Zone-Change Triggers
+Inneschi di cambio di zona
+Eventi di innesco che coinvolgono oggetti che cambiano zona. Vedi regola 603.6.

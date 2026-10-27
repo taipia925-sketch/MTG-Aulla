@@ -1,0 +1,429 @@
+@@Foretold
+Presagita
+Una carta esiliata usando l'azione speciale presagio diventa presagita. Anche altri effetti possono rendere presagita una carta esiliata. Una magia è stata presagita se era una carta presagita in esilio prima di essere lanciata.
+@@Fortification
+Fortificazione
+Un sottotipo di artefatto. Le Fortificazioni possono essere assegnate alle terre. Vedi regola 301, «Artefatti», e regola 702.67, «Fortificare».
+@@Fortify
+Fortificare
+Un'abilità chiave che permette a un giocatore di assegnare una Fortificazione a una terra che controlla. Vedi regola 301, «Artefatti», e regola 702.67, «Fortificare».
+@@Free-for-All
+Tutti contro tutti (Free-for-All)
+Una variante multigiocatore in cui un gruppo di giocatori compete individualmente gli uni contro gli altri. Vedi regola 806, «Variante Tutti contro tutti».
+@@Freerunning
+Corsa libera (Freerunning)
+Un'abilità chiave che permette di lanciare certe magie per un costo alternativo. Vedi regola 702.173, «Corsa libera».
+@@Frenzy
+Frenesia
+Un'abilità chiave che può rendere una creatura migliore in combattimento. Vedi regola 702.68, «Frenesia».
+@@Full Party
+Gruppo completo
+Un giocatore ha un gruppo completo se il numero di creature nel suo gruppo è quattro. Vedi regola 700.8.
+@@Fuse
+Fusione (Fuse)
+Un'abilità chiave che permette a un giocatore di lanciare entrambe le metà di una carta divisa. Vedi regola 702.102, «Fusione».
+@@Fused Split Spell
+Magia divisa fusa
+Una carta divisa in pila che è stata lanciata usando l'abilità fusione, o una copia di tale carta. Vedi regola 702.102, «Fusione».
+@@General
+Generale
+Qualsiasi giocatore nella variante multigiocatore Imperatore che non sia un imperatore. Vedi regola 809, «Variante Imperatore».
+@@Generic Mana
+Mana generico
+Il mana in un costo rappresentato da simboli numerici (come {1}) o da simboli variabili (come {X}) che può essere pagato con mana di qualsiasi tipo. Vedi regola 107.4.
+@@Gift
+Dono (Gift)
+Un'abilità chiave che permette a chi lancia una magia di scegliere un avversario che riceva un beneficio quando la magia si risolve o quando entra il permanente con l'abilità. Vedi regola 702.174, «Dono».
+@@Global Enchantment (Obsolete)
+Incantesimo globale (obsoleto)
+Un termine obsoleto per un incantesimo non Aura. Le carte stampate con questo testo hanno ricevuto errata nel riferimento Oracle.
+@@Goad
+Aizzare (Goad)
+Un'azione chiave che rende aizzata una creatura fino al turno successivo di un giocatore. Vedi regola 701.15, «Aizzare».
+@@Goaded
+Aizzata
+Una designazione che un permanente può avere. Le creature aizzate sono costrette ad attaccare, e ad attaccare un giocatore diverso da quello che le ha aizzate. Vedi regola 701.15, «Aizzare».
+@@Gold Token
+Pedina Oro
+Una pedina Oro è una pedina artefatto incolore con «Sacrifica questa pedina: Aggiungi un mana di un qualsiasi colore». Per maggiori informazioni sulle pedine predefinite, vedi regola 111.10.
+@@Graft
+Innesto (Graft)
+Un'abilità chiave che fa entrare un permanente nel campo di battaglia con segnalini +1/+1 su di sé e può spostare quei segnalini su altre creature. Vedi regola 702.58, «Innesto».
+@@Grand Melee
+Grand Melee
+Una variante multigiocatore in cui un grande gruppo di giocatori (di solito dieci o più) compete individualmente gli uni contro gli altri. Vedi regola 807, «Variante Grand Melee».
+@@Gravestorm
+Tempesta funerea (Gravestorm)
+Un'abilità chiave che crea copie di una magia. Vedi regola 702.69, «Tempesta funerea».
+@@Graveyard
+Cimitero
+1. Una zona. Il cimitero di un giocatore è la sua pila degli scarti. 2. Tutte le carte nel cimitero di un giocatore. Vedi regola 404, «Cimitero».
+@@Hand
+Mano
+1. Una zona. La mano di un giocatore è dove quel giocatore tiene le carte che ha pescato ma non ha ancora giocato. 2. Tutte le carte nella mano di un giocatore. Vedi regola 402, «Mano».
+@@Hand Modifier
+Modificatore di mano
+Una caratteristica che hanno solo le carte vanguard. Vedi regola 211, «Modificatore di mano».
+@@Harmonize
+Armonizzare (Harmonize)
+Un'abilità chiave che permette a un giocatore di lanciare una carta dal suo cimitero per un costo specifico e gli permette di TAPpare una creatura che controlla per ridurre quel costo. Vedi regola 702.180, «Armonizzare».
+@@Harness
+Imbrigliare (Harness)
+Un'azione chiave che conferisce a un permanente la designazione imbrigliato. Vedi regola 701.64, «Imbrigliare».
+@@Harnessed
+Imbrigliato
+Una designazione che i permanenti possono avere. I permanenti Infinito hanno le loro abilità ∞ finché sono imbrigliati. Vedi regola 701.64, «Imbrigliare», e regola 702.186, «∞ (Infinito)».
+@@Haste
+Rapidità
+Un'abilità chiave che permette a una creatura di ignorare la regola della «debolezza da evocazione». Vedi regola 702.10, «Rapidità», e regola 302.6.
+@@Haunt
+Infestare (Haunt)
+Un'abilità chiave che esilia carte. Una carta esiliata in questo modo «infesta» una creatura bersaglio dell'abilità infestare. Vedi regola 702.55, «Infestare».
+@@Heal
+Curare
+Rimuovere il danno segnato su un permanente. Vedi regola 701.69, «Curare».
+@@Heartwood Token
+Pedina Cuore di legno (Heartwood)
+Una pedina Cuore di legno è una pedina artefatto rossa e verde con «{T}: Aggiungi {R} o {G}». Per maggiori informazioni sulle pedine predefinite, vedi regola 111.10.
+@@Hexproof
+Anti-malocchio
+Un'abilità chiave che impedisce che un permanente o un giocatore venga bersagliato da un avversario. Vedi regola 702.11, «Anti-malocchio».
+@@Hidden Agenda
+Agenda nascosta
+Un'abilità chiave che permette di mettere una carta cospirazione nella zona di comando a faccia in giù. Vedi regola 702.106, «Agenda nascosta».
+@@Hidden Zone
+Zona nascosta
+Una zona in cui non ci si può aspettare che tutti i giocatori vedano il fronte delle carte. Vedi regola 400.2. Vedi anche Zona pubblica.
+@@Hideaway
+Nascondiglio (Hideaway)
+Un'abilità chiave che permette a un giocatore di mettere da parte una carta segreta. Vedi regola 702.75, «Nascondiglio».
+@@Historic
+Storico
+Un oggetto è storico se ha il supertipo leggendario, il tipo di carta artefatto o il sottotipo Saga. Vedi regola 700.6.
+@@Hone Counter
+Segnalino affilatura (Hone)
+Un segnalino su un Equipaggiamento che dà +1/+0 alla creatura equipaggiata. Vedi regola 122, «Segnalini».
+@@Horsemanship
+Cavalcare (Horsemanship)
+Un'abilità chiave che limita il modo in cui una creatura può essere bloccata. Vedi regola 702.31, «Cavalcare».
+@@Hybrid Card
+Carta ibrida
+Una carta con uno o più simboli di mana ibrido nel suo costo di mana. Vedi regola 202.2f.
+@@Hybrid Mana Symbols
+Simboli di mana ibrido
+Un simbolo di mana che rappresenta un costo che può essere pagato in uno di due modi. Vedi regola 107.4.
+@@Hybrid Phyrexian Mana Symbols
+Simboli di mana phyrexiano ibrido
+Un simbolo di mana che rappresenta un costo che può essere pagato in uno di tre modi. Vedi regola 107.4.
+@@Job Select
+Scelta del mestiere (Job select)
+Un'abilità chiave che crea una pedina creatura Eroe 1/1 incolore e poi assegna a quella pedina l'Equipaggiamento con l'abilità. Vedi regola 702.182, «Scelta del mestiere».
+@@Junk Token
+Pedina Rottame (Junk)
+Una pedina Rottame è una pedina artefatto incolore con «{T}, Sacrifica questa pedina: Esilia la prima carta del tuo grimorio. Puoi giocare quella carta in questo turno. Attiva solo come una stregoneria». Per maggiori informazioni sulle pedine predefinite, vedi regola 111.10.
+@@If
+Se
+Vedi Clausola «se» interposta.
+@@Illegal Action
+Azione illegale
+Un'azione che viola le regole del gioco e/o i requisiti o le restrizioni creati dagli effetti. Vedi regola 733, «Gestire le azioni illegali».
+@@Illegal Target
+Bersaglio illegale
+Un bersaglio che non esiste più o non soddisfa più le specifiche indicate dalla magia o abilità che lo bersaglia. Vedi regola 608.2b.
+@@Illustration
+Illustrazione
+Un'immagine stampata nella metà superiore di una carta che non ha alcun effetto sul gioco. Vedi regola 203, «Illustrazione».
+@@Illustration Credit
+Credito dell'illustrazione
+Informazione stampata direttamente sotto il riquadro di testo che non ha alcun effetto sul gioco. Vedi regola 213, «Informazioni sotto il riquadro di testo».
+@@Impending
+Imminente (Impending)
+Un'abilità di alcune creature che permette di lanciarle per un costo alternativo. Se lanciata per il suo costo di imminente, per un certo periodo non è una creatura. Vedi regola 702.176, «Imminente».
+@@Imprint
+Impronta (Imprint)
+«Impronta» era un'abilità chiave. Ora è una parola di abilità e non ha significato nelle regole. Tutte le carte stampate con la parola chiave impronta hanno ricevuto errata nel riferimento Oracle.
+@@Improvise
+Improvvisare
+Un'abilità chiave che ti permette di TAPpare artefatti invece di pagare mana per lanciare una magia. Vedi regola 702.126, «Improvvisare».
+@@In Play (Obsolete)
+In gioco (obsoleto)
+Un termine obsoleto per il campo di battaglia. Le carte stampate con testo che contiene le espressioni «in gioco», «dal gioco», «in gioco» o simili fanno riferimento al campo di battaglia e hanno ricevuto errata nel riferimento Oracle. Vedi Campo di battaglia.
+@@In Response To
+In risposta a
+Una magia istantaneo lanciata, o un'abilità attivata attivata, mentre un'altra magia o abilità è in pila, è stata lanciata o attivata «in risposta a» quella magia o abilità precedente. Vedi regola 117.7.
+@@Increment
+Incremento (Increment)
+Un'abilità chiave che ti permette di mettere un segnalino +1/+1 su una creatura ogni volta che lanci una magia, se la quantità di mana spesa per essa è maggiore della forza o della costituzione di quella creatura. Vedi regola 702.191, «Incremento».
+@@Incubate
+Incubare
+Un'azione chiave che crea una pedina Incubatore con un numero specificato di segnalini +1/+1 su di sé. Vedi regola 701.53, «Incubare».
+@@Incubator Token
+Pedina Incubatore
+Una pedina Incubatore è una pedina bifronte. La sua faccia anteriore è un artefatto Incubatore incolore con «{2}: Trasforma questa pedina». La sua faccia posteriore è una creatura artefatto Phyrexiano 0/0 incolore chiamata «Phyrexian Token». Per maggiori informazioni sulle pedine predefinite, vedi regola 111.10.
+@@Independent
+Indipendente
+Vedi Dipendenza.
+@@Indestructible
+Indistruttibile
+Un'abilità chiave che impedisce che un permanente venga distrutto. Vedi regola 702.12.
+@@Infect
+Infettare
+Un'abilità chiave che influenza il modo in cui un oggetto infligge danno a creature e giocatori. Vedi regola 702.90, «Infettare».
+@@Infinity
+Infinito
+1. Un sottotipo di artefatto. 2. ∞ è una parola chiave presente sulle carte Infinito che conferisce un'abilità finché quel permanente è imbrigliato. Vedi regola 702.186, «∞ (Infinito)», e regola 701.64, «Imbrigliare».
+@@Ingest
+Ingerire
+Un'abilità chiave che può esiliare la prima carta del grimorio di un giocatore. Vedi regola 702.115, «Ingerire».
+@@Initiative
+Iniziativa
+Una designazione che un giocatore può avere. Alcuni effetti istruiscono un giocatore a prendere l'iniziativa. Il giocatore con l'iniziativa si avventura nella Sottocittà ogni volta che prende l'iniziativa e all'inizio del suo mantenimento. Vedi regola 726, «L'iniziativa».
+@@Instant
+Istantaneo
+Un tipo di carta. Un istantaneo non è un permanente. Vedi regola 304, «Istantanei».
+@@Instead
+Invece
+Gli effetti che usano la parola «invece» sono effetti di sostituzione. La parola «invece» indica con cosa verrà sostituito un evento. Vedi regola 614, «Effetti di sostituzione».
+@@Interrupt (Obsolete)
+Interruzione (obsoleto)
+Un tipo di carta obsoleto. Tutte le carte stampate con questo tipo di carta ora sono istantanei. Tutte le abilità che, come stampate, dicevano che un giocatore poteva «giocarle come un'interruzione» ora possono essere attivate come qualsiasi altra abilità attivata (a meno che non siano abilità di mana, nel qual caso seguono invece quelle regole). Tutte le carte interessate hanno ricevuto errata nel riferimento Oracle.
+@@Intervening “If” Clause
+Clausola «se» interposta
+Una condizione formulata in modo specifico che viene controllata quando un'abilità innescata si innescherebbe e di nuovo quando si risolverebbe. Vedi regola 603.4.
+@@Intimidate
+Intimidire
+Un'abilità chiave che limita il modo in cui una creatura può essere bloccata. Vedi regola 702.13, «Intimidire».
+@@Investigate
+Indagare
+Un'azione chiave che crea una pedina artefatto Indizio. Vedi regola 701.16, «Indagare».
+@@Island
+Isola
+Uno dei cinque tipi di terra base. Qualsiasi terra con questo sottotipo ha l'abilità «{T}: Aggiungi {U}». Vedi regola 305.6.
+@@Islandcycling
+Cicloisola
+Vedi Ciclo di tipo.
+@@Islandhome (Obsolete)
+Isola natia (obsoleto)
+Un'abilità chiave obsoleta che significava «Questa creatura non può attaccare a meno che il giocatore in difesa non controlli un'Isola» e «Quando non controlli Isole, sacrifica questa creatura». Le carte stampate con questa abilità hanno ricevuto errata nel riferimento Oracle.
+@@Islandwalk
+Passaisole
+Vedi Passaterre.
+@@Jump-Start
+Ripresa (Jump-start)
+Un'abilità chiave che permette a un giocatore di lanciare una carta dal suo cimitero scartando una carta. Vedi regola 702.133, «Ripresa».
+@@Keyword Ability
+Abilità chiave
+Un termine di gioco, come «volare» o «rapidità», usato come abbreviazione di un'abilità o di un gruppo di abilità più lunghi. Vedi regola 702, «Abilità chiave».
+@@Keyword Action
+Azione chiave
+Un verbo, come «distruggere» o «lanciare», usato come termine di gioco invece che nel suo normale significato. Vedi regola 701, «Azioni chiave».
+@@Keyword Counter
+Segnalino parola chiave
+Un indicatore messo su un oggetto che ne modifica le caratteristiche conferendogli una parola chiave. Vedi regola 122, «Segnalini».
+@@Kicker, Kicked
+Potenziamento, potenziata (Kicker)
+Potenziamento è un'abilità chiave che rappresenta un costo aggiuntivo facoltativo. Una magia è stata potenziata se il suo controllore ha dichiarato l'intenzione di pagare uno o tutti i suoi costi di potenziamento. Vedi regola 702.33, «Potenziamento».
+@@Kindred
+Tribale (Kindred)
+Un tipo di carta. Il fatto che un tribale sia un permanente o meno dipende dal suo altro tipo di carta. Vedi regola 308, «Tribali».
+@@Land
+Terra
+Un tipo di carta. Una terra è un permanente. Vedi regola 305, «Terre».
+@@Land Type
+Tipo di terra
+Un sottotipo correlato al tipo di carta terra. Vedi regola 305, «Terre». Vedi regola 205.3i per l'elenco dei tipi di terra.
+@@Lander Token
+Pedina Lander
+Una pedina Lander è una pedina artefatto incolore con «{2}, {T}, Sacrifica questa pedina: Passa in rassegna il tuo grimorio per una carta terra base, mettila sul campo di battaglia TAPpata, poi rimescola». Per maggiori informazioni sulle pedine predefinite, vedi regola 111.10.
+@@Landwalk
+Passaterre
+Un termine generico per un gruppo di abilità chiave che limitano la possibilità di bloccare una creatura. Vedi regola 702.14, «Passaterre».
+@@Last Known Information
+Ultime informazioni conosciute
+Informazioni su un oggetto che non è più nella zona in cui dovrebbe trovarsi, o informazioni su un giocatore che non è più nella partita. Queste informazioni fotografano l'ultima esistenza di quell'oggetto in quella zona o l'ultima esistenza di quel giocatore nella partita. Vedi regole 113.7a, 608.2b, 608.2h e 800.4h.
+@@Layer
+Livello
+Un sistema usato per stabilire in quale ordine vengono applicati gli effetti continui. Vedi regola 613, «Interazione degli effetti continui». Vedi anche Dipendenza, Ordine delle marche temporali.
+@@Learn
+Imparare
+Un'azione chiave che permette a un giocatore di aggiungere alla sua mano una carta Lezione da fuori dalla partita oppure di scartare una carta per pescarne una. Vedi regola 701.48, «Imparare».
+@@Leaves the Battlefield
+Lascia il campo di battaglia
+Un permanente «lascia il campo di battaglia» quando viene spostato dal campo di battaglia in un'altra zona, oppure (se è in fase) quando lascia la partita perché il suo proprietario lascia la partita. Vedi regole 603.6c e 603.10.
+@@Legal Text
+Testo legale
+Informazione stampata direttamente sotto il riquadro di testo che non ha alcun effetto sul gioco. Vedi regola 213, «Informazioni sotto il riquadro di testo».
+@@Legend (Obsolete)
+Leggenda (obsoleto)
+Un tipo di creatura obsoleto. Le carte stampate con questo sottotipo hanno ricevuto errata nel riferimento Oracle in modo da avere invece il supertipo leggendario. Vedi Leggendario.
+@@Legend Rule
+Regola delle leggende
+Un'azione generata dallo stato che fa sì che un giocatore che controlla due o più permanenti leggendari con lo stesso nome li metta tutti tranne uno nei cimiteri dei rispettivi proprietari. Vedi regola 704.5j.
+@@Legendary
+Leggendario
+Un supertipo che normalmente è rilevante sui permanenti. Vedi regola 205.4, «Supertipi». Vedi anche Regola delle leggende.
+@@Lethal Damage
+Danno letale
+Una quantità di danno maggiore o uguale alla costituzione di una creatura. Vedi regole 120.4a, 120.6, 510.1 e 704.5g.
+@@Level
+Livello (di Classe)
+Una designazione numerica che un permanente può avere. Il livello di un incantesimo Classe stabilisce quali altre abilità ha. Vedi regola 716, «Carte Classe».
+@@Level Symbol
+Simbolo di livello
+Un simbolo che rappresenta un'abilità chiave che indica le abilità, la forza e la costituzione che una carta livellatrice può avere. Vedi regola 107.8 e regola 711, «Carte livellatrici».
+@@Level Up
+Aumentare di livello (Level up)
+Un'abilità chiave che può mettere segnalini livello su una creatura. Vedi regola 702.87, «Aumentare di livello». Per le abilità di livello di classe delle carte Classe, vedi regola 716, «Carte Classe».
+@@Leveler Cards
+Carte livellatrici
+Carte con riquadri di testo a fasce e tre riquadri di forza/costituzione. Vedi regola 711, «Carte livellatrici».
+@@Library
+Grimorio
+1. Una zona. Il grimorio di un giocatore è il luogo da cui quel giocatore pesca le carte. 2. Tutte le carte nel grimorio di un giocatore. Vedi regola 401, «Grimorio».
+@@Life, Life Total
+Punti vita, totale di punti vita
+Ogni giocatore ha una quantità di «punti vita», rappresentata dal «totale di punti vita» di quel giocatore. I punti vita possono essere guadagnati o persi. Vedi regola 119, «Punti vita».
+@@Life Modifier
+Modificatore di punti vita
+Una caratteristica che hanno solo le carte vanguard. Vedi regola 212, «Modificatore di punti vita».
+@@Lifelink
+Legame vitale
+Un'abilità chiave che fa guadagnare punti vita a un giocatore. Vedi regola 702.15, «Legame vitale».
+@@Limited
+Limitato
+Un modo di giocare in cui ogni giocatore riceve una quantità di prodotto Magic non aperto e crea il proprio mazzo sul momento. Vedi regola 100.2.
+@@Limited Range of Influence
+Raggio d'influenza limitato
+Una regola facoltativa usata in alcune partite multigiocatore che limita ciò che un giocatore può influenzare. Vedi regola 801, «Opzione del raggio d'influenza limitato».
+@@Linked Abilities
+Abilità collegate
+Due abilità stampate sullo stesso oggetto tali che una di esse fa compiere azioni o influenzare oggetti e l'altra fa riferimento direttamente a quelle azioni o a quegli oggetti. Vedi regola 607, «Abilità collegate».
+@@Living Metal
+Metallo vivente (Living metal)
+Un'abilità chiave presente su alcuni Veicoli che li trasforma in creature durante il tuo turno. Vedi regola 702.161, «Metallo vivente».
+@@Living Weapon
+Arma vivente
+Un'abilità chiave che crea una pedina creatura Germe Phyrexiano 0/0 nera e poi assegna a quella pedina l'Equipaggiamento con l'abilità. Vedi regola 702.92, «Arma vivente».
+@@Local Enchantment (Obsolete)
+Incantesimo locale (obsoleto)
+Un termine obsoleto per un'Aura. Le carte stampate con questo testo hanno ricevuto errata nel riferimento Oracle.
+@@Lock
+Bloccare (una metà)
+Rimuovere una designazione di sblocco da un permanente che ha una o più metà sbloccate. Vedi regola 709.5g.
+@@Locked
+Bloccata (metà)
+Una metà di un permanente diviso è «bloccata» se non ha la designazione di sblocco appropriata. Vedi regola 709.5.
+@@London Mulligan
+Mulligan di Londra
+Termine informale per l'attuale sistema di regole dei mulligan. Vedi regola 103.5.
+@@Loop
+Ciclo (loop)
+Un insieme di azioni che potrebbe essere ripetuto all'infinito. Vedi regola 732, «Usare scorciatoie».
+@@Lose the Game
+Perdere la partita
+Ci sono diversi modi per perdere la partita. Vedi regola 104, «Fine della partita», regola 810.8 (per le regole aggiuntive delle partite Two-Headed Giant), regola 809.5 (per le regole aggiuntive delle partite Imperatore) e regola 903.10 (per una regola aggiuntiva delle partite Commander).
+@@Loyalty
+Fedeltà
+1. Parte di una carta presente solo sulle carte planeswalker. La fedeltà di una carta planeswalker è stampata nel suo angolo in basso a destra. Vedi regola 209, «Fedeltà». 2. Una caratteristica che hanno solo i planeswalker. Vedi regola 306.5.
+@@Loyalty Ability
+Abilità di fedeltà
+Un'abilità attivata con un simbolo di fedeltà nel suo costo. Vedi regola 606, «Abilità di fedeltà».
+@@Madness
+Follia
+Un'abilità chiave che permette a un giocatore di lanciare una carta che scarta. Vedi regola 702.35, «Follia».
+@@Main Game
+Partita principale
+La partita in cui è stata lanciata (o attivata) la magia (o abilità) che ha creato una sottopartita. Vedi regola 729, «Sottopartite».
+@@Main Phase
+Fase principale
+Parte del turno. La prima fase principale, o precombattimento, è la seconda fase del turno. La seconda fase principale, o postcombattimento, è la quarta fase del turno. Vedi regola 505, «Fase principale».
+@@Mana
+Mana
+La risorsa principale del gioco. Viene spesa per pagare i costi, di solito quando si lanciano magie e si attivano abilità. Vedi regola 106, «Mana», regola 107.4 e regola 202, «Costo di mana e colore».
+@@Mana Ability
+Abilità di mana
+Un'abilità attivata o innescata che potrebbe creare mana e non usa la pila. Vedi regola 605, «Abilità di mana».
+@@Mana Burn (Obsolete)
+Ustione da mana (obsoleto)
+Le versioni precedenti delle regole stabilivano che il mana non speso faceva perdere punti vita a un giocatore; questo era detto «ustione da mana». Quella regola non esiste più.
+@@Mana Cost
+Costo di mana
+Una caratteristica, e una parte di una carta. Il costo di mana di una carta è indicato dai simboli di mana stampati nel suo angolo in alto a destra. Vedi regola 107.4 e regola 202, «Costo di mana e colore».
+@@Mana Pool
+Riserva di mana
+Il luogo in cui il mana creato da un effetto viene conservato temporaneamente. Vedi regola 106.4.
+@@Mana Source (Obsolete)
+Fonte di mana (obsoleto)
+Un tipo di carta obsoleto. Tutte le carte stampate con questo tipo di carta ora sono istantanei. Tutte le abilità che, come stampate, dicevano che un giocatore poteva «giocarle come una fonte di mana» ora sono abilità di mana. Tutte le carte interessate hanno ricevuto errata nel riferimento Oracle.
+@@Mana Symbol
+Simbolo di mana
+Un'icona che rappresenta mana o un costo di mana. Vedi regola 107.4.
+@@Mana Value
+Valore di mana
+La quantità totale di mana in un costo di mana, indipendentemente dal colore. Vedi regola 202.3.
+@@Manifest
+Manifestare
+Un'azione chiave che mette una carta sul campo di battaglia a faccia in giù come creatura 2/2. Vedi regola 701.40, «Manifestare», e regola 708, «Magie e permanenti a faccia in giù».
+@@Manifest Dread
+Manifestare il terrore
+Un'azione chiave che mette sul campo di battaglia a faccia in giù, come creatura 2/2, una delle prime due carte del tuo grimorio. Vedi regola 701.62, «Manifestare il terrore», regola 701.40, «Manifestare», e regola 708, «Magie e permanenti a faccia in giù».
+@@Map
+Mappa
+Una pedina Mappa è una pedina artefatto Mappa incolore con «{1}, {T}, Sacrifica questa pedina: Una creatura bersaglio che controlli esplora. Attiva solo come una stregoneria». Vedi regola 701.44, «Esplorare». Per maggiori informazioni sulle pedine predefinite, vedi regola 111.10.
+@@Match
+Incontro
+Una partita multigiocatore o una serie di partite a due giocatori (di solito al meglio di tre) giocata in un torneo. Vedi regola 100.6.
+@@Max Speed
+Velocità massima (Max speed)
+1. Un giocatore ha velocità massima se la sua velocità è 4. Vedi regola 702.179, «Accendete i motori!». 2. Un'abilità chiave che conferisce un'abilità al permanente o alla carta su cui si trova solo se il controllore di quel permanente (o il proprietario di quella carta, se non è sul campo di battaglia) ha velocità 4. Vedi regola 702.178, «Velocità massima».
+@@Maximum Hand Size
+Numero massimo di carte in mano
+Il numero di carte in mano a cui un giocatore deve ridursi scartando durante la sua sottofase di cancellazione. Vedi regola 402.2 e 514.1.
+@@Mayhem
+Caos (Mayhem)
+Un'abilità chiave che ti permette di giocare dal tuo cimitero, per un costo alternativo, carte che hai scartato in questo turno. Vedi regola 702.187, «Caos».
+@@Megamorph
+Megamorfosi
+Una variante dell'abilità metamorfosi che mette un segnalino +1/+1 sulla creatura quando viene girata a faccia in su. Vedi regola 702.37, «Metamorfosi».
+@@Meld
+Combinare (Meld)
+Girare i due membri di una coppia da combinare in modo che le loro facce posteriori siano rivolte verso l'alto e unite in un'unica carta di Magic sovradimensionata. Vedi regola 701.42, «Combinare».
+@@Meld Cards
+Carte da combinare
+Carte con una faccia di carta di Magic su un lato e metà di una faccia di carta di Magic sovradimensionata sull'altro. Vedi regola 712, «Carte bifronte».
+@@Melee
+Mischia
+Un'abilità chiave che migliora una creatura attaccante in base al numero di avversari che hai attaccato. Vedi regola 702.121, «Mischia».
+@@Menace
+Minacciare
+Un'abilità di evasione che rende le creature impossibili da bloccare per una singola creatura. Vedi regola 702.111, «Minacciare».
+@@Mentor
+Mentore
+Un'abilità chiave che permette alle tue creature più grandi di potenziare le tue creature più piccole quando attaccano insieme. Vedi regola 702.134, «Mentore».
+@@Merged Permanent
+Permanente fuso
+Una carta o una pedina può fondersi con un permanente formando un permanente fuso. Questo permanente fuso è rappresentato da più di una carta e/o pedina. Vedi regola 730, «Fondersi con i permanenti».
+@@Mill
+Macinare
+Per macinare un certo numero di carte, un giocatore mette altrettante carte dalla cima del suo grimorio nel suo cimitero. Vedi regola 701.17.
+@@Minimum Deck Size
+Dimensione minima del mazzo
+Se una regola o un effetto stabilisce che il mazzo di un giocatore deve contenere almeno un numero specifico di carte, quel numero è la dimensione minima del mazzo del giocatore.
+@@Miracle
+Miracolo
+Un'abilità chiave che ti permette di lanciare una magia a un costo ridotto se è la prima carta che peschi in un turno. Vedi regola 702.94, «Miracolo».
+@@Mobilize
+Mobilitare (Mobilize)
+Un'abilità chiave che crea un certo numero di pedine creatura Guerriero rosse TAPpate e attaccanti che vengono sacrificate all'inizio della prossima sottofase finale. Vedi regola 702.181, «Mobilitare».
+@@Modal, Mode
+Modale, modo
+Una magia o abilità è «modale» se ha due o più opzioni in un elenco puntato precedute da istruzioni che dicono a un giocatore di sceglierne un certo numero, come «Scegli uno —». Vedi regola 700.2.
+@@Modal Double-Faced Cards
+Carte bifronte modali
+Un tipo di carta bifronte. Le carte bifronte modali possono essere giocate con una qualsiasi delle loro due facce rivolta verso l'alto. Vedi regola 712, «Carte bifronte».
+@@Modified
+Modificata
+Una creatura modificata è una creatura che ha un segnalino su di sé, è equipaggiata o è incantata da un'Aura controllata anche dal suo controllore. Vedi regola 700.9.
+@@Modular
+Modulare
+Un'abilità chiave che fa entrare un permanente nel campo di battaglia con segnalini +1/+1 su di sé e può spostare quei segnalini su altre creature artefatto. Vedi regola 702.43, «Modulare».

@@ -1,0 +1,418 @@
+@@Monarch
+Monarca
+Una designazione che un giocatore può avere. Alcuni effetti istruiscono un giocatore a diventare il monarca. Il monarca pesca una carta all'inizio della sua sottofase finale. Infliggere danno da combattimento al monarca gli ruba il titolo. Vedi regola 725, «Il monarca».
+@@Mono Artifact (Obsolete)
+Monoartefatto (obsoleto)
+Un termine obsoleto che compariva sulla riga del tipo degli artefatti con abilità attivate che facevano TAPpare l'artefatto come costo. Le carte stampate con questo testo hanno ricevuto errata nel riferimento Oracle e ora dicono semplicemente «Artefatto», e quelle abilità ora includono il simbolo di TAP nei loro costi.
+@@Monocolored
+Monocolore
+Un oggetto con esattamente un colore è monocolore. Gli oggetti incolori non sono monocolore. Vedi regola 105, «Colori», e regola 202, «Costo di mana e colore».
+@@Monocolored Hybrid Mana Symbols
+Simboli di mana ibrido monocolore
+Vedi Simboli di mana ibrido.
+@@Monstrosity
+Mostruosità
+Un'azione chiave che mette segnalini +1/+1 su una creatura e la fa diventare mostruosa. Vedi regola 701.37, «Mostruosità».
+@@Monstrous
+Mostruosa
+Una designazione data a una creatura la cui abilità che include un'istruzione di mostruosità si è risolta. Vedi regola 701.37, «Mostruosità».
+@@More Than Meets the Eye
+More Than Meets the Eye
+Un'abilità chiave che permette di lanciare alcune carte convertite. Vedi regola 702.162, «More Than Meets the Eye», e regola 701.28, «Convertire».
+@@Morph
+Metamorfosi
+Un'abilità chiave che permette di lanciare una carta a faccia in giù come creatura 2/2. Vedi regola 702.37, «Metamorfosi», e regola 708, «Magie e permanenti a faccia in giù».
+@@Mountain
+Montagna
+Uno dei cinque tipi di terra base. Qualsiasi terra con questo sottotipo ha l'abilità «{T}: Aggiungi {R}». Vedi regola 305.6.
+@@Mountaincycling
+Ciclomontagna
+Vedi Ciclo di tipo.
+@@Mountainwalk
+Passamontagne
+Vedi Passaterre.
+@@Move
+Spostare
+Rimuovere un segnalino da un oggetto e metterlo su un oggetto diverso. Vedi regola 122.5.
+Alcune carte più vecchie usavano «spostare» riferito alle Aure; quelle carte hanno ricevuto errata nel riferimento Oracle e ora usano la parola «assegnare».
+@@Mulligan
+Mulligan
+Fare mulligan significa rifiutare una potenziale mano iniziale per averne una nuova. Vedi regola 103.5.
+@@Multicolored
+Multicolore
+Un oggetto con due o più colori è multicolore. Multicolore non è un colore. Vedi regola 105, «Colori», e regola 202, «Costo di mana e colore».
+@@Multikicker
+Multipotenziamento (Multikicker)
+Multipotenziamento è una variante dell'abilità chiave potenziamento. Rappresenta un costo aggiuntivo facoltativo che può essere pagato un qualsiasi numero di volte. Vedi regola 702.33, «Potenziamento». Vedi anche Potenziamento.
+@@Multiplayer Game
+Partita multigiocatore
+Una partita che inizia con più di due giocatori. Vedi sezione 8, «Regole multigiocatore».
+@@Mutate
+Mutare (Mutate)
+Una parola chiave che permette di lanciare una carta creatura come magia creatura mutante. Vedi regola 702.140, «Mutare».
+@@Mutating Creature Spell
+Magia creatura mutante
+Una magia creatura lanciata usando l'abilità chiave mutare. Mentre si risolve, se la sua creatura bersaglio è legale, si fonde con la creatura bersaglio. La creatura risultante ha tutte le caratteristiche del componente più in alto e ha le abilità di ciascun componente. Vedi regola 702.140, «Mutare», e regola 730, «Fondersi con i permanenti».
+@@Myriad
+Miriade
+Miriade è un'abilità innescata che di fatto permette a una creatura di attaccare in tutte le direzioni possibili. Vedi regola 702.116, «Miriade».
+@@Name
+Nome
+Una caratteristica, e una parte di una carta. Il nome di una carta è stampato nel suo angolo in alto a sinistra. Vedi regola 201, «Nome».
+@@Night
+Notte
+Insieme al giorno, una designazione che la partita può avere. Vedi regola 731, «Giorno e notte», e regola 702.145, «Diurno e Notturno».
+@@Nightbound
+Notturno (Nightbound)
+Un'abilità presente sulla faccia posteriore di alcune carte bifronte. Le carte con diurno e notturno sono a faccia in su quando è giorno e a faccia in giù quando è notte. Vedi regola 702.145, «Diurno e Notturno», e regola 731, «Giorno e notte».
+@@Ninjutsu
+Ninjutsu
+Un'abilità chiave che permette a una creatura di entrare improvvisamente in combattimento. Vedi regola 702.49, «Ninjutsu».
+@@Nonbasic Land
+Terra non base
+Qualsiasi terra che non ha il supertipo «base». Vedi regola 205.4, «Supertipi».
+@@Nonmodal Double-Faced Card
+Carta bifronte non modale
+Un tipo di carta bifronte. Le carte bifronte non modali vengono lanciate per impostazione predefinita con la faccia anteriore rivolta verso l'alto ma possono trasformarsi in qualche modo nella loro faccia posteriore. Vedi regola 712, «Carte bifronte».
+@@Nontraditional Magic Card
+Carta di Magic non tradizionale
+Una carta non inclusa nei mazzi dei giocatori. Può essere sovradimensionata o avere un retro diverso da quello «Deckmaster». Vedi regola 108.2.
+@@Object
+Oggetto
+Un'abilità in pila, una carta, una copia di una carta, un emblema, una pedina, una magia o un permanente. Vedi regola 109, «Oggetti».
+@@Offering
+Offerta
+Un'abilità chiave che modifica quando puoi lanciare una magia e quanto mana devi spendere per farlo. Vedi regola 702.48, «Offerta».
+@@Offspring
+Progenie (Offspring)
+Un'abilità chiave che ti permette di pagare un costo aggiuntivo mentre lanci una magia creatura per creare, quando entra nel campo di battaglia, una pedina 1/1 che è una copia di quel permanente. Vedi regola 702.175, «Progenie».
+@@Omen Card
+Carta Presagio (Omen)
+Carte con una cornice in due parti (una delle quali inserita a sinistra) su un'unica carta, in cui le caratteristiche alternative includono il tipo di magia Presagio. Vedi regola 720, «Carte Presagio».
+@@One-Shot Effect
+Effetto istantaneo (one-shot)
+Un effetto che fa qualcosa una sola volta e non ha una durata. Vedi regola 610, «Effetti istantanei». Vedi anche Effetti continui.
+@@Ongoing
+Continuativo
+Un supertipo che compare solo sulle carte piano malvagio. Vedi regola 205.4, «Supertipi».
+@@Opening Hand
+Mano iniziale
+La mano di carte con cui un giocatore inizia la partita, una volta che il giocatore ha deciso di non fare altri mulligan. Vedi regola 103.5.
+@@Opponent
+Avversario
+Qualcuno contro cui un giocatore sta giocando. Vedi regole 102.2 e 102.3.
+@@Option
+Opzione
+Una regola o un insieme di regole aggiuntive che possono essere usate in una partita multigiocatore. Vedi regola 800.2.
+@@Oracle
+Oracle
+Il riferimento che contiene i testi aggiornati (in inglese) di tutte le carte legali nei tornei. Il testo Oracle di una carta può essere trovato usando il database di carte Gatherer su Gatherer.Wizards.com. Vedi regola 108.1.
+@@Outlast
+Resistenza (Outlast)
+Un'abilità chiave che permette a una creatura di crescere nel tempo. Vedi regola 702.107, «Resistenza».
+@@Outside the Game
+Fuori dalla partita
+Un oggetto è «fuori dalla partita» se non si trova in nessuna delle zone della partita. Vedi regola 400.11.
+@@Overload
+Sovraccarico
+Un'abilità chiave che permette a una magia di influenzare un singolo bersaglio oppure molti oggetti. Vedi regola 702.96, «Sovraccarico».
+@@Owner
+Proprietario
+Il giocatore a cui (ai fini della partita) appartiene una carta, un permanente, una pedina o una magia. Vedi regole 108.3, 110.2, 111.2 e 112.2.
+@@Paired
+Abbinata
+Un termine che descrive una creatura influenzata da un'abilità legame d'anima. Vedi regola 702.95, «Legame d'anima».
+@@Paradigm
+Paradigma (Paradigm)
+Un'abilità chiave che ti permette di lanciare una copia di una magia all'inizio di ciascuna delle tue prime fasi principali. Vedi regola 702.192, «Paradigma».
+@@Partner, “Partner—[text],” “Partner with [name]”
+Partner, «Partner—[testo]», «Partner con [nome]»
+Un'abilità chiave che permette a due carte leggendarie di essere il tuo comandante nella variante Commander invece di una. «Partner con [nome]» è una versione specializzata dell'abilità che funziona anche al di fuori della variante Commander per aiutare due carte a raggiungere insieme il campo di battaglia. Vedi regola 702.124, «Partner», e regola 903, «Commander».
+@@Party
+Gruppo
+Alcune carte fanno riferimento al numero di creature nel tuo gruppo. Il gruppo di un giocatore include fino a un Chierico, un Furfante, un Guerriero e un Mago. Vedi regola 700.8.
+@@Pass
+Passare
+Rinunciare a compiere qualsiasi azione (come lanciare una magia o attivare un'abilità) quando hai la priorità. Vedi regola 117, «Tempistica e priorità».
+@@Pass in Succession
+Passare in successione
+Tutti i giocatori «passano in successione» se ogni giocatore della partita (a partire da uno qualsiasi di essi) sceglie di non compiere un'azione quando riceve la priorità. Vedi regola 117, «Tempistica e priorità».
+@@Pawprint Symbol
+Simbolo dell'impronta
+Un simbolo a forma di impronta di zampa usato per indicare i modi su alcune magie modali. Vedi regola 700.2i.
+@@Pay
+Pagare
+Compiere le azioni richieste da un costo. Spesso significa, senza limitarsi a questo, spendere risorse come mana o punti vita. Vedi regola 118, «Costi».
+@@Permanent
+Permanente
+Una carta o una pedina sul campo di battaglia. Vedi regola 110, «Permanenti».
+@@Permanent Card
+Carta permanente
+Una carta che potrebbe essere messa sul campo di battaglia. Vedi regola 110.4a.
+@@Permanent Spell
+Magia permanente
+Una magia che entrerà nel campo di battaglia come permanente come parte della sua risoluzione. Vedi regola 110.4b.
+@@Permanently (Obsolete)
+Permanentemente (obsoleto)
+Un termine obsoleto usato per indicare che un effetto continuo non ha durata e quindi dura fino alla fine della partita. Le carte stampate con questo termine hanno ricevuto errata nel riferimento Oracle che lo elimina.
+@@Persist
+Persistere
+Un'abilità chiave che può far tornare una creatura dal cimitero sul campo di battaglia. Vedi regola 702.79, «Persistere».
+@@Phase
+Fase, entrare/uscire di fase
+1. Una sottosezione di un turno. Vedi sezione 5, «Struttura del turno». 2. Un permanente «rientra in fase» quando il suo stato cambia da fuori fase a in fase. Un permanente «esce di fase» quando il suo stato cambia da in fase a fuori fase. Vedi regola 702.26, «Intermittenza».
+@@Phased In, Phased Out
+In fase, fuori fase
+Uno stato che un permanente può avere. In fase è lo stato predefinito. I permanenti fuori fase vengono trattati come se non esistessero. Vedi regola 110.5 e regola 702.26, «Intermittenza». («Fuori fase» era una zona nelle versioni più vecchie delle regole.)
+@@Phasing
+Intermittenza (Phasing)
+Un'abilità chiave che fa sì che un permanente venga a volte trattato come se non esistesse. Vedi regola 702.26, «Intermittenza».
+@@Phenomenon
+Fenomeno
+Un tipo di carta presente solo su carte di Magic non tradizionali nella variante casual Planechase. Una carta fenomeno non è un permanente. Vedi regola 312, «Fenomeni».
+@@Phyrexian Mana Symbol
+Simbolo di mana phyrexiano
+Un simbolo di mana che rappresenta un costo che può essere pagato spendendo mana colorato oppure pagando punti vita. Vedi regola 107.4.
+@@Phyrexian Symbol
+Simbolo phyrexiano
+Un simbolo usato nel testo delle regole per rappresentare uno qualsiasi dei cinque simboli di mana phyrexiano. Vedi regola 107.4g.
+@@Pile
+Pila (di carte)
+Un raggruppamento temporaneo di carte. Vedi regola 700.3.
+@@Placed
+Posto (obsoleto)
+(Obsoleto) Alcune magie e abilità in precedenza parlavano di un segnalino «posto» su un permanente. Queste carte hanno ricevuto errata nel riferimento Oracle e ora usano invece il termine «mettere». A causa di una modifica delle regole, queste carte continuano a funzionare come prima. Vedi regola 122, «Segnalini».
+@@Plains
+Pianura
+Uno dei cinque tipi di terra base. Qualsiasi terra con questo sottotipo ha l'abilità «{T}: Aggiungi {W}». Vedi regola 305.6.
+@@Plainscycling
+Ciclopianura
+Vedi Ciclo di tipo.
+@@Plainswalk
+Passapianure
+Vedi Passaterre.
+@@Planar Deck
+Mazzo planare
+Un mazzo di almeno dieci carte piano necessario per giocare la variante casual Planechase. Vedi regola 901.3.
+@@Planar Die
+Dado planare
+Uno speciale dado a sei facce necessario per giocare la variante casual Planechase. Vedi regola 901.3.
+@@Plane
+Piano
+Un tipo di carta presente solo su carte di Magic non tradizionali nella variante casual Planechase. Una carta piano non è un permanente. Vedi regola 311, «Piani».
+@@Planechase
+Planechase
+Una variante casual in cui le carte piano e le carte fenomeno aggiungono abilità e casualità alla partita. Vedi regola 901, «Planechase».
+@@Planeswalk
+Viaggiare tra i piani (Planeswalk)
+In una partita Planechase, mettere a faccia in giù in fondo al mazzo planare del suo proprietario ogni carta piano o carta fenomeno a faccia in su, poi togliere la prima carta del tuo mazzo planare da quel mazzo e girarla a faccia in su. Vedi regola 701.31, «Viaggiare tra i piani».
+@@Planeswalker
+Planeswalker
+Un tipo di carta. Un planeswalker è un permanente. Vedi regola 306, «Planeswalker».
+@@Planeswalker Symbol
+Simbolo Planeswalker
+Il simbolo Planeswalker compare sul dado planare nella variante casual Planechase. Vedi regola 107.11.
+@@Planeswalker Type
+Tipo di planeswalker
+Un sottotipo correlato al tipo di carta planeswalker. Vedi regola 306, «Planeswalker». Vedi regola 205.3j per l'elenco dei tipi di planeswalker.
+@@Planeswalker Uniqueness Rule (Obsolete)
+Regola di unicità dei planeswalker (obsoleto)
+Le versioni più vecchie delle regole stabilivano che un giocatore che controllava due o più planeswalker con lo stesso tipo di planeswalker metteva tutti quei planeswalker tranne uno nei cimiteri dei rispettivi proprietari. Questa regola era detta «regola di unicità dei planeswalker» e non esiste più.
+@@Play
+Giocare
+1. Giocare una terra significa mettere una terra sul campo di battaglia come azione speciale. Vedi regola 116, «Azioni speciali», e regola 305, «Terre». 2. Giocare una carta significa giocare quella carta come terra o lanciarla come magia, a seconda di cosa sia appropriato. Vedi regola 601, «Lanciare magie». 3. (Obsoleto) Lanciare una magia era detto un tempo giocare una magia. Le carte con quel testo hanno ricevuto errata nel riferimento Oracle. Vedi Lanciare. 4. (Obsoleto) Attivare un'abilità attivata era detto un tempo giocare un'abilità attivata. Le carte con quel testo hanno ricevuto errata nel riferimento Oracle. Vedi Attivare. 5. (Obsoleto) Il campo di battaglia era noto un tempo come zona in gioco. Le carte stampate con testo che contiene le espressioni «in gioco», «dal gioco» o simili fanno riferimento al campo di battaglia e hanno ricevuto errata nel riferimento Oracle. Vedi Campo di battaglia.
+@@Player
+Giocatore
+Una delle persone nella partita. Vedi regola 102, «Giocatori».
+@@Plot
+Complotto (Plot)
+Un'abilità chiave che permette a un giocatore di esiliare carte dalla sua mano e lanciarle senza pagare il loro costo di mana nei turni futuri. Vedi regola 702.170, «Complotto».
+@@Plotted
+Complottata
+Una carta esiliata usando l'azione speciale complotto diventa complottata. Anche altri effetti possono rendere complottata una carta esiliata. Vedi regola 702.170, «Complotto».
+@@Poison Counter
+Segnalino veleno
+Un segnalino che può essere dato a un giocatore. Vedi regola 122, «Segnalini», e regola 704.5c.
+@@Poisoned
+Avvelenato
+Avere uno o più segnalini veleno. Vedi regola 122, «Segnalini».
+@@Poisonous
+Velenoso
+Un'abilità chiave che fa prendere segnalini veleno a un giocatore. Vedi regola 702.70, «Velenoso».
+@@Poly Artifact (Obsolete)
+Poliartefatto (obsoleto)
+Un termine obsoleto che compariva sulla riga del tipo degli artefatti con abilità attivate che non facevano TAPpare l'artefatto come costo. Le carte stampate con questo testo hanno ricevuto errata nel riferimento Oracle e ora dicono semplicemente «Artefatto».
+@@Populate
+Popolare
+Un'azione chiave che crea una copia di una pedina creatura che controlli. Vedi regola 701.36, «Popolare».
+@@Postcombat Main Phase
+Fase principale postcombattimento
+Una fase principale che avviene dopo una fase di combattimento. Vedi Fase principale.
+@@Power
+Forza
+1. Parte di una carta presente solo sulle carte creatura. La forza di una carta creatura è stampata prima della barra nel suo angolo in basso a destra. Vedi regola 208, «Forza/Costituzione». 2. Una caratteristica che hanno solo le creature. Vedi regola 302.4.
+@@Powerstone Token
+Pedina Pietra del potere (Powerstone)
+Una pedina Pietra del potere è una pedina artefatto incolore con «{T}: Aggiungi {C}. Questo mana non può essere speso per lanciare una magia non artefatto». Per maggiori informazioni sulle pedine predefinite, vedi regola 111.10.
+@@Power-up
+Power-up
+Un'abilità attivata utilizzabile una sola volta presente su permanenti, che costa meno durante il turno in cui il permanente con l'abilità è entrato nel campo di battaglia. Vedi regola 702.193, «Power-up».
+@@Precombat Main Phase
+Fase principale precombattimento
+La prima fase principale di un turno. Vedi Fase principale.
+@@Preparation Card
+Carta preparazione
+Carte con una cornice in due parti (una delle quali inserita a destra) su un'unica carta. Vedi regola 722, «Carte preparazione».
+@@Prepare Spell
+Magia di preparazione
+La cornice inserita di una carta preparazione che include le sue caratteristiche alternative. Vedi regola 722, «Carte preparazione».
+@@Prepared
+Preparato
+Una designazione che un permanente può avere e che ti permette di lanciare una copia di quella carta con le sue caratteristiche alternative. Vedi regola 722, «Carte preparazione».
+@@Prevent
+Prevenire
+Una parola usata dagli effetti di prevenzione per indicare quale danno non verrà inflitto. Vedi regola 615, «Effetti di prevenzione».
+@@Prevention Effect
+Effetto di prevenzione
+Un tipo di effetto continuo che attende un evento di danno che starebbe per avvenire e previene completamente o parzialmente il danno che verrebbe inflitto. Vedi regola 615, «Effetti di prevenzione».
+@@Priority
+Priorità
+Quale giocatore può compiere azioni in un dato momento è stabilito da un sistema di «priorità». Vedi regola 117, «Tempistica e priorità».
+@@Prize
+Premio
+Una ricompensa aggiuntiva per la visita di alcune Attrazioni. Vedi regola 702.159, «Visita».
+@@Proliferate
+Proliferare
+Dare un segnalino aggiuntivo a un qualsiasi numero di giocatori e/o permanenti, per ogni tipo di segnalino che hanno già. Vedi regola 701.34, «Proliferare».
+@@Protect, Protector
+Proteggere, protettore
+Ogni battaglia ha un giocatore designato come suo protettore, e quel giocatore protegge quella battaglia. Vedi regola 310.9.
+@@Protection
+Protezione
+Un'abilità chiave che fornisce una serie di vantaggi contro gli oggetti con una qualità specifica. Vedi regola 702.16, «Protezione».
+@@Prototype
+Prototipo
+Un'abilità che permette di lanciare una carta prototipo con un insieme secondario di caratteristiche. Vedi regola 718, «Carte prototipo», e regola 702.160, «Prototipo».
+@@Prototype Card
+Carta prototipo
+Carte con una cornice in due parti (una delle quali inserita sotto la riga del tipo) su un'unica carta. Vedi regola 718, «Carte prototipo».
+@@Provoke
+Provocare
+Un'abilità chiave che può costringere una creatura a bloccare. Vedi regola 702.39, «Provocare».
+@@Prowess
+Prodezza
+Un'abilità chiave che fa prendere +1/+1 a una creatura ogni volta che il suo controllore lancia una magia non creatura. Vedi regola 702.108, «Prodezza».
+@@Prowl
+Aggirarsi (Prowl)
+Un'abilità chiave che può permettere di lanciare una magia per un costo alternativo. Vedi regola 702.76, «Aggirarsi».
+@@Public Zone
+Zona pubblica
+Una zona in cui ci si può aspettare che tutti i giocatori vedano il fronte delle carte. Vedi regola 400.2. Vedi anche Zona nascosta.
+@@Rad Counter
+Segnalino radiazione
+Un tipo di segnalino che un giocatore può avere e che fa macinare carte a quel giocatore all'inizio della sua fase principale precombattimento, poi gli fa perdere 1 punto vita e rimuovere un segnalino radiazione per ogni carta non terra macinata in questo modo. Vedi regola 122, «Segnalini», e regola 728, «Segnalini radiazione».
+@@Rampage
+Furia (Rampage)
+Un'abilità chiave che può rendere una creatura migliore in combattimento. Vedi regola 702.23, «Furia».
+@@Range of Influence
+Raggio d'influenza
+Vedi Raggio d'influenza limitato.
+@@Ravenous
+Famelico (Ravenous)
+Un'abilità chiave presente su alcune carte creatura con {X} nel loro costo di mana. La creatura entra nel campo di battaglia con X segnalini +1/+1 su di sé, e peschi una carta se X è 5 o più. Vedi regola 702.156, «Famelico».
+@@Reach
+Raggiungere
+Un'abilità chiave che permette a una creatura di bloccare una creatura attaccante con volare. Vedi regola 702.17, «Raggiungere». Vedi anche Volare.
+@@Read Ahead
+Leggere in anticipo (Read ahead)
+Un'abilità chiave presente su alcune Saghe che permette al loro controllore di scegliere da quale capitolo iniziano. Vedi regola 702.155, «Leggere in anticipo».
+@@Rebound
+Rimbalzo
+Un'abilità chiave che permette di lanciare una seconda volta una magia istantaneo o stregoneria. Vedi regola 702.88, «Rimbalzo».
+@@Reconfigure
+Riconfigurare
+Un'abilità chiave che permette a una creatura Equipaggiamento di smettere temporaneamente di essere una creatura e di essere assegnata a un'altra creatura. Vedi regola 702.151, «Riconfigurare».
+@@Recover
+Recupero (Recover)
+Un'abilità chiave che permette a un giocatore di far tornare una carta dal suo cimitero nella sua mano. Vedi regola 702.59, «Recupero».
+@@Recruit
+Reclutare
+Un'azione chiave che permette a un giocatore di pescare una carta, scartare una carta e poi creare una pedina creatura se è stata scartata una carta non terra. Vedi regola 701.70, «Reclutare».
+@@Redirect (Obsolete)
+Reindirizzare (obsoleto)
+Alcune carte più vecchie sono state stampate con il termine «reindirizzare» per indicare un effetto di reindirizzamento. Tali carte hanno ricevuto errata nel riferimento Oracle in modo da stabilire esplicitamente che il danno che verrebbe inflitto a un oggetto o giocatore viene «invece» inflitto a un altro. Vedi Effetto di reindirizzamento.
+@@Redirection Effect
+Effetto di reindirizzamento
+Un tipo di effetto di sostituzione che fa sì che il danno che verrebbe inflitto a una creatura, un planeswalker o un giocatore venga invece inflitto a un'altra creatura, planeswalker o giocatore. Vedi regola 614.9.
+@@Reflexive Triggered Ability
+Abilità innescata riflessiva
+Un'abilità che si innesca in base ad azioni compiute in precedenza durante la risoluzione di una magia o abilità. Vedi regola 603.12.
+@@Regenerate
+Rigenerare
+Sostituire la distruzione di un permanente con una sequenza alternativa di eventi. Vedi regola 701.19, «Rigenerare».
+@@Reinforce
+Rinforzo
+Un'abilità chiave che permette a un giocatore di mettere segnalini +1/+1 su una creatura. Vedi regola 702.77, «Rinforzo».
+@@Reminder Text
+Testo di richiamo
+Testo tra parentesi in corsivo nel riquadro di testo di una carta che riassume una regola che si applica a quella carta, ma non è effettivamente testo delle regole e non ha alcun effetto sul gioco. Vedi regola 207.2.
+@@Remove from Combat
+Rimuovere dal combattimento
+Alcuni eventi possono far sì che una creatura attaccante o bloccante, o un planeswalker attaccato, venga «rimosso dal combattimento». Un permanente rimosso dal combattimento non ha più alcun coinvolgimento in quella fase di combattimento. Vedi regola 506.4.
+@@Remove from the Game, Removed, Removed-from-the-Game Zone (Obsolete)
+Rimuovere dalla partita, rimossa, zona delle carte rimosse dalla partita (obsoleto)
+«Rimuovi [qualcosa] dalla partita» è un termine obsoleto per «esilia [qualcosa]». «La carta rimossa» è un termine obsoleto per «la carta esiliata». La zona delle carte rimosse dalla partita è un termine obsoleto per la zona di esilio. Le carte con quel testo hanno ricevuto errata nel riferimento Oracle. Vedi Esilio.
+@@Renown
+Fama (Renown)
+Un'abilità chiave che rende una creatura più forte dopo che ha inflitto danno da combattimento a un giocatore. Vedi regola 702.112, «Fama».
+@@Renowned
+Famosa
+Una designazione data a un permanente come risultato dell'abilità fama. Vedi regola 702.112, «Fama».
+@@Replacement Effect
+Effetto di sostituzione
+Un tipo di effetto continuo che attende un particolare evento che starebbe per avvenire e sostituisce completamente o parzialmente quell'evento con un evento diverso. Vedi regola 614, «Effetti di sostituzione».
+@@Replicate
+Replicare
+Un'abilità chiave che crea copie di una magia. Vedi regola 702.56, «Replicare».
+@@Requirement
+Requisito
+Un effetto che costringe una o più creature ad attaccare o bloccare. Vedi regole 508.1d e 509.1c.
+@@Resolve
+Risolversi
+Quando la magia o abilità in cima alla pila «si risolve», le sue istruzioni vengono seguite e ha il suo effetto. Vedi regola 608, «Risoluzione di magie e abilità».
+@@Respond
+Rispondere
+Lanciare una magia istantaneo o attivare un'abilità mentre un'altra magia o abilità è già in pila. Vedi regola 117.7.
+@@Restart the Game
+Ricominciare la partita
+Terminare immediatamente la partita in corso e farla ricominciare. Vedi regola 727, «Ricominciare la partita».
+@@Restriction
+Restrizione
+Un effetto che impedisce a una o più creature di attaccare o bloccare. Vedi regole 508.1c e 509.1b.
+@@Retrace
+Ripercorrere (Retrace)
+Un'abilità chiave che permette a un giocatore di lanciare una carta dal suo cimitero. Vedi regola 702.81, «Ripercorrere».
+@@Reveal
+Rivelare
+Mostrare una carta a tutti i giocatori per un breve tempo. Vedi regola 701.20, «Rivelare».
+@@The Ring
+L'Anello (The Ring)
+Un emblema che può essere creato nel momento in cui l'Anello ti tenta. Vedi regola 701.54, «L'Anello ti tenta».
+@@The Ring Tempts You
+L'Anello ti tenta
+Un'azione chiave che fa scegliere a un giocatore una creatura che controlla come suo Portatore dell'Anello leggendario e può fargli creare un emblema chiamato L'Anello. Vedi regola 701.54, «L'Anello ti tenta».
+@@Ring-bearer
+Portatore dell'Anello
+Una designazione che può essere data a una creatura quando l'Anello ti tenta. Vedi regola 701.54, «L'Anello ti tenta».
+@@Riot
+Sommossa (Riot)
+Un'abilità chiave che permette a un giocatore di scegliere se certe creature entrano nel campo di battaglia con rapidità o con un segnalino +1/+1. Vedi regola 702.136, «Sommossa».
+@@Ripple
+Increspatura (Ripple)
+Un'abilità chiave che può permettere a un giocatore di lanciare gratis carte extra dal suo grimorio. Vedi regola 702.60, «Increspatura».
+@@Role
+Ruolo
+I Ruoli sono pedine incantesimo incolori. Ognuno ha i sottotipi Aura e Ruolo e l'abilità incanta creatura. Se a un permanente sono assegnati più Ruoli controllati dallo stesso giocatore, ciascuno di quei Ruoli tranne quello con la marca temporale più recente viene messo nel cimitero del suo proprietario. Vedi regola 303.7 e regole 111.10j–r.
+@@Roll a d20
+Tirare un d20
+Tirare un dado a venti facce. Allo stesso modo, un d4 è un dado a quattro facce, un d6 è un dado a sei facce e così via. Vedi regola 706, «Tirare un dado».
