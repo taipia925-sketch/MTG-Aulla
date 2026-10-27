@@ -1,0 +1,210 @@
+@702.22d
+Tutte le creature in un gruppo attaccante devono attaccare lo stesso giocatore, planeswalker o battaglia.
+@702.22e
+Una volta annunciato, un gruppo attaccante dura per il resto del combattimento, anche se in seguito qualcosa rimuove unione o «si unisce con altre» da una o più creature del gruppo.
+@702.22f
+Una creatura attaccante rimossa dal combattimento viene rimossa anche dal gruppo di cui faceva parte.
+@702.22g
+Unione non fa condividere abilità alle creature attaccanti, né rimuove alcuna abilità. Le creature attaccanti di un gruppo sono permanenti separati.
+@702.22h
+Se una creatura attaccante viene bloccata da una creatura, ogni altra creatura nello stesso gruppo della creatura attaccante viene bloccata da quella stessa creatura bloccante.
+Esempio: Un giocatore attacca con un gruppo formato da una creatura con volare e da una creatura con passapaludi. Il giocatore in difesa, che controlla una Palude, può bloccare la creatura con volare se ne è in grado. Se lo fa, anche la creatura con passapaludi viene bloccata dalla creatura o dalle creature bloccanti.
+@702.22i
+Se un membro di un gruppo dovesse essere bloccato a causa di un effetto, l'intero gruppo viene bloccato.
+@702.22j
+Durante la sottofase di danno da combattimento, se una creatura attaccante è bloccata da una creatura con unione, oppure sia da una creatura [qualità] con «si unisce con altre [qualità]» sia da un'altra creatura [qualità], è il giocatore in difesa (invece del giocatore attivo) a scegliere come viene assegnato il danno della creatura attaccante. Quel giocatore può dividere il danno da combattimento di quella creatura a sua scelta tra le creature che la bloccano. Questa è un'eccezione al procedimento descritto nella regola 510.1c.
+@702.22k
+Durante la sottofase di danno da combattimento, se una creatura bloccante sta bloccando una creatura con unione, oppure sia una creatura [qualità] con «si unisce con altre [qualità]» sia un'altra creatura [qualità], è il giocatore attivo (invece del giocatore in difesa) a scegliere come viene assegnato il danno della creatura bloccante. Quel giocatore può dividere il danno da combattimento di quella creatura a sua scelta tra le creature che sta bloccando. Questa è un'eccezione al procedimento descritto nella regola 510.1d.
+@702.22m
+Più istanze di unione sulla stessa creatura sono ridondanti. Più istanze dello stesso tipo di «si unisce con altre» sulla stessa creatura sono ridondanti.
+@702.23
+Furia (Rampage)
+@702.23a
+Furia è un'abilità innescata. «Furia N» significa «Ogni volta che questa creatura viene bloccata, prende +N/+N fino alla fine del turno per ogni creatura che la blocca oltre la prima». (Vedi regola 509, «Sottofase di dichiarazione dei bloccanti».)
+@702.23b
+Il bonus di furia viene calcolato una sola volta per combattimento, quando l'abilità innescata si risolve. Aggiungere o rimuovere bloccanti più avanti nel combattimento non modifica il bonus.
+@702.23c
+Se una creatura ha più istanze di furia, ognuna si innesca separatamente.
+@702.24
+Mantenimento cumulativo
+@702.24a
+Mantenimento cumulativo è un'abilità innescata che impone un costo crescente a un permanente. «Mantenimento cumulativo [costo]» significa «All'inizio del tuo mantenimento, se questo permanente è sul campo di battaglia, metti un segnalino età su questo permanente. Poi puoi pagare [costo] per ogni segnalino età su di esso. Se non lo fai, sacrificalo». Se [costo] prevede delle scelte, ogni scelta viene fatta separatamente per ogni segnalino età, poi viene pagato l'intero insieme di costi oppure nessuno. Non sono ammessi pagamenti parziali.
+Esempio: Una creatura ha «Mantenimento cumulativo {W} o {U}» e due segnalini età. Quando la sua abilità si innesca e si risolve la volta successiva, il controllore della creatura mette un segnalino età su di essa e poi può pagare {W}{W}{W}, {W}{W}{U}, {W}{U}{U} o {U}{U}{U} per tenere la creatura sul campo di battaglia.
+Esempio: Una creatura ha «Mantenimento cumulativo—Sacrifica una creatura» e un segnalino età. Quando la sua abilità si innesca e si risolve la volta successiva, il suo controllore non può scegliere di sacrificare due volte la stessa creatura. Devono essere sacrificate due creature diverse, oppure deve essere sacrificata la creatura con mantenimento cumulativo.
+@702.24b
+Se un permanente ha più istanze di mantenimento cumulativo, ognuna si innesca separatamente. Tuttavia, i segnalini età non sono legati a nessuna abilità in particolare; ogni abilità mantenimento cumulativo conta il numero totale di segnalini età sul permanente nel momento in cui si risolve.
+Esempio: Una creatura ha due istanze di «Mantenimento cumulativo—Paga 1 punto vita». La creatura non ha segnalini età, ed entrambe le abilità mantenimento cumulativo si innescano. Quando si risolve la prima abilità, il controllore aggiunge un segnalino e poi sceglie di pagare 1 punto vita. Quando si risolve la seconda, il controllore aggiunge un altro segnalino e poi sceglie di pagare altri 2 punti vita.
+@702.25
+Fiancheggiare
+@702.25a
+Fiancheggiare è un'abilità innescata che si innesca durante la sottofase di dichiarazione dei bloccanti. (Vedi regola 509, «Sottofase di dichiarazione dei bloccanti».) «Fiancheggiare» significa «Ogni volta che questa creatura viene bloccata da una creatura senza fiancheggiare, la creatura bloccante prende -1/-1 fino alla fine del turno».
+@702.25b
+Se una creatura ha più istanze di fiancheggiare, ognuna si innesca separatamente.
+@702.26
+Intermittenza (Phasing)
+@702.26a
+Intermittenza è un'abilità statica che modifica le regole della sottofase di STAP. Durante la sottofase di STAP di ogni giocatore, prima che il giocatore attivo STAPpi i permanenti, tutti i permanenti presenti con intermittenza controllati da quel giocatore «escono di fase». Simultaneamente, tutti i permanenti fuori fase che erano usciti di fase sotto il controllo di quel giocatore «rientrano in fase».
+@702.26b
+Se un permanente esce di fase, il suo stato diventa «fuori fase». Fatta eccezione per regole ed effetti che menzionano specificamente i permanenti fuori fase, un permanente fuori fase viene trattato come se non esistesse. Non può influenzare né essere influenzato da nient'altro nella partita. Un permanente che esce di fase viene rimosso dal combattimento. (Vedi regola 506.4.)
+Esempio: Controlli tre creature, una delle quali è fuori fase. Lanci una magia che dice «Pesca una carta per ogni creatura che controlli». Peschi due carte.
+Esempio: Controlli una creatura fuori fase. Lanci una magia che dice «Distruggi tutte le creature». La creatura fuori fase non viene distrutta.
+@702.26c
+Se un permanente rientra in fase, il suo stato diventa «in fase». La partita lo tratta nuovamente come se esistesse.
+@702.26d
+L'evento di intermittenza non fa realmente cambiare zona o controllore a un permanente, anche se viene trattato come se non fosse sul campo di battaglia e non fosse sotto il controllo del suo controllore mentre è fuori fase. Gli inneschi di cambio di zona non si innescano quando un permanente esce o rientra in fase. Le pedine continuano a esistere sul campo di battaglia mentre sono fuori fase. Segnalini e adesivi restano su un permanente mentre è fuori fase. Gli effetti che controllano la storia di un permanente in fase non considerano l'evento di intermittenza come causa del fatto che il permanente abbia lasciato o sia entrato nel campo di battaglia o nel controllo del suo controllore.
+@702.26e
+Se un effetto continuo generato dalla risoluzione di una magia o abilità modifica le caratteristiche o cambia il controllore di oggetti, un permanente fuori fase non viene incluso nell'insieme degli oggetti influenzati. Ciò include gli effetti continui che fanno riferimento specificamente al permanente, a meno che non si riferiscano specificamente al permanente in quanto fuori fase.
+@702.26f
+Gli effetti continui che influenzano un permanente fuori fase possono scadere mentre quel permanente è fuori fase. In tal caso, non influenzeranno più quel permanente una volta rientrato in fase. In particolare, gli effetti con durata «finché» che seguono quel permanente (vedi regola 611.2b) terminano quando quel permanente esce di fase, perché non possono più vederlo.
+@702.26g
+Quando un permanente esce di fase, tutte le Aure, gli Equipaggiamenti o le Fortificazioni assegnati a quel permanente escono di fase nello stesso momento. Questo modo alternativo di uscire di fase è detto uscire di fase «indirettamente». Un'Aura, un Equipaggiamento o una Fortificazione usciti di fase indirettamente non rientrano in fase da soli, ma rientrano in fase insieme al permanente a cui sono assegnati.
+@702.26h
+Se un oggetto dovesse uscire di fase direttamente e indirettamente nello stesso momento, esce di fase solo indirettamente.
+@702.26i
+Un'Aura, un Equipaggiamento o una Fortificazione usciti di fase direttamente rientrano in fase assegnati all'oggetto o al giocatore a cui erano assegnati quando sono usciti di fase, se quell'oggetto è ancora nella stessa zona o quel giocatore è ancora nella partita. Altrimenti, quell'Aura, Equipaggiamento o Fortificazione rientra in fase non assegnato. Le azioni generate dallo stato si applicano come appropriato. (Vedi regole 704.5m e 704.5n.)
+@702.26j
+Le abilità che si innescano quando un permanente viene assegnato a un oggetto o giocatore o staccato da esso non si innescano quando quel permanente esce o rientra in fase.
+@702.26k
+I permanenti fuori fase posseduti da un giocatore che lascia la partita lasciano anch'essi la partita. Ciò non fa innescare le abilità di cambio di zona. Vedi regola 800.4.
+@702.26m
+Se un effetto fa saltare a un giocatore la sua sottofase di STAP, l'evento di intermittenza semplicemente non avviene in quel turno.
+@702.26n
+In una partita multigiocatore, le regole di gioco possono far sì che un permanente fuori fase lasci la partita o venga esiliato una volta che un giocatore lascia la partita. (Vedi regole 800.4a e 800.4c.) Se un permanente fuori fase è uscito di fase sotto il controllo di un giocatore che ha lasciato la partita, quel permanente rientra in fase durante la sottofase di STAP successiva al momento in cui sarebbe iniziato il turno successivo di quel giocatore.
+@702.26p
+Più istanze di intermittenza sullo stesso permanente sono ridondanti.
+@702.27
+Riacquisto (Buyback)
+@702.27a
+Riacquisto compare su alcuni istantanei e stregonerie. Rappresenta due abilità statiche che funzionano mentre la magia è in pila. «Riacquisto [costo]» significa «Puoi pagare un [costo] aggiuntivo mentre lanci questa magia» e «Se è stato pagato il costo di riacquisto, metti questa magia nella mano del suo proprietario invece che nel cimitero di quel giocatore mentre si risolve». Pagare il costo di riacquisto di una magia segue le regole per il pagamento dei costi aggiuntivi delle regole 601.2b e 601.2f–h.
+@702.28
+Ombra
+@702.28a
+Ombra è un'abilità di evasione.
+@702.28b
+Una creatura con ombra non può essere bloccata da creature senza ombra, e una creatura senza ombra non può essere bloccata da creature con ombra. (Vedi regola 509, «Sottofase di dichiarazione dei bloccanti».)
+@702.28c
+Più istanze di ombra sulla stessa creatura sono ridondanti.
+@702.29
+Ciclo (Cycling)
+@702.29a
+Ciclo è un'abilità attivata che funziona solo mentre la carta con ciclo è nella mano di un giocatore. «Ciclo [costo]» significa «[Costo], Scarta questa carta: Pesca una carta».
+@702.29b
+Anche se l'abilità ciclo può essere attivata solo se la carta è nella mano di un giocatore, continua a esistere mentre l'oggetto è sul campo di battaglia e in tutte le altre zone. Quindi gli oggetti con ciclo sono influenzati dagli effetti che dipendono dal fatto che gli oggetti abbiano una o più abilità attivate.
+@702.29c
+Alcune carte con ciclo hanno abilità che si innescano quando vengono ciclate. «Quando cicli questa carta» significa «Quando scarti questa carta per pagare un costo di attivazione di un'abilità ciclo». Queste abilità si innescano da qualsiasi zona in cui la carta finisce dopo essere stata ciclata.
+@702.29d
+Alcune carte hanno abilità che si innescano ogni volta che un giocatore «cicla o scarta» una carta. Queste abilità si innescano una sola volta quando una carta viene ciclata.
+@702.29e
+Ciclo di tipo è una variante dell'abilità ciclo. «Ciclo [tipo] [costo]» significa «[Costo], Scarta questa carta: Passa in rassegna il tuo grimorio per una carta [tipo], rivelala e aggiungila alla tua mano. Poi rimescola il tuo grimorio». Questo tipo è di solito un sottotipo (come in «ciclomontagna») ma può essere qualsiasi tipo di carta, sottotipo, supertipo o una loro combinazione (come in «ciclo terra base»).
+@702.29f
+Le abilità ciclo di tipo sono abilità ciclo, e i costi di ciclo di tipo sono costi di ciclo. Qualsiasi carta che si innesca quando un giocatore cicla una carta si innesca quando una carta viene scartata per pagare un costo di attivazione di un'abilità ciclo di tipo. Qualsiasi effetto che impedisce ai giocatori di ciclare carte impedisce loro di attivare le abilità ciclo di tipo delle carte. Qualsiasi effetto che aumenta o riduce un costo di ciclo aumenta o riduce un costo di ciclo di tipo. Qualsiasi effetto che cerca una carta con ciclo trova una carta con ciclo di tipo.
+@702.30
+Eco
+@702.30a
+Eco è un'abilità innescata. «Eco [costo]» significa «All'inizio del tuo mantenimento, se questo permanente è passato sotto il tuo controllo dall'inizio del tuo ultimo mantenimento, sacrificalo a meno che tu non paghi [costo]».
+@702.30b
+Le carte del blocco di Urza con l'abilità eco sono state stampate senza un costo di eco. Queste carte hanno ricevuto errata nel riferimento Oracle; ognuna ora ha un costo di eco pari al suo costo di mana.
+@702.31
+Cavalcare (Horsemanship)
+@702.31a
+Cavalcare è un'abilità di evasione.
+@702.31b
+Una creatura con cavalcare non può essere bloccata da creature senza cavalcare. Una creatura con cavalcare può bloccare una creatura con o senza cavalcare. (Vedi regola 509, «Sottofase di dichiarazione dei bloccanti».)
+@702.31c
+Più istanze di cavalcare sulla stessa creatura sono ridondanti.
+@702.32
+Dissolvenza (Fading)
+@702.32a
+Dissolvenza è una parola chiave che rappresenta due abilità. «Dissolvenza N» significa «Questo permanente entra con N segnalini dissolvenza su di sé» e «All'inizio del tuo mantenimento, rimuovi un segnalino dissolvenza da questo permanente. Se non puoi, sacrifica il permanente».
+@702.33
+Potenziamento (Kicker)
+@702.33a
+Potenziamento è un'abilità statica che funziona mentre la magia con potenziamento è in pila. «Potenziamento [costo]» significa «Puoi pagare un [costo] aggiuntivo mentre lanci questa magia». Pagare il costo o i costi di potenziamento di una magia segue le regole per il pagamento dei costi aggiuntivi delle regole 601.2b e 601.2f–h.
+@702.33b
+L'espressione «Potenziamento [costo 1] e/o [costo 2]» significa la stessa cosa di «Potenziamento [costo 1], potenziamento [costo 2]».
+@702.33c
+Multipotenziamento è una variante dell'abilità potenziamento. «Multipotenziamento [costo]» significa «Puoi pagare un [costo] aggiuntivo un qualsiasi numero di volte mentre lanci questa magia». Un costo di multipotenziamento è un costo di potenziamento.
+@702.33d
+Se il controllore di una magia dichiara l'intenzione di pagare uno qualsiasi dei costi di potenziamento di quella magia, quella magia è stata «potenziata». Se una magia ha due costi di potenziamento o ha multipotenziamento, può essere potenziata più volte. Vedi regola 601.2b.
+@702.33e
+Gli oggetti con potenziamento o multipotenziamento hanno abilità aggiuntive che specificano cosa succede se sono stati potenziati. Queste abilità sono collegate alle abilità potenziamento o multipotenziamento stampate su quell'oggetto: possono fare riferimento solo a quelle specifiche abilità potenziamento o multipotenziamento. Vedi regola 607, «Abilità collegate».
+@702.33f
+Gli oggetti con più di un costo di potenziamento possono anche avere abilità che corrispondono ciascuna a uno specifico costo di potenziamento. Quelle abilità contengono le espressioni «se è stata potenziata con il suo potenziamento [A]» e «se è stata potenziata con il suo potenziamento [B]», dove A e B sono rispettivamente il primo e il secondo costo di potenziamento elencati sulla carta. Ognuna di quelle abilità è collegata all'abilità potenziamento appropriata.
+@702.33g
+Se parte dell'abilità di una magia ha effetto solo se quella magia è stata potenziata, e quella parte dell'abilità include dei bersagli, il controllore della magia sceglie quei bersagli solo se la magia è stata potenziata. Altrimenti, la magia viene lanciata come se non avesse quei bersagli. Vedi regola 601.2c.
+@702.33h
+Potenziamento adesivo (Sticker kicker) è un'abilità chiave che rappresenta un'abilità potenziamento e un'abilità che impone un costo aggiuntivo se la magia è potenziata. «Potenziamento adesivo [costo]» significa «Potenziamento [costo]» e «Come costo aggiuntivo per lanciare questa magia, se è potenziata, ottieni un segnalino biglietto e puoi mettere un adesivo su questa magia».
+@702.34
+Flashback
+@702.34a
+Flashback compare su alcuni istantanei e stregonerie. Rappresenta due abilità statiche: una che funziona mentre la carta è nel cimitero di un giocatore e un'altra che funziona mentre la carta è in pila. «Flashback [costo]» significa «Puoi lanciare questa carta dal tuo cimitero se la magia risultante è una magia istantaneo o stregoneria pagando [costo] invece di pagare il suo costo di mana» e «Se è stato pagato il costo di flashback, esilia questa carta invece di metterla altrove ogni volta che dovesse lasciare la pila». Lanciare una magia usando la sua abilità flashback segue le regole per il pagamento dei costi alternativi delle regole 601.2b e 601.2f–h.
+@702.35
+Follia
+@702.35a
+Follia è una parola chiave che rappresenta due abilità. La prima è un'abilità statica che funziona mentre la carta con follia è nella mano di un giocatore. La seconda è un'abilità innescata che funziona quando viene applicata la prima abilità. «Follia [costo]» significa «Se un giocatore dovesse scartare questa carta, quel giocatore la scarta, ma la esilia invece di metterla nel suo cimitero» e «Quando questa carta viene esiliata in questo modo, il suo proprietario può lanciarla pagando [costo] invece di pagare il suo costo di mana. Se quel giocatore non lo fa, mette questa carta nel suo cimitero».
+@702.35b
+Lanciare una magia usando la sua abilità follia segue le regole per il pagamento dei costi alternativi delle regole 601.2b e 601.2f–h.
+@702.35c
+Dopo la risoluzione di un'abilità innescata di follia, se la carta esiliata non è stata lanciata ed è stata spostata in una zona pubblica, gli effetti che fanno riferimento alla carta scartata possono trovare quella carta. Vedi regola 400.7k.
+@702.36
+Paura
+@702.36a
+Paura è un'abilità di evasione.
+@702.36b
+Una creatura con paura non può essere bloccata tranne che da creature artefatto e/o creature nere. (Vedi regola 509, «Sottofase di dichiarazione dei bloccanti».)
+@702.36c
+Più istanze di paura sulla stessa creatura sono ridondanti.
+@702.37
+Metamorfosi
+@702.37a
+Metamorfosi è un'abilità statica che funziona in qualsiasi zona da cui potresti giocare la carta su cui si trova, e l'effetto di metamorfosi funziona ogni volta che la carta è a faccia in giù. «Metamorfosi [costo]» significa «Puoi lanciare questa carta come una creatura a faccia in giù 2/2 senza testo, senza nome, senza sottotipi e senza costo di mana pagando {3} invece di pagare il suo costo di mana». (Vedi regola 708, «Magie e permanenti a faccia in giù».)
+@702.37b
+Megamorfosi è una variante dell'abilità metamorfosi. «Megamorfosi [costo]» significa «Puoi lanciare questa carta come una creatura a faccia in giù 2/2 senza testo, senza nome, senza sottotipi e senza costo di mana pagando {3} invece di pagare il suo costo di mana» e «Mentre questo permanente viene girato a faccia in su, metti un segnalino +1/+1 su di esso se è stato pagato il suo costo di megamorfosi per girarlo a faccia in su». Un costo di megamorfosi è un costo di metamorfosi.
+@702.37c
+Per lanciare una carta usando la sua abilità metamorfosi, girala a faccia in giù e annuncia che stai usando un'abilità metamorfosi. Diventa una carta creatura a faccia in giù 2/2 senza testo, senza nome, senza sottotipi e senza costo di mana. Qualsiasi effetto o divieto che si applicherebbe al lancio di una carta con queste caratteristiche (e non con le caratteristiche della carta a faccia in su) si applica al lancio di questa carta. Questi valori sono i valori copiabili delle caratteristiche di quell'oggetto. (Vedi regola 613, «Interazione degli effetti continui», e regola 707, «Copiare oggetti».) Mettila in pila (come magia a faccia in giù con le stesse caratteristiche) e paga {3} invece di pagare il suo costo di mana. Ciò segue le regole per il pagamento dei costi alternativi. Puoi usare un'abilità metamorfosi per lanciare una carta da qualsiasi zona da cui potresti normalmente lanciarla. Quando la magia si risolve, entra nel campo di battaglia con le stesse caratteristiche che aveva la magia. L'effetto di metamorfosi si applica all'oggetto a faccia in giù ovunque si trovi, e termina quando il permanente viene girato a faccia in su.
+@702.37d
+Normalmente non puoi lanciare una carta a faccia in giù. Un'abilità metamorfosi ti permette di farlo.
+@702.37e
+In qualsiasi momento in cui hai la priorità, puoi girare a faccia in su un permanente a faccia in giù con un'abilità metamorfosi che controlli. Questa è un'azione speciale; non usa la pila (vedi regola 116). Per farlo, mostra a tutti i giocatori quale sarebbe il costo di metamorfosi del permanente se fosse a faccia in su, paga quel costo, poi gira il permanente a faccia in su. (Se il permanente non avrebbe un costo di metamorfosi se fosse a faccia in su, non può essere girato a faccia in su in questo modo.) L'effetto di metamorfosi su di esso termina, e riprende le sue normali caratteristiche. Le abilità relative all'ingresso del permanente nel campo di battaglia non si innescano quando viene girato a faccia in su e non hanno alcun effetto, perché il permanente è già entrato nel campo di battaglia.
+@702.37f
+Se il costo di metamorfosi di un permanente include X, anche altre abilità di quel permanente possono fare riferimento a X. Il valore di X in quelle abilità è pari al valore di X scelto quando è stata compiuta l'azione speciale di metamorfosi.
+@702.37g
+Vedi regola 708, «Magie e permanenti a faccia in giù», per maggiori informazioni su come lanciare carte con un'abilità metamorfosi.
+@702.38
+Amplificare
+@702.38a
+Amplificare è un'abilità statica. «Amplificare N» significa «Mentre questo oggetto entra, rivela un qualsiasi numero di carte dalla tua mano che hanno un tipo di creatura in comune con esso. Questo permanente entra con N segnalini +1/+1 per ogni carta rivelata in questo modo. Non puoi rivelare questa carta né altre carte che entrano nel campo di battaglia nello stesso momento di questa carta».
+@702.38b
+Se una creatura ha più istanze di amplificare, ognuna funziona separatamente.
+@702.39
+Provocare
+@702.39a
+Provocare è un'abilità innescata. «Provocare» significa «Ogni volta che questa creatura attacca, puoi scegliere che una creatura bersaglio controllata dal giocatore in difesa blocchi questa creatura in questo combattimento, se ne è in grado. Se lo fai, STAPpa quella creatura».
+@702.39b
+Se una creatura ha più istanze di provocare, ognuna si innesca separatamente.
+@702.40
+Tempesta
+@702.40a
+Tempesta è un'abilità innescata che funziona in pila. «Tempesta» significa «Quando lanci questa magia, copiala per ogni altra magia lanciata prima di essa in questo turno. Se la magia ha dei bersagli, puoi scegliere nuovi bersagli per qualsiasi copia».
+@702.40b
+Se una magia ha più istanze di tempesta, ognuna si innesca separatamente.
+@702.41
+Affinità
+@702.41a
+Affinità è un'abilità statica che funziona mentre la magia con affinità è in pila. «Affinità per [testo]» significa «Questa magia costa {1} in meno da lanciare per ogni [testo] che controlli».
+@702.41b
+Se una magia ha più istanze di affinità, si applicano tutte.
+@702.42
+Intreccio (Entwine)
+@702.42a
+Intreccio è un'abilità statica delle magie modali (vedi regola 700.2) che funziona mentre la magia è in pila. «Intreccio [costo]» significa «Puoi scegliere tutti i modi di questa magia invece del solo numero indicato. Se lo fai, paghi un [costo] aggiuntivo». Usare l'abilità intreccio segue le regole per la scelta dei modi e per il pagamento dei costi aggiuntivi delle regole 601.2b e 601.2f–h.
+@702.42b
+Se è stato pagato il costo di intreccio, quando la magia si risolve si segue il testo di ciascun modo nell'ordine in cui è scritto sulla carta.
+@702.43
+Modulare
+@702.43a
+Modulare rappresenta sia un'abilità statica sia un'abilità innescata. «Modulare N» significa «Questo permanente entra con N segnalini +1/+1 su di sé» e «Quando questo permanente viene messo in un cimitero dal campo di battaglia, puoi mettere un segnalino +1/+1 su una creatura artefatto bersaglio per ogni segnalino +1/+1 su questo permanente».
+@702.43b
+Se una creatura ha più istanze di modulare, ognuna funziona separatamente.
+@702.44
+Sprazzo di sole (Sunburst)

@@ -1,0 +1,274 @@
+@702.78b
+Se una magia ha più istanze di cospirare, ognuna viene pagata separatamente e si innesca in base al proprio pagamento, non a quello di altre istanze di cospirare.
+@702.79
+Persistere
+@702.79a
+Persistere è un'abilità innescata. «Persistere» significa «Quando questo permanente viene messo in un cimitero dal campo di battaglia, se non aveva segnalini -1/-1 su di sé, fallo tornare sul campo di battaglia sotto il controllo del suo proprietario con un segnalino -1/-1 su di sé».
+@702.80
+Avvizzire (Wither)
+@702.80a
+Avvizzire è un'abilità statica. Il danno inflitto a una creatura da una fonte con avvizzire non viene segnato su quella creatura. Invece, fa sì che il controllore di quella fonte metta altrettanti segnalini -1/-1 su quella creatura. Vedi regola 120.3.
+@702.80b
+Se un oggetto non è più nella zona in cui dovrebbe trovarsi quando un effetto gli fa infliggere danno, si usano le sue ultime informazioni conosciute per stabilire se aveva avvizzire.
+@702.80c
+Le regole di avvizzire funzionano indipendentemente dalla zona da cui un oggetto con avvizzire infligge danno.
+@702.80d
+Più istanze di avvizzire sullo stesso oggetto sono ridondanti.
+@702.81
+Ripercorrere (Retrace)
+@702.81a
+Ripercorrere è un'abilità statica che funziona mentre la carta con ripercorrere è nel cimitero di un giocatore. «Ripercorrere» significa «Puoi lanciare questa carta dal tuo cimitero scartando una carta terra come costo aggiuntivo per lanciarla». Lanciare una magia usando la sua abilità ripercorrere segue le regole per il pagamento dei costi aggiuntivi delle regole 601.2b e 601.2f–h.
+@702.82
+Divorare
+@702.82a
+Divorare è un'abilità statica. «Divorare N» significa «Mentre questo oggetto entra, puoi sacrificare un qualsiasi numero di creature. Questo permanente entra con N segnalini +1/+1 per ogni creatura sacrificata in questo modo».
+@702.82b
+Alcuni oggetti hanno abilità che fanno riferimento al numero di creature divorate dal permanente. «Ha divorato» significa «ha sacrificato come risultato della sua abilità divorare mentre entrava nel campo di battaglia».
+@702.82c
+Divorare [qualità] è una variante di divorare. «Divorare [qualità] N» significa «Mentre questo oggetto entra, puoi sacrificare un qualsiasi numero di permanenti [qualità]. Questo permanente entra con N segnalini +1/+1 per ogni permanente sacrificato in questo modo».
+@702.83
+Esaltato
+@702.83a
+Esaltato è un'abilità innescata. «Esaltato» significa «Ogni volta che una creatura che controlli attacca da sola, quella creatura prende +1/+1 fino alla fine del turno».
+@702.83b
+Una creatura «attacca da sola» se è l'unica creatura dichiarata come attaccante in una data fase di combattimento. Vedi regola 506.5.
+@702.84
+Dissotterrare (Unearth)
+@702.84a
+Dissotterrare è un'abilità attivata che funziona mentre la carta con dissotterrare è in un cimitero. «Dissotterrare [costo]» significa «[Costo]: Fai tornare questa carta dal tuo cimitero sul campo di battaglia. Ottiene rapidità. Esiliala all'inizio della prossima sottofase finale. Se dovesse lasciare il campo di battaglia, esiliala invece di metterla altrove. Attiva solo come una stregoneria».
+@702.85
+Cascata
+@702.85a
+Cascata è un'abilità innescata che funziona solo mentre la magia con cascata è in pila. «Cascata» significa «Quando lanci questa magia, esilia carte dalla cima del tuo grimorio finché non esili una carta non terra il cui valore di mana è inferiore al valore di mana di questa magia. Puoi lanciare quella carta senza pagare il suo costo di mana se il valore di mana della magia risultante è inferiore al valore di mana di questa magia. Poi metti in fondo al tuo grimorio in ordine casuale tutte le carte esiliate in questo modo che non sono state lanciate».
+@702.85b
+Se un effetto permette a un giocatore di compiere un'azione con una o più delle carte esiliate «mentre fai cascata», il giocatore può compiere quell'azione dopo aver finito di esiliare carte a causa dell'abilità cascata. Questa azione viene compiuta prima di scegliere se lanciare l'ultima carta esiliata o, se non è stata esiliata una carta appropriata, prima di mettere le carte esiliate in fondo al suo grimorio in ordine casuale.
+@702.85c
+Se una magia ha più istanze di cascata, ognuna si innesca separatamente.
+@702.86
+Annientatore
+@702.86a
+Annientatore è un'abilità innescata. «Annientatore N» significa «Ogni volta che questa creatura attacca, il giocatore in difesa sacrifica N permanenti».
+@702.86b
+Se una creatura ha più istanze di annientatore, ognuna si innesca separatamente.
+@702.87
+Aumentare di livello (Level up)
+@702.87a
+Aumentare di livello è un'abilità attivata. «Aumentare di livello [costo]» significa «[Costo]: Metti un segnalino livello su questo permanente. Attiva solo come una stregoneria».
+@702.87b
+Ogni carta stampata con un'abilità aumentare di livello è detta carta livellatrice. Ha un layout non standard e include due simboli di livello che sono essi stessi abilità chiave. Vedi regola 711, «Carte livellatrici».
+@702.87c
+Alcuni incantesimi hanno il sottotipo Classe e abilità associate che danno loro un livello di classe. Queste non sono la stessa cosa delle abilità aumentare di livello e i livelli di classe non interagiscono con i segnalini livello. Vedi regola 716, «Carte Classe».
+@702.88
+Rimbalzo
+@702.88a
+Rimbalzo compare su alcuni istantanei e stregonerie. Rappresenta un'abilità statica che funziona mentre la magia è in pila e può creare un'abilità innescata ritardata. «Rimbalzo» significa «Se questa magia è stata lanciata dalla tua mano, invece di metterla nel tuo cimitero mentre si risolve, esiliala e, all'inizio del tuo prossimo mantenimento, puoi lanciare questa carta dall'esilio senza pagare il suo costo di mana».
+@702.88b
+Lanciare una magia come effetto della sua abilità rimbalzo segue le regole per il pagamento dei costi alternativi delle regole 601.2b e 601.2f–h.
+@702.88c
+Più istanze di rimbalzo sulla stessa magia sono ridondanti.
+@702.89
+Armatura d'ombra (Umbra armor)
+@702.89a
+Armatura d'ombra è un'abilità statica che compare su alcune Aure. «Armatura d'ombra» significa «Se il permanente incantato dovesse essere distrutto, invece rimuovi tutto il danno segnato su di esso e distruggi questa Aura».
+@702.89b
+Alcune carte più vecchie sono state stampate con l'abilità «armatura totemica» o facevano riferimento a quell'abilità. Il testo di queste carte è stato aggiornato nel riferimento Oracle per fare invece riferimento ad armatura d'ombra.
+@702.90
+Infettare
+@702.90a
+Infettare è un'abilità statica.
+@702.90b
+Il danno inflitto a un giocatore da una fonte con infettare non fa perdere punti vita a quel giocatore. Invece, fa sì che il controllore di quella fonte dia al giocatore altrettanti segnalini veleno. Vedi regola 120.3.
+@702.90c
+Il danno inflitto a una creatura da una fonte con infettare non viene segnato su quella creatura. Invece, fa sì che il controllore di quella fonte metta altrettanti segnalini -1/-1 su quella creatura. Vedi regola 120.3.
+@702.90d
+Se un oggetto non è più nella zona in cui dovrebbe trovarsi quando un effetto gli fa infliggere danno, si usano le sue ultime informazioni conosciute per stabilire se aveva infettare.
+@702.90e
+Le regole di infettare funzionano indipendentemente dalla zona da cui un oggetto con infettare infligge danno.
+@702.90f
+Più istanze di infettare sullo stesso oggetto sono ridondanti.
+@702.91
+Grido di battaglia
+@702.91a
+Grido di battaglia è un'abilità innescata. «Grido di battaglia» significa «Ogni volta che questa creatura attacca, ogni altra creatura attaccante prende +1/+0 fino alla fine del turno».
+@702.91b
+Se una creatura ha più istanze di grido di battaglia, ognuna si innesca separatamente.
+@702.92
+Arma vivente
+@702.92a
+Arma vivente è un'abilità innescata. «Arma vivente» significa «Quando questo Equipaggiamento entra, crea una pedina creatura Germe Phyrexiano 0/0 nera, poi assegna questo Equipaggiamento a essa».
+@702.93
+Non morto (Undying)
+@702.93a
+Non morto è un'abilità innescata. «Non morto» significa «Quando questo permanente viene messo in un cimitero dal campo di battaglia, se non aveva segnalini +1/+1 su di sé, fallo tornare sul campo di battaglia sotto il controllo del suo proprietario con un segnalino +1/+1 su di sé».
+@702.94
+Miracolo
+@702.94a
+Miracolo è un'abilità statica collegata a un'abilità innescata. (Vedi regola 603.11.) «Miracolo [costo]» significa «Puoi rivelare questa carta dalla tua mano mentre la peschi se è la prima carta che hai pescato in questo turno. Quando riveli questa carta in questo modo, puoi lanciarla pagando [costo] invece del suo costo di mana».
+@702.94b
+Se un giocatore sceglie di rivelare una carta usando la sua abilità miracolo, gioca con quella carta rivelata finché quella carta non lascia la sua mano, quell'abilità non si risolve o quell'abilità non lascia altrimenti la pila. (Vedi regola 701.20a.)
+@702.95
+Legame d'anima (Soulbond)
+@702.95a
+Legame d'anima è una parola chiave che rappresenta due abilità innescate. «Legame d'anima» significa «Quando questa creatura entra, se controlli sia questa creatura sia un'altra creatura ed entrambe non sono abbinate, puoi abbinare questa creatura a un'altra creatura non abbinata che controlli finché entrambe restano creature sul campo di battaglia sotto il tuo controllo» e «Ogni volta che entra un'altra creatura che controlli, se controlli sia quella creatura sia questa ed entrambe non sono abbinate, puoi abbinare quella creatura a questa creatura finché entrambe restano creature sul campo di battaglia sotto il tuo controllo».
+@702.95b
+Una creatura diventa «abbinata» a un'altra come risultato di un'abilità legame d'anima. Le abilità possono fare riferimento a una creatura abbinata, alla creatura a cui un'altra creatura è abbinata o al fatto che una creatura sia abbinata. Una creatura «non abbinata» è una creatura che non è abbinata.
+@702.95c
+Quando l'abilità legame d'anima si risolve, se uno dei due oggetti da abbinare non è più una creatura, non è più sul campo di battaglia o non è più sotto il controllo del giocatore che controlla l'abilità legame d'anima, nessuno dei due oggetti diventa abbinato.
+@702.95d
+Una creatura può essere abbinata a una sola altra creatura.
+@702.95e
+Una creatura abbinata smette di essere abbinata se si verifica una qualsiasi delle seguenti condizioni: un altro giocatore ottiene il controllo di essa o della creatura a cui è abbinata; essa o la creatura a cui è abbinata smette di essere una creatura; oppure essa o la creatura a cui è abbinata lascia il campo di battaglia.
+@702.96
+Sovraccarico
+@702.96a
+Sovraccarico è una parola chiave che rappresenta due abilità statiche che funzionano mentre la magia con sovraccarico è in pila. Sovraccarico [costo] significa «Puoi scegliere di pagare [costo] invece del costo di mana di questa magia» e «Se hai scelto di pagare il costo di sovraccarico di questa magia, modificane il testo sostituendo tutte le occorrenze della parola "bersaglio" con la parola "ogni"». Lanciare una magia usando la sua abilità sovraccarico segue le regole per il pagamento dei costi alternativi delle regole 601.2b e 601.2f–h.
+@702.96b
+Se un giocatore sceglie di pagare il costo di sovraccarico di una magia, quella magia non richiede alcun bersaglio. Può influenzare oggetti che non potrebbero essere scelti come bersagli legali se la magia fosse lanciata senza pagare il suo costo di sovraccarico.
+@702.96c
+La seconda abilità di sovraccarico crea un effetto di modifica del testo. Vedi regola 612, «Effetti di modifica del testo».
+@702.97
+Sciacallare (Scavenge)
+@702.97a
+Sciacallare è un'abilità attivata che funziona solo mentre la carta con sciacallare è in un cimitero. «Sciacallare [costo]» significa «[Costo], Esilia questa carta dal tuo cimitero: Metti su una creatura bersaglio un numero di segnalini +1/+1 pari alla forza della carta che hai esiliato. Attiva solo come una stregoneria».
+@702.98
+Scatenare
+@702.98a
+Scatenare è una parola chiave che rappresenta due abilità statiche. «Scatenare» significa «Puoi far entrare questo permanente con un segnalino +1/+1 aggiuntivo su di sé» e «Questo permanente non può bloccare finché ha un segnalino +1/+1 su di sé».
+@702.99
+Cifrare (Cipher)
+@702.99a
+Cifrare compare su alcuni istantanei e stregonerie. Rappresenta due abilità. La prima è un'abilità di magia che funziona mentre la magia con cifrare è in pila. La seconda è un'abilità statica che funziona mentre la carta con cifrare è nella zona di esilio. «Cifrare» significa «Se questa magia è rappresentata da una carta, puoi esiliare questa carta codificata su una creatura che controlli» e «Finché questa carta è codificata su quella creatura, quella creatura ha "Ogni volta che questa creatura infligge danno da combattimento a un giocatore, puoi copiare la carta codificata e puoi lanciare la copia senza pagare il suo costo di mana"».
+@702.99b
+Il termine «codificata» descrive la relazione tra la carta con cifrare mentre si trova nella zona di esilio e la creatura scelta quando si risolve la magia rappresentata da quella carta.
+@702.99c
+La carta con cifrare resta codificata sulla creatura scelta finché la carta con cifrare resta esiliata e la creatura resta sul campo di battaglia. La carta resta codificata su quell'oggetto anche se cambia controllore o smette di essere una creatura, finché resta sul campo di battaglia.
+@702.100
+Evolvere
+@702.100a
+Evolvere è un'abilità innescata. «Evolvere» significa «Ogni volta che entra una creatura che controlli, se la forza di quella creatura è maggiore della forza di questa creatura e/o la costituzione di quella creatura è maggiore della costituzione di questa creatura, metti un segnalino +1/+1 su questa creatura».
+@702.100b
+Una creatura «evolve» quando uno o più segnalini +1/+1 vengono messi su di essa come risultato della risoluzione della sua abilità evolvere.
+@702.100c
+Una creatura non può avere forza o costituzione maggiori di un permanente non creatura.
+@702.100d
+Se una creatura ha più istanze di evolvere, ognuna si innesca separatamente.
+@702.101
+Estorsione
+@702.101a
+Estorsione è un'abilità innescata. «Estorsione» significa «Ogni volta che lanci una magia, puoi pagare {W/B}. Se lo fai, ogni avversario perde 1 punto vita e tu guadagni punti vita pari al totale dei punti vita persi in questo modo».
+@702.101b
+Se un permanente ha più istanze di estorsione, ognuna si innesca separatamente.
+@702.102
+Fusione (Fuse)
+@702.102a
+Fusione è un'abilità statica presente su alcune carte divise (vedi regola 709, «Carte divise») che si applica mentre la carta con fusione è nella mano di un giocatore. Se un giocatore lancia dalla sua mano una carta divisa con fusione, può scegliere di lanciare entrambe le metà di quella carta divisa invece di sceglierne una. Questa scelta viene fatta prima di mettere in pila la carta divisa con fusione. La magia risultante è una magia divisa fusa.
+@702.102b
+Una magia divisa fusa ha le caratteristiche combinate delle sue due metà. (Vedi regola 709.4.)
+@702.102c
+Il costo totale di una magia divisa fusa include il costo di mana di ciascuna metà.
+@702.102d
+Mentre si risolve una magia divisa fusa, il controllore della magia segue le istruzioni della metà sinistra e poi segue le istruzioni della metà destra.
+@702.103
+Conferire (Bestow)
+@702.103a
+Conferire rappresenta un'abilità statica che funziona in qualsiasi zona da cui potresti giocare la carta su cui si trova. «Conferire [costo]» significa «Mentre lanci questa magia, puoi scegliere di lanciarla conferita. Se lo fai, paghi [costo] invece del suo costo di mana». Lanciare una magia usando la sua abilità conferire segue le regole per il pagamento dei costi alternativi (vedi 601.2b e 601.2f–h).
+@702.103b
+Quando una magia lanciata conferita viene messa in pila, diventa un incantesimo Aura e ottiene incanta creatura. È una magia Aura conferita, e il permanente che diventa quando si risolve sarà un'Aura conferita. Questi effetti durano finché la magia o il permanente che diventa non smette di essere conferito (vedi regole 702.103e–g). Poiché la magia è una magia Aura, il suo controllore deve scegliere un bersaglio legale per quella magia come definito dalla sua abilità incanta creatura e dalla regola 601.2c. Vedi anche regola 303.4.
+@702.103c
+Se una magia Aura conferita viene copiata, anche la copia è una magia Aura conferita. Qualsiasi regola che fa riferimento a una magia lanciata conferita si applica anche alla copia.
+@702.103d
+Quando si lancia una magia conferita, per stabilire se può essere lanciata vengono valutate solo le sue caratteristiche come modificate dall'abilità conferire.
+Esempio: Aether Storm è un incantesimo con l'abilità «Le magie creatura non possono essere lanciate». Questo effetto non impedisce di lanciare conferita una carta creatura con conferire.
+Esempio: Garruk's Horde dice, tra l'altro, «Puoi lanciare magie creatura dalla cima del tuo grimorio». Se controlli Garruk's Horde e la prima carta del tuo grimorio è una carta creatura con conferire, puoi lanciarla come magia creatura, ma non puoi lanciarla conferita.
+@702.103e
+Quando una magia Aura conferita inizia a risolversi, se il suo bersaglio è illegale, smette di essere conferita e l'effetto che la rende una magia Aura termina. Continua a risolversi come magia creatura. Vedi regola 608.3b.
+@702.103f
+Se un'Aura conferita viene staccata, smette di essere conferita. Se un'Aura conferita è assegnata a un oggetto o giocatore illegale, viene staccata e smette di essere conferita. Questa è un'eccezione alla regola 704.5m.
+@702.103g
+Se un'Aura conferita rientra in fase non assegnata, smette di essere conferita. Vedi regola 702.26, «Intermittenza».
+@702.104
+Tributo
+@702.104a
+Tributo è un'abilità statica che funziona mentre la creatura con tributo sta entrando nel campo di battaglia. «Tributo N» significa «Mentre questa creatura entra, scegli un avversario. Quel giocatore può mettere N segnalini +1/+1 aggiuntivi su di essa mentre entra».
+@702.104b
+Gli oggetti con tributo hanno abilità innescate che controllano «se il tributo non è stato pagato». Questa condizione è vera se l'avversario scelto come risultato dell'abilità tributo non ha fatto entrare la creatura nel campo di battaglia con i segnalini +1/+1 specificati dall'abilità tributo della creatura.
+@702.105
+Detronizzare
+@702.105a
+Detronizzare è un'abilità innescata. «Detronizzare» significa «Ogni volta che questa creatura attacca il giocatore con più punti vita o a pari merito con più punti vita, metti un segnalino +1/+1 su questa creatura».
+@702.105b
+Se una creatura ha più istanze di detronizzare, ognuna si innesca separatamente.
+@702.106
+Agenda nascosta
+@702.106a
+Agenda nascosta è un'abilità statica che funziona mentre una carta cospirazione con agenda nascosta viene messa nella zona di comando. «Agenda nascosta» significa «Mentre metti questa carta cospirazione nella zona di comando, girala a faccia in giù e scegli segretamente un nome di carta».
+@702.106b
+Per scegliere segretamente un nome di carta, annota quel nome su un foglio di carta tenuto insieme alla carta cospirazione a faccia in giù.
+@702.106c
+In qualsiasi momento in cui hai la priorità, puoi girare a faccia in su una carta cospirazione a faccia in giù che controlli nella zona di comando. Questa è un'azione speciale. Farlo rivela il nome scelto. Vedi regola 116.2j.
+@702.106d
+Agenda nascosta e un'altra abilità dell'oggetto con agenda nascosta che fa riferimento al «nome scelto» sono collegate. La seconda abilità fa riferimento solo al nome di carta scelto come risultato dell'abilità agenda nascosta di quell'oggetto. Vedi regola 607.2d.
+@702.106e
+Se un giocatore lascia la partita, tutte le carte cospirazione a faccia in giù controllate da quel giocatore devono essere rivelate a tutti i giocatori. Alla fine di ogni partita, tutte le carte cospirazione a faccia in giù devono essere rivelate a tutti i giocatori.
+@702.106f
+Doppia agenda è una variante dell'abilità agenda nascosta. Mentre metti nella zona di comando una carta cospirazione con doppia agenda, nomini segretamente due carte diverse invece di una. Non riveli che è stato scelto segretamente più di un nome finché non riveli i nomi scelti.
+@702.107
+Resistenza (Outlast)
+@702.107a
+Resistenza è un'abilità attivata. «Resistenza [costo]» significa «[Costo], {T}: Metti un segnalino +1/+1 su questa creatura. Attiva solo come una stregoneria».
+@702.108
+Prodezza
+@702.108a
+Prodezza è un'abilità innescata. «Prodezza» significa «Ogni volta che lanci una magia non creatura, questa creatura prende +1/+1 fino alla fine del turno».
+@702.108b
+Se una creatura ha più istanze di prodezza, ognuna si innesca separatamente.
+@702.109
+Scatto (Dash)
+@702.109a
+Scatto rappresenta tre abilità: due abilità statiche che funzionano mentre la carta con scatto è in pila, una delle quali può creare un'abilità innescata ritardata, e un'abilità statica che funziona mentre l'oggetto con scatto è sul campo di battaglia. «Scatto [costo]» significa «Puoi lanciare questa carta pagando [costo] invece del suo costo di mana», «Se è stato pagato il costo di scatto di questa magia, fai tornare il permanente che questa magia diventa nella mano del suo proprietario all'inizio della prossima sottofase finale» e «Finché è stato pagato il costo di scatto di questo permanente, ha rapidità». Lanciare una magia per il suo costo di scatto segue le regole per il pagamento dei costi alternativi delle regole 601.2b e 601.2f–h.
+@702.110
+Sfruttare
+@702.110a
+Sfruttare è un'abilità innescata. «Sfruttare» significa «Quando questa creatura entra, puoi sacrificare una creatura».
+@702.110b
+Una creatura con sfruttare «sfrutta una creatura» quando il controllore dell'abilità sfruttare sacrifica una creatura mentre quell'abilità si risolve.
+@702.111
+Minacciare
+@702.111a
+Minacciare è un'abilità di evasione.
+@702.111b
+Una creatura con minacciare non può essere bloccata tranne che da due o più creature. (Vedi regola 509, «Sottofase di dichiarazione dei bloccanti».)
+@702.111c
+Più istanze di minacciare sulla stessa creatura sono ridondanti.
+@702.112
+Fama (Renown)
+@702.112a
+Fama è un'abilità innescata. «Fama N» significa «Quando questa creatura infligge danno da combattimento a un giocatore, se non è famosa, metti N segnalini +1/+1 su di essa e diventa famosa».
+@702.112b
+Famosa è una designazione che non ha alcun significato nelle regole se non quello di fare da indicatore che l'abilità fama e altre magie e abilità possono identificare. Solo i permanenti possono essere o diventare famosi. Una volta che un permanente diventa famoso, resta famoso finché non lascia il campo di battaglia. Famoso non è un'abilità né fa parte dei valori copiabili del permanente.
+@702.112c
+Se una creatura ha più istanze di fama, ognuna si innesca separatamente. La prima di tali abilità a risolversi fa diventare famosa la creatura, e le abilità successive non hanno effetto. (Vedi regola 603.4)
+@702.113
+Risvegliare (Awaken)
+@702.113a
+Risvegliare compare su alcuni istantanei e stregonerie. Rappresenta due abilità: un'abilità statica che funziona mentre la magia con risvegliare è in pila e un'abilità di magia. «Risvegliare N—[costo]» significa «Puoi pagare [costo] invece del costo di mana di questa magia mentre lanci questa magia» e «Se è stato pagato il costo di risvegliare di questa magia, metti N segnalini +1/+1 su una terra bersaglio che controlli. Quella terra diventa una creatura Elementale 0/0 con rapidità. È ancora una terra». Lanciare una magia usando la sua abilità risvegliare segue le regole per il pagamento dei costi alternativi delle regole 601.2b e 601.2f–h.
+@702.113b
+Il controllore di una magia con risvegliare sceglie il bersaglio dell'abilità di magia risvegliare solo se ha scelto di pagare il costo di risvegliare della magia. Altrimenti la magia viene lanciata come se non avesse quel bersaglio.
+@702.114
+Vacuità (Devoid)
+@702.114a
+Vacuità è un'abilità che definisce caratteristiche. «Vacuità» significa «Questo oggetto è incolore». Questa abilità funziona ovunque, anche fuori dalla partita. Vedi regola 604.3.
+@702.115
+Ingerire
+@702.115a
+Ingerire è un'abilità innescata. «Ingerire» significa «Ogni volta che questa creatura infligge danno da combattimento a un giocatore, quel giocatore esilia la prima carta del suo grimorio».
+@702.115b
+Se una creatura ha più istanze di ingerire, ognuna si innesca separatamente.
+@702.116
+Miriade
+@702.116a
+Miriade è un'abilità innescata che può anche creare un'abilità innescata ritardata. «Miriade» significa «Ogni volta che questa creatura attacca, per ogni avversario diverso dal giocatore in difesa, puoi creare una pedina che è una copia di questa creatura, TAPpata e attaccante quel giocatore o un planeswalker che controlla. Se in questo modo vengono create una o più pedine, esilia le pedine alla fine del combattimento».
+@702.116b
+Se una creatura ha più istanze di miriade, ognuna si innesca separatamente.
+@702.117
+Impeto (Surge)

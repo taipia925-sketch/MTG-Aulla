@@ -1,0 +1,146 @@
+@608.2h
+Se un effetto richiede informazioni dalla partita (come il numero di creature sul campo di battaglia), la risposta viene determinata una sola volta, quando l'effetto viene applicato. Se l'effetto richiede informazioni da un oggetto specifico, compresa la fonte dell'abilità stessa, l'effetto usa le informazioni attuali di quell'oggetto se si trova nella zona pubblica in cui dovrebbe essere; se non è più in quella zona, o se l'effetto l'ha spostato da una zona pubblica a una zona nascosta, l'effetto usa le ultime informazioni conosciute dell'oggetto. Vedi regola 113.7a. Se un'abilità stabilisce che un oggetto fa qualcosa, è l'oggetto così com'è (o com'era più di recente) a farlo, non l'abilità.
+@608.2i
+Alcuni effetti guardano indietro nel tempo e richiedono informazioni su stati di gioco e azioni precedenti invece di considerare lo stato di gioco attuale. Se un tale effetto richiede informazioni dalla partita su un oggetto o un gruppo di oggetti, e quell'effetto non compie azioni su quegli oggetti, non è necessario che si trovino attualmente nella zona in cui erano al momento di quello stato di gioco o di quell'azione precedente, né che soddisfino attualmente i criteri descritti nell'azione, purché li soddisfacessero nel momento indicato. Questa è un'eccezione alla regola 608.2h.
+Esempio: Un giocatore attacca con Bear Cub. Più avanti nel turno, un effetto fa diventare Bear Cub un permanente non creatura. Lo stesso giocatore poi lancia Search Party Captain, una magia che dice, tra l'altro, «Questa magia costa {1} in meno per ogni creatura con cui hai attaccato in questo turno». Quella magia costa {1} in meno perché il giocatore ha attaccato con una creatura, anche se il Bear Cub con cui ha attaccato non è più una creatura.
+@608.2j
+Se un effetto fa riferimento a determinate caratteristiche, controlla solo il valore delle caratteristiche indicate, indipendentemente da quelle correlate che un oggetto può avere.
+Esempio: Un effetto che dice «Distruggi tutte le creature nere» distrugge una creatura bianca e nera, mentre uno che dice «Distruggi tutte le creature non nere» non la distrugge.
+@608.2k
+Se l'effetto di un'abilità fa riferimento a uno specifico oggetto non bersagliato a cui si è già fatto riferimento nel costo o nella condizione di innesco di quell'abilità, ha comunque effetto su quell'oggetto anche se l'oggetto ha cambiato caratteristiche.
+Esempio: Wall of Tears dice «Ogni volta che questa creatura blocca una creatura, fai tornare quella creatura in mano al suo proprietario alla fine del combattimento». Se Wall of Tears blocca una creatura, e poi quella creatura smette di essere una creatura prima che l'abilità innescata si risolva, il permanente torna comunque in mano al suo proprietario.
+@608.2m
+Se una magia istantaneo, una magia stregoneria o un'abilità che può risolversi legalmente lascia la pila dopo aver iniziato a risolversi, continua comunque a risolversi completamente.
+@608.2n
+Come parte finale della risoluzione di una magia istantaneo o stregoneria, la magia viene messa nel cimitero del suo proprietario. Come parte finale della risoluzione di un'abilità, l'abilità viene rimossa dalla pila e cessa di esistere.
+@608.2p
+Una volta completati tutti i passaggi possibili descritti nelle regole 608.2c–n, si innescano le abilità che si innescano quando quella magia o abilità si risolve.
+@608.3
+Se l'oggetto che si sta risolvendo è una magia permanente, la sua risoluzione può comprendere diversi passaggi. Le istruzioni delle regole 608.3a e b vengono sempre eseguite per prime. Poi viene eseguito, se appropriato, uno dei passaggi delle regole 608.3c–e.
+@608.3a
+Se l'oggetto che si sta risolvendo non ha bersagli, diventa un permanente ed entra nel campo di battaglia sotto il controllo del controllore della magia.
+@608.3b
+Se l'oggetto che si sta risolvendo ha un bersaglio, controlla se il bersaglio è ancora legale, come descritto nella regola 608.2b. Se una magia con un bersaglio illegale è una magia Aura conferita (vedi regola 702.103e) o una magia creatura che muta (vedi regola 702.140b), diventa una magia creatura e si risolve come descritto nella regola 608.3a. Altrimenti, la magia non si risolve. Viene rimossa dalla pila e messa nel cimitero del suo proprietario.
+@608.3c
+Se l'oggetto che si sta risolvendo è una magia Aura, diventa un permanente e viene messa sul campo di battaglia sotto il controllo del controllore della magia, assegnata al giocatore o all'oggetto che bersagliava.
+@608.3d
+Se l'oggetto che si sta risolvendo è una magia creatura che muta, l'oggetto che rappresenta quella magia si unisce al permanente che sta bersagliando (vedi regola 730, «Unirsi ai permanenti»).
+@608.3e
+Se una magia permanente si risolve ma il suo controllore non può metterla sul campo di battaglia, quel giocatore la mette nel cimitero del suo proprietario.
+Esempio: Worms of the Earth ha l'abilità «Le terre non possono entrare nel campo di battaglia». Clone dice «Puoi far entrare questa creatura come copia di una qualsiasi creatura sul campo di battaglia». Se un giocatore lancia Clone e sceglie di copiare Dryad Arbor (una terra creatura) mentre Worms of the Earth è sul campo di battaglia, Clone non può entrare nel campo di battaglia dalla pila. Viene messo nel cimitero del suo proprietario.
+@608.3f
+Se l'oggetto che si sta risolvendo è una copia di una magia permanente, diventa un permanente pedina quando viene messo sul campo di battaglia in uno qualsiasi dei passaggi precedenti. Una pedina messa sul campo di battaglia in questo modo non è più una copia di una magia e non viene «creata» ai fini delle regole o degli effetti che fanno riferimento alla creazione di una pedina.
+@608.3g
+Se l'oggetto che si sta risolvendo ha un'abilità statica che funziona in pila e crea un'abilità innescata ritardata, quell'abilità innescata ritardata viene creata quando quel permanente viene messo sul campo di battaglia in uno qualsiasi dei passaggi precedenti. (Vedi regole 702.109, «Scatto», 702.152, «Blitz», e 702.185, «Warp».)
+@609
+Effetti
+@609.1
+Un effetto è qualcosa che avviene nella partita come risultato di una magia o abilità. Quando una magia, un'abilità attivata o un'abilità innescata si risolve, può creare uno o più effetti singoli o continui. Le abilità statiche possono creare uno o più effetti continui. Il testo in sé non è mai un effetto.
+@609.2
+Gli effetti si applicano solo ai permanenti, a meno che il testo dell'istruzione non dica altrimenti o che possano chiaramente applicarsi solo a oggetti in una o più altre zone.
+Esempio: Un effetto che trasforma tutte le terre in creature non modifica le carte terra nei cimiteri dei giocatori. Ma un effetto che dice che le magie costano di più si applica solo alle magie in pila, dato che una magia è sempre in pila mentre un giocatore la sta lanciando.
+@609.3
+Se un effetto tenta di fare qualcosa di impossibile, fa solo quanto è possibile.
+Esempio: Se un giocatore ha in mano una sola carta, un effetto che dice «Scarta due carte» gli fa scartare solo quella carta. Se un effetto sposta carte fuori dal grimorio (invece di pescarle), ne sposta quante più possibile.
+@609.4
+Alcuni effetti stabiliscono che un giocatore può fare qualcosa «come se» una certa condizione fosse vera, o che una creatura può fare qualcosa «come se» una certa condizione fosse vera. Questo si applica solo all'effetto indicato. Ai fini di quell'effetto, tratta la partita esattamente come se la condizione indicata fosse vera. Per tutti gli altri fini, tratta la partita normalmente.
+@609.4a
+Se due effetti stabiliscono che un giocatore (o una creatura) può fare la stessa cosa «come se» fossero vere condizioni diverse, entrambe le condizioni possono applicarsi. Se un effetto «come se» soddisfa i requisiti di un altro effetto «come se», si applicano entrambi gli effetti.
+Esempio: Un giocatore controlla Vedalken Orrery, un artefatto che dice «Puoi lanciare magie come se avessero lampo». Quel giocatore lancia Shaman's Trance, un istantaneo che dice, tra l'altro, «In questo turno puoi giocare terre e lanciare magie dai cimiteri degli altri giocatori come se quelle carte fossero nel tuo cimitero». Il giocatore può lanciare una stregoneria con flashback dal cimitero di un altro giocatore come se fosse nel proprio cimitero e come se avesse lampo.
+@609.4b
+Se un effetto permette a un giocatore di spendere mana «come se fosse mana di qualsiasi [tipo o colore]», questo influisce solo sul modo in cui il giocatore può pagare un costo. Non cambia quel costo, e non cambia il mana effettivamente speso per pagarlo. Lo stesso vale per gli effetti che dicono «si può spendere mana di qualsiasi tipo».
+@609.5
+Se un effetto potesse portare a una parità, il testo della magia o abilità che ha creato l'effetto specificherà cosa fare in caso di parità. Il gioco di Magic non ha una regola predefinita per le parità.
+@609.6
+Alcuni effetti continui sono effetti di sostituzione o effetti di prevenzione. Vedi regole 614 e 615.
+@609.7
+Alcuni effetti si applicano al danno di una fonte; per esempio, «La prossima volta che una fonte rossa a tua scelta sta per infliggerti danno in questo turno, previeni quel danno».
+@609.7a
+Se un effetto richiede a un giocatore di scegliere una fonte di danno, può scegliere un permanente; una magia in pila (compresa una magia permanente); qualsiasi oggetto a cui faccia riferimento un oggetto in pila, un effetto di sostituzione o di prevenzione in attesa di applicarsi, o un'abilità innescata ritardata in attesa di innescarsi (anche se quell'oggetto non è più nella zona in cui si trovava); oppure un oggetto a faccia in su nella zona di comando. Una fonte non deve essere in grado di infliggere danno per essere una scelta legale. La fonte viene scelta quando l'effetto viene creato. Se il giocatore sceglie un permanente, l'effetto si applica al prossimo danno inflitto da quel permanente, che sia danno da combattimento o danno inflitto come risultato di una magia o abilità. Se il giocatore sceglie una magia permanente, l'effetto si applica a qualsiasi danno inflitto da quella magia e a qualsiasi danno inflitto dal permanente che quella magia diventa quando si risolve.
+@609.7b
+Alcuni effetti di magie e abilità risolte prevengono o sostituiscono il danno di fonti con determinate proprietà, come una creatura o una fonte di un determinato colore. Quando la fonte sta per infliggere danno, lo «scudo» ricontrolla le proprietà della fonte. Se le proprietà non corrispondono più, il danno non viene prevenuto né sostituito. Se per qualsiasi motivo lo scudo non previene né sostituisce alcun danno, lo scudo non viene consumato.
+@609.7c
+Alcuni effetti di abilità statiche prevengono o sostituiscono il danno di fonti con determinate proprietà. Per questi effetti, la prevenzione o la sostituzione si applica alle fonti che sono permanenti con quella proprietà e a qualsiasi fonte non sul campo di battaglia che ha quella proprietà.
+@610
+Effetti singoli
+@610.1
+Un effetto singolo fa qualcosa una sola volta e non ha una durata. Esempi sono infliggere danno, distruggere un permanente, creare una pedina e spostare un oggetto da una zona a un'altra.
+@610.2
+Alcuni effetti singoli creano un'abilità innescata ritardata, che istruisce un giocatore a fare qualcosa più avanti nella partita (di solito in un momento specifico) invece che quando si risolve la magia o abilità che crea l'effetto singolo. Vedi regola 603.7.
+@610.3
+Alcuni effetti singoli fanno cambiare zona a un oggetto «finché» non avviene un evento specificato. Subito dopo l'evento specificato viene creato un secondo effetto singolo. Questo secondo effetto singolo fa tornare l'oggetto nella sua zona precedente.
+@610.3a
+Se una magia o un'abilità attivata che si risolve crea l'effetto singolo iniziale che fa cambiare zona all'oggetto, e l'evento specificato è già avvenuto prima che quell'effetto singolo avesse luogo ma dopo che quella magia o abilità è stata messa in pila, l'oggetto non si sposta.
+@610.3b
+Se un'abilità innescata che si risolve crea l'effetto singolo iniziale che fa cambiare zona all'oggetto, e l'evento specificato è già avvenuto prima che quell'effetto singolo avesse luogo ma dopo che quell'abilità si è innescata, l'oggetto non si sposta.
+@610.3c
+Un oggetto che torna sul campo di battaglia in questo modo torna sotto il controllo del suo proprietario, salvo diversa indicazione.
+@610.3d
+Se più effetti singoli vengono creati in questo modo subito dopo uno o più eventi simultanei, anche quegli effetti singoli sono simultanei.
+Esempio: Due Banisher Priest hanno esiliato ciascuno una carta. Tutte le creature vengono distrutte nello stesso momento da Day of Judgment. Le due carte esiliate tornano sul campo di battaglia nello stesso momento.
+@610.4
+Alcuni effetti singoli fanno andare fuori fase un permanente «finché» non avviene un evento specificato. Subito dopo l'evento specificato viene creato un secondo effetto singolo. Questo secondo effetto singolo fa rientrare in fase il permanente.
+@610.4a
+Un permanente andato fuori fase in questo modo non rientra in fase come risultato dell'azione generata dal turno durante la sottofase di STAP di un giocatore (vedi regola 502.1). Altri effetti possono farlo rientrare in fase. Se un permanente andato fuori fase in questo modo rientra in fase a causa di un altro effetto, il secondo effetto singolo non avviene, anche se quel permanente è andato di nuovo fuori fase.
+@610.4b
+Se una magia o un'abilità attivata che si risolve crea l'effetto singolo iniziale che fa andare fuori fase il permanente, e l'evento specificato è già avvenuto prima che quell'effetto singolo avesse luogo ma dopo che quella magia o abilità è stata messa in pila, il permanente non va fuori fase.
+@610.4c
+Se un'abilità innescata che si risolve crea l'effetto singolo iniziale che fa andare fuori fase il permanente, e l'evento specificato è già avvenuto prima che quell'effetto singolo avesse luogo ma dopo che quell'abilità si è innescata, il permanente non va fuori fase.
+@610.4d
+Se più effetti singoli vengono creati in questo modo subito dopo uno o più eventi simultanei, anche quegli effetti singoli sono simultanei.
+@610.5
+Alcune abilità statiche creano effetti singoli che fanno ottenere un'abilità alle magie lanciate da un giocatore mentre quel giocatore le lancia. Questi effetti iniziano ad applicarsi alle magie appropriate nel momento in cui il giocatore mette una tale magia in pila. Vedi regola 601.2a.
+@611
+Effetti continui
+@611.1
+Un effetto continuo modifica le caratteristiche degli oggetti, modifica il controllo degli oggetti, o influisce sui giocatori o sulle regole del gioco, per un periodo fisso o indefinito.
+@611.2
+Un effetto continuo può essere generato dalla risoluzione di una magia o abilità.
+@611.2a
+Un effetto continuo generato dalla risoluzione di una magia o abilità dura quanto indicato dalla magia o abilità che lo crea (per esempio «fino alla fine del turno»). Se non è indicata alcuna durata, dura fino alla fine della partita.
+@611.2b
+Alcuni effetti continui generati dalla risoluzione di una magia o abilità hanno durate formulate «per tutto il tempo in cui…». Se la durata «per tutto il tempo in cui» non inizia mai, l'effetto non fa nulla. Allo stesso modo, se quella durata termina prima del momento in cui l'effetto verrebbe applicato per la prima volta e non ricomincia durante la risoluzione di quella magia o abilità, l'effetto non fa nulla. Non inizia per poi terminare subito, e non dura per sempre.
+Esempio: Master Thief ha l'abilità «Quando questa creatura entra, ottieni il controllo di un artefatto bersaglio per tutto il tempo in cui controlli questa creatura». Se perdi il controllo di Master Thief prima che l'abilità si risolva, non fa nulla, perché la sua durata (per tutto il tempo in cui controlli Master Thief) era già terminata prima che l'effetto iniziasse.
+@611.2c
+Se un effetto continuo generato dalla risoluzione di una magia o abilità modifica le caratteristiche o cambia il controllore di qualche oggetto, l'insieme degli oggetti su cui ha effetto viene determinato quando quell'effetto continuo inizia. Dopo quel momento, l'insieme non cambia. (Nota che questo funziona diversamente da un effetto continuo di un'abilità statica.) Un effetto continuo generato dalla risoluzione di una magia o abilità che non modifica le caratteristiche né cambia il controllore di alcun oggetto modifica le regole del gioco, quindi può avere effetto su oggetti che non ne erano interessati quando quell'effetto continuo è iniziato. Se un singolo effetto continuo ha parti che modificano le caratteristiche o cambiano il controllore di qualche oggetto e altre parti che non lo fanno, l'insieme di oggetti a cui si applica ciascuna parte viene determinato in modo indipendente.
+Esempio: Un effetto che dice «Tutte le creature bianche prendono +1/+1 fino alla fine del turno» dà il bonus a tutti i permanenti che sono creature bianche quando la magia o abilità si risolve (anche se in seguito cambiano colore) e non influisce su quelli che entrano nel campo di battaglia o diventano bianchi in seguito.
+Esempio: Un effetto che dice «Previeni tutto il danno che le creature infliggerebbero in questo turno» non modifica le caratteristiche di alcun oggetto, quindi sta modificando le regole del gioco. Ciò significa che l'effetto si applica anche al danno di creature che non erano sul campo di battaglia quando l'effetto continuo è iniziato. Influisce anche sul danno di permanenti che diventano creature più avanti nel turno.
+@611.2d
+Se una magia o abilità che si risolve e crea un effetto continuo contiene una variabile come X, il valore di quella variabile viene determinato una sola volta, durante la risoluzione. Vedi regola 608.2h.
+@611.2e
+Se una magia o abilità che si risolve mette sul campo di battaglia un permanente non pedina e crea anche un effetto continuo che stabilisce che il permanente «è [caratteristica]», che «ha [caratteristica]» o che non ha una particolare caratteristica, quell'effetto continuo si applica simultaneamente all'ingresso del permanente nel campo di battaglia. Questa caratteristica di solito è un colore o un tipo di creatura. Se l'effetto continuo dice che il permanente «diventa [caratteristica]» o «ottiene [un'abilità]», quell'effetto si applica dopo che il permanente è sul campo di battaglia.
+Esempio: Arbiter of the Ideal mette sul campo di battaglia una carta artefatto, creatura o terra e dice, tra l'altro, «Quel permanente è un incantesimo in aggiunta ai suoi altri tipi». Un'abilità che si innesca ogni volta che un incantesimo entra nel campo di battaglia si innescherebbe. Il permanente non entra nel campo di battaglia per poi diventare un incantesimo.
+@611.2f
+Alcune magie e abilità generano un effetto continuo che modifica le caratteristiche della prossima magia lanciata da un giocatore, della prossima magia che soddisfa determinate condizioni lanciata da un giocatore durante un certo periodo, o simili. Questi effetti non iniziano immediatamente. Iniziano invece ad applicarsi nel momento in cui quel giocatore mette in pila la prossima magia appropriata, e si applicano a quella magia. Vedi regola 601.2a.
+@611.3
+Un effetto continuo può essere generato dall'abilità statica di un oggetto.
+@611.3a
+Un effetto continuo generato da un'abilità statica non viene «bloccato»; si applica in ogni momento a ciò che il suo testo indica.
+@611.3b
+L'effetto si applica in ogni momento in cui il permanente che lo genera è sul campo di battaglia o l'oggetto che lo genera è nella zona appropriata.
+Esempio: Un permanente con l'abilità statica «Tutte le creature bianche prendono +1/+1» genera un effetto che dà continuamente +1/+1 a ogni creatura bianca sul campo di battaglia. Se una creatura diventa bianca, riceve questo bonus; una creatura che smette di essere bianca lo perde.
+@611.3c
+Gli effetti continui che modificano le caratteristiche dei permanenti lo fanno simultaneamente all'ingresso del permanente nel campo di battaglia. Non aspettano che il permanente sia sul campo di battaglia per poi cambiarlo. Poiché tali effetti si applicano mentre il permanente entra nel campo di battaglia, vengono applicati prima di stabilire se il permanente farà innescare un'abilità quando entra nel campo di battaglia.
+Esempio: Sul campo di battaglia c'è un permanente con l'abilità statica «Tutte le creature bianche prendono +1/+1». Una magia creatura che normalmente creerebbe una creatura bianca 1/1 crea invece una creatura bianca 2/2. La creatura non entra nel campo di battaglia come 1/1 per poi diventare 2/2.
+@611.3d
+Gli effetti continui di abilità statiche possono permettere a un giocatore di giocare una terra o di lanciare una magia permanente, o possono conferire a una magia permanente o a una carta un'abilità che le permette di essere lanciata. Se l'effetto conferisce a quell'oggetto anche un'abilità che funziona solo sul campo di battaglia, quell'abilità dura quanto indicato dall'effetto che conferisce quel permesso o quell'abilità. Se non è indicata alcuna durata, dura fino alla fine della partita. Questa è un'eccezione alle regole 611.3a–b.
+@612
+Effetti che cambiano il testo
+@612.1
+Alcuni effetti continui cambiano il testo di un oggetto. Questo può riguardare qualsiasi parola o simbolo stampato su quell'oggetto, ma in genere riguarda solo il testo delle regole di quell'oggetto (che compare nel suo riquadro di testo) e/o il testo che compare nella sua riga del tipo. Un effetto del genere è un effetto che cambia il testo.
+@612.2
+Un effetto che cambia il testo cambia solo le parole usate nel modo corretto (per esempio, una parola di colore di Magic usata come parola di colore, una parola di tipo di terra usata come tipo di terra o una parola di tipo di creatura usata come tipo di creatura). Un effetto che cambia una parola di colore o un sottotipo non può cambiare il nome di una carta, anche se quel nome contiene una parola o una serie di lettere uguale a una parola di colore di Magic, a un tipo di terra base o a un tipo di creatura.
+@612.2a
+La maggior parte delle magie e delle abilità che creano pedine creatura usa i tipi di creatura per definire sia i tipi di creatura sia i nomi delle pedine. Un effetto che cambia il testo e che influisce su una tale magia o su un oggetto con una tale abilità può cambiare queste parole perché sono usate come tipi di creatura, anche se sono usate anche come nomi.
+@612.3
+Gli effetti che aggiungono o rimuovono abilità non cambiano il testo degli oggetti su cui hanno effetto, quindi le abilità conferite a un oggetto non possono essere modificate da effetti che cambiano il testo e che influiscono su quell'oggetto.
+@612.4
+I sottotipi e il testo delle regole di una pedina sono definiti dalla magia o abilità che ha creato la pedina. Un effetto che cambia il testo e che influisce su una pedina può cambiare queste caratteristiche.
+@612.5
+Una carta (Exchange of Words) istruisce un giocatore a scambiare i riquadri di testo di due oggetti. Questo sostituisce tutto il testo delle regole di ciascun oggetto con il testo delle regole dell'altro oggetto. (Nelle partite con determinate carte non coperte da queste regole, possono essere scambiati anche altri elementi del riquadro di testo. Vedi regola 100.7.)
+@612.6
+Una carta (Volrath's Shapeshifter) stabilisce che un oggetto ha il «testo completo» di un altro oggetto. Questo cambia non solo il testo che compare nel riquadro di testo e nella riga del tipo dell'oggetto, ma anche il testo che rappresenta il suo nome, il costo di mana, l'indicatore di colore, la forza e la costituzione.
+@612.7
+Una carta (Spy Kit) stabilisce che un oggetto ha «tutti i nomi delle carte creatura non leggendarie». Questo cambia il testo che rappresenta il nome dell'oggetto. Quell'oggetto ha il nome di ogni carta creatura non leggendaria presente nel riferimento Oracle. (Vedi regola 108.1.)
+@612.8
+Alcune carte creano un effetto continuo che imposta il nome di un oggetto. Questo cambia il testo che rappresenta il nome dell'oggetto. Quell'oggetto perde tutti i nomi che aveva e ha solo il nome specificato.

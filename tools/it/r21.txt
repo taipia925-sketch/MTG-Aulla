@@ -1,0 +1,235 @@
+@701.43b
+Un permanente può essere sfiancato anche se non è TAPpato o se è già stato sfiancato in un turno. Se sfianchi un permanente più di una volta prima della tua prossima sottofase di STAP, ogni effetto che gli impedisce di STAPparsi termina durante la stessa sottofase di STAP.
+@701.43c
+Un oggetto che non è sul campo di battaglia non può essere sfiancato.
+@701.43d
+«Puoi sfiancare [questa creatura] mentre attacca» è un costo facoltativo per attaccare (vedi regola 508.1g). Alcuni oggetti con questa abilità statica hanno un'abilità innescata che si innesca «quando lo fai» stampata nello stesso paragrafo. Queste abilità sono collegate. (Vedi regola 607.2h.)
+@701.44
+Esplorare
+@701.44a
+Alcune magie e abilità istruiscono un permanente a esplorare. Per farlo, il controllore di quel permanente rivela la prima carta del suo grimorio. Se in questo modo viene rivelata una carta terra, quel giocatore mette quella carta nella sua mano. Altrimenti, quel giocatore mette un segnalino +1/+1 sul permanente che esplora e può mettere la carta rivelata nel suo cimitero.
+@701.44b
+Un permanente «esplora» dopo che il procedimento descritto nella regola 701.44a è completato, anche se alcune o tutte quelle azioni erano impossibili.
+@701.44c
+Se un permanente non è più sul campo di battaglia quando un effetto lo istruisce a esplorare, si usano le sue ultime informazioni conosciute per stabilire quale oggetto ha esplorato e chi lo controllava.
+@701.44d
+Se più permanenti vengono istruiti a esplorare nello stesso momento, il primo giocatore nell'ordine APNAP che controlla (o, nel caso di un permanente non più sul campo di battaglia, controllava per ultimo; vedi regola 701.44c) uno o più di quei permanenti ne sceglie uno e quello esplora. Poi questo procedimento si ripete per ogni istruzione di esplorare rimanente.
+@701.45
+Assemblare
+@701.45a
+Assemblare è un'azione chiave dell'espansione Unstable che mette Congegni sul campo di battaglia. Al di fuori delle carte con bordo argentato, una sola carta (Steamflogger Boss) fa riferimento all'assemblare un Congegno. Le carte e le meccaniche dell'espansione Unstable non sono incluse in queste regole. Vedi le FAQ di Unstable per maggiori informazioni.
+@701.46
+Adattarsi
+@701.46a
+«Adattarsi N» significa «Se questo permanente non ha segnalini +1/+1 su di sé, metti N segnalini +1/+1 su di esso».
+@701.47
+Ammassare
+@701.47a
+Ammassare [sottotipo] N significa «Se non controlli una creatura Esercito, crea una pedina creatura [sottotipo] Esercito 0/0 nera. Scegli una creatura Esercito che controlli. Metti N segnalini +1/+1 su quella creatura. Se non è un/una [sottotipo], diventa un/una [sottotipo] in aggiunta ai suoi altri tipi».
+@701.47b
+Un giocatore «ha ammassato» dopo che il procedimento descritto nella regola 701.47a è completato, anche se alcune o tutte quelle azioni erano impossibili.
+@701.47c
+Le espressioni «l'Esercito che hai ammassato» e «l'Esercito ammassato» si riferiscono alla creatura che hai scelto, che abbia ricevuto segnalini o meno.
+@701.47d
+Alcune carte più vecchie sono state stampate con ammassare N senza indicare un sottotipo. Quelle carte hanno ricevuto errata nel riferimento Oracle e ora dicono «ammassa Zombie N».
+@701.48
+Imparare
+@701.48a
+«Impara» significa «Puoi scartare una carta. Se lo fai, pesca una carta. Se non hai scartato una carta, puoi rivelare una carta Lezione che possiedi da fuori dalla partita e metterla nella tua mano».
+@701.49
+Avventurarsi nel dungeon
+@701.49a
+Se a un giocatore viene detto di avventurarsi nel dungeon mentre non possiede una carta dungeon nella zona di comando, sceglie una carta dungeon che possiede da fuori dalla partita e la mette nella zona di comando. Mette il suo segnalino avventura sulla stanza più in alto. Vedi regola 309, «Dungeon».
+@701.49b
+Se a un giocatore viene detto di avventurarsi nel dungeon mentre il suo segnalino avventura si trova in una stanza diversa dalla stanza più in basso di una carta dungeon, sceglie una stanza adiacente, seguendo la direzione di una freccia che parte dalla sua stanza attuale. Se dalla stanza in cui si trova il segnalino avventura del giocatore partono più frecce, ne sceglie una da seguire. Sposta il suo segnalino avventura in quella stanza adiacente.
+@701.49c
+Se a un giocatore viene detto di avventurarsi nel dungeon mentre il suo segnalino avventura si trova nella stanza più in basso di una carta dungeon, rimuove quella carta dungeon dalla partita. Così facendo il giocatore completa quel dungeon (vedi regola 309.7). Poi sceglie una carta dungeon appropriata che possiede da fuori dalla partita, la mette nella zona di comando e mette il suo segnalino avventura sulla stanza più in alto di quel dungeon.
+@701.49d
+Avventurarsi in [qualità] è una variante di avventurarsi nel dungeon. Se a un giocatore viene detto di «avventurarsi in [qualità]» mentre non possiede una carta dungeon nella zona di comando, sceglie una carta dungeon con la qualità indicata che possiede da fuori dalla partita e la mette nella zona di comando. Mette il suo segnalino avventura sulla stanza più in alto di quel dungeon. Se possiede già una carta dungeon nella zona di comando, segue il normale procedimento per avventurarsi nel dungeon descritto nelle regole 701.49b–c.
+@701.50
+Tramare (Connive)
+@701.50a
+Alcune magie e abilità istruiscono un permanente a tramare. Per farlo, il controllore di quel permanente pesca una carta, poi scarta una carta. Se in questo modo viene scartata una carta non terra, quel giocatore mette un segnalino +1/+1 sul permanente che trama.
+@701.50b
+Se un permanente non è più sul campo di battaglia quando un effetto lo istruisce a tramare, si usano le sue ultime informazioni conosciute per stabilire quale oggetto ha tramato e chi lo controllava.
+@701.50c
+Se più permanenti vengono istruiti a tramare nello stesso momento, il primo giocatore nell'ordine APNAP che controlla (o, nel caso di un permanente non più sul campo di battaglia, controllava per ultimo; vedi regola 701.50b) uno o più di quei permanenti ne sceglie uno e quello trama. Poi questo procedimento si ripete per ogni istruzione di tramare rimanente.
+@701.50d
+Tramare N è una variante di tramare. Per far tramare N a un permanente, il controllore del permanente pesca N carte, scarta N carte, poi mette sul permanente un numero di segnalini +1/+1 pari al numero di carte non terra scartate in questo modo.
+@701.50e
+Se un permanente dovesse tramare 0, non avviene alcun evento di tramare. Le abilità che si innescano ogni volta che un permanente trama non si innescano.
+@701.50f
+Un permanente «trama» dopo che il procedimento descritto nella regola 701.50a o nella regola 701.50d è completato, anche se alcune o tutte quelle azioni erano impossibili.
+@701.51
+Aprire un'Attrazione
+@701.51a
+Un giocatore può aprire un'Attrazione solo durante una partita in cui sta giocando con un mazzo delle Attrazioni (vedi regola 717, «Carte Attrazione»).
+@701.51b
+Per aprire un'Attrazione, togli la prima carta del tuo mazzo delle Attrazioni, girala a faccia in su e mettila sul campo di battaglia sotto il tuo controllo.
+@701.51c
+Un'abilità che si innesca ogni volta che un giocatore apre un'Attrazione si innesca quando quel giocatore mette una carta Attrazione sul campo di battaglia mentre esegue l'istruzione della regola precedente. Se un effetto impedisce a quell'Attrazione di entrare nel campo di battaglia o sostituisce l'ingresso nel campo di battaglia con un altro evento, quell'abilità non si innesca.
+@701.52
+Tirare per visitare le tue Attrazioni
+@701.52a
+Per tirare per visitare le tue Attrazioni, tira un dado a sei facce. Poi, se controlli una o più Attrazioni con un numero illuminato uguale a quel risultato, ciascuna di quelle Attrazioni è stata «visitata» e la sua abilità di visita si innesca. Vedi regola 717, «Carte Attrazione», e regola 702.159, «Visita».
+@701.53
+Incubare
+@701.53a
+Incubare N significa creare una pedina Incubatore che entra nel campo di battaglia con N segnalini +1/+1 su di sé. Vedi regola 111.10i.
+@701.53b
+Una pedina Incubatore è una pedina bifronte. La sua faccia anteriore è un artefatto Incubatore incolore con «{2}: Trasforma questa pedina». La sua faccia posteriore è una creatura artefatto Phyrexiano 0/0 incolore chiamata «Phyrexian Token».
+@701.54
+L'Anello ti tenta
+@701.54a
+Alcune magie e abilità hanno il testo «l'Anello ti tenta». Ogni volta che l'Anello ti tenta, scegli una creatura che controlli. Quella creatura diventa il tuo Portatore dell'Anello finché un'altra creatura non diventa il tuo Portatore dell'Anello o un altro giocatore non ne ottiene il controllo.
+@701.54b
+Portatore dell'Anello è una designazione che un permanente può avere. Essere un Portatore dell'Anello non è un valore copiabile.
+@701.54c
+Se un giocatore non ha un emblema chiamato L'Anello (The Ring) nel momento in cui l'Anello lo tenta, ottiene un emblema chiamato L'Anello prima di scegliere una creatura come suo Portatore dell'Anello. L'Anello ha «Il tuo Portatore dell'Anello è leggendario e non può essere bloccato da creature con forza maggiore». Finché l'Anello ha tentato quel giocatore due o più volte, ha «Ogni volta che il tuo Portatore dell'Anello attacca, pesca una carta, poi scarta una carta». Finché l'Anello ha tentato quel giocatore tre o più volte, ha «Ogni volta che il tuo Portatore dell'Anello viene bloccato da una creatura, il controllore della creatura bloccante la sacrifica alla fine del combattimento». Finché l'Anello ha tentato quel giocatore quattro o più volte, ha «Ogni volta che il tuo Portatore dell'Anello infligge danno da combattimento a un giocatore, ogni avversario perde 3 punti vita».
+@701.54d
+Alcune abilità si innescano «Ogni volta che l'Anello ti tenta». L'Anello tenta un giocatore ogni volta che quel giocatore completa le azioni della regola 701.54a, anche se alcune o tutte quelle azioni erano impossibili.
+@701.54e
+Alcune abilità controllano se una creatura «è il tuo Portatore dell'Anello». Ai fini di quelle abilità, quella condizione è vera se quella creatura è sul campo di battaglia sotto il tuo controllo e ha la designazione Portatore dell'Anello.
+@701.55
+Affrontare una scelta malvagia
+@701.55a
+«[Un giocatore] affronta una scelta malvagia — [opzione A], oppure [opzione B]» significa «[Un giocatore] sceglie [opzione A] o [opzione B]. Poi vengono compiute tutte le azioni dell'opzione scelta».
+@701.55b
+Mentre affronta una scelta malvagia, un giocatore può scegliere un'opzione illegale o impossibile. In quel caso, compie quanta più parte dell'azione possibile. Questa è un'eccezione alla regola 608.2d.
+@701.55c
+Un effetto di sostituzione può sostituire un'istruzione di affrontare una scelta malvagia con un'istruzione di affrontare quella scelta un certo numero di volte aggiuntive. In quel caso, l'intero procedimento descritto nella regola 701.55a viene eseguito per quel giocatore il numero di volte appropriato, una alla volta.
+@701.55d
+Se a più di un giocatore viene detto di affrontare una scelta malvagia, l'intero procedimento descritto nella regola 701.55a viene eseguito per ciascuno di quei giocatori, uno alla volta, nell'ordine APNAP. Questa è un'eccezione alla regola 608.2e.
+@701.56
+Viaggiare nel tempo
+@701.56a
+Viaggiare nel tempo significa scegliere un qualsiasi numero di permanenti che controlli con uno o più segnalini tempo su di sé e/o di carte sospese che possiedi in esilio con uno o più segnalini tempo su di sé e, per ciascuno di quegli oggetti, mettere su di esso un segnalino tempo o rimuoverne uno. Vedi regola 702.62, «Sospendere».
+@701.57
+Scoprire
+@701.57a
+«Scopri N» significa «Esilia carte dalla cima del tuo grimorio finché non esili una carta non terra con valore di mana pari o inferiore a N. Puoi lanciare quella carta senza pagare il suo costo di mana se il valore di mana della magia risultante è minore o uguale a N. Se non la lanci, metti quella carta nella tua mano. Metti le altre carte esiliate in fondo al tuo grimorio in ordine casuale».
+@701.57b
+Un giocatore «ha scoperto» dopo che il procedimento descritto nella regola 701.57a è completato, anche se alcune o tutte quelle azioni erano impossibili.
+@701.57c
+Se l'ultima carta esiliata durante il procedimento descritto nella regola 701.57a ha valore di mana pari o inferiore a N, è la «carta scoperta», indipendentemente dal fatto che sia stata lanciata o messa nella mano di un giocatore.
+@701.58
+Celare (Cloak)
+@701.58a
+Celare una carta significa girarla a faccia in giù. Diventa una carta creatura a faccia in giù 2/2 con salvaguardia {2}, senza nome, senza sottotipi e senza costo di mana. Metti quella carta sul campo di battaglia a faccia in giù. Quel permanente è un permanente celato finché resta a faccia in giù. L'effetto che ne definisce le caratteristiche funziona mentre la carta è a faccia in giù e termina quando viene girata a faccia in su.
+@701.58b
+In qualsiasi momento in cui hai la priorità, puoi girare a faccia in su un permanente celato che controlli. Questa è un'azione speciale che non usa la pila (vedi regola 116.2b). Per farlo, mostra a tutti i giocatori che la carta che rappresenta quel permanente è una carta creatura e qual è il costo di mana di quella carta, paga quel costo, poi gira il permanente a faccia in su. L'effetto che ne definiva le caratteristiche mentre era a faccia in giù termina, e riprende le sue normali caratteristiche. (Se la carta che rappresenta quel permanente non è una carta creatura o non ha un costo di mana, non può essere girata a faccia in su in questo modo.)
+@701.58c
+Se viene celata una carta con metamorfosi, il suo controllore può girarla a faccia in su usando il procedimento descritto nella regola 702.37e per girare a faccia in su un permanente a faccia in giù con metamorfosi oppure il procedimento descritto sopra per girare a faccia in su un permanente celato.
+@701.58d
+Se viene celata una carta con travestimento, il suo controllore può girarla a faccia in su usando il procedimento descritto nella regola 702.168d per girare a faccia in su un permanente a faccia in giù con travestimento oppure il procedimento descritto sopra per girare a faccia in su un permanente celato.
+@701.58e
+Se un effetto istruisce un giocatore a celare più carte da un singolo grimorio, quelle carte vengono celate una alla volta.
+@701.58f
+Se un effetto istruisce un giocatore a celare una carta e una regola o un effetto impedisce all'oggetto a faccia in giù di entrare nel campo di battaglia, quella carta non viene celata. Le sue caratteristiche restano invariate e resta nella sua zona precedente. Se era a faccia in su, resta a faccia in su.
+@701.58g
+Se un permanente celato rappresentato da una carta istantaneo o stregoneria dovesse essere girato a faccia in su, il suo controllore lo rivela e lo lascia a faccia in giù. Le abilità che si innescano ogni volta che un permanente viene girato a faccia in su non si innescano.
+@701.58h
+Vedi regola 708, «Magie e permanenti a faccia in giù», per maggiori informazioni.
+@701.59
+Raccogliere prove
+@701.59a
+«Raccogli prove N» significa esiliare dal tuo cimitero un qualsiasi numero di carte con valore di mana totale pari o superiore a N.
+@701.59b
+Se a un giocatore viene data la scelta di raccogliere prove ma non può esiliare dal proprio cimitero carte con valore di mana totale pari o superiore a N (di solito perché non ci sono abbastanza carte), non può scegliere di raccogliere prove.
+@701.59c
+Una magia che ha un'abilità che permette a un giocatore di raccogliere prove come costo aggiuntivo per lanciarla può avere un'altra abilità che fa riferimento al fatto che le prove siano state raccolte. Queste abilità sono collegate. Vedi regola 607, «Abilità collegate».
+@701.60
+Sospettare
+@701.60a
+Alcune magie e abilità istruiscono un giocatore a sospettare una creatura. Quella creatura diventa sospettata finché non lascia il campo di battaglia o finché una magia o abilità non fa sì che non sia più sospettata.
+@701.60b
+Sospettato è una designazione che un permanente può avere. Solo i permanenti possono avere la designazione sospettato. Sospettato non è un'abilità né fa parte dei valori copiabili del permanente.
+@701.60c
+Un permanente sospettato ha minacciare e «Questa creatura non può bloccare» finché è sospettato.
+@701.60d
+Un permanente sospettato non può diventare di nuovo sospettato.
+@701.61
+Foraggiare (Forage)
+@701.61a
+Foraggiare significa «Esilia tre carte dal tuo cimitero o sacrifica un Cibo».
+@701.62
+Manifestare il terrore
+@701.62a
+«Manifesta il terrore» significa «Guarda le prime due carte del tuo grimorio. Manifestane una, poi metti nel tuo cimitero le carte guardate che non sono state manifestate in questo modo». Vedi regola 701.40, «Manifestare».
+@701.62b
+Un'abilità che si innesca ogni volta che un giocatore manifesta il terrore si innesca dopo che il procedimento descritto nella regola 701.62a è completato, anche se alcune o tutte quelle azioni erano impossibili.
+@701.63
+Resistere (Endure)
+@701.63a
+Alcune abilità istruiscono un permanente a resistere N. Per farlo, il controllore di quel permanente crea una pedina creatura Spirito N/N bianca, a meno che non metta N segnalini +1/+1 su quel permanente.
+@701.63b
+Se a un permanente viene detto di resistere 0, non succede nulla. Non vengono messi segnalini su quel permanente e non vengono create pedine.
+@701.64
+Imbrigliare (Harness)
+@701.64a
+«Imbriglia [questo permanente]» significa «Se questo permanente non è imbrigliato, diventa imbrigliato».
+@701.64b
+Imbrigliato è una designazione che non ha alcun significato nelle regole se non quello di fare da indicatore che altre magie e abilità possono identificare. Solo i permanenti possono essere o diventare imbrigliati. Una volta che un permanente diventa imbrigliato, resta imbrigliato finché non lascia il campo di battaglia. Imbrigliato non è un'abilità né fa parte dei valori copiabili del permanente.
+@701.65
+Dominare l'aria (Airbend)
+@701.65a
+Alcune magie e abilità istruiscono un giocatore a dominare l'aria su uno o più permanenti e/o magie. Per farlo, quel giocatore esilia quegli oggetti. Per ogni carta esiliata in questo modo, finché resta in esilio, il suo proprietario può lanciarla pagando {2} invece di pagare il suo costo di mana.
+@701.65b
+Un'abilità che si innesca ogni volta che un giocatore domina l'aria si innesca quando quel giocatore esilia uno o più oggetti come risultato di un'istruzione di dominare l'aria.
+@701.66
+Dominare la terra (Earthbend)
+@701.66a
+«Domina la terra N» significa «Una terra bersaglio che controlli diventa una terra creatura 0/0 con rapidità in aggiunta ai suoi altri tipi. Metti N segnalini +1/+1 su di essa. Quando quella terra muore o viene messa in esilio, riportala sul campo di battaglia TAPpata sotto il tuo controllo».
+@701.66b
+Un'abilità che si innesca ogni volta che un giocatore domina la terra si innesca quando viene creata l'abilità innescata ritardata descritta nella regola 701.66a.
+@701.67
+Dominare l'acqua (Waterbend)
+@701.67a
+«Domina l'acqua [costo]» significa «Paga [costo]. Per ogni mana generico in quel costo, puoi TAPpare un artefatto o una creatura STAPpati che controlli invece di pagare quel mana».
+@701.67b
+Se un costo di dominare l'acqua fa parte del costo totale per lanciare una magia o attivare un'abilità (di solito perché il costo di dominare l'acqua è esso stesso un costo aggiuntivo), il metodo alternativo per pagare il mana descritto nella regola 701.67a può essere usato solo per pagare la quantità di mana generico del costo di dominare l'acqua, anche se il costo totale per lanciare quella magia o attivare quell'abilità include altre componenti di mana generico.
+Esempio: Spirit Water Revival è una magia che costa {1}{U}{U} e dice, tra l'altro, «Come costo aggiuntivo per lanciare questa magia, domina l'acqua {6}». Mentre la lanci, puoi TAPpare fino a sei artefatti e/o creature che controlli per pagare i {6} del suo costo di dominare l'acqua, ma non puoi TAPpare artefatti o creature per pagare alcuna parte del costo di mana {1}{U}{U}.
+@701.67c
+Un'abilità che si innesca ogni volta che un giocatore domina l'acqua si innesca ogni volta che quel giocatore paga un costo di dominare l'acqua, indipendentemente da come ha pagato quel costo.
+@701.68
+Avvizzire (Blight)
+@701.68a
+«Blight N» significa mettere N segnalini -1/-1 su una creatura che controlli.
+@701.68b
+Se a un giocatore viene data la scelta di fare blight ma non può mettere N segnalini -1/-1 su una creatura che controlla (di solito perché non controlla creature), non può scegliere di fare blight.
+@701.68c
+Alcune magie e abilità che istruiscono un giocatore a fare blight fanno riferimento alla «creatura colpita da blight». Questa espressione si riferisce all'oggetto su cui il giocatore che doveva fare blight ha scelto di mettere i segnalini -1/-1 facendo blight.
+@701.68d
+Un'abilità che si innesca ogni volta che un giocatore fa blight si innesca dopo che il procedimento descritto nella regola 701.68a è completato, indipendentemente dagli eventi effettivamente avvenuti.
+@701.69
+Curare
+@701.69a
+Curare il danno già inflitto a un permanente significa rimuovere quel danno segnato da quel permanente. Se un effetto stabilisce che il danno già inflitto a un permanente «viene curato», il controllore di quel permanente rimuove tutto il danno segnato da quel permanente.
+@701.70
+Reclutare
+@701.70a
+«Recluta» significa «Pesca una carta, poi scarta una carta. Se in questo modo hai scartato una carta non terra, crea una pedina creatura Umano Soldato 1/1 bianca».
+@701.71
+Potenziare Jace (Empower Jace)
+@701.71a
+Potenziare Jace N significa «Se non controlli una pedina planeswalker Jace, crea una pedina planeswalker Jace blu con fedeltà 0, "[−1]: Sorveglia 1" e "[−3]: Pesca una carta". Scegli una pedina planeswalker Jace che controlli. Metti N segnalini fedeltà su di essa».
+@702
+Abilità chiave
+@702.1
+La maggior parte delle abilità descrive esattamente ciò che fa nel testo delle regole della carta. Alcune, però, sono molto comuni o richiederebbero troppo spazio per essere definite sulla carta. In questi casi, l'oggetto riporta solo il nome dell'abilità come «parola chiave»; a volte il testo di richiamo riassume la regola di gioco.
+@702.1a
+Se un effetto fa riferimento a un «costo di [abilità chiave]», si riferisce solo ai costi variabili di quella parola chiave.
+Esempio: Varolz, the Scar-Striped ha un'abilità che dice «Ogni carta creatura nel tuo cimitero ha saccheggiare. Il costo di saccheggiare è pari al suo costo di mana». Il costo di saccheggiare di una carta creatura è una quantità di mana pari al suo costo di mana, e il costo di attivazione dell'abilità saccheggiare è quella quantità di mana più «Esilia questa carta dal tuo cimitero».
+@702.1b
+Un effetto che conferisce a un oggetto un'abilità chiave può definire una variabile in quell'abilità in base alle caratteristiche di quell'oggetto o ad altre informazioni sullo stato di gioco. Per queste abilità, il valore di quella variabile viene costantemente rivalutato.
+Esempio: Volcano Hellion ha l'abilità «Questa creatura ha eco {X}, dove X è il tuo totale di punti vita». Se il tuo totale di punti vita è 10 quando si innesca l'abilità eco di Volcano Hellion ma è 5 quando si risolve, il costo di eco da pagare è {5}.
+Esempio: Fire//Ice è una carta divisa le cui metà hanno costi di mana {1}{R} e {1}{U}. Past in Flames dice «Ogni carta istantaneo e stregoneria nel tuo cimitero ottiene flashback fino alla fine del turno. Il costo di flashback è pari al suo costo di mana». Fire//Ice ha «Flashback {2}{U}{R}» mentre è nel tuo cimitero, ma se scegli di lanciare Fire, la magia risultante ha «Flashback {1}{R}».
+@702.1c
+Un effetto può stabilire che «lo stesso vale per» un elenco di abilità chiave o simili. Se una di quelle abilità chiave ha varianti o variabili e l'effetto conferisce quella parola chiave o segnalini di quella parola chiave a uno o più oggetti e/o giocatori, conferisce ogni variante e variabile appropriata di quella parola chiave.
+Esempio: Concerted Effort è un incantesimo che dice «All'inizio di ogni mantenimento, le creature che controlli ottengono volare fino alla fine del turno se una creatura che controlli ha volare. Lo stesso vale per paura, attacco improvviso, doppio attacco, passaterre, protezione, travolgere e cautela». Quando quell'abilità innescata si risolve, ogni abilità passaterre e protezione tra le creature che controlli viene conferita a ogni creatura che controlli.
+@702.1d
+Un effetto può fare riferimento a un oggetto «con [abilità chiave]» o «che ha [abilità chiave]». Significa la stessa cosa di un oggetto «con un'abilità [abilità chiave]» o di un oggetto «che ha un'abilità [abilità chiave]».
+@702.2
+Tocco letale
+@702.2a
+Tocco letale è un'abilità statica.

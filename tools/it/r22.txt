@@ -1,0 +1,233 @@
+@702.2b
+Una creatura con costituzione superiore a 0 a cui è stato inflitto danno da una fonte con tocco letale dall'ultima volta che sono state controllate le azioni generate dallo stato viene distrutta come azione generata dallo stato. Vedi regola 704.
+@702.2c
+Qualsiasi quantità di danno da combattimento diversa da zero assegnata a una creatura da una fonte con tocco letale è considerata danno letale al fine di stabilire se viene inflitto danno in eccesso.
+@702.2d
+Le regole di tocco letale funzionano indipendentemente dalla zona da cui un oggetto con tocco letale infligge danno.
+@702.2e
+Se un oggetto non è più nella zona in cui dovrebbe trovarsi quando un effetto gli fa infliggere danno, si usano le sue ultime informazioni conosciute per stabilire se aveva tocco letale.
+@702.2f
+Più istanze di tocco letale sullo stesso oggetto sono ridondanti.
+@702.3
+Difensore
+@702.3a
+Difensore è un'abilità statica.
+@702.3b
+Una creatura con difensore non può attaccare.
+@702.3c
+Più istanze di difensore sulla stessa creatura sono ridondanti.
+@702.4
+Doppio attacco
+@702.4a
+Doppio attacco è un'abilità statica che modifica le regole della sottofase di danno da combattimento. (Vedi regola 510, «Sottofase di danno da combattimento».)
+@702.4b
+Se almeno una creatura attaccante o bloccante ha attacco improvviso (vedi regola 702.7) o doppio attacco all'inizio della sottofase di danno da combattimento, le uniche creature che assegnano danno da combattimento in quella sottofase sono quelle con attacco improvviso o doppio attacco. Dopo quella sottofase, invece di procedere alla sottofase di fine combattimento, la fase ottiene una seconda sottofase di danno da combattimento. Le uniche creature che assegnano danno da combattimento in quella sottofase sono gli attaccanti e i bloccanti rimanenti che non avevano né attacco improvviso né doppio attacco all'inizio della prima sottofase di danno da combattimento, oltre agli attaccanti e ai bloccanti rimanenti che attualmente hanno doppio attacco. Dopo quella sottofase, la fase procede alla sottofase di fine combattimento.
+@702.4c
+Rimuovere doppio attacco da una creatura durante la prima sottofase di danno da combattimento le impedisce di assegnare danno da combattimento nella seconda sottofase di danno da combattimento.
+@702.4d
+Dare doppio attacco a una creatura con attacco improvviso dopo che ha già inflitto danno da combattimento nella prima sottofase di danno da combattimento le permette di assegnare danno da combattimento nella seconda sottofase di danno da combattimento.
+@702.4e
+Più istanze di doppio attacco sulla stessa creatura sono ridondanti.
+@702.5
+Incanta
+@702.5a
+Incanta è un'abilità statica, scritta «Incanta [oggetto o giocatore]». L'abilità incanta limita ciò che una magia Aura può bersagliare e ciò che un'Aura può incantare.
+@702.5b
+Per maggiori informazioni sulle Aure, vedi regola 303, «Incantesimi».
+@702.5c
+Se un'Aura ha più istanze di incanta, si applicano tutte. Il bersaglio dell'Aura deve rispettare le restrizioni di tutte le istanze di incanta. L'Aura può incantare solo oggetti o giocatori che soddisfano tutte le sue abilità incanta.
+@702.5d
+Le Aure che possono incantare un giocatore possono bersagliare giocatori ed essere assegnate a giocatori. Tali Aure non possono bersagliare permanenti e non possono essere assegnate a permanenti.
+@702.6
+Equipaggiare
+@702.6a
+Equipaggiare è un'abilità attivata delle carte Equipaggiamento. «Equipaggiare [costo]» significa «[Costo]: Assegna questo permanente a una creatura bersaglio che controlli. Attiva solo come una stregoneria».
+@702.6b
+Per maggiori informazioni sugli Equipaggiamenti, vedi regola 301, «Artefatti».
+@702.6c
+Le abilità equipaggiare possono restringere ulteriormente quali creature possono essere scelte come bersagli legali. Tali restrizioni di solito compaiono nella forma «Equipaggiare [qualità]» o «Equipaggiare creatura [qualità]». Queste abilità equipaggiare possono bersagliare legalmente solo una creatura controllata dal giocatore che attiva l'abilità e che ha la qualità indicata. Le restrizioni aggiuntive di un'abilità equipaggiare non limitano ciò a cui l'Equipaggiamento può essere assegnato.
+@702.6d
+Se un permanente ha più abilità equipaggiare, può essere attivata una qualsiasi di esse.
+@702.6e
+«Equipaggiare planeswalker» è una variante dell'abilità equipaggiare. «Equipaggiare planeswalker [costo]» significa «[Costo]: Assegna questo permanente a un planeswalker bersaglio che controlli come se quel planeswalker fosse una creatura. Attiva solo come una stregoneria».
+@702.7
+Attacco improvviso
+@702.7a
+Attacco improvviso è un'abilità statica che modifica le regole della sottofase di danno da combattimento. (Vedi regola 510, «Sottofase di danno da combattimento».)
+@702.7b
+Se almeno una creatura attaccante o bloccante ha attacco improvviso o doppio attacco (vedi regola 702.4) all'inizio della sottofase di danno da combattimento, le uniche creature che assegnano danno da combattimento in quella sottofase sono quelle con attacco improvviso o doppio attacco. Dopo quella sottofase, invece di procedere alla sottofase di fine combattimento, la fase ottiene una seconda sottofase di danno da combattimento. Le uniche creature che assegnano danno da combattimento in quella sottofase sono gli attaccanti e i bloccanti rimanenti che non avevano né attacco improvviso né doppio attacco all'inizio della prima sottofase di danno da combattimento, oltre agli attaccanti e ai bloccanti rimanenti che attualmente hanno doppio attacco. Dopo quella sottofase, la fase procede alla sottofase di fine combattimento.
+@702.7c
+Dare attacco improvviso a una creatura che non lo ha dopo che il danno da combattimento è già stato inflitto nella prima sottofase di danno da combattimento non impedisce a quella creatura di assegnare danno da combattimento nella seconda sottofase. Rimuovere attacco improvviso da una creatura dopo che ha già inflitto danno da combattimento nella prima sottofase non le permette di assegnare danno da combattimento anche nella seconda sottofase (a meno che la creatura non abbia doppio attacco).
+@702.7d
+Più istanze di attacco improvviso sulla stessa creatura sono ridondanti.
+@702.8
+Lampo
+@702.8a
+Lampo è un'abilità statica che funziona in qualsiasi zona da cui potresti giocare la carta su cui si trova. «Lampo» significa «Puoi giocare questa carta in qualsiasi momento in cui potresti lanciare un istantaneo».
+@702.8b
+Più istanze di lampo sullo stesso oggetto sono ridondanti.
+@702.9
+Volare
+@702.9a
+Volare è un'abilità di evasione.
+@702.9b
+Una creatura con volare non può essere bloccata tranne che da creature con volare e/o raggiungere. Una creatura con volare può bloccare una creatura con o senza volare. (Vedi regola 509, «Sottofase di dichiarazione dei bloccanti», e regola 702.17, «Raggiungere».)
+@702.9c
+Più istanze di volare sulla stessa creatura sono ridondanti.
+@702.10
+Rapidità
+@702.10a
+Rapidità è un'abilità statica.
+@702.10b
+Se una creatura ha rapidità, può attaccare anche se non è stata controllata ininterrottamente dal suo controllore dall'inizio del suo turno più recente. (Vedi regola 302.6.)
+@702.10c
+Se una creatura ha rapidità, il suo controllore può attivarne le abilità attivate il cui costo include il simbolo di TAP o il simbolo di STAP anche se quella creatura non è stata controllata ininterrottamente da quel giocatore dall'inizio del suo turno più recente. (Vedi regola 302.6.)
+@702.10d
+Più istanze di rapidità sulla stessa creatura sono ridondanti.
+@702.11
+Anti-malocchio
+@702.11a
+Anti-malocchio è un'abilità statica.
+@702.11b
+«Anti-malocchio» su un permanente significa «Questo permanente non può essere bersaglio di magie o abilità controllate dai tuoi avversari».
+@702.11c
+«Anti-malocchio» su un giocatore significa «Non puoi essere bersaglio di magie o abilità controllate dai tuoi avversari».
+@702.11d
+«Anti-malocchio da [qualità]» è una variante dell'abilità anti-malocchio. «Anti-malocchio da [qualità]» su un permanente significa «Questo permanente non può essere bersaglio di magie [qualità] controllate dai tuoi avversari o di abilità controllate dai tuoi avversari da fonti [qualità]». Un'abilità «anti-malocchio da [qualità]» è un'abilità anti-malocchio.
+@702.11e
+Qualsiasi effetto che fa perdere anti-malocchio a un oggetto gli fa perdere tutte le abilità «anti-malocchio da [qualità]». Qualsiasi effetto che permette a un giocatore di scegliere come bersaglio una creatura con anti-malocchio come se non avesse anti-malocchio permette a un giocatore di scegliere una creatura con un'abilità «anti-malocchio da [qualità]». Qualsiasi effetto che cerca una carta con anti-malocchio trova una carta con un'abilità «anti-malocchio da [qualità]».
+@702.11f
+«Anti-malocchio da [qualità A] e da [qualità B]» è un'abbreviazione di «anti-malocchio da [qualità A]» e «anti-malocchio da [qualità B]»; si comporta come due abilità anti-malocchio separate.
+@702.11g
+«Anti-malocchio da ogni [caratteristica]» è un'abbreviazione di «anti-malocchio da [qualità A]», «anti-malocchio da [qualità B]» e così via per ogni possibile qualità che la caratteristica indicata potrebbe avere; si comporta come più abilità anti-malocchio separate.
+@702.11h
+Più istanze della stessa abilità anti-malocchio sullo stesso permanente o giocatore sono ridondanti.
+@702.12
+Indistruttibile
+@702.12a
+Indistruttibile è un'abilità statica.
+@702.12b
+Un permanente indistruttibile non può essere distrutto. Tali permanenti non vengono distrutti dal danno letale e ignorano l'azione generata dallo stato che controlla il danno letale (vedi regola 704.5g).
+@702.12c
+Più istanze di indistruttibile sullo stesso permanente sono ridondanti.
+@702.13
+Intimidire
+@702.13a
+Intimidire è un'abilità di evasione.
+@702.13b
+Una creatura con intimidire non può essere bloccata tranne che da creature artefatto e/o creature che hanno almeno un colore in comune con essa. (Vedi regola 509, «Sottofase di dichiarazione dei bloccanti».)
+@702.13c
+Più istanze di intimidire sulla stessa creatura sono ridondanti.
+@702.14
+Passaterre
+@702.14a
+Passaterre è un termine generico che appare nel testo delle regole di un oggetto come «passa-[tipo]», dove [tipo] è di solito un tipo di terra, ma può anche essere il tipo di carta terra più una qualsiasi combinazione di tipi di terra, tipi di carta e/o supertipi.
+@702.14b
+Passaterre è un'abilità di evasione.
+@702.14c
+Una creatura con passaterre non può essere bloccata finché il giocatore in difesa controlla almeno una terra con il tipo di terra specificato (come in «passaisole»), con il tipo o supertipo specificato (come in «passa-terre artefatto»), senza il tipo o supertipo specificato (come in «passa-terre non base») o con sia il tipo o supertipo specificato sia il sottotipo specificato (come in «passa-paludi innevate»). (Vedi regola 509, «Sottofase di dichiarazione dei bloccanti».)
+@702.14d
+Le abilità passaterre non si «annullano» a vicenda.
+Esempio: Se un giocatore controlla una Foresta innevata, quel giocatore non può bloccare una creatura attaccante con passa-foreste innevate anche se controlla a sua volta una creatura con passa-foreste innevate.
+@702.14e
+Più istanze dello stesso tipo di passaterre sulla stessa creatura sono ridondanti.
+@702.15
+Legame vitale
+@702.15a
+Legame vitale è un'abilità statica.
+@702.15b
+Il danno inflitto da una fonte con legame vitale fa guadagnare al controllore di quella fonte, o al suo proprietario se non ha un controllore, altrettanti punti vita (oltre a qualsiasi altro risultato causato da quel danno). Vedi regola 120.3.
+@702.15c
+Se un oggetto non è più nella zona in cui dovrebbe trovarsi quando un effetto gli fa infliggere danno, si usano le sue ultime informazioni conosciute per stabilire se aveva legame vitale.
+@702.15d
+Le regole di legame vitale funzionano indipendentemente dalla zona da cui un oggetto con legame vitale infligge danno.
+@702.15e
+Se più fonti con legame vitale infliggono danno nello stesso momento, causano eventi di guadagno di punti vita separati (vedi regole 119.9–10).
+Esempio: Un giocatore controlla Ajani's Pridemate, che dice «Ogni volta che guadagni punti vita, metti un segnalino +1/+1 su questa creatura», e due creature con legame vitale. Le creature con legame vitale infliggono danno da combattimento simultaneamente. L'abilità di Ajani's Pridemate si innesca due volte.
+@702.15f
+Più istanze di legame vitale sullo stesso oggetto sono ridondanti.
+@702.16
+Protezione
+@702.16a
+Protezione è un'abilità statica, scritta «Protezione da [qualità]». Questa qualità è di solito un colore (come in «protezione dal nero») ma può essere qualsiasi valore di caratteristica o informazione. Se la qualità è un nome di carta, viene trattata come tale solo se l'abilità protezione specifica che la qualità è un nome. Se la qualità è un tipo di carta, un sottotipo o un supertipo, l'abilità si applica alle fonti che sono permanenti con quel tipo di carta, sottotipo o supertipo e a qualsiasi fonte non sul campo di battaglia che sia di quel tipo di carta, sottotipo o supertipo. Questa è un'eccezione alla regola 109.2.
+@702.16b
+Un permanente o un giocatore con protezione non può essere bersaglio di magie con la qualità indicata e non può essere bersaglio di abilità di una fonte con la qualità indicata.
+@702.16c
+Un permanente o un giocatore con protezione non può essere incantato da Aure che hanno la qualità indicata. Tali Aure assegnate al permanente o al giocatore con protezione vengono messe nei cimiteri dei rispettivi proprietari come azione generata dallo stato. (Vedi regola 704, «Azioni generate dallo stato».)
+@702.16d
+Un permanente con protezione non può essere equipaggiato da Equipaggiamenti che hanno la qualità indicata né fortificato da Fortificazioni che hanno la qualità indicata. Tali Equipaggiamenti o Fortificazioni vengono staccati da quel permanente come azione generata dallo stato, ma restano sul campo di battaglia. (Vedi regola 704, «Azioni generate dallo stato».)
+@702.16e
+Qualsiasi danno che verrebbe inflitto da fonti che hanno la qualità indicata a un permanente o a un giocatore con protezione viene prevenuto.
+@702.16f
+Le creature attaccanti con protezione non possono essere bloccate da creature che hanno la qualità indicata.
+@702.16g
+«Protezione da [qualità A] e da [qualità B]» è un'abbreviazione di «protezione da [qualità A]» e «protezione da [qualità B]»; si comporta come due abilità protezione separate.
+@702.16h
+«Protezione da ogni [caratteristica]» è un'abbreviazione di «protezione da [qualità A]», «protezione da [qualità B]» e così via per ogni possibile qualità che la caratteristica indicata potrebbe avere; si comporta come più abilità protezione separate.
+@702.16i
+«Protezione da ogni [insieme di caratteristiche, qualità o giocatori]» è un'abbreviazione di «protezione da [A]», «protezione da [B]» e così via per ogni caratteristica, qualità o giocatore dell'insieme. Si comporta come più abilità protezione separate.
+@702.16j
+«Protezione da tutto» è una variante dell'abilità protezione. Un permanente o un giocatore con protezione da tutto ha protezione da ogni oggetto indipendentemente dai valori di caratteristica di quell'oggetto. Tale permanente o giocatore non può essere bersaglio di magie o abilità e non può essere incantato da Aure. Tale permanente non può essere equipaggiato da Equipaggiamenti, fortificato da Fortificazioni o bloccato da creature. Tutto il danno che verrebbe inflitto a tale permanente o giocatore viene prevenuto.
+@702.16k
+«Protezione da [un giocatore]» è una variante dell'abilità protezione. Un permanente o un giocatore con protezione da un giocatore specifico ha protezione da ogni oggetto controllato da quel giocatore e da ogni oggetto posseduto da quel giocatore non controllato da un altro giocatore, indipendentemente dai valori di caratteristica di quell'oggetto. Tale permanente o giocatore non può essere bersaglio di magie o abilità controllate dal giocatore specificato e non può essere incantato da Aure controllate da quel giocatore. Tale permanente non può essere equipaggiato da Equipaggiamenti controllati da quel giocatore, fortificato da Fortificazioni controllate da quel giocatore o bloccato da creature controllate da quel giocatore. Tutto il danno che verrebbe inflitto a tale permanente o giocatore da fonti controllate dal giocatore specificato o possedute da quel giocatore ma non controllate da un altro giocatore viene prevenuto.
+@702.16m
+Più istanze di protezione dalla stessa qualità sullo stesso permanente o giocatore sono ridondanti.
+@702.16n
+Alcune Aure danno alla creatura incantata protezione da una qualità e dicono «questo effetto non rimuove» quella specifica Aura o tutte le Aure. Ciò significa che le Aure specificate non vengono messe nei cimiteri dei rispettivi proprietari come azione generata dallo stato. Se la creatura ha altre istanze di protezione dalla stessa qualità, quelle istanze influenzano le Aure normalmente.
+@702.16p
+Un'Aura (Benevolent Blessing) dà alla creatura incantata protezione da una qualità e dice che l'effetto non rimuove certi permanenti che sono «già assegnati a» quella creatura. Ciò significa che, quando l'effetto di protezione inizia ad applicarsi, gli oggetti con la qualità indicata già assegnati a quella creatura (inclusa l'Aura che dà la protezione) non vengono messi nei cimiteri dei rispettivi proprietari come azione generata dallo stato. Altri permanenti con la qualità indicata non possono essere assegnati alla creatura. Se la creatura ha altre istanze di protezione dalla stessa qualità, quelle istanze influenzano normalmente i permanenti assegnati.
+@702.17
+Raggiungere
+@702.17a
+Raggiungere è un'abilità statica.
+@702.17b
+Una creatura con volare non può essere bloccata tranne che da creature con volare e/o raggiungere. (Vedi regola 509, «Sottofase di dichiarazione dei bloccanti», e regola 702.9, «Volare».)
+@702.17c
+Più istanze di raggiungere sulla stessa creatura sono ridondanti.
+@702.18
+Velo
+@702.18a
+Velo è un'abilità statica. «Velo» significa «Questo permanente o giocatore non può essere bersaglio di magie o abilità».
+@702.18b
+Più istanze di velo sullo stesso permanente o giocatore sono ridondanti.
+@702.19
+Travolgere
+@702.19a
+Travolgere è un'abilità statica che modifica le regole di assegnazione del danno da combattimento di una creatura attaccante. L'abilità non ha effetto quando una creatura con travolgere blocca o infligge danno non da combattimento. (Vedi regola 510, «Sottofase di danno da combattimento».)
+@702.19b
+Il controllore di una creatura attaccante con travolgere assegna prima il danno alla creatura o alle creature che la bloccano. Una volta che a tutte quelle creature bloccanti è stato assegnato danno letale, il danno in eccesso viene assegnato a scelta del suo controllore tra quelle creature bloccanti e il giocatore, il planeswalker o la battaglia che la creatura sta attaccando. Nel controllare se è stato assegnato danno letale, si tiene conto del danno già segnato sulla creatura e del danno di altre creature assegnato durante la stessa sottofase di danno da combattimento, ma non di abilità o effetti che potrebbero modificare la quantità di danno effettivamente inflitta. Il controllore della creatura attaccante non è obbligato ad assegnare danno letale a tutte quelle creature bloccanti, ma in quel caso non può assegnare alcun danno al giocatore o al planeswalker che sta attaccando.
+Esempio: Una creatura 2/2 che può bloccare una creatura aggiuntiva blocca due attaccanti: una 1/1 senza abilità e una 3/3 con travolgere. Il giocatore attivo può assegnare alla creatura bloccante 1 danno dal primo attaccante e 1 danno dal secondo, e 2 danni al giocatore in difesa dalla creatura con travolgere.
+Esempio: Una creatura verde 6/6 con travolgere viene bloccata da una creatura 2/2 con protezione dal verde. Il controllore della creatura attaccante deve assegnare almeno 2 danni al bloccante, anche se quel danno verrà prevenuto dall'abilità protezione del bloccante. Il controllore della creatura attaccante può dividere il resto del danno a sua scelta tra la creatura bloccante e il giocatore in difesa.
+@702.19c
+Travolgere sui planeswalker è una variante di travolgere che modifica le regole di assegnazione del danno da combattimento ai planeswalker. Il controllore di una creatura con travolgere sui planeswalker assegna il danno da combattimento di quella creatura come descritto nella regola 702.19b, con un'eccezione. Se quella creatura sta attaccando un planeswalker, dopo che è stato assegnato danno letale a tutte le creature bloccanti e danno almeno pari alla fedeltà del planeswalker attaccato è stato assegnato a quel planeswalker, l'ulteriore danno in eccesso può essere assegnato a scelta del controllore della creatura attaccante tra quelle creature bloccanti, quel planeswalker e il controllore di quel planeswalker. Nel controllare se è stato assegnato danno pari alla fedeltà di un planeswalker, si tiene conto del danno di altre creature assegnato durante la stessa sottofase di danno da combattimento, ma non di abilità o effetti che potrebbero modificare la quantità di danno effettivamente inflitta.
+Esempio: Un giocatore controlla un planeswalker con tre segnalini fedeltà che viene attaccato da una 1/1 senza abilità e da una 7/7 con travolgere sui planeswalker. Il giocatore attivo può assegnare al planeswalker 1 danno dal primo attaccante e 2 danni dal secondo, e 5 danni al giocatore in difesa dalla creatura con travolgere sui planeswalker.
+@702.19d
+Se una creatura attaccante con travolgere o travolgere sui planeswalker è bloccata, ma non ci sono creature che la bloccano quando viene assegnato il danno, il suo danno viene assegnato al giocatore in difesa e/o al planeswalker come se a tutte le creature bloccanti fosse stato assegnato danno letale.
+@702.19e
+Se una creatura con travolgere sui planeswalker sta attaccando un planeswalker e quel planeswalker viene rimosso dal combattimento, il danno della creatura può essere assegnato al giocatore in difesa una volta che a tutte le creature bloccanti è stato inflitto danno letale oppure, se non ci sono creature bloccanti quando viene assegnato il danno, tutto il suo danno viene assegnato al giocatore in difesa. Questa è un'eccezione alla regola 506.4c, e non fa sì che la creatura stia attaccando quel giocatore.
+@702.19f
+Se una creatura senza travolgere sui planeswalker sta attaccando un planeswalker, nessuna parte del suo danno da combattimento può essere assegnata al giocatore in difesa, anche se quel planeswalker è stato rimosso dal combattimento o il danno che la creatura attaccante potrebbe assegnare è superiore alla fedeltà del planeswalker.
+@702.19g
+Più istanze di travolgere sulla stessa creatura sono ridondanti. Più istanze di travolgere sui planeswalker sulla stessa creatura sono ridondanti.
+@702.20
+Cautela
+@702.20a
+Cautela è un'abilità statica che modifica le regole della sottofase di dichiarazione degli attaccanti.
+@702.20b
+Attaccare non fa TAPpare le creature con cautela. (Vedi regola 508, «Sottofase di dichiarazione degli attaccanti».)
+@702.20c
+Più istanze di cautela sulla stessa creatura sono ridondanti.
+@702.21
+Custode (Ward)
+@702.21a
+Custode è un'abilità innescata. Custode [costo] significa «Ogni volta che questo permanente diventa bersaglio di una magia o abilità controllata da un avversario, neutralizza quella magia o abilità a meno che quel giocatore non paghi [costo]».
+@702.21b
+Alcune abilità custode includono una X nel loro costo e indicano a cosa è pari X. Questo valore viene determinato nel momento in cui l'abilità si risolve, non fissato quando l'abilità si innesca.
+@702.22
+Unione (Banding)
+@702.22a
+Unione è un'abilità statica che modifica le regole del combattimento.
+@702.22b
+«Si unisce con altre» è una forma speciale di unione. Se un effetto fa perdere unione a un permanente, il permanente perde anche tutte le abilità «si unisce con altre».
+@702.22c
+Mentre dichiara gli attaccanti, un giocatore può dichiarare che una o più creature attaccanti con unione e fino a una creatura attaccante senza unione (anche se ha «si unisce con altre») formano tutte un «gruppo». Può anche dichiarare che una o più creature attaccanti [qualità] con «si unisce con altre [qualità]» e un qualsiasi numero di altre creature attaccanti [qualità] formano tutte un gruppo. Un giocatore può dichiarare quanti gruppi attaccanti desidera, ma ogni creatura può far parte di uno solo di essi. (I giocatori in difesa non possono dichiarare gruppi ma possono usare unione in modo diverso; vedi regola 702.22j.)

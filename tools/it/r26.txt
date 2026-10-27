@@ -1,0 +1,234 @@
+@702.117a
+Impeto è un'abilità statica che funziona mentre la magia con impeto è in pila. «Impeto [costo]» significa «Puoi pagare [costo] invece del costo di mana di questa magia mentre lanci questa magia se tu o uno dei tuoi compagni di squadra avete lanciato un'altra magia in questo turno». Lanciare una magia per il suo costo di impeto segue le regole per il pagamento dei costi alternativi delle regole 601.2b e 601.2f–h.
+@702.118
+Furtività (Skulk)
+@702.118a
+Furtività è un'abilità di evasione.
+@702.118b
+Una creatura con furtività non può essere bloccata da creature con forza maggiore. (Vedi regola 509, «Sottofase di dichiarazione dei bloccanti».)
+@702.118c
+Più istanze di furtività sulla stessa creatura sono ridondanti.
+@702.119
+Emergere
+@702.119a
+Emergere rappresenta due abilità statiche che funzionano mentre la magia con emergere è in pila. «Emergere [costo]» significa «Puoi lanciare questa magia pagando [costo] e sacrificando una creatura invece di pagare il suo costo di mana» e «Se hai scelto di pagare il costo di emergere di questa magia, il suo costo totale è ridotto di una quantità di mana generico pari al valore di mana della creatura sacrificata». Lanciare una magia usando la sua abilità emergere segue le regole per il pagamento dei costi alternativi delle regole 601.2b e 601.2f–h.
+@702.119b
+Emergere da [qualità] è una variante di emergere. «Emergere da [qualità] [costo]» significa «Puoi lanciare questa magia pagando [costo] e sacrificando un permanente [qualità] invece di pagare il suo costo di mana» e «Se paghi il costo di emergere di questa magia, il suo costo totale è ridotto di una quantità di mana generico pari al valore di mana del permanente sacrificato».
+@702.119c
+Scegli quale permanente sacrificare mentre scegli di pagare il costo di emergere di una magia (vedi regola 601.2b), e sacrifichi quel permanente mentre paghi il costo totale (vedi regola 601.2h).
+@702.120
+Escalation
+@702.120a
+Escalation è un'abilità statica delle magie modali (vedi regola 700.2) che funziona mentre la magia con escalation è in pila. «Escalation [costo]» significa «Per ogni modo che scegli oltre il primo mentre lanci questa magia, paghi un [costo] aggiuntivo». Pagare il costo di escalation di una magia segue le regole per il pagamento dei costi aggiuntivi delle regole 601.2f–h.
+@702.121
+Mischia
+@702.121a
+Mischia è un'abilità innescata. «Mischia» significa «Ogni volta che questa creatura attacca, prende +1/+1 fino alla fine del turno per ogni avversario che hai attaccato con una creatura in questo combattimento».
+@702.121b
+Se una creatura ha più istanze di mischia, ognuna si innesca separatamente.
+@702.122
+Equipaggio (Crew)
+@702.122a
+Equipaggio è un'abilità attivata delle carte Veicolo. «Equipaggio N» significa «TAPpa un qualsiasi numero di altre creature STAPpate che controlli con forza totale pari o superiore a N: Questo permanente diventa una creatura artefatto fino alla fine del turno».
+@702.122b
+Una creatura «manovra un Veicolo» quando viene TAPpata per pagare il costo di attivazione dell'abilità equipaggio di un Veicolo.
+@702.122c
+Un Veicolo è «manovrato da» una creatura se quella creatura è stata TAPpata per pagare il costo di attivazione dell'abilità equipaggio di quel Veicolo.
+@702.122d
+Se un effetto stabilisce che una creatura «non può manovrare Veicoli», quella creatura non può essere TAPpata per pagare il costo di equipaggio di un Veicolo.
+@702.122e
+Alcuni Veicoli hanno abilità che si innescano quando vengono manovrati. «Ogni volta che [questo Veicolo] viene manovrato» significa «Ogni volta che si risolve un'abilità equipaggio di [questo Veicolo]». Se quell'abilità ha una clausola «se» interposta che fa riferimento a informazioni sulle creature che l'hanno manovrato, si intendono solo le creature che sono state TAPpate per pagare il costo dell'abilità equipaggio che l'ha fatta innescare.
+@702.123
+Fabbricare
+@702.123a
+Fabbricare è un'abilità innescata. «Fabbricare N» significa «Quando questo permanente entra, puoi mettere N segnalini +1/+1 su di esso. Se non lo fai, crea N pedine creatura artefatto Servitore 1/1 incolori».
+@702.123b
+Se un permanente ha più istanze di fabbricare, ognuna si innesca separatamente.
+@702.124
+Partner
+@702.124a
+Le abilità partner sono abilità chiave che modificano le regole di costruzione del mazzo nella variante Commander (vedi regola 903), e funzionano prima dell'inizio della partita. Ogni abilità partner ti permette di designare due carte leggendarie come tuo comandante invece di una. Ogni abilità partner ha i propri requisiti per quei due comandanti. Le abilità partner sono: partner, partner—[testo], partner con [nome], scegli un Background e compagno del Dottore.
+@702.124b
+Il tuo mazzo deve contenere esattamente 100 carte, inclusi i due comandanti. Entrambi i comandanti iniziano la partita nella zona di comando.
+@702.124c
+Una regola o un effetto che fa riferimento all'identità di colore del tuo comandante si riferisce alle identità di colore combinate dei tuoi due comandanti. Vedi regola 903.4.
+@702.124d
+Tranne che per determinare l'identità di colore del tuo comandante, i due comandanti funzionano indipendentemente. Quando lanci un comandante con partner, ignora quante volte è stato lanciato l'altro tuo comandante (vedi regola 903.8). Nello stabilire se a un giocatore sono stati inflitti 21 o più danni da combattimento dallo stesso comandante, considera separatamente il danno di ciascuno dei tuoi due comandanti (vedi regola 903.10a).
+@702.124e
+Se un effetto fa riferimento al tuo comandante mentre hai due comandanti, si riferisce a uno dei due. Se un effetto ti fa compiere un'azione sul tuo comandante e potrebbe riguardarli entrambi, scegli a quale si riferisce nel momento in cui l'effetto viene applicato.
+@702.124f
+Le diverse abilità partner sono distinte l'una dall'altra e non possono essere combinate. Per esempio, non puoi designare due carte come tuo comandante se una ha «partner» e l'altra ha «partner con [nome]».
+@702.124g
+Se una carta leggendaria ha più di un'abilità partner, puoi scegliere quale usare quando designi il tuo comandante, ma non puoi usarle entrambe. In particolare, nessuna abilità partner o combinazione di abilità partner può mai permettere a un giocatore di avere più di due comandanti.
+@702.124h
+«Partner» significa «Puoi designare due carte leggendarie come tuo comandante invece di una se ciascuna di esse ha partner».
+@702.124i
+«Partner—[testo]» significa «Puoi designare due carte leggendarie come tuo comandante invece di una se ciascuna di esse ha la stessa abilità "partner—[testo]"». Le abilità «partner—[testo]» sono «partner—Character select», «partner—Father & son», «partner—Friends forever» e «partner—Survivors».
+@702.124j
+«Partner con [nome]» rappresenta due abilità. Significa «Puoi designare due carte leggendarie come tuo comandante invece di una se ciascuna ha un'abilità "partner con [nome]" con il nome dell'altra» e «Quando questo permanente entra, un giocatore bersaglio può passare in rassegna il suo grimorio per una carta chiamata [nome], rivelarla, aggiungerla alla sua mano e poi rimescolare».
+@702.124k
+«Scegli un Background» significa «Puoi designare due carte come tuo comandante invece di una se una di esse è questa carta e l'altra è una carta incantesimo leggendario Background». Non puoi designare due carte come tuo comandante se una ha un'abilità «scegli un Background» e l'altra non è una carta incantesimo leggendario Background, e le carte incantesimo leggendario Background non possono essere il tuo comandante a meno che tu non abbia designato anche un comandante con «scegli un Background».
+@702.124m
+«Compagno del Dottore» (Doctor's companion) significa «Puoi designare due carte creatura leggendaria come tuo comandante invece di una se una di esse è questa carta e l'altra è una carta creatura leggendaria Signore del Tempo Dottore che non ha altri tipi di creatura».
+@702.124n
+Se un effetto fa riferimento a un'abilità partner per nome, si intende solo quell'abilità partner e non le altre. Se un effetto fa riferimento all'abilità partner o a carte con partner e non menziona per nome una variante specifica dell'abilità partner, si riferisce solo a partner, partner—[testo], partner con [nome] o alle carte con una di queste abilità, e non a nessun'altra variante di partner.
+@702.125
+Impavido (Undaunted)
+@702.125a
+Impavido è un'abilità statica che funziona mentre la magia con impavido è in pila. Impavido significa «Questa magia costa {1} in meno da lanciare per ogni avversario che hai».
+@702.125b
+I giocatori che hanno lasciato la partita non vengono contati nello stabilire quanti avversari hai.
+@702.125c
+Se una magia ha più istanze di impavido, si applicano tutte.
+@702.126
+Improvvisare
+@702.126a
+Improvvisare è un'abilità statica che funziona mentre la magia con improvvisare è in pila. «Improvvisare» significa «Per ogni mana generico nel costo totale di questa magia, puoi TAPpare un artefatto STAPpato che controlli invece di pagare quel mana».
+@702.126b
+L'abilità improvvisare non è un costo aggiuntivo o alternativo e si applica solo dopo che è stato determinato il costo totale della magia con improvvisare.
+@702.126c
+Più istanze di improvvisare sulla stessa magia sono ridondanti.
+@702.127
+Conseguenza (Aftermath)
+@702.127a
+Conseguenza è un'abilità presente su alcune carte divise (vedi regola 709, «Carte divise»). Rappresenta tre abilità statiche. «Conseguenza» significa «Puoi lanciare questa metà di questa carta divisa dal tuo cimitero», «Questa metà di questa carta divisa non può essere lanciata da zone diverse da un cimitero» e «Se questa magia è stata lanciata da un cimitero, esiliala invece di metterla altrove ogni volta che dovesse lasciare la pila».
+@702.128
+Imbalsamare
+@702.128a
+Imbalsamare è un'abilità attivata che funziona mentre la carta con imbalsamare è in un cimitero. «Imbalsamare [costo]» significa «[Costo], Esilia questa carta dal tuo cimitero: Crea una pedina che è una copia di questa carta, tranne per il fatto che è bianca, non ha costo di mana ed è uno Zombie in aggiunta ai suoi altri tipi. Attiva solo come una stregoneria».
+@702.128b
+Una pedina è «imbalsamata» se è creata da un'abilità imbalsamare che si risolve.
+@702.129
+Eternare
+@702.129a
+Eternare è un'abilità attivata che funziona mentre la carta con eternare è in un cimitero. «Eternare [costo]» significa «[Costo], Esilia questa carta dal tuo cimitero: Crea una pedina che è una copia di questa carta, tranne per il fatto che è nera, è 4/4, non ha costo di mana ed è uno Zombie in aggiunta ai suoi altri tipi. Attiva solo come una stregoneria».
+@702.130
+Affliggere
+@702.130a
+Affliggere è un'abilità innescata. «Affliggere N» significa «Ogni volta che questa creatura viene bloccata, il giocatore in difesa perde N punti vita».
+@702.130b
+Se una creatura ha più istanze di affliggere, ognuna si innesca separatamente.
+@702.131
+Ascesa (Ascend)
+@702.131a
+Ascesa su una magia istantaneo o stregoneria rappresenta un'abilità di magia. Significa «Se controlli dieci o più permanenti e non hai la benedizione della città, ottieni la benedizione della città per il resto della partita».
+@702.131b
+Ascesa su un permanente rappresenta un'abilità statica. Significa «In qualsiasi momento in cui controlli dieci o più permanenti e non hai la benedizione della città, ottieni la benedizione della città per il resto della partita».
+@702.131c
+La benedizione della città è una designazione che non ha alcun significato nelle regole se non quello di fare da indicatore che altre regole ed effetti possono identificare. Un qualsiasi numero di giocatori può avere la benedizione della città nello stesso momento.
+@702.131d
+Dopo che un giocatore ottiene la benedizione della città, gli effetti continui vengono riapplicati prima che la partita controlli se lo stato di gioco o gli eventi precedenti hanno soddisfatto delle condizioni di innesco.
+@702.132
+Assistere
+@702.132a
+Assistere è un'abilità statica che modifica le regole del pagamento della magia con assistere (vedi regole 601.2g-h). Se il costo totale per lanciare una magia con assistere include una componente di mana generico, prima di attivare abilità di mana mentre la lanci, puoi scegliere un altro giocatore. Quel giocatore ha la possibilità di attivare abilità di mana. Una volta che quel giocatore sceglie di non attivare altre abilità di mana, tu hai la possibilità di attivare abilità di mana. Prima che inizi a pagare il costo totale della magia, il giocatore che hai scelto può pagare una qualsiasi quantità del mana generico nel costo totale della magia.
+@702.133
+Ripresa (Jump-start)
+@702.133a
+Ripresa compare su alcuni istantanei e stregonerie. Rappresenta due abilità statiche: una che funziona mentre la carta è nel cimitero di un giocatore e un'altra che funziona mentre la carta è in pila. «Ripresa» significa «Puoi lanciare questa carta dal tuo cimitero se la magia risultante è una magia istantaneo o stregoneria scartando una carta come costo aggiuntivo per lanciarla» e «Se questa magia è stata lanciata usando la sua abilità ripresa, esilia questa carta invece di metterla altrove ogni volta che dovesse lasciare la pila». Lanciare una magia usando la sua abilità ripresa segue le regole per il pagamento dei costi aggiuntivi delle regole 601.2b e 601.2f–h.
+@702.134
+Mentore
+@702.134a
+Mentore è un'abilità innescata. «Mentore» significa «Ogni volta che questa creatura attacca, metti un segnalino +1/+1 su una creatura attaccante bersaglio con forza inferiore alla forza di questa creatura».
+@702.134b
+Se una creatura ha più istanze di mentore, ognuna si innesca separatamente.
+@702.134c
+Un'abilità che si innesca ogni volta che una creatura fa da mentore a un'altra creatura si innesca ogni volta che si risolve un'abilità mentore la cui fonte è la prima creatura e il cui bersaglio è la seconda creatura.
+@702.135
+Aldilà (Afterlife)
+@702.135a
+Aldilà è un'abilità innescata. «Aldilà N» significa «Quando questo permanente viene messo in un cimitero dal campo di battaglia, crea N pedine creatura Spirito 1/1 bianche e nere con volare».
+@702.135b
+Se un permanente ha più istanze di aldilà, ognuna si innesca separatamente.
+@702.136
+Sommossa (Riot)
+@702.136a
+Sommossa è un'abilità statica. «Sommossa» significa «Puoi far entrare questo permanente con un segnalino +1/+1 aggiuntivo su di sé. Se non lo fai, ottiene rapidità».
+@702.136b
+Se un permanente ha più istanze di sommossa, ognuna funziona separatamente.
+@702.137
+Spettacolo
+@702.137a
+Spettacolo è un'abilità statica che funziona in pila. «Spettacolo [costo]» significa «Puoi pagare [costo] invece del costo di mana di questa magia se un avversario ha perso punti vita in questo turno». Lanciare una magia per il suo costo di spettacolo segue le regole per il pagamento dei costi alternativi delle regole 601.2b e 601.2f–h.
+@702.138
+Fuga (Escape)
+@702.138a
+Fuga rappresenta un'abilità statica che funziona mentre la carta con fuga è nel cimitero di un giocatore. «Fuga [costo]» significa «Puoi lanciare questa carta dal tuo cimitero pagando [costo] invece di pagare il suo costo di mana». Lanciare una magia usando la sua abilità fuga segue le regole per il pagamento dei costi alternativi delle regole 601.2b e 601.2f–h.
+@702.138b
+Una magia o un permanente «è fuggito» se quella magia, o la magia che è diventata quel permanente mentre si risolveva, è stata lanciata da un cimitero con un'abilità fuga.
+@702.138c
+Un'abilità che dice «[Questo permanente] fugge con [uno o più segnalini di un tipo]» significa «Se questo permanente è fuggito, entra con [quei segnalini]». Quell'abilità può avere collegata un'abilità innescata che si innesca «Quando entra in questo modo». (Vedi regola 603.11.) Tale abilità innescata si innesca quando quel permanente entra nel campo di battaglia dopo che è stato applicato il suo effetto di sostituzione, anche se quell'effetto di sostituzione non ha avuto alcun effetto.
+@702.138d
+Un'abilità che dice «[Questo permanente] fugge con [abilità]» significa «Se questo permanente è fuggito, ha [abilità]».
+@702.139
+Compagno (Companion)
+@702.139a
+Compagno è un'abilità chiave che funziona fuori dalla partita. È scritta «Compagno—[Condizione]». Prima dell'inizio della partita, puoi rivelare una carta che possiedi da fuori dalla partita con un'abilità compagno la cui condizione è soddisfatta dal tuo mazzo iniziale. (Vedi regola 103.2b.) Una volta durante la partita, in qualsiasi momento in cui hai la priorità e la pila è vuota, ma solo durante una fase principale del tuo turno, puoi pagare {3} e aggiungere quella carta alla tua mano. Questa è un'azione speciale che non usa la pila (vedi regola 116.2g). Questa è una modifica rispetto alle regole precedenti.
+@702.139b
+Se un'abilità compagno fa riferimento al tuo mazzo iniziale, si riferisce al tuo mazzo dopo che hai messo da parte le eventuali carte della sideboard. In una partita Commander, anche prima che tu abbia messo da parte il tuo comandante.
+@702.139c
+Una volta compiuta l'azione speciale e aggiunta alla tua mano la carta con compagno, essa resta nella partita fino alla fine della partita.
+@702.139d
+Le carte possono entrare nelle partite Commander da fuori dalla partita tramite l'azione speciale del compagno.
+@702.140
+Mutare (Mutate)
+@702.140a
+Mutare compare su alcune carte creatura. Rappresenta un'abilità statica che funziona mentre la magia con mutare è in pila. «Mutare [costo]» significa «Puoi pagare [costo] invece del costo di mana di questa magia. Se lo fai, diventa una magia creatura mutante e bersaglia una creatura non Umano con lo stesso proprietario di questa magia». Lanciare una magia usando la sua abilità mutare segue le regole per il pagamento dei costi alternativi (vedi 601.2b e 601.2f–h).
+@702.140b
+Quando una magia creatura mutante inizia a risolversi, se il suo bersaglio è illegale, smette di essere una magia creatura mutante e continua a risolversi come magia creatura, e viene messa sul campo di battaglia sotto il controllo del controllore della magia.
+@702.140c
+Quando una magia creatura mutante si risolve, se il suo bersaglio è legale, non entra nel campo di battaglia. Invece, si fonde con la creatura bersaglio e diventa un unico oggetto rappresentato da più di una carta o pedina (vedi regola 730, «Fondersi con i permanenti»). Il controllore della magia sceglie se la magia viene messa sopra o sotto la creatura. Il permanente risultante è un permanente mutato.
+@702.140d
+Un'abilità che si innesca ogni volta che una creatura muta si innesca quando una magia si fonde con una creatura come risultato della risoluzione di una magia creatura mutante.
+@702.140e
+Un permanente mutato ha tutte le abilità di ogni carta e pedina che lo rappresenta. Le sue altre caratteristiche derivano dalla carta o pedina più in alto.
+@702.140f
+Qualsiasi effetto che fa riferimento alla magia creatura mutante o la modifica fa riferimento al permanente mutato con cui si fonde mentre si risolve, o lo modifica.
+@702.141
+Bis (Encore)
+@702.141a
+Bis è un'abilità attivata che funziona mentre la carta con bis è in un cimitero. «Bis [costo]» significa «[Costo], Esilia questa carta dal tuo cimitero: Per ogni avversario, crea una pedina che è una copia di questa carta e che attacca quell'avversario in questo turno, se possibile. Le pedine ottengono rapidità. Sacrificale all'inizio della prossima sottofase finale. Attiva solo come una stregoneria».
+@702.142
+Vanto (Boast)
+@702.142a
+Vanto è una parola chiave che aggiunge regole aggiuntive all'abilità attivata che la segue. «Vanto — [Costo]: [Effetto]» significa «[Costo]: [Effetto]. Attiva solo se questa creatura ha attaccato in questo turno e solo una volta per turno».
+@702.142b
+Gli effetti possono fare riferimento alle abilità vanto. Se un effetto fa riferimento a una creatura che si vanta, si intende l'attivazione della sua abilità vanto.
+@702.143
+Presagio (Foretell)
+@702.143a
+Presagio è una parola chiave che funziona mentre la carta con presagio è nella mano di un giocatore. In qualsiasi momento in cui un giocatore ha la priorità durante il suo turno, quel giocatore può pagare {2} ed esiliare a faccia in giù dalla sua mano una carta con presagio. Quel giocatore può guardare quella carta finché resta in esilio. Può lanciare quella carta dopo la fine del turno in corso pagando il suo eventuale costo di presagio invece di pagare il costo di mana di quella magia. Lanciare una magia in questo modo segue le regole per il pagamento dei costi alternativi delle regole 601.2b e 601.2f–h.
+@702.143b
+Esiliare una carta usando la sua abilità presagio è un'azione speciale, che non usa la pila. Vedi regola 116, «Azioni speciali».
+@702.143c
+Se un effetto fa riferimento al presagire una carta, si intende compiere l'azione speciale associata a un'abilità presagio. Se un effetto fa riferimento a una carta o magia presagita, si intende una carta messa nella zona di esilio come risultato dell'azione speciale associata a un'abilità presagio, oppure una magia che era una carta presagita prima di essere lanciata, anche se è stata lanciata per un costo diverso da un costo di presagio.
+@702.143d
+Se un effetto stabilisce che una carta in esilio diventa presagita, quella carta diventa una carta presagita. Quell'effetto può dare alla carta un costo di presagio. Il proprietario di quella carta può guardarla finché resta in esilio e può lanciarla per un suo qualsiasi costo di presagio dopo la fine del turno in cui è diventata una carta presagita, anche se la magia risultante non ha presagio.
+@702.143e
+Se un giocatore possiede più carte presagite in esilio, deve fare in modo che quelle carte possano essere facilmente distinte l'una dall'altra e da qualsiasi altra carta a faccia in giù in esilio che possiede. Ciò include sapere sia l'ordine in cui quelle carte sono state messe in esilio sia gli eventuali costi di presagio diversi da quelli stampati che quelle carte possono avere.
+@702.143f
+Se un giocatore lascia la partita, tutte le carte presagite a faccia in giù che possiede devono essere rivelate a tutti i giocatori. Alla fine di ogni partita, tutte le carte presagite a faccia in giù devono essere rivelate a tutti i giocatori.
+@702.144
+Dimostrare (Demonstrate)
+@702.144a
+Dimostrare è un'abilità innescata. «Dimostrare» significa «Quando lanci questa magia, puoi copiarla e puoi scegliere nuovi bersagli per la copia. Se copi la magia, scegli un avversario. Quel giocatore copia la magia e può scegliere nuovi bersagli per quella copia».
+@702.145
+Diurno e Notturno (Daybound e Nightbound)
+@702.145a
+Diurno e notturno si trovano sulle facce opposte di alcune carte bifronte (vedi regola 712, «Carte bifronte»).
+@702.145b
+Diurno si trova sulla faccia anteriore di alcune carte bifronte e rappresenta tre abilità statiche. «Diurno» significa «Se è notte e questo permanente è rappresentato da una carta bifronte, entra trasformato», «Quando diventa notte, se questo permanente ha la faccia anteriore rivolta verso l'alto, trasformalo» e «Questo permanente non può trasformarsi se non a causa della sua abilità diurno». Vedi regola 731, «Giorno e notte».
+@702.145c
+In qualsiasi momento in cui un giocatore controlla un permanente con diurno con la faccia anteriore rivolta verso l'alto ed è notte, quel giocatore trasforma quel permanente. Ciò avviene immediatamente e non è un'azione generata dallo stato.
+@702.145d
+In qualsiasi momento in cui un giocatore controlla un permanente con diurno, se non è né giorno né notte, diventa giorno.
+@702.145e
+Notturno si trova sulla faccia posteriore di alcune carte bifronte e rappresenta due abilità statiche. «Notturno» significa «Quando diventa giorno, se questo permanente ha la faccia posteriore rivolta verso l'alto, trasformalo» e «Questo permanente non può trasformarsi se non a causa della sua abilità notturno».
+@702.145f
+In qualsiasi momento in cui un giocatore controlla un permanente con notturno con la faccia posteriore rivolta verso l'alto ed è giorno, quel giocatore trasforma quel permanente. Ciò avviene immediatamente e non è un'azione generata dallo stato.
+@702.145g
+In qualsiasi momento in cui un giocatore controlla un permanente con notturno, se non è né giorno né notte e non ci sono permanenti con diurno sul campo di battaglia, diventa notte.
+@702.146
+Disturbare
+@702.146a
+Disturbare è un'abilità presente sulla faccia anteriore di alcune carte bifronte (vedi regola 712, «Carte bifronte»). «Disturbare [costo]» significa «Puoi lanciare questa carta trasformata dal tuo cimitero pagando [costo] invece del suo costo di mana». Vedi regola 712.8c.

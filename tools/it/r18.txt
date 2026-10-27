@@ -1,0 +1,137 @@
+@614.12b
+Se più effetti di sostituzione che richiedono scelte da parte di un giocatore modificano il modo in cui più permanenti entrano simultaneamente nel campo di battaglia, quel giocatore non può fare per quegli effetti scelte che renderebbero non pagabili i costi combinati di quegli effetti.
+@614.12c
+Alcuni effetti di sostituzione fanno entrare un permanente nel campo di battaglia con una di due abilità a scelta del suo controllore, ciascuna contrassegnata da una parola àncora e preceduta da un punto elenco. «[Parola àncora] — [abilità]» significa «Finché è stata scelta [parola àncora] mentre questo permanente entrava nel campo di battaglia, questo permanente ha [abilità]». Le abilità precedute da parole àncora sono ciascuna collegate all'abilità che fa scegliere a un giocatore tra di esse. Vedi regola 607, «Abilità collegate».
+@614.13
+Un effetto che modifica il modo in cui un permanente entra nel campo di battaglia può far cambiare zona ad altri oggetti.
+@614.13a
+Mentre applichi un effetto che modifica il modo in cui un permanente entra nel campo di battaglia, potresti dover scegliere un certo numero di oggetti che cambieranno anch'essi zona. Non puoi scegliere l'oggetto che diventerà quel permanente né qualsiasi altro oggetto che entra nel campo di battaglia nello stesso momento di quell'oggetto.
+Esempio: Sutured Ghoul dice, tra l'altro, «Mentre questa creatura entra, esilia un qualsiasi numero di carte creatura dal tuo cimitero». Se Sutured Ghoul e Runeclaw Bear entrano nel campo di battaglia dal tuo cimitero nello stesso momento, non puoi scegliere di esiliare nessuno dei due quando applichi l'effetto di sostituzione di Sutured Ghoul.
+@614.13b
+Lo stesso oggetto non può essere scelto per cambiare zona più di una volta quando si applicano effetti di sostituzione che modificano il modo in cui uno o più permanenti entrano nel campo di battaglia.
+Esempio: Jund (una carta piano) dice «Ogni volta che un giocatore lancia una magia creatura nera, rossa o verde, ottiene divorare 5». Un giocatore controlla Runeclaw Bear e lancia Thunder-Thrash Elder, una magia creatura rossa con divorare 3. Mentre Thunder-Thrash Elder entra nel campo di battaglia, il suo controllore può scegliere di sacrificare Runeclaw Bear applicando l'effetto di divorare 3 oppure applicando l'effetto di divorare 5, ma non entrambi. Thunder-Thrash Elder entrerà nel campo di battaglia con zero, tre o cinque segnalini +1/+1, a seconda di questa scelta.
+@614.13c
+Mentre si applica un effetto di sostituzione che modifica il modo in cui un permanente entra nel campo di battaglia, un altro effetto di sostituzione può far macinare carte a un giocatore o fargli esiliare carte dalla cima di un grimorio. In quel caso, qualsiasi carta che sta entrando nel campo di battaglia da quel grimorio non viene inclusa in quell'effetto, anche se quelle carte sono nel grimorio quando l'effetto viene applicato.
+Esempio: Ashiok, Wicked Manipulator ha un'abilità che dice «Se stai per pagare punti vita mentre il tuo grimorio contiene almeno altrettante carte, esilia invece altrettante carte dalla cima del tuo grimorio». Breeding Pool è una terra che dice, tra l'altro, «Mentre questa terra entra, puoi pagare 2 punti vita». Se un effetto permette a un giocatore di giocare Breeding Pool dalla cima del suo grimorio mentre controlla Ashiok, e sceglie di pagare punti vita mentre Breeding Pool entra, l'effetto di sostituzione di Ashiok ignora Breeding Pool, perché sta entrando nel campo di battaglia, e vengono esiliate le due carte successive.
+@614.14
+Un oggetto può avere stampata un'abilità che genera un effetto di sostituzione che fa esiliare una o più carte, e un'altra abilità che fa riferimento a «le carte esiliate» o a carte «esiliate con [questo oggetto]». Queste abilità sono collegate: la seconda si riferisce solo alle carte nella zona di esilio messe lì come risultato diretto dell'evento di sostituzione causato dalla prima. Se un altro oggetto ottiene una coppia di abilità collegate, le abilità saranno collegate allo stesso modo su quell'oggetto. Non possono essere collegate a nessun'altra abilità, indipendentemente dalle altre abilità che l'oggetto può avere attualmente o aver avuto in passato. Vedi regola 607, «Abilità collegate».
+@614.15
+Alcuni effetti di sostituzione non sono effetti continui. Sono invece un effetto di una magia o abilità che si risolve e che sostituisce in parte o del tutto l'effetto o gli effetti di quella stessa magia o abilità. Questi effetti sono detti effetti di auto-sostituzione. Il testo che crea un effetto di auto-sostituzione di solito fa parte dell'abilità il cui effetto viene sostituito, ma può essere un'abilità separata, in particolare quando è preceduta da una parola abilità. Quando si applicano effetti di sostituzione a un evento, gli effetti di auto-sostituzione si applicano prima degli altri effetti di sostituzione.
+@614.16
+Alcuni effetti di sostituzione si applicano «se un effetto sta per creare una o più pedine» o «se un effetto sta per mettere uno o più segnalini su un permanente». Questi effetti di sostituzione si applicano se l'effetto di una magia o abilità che si risolve crea una pedina o mette un segnalino su un permanente, e si applicano anche se lo fa un altro effetto di sostituzione o di prevenzione, anche se l'evento originale modificato non era a sua volta un effetto.
+@614.17
+Alcuni effetti stabiliscono che qualcosa non può accadere. Questi effetti non sono effetti di sostituzione, ma seguono regole simili.
+@614.17a
+Gli effetti «non può» devono esistere prima che avvenga l'evento appropriato: non possono «tornare indietro nel tempo» e cambiare qualcosa che è già successo.
+@614.17b
+Se un evento non può accadere, un giocatore non può scegliere di pagare un costo che include quell'evento.
+@614.17c
+Se un evento non può accadere, può essere sostituito solo da un effetto di auto-sostituzione (vedi regola 614.15). Gli altri effetti di sostituzione e/o di prevenzione non possono modificarlo o sostituirlo.
+@614.17d
+Alcuni effetti «non può» modificano il modo in cui un permanente entra nel campo di battaglia o se può entrarvi. Questi effetti possono provenire dal permanente stesso se interessano solo quel permanente (invece di un sottoinsieme generico di permanenti che lo comprende). Possono anche provenire da altre fonti. Per stabilire quali effetti «non può» si applicano, controlla le caratteristiche del permanente così come esisterebbe sul campo di battaglia, tenendo conto degli effetti di sostituzione che hanno già modificato il modo in cui entra nel campo di battaglia (vedi regola 616.1), degli effetti continui delle abilità statiche del permanente stesso che gli si applicherebbero una volta sul campo di battaglia, e degli effetti continui che esistono già e che si applicherebbero al permanente.
+@615
+Effetti di prevenzione
+@615.1
+Alcuni effetti continui sono effetti di prevenzione. Come gli effetti di sostituzione (vedi regola 614), gli effetti di prevenzione si applicano continuamente mentre gli eventi avvengono: non vengono bloccati in anticipo. Questi effetti attendono un evento di danno che sta per avvenire e prevengono completamente o in parte il danno che verrebbe inflitto. Agiscono come «scudi» attorno a ciò su cui hanno effetto.
+@615.1a
+Gli effetti che usano il verbo «prevenire» sono effetti di prevenzione. Gli effetti di prevenzione usano «prevenire» per indicare quale danno non verrà inflitto.
+@615.2
+Molti effetti di prevenzione si applicano al danno di una fonte. Vedi regola 609.7.
+@615.3
+Non ci sono restrizioni speciali per lanciare una magia o attivare un'abilità che genera un effetto di prevenzione. Questi effetti durano finché non vengono consumati o finché la loro durata non è scaduta.
+@615.4
+Gli effetti di prevenzione devono esistere prima che avvenga l'evento di danno appropriato: non possono «tornare indietro nel tempo» e cambiare qualcosa che è già successo. Le magie o abilità che generano questi effetti vengono spesso lanciate o attivate in risposta a ciò che produrrebbe l'evento, e quindi si risolvono prima che quell'evento avvenga.
+Esempio: Un giocatore può attivare un'abilità che previene danno in risposta a una magia che infliggerebbe danno. Una volta che la magia si è risolta, però, è troppo tardi per prevenire il danno.
+@615.5
+Alcuni effetti di prevenzione includono anche un effetto aggiuntivo, che può fare riferimento alla quantità di danno prevenuto. La prevenzione avviene nel momento in cui sarebbe avvenuto l'evento originale; il resto dell'effetto avviene subito dopo.
+@615.6
+Se il danno che verrebbe inflitto viene prevenuto, non avviene mai. Può invece avvenire un evento modificato, che a sua volta può far innescare abilità. Nota che l'evento modificato può contenere istruzioni che non possono essere eseguite; in quel caso l'istruzione impossibile viene semplicemente ignorata.
+@615.7
+Alcuni effetti di prevenzione generati dalla risoluzione di una magia o abilità fanno riferimento a una quantità specifica di danno; per esempio, «Previeni i prossimi 3 danni che verrebbero inflitti a un qualsiasi bersaglio in questo turno». Questi funzionano come scudi. Ogni singolo danno che verrebbe inflitto al permanente o al giocatore «schermato» viene prevenuto. Prevenire 1 danno riduce di 1 lo scudo rimanente. Se due o più fonti applicabili dovessero infliggere danno nello stesso momento al permanente o al giocatore schermato, il giocatore o il controllore del permanente sceglie quale danno prevenire con lo scudo. Una volta che lo scudo è stato ridotto a 0, il danno rimanente viene inflitto normalmente. Questi effetti contano solo la quantità di danno; il numero di eventi o di fonti che lo infliggono non ha importanza.
+@615.8
+Alcuni effetti di prevenzione generati dalla risoluzione di una magia o abilità fanno riferimento alla prossima volta che una fonte specifica infliggerebbe danno. Questi effetti prevengono la prossima istanza di danno di quella fonte, indipendentemente da quanto danno sia. Una volta prevenuta un'istanza di danno di quella fonte, le istanze successive di danno che verrebbero inflitte da quella fonte vengono inflitte normalmente.
+@615.9
+Alcuni effetti generati dalla risoluzione di una magia o abilità prevengono il danno di una fonte a scelta di un giocatore con determinate proprietà. Quando la fonte sta per infliggere danno, lo scudo ricontrolla le proprietà della fonte. Se le proprietà non corrispondono più, il danno non viene prevenuto né sostituito e lo scudo non viene consumato. Vedi regola 609.7b.
+@615.10
+Alcuni effetti di prevenzione generati da abilità statiche fanno riferimento a una quantità specifica di danno; per esempio, «Se una fonte sta per infliggerti danno, previeni 1 di quel danno». Un tale effetto previene solo la quantità di danno indicata in ogni evento di danno applicabile in un dato momento. Si applica separatamente al danno di altri eventi applicabili che avverrebbero nello stesso momento o in un momento diverso.
+Esempio: Daunting Defender dice «Se una fonte sta per infliggere danno a una creatura Chierico che controlli, previeni 1 di quel danno». Pyroclasm dice «Pyroclasm infligge 2 danni a ogni creatura». Pyroclasm infliggerà 1 danno a ogni creatura Chierico controllata dal controllore di Daunting Defender. Infliggerà 2 danni a ogni altra creatura.
+@615.11
+Alcuni effetti di prevenzione prevengono i prossimi N danni che verrebbero inflitti a ciascuna di un certo numero di creature non bersagliate. Un tale effetto crea uno scudo di prevenzione per ogni creatura applicabile quando si risolve la magia o abilità che genera quell'effetto.
+Esempio: Wojek Apothecary ha un'abilità che dice «{T}: Previeni il prossimo danno che verrebbe inflitto in questo turno a una creatura bersaglio e a ogni altra creatura che condivide un colore con essa». Quando l'abilità si risolve, dà alla creatura bersaglio e a ogni altra creatura sul campo di battaglia che in quel momento condivide un colore con essa uno scudo che previene il prossimo danno che le verrebbe inflitto. Cambiare il colore delle creature dopo che l'abilità si è risolta non aggiunge né rimuove scudi, e le creature che entrano nel campo di battaglia più avanti nel turno non ricevono lo scudo.
+@615.12
+Alcuni effetti stabiliscono che il danno «non può essere prevenuto». Se dovesse essere inflitto danno non prevenibile, gli effetti di prevenzione applicabili vengono comunque applicati. Quegli effetti non preverranno alcun danno, ma i loro eventuali effetti aggiuntivi avverranno. Gli scudi di prevenzione del danno esistenti non vengono ridotti dal danno che non può essere prevenuto.
+@615.12a
+Un effetto di prevenzione si applica a ogni particolare evento di danno non prevenibile una sola volta. Non si richiama ripetutamente cercando di prevenire quel danno.
+@615.13
+Alcune abilità innescate si innescano quando il danno che verrebbe inflitto viene prevenuto. Un'abilità del genere si innesca ogni volta che un effetto di prevenzione viene applicato a uno o più eventi di danno simultanei e previene parte o tutto quel danno.
+@616
+Interazione degli effetti di sostituzione e/o di prevenzione
+@616.1
+Se due o più effetti di sostituzione e/o di prevenzione cercano di modificare il modo in cui un evento interessa un oggetto o un giocatore, il controllore dell'oggetto interessato (o il suo proprietario se non ha un controllore) o il giocatore interessato sceglie quale applicare, seguendo i passaggi elencati qui sotto. Se due o più giocatori devono fare queste scelte nello stesso momento, le scelte vengono fatte nell'ordine APNAP (vedi regola 101.4).
+@616.1a
+Se uno qualsiasi degli effetti di sostituzione e/o di prevenzione è un effetto di auto-sostituzione (vedi regola 614.15), deve essere scelto uno di essi. Altrimenti, prosegui con la regola 616.1b.
+@616.1b
+Se uno qualsiasi degli effetti di sostituzione e/o di prevenzione modificherebbe sotto il controllo di chi un oggetto entra nel campo di battaglia, deve essere scelto uno di essi. Altrimenti, prosegui con la regola 616.1c.
+@616.1c
+Se uno qualsiasi degli effetti di sostituzione e/o di prevenzione farebbe diventare un oggetto una copia di un altro oggetto mentre entra nel campo di battaglia, deve essere scelto uno di essi. Altrimenti, prosegui con la regola 616.1d.
+@616.1d
+Se uno qualsiasi degli effetti di sostituzione e/o di prevenzione farebbe entrare una carta nel campo di battaglia con la faccia posteriore rivolta in su, deve essere scelto uno di essi (vedi regola 701.27, «Trasformare», e regola 701.28, «Convertire»). Altrimenti, prosegui con la regola 616.1e.
+@616.1e
+Si può scegliere uno qualsiasi degli effetti di sostituzione e/o di prevenzione applicabili.
+@616.1f
+Una volta applicato l'effetto scelto, questo procedimento si ripete (tenendo conto solo degli effetti di sostituzione o di prevenzione che sarebbero applicabili in quel momento) finché non ne rimangono più da applicare.
+Esempio: Sul campo di battaglia ci sono due permanenti. Uno è un incantesimo che dice «Se una carta sta per essere messa in un cimitero da qualsiasi luogo, esiliala invece», e l'altro è una creatura che dice «Se questa creatura sta per morire, rimescolala invece nel grimorio del suo proprietario». Se la creatura viene distrutta, il suo controllore decide quale sostituzione applicare per prima; l'altra non fa nulla.
+Esempio: Essence of the Wild dice «Le creature che controlli entrano come copia di questa creatura». Un giocatore che controlla Essence of the Wild lancia Rusted Sentinel, che normalmente entra nel campo di battaglia TAPpato. Mentre entra nel campo di battaglia, si applica per primo l'effetto di copia di Essence of the Wild. Di conseguenza, non ha più l'abilità che lo fa entrare nel campo di battaglia TAPpato. Rusted Sentinel entrerà nel campo di battaglia come copia STAPpata di Essence of the Wild.
+@616.1g
+Mentre si seguono i passaggi delle regole 616.1a–f, un effetto di sostituzione o di prevenzione può applicarsi a un evento, e un altro può applicarsi a un evento contenuto nel primo. In questo caso, il secondo effetto non può essere scelto finché non è stato scelto il primo.
+Esempio: A un giocatore viene detto di creare una pedina che è una copia di Voice of All, che ha l'abilità «Mentre questa creatura entra, scegli un colore». Doubling Season ha un'abilità che dice «Se un effetto sta per creare una o più pedine sotto il tuo controllo, crea invece il doppio di quelle pedine». Poiché entrare nel campo di battaglia è un evento contenuto nell'evento di creazione di una pedina, deve essere applicato prima l'effetto di Doubling Season, e poi gli effetti delle due pedine Voice of All possono essere applicati in qualsiasi ordine.
+@616.2
+Un effetto di sostituzione o di prevenzione può diventare applicabile a un evento come risultato di un altro effetto di sostituzione o di prevenzione che modifica l'evento.
+Esempio: Un effetto dice «Se stai per guadagnare punti vita, pesca invece altrettante carte», e un altro dice «Se stai per pescare una carta, riprendi invece in mano una carta dal tuo cimitero». Entrambi gli effetti si combinano (indipendentemente dall'ordine in cui sono comparsi): invece di guadagnare 1 punto vita, il giocatore mette in mano una carta dal suo cimitero.
+@#7
+Regole aggiuntive
+@700
+Generale
+@700.1
+Tutto ciò che avviene in una partita è un evento. Durante la risoluzione di una magia o abilità possono verificarsi più eventi. Il testo delle abilità innescate e degli effetti di sostituzione definisce l'evento che cercano. Un singolo «accadimento» può essere trattato come un unico evento da un'abilità e come più eventi da un'altra.
+Esempio: Se una creatura attaccante viene bloccata da due creature, questo è un solo evento per un'abilità innescata che dice «Ogni volta che questa creatura viene bloccata», ma due eventi per un'abilità innescata che dice «Ogni volta che questa creatura viene bloccata da una creatura».
+@700.2
+Una magia o abilità è modale se ha due o più opzioni in un elenco puntato preceduto da istruzioni che fanno scegliere a un giocatore un certo numero di quelle opzioni, come «Scegli uno —». Ognuna di quelle opzioni è una modalità. Le carte modali stampate prima dell'espansione Khans of Tarkir™ non usavano elenchi puntati per le modalità; queste carte hanno ricevuto errata nel riferimento Oracle in modo che le modalità compaiano in un elenco puntato.
+@700.2a
+Il controllore di una magia o di un'abilità attivata modale sceglie la modalità o le modalità come parte del lancio di quella magia o dell'attivazione di quell'abilità. Se una delle modalità fosse illegale (per esempio, per l'impossibilità di scegliere bersagli legali), quella modalità non può essere scelta. (Vedi regola 601.2b.)
+@700.2b
+Il controllore di un'abilità innescata modale sceglie la modalità o le modalità come parte della messa in pila di quell'abilità. Se una delle modalità fosse illegale (per esempio, per l'impossibilità di scegliere bersagli legali), quella modalità non può essere scelta. Se non viene scelta alcuna modalità, l'abilità viene rimossa dalla pila. (Vedi regola 603.3c.)
+@700.2c
+Se una magia o abilità bersaglia uno o più bersagli solo se per essa viene scelta una determinata modalità, il suo controllore dovrà scegliere quei bersagli solo se ha scelto quella modalità. Altrimenti, la magia o abilità viene trattata come se non avesse quei bersagli. (Vedi regola 601.2c.)
+@700.2d
+Se a un giocatore è permesso scegliere più di una modalità per una magia o abilità modale, quel giocatore normalmente non può scegliere la stessa modalità più di una volta. Tuttavia, alcune magie modali includono l'istruzione «Puoi scegliere la stessa modalità più di una volta». Se una determinata modalità viene scelta più volte, la magia viene trattata come se quella modalità comparisse quel numero di volte in sequenza. Se quella modalità richiede un bersaglio, si può scegliere lo stesso giocatore od oggetto come bersaglio per ciascuna di quelle modalità, oppure si possono scegliere bersagli diversi.
+@700.2e
+Alcune magie e abilità specificano che un giocatore diverso dal loro controllore ne sceglie la modalità. In quel caso, l'altro giocatore lo fa nel momento in cui normalmente lo farebbe il controllore della magia o abilità. Se c'è più di un altro giocatore che potrebbe fare tale scelta, il controllore della magia o abilità decide quale di quei giocatori farà la scelta.
+@700.2f
+Le magie e abilità modali possono avere requisiti di bersaglio diversi per ogni modalità. Cambiare il bersaglio di una magia o abilità non può cambiarne la modalità.
+@700.2g
+Una copia di una magia o abilità modale copia la modalità o le modalità scelte per essa. Il controllore della copia non può scegliere una modalità diversa. (Vedi regola 707.10.)
+@700.2h
+Alcune magie modali hanno una o più modalità con un costo indicato prima dell'effetto di quella modalità. Questo indica che la modalità ha un costo aggiuntivo che deve essere pagato durante il lancio della magia se quella modalità viene scelta. Se vengono scelte più modalità di questo tipo, per lanciare quella magia devono essere pagati tutti i costi aggiuntivi. Il pagamento di questi costi segue le regole per il pagamento dei costi aggiuntivi delle regole 601.2b e 601.2f–h.
+@700.2i
+Alcune magie modali hanno uno o più simboli dell'impronta di zampa ({P}) invece dei punti elenco, oltre a un'istruzione di scegliere modalità fino a un numero specificato di {P} «di valore». Durante il lancio di una tale magia, il suo controllore può scegliere un numero qualsiasi di modalità purché il numero totale di simboli dell'impronta di zampa indicati per le modalità scelte non superi il numero specificato.
+@700.3
+Alcuni effetti fanno raggruppare temporaneamente degli oggetti in pile.
+@700.3a
+Ciascuno degli oggetti interessati deve essere messo esattamente in una di quelle pile, a meno che l'effetto non specifichi altrimenti.
+@700.3b
+Ogni oggetto in una pila è comunque un oggetto individuale. La pila non è un oggetto.
+@700.3c
+Gli oggetti raggruppati in pile non lasciano la zona in cui si trovano. Se le carte di un cimitero vengono divise in pile, l'ordine del cimitero deve essere mantenuto.
+Esempio: Fact or Fiction dice «Rivela le prime cinque carte del tuo grimorio. Un avversario separa quelle carte in due pile. Metti una pila nella tua mano e l'altra nel tuo cimitero». Mentre un avversario separa le carte rivelate in pile, queste sono ancora nel grimorio del loro proprietario. Non lasciano il grimorio finché non vengono messe nella mano o nel cimitero del loro proprietario.
+@700.3d
+Una pila può contenere zero o più oggetti.
+@700.4
+Il verbo morire significa «essere messo in un cimitero dal campo di battaglia».
+@700.5
+La devozione di un giocatore a [colore] è pari al numero di simboli di mana di quel colore tra i costi di mana dei permanenti che quel giocatore controlla. La devozione di un giocatore a [colore 1] e [colore 2] è pari al numero di simboli di mana tra i costi di mana dei permanenti che quel giocatore controlla che sono [colore 1], [colore 2] o di entrambi i colori.
+@700.5a
+La devozione di un giocatore a ciascun colore e a ciascuna combinazione di colori, tenendo conto degli effetti che modificano la devozione, viene calcolata dopo aver considerato gli effetti di copia, di controllo e che cambiano il testo, ma prima di qualsiasi altro effetto che modifica le caratteristiche dei permanenti. Questa è un'eccezione alla regola 613.10. Vedi anche la regola 613, «Interazione degli effetti continui».
+Esempio: Altar of the Pantheon è un artefatto senza mana colorato nel costo e con un'abilità che dice «La tua devozione a ciascun colore e a ciascuna combinazione di colori aumenta di uno». Purphoros, God of the Forge è un permanente con costo di mana {3}{R} e un'abilità che dice «Finché la tua devozione al rosso è inferiore a cinque, Purphoros non è una creatura». Se un giocatore controlla entrambi questi permanenti e un altro permanente che costa {R}{R}{R}, la devozione di quel giocatore al rosso risulta cinque prima che si applichi l'effetto che cambia il tipo di Purphoros, e Purphoros è una creatura.
+@700.6
+Il termine storico indica un oggetto che ha il supertipo leggendario, il tipo di carta artefatto o il sottotipo Saga.

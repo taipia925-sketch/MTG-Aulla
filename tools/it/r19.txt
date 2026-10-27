@@ -1,0 +1,199 @@
+@700.7
+Se un'abilità usa un'espressione come «questo/questa [qualcosa]» per identificare un oggetto, dove [qualcosa] è una caratteristica o un'altra qualità, si riferisce a quel particolare oggetto, anche se in quel momento non ha la qualità appropriata.
+Esempio: Un'abilità dice «Una creatura bersaglio prende +2/+2 fino alla fine del turno. Distruggi quella creatura all'inizio della prossima sottofase finale». L'abilità distruggerà l'oggetto a cui ha dato +2/+2 anche se all'inizio della prossima sottofase finale quell'oggetto non è una creatura.
+@700.8
+Alcune carte fanno riferimento al gruppo di un giocatore. Il gruppo di un giocatore è composto da fino a una creatura Chierico controllata da quel giocatore, fino a una creatura Furfante che controlla, fino a una creatura Guerriero che controlla e fino a una creatura Mago che controlla.
+@700.8a
+Se una magia, un'abilità o un effetto deve determinare il numero di creature nel gruppo di un giocatore, il calcolo di quel numero viene eseguito automaticamente dalla partita e dà un numero tra zero e quattro. I giocatori non dichiarano quali specifiche creature che controllano fanno parte del loro gruppo per un tale effetto.
+@700.8b
+Se una creatura ha più tipi di creatura per cui potrebbe essere membro del gruppo, viene contata come membro del gruppo per uno solo di quei tipi. Se ci sono modi diversi di contare una tale creatura che danno numeri diversi di creature nel gruppo di un giocatore, viene contata in modo da ottenere il risultato più alto.
+@700.8c
+Un giocatore ha un gruppo completo se nel suo gruppo ci sono quattro creature.
+@700.8d
+Una carta, Stick Together, istruisce i giocatori a scegliere un gruppo tra le creature che controllano. Per farlo, per ciascuno dei tipi di creatura elencati nella regola 700.8, ogni giocatore sceglie fino a una creatura di quel tipo che controlla.
+@700.9
+Alcune carte fanno riferimento a permanenti modificati. Un permanente è modificato se ha su di sé uno o più segnalini (vedi regola 122), se è equipaggiato (vedi regola 301.5) o se è incantato da un'Aura controllata dal controllore di quel permanente (vedi regola 303.4).
+@700.10
+Alcune carte fanno riferimento a un permanente «che è stato attivato in questo turno». Significa che il permanente è stato la fonte di un'abilità attivata in questo turno, indipendentemente dal fatto che quel permanente abbia ancora quell'abilità attivata o che il giocatore che l'ha attivata sia ancora in partita.
+@700.11
+Alcune carte fanno riferimento al fatto che un giocatore sia «disceso in questo turno». Significa che in questo turno una carta permanente è stata messa nel cimitero di quel giocatore da qualsiasi luogo. «Il numero di volte in cui [un giocatore] è disceso in questo turno» significa «il numero di carte permanente messe nel cimitero di [quel giocatore] da qualsiasi luogo in questo turno». In entrambi i casi, non è richiesto che le carte permanente messe nel cimitero del giocatore in quel turno siano ancora in quel cimitero.
+@700.12
+Il termine fuorilegge indica un oggetto che ha i tipi di creatura Assassino, Mercenario, Pirata, Furfante e/o Warlock.
+@700.12a
+Alcune carte fanno riferimento ai fuorilegge controllati da un giocatore. Per questi effetti si considerano solo i permanenti fuorilegge, salvo diversa indicazione.
+@700.13
+Alcune carte fanno riferimento al commettere un crimine. Un giocatore commette un crimine quando lancia una magia, attiva un'abilità o mette in pila un'abilità innescata e quella magia o abilità bersaglia almeno un avversario; almeno un permanente, magia o abilità controllato da un avversario; e/o almeno una carta nel cimitero di un avversario.
+@700.14
+Alcune abilità si innescano «Ogni volta che spendi N». Un giocatore spende N se paga un costo per lanciare una magia e la quantità di mana che quel giocatore ha speso in questo turno per lanciare magie prima di pagare quel costo era inferiore a N ed è diventata almeno N dopo aver pagato quel costo.
+Esempio: Un giocatore lancia Bark-Knuckle Boxer, che costa {1}{G} e dice «Ogni volta che spendi 4, questa creatura ottiene indistruttibile fino alla fine del turno». Dopo che si è risolto, quel giocatore lancia Divination, una magia che costa {2}{U}. Prima di pagare il costo per lanciare Divination, quel giocatore ha speso due mana per lanciare magie in questo turno. Dopo aver pagato il costo, ha speso cinque mana per lanciare magie in questo turno. Poiché ora ha speso almeno quattro mana per lanciare magie in questo turno, l'abilità di Bark-Knuckle Boxer si innesca.
+@700.15
+Il verbo entrare (enter[s]) è un'abbreviazione di «entrare nel campo di battaglia».
+@700.16
+Alcune carte fanno riferimento a creature degne. Una creatura è degna se è leggendaria, non è un Cattivo (Villain) ed è rossa e/o bianca.
+@701
+Azioni chiave
+@701.1
+La maggior parte delle azioni descritte nel testo delle regole di una carta usa il significato normale dei verbi, ma vengono usati anche alcuni verbi specializzati il cui significato potrebbe non essere chiaro. Queste «parole chiave» sono termini di gioco; a volte il testo di richiamo ne riassume il significato.
+@701.2
+Attivare
+@701.2a
+Attivare un'abilità attivata significa metterla in pila e pagarne i costi, in modo che alla fine si risolva e abbia il suo effetto. Solo il controllore di un oggetto (o il suo proprietario, se non ha un controllore) può attivarne l'abilità attivata, a meno che l'oggetto non dica specificamente altrimenti. Un giocatore può attivare un'abilità se ha la priorità. Vedi regola 602, «Attivare abilità attivate».
+@701.3
+Assegnare
+@701.3a
+Assegnare un'Aura, un Equipaggiamento o una Fortificazione a un oggetto o a un giocatore significa prenderlo da dove si trova e metterlo su quell'oggetto o giocatore. Se qualcosa è assegnato a un permanente sul campo di battaglia, si usa disporlo in modo che tocchi fisicamente il permanente. Un'Aura, un Equipaggiamento o una Fortificazione non può essere assegnato a un oggetto o a un giocatore che non potrebbe rispettivamente incantare, equipaggiare o fortificare.
+@701.3b
+Se un effetto cerca di assegnare un'Aura, un Equipaggiamento o una Fortificazione a un oggetto o a un giocatore a cui non può essere assegnato, l'Aura, l'Equipaggiamento o la Fortificazione non si sposta. Se un effetto cerca di assegnare un'Aura, un Equipaggiamento o una Fortificazione all'oggetto o al giocatore a cui è già assegnato, l'effetto non fa nulla. Se un effetto cerca di assegnare a un altro oggetto o giocatore un oggetto che non è un'Aura, un Equipaggiamento o una Fortificazione, l'effetto non fa nulla e il primo oggetto non si sposta.
+@701.3c
+Assegnare un'Aura, un Equipaggiamento o una Fortificazione sul campo di battaglia a un oggetto o giocatore diverso gli fa ricevere un nuovo ordine cronologico.
+@701.3d
+«Staccare» un Equipaggiamento da una creatura significa allontanarlo da quella creatura in modo che l'Equipaggiamento sia sul campo di battaglia ma non equipaggi nulla. Non dovrebbe più toccare fisicamente alcuna creatura. Se un'Aura, un Equipaggiamento o una Fortificazione che era assegnato a un oggetto o a un giocatore smette di esserlo, questo vale come «venire staccato [da quell'oggetto o giocatore]»; questo include il caso in cui quell'Aura, Equipaggiamento o Fortificazione lasci il campo di battaglia, l'oggetto lasci la zona in cui si trovava o quel giocatore lasci la partita.
+@701.4
+Mostrare (Behold)
+@701.4a
+«Mostra un/una [qualità]» (behold) significa «Rivela una carta [qualità] dalla tua mano oppure scegli un permanente [qualità] che controlli sul campo di battaglia».
+@701.4b
+L'espressione «se è stato mostrato un/una [qualità]» si riferisce al fatto che l'oggetto avesse o meno quella qualità nel momento in cui il giocatore ha compiuto quell'azione, indipendentemente dal fatto che la carta rivelata o il permanente scelto abbia ancora quella qualità quando si risolve la magia o abilità che include quell'espressione.
+@701.5
+Lanciare
+@701.5a
+Lanciare una magia significa prenderla dalla zona in cui si trova (di solito la mano), metterla in pila e pagarne i costi, in modo che alla fine si risolva e abbia il suo effetto. Un giocatore può lanciare una magia se ha la priorità. Vedi regola 601, «Lanciare magie».
+@701.5b
+Lanciare una carta significa lanciarla come magia.
+@701.6
+Neutralizzare
+@701.6a
+Neutralizzare una magia o un'abilità significa annullarla, rimuovendola dalla pila. Non si risolve e nessuno dei suoi effetti avviene. Una magia neutralizzata viene messa nel cimitero del suo proprietario.
+@701.6b
+Il giocatore che ha lanciato una magia neutralizzata o attivato un'abilità neutralizzata non riceve alcun «rimborso» dei costi pagati.
+@701.7
+Creare
+@701.7a
+Creare una o più pedine con determinate caratteristiche significa mettere sul campo di battaglia il numero indicato di pedine con le caratteristiche indicate.
+@701.7b
+Se un effetto di sostituzione si applica alla creazione di una pedina, quell'effetto si applica prima di considerare gli effetti continui che modificheranno le caratteristiche di quella pedina. Se un effetto di sostituzione si applica all'ingresso di una pedina nel campo di battaglia, quell'effetto si applica dopo aver considerato gli effetti continui che modificheranno le caratteristiche di quella pedina.
+@701.7c
+In passato, un effetto che creava pedine istruiva un giocatore a «mettere [quelle pedine] sul campo di battaglia». Le carte stampate con quel testo hanno ricevuto errata nel riferimento Oracle e ora «creano» quelle pedine.
+@701.8
+Distruggere
+@701.8a
+Distruggere un permanente significa spostarlo dal campo di battaglia al cimitero del suo proprietario.
+@701.8b
+Gli unici modi in cui un permanente può essere distrutto sono come risultato di un effetto che usa il verbo «distruggere» o come risultato delle azioni generate dallo stato che controllano il danno letale (vedi regola 704.5g) o il danno da una fonte con tocco letale (vedi regola 704.5h). Se un permanente viene messo nel cimitero del suo proprietario per qualsiasi altro motivo, non è stato «distrutto».
+@701.8c
+Un effetto di rigenerazione sostituisce un evento di distruzione. Vedi regola 701.19, «Rigenerare».
+@701.9
+Scartare
+@701.9a
+Scartare una carta significa spostarla dalla mano del suo proprietario al cimitero di quel giocatore.
+@701.9b
+Per impostazione predefinita, gli effetti che fanno scartare una carta a un giocatore permettono al giocatore interessato di scegliere quale carta scartare. Alcuni effetti, tuttavia, richiedono uno scarto casuale o permettono a un altro giocatore di scegliere quale carta viene scartata.
+@701.9c
+Se una carta viene scartata, ma un effetto la fa mettere in una zona nascosta invece che nel cimitero del suo proprietario senza che venga rivelata, tutti i valori delle caratteristiche di quella carta sono considerati non definiti. Se una carta viene scartata in questo modo per pagare un costo che specifica una caratteristica della carta scartata, quel pagamento del costo è illegale; la partita torna al momento precedente il pagamento del costo (vedi regola 733, «Gestire le azioni illegali»).
+@701.10
+Raddoppiare
+@701.10a
+Raddoppiare la forza e/o la costituzione di una creatura crea un effetto continuo. Questo effetto modifica la forza e/o la costituzione di quella creatura ma non imposta quelle caratteristiche a un valore specifico. Vedi regola 613.4c.
+@701.10b
+Per raddoppiare la forza di una creatura, quella creatura prende +X/+0, dove X è la forza di quella creatura nel momento in cui si risolve la magia o abilità che ne raddoppia la forza. Allo stesso modo, un effetto che raddoppia la costituzione di una creatura le dà +0/+X, dove X è la costituzione di quella creatura. Raddoppiare forza e costituzione di una creatura le dà +X/+Y, dove X è la sua forza e Y è la sua costituzione.
+@701.10c
+Se la forza di una creatura è inferiore a 0 quando viene raddoppiata, raddoppiare la forza di quella creatura significa invece che la creatura prende -X/-0, dove X è la differenza tra 0 e la sua forza. Allo stesso modo, se la sua costituzione è inferiore a 0 quando viene raddoppiata, prende -0/-X. Se il valore di una caratteristica è negativo e quello dell'altra no quando vengono raddoppiate entrambe, prende -X/+Y o +X/-Y, a seconda del caso.
+@701.10d
+Per raddoppiare il totale di punti vita di un giocatore, il giocatore guadagna o perde una quantità di punti vita tale che il suo nuovo totale sia il doppio del valore attuale.
+@701.10e
+Per raddoppiare il numero di segnalini di un tipo su un giocatore o permanente, dai a quel giocatore o permanente tanti di quei segnalini quanti ne ha già.
+@701.10f
+Per raddoppiare la quantità di un tipo di mana nella riserva di mana di un giocatore, quel giocatore aggiunge una quantità di mana di quel tipo pari a quella che ha già.
+@701.10g
+Per raddoppiare una quantità di danno che una fonte infliggerebbe, quella fonte infligge invece il doppio di quel danno. Questo è un effetto di sostituzione.
+@701.11
+Triplicare
+@701.11a
+Triplicare la forza e/o la costituzione di una creatura crea un effetto continuo. Questo effetto modifica la forza e/o la costituzione di quella creatura ma non imposta quelle caratteristiche a un valore specifico. Vedi regola 613.4c.
+@701.11b
+Per triplicare la forza di una creatura, quella creatura prende +X/+0, dove X è il doppio della forza di quella creatura nel momento in cui si risolve la magia o abilità che ne triplica la forza. Allo stesso modo, un effetto che triplica la costituzione di una creatura le dà +0/+X, dove X è il doppio della costituzione di quella creatura. Triplicare forza e costituzione di una creatura le dà +X/+Y, dove X è il doppio della sua forza e Y è il doppio della sua costituzione.
+@701.11c
+Se la forza di una creatura è inferiore a 0 quando viene triplicata, triplicare la forza di quella creatura significa invece che la creatura prende -X/-0, dove X è il doppio della differenza tra 0 e la sua forza. Allo stesso modo, se la sua costituzione è inferiore a 0 quando viene triplicata, prende -0/-X. Se il valore di una caratteristica è negativo e quello dell'altra no quando vengono triplicate entrambe, prende -X/+Y o +X/-Y, a seconda del caso.
+@701.12
+Scambiare
+@701.12a
+Una magia o abilità può istruire i giocatori a scambiare qualcosa (per esempio, i totali di punti vita o il controllo di due permanenti) come parte della sua risoluzione. Quando una tale magia o abilità si risolve, se lo scambio non può essere completato per intero, nessuna parte dello scambio avviene.
+Esempio: Se una magia cerca di scambiare il controllo di due creature bersaglio ma una di quelle creature viene distrutta prima che la magia si risolva, la magia non fa nulla all'altra creatura.
+@701.12b
+Quando si scambia il controllo di due permanenti, se quei permanenti sono controllati da giocatori diversi, ciascuno di quei giocatori ottiene simultaneamente il controllo del permanente che era controllato dall'altro giocatore. Se invece quei permanenti sono controllati dallo stesso giocatore, l'effetto di scambio non fa nulla.
+@701.12c
+Quando si scambiano i totali di punti vita, ogni giocatore guadagna o perde la quantità di punti vita necessaria per arrivare al totale precedente dell'altro giocatore. Gli effetti di sostituzione possono modificare questi guadagni e queste perdite, e le abilità innescate possono innescarsi da essi. A un giocatore che non può guadagnare punti vita non può essere dato in questo modo un totale di punti vita più alto, e a un giocatore che non può perdere punti vita non può essere dato in questo modo un totale più basso (vedi regole 119.7–8).
+@701.12d
+Alcune magie o abilità possono istruire un giocatore a scambiare carte in una zona con carte in una zona diversa (per esempio, carte esiliate e carte nella mano di un giocatore). Queste magie e abilità funzionano come le altre magie e abilità di «scambio», tranne che possono scambiare le carte solo se tutte le carte sono possedute dallo stesso giocatore, e possono scambiarle anche se una delle zone è vuota.
+@701.12e
+Se una carta in una zona viene scambiata con una carta in una zona diversa, e una delle due è assegnata a un oggetto, quella carta smette di essere assegnata a quell'oggetto e l'altra carta viene assegnata a quell'oggetto.
+@701.12f
+Se una magia o abilità istruisce un giocatore a scambiare semplicemente due zone, e una delle zone è vuota, le carte nelle zone vengono comunque scambiate.
+@701.12g
+Una magia o abilità può istruire un giocatore a scambiare due valori numerici. In uno scambio del genere, ogni valore diventa uguale al valore precedente dell'altro. Se uno di quei valori è un totale di punti vita, il giocatore interessato guadagna o perde la quantità di punti vita necessaria per arrivare all'altro valore. Gli effetti di sostituzione possono modificare questo guadagno o questa perdita, e le abilità innescate possono innescarsi da essi. A un giocatore che non può guadagnare punti vita non può essere dato in questo modo un totale di punti vita più alto, e a un giocatore che non può perdere punti vita non può essere dato in questo modo un totale più basso (vedi regole 119.7–8). Se uno di quei valori è una forza o una costituzione, viene creato un effetto continuo che imposta quella forza o costituzione all'altro valore (vedi regola 613.4b). Questa regola non si applica alle magie e abilità che scambiano forza e costituzione di una creatura.
+@701.12h
+Una carta (Exchange of Words) istruisce un giocatore a scambiare i riquadri di testo di due creature. Questo crea un effetto che cambia il testo (vedi regola 612, «Effetti che cambiano il testo»). In uno scambio del genere, il testo delle regole di ciascun permanente diventa il testo delle regole precedente dell'altro.
+@701.13
+Esiliare
+@701.13a
+Esiliare un oggetto significa spostarlo nella zona di esilio da dovunque si trovi. Vedi regola 406, «Esilio».
+@701.14
+Lottare
+@701.14a
+Una magia o abilità può istruire una creatura a lottare contro un'altra creatura, oppure può istruire due creature a lottare tra loro. Ciascuna di quelle creature infligge all'altra creatura danno pari alla propria forza.
+@701.14b
+Se una o entrambe le creature a cui è stato detto di lottare non sono più sul campo di battaglia o non sono più creature, nessuna delle due lotta né infligge danno. Se una o entrambe le creature sono bersagli illegali per una magia o abilità che si risolve e che le istruisce a lottare, nessuna delle due lotta né infligge danno.
+@701.14c
+Se una creatura lotta contro se stessa, infligge a se stessa danno pari al doppio della propria forza.
+@701.14d
+Il danno inflitto quando una creatura lotta non è danno da combattimento.
+@701.15
+Aizzare (Goad)
+@701.15a
+Alcune magie e abilità possono aizzare una creatura. Fino al prossimo turno del controllore di quella magia o abilità, quella creatura è aizzata.
+@701.15b
+Aizzata è una designazione che un permanente può avere. Una creatura aizzata attacca in ogni combattimento se possibile e, se possibile, attacca un giocatore diverso dal controllore del permanente, della magia o dell'abilità che l'ha aizzata. Aizzata non è un'abilità né fa parte dei valori copiabili del permanente.
+@701.15c
+Una creatura può essere aizzata da più giocatori. Questo crea requisiti di combattimento aggiuntivi.
+@701.15d
+Una volta che un giocatore ha aizzato una creatura, se lo stesso giocatore la aizza di nuovo non ha alcun effetto. Farlo non crea requisiti di combattimento aggiuntivi.
+@701.16
+Indagare
+@701.16a
+«Indaga» significa «Crea una pedina Indizio». Vedi regola 111.10f.
+@701.17
+Macinare
+@701.17a
+Perché un giocatore macini un certo numero di carte, quel giocatore mette quel numero di carte dalla cima del suo grimorio nel suo cimitero.
+@701.17b
+Un giocatore non può macinare un numero di carte superiore al numero di carte nel suo grimorio. Se gli viene data la scelta di farlo, non può scegliere di compiere quell'azione. Se gli viene detto di farlo, ne macina quante più possibile. Allo stesso modo, il giocatore non può pagare un costo che include macinare un numero di carte superiore al numero di carte nel suo grimorio.
+@701.17c
+Un effetto che fa riferimento a una carta macinata può trovare quella carta nella zona in cui si è spostata dal grimorio, purché quella zona sia una zona pubblica.
+@701.17d
+Alcune magie e abilità macinano una singola carta e poi chiedono informazioni sulla carta macinata. Se a causa di effetti di sostituzione viene macinata più di una carta e l'effetto di una magia o abilità chiede informazioni sulla carta macinata, come una caratteristica o il valore di mana, ottiene informazioni da ciascuna carta macinata e avrà più risposte. Se queste risposte vengono usate per determinare il valore di una variabile, si usa la somma delle risposte. Se quell'effetto dà a un giocatore il permesso di lanciare o giocare «quella» carta, il permesso si applica a ciascuna delle carte macinate. Se quell'effetto compie azioni su «la» carta, compie quell'azione su ogni carta macinata. Se quell'effetto compie azioni su «una» carta, il controllore della magia o abilità sceglie quale carta ne è interessata.
+@701.18
+Giocare
+@701.18a
+Giocare una terra significa metterla sul campo di battaglia dalla zona in cui si trova (di solito la mano). Un giocatore può giocare una terra se ha la priorità, è la fase principale del suo turno, la pila è vuota e non ha ancora giocato una terra in questo turno. Giocare una terra è un'azione speciale (vedi regola 116), quindi non usa la pila; semplicemente avviene. Mettere una terra sul campo di battaglia come risultato di una magia o abilità non è la stessa cosa che giocare una terra. Vedi regola 305, «Terre».
+@701.18b
+Giocare una carta significa giocare quella carta come terra o lanciarla come magia, a seconda del caso.
+@701.18c
+Alcuni effetti istruiscono un giocatore a «giocare» con un certo aspetto della partita cambiato, come «Gioca con la prima carta del tuo grimorio rivelata». «Giocare» in questo senso significa giocare la partita di Magic.
+@701.18d
+In passato, sulle carte l'azione di lanciare una magia, o di lanciare una carta come magia, era indicata come «giocare» quella magia o quella carta. Le carte stampate con quel testo hanno ricevuto errata nel riferimento Oracle e ora parlano di «lanciare» quella magia o quella carta.
+@701.18e
+In passato, sulle carte l'azione di usare un'abilità attivata era indicata come «giocare» quell'abilità. Le carte stampate con quel testo hanno ricevuto errata nel riferimento Oracle e ora parlano di «attivare» quell'abilità.
+@701.19
+Rigenerare
+@701.19a
+Se l'effetto di una magia o abilità che si risolve rigenera un permanente, crea un effetto di sostituzione che protegge il permanente la prossima volta che starebbe per essere distrutto in questo turno. In questo caso, «Rigenera [permanente]» significa «La prossima volta che [permanente] sta per essere distrutto in questo turno, rimuovi invece tutto il danno segnato su di esso e il suo controllore lo TAPpa. Se è una creatura attaccante o bloccante, rimuovila dal combattimento».
+@701.19b
+Se l'effetto di un'abilità statica rigenera un permanente, sostituisce la distruzione con un effetto alternativo ogni volta che quel permanente starebbe per essere distrutto. In questo caso, «Rigenera [permanente]» significa «Rimuovi invece tutto il danno segnato su [permanente] e il suo controllore lo TAPpa. Se è una creatura attaccante o bloccante, rimuovila dal combattimento».
+@701.19c
+Né attivare un'abilità che crea uno scudo di rigenerazione né lanciare una magia che crea uno scudo di rigenerazione equivale a rigenerare un permanente. Gli effetti che dicono che un permanente non può essere rigenerato non impediscono di attivare tali abilità o di lanciare tali magie; fanno invece sì che gli scudi di rigenerazione non vengano applicati.
+@701.20
+Rivelare
+@701.20a
+Rivelare una carta significa mostrarla a tutti i giocatori per un breve momento. Se un effetto fa rivelare una carta, resta rivelata per tutto il tempo necessario a completare le parti dell'effetto per cui quella carta è rilevante. Se il costo per lanciare una magia o attivare un'abilità include rivelare una carta, o se una carta viene rivelata perché un'abilità viene attivata da una zona nascosta (vedi regola 602.2a), la carta resta rivelata dal momento in cui la magia o abilità viene annunciata fino al momento in cui lascia la pila. Se rivelare una carta fa innescare un'abilità innescata, la carta resta rivelata finché quell'abilità innescata non lascia la pila. Se quell'abilità non viene messa in pila la prossima volta che un giocatore riceverebbe la priorità, la carta smette di essere rivelata.
+@701.20b
+Rivelare una carta non le fa lasciare la zona in cui si trova.

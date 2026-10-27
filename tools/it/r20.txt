@@ -1,0 +1,223 @@
+@701.20c
+Una carta attualmente rivelata può essere rivelata di nuovo.
+Esempio: Telepathy è una carta incantesimo che dice «I tuoi avversari giocano con le loro mani rivelate». Silvergill Adept è una carta creatura che dice, tra l'altro, «Come costo aggiuntivo per lanciare questa magia, rivela una carta Tritone dalla tua mano o paga {3}». Un giocatore può rivelare una carta Tritone dalla propria mano per pagare il costo aggiuntivo di Silvergill Adept anche se quella carta è già rivelata a causa dell'effetto di Telepathy.
+@701.20d
+Se le carte nel grimorio di un giocatore vengono mescolate o riordinate in altro modo, tutte le carte rivelate che vengono riordinate smettono di essere rivelate e diventano nuovi oggetti.
+@701.20e
+Alcuni effetti istruiscono un giocatore a guardare una o più carte. Guardare una carta segue le stesse regole del rivelare una carta, tranne che la carta viene mostrata solo al giocatore indicato.
+@701.21
+Sacrificare
+@701.21a
+Per sacrificare un permanente, il suo controllore lo sposta dal campo di battaglia direttamente al cimitero del suo proprietario. Un giocatore non può sacrificare qualcosa che non è un permanente, né un permanente che non controlla. Sacrificare un permanente non lo distrugge, quindi la rigenerazione o altri effetti che sostituiscono la distruzione non possono influire su questa azione.
+@701.22
+Profetizzare
+@701.22a
+«Profetizza N» significa guardare le prime N carte del tuo grimorio, poi metterne un qualsiasi numero in fondo al tuo grimorio in qualsiasi ordine e le altre in cima al tuo grimorio in qualsiasi ordine.
+@701.22b
+Se a un giocatore viene detto di profetizzare 0, non avviene alcun evento di profetizzare. Le abilità che si innescano ogni volta che un giocatore profetizza non si innescano.
+@701.22c
+Se più giocatori profetizzano contemporaneamente, ciascuno di quei giocatori guarda nello stesso momento le prime carte del proprio grimorio. Quei giocatori decidono nell'ordine APNAP (vedi regola 101.4) dove mettere quelle carte, poi quelle carte si spostano nello stesso momento.
+@701.22d
+Un'abilità che si innesca ogni volta che un giocatore profetizza si innesca dopo che il procedimento descritto nella regola 701.22a è completato, anche se alcune o tutte quelle azioni erano impossibili.
+@701.23
+Passare in rassegna
+@701.23a
+Passare in rassegna una zona per una carta significa guardare tutte le carte in quella zona (anche se è una zona nascosta) e trovare una carta che corrisponde alla descrizione data.
+@701.23b
+Se un giocatore sta passando in rassegna una zona nascosta per carte con una determinata qualità, come una carta di un certo tipo o colore, quel giocatore non è obbligato a trovare alcune o tutte quelle carte anche se sono presenti in quella zona.
+Esempio: Splinter dice «Esilia un artefatto bersaglio. Passa in rassegna il cimitero, la mano e il grimorio del suo controllore per tutte le carte con lo stesso nome di quell'artefatto ed esiliale. Poi quel giocatore rimescola il suo grimorio». Un giocatore lancia Splinter prendendo come bersaglio Howling Mine (un artefatto). Il controllore di Howling Mine ha un altro Howling Mine nel suo cimitero e altri due nel suo grimorio. Il controllore di Splinter deve trovare lo Howling Mine nel cimitero, ma può scegliere di trovare zero, uno o due degli Howling Mine nel grimorio.
+@701.23c
+Se a un giocatore viene detto di passare in rassegna una zona nascosta per carte che corrispondono a una qualità non definita, quel giocatore può comunque passare in rassegna quella zona ma non può trovare alcuna carta.
+Esempio: Lobotomy dice «Un giocatore bersaglio rivela la sua mano, poi tu scegli da essa una carta diversa da una carta terra base. Passa in rassegna il cimitero, la mano e il grimorio di quel giocatore per tutte le carte con lo stesso nome della carta scelta ed esiliale. Poi quel giocatore rimescola il suo grimorio». Se il giocatore bersaglio non ha carte in mano quando Lobotomy si risolve, il giocatore che ha lanciato Lobotomy passa in rassegna le zone indicate ma non esilia alcuna carta.
+@701.23d
+Se un giocatore sta passando in rassegna una zona nascosta semplicemente per un certo numero di carte, come «una carta» o «tre carte», quel giocatore deve trovare quel numero di carte (o quante più possibile, se la zona non contiene abbastanza carte).
+@701.23e
+Se l'effetto che contiene l'istruzione di passare in rassegna non contiene anche istruzioni per rivelare la carta o le carte trovate, queste non vengono rivelate.
+@701.23f
+Se passare in rassegna una zona viene sostituito con il passare in rassegna una parte di quella zona, le altre istruzioni che fanno riferimento al passare in rassegna la zona si applicano comunque. Le abilità che si innescano quando un grimorio viene passato in rassegna si innescano.
+Esempio: Aven Mindcensor dice, tra l'altro, «Se un avversario sta per passare in rassegna un grimorio, quel giocatore passa invece in rassegna le prime quattro carte di quel grimorio». Veteran Explorer dice «Quando questa creatura muore, ogni giocatore può passare in rassegna il proprio grimorio per fino a due carte terra base, metterle sul campo di battaglia, poi rimescolare». Un avversario che ha passato in rassegna le prime quattro carte del proprio grimorio a causa dell'abilità di Veteran Explorer rimescolerebbe l'intero grimorio.
+@701.23g
+Se un effetto offre a un giocatore la scelta di passare in rassegna una zona e di compiere azioni aggiuntive con le carte trovate, quel giocatore può scegliere di passarla in rassegna anche se le azioni aggiuntive sono illegali o impossibili.
+@701.23h
+Un effetto può istruire un giocatore a passare in rassegna un grimorio per una o più carte più di una volta prima di istruire un giocatore a rimescolare quel grimorio. Questo equivale a un'unica istruzione per quel giocatore di passare in rassegna quel grimorio per tutte quelle carte. Il giocatore passa in rassegna quel grimorio una sola volta.
+@701.23i
+Se più giocatori passano in rassegna contemporaneamente, ciascuno di quei giocatori guarda le carte appropriate nello stesso momento, poi quei giocatori decidono nell'ordine APNAP (vedi regola 101.4) quale carta trovare.
+@701.23j
+Se un effetto istruisce un giocatore a cercare una carta fuori dalla partita, quel giocatore può scegliere una carta appropriata che possiede tra quelle fuori dalla partita.
+@701.24
+Mescolare
+@701.24a
+Mescolare un grimorio o una pila di carte a faccia in giù significa rendere casuale l'ordine delle carte al suo interno in modo che nessun giocatore lo conosca.
+@701.24b
+Alcuni effetti fanno passare in rassegna a un giocatore un grimorio per una o più carte, rimescolare quel grimorio, poi mettere alcune o tutte le carte trovate in una zona diversa o in una certa posizione di quel grimorio. In questi casi, le carte trovate non sono incluse nel mescolamento, anche se in quel momento restano nel grimorio. Vengono invece mescolate tutte le carte di quel grimorio tranne quelle. Le abilità che si innescano quando un grimorio viene mescolato si innescano comunque. Vedi anche la regola 401, «Grimorio».
+@701.24c
+Se un effetto facesse rimescolare a un giocatore uno o più oggetti specifici in un grimorio, quel grimorio viene mescolato anche se nessuno di quegli oggetti si trova nella zona in cui dovrebbe essere o se un effetto fa spostare tutti quegli oggetti in un'altra zona o li fa restare nella loro zona attuale.
+Esempio: Guile dice, tra l'altro, «Quando Guile viene messo in un cimitero da qualsiasi luogo, rimescolalo nel grimorio del suo proprietario». Viene messo in un cimitero e la sua abilità si innesca, poi un giocatore lo esilia da quel cimitero in risposta. Quando l'abilità si risolve, il grimorio viene mescolato.
+Esempio: Black Sun's Zenith dice, tra l'altro, «Rimescola Black Sun's Zenith nel grimorio del suo proprietario». Black Sun's Zenith è in un cimitero, ha ottenuto flashback (magari grazie a Recoup) e viene lanciato da quel cimitero. Black Sun's Zenith verrà esiliato, e il grimorio del suo proprietario verrà mescolato.
+@701.24d
+Se un effetto facesse rimescolare a un giocatore un insieme di oggetti in un grimorio, quel grimorio viene mescolato anche se in quell'insieme non ci sono oggetti.
+Esempio: Loaming Shaman dice «Quando questa creatura entra, un giocatore bersaglio rimescola nel proprio grimorio un qualsiasi numero di carte bersaglio dal proprio cimitero». Entra nel campo di battaglia, la sua abilità si innesca e non viene bersagliata alcuna carta. Quando l'abilità si risolve, il giocatore bersaglio dovrà comunque mescolare il suo grimorio.
+@701.24e
+Se un effetto fa mescolare a un giocatore un grimorio che contiene zero o una carta, le abilità che si innescano quando un grimorio viene mescolato si innescano comunque.
+@701.24f
+Se due o più effetti fanno mescolare un grimorio più volte simultaneamente, le abilità che si innescano quando quel grimorio viene mescolato si innescano altrettante volte.
+@701.24g
+Se un effetto facesse mescolare a un giocatore un grimorio nello stesso momento in cui un oggetto verrebbe messo in una certa posizione di quel grimorio, il risultato è un grimorio mescolato in ordine casuale tranne che per l'oggetto, che si trova nella posizione indicata.
+Esempio: Darksteel Colossus e Gravebane Zombie vengono messi nel cimitero di un giocatore dal campo di battaglia nello stesso momento. Darksteel Colossus dice, tra l'altro, «Se Darksteel Colossus sta per essere messo in un cimitero da qualsiasi luogo, rivela invece Darksteel Colossus e rimescolalo nel grimorio del suo proprietario». Gravebane Zombie dice «Se questa creatura sta per morire, mettila invece in cima al grimorio del suo proprietario». Il giocatore rimescola Darksteel Colossus nel suo grimorio e mette Gravebane Zombie in cima a quel grimorio.
+@701.25
+Sorvegliare
+@701.25a
+«Sorveglia N» significa guardare le prime N carte del tuo grimorio, poi metterne un qualsiasi numero nel tuo cimitero e le altre in cima al tuo grimorio in qualsiasi ordine.
+@701.25b
+Se un effetto ti permette di guardare carte aggiuntive mentre sorvegli, quelle carte sono incluse tra quelle che puoi mettere nel tuo cimitero e in cima al tuo grimorio in qualsiasi ordine.
+@701.25c
+Se a un giocatore viene detto di sorvegliare 0, non avviene alcun evento di sorvegliare. Le abilità che si innescano ogni volta che un giocatore sorveglia non si innescano.
+@701.25d
+Un'abilità che si innesca ogni volta che un giocatore sorveglia si innesca dopo che il procedimento descritto nella regola 701.25a è completato, anche se alcune o tutte quelle azioni erano impossibili.
+@701.26
+TAPpare e STAPpare
+@701.26a
+TAPpare un permanente significa ruotarlo di lato dalla posizione verticale. Solo i permanenti STAPpati possono essere TAPpati.
+@701.26b
+STAPpare un permanente significa riportarlo in posizione verticale dalla posizione di lato. Solo i permanenti TAPpati possono essere STAPpati.
+@701.27
+Trasformare
+@701.27a
+Trasformare un permanente significa girarlo in modo che sia rivolta in su l'altra faccia. Solo i permanenti rappresentati da pedine bifronte e carte bifronte possono trasformarsi. (Vedi regola 712, «Carte bifronte».)
+@701.27b
+Anche se trasformare un permanente usa la stessa azione fisica del girare un permanente a faccia in su o a faccia in giù, sono azioni di gioco diverse. Le abilità che si innescano quando un permanente viene girato a faccia in giù non si innescano quando quel permanente si trasforma, e così via.
+@701.27c
+Se una magia o abilità istruisce un giocatore a trasformare un permanente che non è rappresentato da una pedina bifronte o da una carta bifronte, non succede nulla.
+@701.27d
+Se una magia o abilità istruisce un giocatore a trasformare un permanente, e la faccia in cui quel permanente si trasformerebbe è una faccia istantaneo o stregoneria, non succede nulla.
+@701.27e
+Alcune abilità innescate si innescano quando un oggetto «si trasforma in» un oggetto con una caratteristica specificata. Un'abilità del genere si innesca se l'oggetto si trasforma o si converte (vedi regola 701.28) e ha la caratteristica specificata immediatamente dopo averlo fatto.
+@701.27f
+Se un'abilità attivata o innescata di un permanente che non è un'abilità innescata ritardata di quel permanente cerca di trasformarlo, il permanente si trasforma solo se non si è trasformato né convertito da quando l'abilità è stata messa in pila. Se un'abilità innescata ritardata di un permanente cerca di trasformare quel permanente, il permanente si trasforma solo se non si è trasformato né convertito da quando quell'abilità innescata ritardata è stata creata. In entrambi i casi, se il permanente si è già trasformato o convertito, l'istruzione di fare l'una o l'altra cosa viene ignorata.
+@701.27g
+Alcune magie e abilità fanno riferimento a un «permanente trasformato». Questa espressione si riferisce a un permanente bifronte sul campo di battaglia con la faccia posteriore rivolta in su. Un permanente con la faccia anteriore rivolta in su non è mai considerato un permanente trasformato, anche se in precedenza aveva la faccia posteriore rivolta in su. Allo stesso modo, un oggetto rappresentato da più di una carta, come un permanente fuso o unito, non è mai considerato un permanente trasformato, anche se ha componenti con la faccia posteriore rivolta in su. Vedi regole 701.42, «Fondere», e 730, «Unirsi ai permanenti».
+@701.28
+Convertire
+@701.28a
+Convertire un permanente significa girarlo in modo che sia rivolta in su l'altra faccia. Questo segue le regole 701.27a–f, 712.9–10 e 712.18. Quelle regole si applicano alla conversione di un permanente esattamente come si applicano alla trasformazione di un permanente.
+@701.28b
+Anche se convertire un permanente usa la stessa azione fisica del girare un permanente a faccia in su o a faccia in giù, sono azioni di gioco diverse. Le abilità che si innescano quando un permanente viene girato a faccia in giù non si innescano quando quel permanente si converte, e così via.
+@701.28c
+Se una magia o abilità istruisce un giocatore a convertire un permanente che non è rappresentato da una pedina bifronte o da una carta bifronte, non succede nulla.
+@701.28d
+Se una magia o abilità istruisce un giocatore a convertire un permanente, e la faccia in cui quel permanente si convertirebbe è una faccia istantaneo o stregoneria, non succede nulla.
+@701.28e
+Se un'abilità attivata o innescata di un permanente che non è un'abilità innescata ritardata di quel permanente cerca di convertirlo, il permanente si converte solo se non si è convertito né trasformato da quando l'abilità è stata messa in pila. Se un'abilità innescata ritardata di un permanente cerca di convertire quel permanente, il permanente si converte solo se non si è convertito né trasformato da quando quell'abilità innescata ritardata è stata creata. In entrambi i casi, se il permanente si è già trasformato o convertito, l'istruzione di fare l'una o l'altra cosa viene ignorata.
+@701.28f
+Se una magia o abilità stabilisce che un permanente non può trasformarsi, quel permanente non può nemmeno convertirsi.
+@701.29
+Sigillare il fato (Fateseal)
+@701.29a
+«Sigilla il fato N» significa guardare le prime N carte del grimorio di un avversario, poi metterne un qualsiasi numero in fondo a quel grimorio in qualsiasi ordine e le altre in cima a quel grimorio in qualsiasi ordine.
+@701.30
+Scontro (Clash)
+@701.30a
+Per fare uno scontro, un giocatore rivela la prima carta del suo grimorio. Quel giocatore può poi mettere quella carta in fondo al suo grimorio.
+@701.30b
+«Fai uno scontro con un avversario» significa «Scegli un avversario. Tu e quell'avversario fate ciascuno uno scontro».
+@701.30c
+Ogni giocatore coinvolto nello scontro rivela nello stesso momento la prima carta del proprio grimorio. Poi quei giocatori decidono nell'ordine APNAP (vedi regola 101.4) dove mettere quelle carte, poi quelle carte si spostano nello stesso momento.
+@701.30d
+Un giocatore vince uno scontro se ha rivelato una carta con un valore di mana più alto di tutte le altre carte rivelate in quello scontro.
+@701.31
+Viaggiare tra i piani (Planeswalk)
+@701.31a
+Un giocatore può viaggiare tra i piani solo durante una partita Planechase. Solo il controllore planare può viaggiare tra i piani. Vedi regola 901, «Planechase».
+@701.31b
+Viaggiare tra i piani significa mettere ogni carta piano e carta fenomeno a faccia in su in fondo al mazzo planare del suo proprietario a faccia in giù, poi togliere la prima carta del tuo mazzo planare e girarla a faccia in su.
+@701.31c
+Un giocatore può viaggiare tra i piani come risultato della «abilità di viaggio tra i piani» (vedi regola 901.8), perché il proprietario di una carta piano o fenomeno a faccia in su lascia la partita (vedi regola 901.10), o perché l'abilità innescata di un fenomeno lascia la pila (vedi regola 704.6f). Anche delle abilità possono istruire un giocatore a viaggiare tra i piani.
+@701.31d
+La carta piano che viene girata a faccia in su è il piano verso cui il giocatore viaggia. La carta piano che viene girata a faccia in giù o che lascia la partita è il piano da cui il giocatore viaggia via. Lo stesso vale per i fenomeni.
+@701.32
+Mettere in moto
+@701.32a
+Solo una carta piano malvagio può essere messa in moto, e solo durante una partita Archenemy. Solo l'archenemy può mettere in moto una carta piano malvagio. Vedi regola 314, «Piani malvagi», e regola 904, «Archenemy».
+@701.32b
+Per mettere in moto un piano malvagio, toglilo dalla cima del tuo mazzo dei piani malvagi se si trova in cima al tuo mazzo dei piani malvagi e giralo a faccia in su se non è a faccia in su. Quel piano malvagio è considerato messo in moto anche se nessuna di queste azioni è stata compiuta su di esso.
+@701.32c
+I piani malvagi possono essere messi in moto solo uno alla volta. Se a un giocatore viene detto di mettere in moto più piani malvagi, quel giocatore mette in moto un piano malvagio quel numero di volte.
+@701.33
+Abbandonare
+@701.33a
+Solo una carta piano malvagio continuo a faccia in su può essere abbandonata, e solo durante una partita Archenemy. Vedi regola 314, «Piani malvagi», e regola 904, «Archenemy».
+@701.33b
+Per abbandonare un piano malvagio, giralo a faccia in giù e mettilo in fondo al mazzo dei piani malvagi del suo proprietario.
+@701.34
+Proliferare
+@701.34a
+Proliferare significa scegliere un qualsiasi numero di permanenti e/o giocatori che hanno un segnalino, poi dare a ciascuno un segnalino aggiuntivo di ciascun tipo che quel permanente o giocatore ha già.
+@701.34b
+In una partita Gigante a Due Teste, i segnalini veleno sono condivisi dalla squadra. Se viene scelto in questo modo più di un giocatore di una squadra, solo a uno di quei giocatori può essere dato un segnalino veleno aggiuntivo. Il giocatore che prolifera sceglie quale. Vedi regola 810, «Variante Gigante a Due Teste».
+@701.35
+Trattenere (Detain)
+@701.35a
+Alcune magie e abilità possono trattenere un permanente. Fino al prossimo turno del controllore di quella magia o abilità, quel permanente non può attaccare né bloccare e le sue abilità attivate non possono essere attivate.
+@701.36
+Popolare
+@701.36a
+Popolare significa scegliere una pedina creatura che controlli e creare una pedina che è una copia di quella pedina creatura.
+@701.36b
+Se non controlli pedine creatura quando ti viene detto di popolare, non crei alcuna pedina.
+@701.37
+Mostruosità
+@701.37a
+«Mostruosità N» significa «Se questo permanente non è mostruoso, metti N segnalini +1/+1 su di esso e diventa mostruoso».
+@701.37b
+Mostruoso è una designazione che non ha alcun significato nelle regole se non quello di fare da indicatore che l'azione mostruosità e altre magie e abilità possono identificare. Solo i permanenti possono essere o diventare mostruosi. Una volta che un permanente diventa mostruoso, resta mostruoso finché non lascia il campo di battaglia. Mostruoso non è un'abilità né fa parte dei valori copiabili del permanente.
+@701.37c
+Se un'abilità di un permanente istruisce un giocatore a fare «mostruosità X», anche altre abilità di quel permanente possono fare riferimento a X. Il valore di X in quelle abilità è uguale al valore di X nel momento in cui quel permanente è diventato mostruoso.
+@701.38
+Votare
+@701.38a
+Alcune magie e abilità istruiscono i giocatori a votare per una scelta tra un elenco di opzioni per determinare qualche aspetto dell'effetto di quella magia o abilità. Per votare, ogni giocatore, partendo da un giocatore indicato e procedendo nell'ordine di turno, sceglie una di quelle opzioni.
+@701.38b
+Le opzioni elencate possono essere oggetti, parole senza significato nelle regole collegate ciascuna a un effetto diverso, o altre variabili rilevanti per la risoluzione della magia o abilità.
+@701.38c
+Se il testo di una magia o abilità fa riferimento al «votare», si riferisce solo a una vera votazione, non a qualsiasi magia o abilità in cui i giocatori fanno scelte o prendono decisioni senza usare la parola «votare».
+@701.38d
+Se un effetto dà a un giocatore più voti, quei voti avvengono tutti nel momento in cui il giocatore avrebbe altrimenti votato.
+@701.39
+Rafforzare (Bolster)
+@701.39a
+«Rafforza N» significa «Scegli una creatura che controlli con la costituzione più bassa, o a pari merito per la costituzione più bassa, tra le creature che controlli. Metti N segnalini +1/+1 su quella creatura».
+@701.40
+Manifestare
+@701.40a
+Manifestare una carta significa girarla a faccia in giù. Diventa una carta creatura a faccia in giù 2/2 senza testo, senza nome, senza sottotipi e senza costo di mana. Metti quella carta sul campo di battaglia a faccia in giù. Quel permanente è un permanente manifestato finché resta a faccia in giù. L'effetto che ne definisce le caratteristiche funziona mentre la carta è a faccia in giù e termina quando viene girata a faccia in su.
+@701.40b
+In qualsiasi momento in cui hai la priorità, puoi girare a faccia in su un permanente manifestato che controlli. Questa è un'azione speciale che non usa la pila (vedi regola 116.2b). Per farlo, mostra a tutti i giocatori che la carta che rappresenta quel permanente è una carta creatura e qual è il costo di mana di quella carta, paga quel costo, poi gira il permanente a faccia in su. L'effetto che ne definiva le caratteristiche mentre era a faccia in giù termina, e riprende le sue normali caratteristiche. (Se la carta che rappresenta quel permanente non è una carta creatura o non ha un costo di mana, non può essere girata a faccia in su in questo modo.)
+@701.40c
+Se viene manifestata una carta con metamorfosi, il suo controllore può girarla a faccia in su usando il procedimento descritto nella regola 702.37e per girare a faccia in su un permanente a faccia in giù con metamorfosi oppure il procedimento descritto sopra per girare a faccia in su un permanente manifestato.
+@701.40d
+Se viene manifestata una carta con travestimento, il suo controllore può girarla a faccia in su usando il procedimento descritto nella regola 702.168d per girare a faccia in su un permanente a faccia in giù con travestimento oppure il procedimento descritto sopra per girare a faccia in su un permanente manifestato.
+@701.40e
+Se un effetto istruisce un giocatore a manifestare più carte dal proprio grimorio, quelle carte vengono manifestate una alla volta.
+@701.40f
+Se un effetto istruisce un giocatore a manifestare una carta e una regola o un effetto impedisce all'oggetto a faccia in giù di entrare nel campo di battaglia, quella carta non viene manifestata. Le sue caratteristiche restano invariate e resta nella sua zona precedente. Se era a faccia in su, resta a faccia in su.
+@701.40g
+Se un permanente manifestato rappresentato da una carta istantaneo o stregoneria dovesse essere girato a faccia in su, il suo controllore lo rivela e lo lascia a faccia in giù. Le abilità che si innescano ogni volta che un permanente viene girato a faccia in su non si innescano.
+@701.40h
+Vedi regola 708, «Magie e permanenti a faccia in giù», per maggiori informazioni.
+@701.41
+Supportare
+@701.41a
+«Supporta N» su un permanente significa «Metti un segnalino +1/+1 su ciascuna di fino a N altre creature bersaglio». «Supporta N» su una magia istantaneo o stregoneria significa «Metti un segnalino +1/+1 su ciascuna di fino a N creature bersaglio».
+@701.42
+Fondere (Meld)
+@701.42a
+Fondere è un'azione chiave che compare in un'abilità di una carta di una coppia da fondere. Per fondere le due carte di una coppia da fondere, mettile sul campo di battaglia con le facce posteriori rivolte in su e combinate. Il permanente risultante è un unico oggetto rappresentato da due carte. Vedi regola 712, «Carte bifronte».
+@701.42b
+Possono essere fuse solo due carte appartenenti alla stessa coppia da fondere. Le pedine, le carte che non sono carte da fondere o le carte da fondere che non formano una coppia da fondere non possono essere fuse.
+@701.42c
+Se un effetto istruisce un giocatore a fondere oggetti che non possono essere fusi, questi restano nella loro zona attuale.
+Esempio: Un giocatore possiede e controlla Midnight Scavengers e una pedina che è una copia di Graf Rats. All'inizio del combattimento, entrambi vengono esiliati ma non possono essere fusi. Midnight Scavengers resta in esilio e la pedina esiliata cessa di esistere.
+@701.43
+Sfiancare (Exert)
+@701.43a
+Sfiancare un permanente significa scegliere che non si STAPpi durante la tua prossima sottofase di STAP.

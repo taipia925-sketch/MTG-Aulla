@@ -1,0 +1,153 @@
+@612.9
+Un adesivo nome su un permanente o su una carta che non è sul campo di battaglia crea un effetto continuo che aggiunge una parola al testo che rappresenta il nome dell'oggetto. (Vedi regola 123.6.)
+@612.10
+Un'abilità innestare cambia il testo di una magia aggiungendo alla magia il testo delle regole della carta con innestare, dopo il testo delle regole della magia stessa. Non modifica né sostituisce alcuna parte del testo proprio di quella magia. (Vedi regola 702.47, «Innestare».)
+@613
+Interazione degli effetti continui
+@613.1
+I valori delle caratteristiche di un oggetto si determinano partendo dall'oggetto vero e proprio. Per una carta, questo significa i valori delle caratteristiche stampati su quella carta. Per una pedina o una copia di una magia o di una carta, significa i valori delle caratteristiche definiti dall'effetto che l'ha creata. Poi tutti gli effetti continui applicabili vengono applicati in una serie di livelli nell'ordine seguente:
+@613.1a
+Livello 1: si applicano le regole e gli effetti che modificano i valori copiabili.
+@613.1b
+Livello 2: si applicano gli effetti che cambiano il controllo.
+@613.1c
+Livello 3: si applicano gli effetti che cambiano il testo. Vedi regola 612, «Effetti che cambiano il testo».
+@613.1d
+Livello 4: si applicano gli effetti che cambiano il tipo. Comprendono gli effetti che cambiano il tipo di carta, il sottotipo e/o il supertipo di un oggetto.
+@613.1e
+Livello 5: si applicano gli effetti che cambiano il colore.
+@613.1f
+Livello 6: si applicano gli effetti che aggiungono abilità, i segnalini parola chiave, gli effetti che rimuovono abilità e gli effetti che dicono che un oggetto non può avere un'abilità.
+@613.1g
+Livello 7: si applicano gli effetti che cambiano forza e/o costituzione.
+@613.2
+All'interno del livello 1, applica gli effetti in una serie di sottolivelli nell'ordine descritto qui sotto. All'interno di ogni sottolivello, applica gli effetti in ordine cronologico (vedi regola 613.7). Nota che la dipendenza può modificare l'ordine in cui gli effetti vengono applicati all'interno di un sottolivello. (Vedi regola 613.8.)
+@613.2a
+Livello 1a: si applicano gli effetti copiabili. Comprendono gli effetti di copia (vedi regola 707, «Copiare oggetti») e le modifiche alle caratteristiche di un oggetto determinate dall'unione di un oggetto con un permanente (vedi regola 730, «Unirsi ai permanenti»). Le abilità «Mentre … entra» e «Mentre … viene girato a faccia in su» generano effetti copiabili se impostano forza e costituzione, anche se definiscono anche altre caratteristiche.
+@613.2b
+Livello 1b: le caratteristiche delle magie e dei permanenti a faccia in giù vengono modificate come definito nella regola 708.2.
+@613.2c
+Dopo che sono state applicate tutte le regole e gli effetti del livello 1, le caratteristiche dell'oggetto sono i suoi valori copiabili. (Vedi regola 707.2.)
+@613.3
+All'interno dei livelli 2–6, applica prima gli effetti delle abilità che definiscono caratteristiche (vedi regola 604.3), poi tutti gli altri effetti in ordine cronologico (vedi regola 613.7). Nota che la dipendenza può modificare l'ordine in cui gli effetti vengono applicati all'interno di un livello. (Vedi regola 613.8.)
+@613.4
+All'interno del livello 7, applica gli effetti in una serie di sottolivelli nell'ordine descritto qui sotto. All'interno di ogni sottolivello, applica gli effetti in ordine cronologico. (Vedi regola 613.7.) Nota che la dipendenza può modificare l'ordine in cui gli effetti vengono applicati all'interno di un sottolivello. (Vedi regola 613.8.)
+@613.4a
+Livello 7a: si applicano gli effetti delle abilità che definiscono caratteristiche e che definiscono forza e/o costituzione. Vedi regola 604.3.
+@613.4b
+Livello 7b: si applicano gli effetti che impostano forza e/o costituzione a un numero o valore specifico. Gli effetti che fanno riferimento alla forza e/o costituzione base di una creatura si applicano in questo livello.
+@613.4c
+Livello 7c: si applicano gli effetti e i segnalini che modificano forza e/o costituzione (ma non le impostano a un numero o valore specifico).
+@613.4d
+Livello 7d: si applicano gli effetti che scambiano forza e costituzione di una creatura. Questi effetti prendono il valore della forza e lo applicano alla costituzione della creatura, e prendono il valore della costituzione e lo applicano alla sua forza.
+Esempio: Una creatura 1/3 riceve +0/+1 da un effetto. Poi un altro effetto scambia forza e costituzione della creatura. La sua nuova forza e costituzione è 4/1. Un nuovo effetto dà alla creatura +5/+0. La sua forza e costituzione «non scambiate» sarebbero 6/4, quindi la sua forza e costituzione effettive sono 4/6.
+Esempio: Una creatura 1/3 riceve +0/+1 da un effetto. Poi un altro effetto scambia forza e costituzione della creatura. La sua nuova forza e costituzione è 4/1. Se l'effetto +0/+1 termina prima dell'effetto di scambio, la creatura diventa 3/1.
+Esempio: Una creatura 1/3 riceve +0/+1 da un effetto. Poi un altro effetto scambia forza e costituzione della creatura. Poi un altro effetto le scambia di nuovo. I due scambi si annullano a vicenda e la creatura diventa 1/4.
+@613.5
+L'applicazione degli effetti continui secondo il sistema dei livelli viene eseguita dalla partita continuamente e automaticamente. Tutti i cambiamenti risultanti alle caratteristiche di un oggetto sono istantanei.
+Esempio: Honor of the Pure è un incantesimo che dice «Le creature bianche che controlli prendono +1/+1». Honor of the Pure e una creatura nera 2/2 sono sul campo di battaglia sotto il tuo controllo. Se poi un effetto rende bianca la creatura (livello 5), riceve +1/+1 da Honor of the Pure (livello 7c), diventando 3/3. Se in seguito il colore della creatura diventa rosso (livello 5), l'effetto di Honor of the Pure smette di applicarsi a essa, e torna a essere 2/2.
+Esempio: Gray Ogre, una creatura 2/2, è sul campo di battaglia. Un effetto mette su di essa un segnalino +1/+1 (livello 7c), rendendola 3/3. Si risolve una magia che la bersaglia e dice «Una creatura bersaglio prende +4/+4 fino alla fine del turno» (livello 7c), rendendola 7/7. Entra nel campo di battaglia un incantesimo che dice «Le creature che controlli prendono +0/+2» (livello 7c), rendendola 7/9. Le viene applicato un effetto che dice «Una creatura bersaglio diventa 0/1 fino alla fine del turno» (livello 7b), rendendola 5/8 (0/1, con +4/+4 dalla magia risolta, +0/+2 dall'incantesimo e +1/+1 dal segnalino).
+@613.6
+Se un effetto deve essere applicato in livelli e/o sottolivelli diversi, ogni parte dell'effetto si applica in quello appropriato. Se un effetto inizia ad applicarsi in un livello e/o sottolivello, continuerà ad applicarsi allo stesso insieme di oggetti in ogni altro livello e/o sottolivello applicabile, anche se l'abilità che genera l'effetto viene rimossa durante questo procedimento.
+Esempio: Un effetto che dice «Questa creatura prende +1/+1 e diventa del colore a tua scelta fino alla fine del turno» è sia un effetto che cambia forza e costituzione sia un effetto che cambia il colore. La parte «diventa del colore a tua scelta» si applica nel livello 5, poi la parte «prende +1/+1» si applica nel livello 7c.
+Esempio: Act of Treason ha un effetto che dice «Ottieni il controllo di una creatura bersaglio fino alla fine del turno. STAPpa quella creatura. Ha rapidità fino alla fine del turno». Questo è sia un effetto che cambia il controllo sia un effetto che aggiunge un'abilità a un oggetto. La parte «ottieni il controllo» si applica nel livello 2, poi la parte «ha rapidità» si applica nel livello 6.
+Esempio: Un effetto che dice «Tutti gli artefatti non creatura diventano creature artefatto 2/2 fino alla fine del turno» è sia un effetto che cambia il tipo sia un effetto che imposta forza e costituzione. L'effetto che cambia il tipo si applica a tutti gli artefatti non creatura nel livello 4, e l'effetto che imposta forza e costituzione si applica agli stessi permanenti nel livello 7b, anche se a quel punto quei permanenti non sono più artefatti non creatura.
+Esempio: Svogthos, the Restless Tomb è sul campo di battaglia. Gli viene applicato un effetto che dice «Fino alla fine del turno, una terra bersaglio diventa una creatura 3/3 che è ancora una terra» (livelli 4 e 7b). Gli viene applicato un effetto che dice «Una creatura bersaglio prende +1/+1 fino alla fine del turno» (livello 7c), rendendolo una terra creatura 4/4. Poi, mentre hai dieci carte creatura nel cimitero, attivi l'abilità di Svogthos: «Fino alla fine del turno, questa terra diventa una creatura Pianta Zombie nera e verde con "La forza e la costituzione di questa creatura sono ciascuna pari al numero di carte creatura nel tuo cimitero". È ancora una terra» (livelli 4, 5 e 7b). Diventa una terra creatura 11/11. Se una carta creatura entra nel tuo cimitero o lo lascia, la forza e la costituzione di Svogthos verranno modificate di conseguenza. Se gli viene applicato di nuovo il primo effetto, tornerà a essere una terra creatura 4/4.
+@613.7
+All'interno di un livello o sottolivello, l'ordine in cui si applicano gli effetti si determina di solito con un sistema di ordine cronologico. Un effetto con un ordine cronologico precedente viene applicato prima di un effetto con un ordine cronologico successivo.
+@613.7a
+Un effetto continuo generato da un'abilità statica ha lo stesso ordine cronologico dell'oggetto su cui si trova l'abilità statica, oppure quello dell'effetto che ha creato l'abilità, a seconda di quale sia successivo. Se l'effetto che ha creato l'abilità ha l'ordine cronologico successivo e l'oggetto su cui si trova l'abilità riceve un nuovo ordine cronologico, anche ogni effetto continuo generato dalle abilità statiche di quell'oggetto riceve un nuovo ordine cronologico, ma l'ordine relativo tra loro resta lo stesso.
+Esempio: Rune of Flight è un'Aura che conferisce all'Equipaggiamento incantato «La creatura equipaggiata ha volare». Un giocatore assegna Rune of Flight a Colossus Hammer, un Equipaggiamento con «La creatura equipaggiata prende +10/+10 e perde volare». L'abilità conferita da Rune of Flight condivide l'ordine cronologico di Rune of Flight perché è successivo a quello di Colossus Hammer. Se Colossus Hammer viene assegnato a una creatura, entrambe le sue abilità ricevono un nuovo ordine cronologico (vedi regola 613.7e), ma l'ordine relativo tra loro resta lo stesso.
+@613.7b
+Un effetto continuo generato dalla risoluzione di una magia o abilità riceve un ordine cronologico nel momento in cui viene creato.
+@613.7c
+Ogni segnalino riceve un ordine cronologico quando viene messo su un oggetto o su un giocatore. Se quell'oggetto o giocatore ha già un segnalino di quel tipo, ogni segnalino di quel tipo riceve un nuovo ordine cronologico identico a quello del nuovo segnalino.
+@613.7d
+Un oggetto riceve un ordine cronologico nel momento in cui entra in una zona.
+@613.7e
+Un'Aura, un Equipaggiamento o una Fortificazione riceve un nuovo ordine cronologico ogni volta che viene assegnato a un oggetto o a un giocatore.
+@613.7f
+Un permanente riceve un nuovo ordine cronologico ogni volta che viene girato a faccia in su o a faccia in giù.
+@613.7g
+Un permanente bifronte riceve un nuovo ordine cronologico ogni volta che si trasforma o si converte.
+@613.7h
+Una carta piano, fenomeno o piano malvagio a faccia in su riceve un ordine cronologico nel momento in cui viene girata a faccia in su.
+@613.7i
+Una carta vanguard a faccia in su riceve un ordine cronologico all'inizio della partita.
+@613.7j
+Una carta cospirazione riceve un ordine cronologico all'inizio della partita. Se è a faccia in giù, riceve un nuovo ordine cronologico nel momento in cui viene girata a faccia in su.
+@613.7k
+Un adesivo riceve un nuovo ordine cronologico ogni volta che viene messo su un oggetto. Se l'oggetto su cui si trova un adesivo riceve un nuovo ordine cronologico, l'adesivo riceve un nuovo ordine cronologico subito dopo. Se l'oggetto su cui si trova un adesivo diventa parte di un permanente unito sul campo di battaglia, l'adesivo riceve in quel momento un nuovo ordine cronologico. Se un oggetto ha più adesivi quando entra in una zona o diventa parte di un permanente unito, l'ordine cronologico relativo di quegli adesivi resta invariato.
+@613.7m
+Se due o più oggetti dovessero ricevere un ordine cronologico simultaneamente, per esempio entrando in una zona simultaneamente o venendo assegnati simultaneamente, il loro ordine cronologico relativo viene determinato nell'ordine APNAP (vedi regola 101.4). Gli oggetti controllati dal giocatore attivo (o posseduti dal giocatore attivo, se non hanno un controllore) hanno un ordine cronologico relativo precedente, nell'ordine scelto da quel giocatore, seguiti da quelli di ogni altro giocatore nell'ordine di turno.
+@613.7n
+Se un effetto continuo generato da un'abilità statica di un oggetto e un effetto continuo generato da una magia o abilità che si risolve e si applica a quell'oggetto dovessero ricevere un ordine cronologico simultaneamente, per esempio a causa di un effetto che mette quell'oggetto sul campo di battaglia e ne imposta le caratteristiche (vedi regola 611.2e), l'effetto continuo dell'abilità statica dell'oggetto stesso riceve un ordine cronologico relativo precedente.
+@613.8
+All'interno di un livello o sottolivello, l'ordine in cui si applicano gli effetti a volte si determina con un sistema di dipendenze. Se esiste una dipendenza, prevale sul sistema dell'ordine cronologico.
+@613.8a
+Si dice che un effetto «dipende» da un altro se (a) si applica nello stesso livello (e, se applicabile, nello stesso sottolivello) dell'altro effetto; (b) applicare l'altro cambierebbe il testo o l'esistenza del primo effetto, ciò a cui si applica o ciò che fa a una qualsiasi delle cose a cui si applica; e (c) nessuno dei due effetti proviene da un'abilità che definisce caratteristiche, oppure entrambi provengono da abilità che definiscono caratteristiche. Altrimenti, l'effetto è considerato indipendente dall'altro.
+@613.8b
+Un effetto che dipende da uno o più altri effetti attende di applicarsi fino a subito dopo che tutti quegli effetti sono stati applicati. Se più effetti dipendenti dovessero applicarsi simultaneamente in questo modo, si applicano tra loro in ordine cronologico. Se diversi effetti dipendenti formano un ciclo di dipendenza, questa regola viene ignorata e gli effetti del ciclo di dipendenza si applicano in ordine cronologico.
+@613.8c
+Dopo l'applicazione di ogni effetto, l'ordine degli effetti rimanenti viene rivalutato e può cambiare se un effetto non ancora applicato diventa dipendente o indipendente da uno o più altri effetti non ancora applicati.
+@613.9
+Un effetto continuo può prevalere su un altro. A volte i risultati di un effetto determinano se un altro effetto si applica o cosa fa un altro effetto.
+Esempio: Due effetti interessano la stessa creatura: uno di un'Aura che dice «La creatura incantata ha volare» e uno di un'Aura che dice «La creatura incantata perde volare». Nessuno dei due dipende dall'altro, poiché nulla cambia ciò su cui hanno effetto o ciò che vi fanno. Applicarli in ordine cronologico significa che «vince» quello generato per ultimo. Si seguirebbe lo stesso procedimento, con lo stesso risultato, se uno dei due effetti avesse una durata (come «Una creatura bersaglio perde volare fino alla fine del turno») o provenisse da una fonte diversa da un'Aura (come «Tutte le creature perdono volare»).
+Esempio: Un effetto dice «Le creature bianche prendono +1/+1», e un altro dice «La creatura incantata è bianca». La creatura incantata prende +1/+1 dal primo effetto, indipendentemente dal suo colore precedente.
+@613.10
+Alcuni effetti continui interessano i giocatori invece degli oggetti. Per esempio, un effetto potrebbe dare a un giocatore protezione dal rosso. Tutti questi effetti si applicano in ordine cronologico dopo la determinazione delle caratteristiche degli oggetti. Vedi anche le regole sull'ordine cronologico e sulla dipendenza (regole 613.7 e 613.8).
+@613.11
+Alcuni effetti continui interessano le regole del gioco invece degli oggetti. Per esempio, gli effetti possono modificare la dimensione massima della mano di un giocatore, o dire che una creatura deve attaccare in questo turno se possibile. Questi effetti si applicano dopo che sono stati applicati tutti gli altri effetti continui. Gli effetti continui che influiscono sui costi di magie o abilità si applicano secondo l'ordine indicato nella regola 601.2f. Tutti gli altri effetti di questo tipo si applicano in ordine cronologico. Vedi anche le regole sull'ordine cronologico e sulla dipendenza (regole 613.7 e 613.8).
+@614
+Effetti di sostituzione
+@614.1
+Alcuni effetti continui sono effetti di sostituzione. Come gli effetti di prevenzione (vedi regola 615), gli effetti di sostituzione si applicano continuamente mentre gli eventi avvengono: non vengono bloccati in anticipo. Questi effetti attendono un determinato evento che sta per avvenire e sostituiscono completamente o in parte quell'evento con un evento diverso. Agiscono come «scudi» attorno a ciò su cui hanno effetto.
+@614.1a
+Gli effetti che usano la parola «invece» sono effetti di sostituzione. La maggior parte degli effetti di sostituzione usa la parola «invece» per indicare quali eventi verranno sostituiti con altri eventi.
+@614.1b
+Gli effetti che usano il verbo «saltare» sono effetti di sostituzione. Questi effetti di sostituzione usano il verbo «saltare» per indicare quali eventi, sottofasi, fasi o turni verranno sostituiti con nulla.
+@614.1c
+Gli effetti che dicono «[Questo permanente] entra con…», «Mentre [questo permanente] entra…» o «[Questo permanente] entra come…» sono effetti di sostituzione.
+@614.1d
+Gli effetti continui che dicono «[Questo permanente] entra…» o «[Oggetti] entrano [nel campo di battaglia]…» sono effetti di sostituzione.
+@614.1e
+Gli effetti che dicono «Mentre [questo permanente] viene girato a faccia in su…» sono effetti di sostituzione.
+@614.2
+Alcuni effetti di sostituzione si applicano al danno di una fonte. Vedi regola 609.7.
+@614.3
+Non ci sono restrizioni speciali per lanciare una magia o attivare un'abilità che genera un effetto di sostituzione. Questi effetti durano finché non vengono consumati o finché la loro durata non è scaduta.
+@614.4
+Gli effetti di sostituzione devono esistere prima che l'evento appropriato avvenga: non possono «tornare indietro nel tempo» e cambiare qualcosa che è già successo. Le magie o abilità che generano questi effetti vengono spesso lanciate o attivate in risposta a ciò che produrrebbe l'evento, e quindi si risolvono prima che quell'evento avvenga.
+Esempio: Un giocatore può attivare un'abilità per rigenerare una creatura in risposta a una magia che la distruggerebbe. Una volta che la magia si è risolta, però, è troppo tardi per rigenerare la creatura.
+@614.5
+Un effetto di sostituzione non si richiama ripetutamente; ha una sola occasione per influire su un evento o sugli eventi modificati che possono sostituire quell'evento.
+Esempio: Un giocatore controlla due permanenti, ognuno con un'abilità che dice «Se una creatura che controlli sta per infliggere danno a un permanente o a un giocatore, infligge invece il doppio di quel danno a quel permanente o giocatore». Una creatura che normalmente infligge 2 danni ne infliggerà 8: non solo 4, e non una quantità infinita.
+@614.6
+Se un evento viene sostituito, non avviene mai. Avviene invece un evento modificato, che a sua volta può far innescare abilità. Nota che l'evento modificato può contenere istruzioni che non possono essere eseguite; in quel caso l'istruzione impossibile viene semplicemente ignorata.
+@614.7
+Se un effetto di sostituzione sostituirebbe un evento, ma quell'evento non avviene mai, l'effetto di sostituzione semplicemente non fa nulla.
+@614.7a
+Se una fonte dovesse infliggere 0 danni, non infligge affatto danno. Gli effetti di sostituzione che aumenterebbero il danno inflitto da quella fonte, o che farebbero infliggere quel danno a un oggetto o giocatore diverso, non hanno alcun evento da sostituire, quindi non hanno effetto.
+@614.8
+La rigenerazione è un effetto di sostituzione della distruzione. La parola «invece» non compare sulla carta ma è implicita nella definizione di rigenerazione. «Rigenera [permanente]» significa «La prossima volta che [permanente] sta per essere distrutto in questo turno, rimuovi invece tutto il danno segnato su di esso e il suo controllore lo TAPpa. Se è una creatura attaccante o bloccante, rimuovila dal combattimento». Le abilità che si innescano quando viene inflitto danno si innescano comunque anche se il permanente si rigenera. Vedi regola 701.19.
+@614.9
+Alcuni effetti sostituiscono il danno inflitto a una battaglia, creatura, planeswalker o giocatore con lo stesso danno inflitto a un'altra battaglia, creatura, planeswalker o giocatore; questi effetti sono detti effetti di reindirizzamento. Se uno di quei permanenti non è più sul campo di battaglia quando il danno verrebbe reindirizzato, o non è più una battaglia, una creatura o un planeswalker quando il danno verrebbe reindirizzato, l'effetto non fa nulla. Se il danno verrebbe reindirizzato verso o da un giocatore che ha lasciato la partita, l'effetto non fa nulla.
+@614.10
+Un effetto che fa saltare a un giocatore un evento, una sottofase, una fase o un turno è un effetto di sostituzione. «Salta [qualcosa]» equivale a «Invece di fare [qualcosa], non fare nulla». Una volta iniziati una sottofase, una fase o un turno, non possono più essere saltati: gli effetti di salto attendono l'occorrenza successiva.
+@614.10a
+Tutto ciò che era previsto per una sottofase, una fase o un turno saltati non avviene. Tutto ciò che era previsto per la «prossima» occorrenza di qualcosa attende la prima occorrenza che non viene saltata. Se due effetti fanno saltare ciascuno a un giocatore la sua prossima occorrenza, quel giocatore deve saltare le prossime due; un effetto sarà soddisfatto saltando la prima occorrenza, mentre l'altro resterà finché non si potrà saltare un'altra occorrenza.
+@614.10b
+Alcuni effetti fanno saltare a un giocatore una sottofase, una fase o un turno e poi gli fanno compiere un'altra azione. Quell'azione è considerata la prima cosa che avviene durante la prossima sottofase, fase o turno che si svolge effettivamente.
+@614.11
+Alcuni effetti sostituiscono le pescate. Questi effetti si applicano anche se non si potrebbe pescare alcuna carta perché nel grimorio del giocatore interessato non ci sono carte.
+@614.11a
+Se un effetto sostituisce una pescata all'interno di una sequenza di pescate, tutte le azioni richieste dalla sostituzione vengono completate, se possibile, prima di riprendere la sequenza.
+@614.11b
+Se un effetto facesse sia pescare una carta a un giocatore sia compiere un'azione aggiuntiva su quella carta, e la pescata viene sostituita, l'azione aggiuntiva non viene compiuta su nessuna carta pescata come risultato di quell'effetto di sostituzione.
+@614.12
+Alcuni effetti di sostituzione modificano il modo in cui un permanente entra nel campo di battaglia. (Vedi regole 614.1c–d.) Questi effetti possono provenire dal permanente stesso se interessano solo quel permanente (invece di un sottoinsieme generico di permanenti che lo comprende). Possono anche provenire da altre fonti. Per stabilire quali effetti di sostituzione si applicano e come, controlla le caratteristiche del permanente così come esisterebbe sul campo di battaglia, tenendo conto degli effetti di sostituzione che hanno già modificato il modo in cui entra nel campo di battaglia (vedi regola 616.1), degli effetti continui delle abilità statiche del permanente stesso che gli si applicherebbero una volta sul campo di battaglia, e degli effetti continui che esistono già e che si applicherebbero al permanente.
+Esempio: Voice of All dice «Mentre questa creatura entra, scegli un colore» e «Questa creatura ha protezione dal colore scelto». Un effetto crea una pedina che è una copia di Voice of All. Mentre quella pedina viene creata, il controllore della pedina sceglie un colore per essa.
+Esempio: Yixlid Jailer dice «Le carte nei cimiteri perdono tutte le abilità». Scarwood Treefolk dice «Questa creatura entra TAPpata». Uno Scarwood Treefolk che viene messo sul campo di battaglia da un cimitero entra nel campo di battaglia TAPpato.
+Esempio: Orb of Dreams è un artefatto che dice «I permanenti entrano TAPpati». Non influisce su se stesso, quindi Orb of Dreams entra nel campo di battaglia STAPpato.
+@614.12a
+Se un effetto di sostituzione che modifica il modo in cui un permanente entra nel campo di battaglia richiede una scelta, quella scelta viene fatta prima che il permanente entri nel campo di battaglia.

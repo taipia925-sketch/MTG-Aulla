@@ -1,0 +1,242 @@
+@702.44a
+Sprazzo di sole è un'abilità statica che funziona mentre un oggetto sta entrando nel campo di battaglia. «Sprazzo di sole» significa «Se questo oggetto sta entrando come creatura, ignorando qualsiasi effetto di cambio di tipo che lo influenzerebbe, entra con un segnalino +1/+1 per ogni colore di mana speso per lanciarlo. Altrimenti, entra con un segnalino carica per ogni colore di mana speso per lanciarlo».
+@702.44b
+Sprazzo di sole aggiunge segnalini solo se l'oggetto con sprazzo di sole sta entrando nel campo di battaglia dalla pila come magia che si risolve e solo se è stato speso uno o più mana colorato per i suoi costi, inclusi i costi aggiuntivi o alternativi.
+@702.44c
+Sprazzo di sole può anche essere usato per stabilire un numero variabile per un'altra abilità. Se la parola chiave viene usata in questo modo, non importa se l'abilità si trova su una magia creatura o su una magia non creatura.
+Esempio: L'abilità «Modulare—Sprazzo di sole» significa «Questo permanente entra con un segnalino +1/+1 per ogni colore di mana speso per lanciarlo» e «Quando questo permanente viene messo in un cimitero dal campo di battaglia, puoi mettere un segnalino +1/+1 su una creatura artefatto bersaglio per ogni segnalino +1/+1 su questo permanente».
+@702.44d
+Se un oggetto ha più istanze di sprazzo di sole, ognuna funziona separatamente.
+@702.45
+Bushido
+@702.45a
+Bushido è un'abilità innescata. «Bushido N» significa «Ogni volta che questa creatura blocca o viene bloccata, prende +N/+N fino alla fine del turno». (Vedi regola 509, «Sottofase di dichiarazione dei bloccanti».)
+@702.45b
+Se una creatura ha più istanze di bushido, ognuna si innesca separatamente.
+@702.46
+Trasmigrazione (Soulshift)
+@702.46a
+Trasmigrazione è un'abilità innescata. «Trasmigrazione N» significa «Quando questo permanente viene messo in un cimitero dal campo di battaglia, puoi far tornare una carta Spirito bersaglio con valore di mana pari o inferiore a N dal tuo cimitero nella tua mano».
+@702.46b
+Se un permanente ha più istanze di trasmigrazione, ognuna si innesca separatamente.
+@702.47
+Giuntura (Splice)
+@702.47a
+Giuntura è un'abilità statica che funziona mentre una carta è nella tua mano. «Giuntura su [qualità] [costo]» significa «Puoi rivelare questa carta dalla tua mano mentre lanci una magia [qualità]. Se lo fai, quella magia ottiene il testo delle regole di questa carta e paghi [costo] come costo aggiuntivo per lanciare quella magia». Pagare il costo di giuntura di una carta segue le regole per il pagamento dei costi aggiuntivi delle regole 601.2b e 601.2f–h.
+Esempio: Poiché la carta con giuntura resta nella mano del giocatore, può essere lanciata normalmente in seguito o essere giuntata su un'altra magia. Può anche essere scartata per pagare un costo «scarta una carta» della magia su cui è giuntata.
+@702.47b
+Non puoi scegliere di usare un'abilità giuntura se non puoi fare le scelte richieste (bersagli, ecc.) per il testo delle regole di quella carta. Non puoi giuntare la stessa carta sulla stessa magia più di una volta. Se stai giuntando più di una carta su una magia, rivelale tutte insieme e scegli l'ordine in cui avverranno i loro effetti. Gli effetti della magia principale devono avvenire per primi.
+@702.47c
+La magia ha le caratteristiche della magia principale, più il testo delle regole di ciascuna carta giuntata. Questo è un effetto di modifica del testo (vedi regola 612, «Effetti di modifica del testo»). La magia non ottiene nessun'altra caratteristica (nome, costo di mana, colore, supertipi, tipi di carta, sottotipi, ecc.) delle carte giuntate. Il testo ottenuto dalla magia che fa riferimento a una carta per nome si riferisce alla magia in pila, non alla carta da cui il testo è stato copiato.
+Esempio: Glacial Ray è una carta rossa con giuntura sull'Arcano che dice «Glacial Ray infligge 2 danni a qualsiasi bersaglio». Supponiamo che Glacial Ray venga giuntata su Reach Through Mists, una magia blu. La magia è ancora blu, ed è Reach Through Mists a infliggere il danno. Ciò significa che l'abilità può bersagliare una creatura con protezione dal rosso e infliggerle 2 danni.
+@702.47d
+Scegli normalmente i bersagli per il testo aggiunto (vedi regola 601.2c). Nota che una magia con uno o più bersagli non si risolve se tutti i suoi bersagli sono illegali al momento della risoluzione.
+@702.47e
+La magia perde le modifiche dovute alla giuntura una volta che lascia la pila per qualsiasi motivo.
+@702.48
+Offerta
+@702.48a
+Offerta è un'abilità statica che funziona mentre la magia con offerta è in pila. «Offerta [qualità]» significa «Come costo aggiuntivo per lanciare questa magia, puoi sacrificare un permanente [qualità]. Se hai scelto di pagare il costo aggiuntivo, il costo totale di questa magia è ridotto del costo di mana del permanente sacrificato, e puoi lanciare questa magia in qualsiasi momento in cui potresti lanciare un istantaneo».
+@702.48b
+Scegli quale permanente sacrificare mentre fai le scelte per la magia (vedi regola 601.2b), e sacrifichi quel permanente mentre paghi il costo totale (vedi regola 601.2h).
+@702.48c
+Il mana generico nel costo di mana del permanente sacrificato riduce il mana generico nel costo totale della magia. Il mana colorato e incolore nel costo di mana del permanente sacrificato riduce il mana dello stesso tipo nel costo totale della magia, e l'eventuale eccesso riduce altrettanto mana generico nel costo totale della magia. (Vedi regola 118.7.)
+@702.49
+Ninjutsu
+@702.49a
+Ninjutsu è un'abilità attivata che funziona solo mentre la carta con ninjutsu è nella mano di un giocatore. «Ninjutsu [costo]» significa «[Costo], Rivela questa carta dalla tua mano, Fai tornare nella mano del suo proprietario una creatura attaccante non bloccata che controlli: Metti questa carta sul campo di battaglia dalla tua mano TAPpata e attaccante».
+@702.49b
+La carta con ninjutsu resta rivelata dal momento in cui l'abilità viene annunciata finché l'abilità non lascia la pila.
+@702.49c
+La creatura messa sul campo di battaglia con l'abilità ninjutsu entra attaccando lo stesso giocatore, planeswalker o battaglia della creatura che è tornata nella mano del suo proprietario.
+@702.49d
+Ninjutsu del comandante è una variante dell'abilità ninjutsu che funziona anche mentre la carta con ninjutsu del comandante è nella zona di comando. «Ninjutsu del comandante [costo]» significa «[Costo], Rivela questa carta dalla tua mano o dalla zona di comando, Fai tornare nella mano del suo proprietario una creatura attaccante non bloccata che controlli: Metti questa carta sul campo di battaglia TAPpata e attaccante».
+@702.50
+Epico
+@702.50a
+Epico rappresenta due abilità di magia, una delle quali crea un'abilità innescata ritardata. «Epico» significa «Per il resto della partita, non puoi lanciare magie» e «All'inizio di ogni tuo mantenimento per il resto della partita, copia questa magia tranne la sua abilità epico. Se la magia ha dei bersagli, puoi scegliere nuovi bersagli per la copia». Vedi regola 707.10.
+@702.50b
+Un giocatore non può lanciare magie una volta che si è risolta una magia con epico che controlla, ma gli effetti (come la stessa abilità epico) possono comunque mettere in pila copie di magie.
+@702.51
+Convocare
+@702.51a
+Convocare è un'abilità statica che funziona mentre la magia con convocare è in pila. «Convocare» significa «Per ogni mana colorato nel costo totale di questa magia, puoi TAPpare una creatura STAPpata di quel colore che controlli invece di pagare quel mana. Per ogni mana generico nel costo totale di questa magia, puoi TAPpare una creatura STAPpata che controlli invece di pagare quel mana».
+@702.51b
+L'abilità convocare non è un costo aggiuntivo o alternativo e si applica solo dopo che è stato determinato il costo totale della magia con convocare.
+Esempio: Heartless Summoning dice, tra l'altro, «Le magie creatura che lanci costano {2} in meno». Controlli Heartless Summoning e lanci Siege Wurm, una magia con convocare che costa {5}{G}{G}. Il costo totale per lanciare Siege Wurm è {3}{G}{G}. Dopo aver attivato le abilità di mana, paghi quel costo totale. Puoi TAPpare fino a due creature verdi e fino a tre altre creature per pagare quel costo, e il resto viene pagato con mana.
+@702.51c
+Una creatura TAPpata in questo modo per pagare mana nel costo totale di una magia ha «convocato» quella magia.
+@702.51d
+Più istanze di convocare sulla stessa magia sono ridondanti.
+@702.52
+Dragare (Dredge)
+@702.52a
+Dragare è un'abilità statica che funziona solo mentre la carta con dragare è nel cimitero di un giocatore. «Dragare N» significa «Finché hai almeno N carte nel tuo grimorio, se dovessi pescare una carta, puoi invece macinare N carte e far tornare questa carta dal tuo cimitero nella tua mano».
+@702.52b
+Un giocatore con meno carte nel grimorio del numero richiesto da un'abilità dragare non può macinarne nessuna in questo modo.
+@702.53
+Trasmutare
+@702.53a
+Trasmutare è un'abilità attivata che funziona solo mentre la carta con trasmutare è nella mano di un giocatore. «Trasmutare [costo]» significa «[Costo], Scarta questa carta: Passa in rassegna il tuo grimorio per una carta con lo stesso valore di mana della carta scartata, rivela quella carta e aggiungila alla tua mano. Poi rimescola il tuo grimorio. Attiva solo come una stregoneria».
+@702.53b
+Anche se l'abilità trasmutare può essere attivata solo se la carta è nella mano di un giocatore, continua a esistere mentre l'oggetto è sul campo di battaglia e in tutte le altre zone. Quindi gli oggetti con trasmutare sono influenzati dagli effetti che dipendono dal fatto che gli oggetti abbiano una o più abilità attivate.
+@702.54
+Sete di sangue
+@702.54a
+Sete di sangue è un'abilità statica. «Sete di sangue N» significa «Se a un avversario è stato inflitto danno in questo turno, questo permanente entra con N segnalini +1/+1 su di sé».
+@702.54b
+«Sete di sangue X» è una variante dell'abilità sete di sangue. «Sete di sangue X» significa «Questo permanente entra con X segnalini +1/+1 su di sé, dove X è il danno totale inflitto ai tuoi avversari in questo turno».
+@702.54c
+Se un oggetto ha più istanze di sete di sangue, ognuna si applica separatamente.
+@702.55
+Infestare (Haunt)
+@702.55a
+Infestare è un'abilità innescata. «Infestare» su un permanente significa «Quando questo permanente viene messo in un cimitero dal campo di battaglia, esilialo mentre infesta una creatura bersaglio». «Infestare» su una magia istantaneo o stregoneria significa «Quando questa magia viene messa in un cimitero durante la sua risoluzione, esiliala mentre infesta una creatura bersaglio».
+@702.55b
+Le carte che si trovano nella zona di esilio a causa di un'abilità infestare «infestano» la creatura bersaglio di quell'abilità. L'espressione «creatura che infesta» si riferisce all'oggetto bersaglio dell'abilità infestare, indipendentemente dal fatto che quell'oggetto sia ancora una creatura o meno.
+@702.55c
+Le abilità innescate delle carte con infestare che fanno riferimento alla creatura infestata possono innescarsi nella zona di esilio.
+@702.56
+Replicare
+@702.56a
+Replicare è una parola chiave che rappresenta due abilità. La prima è un'abilità statica che funziona mentre la magia con replicare è in pila. La seconda è un'abilità innescata che funziona mentre la magia con replicare è in pila. «Replicare [costo]» significa «Come costo aggiuntivo per lanciare questa magia, puoi pagare [costo] un qualsiasi numero di volte» e «Quando lanci questa magia, se è stato pagato un costo di replicare, copiala per ogni volta che è stato pagato il suo costo di replicare. Se la magia ha dei bersagli, puoi scegliere nuovi bersagli per qualsiasi copia». Pagare il costo di replicare di una magia segue le regole per il pagamento dei costi aggiuntivi delle regole 601.2b e 601.2f–h.
+@702.56b
+Se una magia ha più istanze di replicare, ognuna viene pagata separatamente e si innesca in base ai pagamenti fatti per essa, non per altre istanze di replicare.
+@702.57
+Previsione (Forecast)
+@702.57a
+Un'abilità previsione è un'abilità attivata che può essere attivata solo dalla mano di un giocatore. È scritta «Previsione — [Abilità attivata]».
+@702.57b
+Un'abilità previsione può essere attivata solo durante la sottofase di mantenimento del proprietario della carta e solo una volta per turno. Il controllore dell'abilità previsione rivela la carta con quell'abilità dalla sua mano quando l'abilità viene attivata. Quel giocatore gioca con quella carta rivelata nella sua mano finché non lascia la sua mano o finché non inizia una sottofase o fase che non è una sottofase di mantenimento, a seconda di cosa avviene prima.
+@702.58
+Innesto (Graft)
+@702.58a
+Innesto rappresenta sia un'abilità statica sia un'abilità innescata. «Innesto N» significa «Questo permanente entra con N segnalini +1/+1 su di sé» e «Ogni volta che entra un'altra creatura, se questo permanente ha un segnalino +1/+1 su di sé, puoi spostare un segnalino +1/+1 da questo permanente su quella creatura».
+@702.58b
+Se un permanente ha più istanze di innesto, ognuna funziona separatamente.
+@702.59
+Recupero (Recover)
+@702.59a
+Recupero è un'abilità innescata che funziona solo mentre la carta con recupero è nel cimitero di un giocatore. «Recupero [costo]» significa «Quando una creatura viene messa nel tuo cimitero dal campo di battaglia, puoi pagare [costo]. Se lo fai, fai tornare questa carta dal tuo cimitero nella tua mano. Altrimenti, esilia questa carta».
+@702.60
+Increspatura (Ripple)
+@702.60a
+Increspatura è un'abilità innescata che funziona solo mentre la carta con increspatura è in pila. «Increspatura N» significa «Quando lanci questa magia, puoi rivelare le prime N carte del tuo grimorio oppure, se ci sono meno di N carte nel tuo grimorio, puoi rivelare tutte le carte del tuo grimorio. Se riveli carte dal tuo grimorio in questo modo, puoi lanciare una qualsiasi di quelle carte con lo stesso nome di questa magia senza pagare il suo costo di mana, poi metti tutte le carte rivelate non lanciate in questo modo in fondo al tuo grimorio in qualsiasi ordine».
+@702.60b
+Se una magia ha più istanze di increspatura, ognuna si innesca separatamente.
+@702.61
+Frazione di secondo (Split second)
+@702.61a
+Frazione di secondo è un'abilità statica che funziona solo mentre la magia con frazione di secondo è in pila. «Frazione di secondo» significa «Finché questa magia è in pila, i giocatori non possono lanciare altre magie né attivare abilità che non siano abilità di mana».
+@702.61b
+I giocatori possono attivare abilità di mana e compiere azioni speciali mentre una magia con frazione di secondo è in pila. Le abilità innescate si innescano e vengono messe in pila normalmente mentre una magia con frazione di secondo è in pila.
+@702.61c
+Più istanze di frazione di secondo sulla stessa magia sono ridondanti.
+@702.62
+Sospendere
+@702.62a
+Sospendere è una parola chiave che rappresenta tre abilità. La prima è un'abilità statica che funziona mentre la carta con sospendere è nella mano di un giocatore. La seconda e la terza sono abilità innescate che funzionano nella zona di esilio. «Sospendere N—[costo]» significa «Se potessi iniziare a lanciare questa carta mettendola in pila dalla tua mano, puoi pagare [costo] ed esiliarla con N segnalini tempo su di sé. Questa azione non usa la pila», «All'inizio del tuo mantenimento, se questa carta è sospesa, rimuovi un segnalino tempo da essa» e «Quando viene rimosso l'ultimo segnalino tempo da questa carta, se è esiliata, puoi giocarla senza pagare il suo costo di mana, se possibile. Se non lo fai, resta esiliata. Se lanci in questo modo una magia creatura, ottiene rapidità finché non perdi il controllo della magia o del permanente che diventa».
+@702.62b
+Una carta è «sospesa» se si trova nella zona di esilio, ha sospendere e ha un segnalino tempo su di sé.
+@702.62c
+Nello stabilire se potresti iniziare a lanciare una carta con sospendere, tieni conto di qualsiasi effetto che impedirebbe a quella carta di essere lanciata.
+@702.62d
+Lanciare una magia come effetto della sua abilità sospendere segue le regole per il pagamento dei costi alternativi delle regole 601.2b e 601.2f–h.
+@702.63
+Svanire (Vanishing)
+@702.63a
+Svanire è una parola chiave che rappresenta tre abilità. «Svanire N» significa «Questo permanente entra con N segnalini tempo su di sé», «All'inizio del tuo mantenimento, se questo permanente ha un segnalino tempo su di sé, rimuovi un segnalino tempo da esso» e «Quando viene rimosso l'ultimo segnalino tempo da questo permanente, sacrificalo».
+@702.63b
+Svanire senza un numero significa «All'inizio del tuo mantenimento, se questo permanente ha un segnalino tempo su di sé, rimuovi un segnalino tempo da esso» e «Quando viene rimosso l'ultimo segnalino tempo da questo permanente, sacrificalo».
+@702.63c
+Se un permanente ha più istanze di svanire, ognuna funziona separatamente.
+@702.64
+Assorbire
+@702.64a
+Assorbire è un'abilità statica. «Assorbire N» significa «Se una fonte dovesse infliggere danno a questa creatura, previeni N di quei danni».
+@702.64b
+Ogni abilità assorbire può prevenire solo N danni da una singola fonte in un singolo momento. Si applica separatamente al danno di altre fonti o al danno inflitto dalla stessa fonte in un momento diverso.
+@702.64c
+Se un oggetto ha più istanze di assorbire, ognuna si applica separatamente.
+@702.65
+Scambio di Aura (Aura swap)
+@702.65a
+Scambio di Aura è un'abilità attivata di alcune carte Aura. «Scambio di Aura [costo]» significa «[Costo]: Puoi scambiare questo permanente con una carta Aura nella tua mano».
+@702.65b
+Se una delle due metà dello scambio non può essere completata, l'abilità non ha effetto.
+Esempio: Attivi l'abilità scambio di Aura di un'Aura. L'unica carta Aura nella tua mano non può incantare il permanente incantato dall'Aura con scambio di Aura. L'abilità non ha effetto.
+Esempio: Attivi l'abilità scambio di Aura di un'Aura che controlli ma di cui non sei il proprietario. L'abilità non ha effetto.
+@702.66
+Esumare (Delve)
+@702.66a
+Esumare è un'abilità statica che funziona mentre la magia con esumare è in pila. «Esumare» significa «Per ogni mana generico nel costo totale di questa magia, puoi esiliare una carta dal tuo cimitero invece di pagare quel mana».
+@702.66b
+L'abilità esumare non è un costo aggiuntivo o alternativo e si applica solo dopo che è stato determinato il costo totale della magia con esumare.
+@702.66c
+Più istanze di esumare sulla stessa magia sono ridondanti.
+@702.67
+Fortificare
+@702.67a
+Fortificare è un'abilità attivata delle carte Fortificazione. «Fortificare [costo]» significa «[Costo]: Assegna questa Fortificazione a una terra bersaglio che controlli. Attiva solo come una stregoneria».
+@702.67b
+Per maggiori informazioni sulle Fortificazioni, vedi regola 301, «Artefatti».
+@702.67c
+Se una Fortificazione ha più istanze di fortificare, può essere usata una qualsiasi delle sue abilità fortificare.
+@702.68
+Frenesia
+@702.68a
+Frenesia è un'abilità innescata. «Frenesia N» significa «Ogni volta che questa creatura attacca e non viene bloccata, prende +N/+0 fino alla fine del turno».
+@702.68b
+Se una creatura ha più istanze di frenesia, ognuna si innesca separatamente.
+@702.69
+Tempesta funerea (Gravestorm)
+@702.69a
+Tempesta funerea è un'abilità innescata che funziona in pila. «Tempesta funerea» significa «Quando lanci questa magia, copiala per ogni permanente messo in un cimitero dal campo di battaglia in questo turno. Se la magia ha dei bersagli, puoi scegliere nuovi bersagli per qualsiasi copia».
+@702.69b
+Se una magia ha più istanze di tempesta funerea, ognuna si innesca separatamente.
+@702.70
+Velenoso
+@702.70a
+Velenoso è un'abilità innescata. «Velenoso N» significa «Ogni volta che questa creatura infligge danno da combattimento a un giocatore, quel giocatore prende N segnalini veleno». (Per informazioni sui segnalini veleno, vedi regola 104.3d.)
+@702.70b
+Se una creatura ha più istanze di velenoso, ognuna si innesca separatamente.
+@702.71
+Trasfigurare
+@702.71a
+Trasfigurare è un'abilità attivata. «Trasfigurare [costo]» significa «[Costo], Sacrifica questo permanente: Passa in rassegna il tuo grimorio per una carta creatura con lo stesso valore di mana di questo permanente e mettila sul campo di battaglia. Poi rimescola il tuo grimorio. Attiva solo come una stregoneria».
+@702.72
+Campione
+@702.72a
+Campione rappresenta due abilità innescate. «Campione di un [oggetto]» significa «Quando questo permanente entra, sacrificalo a meno che tu non esili un altro [oggetto] che controlli» e «Quando questo permanente lascia il campo di battaglia, fai tornare la carta esiliata sul campo di battaglia sotto il controllo del suo proprietario».
+@702.72b
+Le due abilità rappresentate da campione sono collegate. Vedi regola 607, «Abilità collegate».
+@702.72c
+Un permanente è «sostenuto come campione» da un altro permanente se quest'ultimo esilia il primo come risultato diretto di un'abilità campione.
+@702.73
+Mutaforma (Changeling)
+@702.73a
+Mutaforma è un'abilità che definisce caratteristiche. «Mutaforma» significa «Questo oggetto è di ogni tipo di creatura». Questa abilità funziona ovunque, anche fuori dalla partita. Vedi regola 604.3.
+@702.74
+Evocare
+@702.74a
+Evocare rappresenta due abilità: un'abilità statica che funziona in qualsiasi zona da cui la carta con evocare può essere lanciata e un'abilità innescata che funziona sul campo di battaglia. «Evocare [costo]» significa «Puoi lanciare questa carta pagando [costo] invece di pagare il suo costo di mana» e «Quando questo permanente entra, se è stato pagato il suo costo di evocare, il suo controllore lo sacrifica». Lanciare una magia per il suo costo di evocare segue le regole per il pagamento dei costi alternativi delle regole 601.2b e 601.2f–h.
+@702.75
+Nascondiglio (Hideaway)
+@702.75a
+Nascondiglio è un'abilità innescata. «Nascondiglio N» significa «Quando questo permanente entra, guarda le prime N carte del tuo grimorio. Esiliane una a faccia in giù e metti le altre in fondo al tuo grimorio in ordine casuale. La carta esiliata ottiene "Il giocatore che controlla il permanente che ha esiliato questa carta può guardare questa carta nella zona di esilio"».
+@702.75b
+In precedenza, le regole dell'abilità nascondiglio facevano entrare il permanente nel campo di battaglia TAPpato, e il numero di carte guardate dal giocatore era fissato a quattro. Le carte stampate prima di questa modifica alle regole avevano il testo stampato «Nascondiglio» senza numero dopo la parola. Quelle carte più vecchie hanno ricevuto errata nel riferimento Oracle e ora hanno «Nascondiglio 4» e l'abilità aggiuntiva «[Questo permanente] entra TAPpato».
+@702.76
+Aggirarsi (Prowl)
+@702.76a
+Aggirarsi è un'abilità statica che funziona in pila. «Aggirarsi [costo]» significa «Puoi pagare [costo] invece del costo di mana di questa magia se in questo turno a un giocatore è stato inflitto danno da combattimento da una fonte che, nel momento in cui ha inflitto quel danno, era sotto il tuo controllo e aveva uno qualsiasi dei tipi di creatura di questa magia». Lanciare una magia per il suo costo di aggirarsi segue le regole per il pagamento dei costi alternativi delle regole 601.2b e 601.2f–h.
+@702.77
+Rinforzo
+@702.77a
+Rinforzo è un'abilità attivata che funziona solo mentre la carta con rinforzo è nella mano di un giocatore. «Rinforzo N—[costo]» significa «[Costo], Scarta questa carta: Metti N segnalini +1/+1 su una creatura bersaglio».
+@702.77b
+Anche se l'abilità rinforzo può essere attivata solo se la carta è nella mano di un giocatore, continua a esistere mentre l'oggetto è sul campo di battaglia e in tutte le altre zone. Quindi gli oggetti con rinforzo sono influenzati dagli effetti che dipendono dal fatto che gli oggetti abbiano una o più abilità attivate.
+@702.78
+Cospirare
+@702.78a
+Cospirare è una parola chiave che rappresenta due abilità. La prima è un'abilità statica che funziona mentre la magia con cospirare è in pila. La seconda è un'abilità innescata che funziona mentre la magia con cospirare è in pila. «Cospirare» significa «Come costo aggiuntivo per lanciare questa magia, puoi TAPpare due creature STAPpate che controlli, ognuna delle quali ha almeno un colore in comune con essa» e «Quando lanci questa magia, se è stato pagato il suo costo di cospirare, copiala. Se la magia ha dei bersagli, puoi scegliere nuovi bersagli per la copia». Pagare il costo di cospirare di una magia segue le regole per il pagamento dei costi aggiuntivi delle regole 601.2b e 601.2f–h.
