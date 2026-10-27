@@ -7,7 +7,7 @@ Formato dei file di traduzione:
   @@Trample         voce di glossario: riga 1 = termine italiano, poi la definizione
 Ogni regola tradotta porta l'impronta del testo inglese: se Wizards cambia la regola,
 l'app mostra l'originale finché la traduzione non viene aggiornata."""
-import json, pathlib, re, sys
+import json, pathlib, re, subprocess, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
@@ -87,7 +87,14 @@ def main():
     assert "</script" not in text.lower()
     rules, gloss = parse_cr(text)
     tr = load_translation(rules, gloss)
+    # Tailwind: rigenero src/tw.gen.css se npx c'è, altrimenti uso quello già nel repository
+    try:
+        subprocess.run(["npx", "-y", "tailwindcss@3.4.17", "-c", str(ROOT / "tools/tailwind.config.js"), "-i", str(ROOT / "src/tw.css"), "-o", str(ROOT / "src/tw.gen.css"), "--minify"],
+                       check=True, capture_output=True, timeout=180)
+    except Exception as e:
+        print("tailwind non rigenerato:", e)
     page = (ROOT / "src/app.html").read_text(encoding="utf-8")
+    page = page.replace("/*@@TW@@*/", (ROOT / "src/tw.gen.css").read_text(encoding="utf-8"))
     for k, v in ICONS.items(): page = page.replace(k, v)
     js = json.dumps(tr, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     page = page.replace("@@RULES@@", text).replace("@@TRANSLATION@@", js)

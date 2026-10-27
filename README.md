@@ -2,7 +2,8 @@
 
 Segnavita e arbitro di **Magic: The Gathering** in una sola web app, pensata per il telefono.
 
-- **Segnavita (schermata principale)** – il tavolo è un tappetino da gioco e ogni giocatore (da 1 a 6) è una carta di Magic del suo colore, girata verso il proprio posto: cornice, barra del nome col simbolo di mana, illustrazione animata, linea del tipo. Tocca per ±1, tieni premuto per ±10, trascina su/giù sulla carta per scorrere i punti vita; scintille ai danni e luce dorata alle cure. Tocca il simbolo di mana e la carta si gira: sul retro segnalini, danni da comandante, colore e nome. La scintilla al centro apre un ventaglio di carte con tutte le azioni; i dadi (d4–d20) rotolano in 3D su un tappeto e la moneta si lancia davvero. Formati Standard (20), Commander (40, danno da comandante con partner), Brawl (25/30), Two-Headed Giant (30, veleno 15) o personalizzato. Veleno, energia, esperienza, tassa del comandante, Monarca e Iniziativa, giorno/notte, turni, dadi, moneta, chi inizia e storico della partita con grafico e annullamento.
+- **Segnavita (schermata principale)** – tavolo scuro e opaco; ogni giocatore (da 1 a 6, girato verso il proprio posto) ha un pannello col filo e la filigrana del suo simbolo di mana, il nome in stile carta e i punti vita grandi in Inter. Tocca per ±1, tieni premuto per ±10, trascina su/giù per scorrere. Il pulsante con i cursori apre segnalini (veleno phyrexiano, energia, esperienza, radiazioni, tassa), danni da comandante, colore e nome. Formati Standard, Commander, Brawl, Two-Headed Giant o personalizzato; dadi 3D, moneta, chi inizia, gettoni (Monarca, Iniziativa, giorno/notte), storico con annullamento.
+- **Chiedi al Judge** – il pulsante con la bilancia al centro apre un riquadro rapido sopra la partita: scrivi la situazione («Cosa succede se lancio Wrath of God con Teferi in campo?») e ottieni una risposta sintetica con le regole che la decidono. Le carte nominate vengono cercate su Scryfall (serve internet): testo ufficiale, chiarimenti di Wizards, regole delle parole chiave, e le interazioni più comuni tra le carte (spazzate e tipi, indistruttibile, velocità stregoneria, danni contro costituzione e fedeltà, anti-malocchio, salvaguardia…). Scheda «Carta» per cercare una carta al volo.
 - **Arbitro** – scrivi la situazione in italiano o in inglese («travolgere contro una creatura con protezione», «pesco da un grimorio vuoto») e l'app trova le regole ufficiali che la decidono, con il numero di paragrafo. Indice completo, glossario, argomenti rapidi (abilità chiave, fasi del turno, pila, livelli, Commander…) e regole salvate.
 - **Tutto in italiano** – le 3165 regole, le 147 sezioni e le 741 voci del glossario sono tradotte; con un tocco si vede l'originale inglese. In Impostazioni si sceglie italiano o English.
 
@@ -18,3 +19,7 @@ Per aggiornarlo: sostituisci `tools/MagicCompRules.txt` con il nuovo TXT ufficia
 
 La traduzione italiana non è ufficiale: in caso di dubbio fa fede il testo inglese. L'app cerca e cita le regole, non le interpreta: in torneo decide l'arbitro.
 Magic: The Gathering e le Comprehensive Rules sono © Wizards of the Coast. Progetto amatoriale non affiliato a Wizards of the Coast.
+
+## Sviluppo
+
+Lo stile del tavolo usa Tailwind CSS compilato in anticipo (`src/tw.gen.css`, configurazione in `tools/tailwind.config.js`): `python3 tools/build.py` lo rigenera se `npx` è disponibile e lo incorpora in `index.html`, che resta un file unico utilizzabile senza rete.
