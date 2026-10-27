@@ -4,7 +4,7 @@
 <meta name="theme-color" content="#0b0d12">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Outfit:wght@500;700;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Outfit:wght@300;400;500;700&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
 <style>
 /* Layout: il tavolo da gioco occupa tutto lo schermo (pannelli giocatore ruotati verso il proprio posto, medaglione centrale);
    tutto il resto (menu, arbitro, impostazioni) sono strati che salgono dal basso o scorrono da destra sopra il tavolo.
@@ -32,13 +32,13 @@
   --shadow: 0 18px 50px rgba(0, 0, 0, .45), 0 2px 6px rgba(0, 0, 0, .3);
   --table: #07080b;
   /* mana: [colore chiaro, colore scuro, testo] uguali in entrambi i temi */
-  --W1: #efe3c2; --W2: #efe3c2; --Wt: #2a2214;
-  --U1: #1f6fd9; --U2: #1f6fd9;
-  --B1: #6e4bc9; --B2: #6e4bc9;
-  --R1: #d63a33; --R2: #d63a33;
-  --G1: #17834a; --G2: #17834a;
-  --M1: #f0a92a; --M2: #f0a92a; --Mt: #2a1a00;
-  --C1: #5f6878; --C2: #5f6878;
+  --W1: #b9a37a; --W2: #7f6b48; --W3: #f7efdc; --Wt: #fff;
+  --U1: #1b4f8f; --U2: #0a2650; --U3: #4f8fd8;
+  --B1: #1d1c22; --B2: #050507; --B3: #5e5864;
+  --R1: #8f2e17; --R2: #561307; --R3: #cf6430;
+  --G1: #3c5e16; --G2: #1c360a; --G3: #86b22e;
+  --M1: #9a7424; --M2: #5c430d; --M3: #e8c25c; --Mt: #fff;
+  --C1: #5b5e63; --C2: #2f3135; --C3: #a7aaaf;
   --f-life: "Outfit", "SF Pro Rounded", system-ui, -apple-system, sans-serif;
   --f-num: "Big Shoulders Display", "Barlow Condensed", "Arial Narrow", system-ui, sans-serif;
   --f-ui: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -362,12 +362,90 @@ mark { background: var(--mark); color: var(--mark-ink); border-radius: 3px; padd
 .toast { position: fixed; left: 50%; bottom: calc(22px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); z-index: 90; background: var(--ink); color: var(--bg); border-radius: 14px; padding: 11px 18px; font-weight: 600; font-size: .92rem; box-shadow: var(--shadow); max-width: calc(100% - 32px); text-align: center; }
 @media (prefers-reduced-motion: no-preference) { .toast:not([hidden]) { animation: up .25s var(--ease); } }
 @media (prefers-reduced-motion: reduce) { .result .v.roll { animation: none; } .life, .hit .sign { transition: none; } }
+/* ---- stile LifeTotal ---- */
+.board { gap: 4px; background: #565656; padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px); }
+.pl { border-radius: 0; background: var(--p1); }
+.pl::before { inset: -15%; background:
+  radial-gradient(38% 30% at 22% 28%, var(--p3), transparent 72%),
+  radial-gradient(42% 36% at 78% 72%, var(--p2), transparent 70%),
+  radial-gradient(30% 26% at 74% 22%, var(--p3), transparent 75%),
+  radial-gradient(40% 34% at 24% 78%, var(--p2), transparent 70%),
+  radial-gradient(30% 30% at 50% 50%, var(--p3), transparent 80%);
+  filter: blur(22px); opacity: .85; transition: opacity .3s; }
+.pl.active::after { box-shadow: inset 0 0 0 3px rgba(255,255,255,.85); }
+.life { font: 400 min(44cqh, 31cqw)/1 var(--f-life); color: #fff; letter-spacing: .01em; transition: transform .14s var(--ease), color .3s;
+  text-shadow: -.022em -.022em 0 #111, .022em -.022em 0 #111, -.022em .022em 0 #111, .022em .022em 0 #111, 0 -.03em 0 #111, 0 .03em 0 #111, -.03em 0 0 #111, .03em 0 0 #111, .065em .055em 0 #111; }
+.life.k3 { font-size: min(34cqh, 22cqw); }
+.hit.minus { padding-left: max(14px, 6cqw); } .hit.plus { padding-right: max(14px, 6cqw); }
+.hit .pm { width: clamp(26px, 11cqh, 34px); height: clamp(26px, 11cqh, 34px); opacity: .95; transition: transform .15s var(--ease); }
+.hit .pm svg { width: 100%; height: 100%; stroke: currentColor; fill: none; stroke-width: 1.3; }
+.hit.press .pm { transform: scale(1.2); }
+.heart { position: absolute; left: 50%; bottom: max(12px, 6cqh); transform: translateX(-50%); width: clamp(20px, 8cqh, 28px); height: clamp(20px, 8cqh, 28px); pointer-events: none; display: flex; gap: 6px; align-items: center; }
+.heart svg { width: 100%; height: 100%; fill: currentColor; stroke: none; flex: none; }
+.heart .mk { width: 80%; height: 80%; fill: none; stroke: currentColor; stroke-width: 2; }
+.dots { position: absolute; top: max(6px, 3cqh); width: 44px; height: 44px; border: 0; background: none; color: inherit; padding: 9px; opacity: .95; }
+.dots.l { left: max(6px, 3cqw); } .dots.r { right: max(6px, 3cqw); }
+.dots svg { width: 100%; height: 100%; stroke: currentColor; fill: none; stroke-width: 1.5; }
+.pname { top: max(14px, 6cqh); font-weight: 500; }
+.chips { position: absolute; left: 0; right: 0; bottom: calc(max(12px, 6cqh) + clamp(20px, 8cqh, 28px) + 6px); justify-content: center; padding: 0 12cqw; max-height: 20cqh; }
+.chip { background: rgba(0,0,0,.35); }
+.board.dim .life { color: #9d9d9d; }
+.board.dim .pl::before { opacity: .45; }
+.board.dim .pl { filter: brightness(.75); }
+.board.dim .hit, .board.dim .dots, .board.dim .chip { pointer-events: none; }
+/* cassetto del pannello */
+.pview { background: rgba(10,10,10,.55); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-left: 1px solid rgba(255,255,255,.25); }
+.pview header { min-height: 44px; }
+.pclose { width: 44px; height: 44px; border: 0; background: none; color: inherit; padding: 10px; flex: none; }
+.pclose svg { width: 100%; height: 100%; stroke: currentColor; fill: none; stroke-width: 1.6; }
+.dopts { flex: 1; display: flex; align-items: center; justify-content: space-evenly; gap: 10px; }
+.dopt { border: 0; background: none; color: inherit; display: flex; flex-direction: column; align-items: center; gap: 10px; font: 300 clamp(14px, 7cqh, 22px)/1.1 var(--f-life); letter-spacing: .02em; min-width: 80px; padding: 8px; opacity: .95; }
+.dopt svg { width: clamp(40px, 22cqh, 64px); height: clamp(40px, 22cqh, 64px); stroke: currentColor; fill: none; stroke-width: 1.4; }
+.dopt.fill svg { fill: currentColor; stroke: none; }
+.pview .cell { background: rgba(255,255,255,.08); border-radius: 10px; }
+.colors { flex: 1; display: flex; flex-wrap: wrap; gap: max(8px, 3cqh); align-content: center; justify-content: center; }
+.colors button { position: relative; overflow: hidden; border: 2px solid rgba(255,255,255,.35); border-radius: 50%; width: clamp(44px, 20cqh, 70px); height: clamp(44px, 20cqh, 70px); background: var(--p1); flex: none; }
+.colors button::before { content: ""; position: absolute; inset: -20%; background: radial-gradient(40% 40% at 30% 30%, var(--p3), transparent 70%), radial-gradient(45% 45% at 70% 70%, var(--p2), transparent 70%); filter: blur(4px); }
+.colors button[aria-pressed="true"] { border-color: #fff; box-shadow: 0 0 0 3px rgba(255,255,255,.4); }
+/* moneta centrale e barra */
+.hub { width: 84px; height: 56px; border-radius: 0; background: none; box-shadow: none; color: #3a2600; }
+.hub::before { content: ""; position: absolute; inset: 4px 0; background: #565656; clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); }
+.hub .coin { position: absolute; left: 50%; top: 50%; width: 46px; height: 46px; margin: -23px 0 0 -23px; border-radius: 50%; background: radial-gradient(circle at 38% 32%, #fff2b8 0, #f2c443 38%, #c48a14 78%, #8a5c06 100%); box-shadow: inset 0 0 0 2px #7a5205, inset 0 -3px 6px rgba(0,0,0,.25), 0 2px 6px rgba(0,0,0,.5); display: grid; place-items: center; }
+.hub .coin svg { width: 26px; height: 26px; stroke: #3a2600; fill: none; stroke-width: 1.9; }
+.hub:active { transform: translate(-50%, -50%) scale(.94); }
+.hubbar { position: fixed; z-index: 4; left: 0; right: 0; height: 100px; display: flex; align-items: center; justify-content: space-around; background: linear-gradient(#2e2e2e, #1b1b1b); border-top: 3px solid #565656; border-bottom: 3px solid #565656; padding: 0 env(safe-area-inset-right, 0px) 0 env(safe-area-inset-left, 0px); }
+.hubbar button { width: 56px; height: 56px; border: 0; background: none; color: #fff; display: grid; place-items: center; border-radius: 12px; }
+.hubbar button:active { background: rgba(255,255,255,.1); }
+.hubbar svg { width: 34px; height: 34px; stroke: currentColor; fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.toast .tbtn { margin-left: 12px; border: 0; background: none; color: inherit; font-weight: 800; text-decoration: underline; min-height: 32px; }
+/* impostazioni in stile LifeTotal */
+#L-settings .phead { background: #b01e1e; color: #fff; }
+#L-settings .phead .btn { color: #fff; }
+.lth { color: #ef5b55; font: 500 1.15rem/1.2 var(--f-life); margin: 6px 0 2px; }
+:root[data-theme="light"] .lth { color: #b01e1e; }
+.ltrow { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; padding: 12px 2px; border-bottom: 1px solid var(--line); }
+.ltrow > span { font: 400 1.05rem/1.3 var(--f-life); letter-spacing: .02em; }
+.ltrow .t { display: flex; flex-direction: column; } .ltrow .t small { color: var(--mute); font-size: .82rem; }
+.pills { display: flex; gap: 8px; flex-wrap: wrap; }
+.pill { min-width: 48px; height: 40px; padding: 0 12px; border-radius: 999px; border: 2px solid #e5484d; background: none; color: var(--ink); font: 500 1rem/1 var(--f-life); }
+.pill[aria-pressed="true"] { background: #b01e1e; border-color: #b01e1e; color: #fff; }
+:root[data-theme="light"] .pill { border-color: #b01e1e; }
+.pill svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; vertical-align: middle; }
+.switch.red:checked { background: #b01e1e; }
+
 </style>
 
 <div id="game">
   <h1 class="sr" id="h-game">MTG Aulla</h1>
   <div class="board" id="board" role="group" aria-labelledby="h-game"></div>
-  <button type="button" class="hub" id="hub" data-act="menu"><span class="t" id="hubt"></span><span class="dn" id="hubdn" hidden></span></button>
+  <button type="button" class="hub" id="hub" data-act="hubbar" aria-expanded="false" aria-controls="hubbar"><span class="coin" id="hubt"></span><span class="dn" id="hubdn" hidden></span></button>
+  <div class="hubbar" id="hubbar" role="toolbar" hidden>
+    <button type="button" data-act="restart" data-tip="restart"></button>
+    <button type="button" data-act="bar-open" data-l="dice" data-tip="dice"></button>
+    <button type="button" data-act="bar-open" data-l="rules" data-tip="rulesTile"></button>
+    <button type="button" data-act="bar-open" data-l="menu" data-tip="more"></button>
+    <button type="button" data-act="bar-open" data-l="settings" data-tip="settings"></button>
+  </div>
   <div class="sr" aria-live="polite" id="live"></div>
 </div>
 
@@ -474,11 +552,15 @@ const store = {
 };
 const reduceMotion = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
 function rnd() { try { const a = new Uint32Array(1); crypto.getRandomValues(a); return a[0] / 4294967296; } catch (e) { return Math.random(); } }
-function toast(msg) { const t = $("toast"); t.textContent = msg; t.hidden = false; clearTimeout(toast.h); toast.h = setTimeout(() => t.hidden = true, 2600); }
+function toast(msg, act) {
+  const t = $("toast"); t.textContent = msg; t.hidden = false; clearTimeout(toast.h);
+  if (act) { const b = document.createElement("button"); b.type = "button"; b.className = "tbtn"; b.textContent = act.label; b.onclick = () => { t.hidden = true; act.fn(); }; t.appendChild(b); }
+  toast.h = setTimeout(() => t.hidden = true, act ? 6000 : 2600);
+}
 
 const settings = Object.assign({
   lang: (navigator.language || "it").toLowerCase().startsWith("it") ? "it" : (navigator.language || "").toLowerCase().startsWith("en") ? "en" : "it",
-  theme: "dark", showEn: false, cmdLife: true, wake: true, haptic: true,
+  theme: "dark", showEn: false, cmdLife: true, wake: true, haptic: true, gameOver: true,
 }, store.get("settings", {}));
 const saveSettings = () => store.set("settings", settings);
 function buzz(ms) { if (settings.haptic && navigator.vibrate) try { navigator.vibrate(ms || 8); } catch (e) {} }
@@ -501,6 +583,15 @@ const ICON = {
   moon: '<path d="M19.5 14.5A8 8 0 0 1 9.5 4.5a8 8 0 1 0 10 10z"/>',
   book: '<path d="M5 4.5h9.5a3 3 0 0 1 3 3v12H8a3 3 0 0 1-3-3z"/><path d="M5 16.5a3 3 0 0 1 3-3h9.5"/><path d="M9 8h5"/>',
   next: '<path d="M5 12h13M13 6l6 6-6 6"/>',
+  pen: '<path d="M4 20l4.5-1 10-10a2.1 2.1 0 0 0-3-3l-10 10z"/><path d="M14 7l3 3"/>',
+  heart: '<path d="M12 20.5s-7.5-4.6-9.2-9.4C1.6 7.6 3.9 4.5 7.1 4.5c2 0 3.6 1.1 4.9 2.9 1.3-1.8 2.9-2.9 4.9-2.9 3.2 0 5.5 3.1 4.3 6.6-1.7 4.8-9.2 9.4-9.2 9.4z"/>',
+  dots: '<circle cx="12" cy="5" r="2.2"/><circle cx="18.7" cy="9.9" r="2.2"/><circle cx="16.1" cy="17.8" r="2.2"/><circle cx="7.9" cy="17.8" r="2.2"/><circle cx="5.3" cy="9.9" r="2.2"/>',
+  cminus: '<circle cx="12" cy="12" r="10.5"/><path d="M7 12h10"/>',
+  cplus: '<circle cx="12" cy="12" r="10.5"/><path d="M12 7v10M7 12h10"/>',
+  restart: '<path d="M19 12.5A7 7 0 1 1 15 6.2"/><path d="M14 2.5l3 3.6-3.6 2.8"/>',
+  more: '<circle cx="5.5" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="18.5" cy="12" r="1.3"/>',
+  chev: '<path d="M15 5l-7 7 7 7"/>',
+  dice5: '<rect x="3.5" y="3.5" width="17" height="17" rx="1.5"/><circle cx="8" cy="8" r="1.3"/><circle cx="16" cy="8" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="8" cy="16" r="1.3"/><circle cx="16" cy="16" r="1.3"/>',
   d20: '<path d="M12 2.8l8 4.6v9.2l-8 4.6-8-4.6V7.4z"/><path d="M12 2.8L7.5 14h9zM4 7.4l3.5 6.6M20 7.4l-3.5 6.6M7.5 14L12 21.2l4.5-7.2"/>',
   people: '<circle cx="9" cy="8.5" r="3"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><circle cx="17" cy="9.5" r="2.4"/><path d="M15.5 14.3a4.5 4.5 0 0 1 5.5 4.7"/>',
   newg: '<path d="M4 12a8 8 0 1 0 2.4-5.7"/><path d="M4 4v4.5h4.5"/>',
@@ -523,6 +614,10 @@ const raw = n => `<svg viewBox="0 0 24 24" aria-hidden="true">${ICON[n]}</svg>`;
    ============================================================ */
 const STR = {
   it: {
+    colors: "Colori", cmdShort: "Comandante", restart: "Ricomincia", more: "Altro", restarted: "Partita ricominciata", undoIt: "Annulla",
+    colU: "Blu", colR: "Rosso", colG: "Verde", colB: "Nero", colW: "Bianco", colM: "Oro", colC: "Incolore",
+    ltGame: "Partita", ltPlayers: "Giocatori", ltLife: "Punti vita iniziali", ltPoison: "Veleno letale", ltOver: "Rilevamento fine partita", ltOverHelp: "Oscura chi ha perso e mostra la regola",
+    ltCmd: "Commander", ltPlayCmd: "Gioca a Commander", ltLink: "Collega i danni ai punti vita", ltMore: "Nomi, colori e formati (Brawl, Two-Headed Giant…)", ltCustom: "Punti vita personalizzati", ltApp: "App",
     close: "Chiudi", back: "Indietro", backGame: "Torna alla partita", judge: "Arbitro", menu: "Partita",
     askLabel: "Descrivi la situazione o cerca una regola", askPh: "Descrivi la situazione o cerca una regola…", clear: "Cancella",
     tSearch: "Cerca", tToc: "Indice", tGloss: "Glossario", tSaved: "Salvate",
@@ -576,6 +671,10 @@ const STR = {
     ],
   },
   en: {
+    colors: "Colors", cmdShort: "Commander", restart: "Restart", more: "More", restarted: "Game restarted", undoIt: "Undo",
+    colU: "Blue", colR: "Red", colG: "Green", colB: "Black", colW: "White", colM: "Gold", colC: "Colorless",
+    ltGame: "Gameplay", ltPlayers: "Players", ltLife: "Starting life", ltPoison: "Poison death", ltOver: "Game over detection", ltOverHelp: "Dims eliminated players and shows the rule",
+    ltCmd: "Commander", ltPlayCmd: "Play commander", ltLink: "Link damage to life total", ltMore: "Names, colors and formats (Brawl, Two-Headed Giant…)", ltCustom: "Custom starting life", ltApp: "App",
     close: "Close", back: "Back", backGame: "Back to the game", judge: "Judge", menu: "Game",
     askLabel: "Describe the situation or look up a rule", askPh: "Describe the situation or look up a rule…", clear: "Clear",
     tSearch: "Search", tToc: "Contents", tGloss: "Glossary", tSaved: "Saved",
@@ -978,7 +1077,7 @@ function crumbOf(r) {
    Partita
    ============================================================ */
 const COLORS = ["U", "R", "G", "B", "W", "M", "C"];
-const pcVars = c => `--p1:var(--${c}1);--p2:var(--${c}2);--pt:${c === "W" ? "var(--Wt)" : c === "M" ? "var(--Mt)" : "#fff"}`;
+const pcVars = c => `--p1:var(--${c}1);--p2:var(--${c}2);--p3:var(--${c}3);--pt:#fff`;
 const FORMATS = {
   standard: { life: 20, n: 2, cmd: false, poison: 10 },
   commander: { life: 40, n: 4, cmd: true, poison: 10 },
@@ -1001,11 +1100,12 @@ function makeGame(fmt, n, life, keep) {
 let game = null;
 game = store.get("game", null);
 if (!game || game.v !== 3 || !Array.isArray(game.players) || !game.players.length) game = makeGame("standard", 2, 20);
-const F = () => FORMATS[game.fmt] || FORMATS.standard;
+const F = () => { const b = FORMATS[game.fmt] || FORMATS.standard; return Object.assign({}, b, game.poison ? { poison: game.poison } : null, game.cmd != null ? { cmd: game.cmd } : null); };
 const saveGame = () => { clearTimeout(saveGame.h); saveGame.h = setTimeout(() => store.set("game", game), 200); };
 const pname = (p, i) => p.name || (F().team ? t("team", { n: i + 1 }) : t("player", { n: i + 1 }));
 function outRule(p) {
   const f = F();
+  if (!settings.gameOver) return "";
   if (p.life <= 0) return f.team ? (RULE.teamLife || RULE.life) : RULE.life;
   if (p.c.poison >= f.poison) return f.team ? (RULE.teamPoison || RULE.poison) : RULE.poison;
   if (f.cmd && !f.noCmdLoss && Object.values(p.cmd).some(v => v[0] >= 21 || v[1] >= 21)) return RULE.cmd;
@@ -1052,11 +1152,20 @@ function chipsHTML(p, i) {
 }
 function seatHTML(p, i, rot) {
   const view = ui.view[i] || "life", f = F(), nm = esc(pname(p, i));
-  const marks = (game.monarch === p.id ? raw("crown") : "") + (game.initiative === p.id ? raw("flag") : "");
+  const head = (back) => `<header><button type="button" class="pclose" data-act="pview" data-m="${back}" data-i="${i}" aria-label="${esc(t(back === "life" ? "close" : "back"))}">${raw(back === "life" ? "x" : "chev")}</button><span>${nm}</span></header>`;
+  if (view === "drawer") {
+    return `<div class="seat r${rot}"><div class="pview">${head("life")}<div class="dopts">
+      <button type="button" class="dopt fill" data-act="pview" data-m="counters" data-i="${i}">${raw("energy")}<span>${t("counters")}</span></button>
+      <button type="button" class="dopt" data-act="pview" data-m="colors" data-i="${i}">${raw("dots")}<span>${t("colors")}</span></button>
+      ${f.cmd && game.players.length > 1 ? `<button type="button" class="dopt" data-act="pview" data-m="cmd" data-i="${i}">${raw("sword")}<span>${t("cmdShort")}</span></button>` : ""}
+    </div></div></div>`;
+  }
+  if (view === "colors") {
+    return `<div class="seat r${rot}"><div class="pview">${head("drawer")}<div class="colors">${COLORS.map(c => `<button type="button" style="${pcVars(c)}" data-act="setcolor" data-i="${i}" data-c="${c}" aria-pressed="${p.color === c}" aria-label="${esc(t("col" + c))}"></button>`).join("")}</div></div></div>`;
+  }
   if (view === "counters") {
     const keys = ["poison", "energy", "exp", "rad"].concat(f.cmd ? (p.partner ? ["tax", "tax2"] : ["tax"]) : []);
-    return `<div class="seat r${rot}"><div class="pview">
-      <header><span>${nm} · ${t("counters")}</span><button type="button" class="pdone" data-act="pview" data-m="life" data-i="${i}">${t("done")}</button></header>
+    return `<div class="seat r${rot}"><div class="pview">${head("drawer")}
       <div class="cgrid">${keys.map(k => `<div class="cell"><span class="lab">${raw(k === "tax2" ? "tax" : k)}${t(k)}</span>
         <button type="button" data-act="cstep" data-i="${i}" data-k="${k}" data-d="-1" aria-label="${esc(t(k))} −1">−</button>
         <span class="val" aria-live="polite">${k.startsWith("tax") ? (p.c[k] ? "+" + p.c[k] * 2 : 0) : p.c[k]}</span>
@@ -1072,23 +1181,21 @@ function seatHTML(p, i, rot) {
         <span class="val">${v[k]}</span>
         <button type="button" data-act="cmdstep" data-i="${i}" data-o="${o.id}" data-k="${k}" data-d="1" aria-label="${esc(pname(o, j))} +1">+</button></div>`));
     });
-    return `<div class="seat r${rot}"><div class="pview">
-      <header><span>${nm} · ${t("cmdDmg")}</span><button type="button" class="pdone" data-act="pview" data-m="life" data-i="${i}">${t("done")}</button></header>
-      <div class="cgrid">${tiles.join("")}</div></div></div>`;
+    return `<div class="seat r${rot}"><div class="pview">${head("drawer")}<div class="cgrid">${tiles.join("")}</div></div></div>`;
   }
   const out = outRule(p);
+  const marks = (game.monarch === p.id ? raw("crown").replace("<svg", '<svg class="mk"') : "") + (game.initiative === p.id ? raw("flag").replace("<svg", '<svg class="mk"') : "");
   return `<div class="seat r${rot}">
-    <button type="button" class="hit minus" data-i="${i}" data-d="-1" aria-label="${esc(t("minus", { p: pname(p, i) }))}"><span class="sign" aria-hidden="true">−</span></button>
-    <button type="button" class="hit plus" data-i="${i}" data-d="1" aria-label="${esc(t("plus", { p: pname(p, i) }))}"><span class="sign" aria-hidden="true">+</span></button>
-    <div class="pname"><span>${nm}</span>${marks}</div>
+    <button type="button" class="hit minus" data-i="${i}" data-d="-1" aria-label="${esc(t("minus", { p: pname(p, i) }))}"><span class="pm" aria-hidden="true">${raw("cminus")}</span></button>
+    <button type="button" class="hit plus" data-i="${i}" data-d="1" aria-label="${esc(t("plus", { p: pname(p, i) }))}"><span class="pm" aria-hidden="true">${raw("cplus")}</span></button>
+    <button type="button" class="dots ${rot === 90 ? "l" : "r"}" data-act="pview" data-m="drawer" data-i="${i}" aria-label="${esc(t("counterBtn", { p: pname(p, i) }))}">${raw("dots")}</button>
+    ${p.name ? `<div class="pname"><span>${nm}</span></div>` : ""}
     <div class="lifebox"><div class="life${Math.abs(p.life) >= 100 ? " k3" : ""}" id="life-${i}">${p.life}</div></div>
     <span class="delta" id="delta-${i}" aria-hidden="true"></span>
+    <div class="chips">${chipsHTML(p, i)}</div>
+    <span class="heart" aria-hidden="true">${raw("heart")}${marks}</span>
     ${out ? `<button type="button" class="outtag" data-act="open-rule" data-id="${out}">${t("out")} <b>${out}</b></button>` : ""}
-    <div class="pfoot">
-      <button type="button" class="pbtn" data-act="pview" data-m="counters" data-i="${i}" aria-label="${esc(t("counterBtn", { p: pname(p, i) }))}">${raw("counters")}</button>
-      <div class="chips">${chipsHTML(p, i)}</div>
-      <button type="button" class="pbtn${f.cmd && game.players.length > 1 ? "" : " ghost"}" data-act="pview" data-m="cmd" data-i="${i}" aria-label="${esc(t("cmdBtn", { p: pname(p, i) }))}" ${f.cmd && game.players.length > 1 ? "" : 'tabindex="-1" aria-hidden="true"'}>${raw("sword")}</button>
-    </div></div>`;
+  </div>`;
 }
 let geo = null;
 function renderBoard(only) {
@@ -1122,7 +1229,8 @@ function placeHub() {
   hub.style.left = x + "px"; hub.style.top = y + "px";
   const ap = game.players[game.active];
   hub.style.setProperty("--hubc", n > 1 && ap ? `var(--${ap.color}1)` : "var(--brass)");
-  $("hubt").innerHTML = raw("d20").replace("<svg", '<svg class="i l"');
+  $("hubt").innerHTML = raw("d20");
+  if (!$("hubbar").hidden) placeBar();
   $("hub").setAttribute("aria-label", t("menu") + (n > 1 ? " · " + t("turn", { n: game.turn }) : ""));
   const dn = $("hubdn"); dn.hidden = !game.day; if (game.day) dn.innerHTML = raw(game.day === "day" ? "sun" : "moon");
 }
@@ -1268,6 +1376,28 @@ RENDER.menu = () => {
     <div class="meta"><span>${t("format")} <b>${esc(fmtName)}</b></span><span>${t("players")} <b>${n}</b></span>${n > 1 ? `<span>${esc(t("turn", { n: game.turn }))}</span>` : ""}<span>${t("duration")} <b>${Math.floor(dur / 60) ? Math.floor(dur / 60) + " h " : ""}${dur % 60} min</b></span></div>`;
   $("mform").addEventListener("submit", e => { e.preventDefault(); const q = $("mq").value.trim(); rulesState.q = q; rulesState.tab = "search"; openLayer("rules", { replaceTop: true, focusInput: !q }); if (q) remember(q); });
 };
+/* nuova partita con le stesse persone (impostazioni stile LifeTotal) */
+function relaunch(o, quiet) {
+  const n = o.n || game.players.length, life = o.life || game.start, cmd = o.cmd != null ? o.cmd : F().cmd, poison = game.poison || F().poison;
+  const keep = game.players.map(p => ({ id: p.id, name: p.name, color: p.color, partner: p.partner }));
+  const fmt = o.n || o.cmd != null ? (cmd ? "commander" : "custom") : game.fmt;
+  game = makeGame(fmt === "thg" && n !== 2 ? "custom" : fmt, n, life, keep);
+  game.cmd = cmd; game.poison = poison;
+  ui.view = {}; saveGame(); $("board").innerHTML = ""; renderBoard(); buzz(12);
+  if (!quiet && stack.some(s => s.name === "settings")) RENDER.settings({ keepFocus: true });
+}
+function placeBar() {
+  const hub = $("hub").getBoundingClientRect(), bar = $("hubbar"), y = hub.top + hub.height / 2, h = 100;
+  bar.style.top = (y + h + 8 > innerHeight ? y - h : y) + "px";
+}
+function openBar() {
+  const bar = $("hubbar");
+  bar.querySelectorAll("button").forEach(b => { const k = b.dataset.tip; b.setAttribute("aria-label", t(k)); b.title = t(k);
+    b.innerHTML = raw({ restart: "restart", dice: "dice5", rulesTile: "book", more: "more", settings: "gear" }[k]); });
+  bar.setAttribute("aria-label", t("menu"));
+  bar.hidden = false; placeBar(); $("board").classList.add("dim"); $("hub").setAttribute("aria-expanded", "true"); buzz(6);
+}
+function closeBar() { $("hubbar").hidden = true; $("board").classList.remove("dim"); $("hub").setAttribute("aria-expanded", "false"); }
 function nextActive() {
   const n = game.players.length; let a = game.active, guard = 0;
   do { a = (a + 1) % n; } while (outRule(game.players[a]) && ++guard < n);
@@ -1520,12 +1650,27 @@ function undo() {
 RENDER.settings = () => {
   const pct = Math.round(100 * CR.translated / CR.rules.length);
   const sw = (id, on, a, b) => `<div class="row"><div class="t"><b id="${id}-l">${t(a)}</b><span>${t(b)}</span></div><input type="checkbox" class="switch" id="${id}" role="switch" aria-labelledby="${id}-l" ${on ? "checked" : ""}></div>`;
+  const n = game.players.length, f = F(), lifeSet = [20, 30, 40];
+  const pills = (act, vals, cur, extra) => `<div class="pills" role="group">${vals.map(v => `<button type="button" class="pill" data-act="${act}" data-v="${v}" aria-pressed="${cur === v}">${v}</button>`).join("")}${extra || ""}</div>`;
+  const lsw = (id, on, a, help, dis) => `<div class="ltrow"><span class="t"><span id="${id}-l">${t(a)}</span>${help ? `<small>${t(help)}</small>` : ""}</span><input type="checkbox" class="switch red" id="${id}" role="switch" aria-labelledby="${id}-l" ${on ? "checked" : ""} ${dis ? "disabled" : ""}></div>`;
   $("set-body").innerHTML = `
+    <div class="sec" style="gap:0">
+      <h3 class="lth">${t("ltGame")}</h3>
+      <div class="ltrow"><span>${t("ltPlayers")}</span>${pills("lt-n", [1, 2, 3, 4, 5, 6], n)}</div>
+      <div class="ltrow"><span>${t("ltLife")}</span>${pills("lt-life", lifeSet, game.start, `<button type="button" class="pill" data-act="lt-life-x" aria-pressed="${!lifeSet.includes(game.start)}" aria-label="${esc(t("ltCustom"))}">${lifeSet.includes(game.start) ? raw("pen") : game.start}</button>`)}</div>
+      ${settings.ltCustom ? `<div class="ltrow"><label for="lt-lifev">${t("ltCustom")}</label><span style="display:flex;gap:8px"><input class="field" id="lt-lifev" type="number" inputmode="numeric" min="1" max="999" value="${game.start}" style="width:110px"><button type="button" class="pill" data-act="lt-life-ok" aria-pressed="true">OK</button></span></div>` : ""}
+      <div class="ltrow"><span>${t("ltPoison")}</span>${pills("lt-poison", [10, 15, 21], f.poison)}</div>
+      ${lsw("s-gameover", settings.gameOver, "ltOver", "ltOverHelp")}
+      <h3 class="lth" style="margin-top:18px">${t("ltCmd")}</h3>
+      ${lsw("s-playcmd", !!f.cmd, "ltPlayCmd")}
+      ${lsw("s-cmdlife", settings.cmdLife, "ltLink", "", !f.cmd)}
+      <div class="ltrow"><button type="button" class="btn sm" data-act="open" data-l="setup">${t("ltMore")}</button></div>
+      <h3 class="lth" style="margin-top:18px">${t("ltApp")}</h3>
+    </div>
     <div class="sec"><h3 class="lbl">${t("stLang")}</h3><div class="seg" role="group"><button type="button" data-act="lang" data-v="it" aria-pressed="${settings.lang === "it"}">Italiano</button><button type="button" data-act="lang" data-v="en" aria-pressed="${settings.lang === "en"}">English</button></div><p class="note">${t("stLangHelp")}</p></div>
     <div class="sec"><h3 class="lbl">${t("stTheme")}</h3><div class="seg" role="group">${["dark", "light", "system"].map(v => `<button type="button" data-act="theme" data-v="${v}" aria-pressed="${settings.theme === v}">${t({ dark: "tDark", light: "tLight", system: "tSys" }[v])}</button>`).join("")}</div></div>
     <div class="card">
       ${sw("s-showen", settings.showEn, "stShowEn", "stShowEnHelp")}
-      ${sw("s-cmdlife", settings.cmdLife, "stCmdLife", "stCmdLifeHelp")}
       ${sw("s-wake", settings.wake, "stWake", "stWakeHelp")}
       ${sw("s-haptic", settings.haptic, "stHaptic", "stHapticHelp")}
     </div>
@@ -1561,6 +1706,20 @@ async function updateWake() {
 const state = { custom: false };
 const ACT = {
   menu: () => openLayer("menu"),
+  hubbar: () => { if ($("hubbar").hidden) openBar(); else closeBar(); },
+  "bar-open": el => { closeBar(); openLayer(el.dataset.l, { focusInput: el.dataset.l === "rules" }); },
+  restart: () => {
+    closeBar();
+    const prev = JSON.stringify(game);
+    relaunch({}, true);
+    toast(t("restarted"), { label: t("undoIt"), fn: () => { game = JSON.parse(prev); ui.view = {}; saveGame(); $("board").innerHTML = ""; renderBoard(); } });
+  },
+  setcolor: el => { const i = +el.dataset.i; game.players[i].color = el.dataset.c; ui.view[i] = "life"; saveGame(); renderBoard(i); buzz(8); },
+  "lt-n": el => relaunch({ n: +el.dataset.v }),
+  "lt-life": el => { settings.ltCustom = false; relaunch({ life: +el.dataset.v }); },
+  "lt-life-x": () => { settings.ltCustom = !settings.ltCustom; RENDER.settings(); const f = $("lt-lifev"); if (f) f.focus(); },
+  "lt-life-ok": () => { const v = Math.max(1, Math.min(999, parseInt($("lt-lifev").value, 10) || game.start)); settings.ltCustom = false; relaunch({ life: v }); },
+  "lt-poison": el => { game.poison = +el.dataset.v; saveGame(); renderBoard(); RENDER.settings(); },
   close: () => closeTop(),
   open: el => { const l = el.dataset.l; if (l === "setup") { setup.fmt = null; } openLayer(l, { replaceTop: stack.length && stack[stack.length - 1].name === "menu", focusInput: l === "rules" }); },
   pass: () => {
@@ -1590,7 +1749,7 @@ const ACT = {
       else toast(t("fsFail"));
     } catch (e) { toast(t("fsFail")); }
   },
-  pview: el => { const i = +el.dataset.i; ui.view[i] = el.dataset.m === "life" ? "life" : el.dataset.m; renderBoard(i); buzz(6); const f = $("board").children[i].querySelector(ui.view[i] === "life" ? ".pbtn" : ".pdone"); if (f && el.matches(":focus-visible")) f.focus(); },
+  pview: el => { const i = +el.dataset.i; ui.view[i] = el.dataset.m === "life" ? "life" : el.dataset.m; renderBoard(i); buzz(6); const f = $("board").children[i].querySelector(ui.view[i] === "life" ? ".dots" : ".pclose"); if (f && el.matches(":focus-visible")) f.focus(); },
   cstep: el => {
     const i = +el.dataset.i, p = game.players[i], k = el.dataset.k, d = +el.dataset.d, v = Math.max(0, p.c[k] + d);
     if (v === p.c[k]) return;
@@ -1652,6 +1811,7 @@ const ACT = {
   "clear-recent": () => { store.set("recent", []); toast(t("cleared")); },
 };
 document.addEventListener("click", e => {
+  if (!$("hubbar").hidden && !e.target.closest("#hubbar,#hub")) { closeBar(); e.preventDefault(); e.stopPropagation(); return; }
   if (e.target.closest("a[href]")) return;
   const el = e.target.closest("[data-act]");
   if (el && ACT[el.dataset.act]) {
@@ -1663,8 +1823,9 @@ document.addEventListener("click", e => {
 });
 document.addEventListener("change", e => {
   const el = e.target;
-  const sw = { "s-showen": "showEn", "s-cmdlife": "cmdLife", "s-wake": "wake", "s-haptic": "haptic" }[el.id];
-  if (sw) { settings[sw] = el.checked; saveSettings(); if (sw === "wake") updateWake(); return; }
+  const sw = { "s-showen": "showEn", "s-cmdlife": "cmdLife", "s-wake": "wake", "s-haptic": "haptic", "s-gameover": "gameOver" }[el.id];
+  if (sw) { settings[sw] = el.checked; saveSettings(); if (sw === "wake") updateWake(); if (sw === "gameOver") renderBoard(); return; }
+  if (el.id === "s-playcmd") { relaunch({ cmd: el.checked, life: el.checked && game.start < 40 ? 40 : !el.checked && game.start === 40 ? 20 : game.start }); return; }
   if (el.dataset.partner != null) { const i = +el.dataset.partner; draft(i).partner = el.checked; if (game.players[i]) { game.players[i].partner = el.checked; saveGame(); renderBoard(); } return; }
   if (el.id === "slife") setup.life = parseInt(el.value, 10) || setup.life;
 });
@@ -1677,6 +1838,7 @@ document.addEventListener("input", e => {
   }
 });
 document.addEventListener("keydown", e => {
+  if (e.key === "Escape" && !$("hubbar").hidden) { closeBar(); $("hub").focus(); return; }
   if (e.key === "Escape" && stack.length) { e.preventDefault(); closeTop(); return; }
   if ((e.key === "Enter" || e.key === " ") && e.target.classList && e.target.classList.contains("rc")) { e.preventDefault(); openRule(e.target.dataset.id); }
   const top = stack[stack.length - 1];
