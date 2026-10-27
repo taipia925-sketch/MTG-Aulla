@@ -1,0 +1,195 @@
+@208.2b
+La carta può avere un'abilità statica che crea un effetto di sostituzione che imposta la forza e la costituzione della creatura a uno tra diversi valori specifici mentre entra nel campo di battaglia o viene girata a faccia in su. (Vedi regola 614, «Effetti di sostituzione».) Un'abilità del genere è formulata «Mentre [questa creatura] entra…», «Mentre [questa creatura] viene girata a faccia in su…» oppure «[Questa creatura] entra come…» ed elenca due o più valori specifici di forza e costituzione (e può elencare anche caratteristiche aggiuntive). Le caratteristiche scelte o determinate con questi effetti influiscono sui valori copiabili della creatura. (Vedi regola 707.2.) Mentre la carta non è sul campo di battaglia, la sua forza e la sua costituzione sono considerate ciascuna 0.
+@208.3
+Un permanente non creatura non ha forza né costituzione, anche se è una carta su cui sono stampate forza e costituzione (come un Veicolo). Un oggetto non creatura che non è sul campo di battaglia ha forza o costituzione solo se ha forza e costituzione stampate su di sé.
+@208.3a
+Se dovesse essere creato un effetto che imposta la forza e/o la costituzione base di un permanente non creatura, o che ne modifica in altro modo la forza e/o la costituzione, quell'effetto viene creato anche se non fa nulla a meno che quel permanente non diventi una creatura.
+Esempio: Veteran Motorist ha l'abilità «Ogni volta che questa creatura manovra un Veicolo, quel Veicolo prende +1/+1 fino alla fine del turno», e viene TAPpata per pagare il costo di manovrare di un Veicolo. Questa abilità innescata si risolve mentre il Veicolo che ha manovrato non è ancora una creatura. L'effetto continuo viene creato e si applicherà al Veicolo una volta che diventerà una creatura.
+@208.4
+Alcuni effetti fanno riferimento alla «forza base», alla «costituzione base» o alla «forza e costituzione base» di una creatura.
+@208.4a
+Gli effetti che impostano la forza e/o la costituzione di una creatura a valori specifici possono fare riferimento alla forza e/o costituzione base. Altri effetti continui possono modificare ulteriormente la forza e la costituzione della creatura. Vedi regola 613, «Interazione degli effetti continui».
+@208.4b
+Alcuni effetti controllano la forza e/o la costituzione base di una creatura. Questi effetti vedono le caratteristiche di quella creatura dopo aver applicato le abilità che definiscono caratteristiche e le abilità che impostano forza e/o costituzione, ignorando gli effetti e i segnalini che modificano forza e/o costituzione senza impostarle. Vedi regola 613, «Interazione degli effetti continui».
+@208.5
+Se una creatura in qualche modo non ha un valore di forza, la sua forza è 0. Lo stesso vale per la costituzione.
+@209
+Fedeltà
+@209.1
+Ogni carta planeswalker ha un numero di fedeltà stampato nel suo angolo in basso a destra. Indica la sua fedeltà mentre non è sul campo di battaglia, e indica anche che il planeswalker entra nel campo di battaglia con quel numero di segnalini fedeltà su di sé (vedi regola 306.5b).
+@209.2
+Un'abilità attivata con un simbolo di fedeltà nel suo costo è un'abilità di fedeltà. Le abilità di fedeltà seguono regole speciali: un giocatore può attivare un'abilità di fedeltà di un permanente che controlla in qualsiasi momento in cui ha la priorità e la pila è vuota durante una fase principale del suo turno, ma solo se in quel turno non è stata attivata nessuna delle abilità di fedeltà di quel permanente. Vedi regola 606, «Abilità di fedeltà».
+@210
+Difesa
+@210.1
+Ogni carta battaglia ha un numero di difesa stampato nel suo angolo in basso a destra. Indica la sua difesa mentre non è sul campo di battaglia, e indica anche che la battaglia entra nel campo di battaglia con quel numero di segnalini difesa su di sé (vedi regola 310.4b).
+@211
+Modificatore della mano
+@211.1
+Ogni carta vanguard ha un modificatore della mano stampato nel suo angolo in basso a sinistra. È un numero preceduto da un segno più, un numero preceduto da un segno meno, oppure uno zero. Questo modificatore si applica quando si determinano la dimensione della mano iniziale e la dimensione massima della mano del proprietario della carta vanguard. Vedi regola 103.5.
+@212
+Modificatore dei punti vita
+@212.1
+Ogni carta vanguard ha un modificatore dei punti vita stampato nel suo angolo in basso a destra. È un numero preceduto da un segno più, un numero preceduto da un segno meno, oppure uno zero. Questo modificatore si applica quando si determina il totale di punti vita iniziale del proprietario della carta vanguard. Vedi regola 103.4.
+@213
+Informazioni sotto il riquadro di testo
+@213.1
+Ogni carta ha del testo stampato sotto il riquadro di testo che non ha alcun effetto sul gioco. Non tutte le espansioni sono state stampate con tutte le informazioni elencate qui sotto su ogni carta.
+@213.1a
+La maggior parte delle espansioni ha numeri da collezione. Questa informazione è stampata nella forma [numero della carta]/[carte totali dell'espansione] o semplicemente [numero della carta]. Alcune carte, come le carte esclusive dei Planeswalker Deck®, hanno numeri che superano il totale di carte indicato.
+@213.1b
+La rarità di una carta è indicata da una singola lettera dopo il numero da collezione.
+@213.1c
+Alcune carte promozionali includono informazioni che indicano la specifica promozione a cui la carta è associata.
+@213.1d
+Alcune carte con nomi intercambiabili includono informazioni su una specifica versione di una carta con quel nome intercambiabile. Vedi regola 201.3.
+@213.1e
+Il codice di tre caratteri che rappresenta l'espansione in cui è stampata una carta e il codice di due caratteri che rappresenta la lingua in cui è stampata sono separati da un punto. Se una carta è premium, questi codici sono separati invece da una stella.
+@213.1f
+Il credito dell'illustrazione di una carta segue l'icona del pennello oppure, sulle carte più vecchie, l'abbreviazione «Illus.».
+@213.1g
+Il testo legale (le scritte in piccolo in basso o in basso a destra sulla carta) riporta le informazioni su marchi e diritti d'autore.
+@#3
+Tipi di carta
+@300
+Generale
+@300.1
+I tipi di carta sono artefatto, battaglia, cospirazione, creatura, dungeon, incantesimo, istantaneo, kindred, terra, fenomeno, piano, planeswalker, piano malvagio, stregoneria e vanguard.
+@300.2
+Alcuni oggetti hanno più di un tipo di carta (per esempio, una creatura artefatto). Questi oggetti combinano gli aspetti di ciascuno di quei tipi di carta e sono soggetti alle magie e alle abilità che influiscono su uno qualsiasi o su tutti quei tipi di carta.
+@300.2a
+Un oggetto che è sia una terra sia un altro tipo di carta (per esempio, una terra artefatto) può essere giocato solo come terra. Non può essere lanciato come magia.
+@300.2b
+Ogni carta kindred ha anche un altro tipo di carta. Il lancio e la risoluzione di una carta kindred seguono le regole per il lancio e la risoluzione di una carta dell'altro tipo di carta.
+@301
+Artefatti
+@301.1
+Un giocatore che ha la priorità può lanciare una carta artefatto dalla sua mano durante una fase principale del suo turno quando la pila è vuota. Lanciare un artefatto come magia usa la pila. (Vedi regola 601, «Lanciare magie».)
+@301.2
+Quando una magia artefatto si risolve, il suo controllore la mette sul campo di battaglia sotto il proprio controllo.
+@301.3
+I sottotipi di artefatto sono sempre una sola parola e sono elencati dopo un trattino lungo: «Artefatto — Equipaggiamento». I sottotipi di artefatto sono detti anche tipi di artefatto. Gli artefatti possono avere più sottotipi. Vedi regola 205.3g per l'elenco completo dei tipi di artefatto.
+@301.4
+Gli artefatti non hanno caratteristiche specifiche del loro tipo di carta. La maggior parte degli artefatti non ha simboli di mana colorato nel costo di mana, e quindi è incolore. Tuttavia, non c'è alcun legame tra essere incolore ed essere un artefatto: gli artefatti possono essere colorati, e gli oggetti incolori possono avere tipi di carta diversi da artefatto.
+@301.5
+Alcuni artefatti hanno il sottotipo «Equipaggiamento». Un Equipaggiamento può essere assegnato a una creatura. Non può essere assegnato legalmente a qualcosa che non sia una creatura.
+@301.5a
+La creatura a cui è assegnato un Equipaggiamento è detta «creatura equipaggiata». L'Equipaggiamento è assegnato a quella creatura, cioè la «equipaggia».
+@301.5b
+Le magie Equipaggiamento vengono lanciate come le altre magie artefatto. Gli Equipaggiamenti entrano nel campo di battaglia come gli altri artefatti. Non entrano nel campo di battaglia assegnati a una creatura. L'abilità chiave equipaggiare assegna l'Equipaggiamento a una creatura che controlli (vedi regola 702.6, «Equipaggiare»). Il controllo della creatura conta solo quando l'abilità equipaggiare viene attivata e quando si risolve. Anche magie e altre abilità possono assegnare un Equipaggiamento a una creatura. Se un effetto tenta di assegnare un Equipaggiamento a un oggetto che non può essere equipaggiato da esso, l'Equipaggiamento non si sposta.
+@301.5c
+Un Equipaggiamento che è anche una creatura non può equipaggiare una creatura a meno che quell'Equipaggiamento non abbia riconfigurare (vedi regola 702.151, «Riconfigurare»). Un Equipaggiamento che perde il sottotipo «Equipaggiamento» non può equipaggiare una creatura. Un Equipaggiamento non può equipaggiare se stesso. Un Equipaggiamento che equipaggia un permanente illegale o inesistente si stacca da quel permanente ma resta sul campo di battaglia. (Questa è un'azione generata dallo stato. Vedi regola 704.) Un Equipaggiamento non può equipaggiare più di una creatura. Se una magia o abilità dovesse far equipaggiare a un Equipaggiamento più di una creatura, il controllore dell'Equipaggiamento sceglie quale creatura equipaggia.
+@301.5d
+Il controllore di un Equipaggiamento è distinto dal controllore della creatura equipaggiata; i due non devono per forza coincidere. Cambiare il controllo della creatura non cambia il controllo dell'Equipaggiamento, e viceversa. Solo il controllore dell'Equipaggiamento può attivarne le abilità. Tuttavia, se l'Equipaggiamento conferisce un'abilità alla creatura equipaggiata (con «ottiene» o «ha»), solo il controllore della creatura equipaggiata può attivare quell'abilità.
+@301.5e
+Se un effetto tenta di mettere sul campo di battaglia un Equipaggiamento che non è anche un'Aura (vedi regola 303.4i) assegnato a un oggetto che non può equipaggiare legalmente o a un oggetto non definito, l'Equipaggiamento entra nel campo di battaglia non assegnato. Se l'Equipaggiamento è una pedina, viene creato ed entra nel campo di battaglia non assegnato.
+@301.5f
+Un'abilità di un permanente che fa riferimento alla «creatura equipaggiata» si riferisce alla creatura a cui quel permanente è assegnato, anche se il permanente con l'abilità non è un Equipaggiamento.
+@301.6
+Alcuni artefatti hanno il sottotipo «Fortificazione». Una Fortificazione può essere assegnata a una terra. Non può essere assegnata legalmente a un oggetto che non sia una terra. L'equivalente dell'abilità chiave equipaggiare per le Fortificazioni è l'abilità chiave fortificare. Le regole 301.5a–f si applicano alle Fortificazioni in relazione alle terre esattamente come si applicano agli Equipaggiamenti in relazione alle creature, con un chiarimento relativo alla regola 301.5c: una Fortificazione che è anche una creatura (non una terra) non può fortificare una terra. (Vedi regola 702.67, «Fortificare».)
+@301.7
+Alcuni artefatti hanno il sottotipo «Veicolo». La maggior parte dei Veicoli ha un'abilità manovrare che permette loro di diventare creature artefatto. Vedi regola 702.122, «Manovrare».
+@301.7a
+Ogni Veicolo ha forza e costituzione stampate, ma ha queste caratteristiche solo se è anche una creatura. Vedi regola 208.3.
+@301.7b
+Se un Veicolo diventa una creatura, ha immediatamente la forza e la costituzione stampate. Altri effetti, compreso l'effetto che lo rende una creatura, possono modificare questi valori o impostarli a valori diversi.
+@302
+Creature
+@302.1
+Un giocatore che ha la priorità può lanciare una carta creatura dalla sua mano durante una fase principale del suo turno quando la pila è vuota. Lanciare una creatura come magia usa la pila. (Vedi regola 601, «Lanciare magie».)
+@302.2
+Quando una magia creatura si risolve, il suo controllore la mette sul campo di battaglia sotto il proprio controllo.
+@302.3
+I sottotipi di creatura di solito sono di una sola parola e sono elencati dopo un trattino lungo: «Creatura — Umano Soldato», «Creatura Artefatto — Golem» e così via. I sottotipi di creatura sono detti anche tipi di creatura. Le creature possono avere più sottotipi. Vedi regola 205.3m per l'elenco completo dei tipi di creatura.
+Esempio: «Creatura — Goblin Mago» significa che la carta è una creatura con i sottotipi Goblin e Mago.
+@302.4
+La forza e la costituzione sono caratteristiche che hanno solo le creature.
+@302.4a
+La forza di una creatura è la quantità di danno che infligge in combattimento.
+@302.4b
+La costituzione di una creatura è la quantità di danno necessaria per distruggerla.
+@302.4c
+Per determinare la forza e la costituzione di una creatura, si parte dai numeri stampati nel suo angolo in basso a destra, poi si applicano gli effetti continui applicabili. (Vedi regola 613, «Interazione degli effetti continui».)
+@302.5
+Le creature possono attaccare e bloccare. (Vedi regola 508, «Sottofase di dichiarazione degli attaccanti», e regola 509, «Sottofase di dichiarazione dei bloccanti».)
+@302.6
+Un'abilità attivata di una creatura con il simbolo di TAP o il simbolo di STAP nel suo costo di attivazione non può essere attivata a meno che la creatura non sia stata continuativamente sotto il controllo del suo controllore dall'inizio del suo turno più recente. Una creatura non può attaccare a meno che non sia stata continuativamente sotto il controllo del suo controllore dall'inizio del suo turno più recente. Questa regola è chiamata informalmente regola della «debolezza da evocazione» (summoning sickness).
+@302.7
+Il danno inflitto a una creatura da una fonte senza avvizzire né infettare viene segnato su quella creatura (vedi regola 120.3). Se il danno totale segnato su quella creatura è maggiore o uguale alla sua costituzione, a quella creatura è stato inflitto danno letale e viene distrutta come azione generata dallo stato (vedi regola 704). Tutto il danno segnato su una creatura viene rimosso quando si rigenera (vedi regola 701.19, «Rigenerare») e durante la sottofase di cancellazione (vedi regola 514.2).
+@303
+Incantesimi
+@303.1
+Un giocatore che ha la priorità può lanciare una carta incantesimo dalla sua mano durante una fase principale del suo turno quando la pila è vuota. Lanciare un incantesimo come magia usa la pila. (Vedi regola 601, «Lanciare magie».)
+@303.2
+Quando una magia incantesimo si risolve, il suo controllore la mette sul campo di battaglia sotto il proprio controllo.
+@303.3
+I sottotipi di incantesimo sono sempre una sola parola e sono elencati dopo un trattino lungo: «Incantesimo — Santuario». Ogni parola dopo il trattino è un sottotipo separato. I sottotipi di incantesimo sono detti anche tipi di incantesimo. Gli incantesimi possono avere più sottotipi. Vedi regola 205.3h per l'elenco completo dei tipi di incantesimo.
+@303.4
+Alcuni incantesimi hanno il sottotipo «Aura». Un'Aura entra nel campo di battaglia assegnata a un oggetto o a un giocatore. Ciò a cui un'Aura può essere assegnata è definito dalla sua abilità chiave incanta (vedi regola 702.5, «Incanta»). Altri effetti possono limitare da cosa un permanente può essere incantato.
+@303.4a
+Una magia Aura richiede un bersaglio, che è definito dalla sua abilità incanta.
+@303.4b
+L'oggetto o il giocatore a cui è assegnata un'Aura è detto incantato. L'Aura è assegnata a quell'oggetto o giocatore, cioè lo «incanta».
+@303.4c
+Se un'Aura sta incantando un oggetto o un giocatore illegale secondo la sua abilità incanta e gli altri effetti applicabili, se l'oggetto a cui era assegnata non esiste più, o se il giocatore a cui era assegnata ha lasciato la partita, l'Aura viene messa nel cimitero del suo proprietario. (Questa è un'azione generata dallo stato. Vedi regola 704.)
+@303.4d
+Un'Aura non può incantare se stessa. Se in qualche modo succede, l'Aura viene messa nel cimitero del suo proprietario. Un'Aura che è anche una creatura non può incantare nulla. Se in qualche modo succede, l'Aura si stacca e poi viene messa nel cimitero del suo proprietario. (Queste sono azioni generate dallo stato. Vedi regola 704.) Un'Aura non può incantare più di un oggetto o giocatore. Se una magia o abilità dovesse far assegnare un'Aura a più di un oggetto o giocatore, il controllore dell'Aura sceglie a quale oggetto o giocatore viene assegnata.
+@303.4e
+Il controllore di un'Aura è distinto dal controllore dell'oggetto incantato o dal giocatore incantato; i due non devono per forza coincidere. Se un'Aura incanta un oggetto, cambiare il controllo dell'oggetto non cambia il controllo dell'Aura, e viceversa. Solo il controllore dell'Aura può attivarne le abilità. Tuttavia, se l'Aura conferisce un'abilità all'oggetto incantato (con «ottiene» o «ha»), solo il controllore dell'oggetto incantato può attivare quell'abilità.
+@303.4f
+Se un'Aura sta entrando nel campo di battaglia sotto il controllo di un giocatore in un modo diverso dalla risoluzione come magia Aura, e l'effetto che la mette sul campo di battaglia non specifica l'oggetto o il giocatore che l'Aura incanterà, quel giocatore sceglie cosa incanterà mentre l'Aura entra nel campo di battaglia. Il giocatore deve scegliere un oggetto o un giocatore legale secondo l'abilità incanta dell'Aura e gli altri effetti applicabili.
+@303.4g
+Se un'Aura sta entrando nel campo di battaglia e non c'è alcun oggetto o giocatore legale da incantare, l'Aura resta nella sua zona attuale, a meno che quella zona non sia la pila. In quel caso, l'Aura viene messa nel cimitero del suo proprietario invece di entrare nel campo di battaglia. Se l'Aura è una pedina, non viene creata.
+@303.4h
+Se un effetto tenta di mettere sul campo di battaglia un permanente che non è un'Aura, un Equipaggiamento o una Fortificazione assegnato a un oggetto o a un giocatore, entra nel campo di battaglia non assegnato.
+@303.4i
+Se un effetto tenta di mettere sul campo di battaglia un'Aura assegnata a un oggetto o giocatore che non può incantare legalmente, o a un oggetto o giocatore non definito, l'Aura resta nella sua zona attuale, a meno che quella zona non sia la pila. In quel caso, l'Aura viene messa nel cimitero del suo proprietario invece di entrare nel campo di battaglia. Se l'Aura è una pedina, non viene creata.
+@303.4j
+Se un effetto tenta di assegnare un'Aura sul campo di battaglia a un oggetto o giocatore che non può incantare legalmente, l'Aura non si sposta.
+@303.4k
+Se un effetto permette a un'Aura che viene girata a faccia in su di essere assegnata a un oggetto o giocatore, il controllore dell'Aura considera le caratteristiche che quell'Aura avrebbe se fosse a faccia in su per stabilire a cosa può essere assegnata, e deve scegliere un oggetto o un giocatore legale secondo l'abilità incanta dell'Aura e gli altri effetti applicabili.
+@303.4m
+Un'abilità di un permanente che fa riferimento all'«[oggetto o giocatore] incantato» si riferisce all'oggetto o al giocatore a cui quel permanente è assegnato, anche se il permanente con l'abilità non è un'Aura.
+@303.5
+Alcuni incantesimi hanno il sottotipo «Saga». Vedi regola 714 per maggiori informazioni sulle carte Saga.
+@303.6
+Alcuni incantesimi hanno il sottotipo «Classe». Vedi regola 716 per maggiori informazioni sulle carte Classe.
+@303.7
+Alcuni incantesimi Aura hanno anche il sottotipo «Ruolo».
+@303.7a
+Se a un permanente sono assegnati più Ruoli controllati dallo stesso giocatore, ciascuno di quei Ruoli tranne quello con l'ordine cronologico più recente viene messo nel cimitero del suo proprietario. Questa è un'azione generata dallo stato. Vedi regola 704.
+@304
+Istantanei
+@304.1
+Un giocatore che ha la priorità può lanciare una carta istantaneo dalla sua mano. Lanciare un istantaneo come magia usa la pila. (Vedi regola 601, «Lanciare magie».)
+@304.2
+Quando una magia istantaneo si risolve, vengono eseguite le azioni indicate nel suo testo delle regole. Poi viene messa nel cimitero del suo proprietario.
+@304.3
+I sottotipi di istantaneo sono sempre una sola parola e sono elencati dopo un trattino lungo: «Istantaneo — Arcano». Ogni parola dopo il trattino è un sottotipo separato. L'insieme dei sottotipi di istantaneo è lo stesso dei sottotipi di stregoneria; questi sottotipi sono detti tipi di magia. Gli istantanei possono avere più sottotipi. Vedi regola 205.3k per l'elenco completo dei tipi di magia.
+@304.4
+Gli istantanei non possono entrare nel campo di battaglia. Se un istantaneo dovesse entrare nel campo di battaglia, resta invece nella sua zona precedente.
+@304.5
+Se un testo dice che un giocatore può fare qualcosa «in qualsiasi momento in cui potrebbe lanciare un istantaneo» o «solo come un istantaneo», significa solo che il giocatore deve avere la priorità. Il giocatore non deve avere una carta istantaneo che potrebbe lanciare. Gli effetti che impedirebbero a quel giocatore di lanciare una magia istantaneo non influiscono sulla sua possibilità di compiere quell'azione (a meno che l'azione non consista proprio nel lanciare una magia istantaneo).
+@305
+Terre
+@305.1
+Un giocatore che ha la priorità può giocare una carta terra dalla sua mano durante una fase principale del suo turno quando la pila è vuota. Giocare una terra è un'azione speciale; non usa la pila (vedi regola 116). Il giocatore semplicemente mette la terra sul campo di battaglia. Poiché la terra non va in pila, non è mai una magia, e i giocatori non possono rispondere a essa con istantanei o abilità attivate.
+@305.2
+Normalmente un giocatore può giocare una terra durante il suo turno; tuttavia, degli effetti continui possono aumentare questo numero.
+@305.2a
+Per stabilire se un giocatore può giocare una terra, confronta il numero di terre che il giocatore può giocare in questo turno con il numero di terre che ha già giocato in questo turno (comprese le terre giocate come azioni speciali e le terre giocate durante la risoluzione di magie e abilità). Se il numero di terre che il giocatore può giocare è maggiore, la giocata è legale.
+@305.2b
+Un giocatore non può giocare una terra, per nessuna ragione, se il numero di terre che può giocare in questo turno è uguale o minore del numero di terre che ha già giocato in questo turno. Ignora qualsiasi parte di un effetto che istruisca un giocatore a farlo.
+@305.3
+Un giocatore non può giocare una terra, per nessuna ragione, se non è il suo turno. Ignora qualsiasi parte di un effetto che istruisca un giocatore a farlo.
+@305.4
+Gli effetti possono anche permettere ai giocatori di «mettere» terre sul campo di battaglia. Questo non è lo stesso che «giocare una terra» e non conta come terra giocata durante il turno in corso.
+@305.5
+I sottotipi di terra sono sempre una sola parola e sono elencati dopo un trattino lungo. I sottotipi di terra sono detti anche tipi di terra. Le terre possono avere più sottotipi. Vedi regola 205.3i per l'elenco completo dei tipi di terra.
+Esempio: «Terra Base — Montagna» significa che la carta è una terra con il sottotipo Montagna.
+@305.6
+I tipi di terra base sono Pianura, Isola, Palude, Montagna e Foresta. Se un oggetto usa le parole «tipo di terra base», si riferisce a uno di questi sottotipi. Un oggetto con il tipo di carta terra e un tipo di terra base ha l'abilità intrinseca «{T}: Aggiungi [simbolo di mana]», anche se il riquadro di testo non contiene effettivamente quel testo o l'oggetto non ha un riquadro di testo. Per le Pianure [simbolo di mana] è {W}; per le Isole, {U}; per le Paludi, {B}; per le Montagne, {R}; e per le Foreste, {G}. Vedi regola 107.4a. Vedi anche la regola 605, «Abilità di mana».
+@305.7
+Se un effetto imposta il sottotipo di una terra a uno o più tipi di terra base, la terra non ha più il suo vecchio tipo di terra. Perde tutte le abilità generate dal suo testo delle regole, i suoi vecchi tipi di terra e gli effetti copiabili che influiscono su quella terra, e ottiene l'abilità di mana appropriata per ogni nuovo tipo di terra base. Nota che questo non rimuove le abilità conferite alla terra da altri effetti. Impostare il sottotipo di una terra non aggiunge né rimuove tipi di carta (come creatura) o supertipi (come base, leggendario e neve) che la terra può avere. Se una terra ottiene uno o più tipi di terra in aggiunta ai propri, mantiene i suoi tipi di terra e il suo testo delle regole, e ottiene i nuovi tipi di terra e le nuove abilità di mana.
+@305.8
+Qualsiasi terra con il supertipo «base» è una terra base. Qualsiasi terra che non ha questo supertipo è una terra non base, anche se ha un tipo di terra base.

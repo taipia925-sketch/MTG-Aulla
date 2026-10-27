@@ -1,0 +1,140 @@
+@508.4
+Se una creatura viene messa sul campo di battaglia attaccante, il suo controllore sceglie, mentre entra nel campo di battaglia, quale giocatore in difesa, quale planeswalker controllato da un giocatore in difesa o quale battaglia protetta da un giocatore in difesa sta attaccando (a meno che l'effetto che l'ha messa sul campo di battaglia non specifichi cosa sta attaccando). Allo stesso modo, se un effetto stabilisce che una creatura sta attaccando, il suo controllore sceglie quale giocatore in difesa, quale planeswalker controllato da un giocatore in difesa o quale battaglia protetta da un giocatore in difesa sta attaccando (a meno che l'effetto non l'abbia già specificato). Queste creature «stanno attaccando» ma, ai fini degli eventi di innesco e degli effetti, non hanno mai «attaccato». Restano creature attaccanti finché non vengono rimosse dal combattimento o finché non termina la fase di combattimento, a seconda di cosa avviene prima.
+@508.4a
+Se una creatura dovesse essere messa sul campo di battaglia attaccante un certo giocatore, e quel giocatore non è più in partita, la creatura viene messa sul campo di battaglia ma non è mai considerata una creatura attaccante. Lo stesso vale se una creatura dovesse essere messa sul campo di battaglia attaccante un planeswalker o una battaglia e quel permanente non è più sul campo di battaglia, non è più un planeswalker o una battaglia, è un planeswalker non più controllato da un giocatore in difesa o è una battaglia non più protetta da un giocatore in difesa.
+@508.4b
+Se l'effetto che stabilisce che una creatura sta attaccando specifica che sta attaccando un certo giocatore, e quel giocatore non è più in partita quando l'effetto si risolve, la creatura non diventa una creatura attaccante. Lo stesso vale se l'effetto specifica che una creatura sta attaccando un planeswalker o una battaglia e, quando l'effetto si risolve, quel permanente non è più sul campo di battaglia, non è più un planeswalker o una battaglia, è un planeswalker non più controllato da un giocatore in difesa o è una battaglia non più protetta da un giocatore in difesa.
+@508.4c
+Una creatura che viene messa sul campo di battaglia attaccante o di cui si stabilisce che sta attaccando non è soggetta ai requisiti o alle restrizioni che si applicano alla dichiarazione degli attaccanti.
+@508.4d
+Una creatura che viene messa sul campo di battaglia attaccante durante la sottofase di dichiarazione dei bloccanti, la sottofase del danno da combattimento o la sottofase di fine del combattimento entra nel campo di battaglia come creatura non bloccata. Resta non bloccata finché non viene rimossa dal combattimento, un effetto non dice che diventa bloccata o la fase di combattimento non termina, a seconda di cosa avviene prima.
+@508.5
+Se un'abilità di una creatura attaccante fa riferimento a un giocatore in difesa, o una magia o abilità fa riferimento sia a una creatura attaccante sia a un giocatore in difesa, allora, salvo diversa indicazione, il giocatore in difesa a cui si riferisce è il giocatore che quella creatura sta attaccando, il controllore del planeswalker che quella creatura sta attaccando o il protettore della battaglia che quella creatura sta attaccando. Se quella creatura non sta più attaccando, il giocatore in difesa a cui si riferisce è il giocatore che quella creatura stava attaccando prima di essere rimossa dal combattimento, il controllore del planeswalker che stava attaccando prima di essere rimossa dal combattimento o il protettore della battaglia che stava attaccando prima di essere rimossa dal combattimento.
+@508.5a
+In una partita multigiocatore, qualsiasi regola, oggetto o effetto che fa riferimento a un «giocatore in difesa» si riferisce a uno specifico giocatore in difesa, non a tutti i giocatori in difesa. Se una magia o abilità potesse applicarsi a più creature attaccanti, il giocatore in difesa appropriato viene determinato singolarmente per ciascuna di quelle creature attaccanti. Se ci sono più giocatori in difesa che potrebbero essere scelti, il controllore della magia o abilità ne sceglie uno.
+@508.6
+Un giocatore «sta attaccando [un giocatore]» se il primo giocatore controlla una creatura che sta attaccando il secondo giocatore. Un giocatore «ha attaccato [un giocatore]» se il primo giocatore ha dichiarato una o più creature come attaccanti che attaccano il secondo giocatore.
+@508.7
+Alcune carte permettono a un giocatore di scegliere di nuovo quale giocatore, planeswalker o battaglia sta attaccando una creatura.
+@508.7a
+La creatura attaccante non viene rimossa dal combattimento e non è considerata come se avesse attaccato una seconda volta. Quella creatura sta attaccando il giocatore o il permanente scelto di nuovo, ma è comunque considerata come se avesse attaccato il giocatore o il permanente scelto quando è stata dichiarata come attaccante.
+@508.7b
+Mentre si sceglie di nuovo quale giocatore, planeswalker o battaglia sta attaccando una creatura, quella creatura non è soggetta ai requisiti o alle restrizioni che si applicano alla dichiarazione degli attaccanti.
+@508.7c
+Il giocatore, il planeswalker o la battaglia scelti di nuovo devono essere un avversario del controllore della creatura attaccante, un planeswalker controllato da un avversario del controllore della creatura attaccante o una battaglia protetta da un avversario del controllore della creatura attaccante.
+@508.7d
+In una partita multigiocatore che non usa l'opzione di attacco a più giocatori (vedi regola 802), il giocatore, il planeswalker o la battaglia scelti di nuovo devono essere il giocatore in difesa scelto, un planeswalker controllato da quel giocatore o una battaglia protetta da quel giocatore.
+@508.7e
+In una partita multigiocatore che usa l'opzione del raggio d'influenza limitato (vedi regola 801), il giocatore, il planeswalker o la battaglia scelti di nuovo devono trovarsi entro il raggio d'influenza del controllore della creatura attaccante. Nel caso di una battaglia, anche il protettore della battaglia deve trovarsi entro il raggio d'influenza del controllore della creatura attaccante.
+@508.8
+Se nessuna creatura viene dichiarata come attaccante o messa sul campo di battaglia attaccante, salta le sottofasi di dichiarazione dei bloccanti e del danno da combattimento.
+@509
+Sottofase di dichiarazione dei bloccanti
+@509.1
+Primo, il giocatore in difesa dichiara i bloccanti. Questa azione generata dal turno non usa la pila. Per dichiarare i bloccanti, il giocatore in difesa segue in ordine i passaggi indicati qui sotto. Se in un qualsiasi momento durante la dichiarazione dei bloccanti il giocatore in difesa non è in grado di rispettare uno dei passaggi elencati, la dichiarazione è illegale; la partita torna al momento precedente la dichiarazione (vedi regola 733, «Gestire le azioni illegali»).
+@509.1a
+Il giocatore in difesa sceglie quali creature che controlla, se ce ne sono, bloccheranno. Le creature scelte devono essere STAPpate e non possono essere anche battaglie. Per ciascuna delle creature scelte, il giocatore in difesa sceglie una creatura da bloccare che sta attaccando lui, un planeswalker che controlla o una battaglia che protegge.
+@509.1b
+Il giocatore in difesa controlla ogni creatura che controlla per vedere se è soggetta a restrizioni (effetti che dicono che una creatura non può bloccare, o che non può bloccare a meno che non si verifichi una certa condizione). Se una qualsiasi restrizione non viene rispettata, la dichiarazione dei bloccanti è illegale. Una restrizione può essere creata da un'abilità di evasione (un'abilità statica di una creatura attaccante che limita cosa può bloccarla). Se una creatura attaccante ottiene o perde un'abilità di evasione dopo che è stato dichiarato un blocco legale, questo non influisce su quel blocco. Le diverse abilità di evasione si sommano.
+Esempio: Una creatura attaccante con volare e ombra non può essere bloccata da una creatura con volare ma senza ombra.
+@509.1c
+Il giocatore in difesa controlla ogni creatura che controlla per vedere se è soggetta a requisiti (effetti che dicono che una creatura deve bloccare, o che deve bloccare se si verifica una certa condizione). Se il numero di requisiti rispettati è inferiore al numero massimo possibile di requisiti che si potrebbero rispettare senza violare alcuna restrizione, la dichiarazione dei bloccanti è illegale. Se una creatura non può bloccare a meno che un giocatore non paghi un costo, quel giocatore non è obbligato a pagare quel costo, anche se bloccare con quella creatura aumenterebbe il numero di requisiti rispettati. Se un requisito che dice che una creatura blocca se possibile durante un certo turno si riferisce a un turno con più fasi di combattimento, la creatura blocca se possibile durante ogni sottofase di dichiarazione dei bloccanti di quel turno.
+Esempio: Un giocatore controlla una creatura che «blocca se possibile» e un'altra creatura senza abilità. Se una creatura con minacciare attacca quel giocatore, il giocatore deve bloccare con entrambe le creature. Bloccare solo con la prima creatura viola la restrizione creata da minacciare (la creatura attaccante non può essere bloccata se non da due o più creature). Bloccare solo con la seconda creatura viola sia la restrizione di minacciare sia il requisito di blocco della prima creatura. Non bloccare con nessuna delle due rispetta la restrizione ma non il requisito.
+@509.1d
+Se alcune delle creature scelte richiedono il pagamento di costi per bloccare, il giocatore in difesa determina il costo totale per bloccare. I costi possono includere pagare mana, TAPpare permanenti, sacrificare permanenti, scartare carte e così via. Una volta determinato, il costo totale viene «bloccato». Se degli effetti dovessero cambiare il costo totale dopo questo momento, ignora il cambiamento.
+@509.1e
+Se uno dei costi richiede mana, il giocatore in difesa ha a quel punto la possibilità di attivare abilità di mana (vedi regola 605, «Abilità di mana»).
+@509.1f
+Quando ha abbastanza mana nella riserva di mana, il giocatore paga tutti i costi in qualsiasi ordine. Non sono ammessi pagamenti parziali.
+@509.1g
+Ogni creatura scelta ancora controllata dal giocatore in difesa diventa una creatura bloccante. Ognuna blocca le creature attaccanti scelte per essa. Resta una creatura bloccante finché non viene rimossa dal combattimento o finché non termina la fase di combattimento, a seconda di cosa avviene prima. Vedi regola 506.4.
+@509.1h
+Una creatura attaccante per cui sono state dichiarate una o più creature bloccanti diventa una creatura bloccata; una per cui non è stata dichiarata alcuna creatura bloccante diventa una creatura non bloccata. Questo resta invariato finché la creatura non viene rimossa dal combattimento, un effetto non dice che diventa bloccata o non bloccata, o la fase di combattimento non termina, a seconda di cosa avviene prima. Una creatura resta bloccata anche se tutte le creature che la bloccano vengono rimosse dal combattimento.
+@509.1i
+Si innescano tutte le abilità che si innescano quando vengono dichiarati i bloccanti. Vedi regola 509.2a per maggiori informazioni.
+@509.2
+Secondo, il giocatore attivo riceve la priorità. (Vedi regola 117, «Tempistica e priorità».)
+@509.2a
+Tutte le abilità che si sono innescate quando sono stati dichiarati i bloccanti, o che si sono innescate durante il procedimento descritto nella regola 509.1, vengono messe in pila prima che il giocatore attivo riceva la priorità; l'ordine in cui si sono innescate non ha importanza. (Vedi regola 603, «Gestire le abilità innescate».)
+@509.3
+Le abilità innescate che si innescano quando vengono dichiarati i bloccanti possono avere condizioni di innesco diverse.
+@509.3a
+Un'abilità che dice «Ogni volta che [una creatura] blocca, …» in genere si innesca solo una volta per combattimento per quella creatura, anche se blocca più creature. Si innesca se la creatura viene dichiarata come bloccante. Si innesca anche se quella creatura diventa bloccante come risultato di un effetto, ma solo se in quel momento non era una creatura bloccante. (Vedi regola 509.1g.) Non si innesca se la creatura viene messa sul campo di battaglia bloccante.
+@509.3b
+Un'abilità che dice «Ogni volta che [una creatura] blocca una creatura, …» si innesca una volta per ogni creatura attaccante bloccata dalla creatura con l'abilità. Si innesca se la creatura viene dichiarata come bloccante. Si innesca anche se un effetto fa bloccare a quella creatura una creatura attaccante, ma solo se in quel momento non stava già bloccando quella creatura attaccante. Non si innesca se la creatura viene messa sul campo di battaglia bloccante.
+@509.3c
+Un'abilità che dice «Ogni volta che [una creatura] viene bloccata, …» in genere si innesca solo una volta per combattimento per quella creatura, anche se viene bloccata da più creature. Si innesca se quella creatura viene bloccata da almeno una creatura dichiarata come bloccante. Si innesca anche se quella creatura viene bloccata da un effetto o da una creatura messa sul campo di battaglia come bloccante, ma solo se in quel momento la creatura attaccante era una creatura non bloccata. (Vedi regola 509.1h.)
+@509.3d
+Un'abilità che dice «Ogni volta che [una creatura] viene bloccata da una creatura, …» si innesca una volta per ogni creatura che blocca la creatura indicata. Si innesca se una creatura viene dichiarata come bloccante della creatura attaccante. Si innesca anche se un effetto fa bloccare a una creatura la creatura attaccante, ma solo se in quel momento non stava già bloccando quella creatura attaccante. Inoltre, si innesca se una creatura viene messa sul campo di battaglia che blocca quella creatura. Non si innesca se la creatura viene bloccata da un effetto invece che da una creatura.
+@509.3e
+Se un'abilità si innesca quando una creatura blocca o viene bloccata da un determinato numero di creature, l'abilità si innesca se la creatura blocca o viene bloccata da quel numero di creature quando vengono dichiarati i bloccanti. Anche gli effetti che aggiungono o rimuovono bloccanti possono far innescare queste abilità. Questo vale anche per le abilità che si innescano quando una creatura blocca o viene bloccata da almeno un certo numero di creature.
+@509.3f
+Se un'abilità si innesca quando blocca una creatura con determinate caratteristiche, si innesca solo se la creatura ha quelle caratteristiche nel momento in cui vengono dichiarati i bloccanti, o nel momento in cui un effetto la fa bloccare. Se un'abilità si innesca quando viene bloccata una creatura con determinate caratteristiche, si innesca solo se la creatura ha quelle caratteristiche nel momento in cui diventa una creatura bloccata. Se un'abilità si innesca quando una creatura viene bloccata da una creatura con determinate caratteristiche, si innesca solo se quest'ultima ha quelle caratteristiche nel momento in cui diventa una creatura bloccante. Nessuna di queste abilità si innesca se in seguito le caratteristiche della creatura in questione cambiano in modo da corrispondere alla condizione di innesco dell'abilità.
+Esempio: Una creatura ha l'abilità «Ogni volta che questa creatura viene bloccata da una creatura bianca, distruggi quella creatura alla fine del combattimento». Se la creatura viene bloccata da una creatura nera che in seguito diventa bianca, l'abilità non si innesca.
+@509.3g
+Un'abilità che dice «Ogni volta che [una creatura] attacca e non viene bloccata, …» si innesca se per quella creatura non viene dichiarata alcuna creatura bloccante. Si innesca anche se la creatura non è mai stata dichiarata come attaccante (per esempio, se è entrata nel campo di battaglia attaccante). Non si innesca se la creatura attaccante viene bloccata e poi tutti i suoi bloccanti vengono rimossi dal combattimento.
+@509.4
+Se una creatura viene messa sul campo di battaglia bloccante, il suo controllore sceglie quale creatura attaccante sta bloccando mentre entra nel campo di battaglia (a meno che l'effetto che l'ha messa sul campo di battaglia non specifichi cosa sta bloccando). Una creatura messa sul campo di battaglia in questo modo «sta bloccando» ma, ai fini degli eventi di innesco e degli effetti, non ha mai «bloccato».
+@509.4a
+Se l'effetto che mette sul campo di battaglia una creatura bloccante specifica che sta bloccando una certa creatura, e quella creatura non sta più attaccando, la creatura viene messa sul campo di battaglia ma non è mai considerata una creatura bloccante. Lo stesso vale se il controllore della creatura messa sul campo di battaglia bloccante non è un giocatore in difesa per la creatura attaccante indicata.
+@509.4b
+Una creatura che viene messa sul campo di battaglia bloccante non è soggetta ai requisiti o alle restrizioni che si applicano alla dichiarazione dei bloccanti.
+@510
+Sottofase del danno da combattimento
+@510.1
+Primo, il giocatore attivo annuncia come ogni creatura attaccante assegna il proprio danno da combattimento, poi il giocatore in difesa annuncia come ogni creatura bloccante assegna il proprio danno da combattimento. Questa azione generata dal turno non usa la pila. Un giocatore assegna il danno da combattimento di una creatura secondo le regole seguenti:
+@510.1a
+Ogni creatura attaccante e ogni creatura bloccante assegna un danno da combattimento pari alla propria forza. Le creature che in questo modo assegnerebbero 0 o meno danni non assegnano affatto danno da combattimento.
+@510.1b
+Una creatura non bloccata assegna il proprio danno da combattimento al giocatore, al planeswalker o alla battaglia che sta attaccando. Se al momento non sta attaccando nulla (se, per esempio, stava attaccando un planeswalker che ha lasciato il campo di battaglia), non assegna danno da combattimento.
+@510.1c
+Una creatura bloccata assegna il proprio danno da combattimento alle creature che la bloccano. Se al momento nessuna creatura la sta bloccando (se, per esempio, sono state distrutte o rimosse dal combattimento), non assegna danno da combattimento. Se la blocca esattamente una creatura, assegna tutto il suo danno da combattimento a quella creatura. Se la bloccano due o più creature, assegna il proprio danno da combattimento a quelle creature, ripartendolo tra loro come sceglie il suo controllore.
+Esempio: Un Elvish Regrower attaccante (una creatura 4/3) viene bloccato da Vampire Spawn (una creatura 2/3) e da Helpful Hunter (una creatura 1/1). Il controllore di Elvish Regrower può assegnare tutti e 4 i danni allo Hunter, 1 danno allo Spawn e 3 danni allo Hunter, 2 danni a ciascuna creatura, 3 danni allo Spawn e 1 danno allo Hunter, oppure tutti e 4 i danni allo Spawn.
+@510.1d
+Una creatura bloccante assegna danno da combattimento alle creature che sta bloccando. Se al momento non sta bloccando alcuna creatura (se, per esempio, sono state distrutte o rimosse dal combattimento), non assegna danno da combattimento. Se sta bloccando esattamente una creatura, assegna tutto il suo danno da combattimento a quella creatura. Se sta bloccando due o più creature, assegna il proprio danno da combattimento ripartendolo tra loro come sceglie il suo controllore.
+@510.1e
+Una volta che un giocatore ha assegnato il danno da combattimento di ogni creatura attaccante o bloccante che controlla, si controlla l'assegnazione complessiva del danno (non solo l'assegnazione di una singola creatura attaccante o bloccante) per vedere se rispetta le regole precedenti. Se non le rispetta, l'assegnazione del danno da combattimento è illegale; la partita torna al momento precedente l'inizio dell'assegnazione del danno da combattimento da parte di quel giocatore. (Vedi regola 733, «Gestire le azioni illegali».)
+@510.2
+Secondo, tutto il danno da combattimento assegnato viene inflitto simultaneamente. Questa azione generata dal turno non usa la pila. Nessun giocatore ha la possibilità di lanciare magie o attivare abilità tra il momento in cui il danno da combattimento viene assegnato e quello in cui viene inflitto.
+@510.3
+Terzo, il giocatore attivo riceve la priorità. (Vedi regola 117, «Tempistica e priorità».)
+@510.3a
+Tutte le abilità che si sono innescate quando è stato inflitto danno, o mentre successivamente vengono eseguite le azioni generate dallo stato, vengono messe in pila prima che il giocatore attivo riceva la priorità; l'ordine in cui si sono innescate non ha importanza. (Vedi regola 603, «Gestire le abilità innescate».)
+@510.4
+Se all'inizio della sottofase del danno da combattimento almeno una creatura attaccante o bloccante ha attacco improvviso (vedi regola 702.7) o doppio attacco (vedi regola 702.4), le uniche creature che assegnano danno da combattimento in quella sottofase sono quelle con attacco improvviso o doppio attacco. Dopo quella sottofase, invece di passare alla sottofase di fine del combattimento, la fase ha una seconda sottofase del danno da combattimento. Le uniche creature che assegnano danno da combattimento in quella sottofase sono gli attaccanti e i bloccanti rimasti che non avevano né attacco improvviso né doppio attacco all'inizio della prima sottofase del danno da combattimento, e gli attaccanti e i bloccanti rimasti che hanno attualmente doppio attacco. Dopo quella sottofase, la fase prosegue con la sottofase di fine del combattimento.
+@511
+Sottofase di fine del combattimento
+@511.1
+La sottofase di fine del combattimento non ha azioni generate dal turno. Una volta iniziata, il giocatore attivo riceve la priorità. (Vedi regola 117, «Tempistica e priorità».)
+@511.2
+Le abilità che si innescano «alla fine del combattimento» si innescano quando inizia la sottofase di fine del combattimento. Gli effetti che durano «fino alla fine del combattimento» terminano alla fine della fase di combattimento.
+@511.3
+Non appena termina la sottofase di fine del combattimento, tutte le creature, le battaglie e i planeswalker vengono rimossi dal combattimento. Dopo la fine della sottofase di fine del combattimento, la fase di combattimento è conclusa e inizia la fase principale post-combattimento (vedi regola 505).
+@512
+Fase finale
+@512.1
+La fase finale è composta da due sottofasi: finale e cancellazione.
+@513
+Sottofase finale
+@513.1
+La sottofase finale non ha azioni generate dal turno. Una volta iniziata, il giocatore attivo riceve la priorità. (Vedi regola 117, «Tempistica e priorità».)
+@513.1a
+In passato, le abilità che si innescavano all'inizio della sottofase finale erano stampate con la condizione di innesco «alla fine del turno». Le carte stampate con quel testo hanno ricevuto errata nel riferimento Oracle per dire «all'inizio della sottofase finale» o «all'inizio della prossima sottofase finale».
+@513.2
+Se durante questa sottofase entra nel campo di battaglia un permanente con un'abilità che si innesca «all'inizio della sottofase finale», quell'abilità non si innescherà fino alla sottofase finale del turno successivo. Allo stesso modo, se durante questa sottofase viene creata un'abilità innescata ritardata che si innesca «all'inizio della prossima sottofase finale», quell'abilità non si innescherà fino alla sottofase finale del turno successivo. In altre parole, la sottofase non «torna indietro» per permettere a quelle abilità di andare in pila. Questa regola si applica solo alle abilità innescate; non si applica agli effetti continui la cui durata dice «fino alla fine del turno» o «in questo turno». (Vedi regola 514, «Sottofase di cancellazione».)
+@514
+Sottofase di cancellazione
+@514.1
+Primo, se la mano del giocatore attivo contiene più carte della sua dimensione massima della mano (normalmente sette), quel giocatore scarta carte finché la sua mano non scende a quel numero. Questa azione generata dal turno non usa la pila.
+@514.2
+Secondo, avvengono simultaneamente le azioni seguenti: tutto il danno segnato sui permanenti (compresi i permanenti fuori fase) viene rimosso e tutti gli effetti «fino alla fine del turno» e «in questo turno» terminano. Questa azione generata dal turno non usa la pila.
+@514.3
+Normalmente nessun giocatore riceve la priorità durante la sottofase di cancellazione, quindi non si possono lanciare magie né attivare abilità. Tuttavia, questa regola ha l'eccezione seguente:
+@514.3a
+A questo punto, la partita controlla se devono essere eseguite azioni generate dallo stato e/o se ci sono abilità innescate in attesa di essere messe in pila (comprese quelle che si innescano «all'inizio della prossima sottofase di cancellazione»). Se è così, vengono eseguite quelle azioni generate dallo stato, poi quelle abilità innescate vengono messe in pila, poi il giocatore attivo riceve la priorità. I giocatori possono lanciare magie e attivare abilità. Quando la pila è vuota e tutti i giocatori passano in successione, inizia un'altra sottofase di cancellazione.
+@#6
+Magie, abilità ed effetti
+@600
+Generale
+@601
+Lanciare magie

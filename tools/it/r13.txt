@@ -1,0 +1,121 @@
+@601.1
+In passato, sulle carte l'azione di lanciare una magia, o di lanciare una carta come magia, era indicata come «giocare» quella magia o quella carta. Le carte stampate con quel testo hanno ricevuto errata nel riferimento Oracle e ora parlano di «lanciare» quella magia o quella carta.
+@601.1a
+Alcuni effetti parlano ancora di «giocare» una carta. «Giocare una carta» significa giocare quella carta come terra o lanciarla come magia, a seconda del caso.
+@601.2
+Lanciare una magia significa prenderla da dove si trova (di solito la mano), metterla in pila e pagarne i costi, in modo che alla fine si risolva e abbia il suo effetto. Lanciare una magia comprende la proposta della magia (regole 601.2a–d) e la determinazione e il pagamento dei costi (regole 601.2f–h). Per lanciare una magia, un giocatore segue in ordine i passaggi indicati qui sotto. Per iniziare questo procedimento, al giocatore deve essere legalmente permesso lanciare la magia (vedi regola 601.3). Se durante uno dei passaggi elencati un giocatore non è in grado di rispettarne i requisiti, il lancio della magia è illegale; la partita torna al momento precedente la proposta del lancio di quella magia (vedi regola 733, «Gestire le azioni illegali»).
+@601.2a
+Per proporre il lancio di una magia, un giocatore sposta prima quella carta (o quella copia di una carta) da dove si trova in pila. Diventa l'oggetto in cima alla pila. Ha tutte le caratteristiche della carta (o della copia della carta) a essa associata, e quel giocatore ne diventa il controllore. Gli effetti continui che modificano le caratteristiche della magia quando inizi a lanciarla iniziano quando viene messa in pila (vedi regola 611.2f). Gli effetti singoli che fanno ottenere abilità alla magia mentre la lanci si applicano quando viene messa in pila (vedi regola 610.5). La magia resta in pila finché non si risolve, non viene neutralizzata o una regola o un effetto non la sposta altrove.
+@601.2b
+Se la magia è modale, il giocatore annuncia la scelta della modalità (vedi regola 700.2). Se il giocatore vuole innestare delle carte sulla magia (vedi regola 702.47), rivela quelle carte che ha in mano. Se la magia ha costi alternativi o aggiuntivi che verranno pagati durante il lancio, come i costi di riacquisto o di potenziamento (vedi regole 118.8 e 118.9), il giocatore annuncia l'intenzione di pagare alcuni o tutti quei costi (vedi regola 601.2f). Un giocatore non può applicare a una stessa magia due metodi di lancio alternativi o due costi alternativi. Se la magia ha un costo variabile che verrà pagato durante il lancio (come una {X} nel suo costo di mana; vedi regola 107.3), il giocatore annuncia il valore di quella variabile. Se il valore di quella variabile è definito nel testo della magia da una scelta che quel giocatore farebbe più avanti nell'annuncio o nella risoluzione della magia, quel giocatore fa quella scelta ora invece che più avanti. Se un costo che verrà pagato durante il lancio include simboli di mana ibrido, il giocatore annuncia il costo equivalente non ibrido che intende pagare. Se un costo che verrà pagato durante il lancio include simboli di mana phyrexiano, il giocatore annuncia, per ciascuno di quei simboli, se intende pagare 2 punti vita o il corrispondente costo di mana colorato. Le scelte fatte in precedenza (come la scelta di lanciare dal cimitero una magia con flashback o di lanciare a faccia in giù una creatura con metamorfosi) possono limitare le opzioni del giocatore nel fare queste scelte.
+@601.2c
+Il giocatore annuncia la scelta di un oggetto o di un giocatore appropriato per ogni bersaglio richiesto dalla magia. Una magia può richiedere alcuni bersagli solo se per essa è stato scelto un costo alternativo o aggiuntivo (come un costo di potenziamento) o una particolare modalità; altrimenti, la magia viene lanciata come se non richiedesse quei bersagli. Allo stesso modo, una magia può richiedere bersagli alternativi solo se per essa è stato scelto un costo alternativo o aggiuntivo. Se la magia ha un numero variabile di bersagli, il giocatore annuncia quanti bersagli sceglierà prima di annunciarli. In alcuni casi, il numero di bersagli è definito dal testo della magia. Una volta determinato il numero di bersagli della magia, quel numero non cambia, anche se cambiano le informazioni usate per determinarlo. Lo stesso bersaglio non può essere scelto più volte per una singola istanza della parola «bersaglio» sulla magia. Tuttavia, se la magia usa la parola «bersaglio» in più punti, lo stesso oggetto o giocatore può essere scelto una volta per ogni istanza della parola «bersaglio» (purché soddisfi i criteri del bersaglio). Se degli effetti dicono che un oggetto o un giocatore deve essere scelto come bersaglio, il giocatore sceglie i bersagli in modo da rispettare il maggior numero possibile di tali effetti senza violare regole o effetti che dicono che un oggetto o un giocatore non può essere scelto come bersaglio. Gli oggetti e/o i giocatori scelti diventano ciascuno un bersaglio di quella magia. (Le abilità che si innescano quando quegli oggetti e/o giocatori diventano bersaglio di una magia si innescano a questo punto; attenderanno di essere messe in pila finché la magia non avrà finito di essere lanciata.)
+Esempio: Se una magia dice «TAPpa due creature bersaglio», la stessa creatura non può essere scelta due volte; la magia richiede due bersagli legali diversi. Una magia che dice «Distruggi un artefatto bersaglio e una terra bersaglio», invece, può bersagliare due volte la stessa terra artefatto perché usa la parola «bersaglio» in più punti.
+@601.2d
+Se la magia richiede al giocatore di dividere o distribuire un effetto (come danni o segnalini) tra uno o più bersagli, il giocatore annuncia la ripartizione. Ciascuno di questi bersagli deve ricevere almeno un'unità di ciò che viene diviso.
+@601.2e
+La partita controlla se la magia proposta può essere lanciata legalmente. Se la magia proposta è illegale, la partita torna al momento precedente la proposta del lancio di quella magia (vedi regola 733, «Gestire le azioni illegali»).
+@601.2f
+Il giocatore determina il costo totale della magia. Di solito è semplicemente il costo di mana. Alcune magie hanno costi aggiuntivi o alternativi. Alcuni effetti possono aumentare o ridurre il costo da pagare, o fornire altri costi alternativi. I costi possono includere pagare mana, TAPpare permanenti, sacrificare permanenti, scartare carte e così via. Il costo totale è il costo di mana o il costo alternativo (come determinato nella regola 601.2b), più tutti i costi aggiuntivi e gli aumenti di costo, meno tutte le riduzioni di costo. Se si applicano più riduzioni di costo, il giocatore può applicarle in qualsiasi ordine. Se la componente di mana del costo totale viene ridotta a nulla da effetti di riduzione del costo, è considerata {0}. Non può essere ridotta a meno di {0}. Una volta determinato il costo totale, si applicano gli effetti che influiscono direttamente sul costo totale. Poi il costo totale risultante viene «bloccato». Se degli effetti dovessero cambiare il costo totale dopo questo momento, non hanno effetto.
+@601.2g
+Se il costo totale include un pagamento di mana, il giocatore ha a quel punto la possibilità di attivare abilità di mana (vedi regola 605, «Abilità di mana»). Le abilità di mana devono essere attivate prima di pagare i costi.
+@601.2h
+Il giocatore paga il costo totale. Prima paga, in qualsiasi ordine, tutti i costi che non comportano elementi casuali o lo spostamento di oggetti dal grimorio a una zona pubblica. Poi paga tutti i costi rimanenti in qualsiasi ordine. Non sono ammessi pagamenti parziali. I costi impagabili non possono essere pagati.
+Esempio: Lanci Altar's Reap, che costa {1}{B} e ha come costo aggiuntivo il sacrificio di una creatura. Sacrifichi Thunderscape Familiar, il cui effetto fa costare {1} in meno le tue magie nere. Poiché il costo totale di una magia viene «bloccato» prima che i pagamenti vengano effettivamente fatti, paghi {B}, non {1}{B}, anche se stai sacrificando il Familiar.
+@601.2i
+Una volta completati i passaggi descritti nelle regole 601.2a–h, si applicano gli effetti che modificano le caratteristiche della magia mentre viene lanciata, poi la magia risulta lanciata. Le abilità che si innescano quando una magia viene lanciata o messa in pila si innescano in questo momento. Se il controllore della magia aveva la priorità prima di lanciarla, riceve la priorità.
+@601.3
+Un giocatore può iniziare a lanciare una magia solo se una regola o un effetto gli permette di lanciarla e nessuna regola o effetto glielo vieta.
+@601.3a
+Se un effetto vieta a un giocatore di lanciare una magia con determinate qualità, quel giocatore può considerare le scelte da fare durante la proposta di quella magia che potrebbero far cambiare quelle qualità. Se una di tali scelte potesse far sì che quell'effetto non vieti più a quel giocatore di lanciare quella magia, il giocatore può iniziare a lanciare la magia, ignorando l'effetto.
+Esempio: Un giocatore controlla Void Winnower, che dice, tra l'altro, «I tuoi avversari non possono lanciare magie con valore di mana pari». L'avversario di quel giocatore può iniziare a lanciare Rolling Thunder, una carta il cui costo di mana è {X}{R}{R}, perché il valore scelto per X potrebbe rendere dispari il valore di mana della magia.
+@601.3b
+Se un effetto permette a un giocatore di lanciare una magia con determinate qualità come se avesse lampo, quel giocatore può considerare le scelte da fare durante la proposta di quella magia che potrebbero far cambiare le qualità di quella magia. Se una di tali scelte potesse far applicare quell'effetto, quel giocatore può iniziare a lanciare quella magia come se avesse lampo.
+Esempio: Un effetto dice che puoi lanciare magie Aura come se avessero lampo, e hai in mano una carta creatura con conferire. Poiché scegliere il costo alternativo dell'abilità conferire fa diventare quella magia una magia Aura, puoi legalmente iniziare a lanciare quella magia come se avesse lampo.
+@601.3c
+Se un effetto permette a un giocatore di lanciare una magia come se avesse lampo solo se viene pagato un costo alternativo o aggiuntivo, quel giocatore può iniziare a lanciare quella magia come se avesse lampo.
+@601.3d
+Se una magia avesse lampo solo al verificarsi di determinate condizioni, il suo controllore può iniziare a lanciarla come se avesse lampo se quelle condizioni sono soddisfatte.
+@601.3e
+Alcune regole ed effetti stabiliscono che per determinare se una carta o una copia di una carta può essere lanciata legalmente si considera un insieme alternativo di caratteristiche o un sottoinsieme di caratteristiche. Queste caratteristiche alternative sostituiscono quelle dell'oggetto ai fini di questa determinazione. Si considerano anche gli effetti continui che si applicherebbero a quell'oggetto una volta che avesse quelle caratteristiche.
+Esempio: Garruk's Horde dice, tra l'altro, «Puoi lanciare magie creatura dalla cima del tuo grimorio». Se controlli Garruk's Horde e la prima carta del tuo grimorio è una carta non creatura con metamorfosi, puoi lanciarla usando la sua abilità metamorfosi.
+Esempio: Melek, Izzet Paragon dice, tra l'altro, «Puoi lanciare magie istantaneo e stregoneria dalla cima del tuo grimorio». Se controlli Melek, Izzet Paragon e la prima carta del tuo grimorio è Giant Killer, una carta creatura avventuriero la cui Avventura è un istantaneo chiamato Chop Down, puoi lanciare Chop Down ma non Giant Killer. Se invece controlli Garruk's Horde e la prima carta del tuo grimorio è Giant Killer, puoi lanciare Giant Killer ma non Chop Down.
+@601.3f
+Alcuni effetti permettono a un giocatore di lanciare una magia con determinate qualità tra le carte a faccia in giù in esilio. Un giocatore può iniziare a lanciare una tale magia solo se può guardare la carta a faccia in giù in esilio.
+@601.4
+Mentre si annunciano le scelte di modalità, costi alternativi e/o costi aggiuntivi come descritto nella regola 601.2b, alcune opzioni possono essere disponibili per un giocatore solo se vengono fatte altre scelte che normalmente si farebbero più avanti nelle istruzioni di quella regola. In quel caso, il controllore della magia può considerare le altre scelte da fare in quel passaggio. Se una di tali scelte gli permettesse di scegliere una particolare modalità, un costo alternativo o un costo aggiuntivo, può farlo.
+Esempio: Inscription of Abundance è una magia modale con potenziamento e il testo «Scegli uno. Se questa magia è stata potenziata, scegli invece un numero qualsiasi». Nell'annunciare le modalità scelte per la magia, il suo controllore può scegliere un numero qualsiasi di modalità, anche se la scelta di pagare il costo di potenziamento normalmente avviene più avanti nel procedimento di annuncio.
+@601.5
+Mentre si annunciano le scelte dei bersagli e/o la divisione o distribuzione degli effetti come descritto nelle regole 601.2c–d, alcune opzioni possono essere disponibili per un giocatore solo se vengono fatte altre scelte più avanti nel procedimento di lancio. In quel caso, il controllore della magia può considerare le altre scelte da fare durante quel procedimento, compresa la scelta degli oggetti che possono essere usati per pagare i costi di quella magia.
+@601.6
+Se dopo averne completato la proposta (vedi regole 601.2a–d) a un giocatore non è più permesso lanciare una magia, il lancio della magia è illegale e la partita torna al momento precedente la proposta del lancio di quella magia (vedi regola 733, «Gestire le azioni illegali»). Non importa se una regola o un effetto renderebbe illegale il lancio della magia durante la determinazione e il pagamento dei suoi costi (vedi regole 601.2f–h) o in qualsiasi momento dopo che la magia è stata lanciata.
+@601.6a
+Una volta che un giocatore ha iniziato a lanciare una magia che aveva lampo perché erano soddisfatte determinate condizioni, o che poteva essere lanciata come se avesse lampo perché erano soddisfatte determinate condizioni (vedi regola 601.3d), può continuare a lanciare quella magia come se avesse lampo anche se quelle condizioni smettono di essere soddisfatte.
+@601.7
+Alcune magie specificano che uno degli avversari del loro controllore fa qualcosa che normalmente farebbe il controllore durante il lancio, come scegliere una modalità o scegliere i bersagli. In questi casi, l'avversario lo fa nel momento in cui normalmente lo farebbe il controllore della magia.
+@601.7a
+Se c'è più di un avversario che potrebbe fare una tale scelta, il controllore della magia decide quale di quegli avversari farà la scelta.
+@601.7b
+Se la magia istruisce il suo controllore e un altro giocatore a fare qualcosa nello stesso momento durante il lancio, il controllore della magia agisce per primo, poi l'altro giocatore. Questa è un'eccezione alla regola 101.4.
+@601.8
+Lanciare una magia che modifica i costi non influisce sulle magie e sulle abilità che sono già in pila.
+@602
+Attivare abilità attivate
+@602.1
+Le abilità attivate hanno un costo e un effetto. Sono scritte come «[Costo]: [Effetto.] [Istruzioni di attivazione (se presenti).]».
+@602.1a
+Il costo di attivazione è tutto ciò che precede i due punti (:). Il costo di attivazione di un'abilità deve essere pagato dal giocatore che la sta attivando.
+Esempio: Il costo di attivazione di un'abilità che dice «{2}, {T}: Guadagni 1 punto vita» è due mana di qualsiasi tipo più TAPpare il permanente che ha l'abilità.
+@602.1b
+Parte del testo dopo i due punti di un'abilità attivata contiene istruzioni da seguire durante l'attivazione di quell'abilità. Questo testo può indicare quali giocatori possono attivare quell'abilità, può limitare quando un giocatore può attivarla o può definire qualche aspetto del costo di attivazione. Questo testo non fa parte dell'effetto dell'abilità. Funziona in ogni momento. Se un'abilità attivata ha istruzioni di attivazione, compaiono per ultime, dopo l'effetto dell'abilità.
+@602.1c
+Un'abilità attivata è l'unico tipo di abilità che può essere attivata. Se un oggetto o una regola fa riferimento all'attivazione di un'abilità senza specificarne il tipo, si riferisce per forza a un'abilità attivata.
+@602.1d
+In passato, sulle carte l'azione di usare un'abilità attivata era indicata come «giocare» quell'abilità. Le carte stampate con quel testo hanno ricevuto errata nel riferimento Oracle e ora parlano di «attivare» quell'abilità.
+@602.1e
+Se una magia o abilità che fa riferimento al «costo di attivazione» di un'abilità modifica il modo in cui un giocatore può pagare quel costo, quella modifica si applica al costo totale di quell'abilità, anche se quel costo viene aumentato e/o ridotto da altri effetti. Vedi regole 602.2b e 601.2f.
+@602.2
+Attivare un'abilità significa metterla in pila e pagarne i costi, in modo che alla fine si risolva e abbia il suo effetto. Solo il controllore di un oggetto (o il suo proprietario, se non ha un controllore) può attivarne l'abilità attivata, a meno che l'oggetto non dica specificamente altrimenti. L'attivazione di un'abilità segue in ordine i passaggi indicati qui sotto. Se in un qualsiasi momento durante l'attivazione di un'abilità un giocatore non è in grado di rispettare uno di quei passaggi, l'attivazione è illegale; la partita torna al momento precedente l'inizio dell'attivazione di quell'abilità (vedi regola 733, «Gestire le azioni illegali»). Annunci e pagamenti non possono essere modificati dopo essere stati fatti.
+@602.2a
+Il giocatore annuncia che sta attivando l'abilità. Se un'abilità attivata viene attivata da una zona nascosta, la carta che ha quell'abilità viene rivelata (vedi regola 701.20a). Quell'abilità viene creata in pila come un oggetto che non è una carta. Diventa l'oggetto in cima alla pila. Ha il testo dell'abilità che l'ha creata e nessun'altra caratteristica. Il suo controllore è il giocatore che ha attivato l'abilità. L'abilità resta in pila finché non viene neutralizzata, si risolve o un effetto non la sposta altrove.
+@602.2b
+Il resto del procedimento per attivare un'abilità è identico al procedimento per lanciare una magia descritto nelle regole 601.2b–i. Quelle regole si applicano all'attivazione di un'abilità esattamente come si applicano al lancio di una magia. L'equivalente del costo di mana di una magia (come indicato nella regola 601.2f) per un'abilità attivata è il suo costo di attivazione.
+@602.3
+Alcune abilità specificano che uno degli avversari del loro controllore fa qualcosa che normalmente farebbe il controllore durante l'attivazione, come scegliere una modalità o scegliere i bersagli. In questi casi, l'avversario lo fa nel momento in cui normalmente lo farebbe il controllore dell'abilità.
+@602.3a
+Se c'è più di un avversario che potrebbe fare una tale scelta, il controllore dell'abilità decide quale di quegli avversari farà la scelta.
+@602.3b
+Se l'abilità istruisce il suo controllore e un altro giocatore a fare qualcosa nello stesso momento durante l'attivazione, il controllore dell'abilità agisce per primo, poi l'altro giocatore. Questa è un'eccezione alla regola 101.4.
+@602.4
+Attivare un'abilità che modifica i costi non influisce sulle magie e sulle abilità che sono già in pila.
+@602.5
+Un giocatore non può iniziare ad attivare un'abilità di cui è vietata l'attivazione.
+@602.5a
+Un'abilità attivata di una creatura con il simbolo di TAP ({T}) o il simbolo di STAP ({Q}) nel suo costo di attivazione non può essere attivata a meno che la creatura non sia stata sotto il controllo del suo controllore dall'inizio del suo turno più recente. Ignora questa regola per le creature con rapidità (vedi regola 702.10).
+@602.5b
+Se un'abilità attivata ha una restrizione al suo uso (per esempio, «Attiva solo una volta per turno»), la restrizione continua ad applicarsi a quell'oggetto anche se cambia il suo controllore.
+@602.5c
+Se un oggetto acquisisce da un altro oggetto un'abilità attivata con una restrizione al suo uso, quella restrizione si applica solo a quell'abilità così come acquisita da quell'oggetto. Non si applica ad altre abilità con formulazione identica.
+@602.5d
+Le abilità attivate che dicono «Attiva solo come una stregoneria» significano che il giocatore deve seguire le regole di tempistica per lanciare una magia stregoneria, anche se l'abilità non è effettivamente una stregoneria. Il giocatore non deve effettivamente avere una carta stregoneria che potrebbe lanciare.
+@602.5e
+Le abilità attivate che dicono «Attiva solo come un istantaneo» significano che il giocatore deve seguire le regole di tempistica per lanciare una magia istantaneo, anche se l'abilità non è effettivamente un istantaneo. Il giocatore non deve effettivamente avere una carta istantaneo che potrebbe lanciare.
+@603
+Gestire le abilità innescate
+@603.1
+Le abilità innescate hanno una condizione di innesco e un effetto. Sono scritte come «[Quando/Ogni volta che/All'inizio di] [condizione o evento di innesco], [effetto]. [Istruzioni (se presenti).]».
+@603.1a
+Un'abilità innescata può includere, dopo i suoi effetti, istruzioni che limitano ciò che l'abilità può bersagliare o che stabiliscono che non può essere neutralizzata. Questo testo non fa parte dell'effetto dell'abilità. Funziona mentre l'abilità è in pila.
+@603.1b
+Un'abilità innescata può avere più di una condizione di innesco, e un'istruzione che fa riferimento al fatto che «tutte» quelle condizioni si siano verificate durante un determinato periodo. Questo si riferisce al fatto che tutte quelle condizioni si siano verificate o meno durante quel periodo, indipendentemente dal fatto che l'abilità si sia innescata in base a quelle condizioni.
+@603.2
+Ogni volta che un evento di gioco o uno stato di gioco corrisponde all'evento di innesco di un'abilità innescata, quell'abilità si innesca automaticamente. A questo punto l'abilità non fa ancora nulla.
+@603.2a
+Poiché non vengono lanciate né attivate, le abilità innescate possono innescarsi anche quando non è legale lanciare magie e attivare abilità. Gli effetti che impediscono di attivare abilità non influiscono su di esse.
+@603.2b
+Quando inizia una fase o sottofase, si innescano tutte le abilità che si innescano «all'inizio di» quella fase o sottofase.
+@603.2c
+Un'abilità si innesca solo una volta ogni volta che si verifica il suo evento di innesco. Tuttavia, può innescarsi ripetutamente se un evento contiene più occorrenze.
+Esempio: Un permanente ha un'abilità la cui condizione di innesco dice «Ogni volta che una terra viene messa in un cimitero dal campo di battaglia, …». Se qualcuno lancia una magia che distrugge tutte le terre, l'abilità si innesca una volta per ogni terra messa nel cimitero durante la risoluzione della magia.
+@603.2d
+Un'abilità può stabilire che un'abilità innescata si innesca volte aggiuntive. In questo caso, invece di stabilire semplicemente che quell'abilità si è innescata, si determina quante volte dovrebbe innescarsi, poi quell'abilità si innesca quel numero di volte. Un effetto che stabilisce che un'abilità si innesca volte aggiuntive non richiama se stesso ripetutamente e non si applica ad altri effetti che influiscono su quante volte un'abilità si innesca. Un effetto che stabilisce che un'abilità innescata di un oggetto si innesca volte aggiuntive si riferisce solo alle abilità innescate che quell'oggetto ha, non alle abilità innescate ritardate o riflessive (vedi regola 603.7 e regola 603.12) che possono essere create dalle abilità dell'oggetto.

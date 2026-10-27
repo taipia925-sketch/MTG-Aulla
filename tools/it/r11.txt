@@ -1,0 +1,171 @@
+@500.12
+Tra una sottofase, una fase o un turno e l'altro non può verificarsi alcun evento di gioco.
+@501
+Fase iniziale
+@501.1
+La fase iniziale è composta da tre sottofasi, in quest'ordine: STAP, mantenimento e acquisizione.
+@502
+Sottofase di STAP
+@502.1
+Primo, tutti i permanenti in fase con fasare controllati dal giocatore attivo vanno fuori fase, e tutti i permanenti fuori fase che il giocatore attivo controllava quando sono andati fuori fase rientrano in fase. Tutto questo avviene simultaneamente. Questa azione generata dal turno non usa la pila. Vedi regola 702.26, «Fasare».
+@502.2
+Secondo, se è giorno e il giocatore attivo del turno precedente non ha lanciato magie durante quel turno, diventa notte. Se è notte e il giocatore attivo del turno precedente ha lanciato due o più magie durante quel turno, diventa giorno. Se non è né giorno né notte, questo controllo non avviene e non resta né giorno né notte. Questa azione generata dal turno non usa la pila. Vedi regola 731, «Giorno e notte».
+@502.2a
+Le partite multigiocatore che usano l'opzione dei turni di squadra condivisi usano una regola modificata. Se è giorno e nessun giocatore della squadra attiva del turno precedente ha lanciato una magia durante quel turno, diventa notte. Se è notte e un qualsiasi giocatore della squadra attiva del turno precedente ha lanciato due o più magie durante il turno precedente, diventa giorno. Se non è né giorno né notte, questo controllo non avviene e non resta né giorno né notte. Questa azione generata dal turno non usa la pila.
+@502.3
+Terzo, il giocatore attivo stabilisce quali permanenti che controlla verranno STAPpati. Poi li STAPpa tutti simultaneamente. Questa azione generata dal turno non usa la pila. Normalmente si STAPpano tutti i permanenti di un giocatore, ma degli effetti possono impedire che uno o più permanenti di un giocatore si STAPpino.
+@502.4
+Nessun giocatore riceve la priorità durante la sottofase di STAP, quindi nessuna magia può essere lanciata o risolversi e nessuna abilità può essere attivata o risolversi. Qualsiasi abilità che si innesca durante questa sottofase viene trattenuta fino alla prossima volta che un giocatore riceverebbe la priorità, che di solito è durante la sottofase di mantenimento. (Vedi regola 503, «Sottofase di mantenimento».)
+@503
+Sottofase di mantenimento
+@503.1
+La sottofase di mantenimento non ha azioni generate dal turno. Una volta iniziata, il giocatore attivo riceve la priorità. (Vedi regola 117, «Tempistica e priorità».)
+@503.1a
+Tutte le abilità che si sono innescate durante la sottofase di STAP e tutte le abilità che si sono innescate all'inizio del mantenimento vengono messe in pila prima che il giocatore attivo riceva la priorità; l'ordine in cui si sono innescate non ha importanza. (Vedi regola 603, «Gestire le abilità innescate».)
+@503.2
+Se una magia stabilisce che può essere lanciata solo «dopo la sottofase di mantenimento di [un giocatore]», e il turno ha più sottofasi di mantenimento, quella magia può essere lanciata in qualsiasi momento dopo la fine della prima sottofase di mantenimento.
+@504
+Sottofase di acquisizione
+@504.1
+Primo, il giocatore attivo pesca una carta. Questa azione generata dal turno non usa la pila.
+@504.2
+Secondo, il giocatore attivo riceve la priorità. (Vedi regola 117, «Tempistica e priorità».)
+@505
+Fase principale
+@505.1
+In un turno ci sono due fasi principali. In ogni turno, la prima fase principale (detta anche fase principale pre-combattimento) e la seconda fase principale (detta anche fase principale post-combattimento) sono separate dalla fase di combattimento (vedi regola 506, «Fase di combattimento»). Le fasi principali pre-combattimento e post-combattimento sono chiamate, singolarmente e collettivamente, fase principale.
+@505.1a
+Solo la prima fase principale del turno è una fase principale pre-combattimento. Tutte le altre fasi principali sono fasi principali post-combattimento. Questo include la seconda fase principale di un turno in cui la fase di combattimento è stata saltata. Vale anche per un turno in cui un effetto ha fatto creare una fase di combattimento aggiuntiva e una fase principale aggiuntiva.
+@505.1b
+Espressioni come «prima fase principale», «seconda fase principale» e così via contano il numero di fasi principali che si sono svolte solo nel turno in corso, a meno che quel testo non specifichi altrimenti.
+@505.2
+La fase principale non ha sottofasi, quindi una fase principale termina quando tutti i giocatori passano in successione mentre la pila è vuota. (Vedi regola 500.2.)
+@505.3
+Primo, ma solo se i giocatori stanno giocando una partita Archenemy (vedi regola 904), il giocatore attivo è l'archenemy ed è la fase principale pre-combattimento del giocatore attivo, il giocatore attivo mette in moto la prima carta del proprio mazzo dei piani malvagi (vedi regola 701.32). Questa azione generata dal turno non usa la pila.
+@505.4
+Secondo, se il giocatore attivo controlla uno o più incantesimi Saga ed è la fase principale pre-combattimento del giocatore attivo, il giocatore attivo mette un segnalino sapere su ogni Saga che controlla con una o più abilità di capitolo. (Vedi regola 714, «Carte Saga».) Questa azione generata dal turno non usa la pila.
+@505.5
+Terzo, se il giocatore attivo controlla una o più Attrazioni ed è la fase principale pre-combattimento del giocatore attivo, il giocatore attivo tira il dado per visitare le sue Attrazioni. (Vedi regola 701.52, «Tirare per visitare le tue Attrazioni».) Questa azione generata dal turno non usa la pila.
+@505.6
+Quarto, il giocatore attivo riceve la priorità. (Vedi regola 117, «Tempistica e priorità».)
+@505.6a
+La fase principale è l'unica fase in cui normalmente un giocatore può lanciare magie artefatto, creatura, incantesimo, planeswalker e stregoneria. Il giocatore attivo può lanciare queste magie.
+@505.6b
+Durante l'una o l'altra fase principale, il giocatore attivo può giocare una carta terra dalla sua mano se la pila è vuota, se ha la priorità e se non ha ancora giocato una terra in questo turno (a meno che un effetto non stabilisca che il giocatore può giocare terre aggiuntive). Questa azione non usa la pila. Né la terra né l'azione di giocare la terra sono una magia o un'abilità, quindi non possono essere neutralizzate, e i giocatori non possono rispondere con istantanei o abilità attivate. (Vedi regola 305, «Terre».)
+@506
+Fase di combattimento
+@506.1
+La fase di combattimento ha cinque sottofasi, che si svolgono in ordine: inizio del combattimento, dichiarazione degli attaccanti, dichiarazione dei bloccanti, danno da combattimento e fine del combattimento. Le sottofasi di dichiarazione dei bloccanti e del danno da combattimento vengono saltate se nessuna creatura viene dichiarata come attaccante o messa sul campo di battaglia attaccante (vedi regola 508.8). Ci sono due sottofasi del danno da combattimento se una qualsiasi creatura attaccante o bloccante ha attacco improvviso (vedi regola 702.7) o doppio attacco (vedi regola 702.4).
+@506.2
+Durante la fase di combattimento, il giocatore attivo è il giocatore attaccante; le creature che controlla possono attaccare. Durante la fase di combattimento di una partita a due giocatori, il giocatore non attivo è il giocatore in difesa; quel giocatore, i planeswalker che controlla e le battaglie che protegge possono essere attaccati.
+@506.2a
+Durante la fase di combattimento di una partita multigiocatore ci possono essere uno o più giocatori in difesa, a seconda della variante giocata e delle opzioni scelte. A meno che tutti gli avversari del giocatore attaccante non diventino automaticamente giocatori in difesa durante la fase di combattimento, il giocatore attaccante sceglie uno dei suoi avversari come azione generata dal turno durante la sottofase di inizio del combattimento. (Nota che la scelta può essere imposta dalla variante giocata o dalle opzioni scelte.) Quel giocatore diventa il giocatore in difesa. Vedi regola 802, «Opzione di attacco a più giocatori», regola 803, «Opzioni di attacco a sinistra e attacco a destra», e regola 809, «Variante Emperor».
+@506.2b
+Nelle partite multigiocatore che usano l'opzione dei turni di squadra condivisi, la squadra attiva è la squadra attaccante e la squadra non attiva è la squadra in difesa. Vedi regola 805, «Opzione dei turni di squadra condivisi».
+@506.3
+Solo una creatura può attaccare o bloccare. Solo un giocatore, un planeswalker o una battaglia possono essere attaccati.
+@506.3a
+Se un effetto dovesse mettere sul campo di battaglia un permanente non creatura attaccante o bloccante, il permanente entra nel campo di battaglia ma non è mai considerato un permanente attaccante o bloccante.
+@506.3b
+Se un effetto dovesse mettere sul campo di battaglia una creatura attaccante sotto il controllo di un giocatore diverso da un giocatore attaccante, quella creatura entra nel campo di battaglia, ma non è mai considerata una creatura attaccante.
+@506.3c
+Se un effetto dovesse mettere sul campo di battaglia una creatura che attacca un giocatore non in partita o un permanente che non è più sul campo di battaglia o che non è né un planeswalker né una battaglia, quella creatura entra nel campo di battaglia, ma non è mai considerata una creatura attaccante. Vedi regola 508.4a.
+@506.3d
+Se un effetto mette sul campo di battaglia una creatura attaccante durante la sottofase di dichiarazione dei bloccanti, la sottofase del danno da combattimento o la sottofase di fine del combattimento, quella creatura entra nel campo di battaglia non bloccata. Vedi regola 508.4d.
+@506.3e
+Se un effetto dovesse mettere sul campo di battaglia una creatura bloccante, ma la creatura che bloccherebbe non sta attaccando il controllore della creatura che entra, un planeswalker controllato da quel giocatore o una battaglia protetta da quel giocatore, quella creatura entra nel campo di battaglia, ma non è mai considerata una creatura bloccante.
+@506.3f
+Se un effetto dovesse mettere sul campo di battaglia attaccante o bloccante una creatura che è anche una battaglia, quel permanente entra nel campo di battaglia ma non è mai considerato una creatura attaccante o bloccante.
+@506.3g
+Se una magia o abilità che si risolve dovesse far diventare una battaglia una creatura attaccante o bloccante, quella parte dell'effetto non fa nulla.
+@506.4
+Un permanente viene rimosso dal combattimento se lascia il campo di battaglia, se cambia il suo controllore o protettore, se va fuori fase, se un effetto lo rimuove specificamente dal combattimento, se è un planeswalker attaccato che smette di essere un planeswalker, se è una battaglia attaccata che smette di essere una battaglia, o se è una creatura attaccante o bloccante che si rigenera (vedi regola 701.19), smette di essere una creatura o diventa una battaglia. Una creatura rimossa dal combattimento smette di essere una creatura attaccante, bloccante, bloccata e/o non bloccata. Un planeswalker o una battaglia rimossi dal combattimento smettono di essere attaccati.
+@506.4a
+Una volta che una creatura è stata dichiarata come creatura attaccante o bloccante, le magie o abilità che le avrebbero impedito di attaccare o bloccare non la rimuovono dal combattimento.
+@506.4b
+TAPpare o STAPpare una creatura già dichiarata come attaccante o bloccante non la rimuove dal combattimento e non impedisce il suo danno da combattimento.
+@506.4c
+Se una creatura sta attaccando un planeswalker o una battaglia, rimuovere quel planeswalker o quella battaglia dal combattimento non rimuove quella creatura dal combattimento. Continua a essere una creatura attaccante, anche se non sta attaccando alcun giocatore, planeswalker o battaglia. Può essere bloccata. Se non è bloccata, non infliggerà danno da combattimento.
+@506.4d
+Un permanente che è sia una creatura bloccante sia un planeswalker attaccato viene rimosso dal combattimento se smette di essere sia una creatura sia un planeswalker. Se smette di avere uno di quei tipi di carta ma continua ad avere l'altro, continua a essere una creatura bloccante o un planeswalker attaccato, a seconda del caso.
+@506.4e
+Un permanente attaccato che è sia un planeswalker sia una battaglia viene rimosso dal combattimento se smette di essere sia un planeswalker sia una battaglia. Se smette di essere una battaglia ma è ancora un planeswalker, viene rimosso dal combattimento solo se non è controllato dal suo protettore. Se smette di essere un planeswalker ma è ancora una battaglia, non viene rimosso dal combattimento. Continua a essere una battaglia attaccata.
+@506.5
+Una creatura attacca da sola se è l'unica creatura dichiarata come attaccante durante la sottofase di dichiarazione degli attaccanti. Una creatura sta attaccando da sola se sta attaccando ma nessun'altra creatura lo sta facendo. Una creatura blocca da sola se è l'unica creatura dichiarata come bloccante durante la sottofase di dichiarazione dei bloccanti. Una creatura sta bloccando da sola se sta bloccando ma nessun'altra creatura lo sta facendo.
+@506.6
+Una creatura attacca da sola un giocatore se viene dichiarata come attaccante che attacca un giocatore durante la sottofase di dichiarazione degli attaccanti e nessun'altra creatura viene dichiarata come attaccante che attacca quel giocatore. Una creatura sta attaccando da sola un giocatore se sta attaccando un giocatore e nessun'altra creatura sta attaccando quel giocatore.
+@506.7
+Alcune abilità controllano se una creatura «ha dovuto attaccare» durante una determinata fase di combattimento. Una creatura ha dovuto attaccare se uno o più effetti le richiedevano di attaccare nel momento in cui sono stati dichiarati gli attaccanti in quel combattimento. Una creatura non «ha dovuto attaccare» se non c'erano effetti che le richiedevano di attaccare, anche se non c'erano altri attacchi legali che si sarebbero potuti dichiarare. (Vedi regola 508.)
+@506.8
+Alcune magie stabiliscono che possono essere lanciate «solo [prima/dopo] [un determinato momento della fase di combattimento]», dove quel momento può essere «la dichiarazione degli attaccanti», «la dichiarazione dei bloccanti», «la sottofase del danno da combattimento», «la sottofase di fine del combattimento», «la fase di combattimento» o «il combattimento».
+@506.8a
+Una magia che stabilisce di poter essere lanciata «solo prima (o dopo) la dichiarazione degli attaccanti» si riferisce all'azione generata dal turno di dichiarare gli attaccanti. Può essere lanciata solo prima (o dopo) l'inizio della sottofase di dichiarazione degli attaccanti, indipendentemente dal fatto che vengano effettivamente dichiarati attaccanti. (Vedi regola 508.)
+@506.8b
+Una magia che stabilisce di poter essere lanciata «solo prima (o dopo) la dichiarazione dei bloccanti» si riferisce all'azione generata dal turno di dichiarare i bloccanti. Può essere lanciata solo prima (o dopo) l'inizio della sottofase di dichiarazione dei bloccanti, indipendentemente dal fatto che vengano effettivamente dichiarati bloccanti. (Vedi regola 509.)
+@506.8c
+Alcune magie stabiliscono che possono essere lanciate solo «durante il combattimento» o «durante la fase di combattimento di un determinato giocatore», oltre ai criteri descritti nella regola 506.8. Se un turno ha più fasi di combattimento, queste magie possono essere lanciate in un momento appropriato durante una qualsiasi di esse.
+@506.8d
+Alcune magie stabiliscono che possono essere lanciate «solo prima (o dopo) [un determinato momento della fase di combattimento]», ma non soddisfano i criteri aggiuntivi descritti nella regola 506.8c. Se un turno ha più fasi di combattimento, queste magie possono essere lanciate in quel turno solo prima (o dopo) il momento indicato della prima fase di combattimento.
+@506.8e
+Se una magia stabilisce che può essere lanciata «solo prima di [un determinato momento della fase di combattimento]», ma il momento indicato non esiste nella fase di combattimento in questione perché le sottofasi di dichiarazione dei bloccanti e del danno da combattimento vengono saltate (vedi regola 508.8), allora la magia può essere lanciata solo prima della fine della sottofase di dichiarazione degli attaccanti. Se il momento indicato non esiste perché la fase di combattimento in questione è stata saltata, allora la magia può essere lanciata solo prima della fine della fase principale pre-combattimento.
+@506.8f
+Se una magia stabilisce che può essere lanciata «solo durante il combattimento dopo la dichiarazione dei bloccanti», ma in quella fase di combattimento la sottofase di dichiarazione dei bloccanti viene saltata (vedi regola 508.8), allora la magia non può essere lanciata durante quella fase di combattimento.
+@506.8g
+Le regole 506.8 e 506.8a–f si applicano alle abilità che stabiliscono di poter essere attivate solo in determinati momenti rispetto al combattimento esattamente come si applicano alle magie che stabiliscono di poter essere lanciate solo in determinati momenti rispetto al combattimento.
+@507
+Sottofase di inizio del combattimento
+@507.1
+Primo, se la partita giocata è una partita multigiocatore in cui gli avversari del giocatore attivo non diventano tutti automaticamente giocatori in difesa, il giocatore attivo sceglie uno dei suoi avversari. Quel giocatore diventa il giocatore in difesa. Questa azione generata dal turno non usa la pila. (Vedi regola 506.2.)
+@507.2
+Secondo, il giocatore attivo riceve la priorità. (Vedi regola 117, «Tempistica e priorità».)
+@508
+Sottofase di dichiarazione degli attaccanti
+@508.1
+Primo, il giocatore attivo dichiara gli attaccanti. Questa azione generata dal turno non usa la pila. Per dichiarare gli attaccanti, il giocatore attivo segue in ordine i passaggi indicati qui sotto. Se in un qualsiasi momento durante la dichiarazione degli attaccanti il giocatore attivo non è in grado di rispettare uno dei passaggi elencati, la dichiarazione è illegale; la partita torna al momento precedente la dichiarazione (vedi regola 733, «Gestire le azioni illegali»).
+@508.1a
+Il giocatore attivo sceglie quali creature che controlla, se ce ne sono, attaccheranno. Le creature scelte devono essere STAPpate, non possono essere anche battaglie, e ognuna deve avere rapidità oppure essere stata controllata continuativamente dal giocatore attivo dall'inizio del turno.
+@508.1b
+Se il giocatore in difesa controlla dei planeswalker, è il protettore di qualche battaglia o la partita permette al giocatore attivo di attaccare più altri giocatori, il giocatore attivo annuncia quale giocatore, planeswalker o battaglia sta attaccando ciascuna delle creature scelte.
+@508.1c
+Il giocatore attivo controlla ogni creatura che controlla per vedere se è soggetta a restrizioni (effetti che dicono che una creatura non può attaccare, o che non può attaccare a meno che non si verifichi una certa condizione). Se una qualsiasi restrizione non viene rispettata, la dichiarazione degli attaccanti è illegale.
+Esempio: Un giocatore controlla due creature, ognuna con una restrizione che dice «Questa creatura non può attaccare da sola». È legale dichiararle entrambe come attaccanti.
+@508.1d
+Il giocatore attivo controlla ogni creatura che controlla per vedere se è soggetta a requisiti (effetti che dicono che una creatura attacca se possibile, o che attacca se si verifica una certa condizione). Se il numero di requisiti rispettati è inferiore al numero massimo possibile di requisiti che si potrebbero rispettare senza violare alcuna restrizione, la dichiarazione degli attaccanti è illegale. Se una creatura non può attaccare a meno che un giocatore non paghi un costo, quel giocatore non è obbligato a pagare quel costo, anche se attaccare con quella creatura aumenterebbe il numero di requisiti rispettati. Se un requisito che dice che una creatura attacca se possibile durante un certo turno si riferisce a un turno con più fasi di combattimento, la creatura attacca se possibile durante ogni sottofase di dichiarazione degli attaccanti di quel turno.
+Esempio: Un giocatore controlla due creature: una che «attacca se possibile» e una senza abilità. Un effetto dice «Non più di una creatura può attaccare in ogni turno». L'unico attacco legale è quello in cui attacca solo la creatura che «attacca se possibile». È illegale attaccare con l'altra creatura, attaccare con entrambe o non attaccare con nessuna.
+@508.1e
+Se una delle creature scelte ha fasciare o un'abilità «fasciare con altri», il giocatore attivo annuncia quali creature, se ce ne sono, sono fasciate con quali. (Vedi regola 702.22, «Fasciare».)
+@508.1f
+Il giocatore attivo TAPpa le creature scelte. TAPpare una creatura quando viene dichiarata come attaccante non è un costo; attaccare fa semplicemente TAPpare le creature.
+@508.1g
+Se ci sono costi facoltativi per attaccare con le creature scelte (espressi come costi che un giocatore può pagare «mentre» una creatura attacca), il giocatore attivo sceglie quali, se ce ne sono, pagherà.
+@508.1h
+Se alcune delle creature scelte richiedono il pagamento di costi per attaccare, o se sono stati scelti dei costi facoltativi per attaccare, il giocatore attivo determina il costo totale per attaccare. I costi possono includere pagare mana, TAPpare permanenti, sacrificare permanenti, scartare carte e così via. Una volta determinato, il costo totale viene «bloccato». Se degli effetti dovessero cambiare il costo totale dopo questo momento, ignora il cambiamento.
+@508.1i
+Se uno dei costi richiede mana, il giocatore attivo ha a quel punto la possibilità di attivare abilità di mana (vedi regola 605, «Abilità di mana»).
+@508.1j
+Quando ha abbastanza mana nella riserva di mana, il giocatore paga tutti i costi in qualsiasi ordine. Non sono ammessi pagamenti parziali.
+@508.1k
+Ogni creatura scelta ancora controllata dal giocatore attivo diventa una creatura attaccante. Resta una creatura attaccante finché non viene rimossa dal combattimento o finché non termina la fase di combattimento, a seconda di cosa avviene prima. Vedi regola 506.4.
+@508.1m
+Si innescano tutte le abilità che si innescano quando vengono dichiarati gli attaccanti.
+@508.2
+Secondo, il giocatore attivo riceve la priorità. (Vedi regola 117, «Tempistica e priorità».)
+@508.2a
+Le abilità che si innescano quando una creatura attacca si innescano solo nel momento in cui la creatura viene dichiarata come attaccante. Non si innescano se una creatura attacca e poi le sue caratteristiche cambiano in modo da corrispondere alla condizione di innesco dell'abilità.
+Esempio: Un permanente ha l'abilità «Ogni volta che una creatura verde attacca, distruggi quella creatura alla fine del combattimento». Se una creatura blu attacca e in seguito diventa verde, l'abilità non si innesca.
+@508.2b
+Tutte le abilità che si sono innescate quando sono stati dichiarati gli attaccanti, o che si sono innescate durante il procedimento descritto nelle regole 508.1, vengono messe in pila prima che il giocatore attivo riceva la priorità; l'ordine in cui si sono innescate non ha importanza. (Vedi regola 603, «Gestire le abilità innescate».)
+@508.3
+Le abilità innescate che si innescano quando vengono dichiarati gli attaccanti possono avere condizioni di innesco diverse.
+@508.3a
+Un'abilità che dice «Ogni volta che [una creatura] attacca, …» si innesca se quella creatura viene dichiarata come attaccante. Allo stesso modo, «Ogni volta che [una creatura] attacca [un giocatore, un planeswalker o una battaglia], …» si innesca se quella creatura viene dichiarata come attaccante che attacca quel giocatore o permanente. Queste abilità non si innescano se una creatura viene messa sul campo di battaglia attaccante.
+@508.3b
+Un'abilità che dice «Ogni volta che [un giocatore, un planeswalker o una battaglia] viene attaccato, …» si innesca se una o più creature vengono dichiarate come attaccanti che attaccano quel giocatore o permanente. Non si innesca se una creatura viene messa sul campo di battaglia attaccante quel giocatore o permanente.
+@508.3c
+Un'abilità che dice «Ogni volta che [un giocatore] attacca con [una creatura], …» si innesca se una creatura controllata da quel giocatore viene dichiarata come attaccante.
+@508.3d
+Un'abilità che dice «Ogni volta che [un giocatore] attacca, …» si innesca se una o più creature controllate da quel giocatore vengono dichiarate come attaccanti.
+@508.3e
+Un'abilità che dice «Ogni volta che [un giocatore] attacca [un altro giocatore], …» si innesca se una o più creature controllate dal primo giocatore vengono dichiarate come attaccanti che attaccano il secondo giocatore. Non si innesca se una creatura viene messa sul campo di battaglia attaccante o se una creatura attacca un planeswalker o una battaglia.
+@508.3f
+Un'abilità che dice «Ogni volta che [una creatura] attacca e non viene bloccata, …» si innesca durante la sottofase di dichiarazione dei bloccanti, non durante la sottofase di dichiarazione degli attaccanti. Vedi regola 509.3g.

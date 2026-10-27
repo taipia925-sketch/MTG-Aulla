@@ -1,0 +1,194 @@
+@400.5
+L'ordine degli oggetti in un grimorio, in un cimitero o in pila non può essere cambiato, tranne quando effetti o regole lo permettono. Lo stesso vale per gli oggetti disposti in pile a faccia in giù in altre zone. Gli altri oggetti nelle altre zone possono essere disposti come preferiscono i loro proprietari, purché resti chiaro a tutti i giocatori chi controlla quegli oggetti, se sono TAPpati o capovolti e quali altri oggetti sono assegnati a essi.
+@400.6
+Se un oggetto dovesse spostarsi da una zona a un'altra, si determina quale evento sta spostando l'oggetto. Se l'oggetto si sta spostando in una zona pubblica e il suo proprietario potrà guardarlo in quella zona, il proprietario lo guarda per vedere se ha abilità che influirebbero sullo spostamento. Se l'oggetto si sta spostando sul campo di battaglia, lo guarda anche ogni altro giocatore che potrà vederlo in quella zona. Poi a quell'evento si applicano gli eventuali effetti di sostituzione appropriati, che provengano da quell'oggetto o da altrove. Se degli effetti o delle regole cercano di fare a un determinato oggetto due o più cose contraddittorie o che si escludono a vicenda, il controllore di quell'oggetto (o il suo proprietario se non ha un controllore) sceglie quale effetto applicare e cosa fa quell'effetto. (Nota che più istanze della stessa cosa possono escludersi a vicenda; per esempio, due effetti «distruggi» simultanei.) Poi l'evento sposta l'oggetto.
+Esempio: Exquisite Archangel ha un'abilità che dice «Se stai per perdere la partita, invece esilia questa creatura e il tuo totale di punti vita diventa pari al tuo totale di punti vita iniziale». Una magia infligge 5 danni a un giocatore con 5 punti vita e 5 danni a un Exquisite Archangel controllato da quel giocatore. Mentre vengono eseguite le azioni generate dallo stato, il totale di punti vita di quel giocatore diventa pari al suo totale iniziale, e quel giocatore sceglie se Exquisite Archangel va nel cimitero del suo proprietario o in esilio.
+@400.7
+Un oggetto che si sposta da una zona a un'altra diventa un nuovo oggetto senza memoria né relazione con la sua esistenza precedente. Questa regola ha le eccezioni seguenti.
+@400.7a
+Gli effetti di magie, abilità attivate e abilità innescate che cambiano le caratteristiche o il controllore di una magia permanente in pila continuano ad applicarsi al permanente che quella magia diventa.
+@400.7b
+Gli effetti di abilità statiche che conferiscono a una magia permanente un'abilità che funziona sul campo di battaglia continuano ad applicarsi al permanente che quella magia diventa (vedi regola 611.3d).
+@400.7c
+Gli effetti di prevenzione che si applicano al danno di una magia permanente in pila continuano ad applicarsi al danno del permanente che quella magia diventa.
+@400.7d
+Un'abilità di un permanente può fare riferimento a informazioni sulla magia che è diventata quel permanente risolvendosi, compresi i costi pagati per lanciare quella magia o il mana speso per pagare quei costi.
+@400.7e
+Le abilità che si innescano quando un oggetto si sposta da una zona a un'altra (per esempio, «Quando questa Aura viene messa in un cimitero dal campo di battaglia») possono trovare il nuovo oggetto che è diventato nella zona in cui si è spostato quando l'abilità si è innescata, se quella zona è una zona pubblica.
+@400.7f
+Le abilità che si innescano quando un permanente incantato lascia il campo di battaglia possono trovare il nuovo oggetto che ogni Aura che incantava quel permanente è diventata nel cimitero del suo proprietario, se è stata messa in quel cimitero nello stesso momento in cui il permanente incantato ha lasciato il campo di battaglia. Possono anche trovare il nuovo oggetto che ogni Aura che lo incantava è diventata nel cimitero del suo proprietario per esservi stata messa come azione generata dallo stato perché non assegnata a un permanente. (Vedi regola 704.5m.)
+@400.7g
+Se un effetto conferisce a una carta non terra un'abilità che le permette di essere lanciata, quell'abilità continua ad applicarsi al nuovo oggetto che quella carta è diventata dopo essersi spostata in pila per essere stata lanciata in quel modo.
+@400.7h
+Se un effetto permette di lanciare una carta non terra, altre parti di quell'effetto possono trovare il nuovo oggetto che quella carta diventa dopo essersi spostata in pila per essere stata lanciata in quel modo.
+@400.7i
+Se un effetto permette di giocare una carta terra, altre parti di quell'effetto possono trovare il nuovo oggetto che quella carta terra diventa dopo essersi spostata sul campo di battaglia per essere stata giocata in quel modo.
+@400.7j
+Se un effetto fa spostare un oggetto in una zona pubblica, altre parti di quell'effetto possono trovare quell'oggetto. Se il costo di una magia o abilità fa spostare un oggetto in una zona pubblica, gli effetti di quella magia o abilità possono trovare quell'oggetto.
+@400.7k
+Dopo la risoluzione di un'abilità innescata di follia (vedi regola 702.35), se la carta esiliata non è stata lanciata ed è stata spostata in una zona pubblica, gli effetti che fanno riferimento alla carta scartata possono trovare quell'oggetto.
+@400.7m
+Gli adesivi su un oggetto in una zona pubblica vengono mantenuti quando si sposta in un'altra zona pubblica (vedi regola 123.5). Gli effetti degli adesivi continuano ad applicarsi al nuovo oggetto che diventa in quella zona.
+@400.8
+Se un oggetto nella zona di esilio viene esiliato, non cambia zona, ma diventa un nuovo oggetto che è appena stato esiliato.
+@400.9
+Se un oggetto a faccia in su nella zona di comando viene girato a faccia in giù, diventa un nuovo oggetto.
+@400.10
+Se un oggetto nella zona di comando viene messo nella zona di comando, non cambia zona, ma diventa un nuovo oggetto che è appena entrato nella zona di comando.
+@400.11
+Un oggetto è fuori dalla partita se non si trova in nessuna delle zone della partita. Fuori dalla partita non è una zona.
+@400.11a
+Le carte nel sideboard di un giocatore sono fuori dalla partita. Vedi regola 100.4.
+@400.11b
+Alcuni effetti portano in partita carte da fuori dalla partita. Quelle carte restano in partita finché la partita non termina, il loro proprietario non lascia la partita o una regola o un effetto non le rimuove dalla partita, a seconda di cosa avviene prima.
+@400.11c
+Le carte fuori dalla partita non possono essere influenzate da magie o abilità, tranne le abilità che definiscono caratteristiche stampate su di esse (vedi regola 604.3) e le magie e abilità che permettono di portare quelle carte in partita.
+@400.12
+Alcuni effetti istruiscono un giocatore a fare qualcosa a una zona (come «Rimescola la tua mano nel tuo grimorio»). Quell'azione viene compiuta su tutte le carte in quella zona. La zona in sé non subisce effetti.
+@401
+Grimorio
+@401.1
+Quando inizia una partita, il mazzo di ogni giocatore diventa il suo grimorio.
+@401.2
+Ogni grimorio deve essere tenuto in un'unica pila a faccia in giù. I giocatori non possono guardare le carte di un grimorio né cambiarne l'ordine.
+@401.3
+Qualsiasi giocatore può contare in qualsiasi momento il numero di carte rimaste nel grimorio di un qualsiasi giocatore.
+@401.4
+Se un effetto mette contemporaneamente due o più carte in una posizione specifica di un grimorio, il proprietario di quelle carte può disporle in qualsiasi ordine. Il proprietario di quel grimorio non rivela l'ordine in cui le carte vanno nel grimorio.
+@401.5
+Alcuni effetti dicono a un giocatore di giocare con la prima carta del suo grimorio rivelata, oppure dicono che un giocatore può guardare la prima carta del suo grimorio. Se la prima carta del grimorio del giocatore cambia mentre una magia viene lanciata, la nuova prima carta non viene rivelata e non può essere guardata finché la magia non risulta lanciata (vedi regola 601.2i). Lo stesso vale in relazione a un'abilità che viene attivata. Se la prima carta del grimorio del giocatore cambia mentre un giocatore sta compiendo un'azione speciale (vedi regola 116, «Azioni speciali»), la nuova carta non viene rivelata e non può essere guardata finché il giocatore non ha finito di compiere quell'azione speciale.
+@401.6
+Se un effetto fa giocare a un giocatore con la prima carta del grimorio rivelata, e quella particolare carta smette di essere rivelata per un qualsiasi periodo prima di essere rivelata di nuovo, diventa un nuovo oggetto.
+@401.7
+Se un effetto fa mettere a un giocatore una carta in un grimorio «in N-esima posizione dall'alto», e quel grimorio ha meno di N carte, il giocatore mette quella carta in fondo a quel grimorio.
+@402
+Mano
+@402.1
+La mano è il luogo in cui un giocatore tiene le carte pescate. Le carte possono essere messe nella mano di un giocatore anche da altri effetti. All'inizio della partita, ogni giocatore pesca un numero di carte pari alla propria dimensione della mano iniziale, normalmente sette. (Vedi regola 103, «Iniziare la partita».)
+@402.2
+Ogni giocatore ha una dimensione massima della mano, che normalmente è sette carte. Un giocatore può avere in mano un numero qualsiasi di carte, ma durante la propria sottofase di cancellazione deve scartare le carte in eccesso fino alla dimensione massima della mano.
+@402.3
+Un giocatore può disporre la propria mano nel modo che preferisce e guardarla in qualsiasi momento. Un giocatore non può guardare le carte nella mano di un altro giocatore, ma può contarle in qualsiasi momento.
+@403
+Campo di battaglia
+@403.1
+La maggior parte dello spazio tra i giocatori rappresenta il campo di battaglia. Il campo di battaglia all'inizio è vuoto. I permanenti controllati da un giocatore sono normalmente tenuti davanti a lui sul campo di battaglia, anche se in alcuni casi (come un'Aura assegnata al permanente di un altro giocatore) un permanente controllato da un giocatore viene tenuto più vicino a un altro giocatore.
+@403.2
+Una magia o abilità influisce solo sul campo di battaglia e controlla solo il campo di battaglia, a meno che non menzioni specificamente un giocatore o un'altra zona.
+@403.3
+I permanenti esistono solo sul campo di battaglia. Ogni oggetto sul campo di battaglia è un permanente. Vedi regola 110, «Permanenti».
+@403.4
+Ogni volta che un permanente entra nel campo di battaglia, diventa un nuovo oggetto e non ha alcuna relazione con un permanente precedente rappresentato dalla stessa carta, tranne nei casi elencati nella regola 400.7. (Questo vale anche per qualsiasi oggetto che entra in qualsiasi zona.)
+@403.5
+In passato il campo di battaglia era chiamato «zona in gioco». Le carte stampate con testi che contengono espressioni come «in gioco», «dal gioco», «nel gioco» o simili si riferiscono al campo di battaglia. Le carte stampate con quei testi hanno ricevuto errata nel riferimento Oracle.
+@404
+Cimitero
+@404.1
+Il cimitero di un giocatore è la sua pila degli scarti. Qualsiasi oggetto neutralizzato, scartato, distrutto o sacrificato viene messo in cima al cimitero del suo proprietario, così come qualsiasi magia istantaneo o stregoneria che ha finito di risolversi. Il cimitero di ogni giocatore all'inizio è vuoto.
+@404.2
+Ogni cimitero è tenuto in un'unica pila a faccia in su. Un giocatore può esaminare le carte di qualsiasi cimitero in qualsiasi momento, ma normalmente non può cambiarne l'ordine. Regole aggiuntive applicabili ai tornei sanzionati possono permettere a un giocatore di cambiare l'ordine delle carte nel proprio cimitero.
+@404.3
+Se un effetto o una regola mette contemporaneamente due o più carte nello stesso cimitero, il proprietario di quelle carte può disporle in qualsiasi ordine.
+@405
+Pila
+@405.1
+Quando una magia viene lanciata, la carta fisica viene messa in pila (vedi regola 601.2a). Quando un'abilità viene attivata o si innesca, va in cima alla pila senza alcuna carta associata (vedi regole 602.2a e 603.3).
+@405.2
+La pila tiene traccia dell'ordine in cui le magie e/o le abilità vi sono state aggiunte. Ogni volta che un oggetto viene messo in pila, viene messo sopra tutti gli oggetti già presenti.
+@405.3
+Se un effetto mette contemporaneamente in pila due o più oggetti, quelli controllati dal giocatore attivo vengono messi più in basso, seguiti dagli oggetti di ogni altro giocatore nell'ordine APNAP (vedi regola 101.4). Se un giocatore controlla più di uno di questi oggetti, sceglie il loro ordine relativo in pila.
+@405.4
+Ogni magia ha tutte le caratteristiche della carta a essa associata. Ogni abilità attivata o innescata in pila ha il testo dell'abilità che l'ha creata e nessun'altra caratteristica. Il controllore di una magia è il giocatore che l'ha lanciata. Il controllore di un'abilità attivata è il giocatore che l'ha attivata. Il controllore di un'abilità innescata è il giocatore che controllava la fonte dell'abilità quando si è innescata, a meno che non sia un'abilità innescata ritardata. Per determinare il controllore di un'abilità innescata ritardata, vedi regole 603.7d–f.
+@405.5
+Quando tutti i giocatori passano in successione, si risolve la magia o abilità in cima alla pila (l'ultima aggiunta). Se la pila è vuota quando tutti i giocatori passano, la sottofase o fase in corso termina e inizia la successiva.
+@405.6
+Alcune cose che avvengono durante la partita non usano la pila.
+@405.6a
+Gli effetti non vanno in pila; sono il risultato della risoluzione di magie e abilità. Gli effetti possono però creare abilità innescate ritardate, e queste possono andare in pila quando si innescano (vedi regola 603.7).
+@405.6b
+Le abilità statiche generano continuamente effetti e non vanno in pila. (Vedi regola 604, «Gestire le abilità statiche».) Questo include le abilità che definiscono caratteristiche come «[Questo oggetto] è rosso» (vedi regola 604.3).
+@405.6c
+Le abilità di mana si risolvono immediatamente. Se un'abilità di mana produce mana e ha anche un altro effetto, il mana viene prodotto e l'altro effetto avviene immediatamente. Se un giocatore aveva la priorità prima che venisse attivata un'abilità di mana, quel giocatore riceve la priorità dopo che si è risolta. (Vedi regola 605, «Abilità di mana».)
+@405.6d
+Le azioni speciali non usano la pila; avvengono immediatamente. Vedi regola 116, «Azioni speciali».
+@405.6e
+Le azioni generate dal turno non usano la pila; avvengono automaticamente quando iniziano determinate sottofasi o fasi. Vengono gestite prima che un giocatore riceva la priorità (vedi regola 117.3a). Le azioni generate dal turno avvengono automaticamente anche alla fine di ogni sottofase e fase; dopo di esse nessun giocatore riceve la priorità. Vedi regola 703.
+@405.6f
+Le azioni generate dallo stato non usano la pila; avvengono automaticamente quando si verificano determinate condizioni. Vedi regola 704. Vengono gestite prima che un giocatore riceva la priorità. Vedi regola 117.5.
+@405.6g
+Un giocatore può concedere la partita in qualsiasi momento. Quel giocatore lascia immediatamente la partita. Vedi regola 104.3a.
+@405.6h
+Se un giocatore lascia una partita multigiocatore, di conseguenza degli oggetti possono lasciare la partita, cessare di esistere, cambiare controllore o essere esiliati. Queste azioni avvengono immediatamente. Vedi regola 800.4a.
+@406
+Esilio
+@406.1
+La zona di esilio è essenzialmente un'area di deposito per gli oggetti. Alcune magie e abilità esiliano un oggetto senza alcun modo di farlo tornare in un'altra zona. Altre magie e abilità esiliano un oggetto solo temporaneamente.
+@406.2
+Esiliare un oggetto significa metterlo nella zona di esilio dalla zona in cui si trova. Una carta esiliata è una carta che è stata messa nella zona di esilio.
+@406.3
+Le carte esiliate sono, per impostazione predefinita, tenute a faccia in su e possono essere esaminate da qualsiasi giocatore in qualsiasi momento. Le carte «esiliate a faccia in giù» non possono essere esaminate da alcun giocatore, tranne quando le istruzioni lo permettono. Tuttavia, se a un giocatore viene detto di guardare una carta e poi esiliarla a faccia in giù, o una volta che a un giocatore è permesso guardare una carta esiliata a faccia in giù, quel giocatore può continuare a guardare quella carta finché non lascia la zona di esilio o finché non fa parte di una pila di carte che viene mescolata, anche se l'istruzione che glielo permetteva non si applica più.
+@406.3a
+Una carta esiliata a faccia in giù non ha caratteristiche, ma la magia o abilità che l'ha esiliata può permettere di giocarla dall'esilio. A meno che quella carta non venga lanciata a faccia in giù (vedi regola 708.4), la carta viene girata a faccia in su subito prima che il giocatore annunci che la sta giocando (vedi regola 601.2).
+@406.3b
+Alcune magie e abilità permettono a un giocatore di lanciare magie con determinate qualità tra le carte a faccia in giù in esilio. Un giocatore può lanciare una tale magia solo se gli è permesso guardare la carta a faccia in giù in esilio e se la magia risultante ha le qualità indicate.
+@406.4
+Le carte a faccia in giù in esilio dovrebbero essere tenute in pile separate in base a quando e a come sono state esiliate. Se a un giocatore viene detto di scegliere una carta esiliata, il giocatore può scegliere una specifica carta a faccia in giù solo se gli è permesso guardarla. Altrimenti, può scegliere una pila di carte esiliate a faccia in giù, e poi viene scelta a caso una carta all'interno di quella pila. Se la scelta di una tale carta fa parte del lancio di una magia o dell'attivazione di un'abilità, la carta scelta non viene rivelata finché quel costo non è stato pagato per intero. (Vedi regola 601.2i.)
+@406.5
+Le carte esiliate che potrebbero tornare sul campo di battaglia o in un'altra zona dovrebbero essere tenute in pile separate per tenere traccia dei rispettivi modi di ritorno. Allo stesso modo, le carte esiliate che possono avere un impatto sulla partita per via delle proprie abilità (come le carte con infestare) o delle abilità delle carte che le hanno esiliate dovrebbero essere tenute in pile separate.
+@406.6
+Un oggetto può avere stampata un'abilità che fa esiliare una o più carte, e un'altra abilità che fa riferimento a «le carte esiliate» o a carte «esiliate con [questo oggetto]». Queste abilità sono collegate: la seconda si riferisce solo alle carte esiliate a causa della prima. Vedi regola 607, «Abilità collegate».
+@406.7
+Se un oggetto nella zona di esilio viene esiliato, non cambia zona, ma diventa un nuovo oggetto che è appena stato esiliato.
+@406.8
+In passato la zona di esilio era chiamata «zona rimosso dalla partita». Le carte stampate con testi che «rimuovono [un oggetto] dalla partita» esiliano quell'oggetto. Lo stesso vale per le carte stampate con testi che «mettono da parte [un oggetto]». Le carte stampate con quei testi hanno ricevuto errata nel riferimento Oracle.
+@407
+Posta
+@407.1
+Le versioni precedenti delle regole di Magic includevano una regola della posta come modo di giocare «per tenersi le carte». Giocare a Magic con la posta è ora considerato una variante facoltativa del gioco, ed è consentito solo dove non è vietato dalla legge o da altre regole. Giocare con la posta è severamente vietato dalle Magic: The Gathering Tournament Rules (WPN.Wizards.com/en/rules-documents).
+@407.2
+Quando si gioca con la posta, ogni giocatore mette una carta a caso del proprio mazzo nella zona della posta dopo aver stabilito chi gioca per primo ma prima che i giocatori peschino carte. Le carte nella zona della posta possono essere esaminate da qualsiasi giocatore in qualsiasi momento. Alla fine della partita, il vincitore diventa il proprietario di tutte le carte nella zona della posta.
+@407.3
+Alcune carte riportano il testo «Rimuovi questa carta dal tuo mazzo prima di giocare se non stai giocando con la posta». Queste sono le uniche carte che possono aggiungere o rimuovere carte dalla zona della posta o cambiare il proprietario di una carta. Quando non si gioca con la posta, i giocatori non possono includere queste carte nei loro mazzi o sideboard, e queste carte non possono essere portate in partita da fuori dalla partita.
+@407.4
+Mettere in posta un oggetto significa metterlo nella zona della posta dalla zona in cui si trova. Il proprietario di un oggetto è l'unico giocatore che può metterlo in posta.
+@408
+Comando
+@408.1
+La zona di comando è un'area di gioco riservata a determinati oggetti speciali che hanno un effetto generale sulla partita, ma che non sono permanenti e non possono essere distrutti.
+@408.2
+Gli emblemi possono essere creati nella zona di comando. Vedi regola 114, «Emblemi».
+@408.3
+Nelle varianti amichevoli Planechase, Vanguard, Commander, Archenemy e Conspiracy Draft, le carte di Magic non tradizionali e/o le carte designate in modo speciale iniziano la partita nella zona di comando. Ogni variante ha regole proprie riguardanti tali carte. Vedi la sezione 9, «Varianti amichevoli».
+@#5
+Struttura del turno
+@500
+Generale
+@500.1
+Un turno è composto da cinque fasi, in quest'ordine: iniziale, principale pre-combattimento, combattimento, principale post-combattimento e finale. Ognuna di queste fasi si svolge in ogni turno, anche se durante la fase non succede nulla. Le fasi iniziale, di combattimento e finale sono ulteriormente suddivise in sottofasi, che si svolgono in ordine.
+@500.2
+Una fase o sottofase in cui i giocatori ricevono la priorità termina quando la pila è vuota e tutti i giocatori passano in successione. Il semplice svuotarsi della pila non fa terminare una tale fase o sottofase; tutti i giocatori devono passare in successione con la pila vuota. Per questo, ogni giocatore ha la possibilità di aggiungere nuove cose alla pila prima che quella fase o sottofase termini.
+@500.3
+Una sottofase in cui nessun giocatore riceve la priorità termina quando tutte le azioni previste in quella sottofase sono state completate. Le uniche sottofasi di questo tipo sono la sottofase di STAP (vedi regola 502) e alcune sottofasi di cancellazione (vedi regola 514).
+@500.4
+Quando inizia una sottofase o una fase, se ci sono effetti che durano fino a quella sottofase o fase, quegli effetti terminano.
+@500.5
+Quando una sottofase o una fase termina, se ci sono effetti che durano fino alla fine di quella sottofase o fase, quegli effetti terminano. Poi il mana non speso rimasto nella riserva di mana di un giocatore si svuota. Questa è un'azione generata dal turno che non usa la pila (vedi regola 703.4q).
+@500.5a
+Gli effetti che durano «fino alla fine del combattimento» terminano alla fine della fase di combattimento, non all'inizio della sottofase di fine combattimento.
+@500.5b
+Gli effetti che durano «fino alla fine del turno» sono soggetti a regole speciali; vedi regola 514.2.
+@500.6
+Quando inizia una fase o sottofase, si innescano tutte le abilità che si innescano «all'inizio di» quella fase o sottofase. Vengono messe in pila la prossima volta che un giocatore riceverebbe la priorità. (Vedi regola 117, «Tempistica e priorità».)
+@500.7
+Alcuni effetti possono dare a un giocatore turni extra. Lo fanno aggiungendo i turni subito dopo il turno indicato. Se a un giocatore vengono dati più turni extra, i turni extra vengono aggiunti uno alla volta. Se a più giocatori vengono dati turni extra, i turni extra vengono aggiunti uno alla volta, nell'ordine APNAP (vedi regola 101.4). Il turno creato più di recente verrà giocato per primo.
+@500.8
+Alcuni effetti possono aggiungere fasi a un turno. Lo fanno aggiungendo le fasi subito dopo la fase indicata. Se vengono create più fasi extra dopo la stessa fase, la fase creata più di recente avverrà per prima.
+@500.9
+Alcuni effetti possono aggiungere sottofasi a una fase. Lo fanno aggiungendo le sottofasi subito dopo o subito prima di una sottofase indicata. Se vengono create più sottofasi extra dopo la stessa sottofase, la sottofase creata più di recente avverrà per prima.
+@500.10
+Alcuni effetti aggiungono una sottofase dopo una determinata fase. In quel caso, quell'effetto crea prima, subito dopo la fase indicata, la fase che normalmente contiene quella sottofase. Le altre sottofasi che quella fase avrebbe normalmente vengono saltate (vedi regola 500.11).
+Esempio: Obeka, Splitter of Seconds dice, tra l'altro, «Ogni volta che Obeka infligge danno da combattimento a un giocatore, hai altrettante sottofasi di mantenimento aggiuntive dopo questa fase». Dopo che quell'abilità si è risolta, il suo controllore aggiunge altrettante fasi iniziali dopo questa fase. Quelle nuove fasi iniziali hanno solo una sottofase di mantenimento. Le sottofasi di STAP e di acquisizione di quelle fasi vengono saltate.
+@500.10a
+Se un effetto che dice che «hai» una sottofase o fase aggiuntiva dovesse aggiungere una sottofase o fase a un turno diverso da quello del suo controllore, non vengono aggiunte sottofasi né fasi.
+@500.11
+Alcuni effetti possono far saltare una sottofase, una fase o un turno. Saltare una sottofase, una fase o un turno significa procedere oltre come se non esistesse. Vedi regola 614.10.

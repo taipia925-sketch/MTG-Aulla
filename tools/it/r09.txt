@@ -1,0 +1,236 @@
+@305.9
+Se un oggetto è sia una terra sia un altro tipo di carta, può essere giocato solo come terra. Non può essere lanciato come magia.
+@306
+Planeswalker
+@306.1
+Un giocatore che ha la priorità può lanciare una carta planeswalker dalla sua mano durante una fase principale del suo turno quando la pila è vuota. Lanciare un planeswalker come magia usa la pila. (Vedi regola 601, «Lanciare magie».)
+@306.2
+Quando una magia planeswalker si risolve, il suo controllore la mette sul campo di battaglia sotto il proprio controllo.
+@306.3
+I sottotipi di planeswalker sono sempre una sola parola e sono elencati dopo un trattino lungo: «Planeswalker — Jace». Ogni parola dopo il trattino è un sottotipo separato. I sottotipi di planeswalker sono detti anche tipi di planeswalker. I planeswalker possono avere più sottotipi. Vedi regola 205.3j per l'elenco completo dei tipi di planeswalker.
+@306.4
+In passato i planeswalker erano soggetti a una «regola di unicità dei planeswalker» che impediva a un giocatore di controllare due planeswalker dello stesso tipo di planeswalker. Questa regola è stata rimossa e le carte planeswalker stampate prima di questo cambiamento hanno ricevuto errata nel riferimento Oracle per avere il supertipo leggendario. Come gli altri permanenti leggendari, sono soggette alla «regola della leggenda» (vedi regola 704.5j).
+@306.5
+La fedeltà è una caratteristica che hanno solo i planeswalker.
+@306.5a
+La fedeltà di una carta planeswalker che non è sul campo di battaglia è pari al numero stampato nel suo angolo in basso a destra.
+@306.5b
+Un planeswalker ha l'abilità intrinseca «Questo permanente entra con un numero di segnalini fedeltà pari al suo numero di fedeltà stampato». Questa abilità crea un effetto di sostituzione (vedi regola 614.1c).
+@306.5c
+La fedeltà di un planeswalker sul campo di battaglia è pari al numero di segnalini fedeltà su di esso.
+@306.5d
+Ogni planeswalker ha un certo numero di abilità di fedeltà, cioè abilità attivate con simboli di fedeltà nel loro costo. Le abilità di fedeltà seguono regole speciali: un giocatore può attivare un'abilità di fedeltà di un permanente che controlla in qualsiasi momento in cui ha la priorità e la pila è vuota durante una fase principale del suo turno, ma solo se in quel turno non è stata attivata nessuna delle abilità di fedeltà di quel permanente. Vedi regola 606, «Abilità di fedeltà».
+@306.6
+I planeswalker possono essere attaccati. (Vedi regola 508, «Sottofase di dichiarazione degli attaccanti».)
+@306.7
+In passato i planeswalker erano soggetti a un effetto di reindirizzamento che permetteva a un giocatore di far infliggere a un planeswalker controllato da un avversario il danno non da combattimento che sarebbe stato inflitto a quell'avversario. Questa regola è stata rimossa e alcune carte hanno ricevuto errata nel riferimento Oracle per infliggere danno direttamente ai planeswalker.
+@306.8
+Il danno inflitto a un planeswalker fa rimuovere da esso altrettanti segnalini fedeltà.
+@306.9
+Se la fedeltà di un planeswalker è 0, viene messo nel cimitero del suo proprietario. (Questa è un'azione generata dallo stato. Vedi regola 704.)
+@307
+Stregonerie
+@307.1
+Un giocatore che ha la priorità può lanciare una carta stregoneria dalla sua mano durante una fase principale del suo turno quando la pila è vuota. Lanciare una stregoneria come magia usa la pila. (Vedi regola 601, «Lanciare magie».)
+@307.2
+Quando una magia stregoneria si risolve, vengono eseguite le azioni indicate nel suo testo delle regole. Poi viene messa nel cimitero del suo proprietario.
+@307.3
+I sottotipi di stregoneria sono sempre una sola parola e sono elencati dopo un trattino lungo: «Stregoneria — Arcano». Ogni parola dopo il trattino è un sottotipo separato. L'insieme dei sottotipi di stregoneria è lo stesso dei sottotipi di istantaneo; questi sottotipi sono detti tipi di magia. Le stregonerie possono avere più sottotipi. Vedi regola 205.3k per l'elenco completo dei tipi di magia.
+@307.4
+Le stregonerie non possono entrare nel campo di battaglia. Se una stregoneria dovesse entrare nel campo di battaglia, resta invece nella sua zona precedente.
+@307.5
+Se una magia, un'abilità o un effetto stabilisce che un giocatore può fare qualcosa solo «in qualsiasi momento in cui potrebbe lanciare una stregoneria» o «solo come una stregoneria», significa solo che il giocatore deve avere la priorità, deve essere durante la fase principale del suo turno e la pila deve essere vuota. Il giocatore non deve avere una carta stregoneria che potrebbe lanciare. Gli effetti che impedirebbero a quel giocatore di lanciare una magia stregoneria non influiscono sulla sua possibilità di compiere quell'azione (a meno che l'azione non consista proprio nel lanciare una magia stregoneria).
+@307.5a
+Allo stesso modo, se un effetto controlla se una magia è stata lanciata «in un momento in cui non si sarebbe potuta lanciare una stregoneria», controlla solo se il controllore della magia l'ha lanciata senza avere la priorità, durante una fase diversa dalla sua fase principale, o mentre un altro oggetto era in pila.
+@308
+Kindred
+@308.1
+Ogni carta kindred ha anche un altro tipo di carta. Il lancio e la risoluzione di una carta kindred seguono le regole per il lancio e la risoluzione di una carta dell'altro tipo di carta.
+@308.2
+I sottotipi kindred di solito sono di una sola parola e sono elencati dopo un trattino lungo: «Incantesimo Kindred — Tritone». L'insieme dei sottotipi kindred è lo stesso dei sottotipi di creatura; questi sottotipi sono detti tipi di creatura. Le carte kindred possono avere più sottotipi. Vedi regola 205.3m per l'elenco completo dei tipi di creatura.
+@308.3
+Alcune carte kindred più vecchie sono state stampate con il tipo di carta «tribale» (tribal). Le carte stampate con quel tipo hanno ricevuto errata nel riferimento Oracle.
+@309
+Dungeon
+@309.1
+Dungeon è un tipo di carta presente solo sulle carte di Magic non tradizionali.
+@309.2
+Le carte dungeon iniziano fuori dalla partita. Le carte dungeon non fanno parte del mazzo né del sideboard di un giocatore. Vengono portate in partita con l'azione chiave avventurarsi nel dungeon. Vedi regola 701.49, «Avventurarsi nel dungeon».
+@309.2a
+Se un giocatore si avventura nel dungeon mentre non possiede una carta dungeon nella zona di comando, sceglie una carta dungeon che possiede da fuori dalla partita e la mette nella zona di comando.
+@309.2b
+Una carta dungeon portata in partita viene messa nella zona di comando finché non lascia la partita.
+@309.2c
+Le carte dungeon non sono permanenti. Non possono essere lanciate. Le carte dungeon non possono lasciare la zona di comando se non quando lasciano la partita.
+@309.2d
+Se un effetto diverso dall'azione chiave avventurarsi nel dungeon dovesse portare in partita una carta dungeon da fuori dalla partita, non lo fa; quella carta resta fuori dalla partita.
+@309.3
+Un giocatore può possedere una sola carta dungeon nella zona di comando alla volta, e non può portare in partita una carta dungeon se una carta dungeon che possiede è nella zona di comando.
+@309.4
+Ogni carta dungeon ha una serie di stanze collegate tra loro da frecce. Un giocatore usa un segnalino avventura posto sulla carta dungeon che possiede per indicare in quale stanza si trova attualmente.
+@309.4a
+Mentre un giocatore mette nella zona di comando un dungeon che possiede, mette il suo segnalino avventura sulla stanza più in alto.
+@309.4b
+Ogni stanza ha un nome. Questi nomi sono considerati testo di colore e non influiscono sul gioco.
+@309.4c
+Ogni stanza ha un'abilità innescata detta abilità della stanza, il cui effetto è stampato sulla carta. Hanno tutte la stessa condizione di innesco, non stampata sulla carta. Il testo completo di ogni abilità della stanza è «Quando sposti il tuo segnalino avventura in questa stanza, [effetto.]». Finché una carta dungeon è nella zona di comando, le sue abilità possono innescarsi. Ogni abilità della stanza è controllata dal giocatore che possiede la carta dungeon che è la fonte di quell'abilità.
+@309.5
+L'azione chiave avventurarsi nel dungeon permette ai giocatori di spostare il proprio segnalino avventura lungo le stanze di una carta dungeon.
+@309.5a
+Se un giocatore si avventura nel dungeon mentre possiede una carta dungeon nella zona di comando e il suo segnalino avventura non è sulla stanza più in basso di quel dungeon, sposta il suo segnalino avventura dalla stanza in cui si trova alla stanza successiva, seguendo la direzione di una freccia che parte dalla stanza in cui si trova il suo segnalino avventura. Se dalla stanza in cui si trova il segnalino avventura del giocatore partono più frecce, il giocatore ne sceglie una da seguire.
+@309.5b
+Se un giocatore si avventura nel dungeon mentre possiede una carta dungeon nella zona di comando e il suo segnalino avventura è sulla stanza più in basso di quella carta dungeon, rimuove quella carta dungeon dalla partita. Poi sceglie una carta dungeon che possiede da fuori dalla partita e la mette nella zona di comando. Mette il suo segnalino avventura sulla stanza più in alto.
+@309.6
+Se il segnalino avventura di un giocatore è sulla stanza più in basso di una carta dungeon, e quella carta dungeon non è la fonte di un'abilità della stanza che si è innescata ma non ha ancora lasciato la pila, il proprietario della carta dungeon la rimuove dalla partita. (Questa è un'azione generata dallo stato. Vedi regola 704.)
+@309.7
+Un giocatore completa un dungeon quando quella carta dungeon viene rimossa dalla partita.
+@310
+Battaglie
+@310.1
+Un giocatore che ha la priorità può lanciare una carta battaglia dalla sua mano durante una fase principale del suo turno quando la pila è vuota. Lanciare una battaglia come magia usa la pila. (Vedi regola 601, «Lanciare magie».)
+@310.2
+Quando una magia battaglia si risolve, il suo controllore la mette sul campo di battaglia sotto il proprio controllo.
+@310.3
+I sottotipi di battaglia sono sempre una sola parola e sono elencati dopo un trattino lungo: «Battaglia — Assedio». I sottotipi di battaglia sono detti anche tipi di battaglia. Vedi regola 205.3q per l'elenco completo dei tipi di battaglia.
+@310.4
+La difesa è una caratteristica che hanno le battaglie.
+@310.4a
+La difesa di una carta battaglia che non è sul campo di battaglia è pari al numero stampato nel suo angolo in basso a destra.
+@310.4b
+Una battaglia ha l'abilità intrinseca «Questo permanente entra con un numero di segnalini difesa pari al suo numero di difesa stampato». Questa abilità crea un effetto di sostituzione (vedi regola 614.1c).
+@310.4c
+La difesa di una battaglia sul campo di battaglia è pari al numero di segnalini difesa su di essa.
+@310.5
+Le battaglie possono essere attaccate. (Vedi regola 508, «Sottofase di dichiarazione degli attaccanti».)
+@310.6
+Il danno inflitto a una battaglia fa rimuovere da essa altrettanti segnalini difesa.
+@310.7
+Se la difesa di una battaglia Assedio è 0 e non è la fonte di un'abilità che si è innescata ma non ha ancora lasciato la pila, viene messa nel cimitero del suo proprietario. (Questa è un'azione generata dallo stato. Vedi regola 704.)
+@310.8
+Se la difesa di una battaglia non Assedio è 0, viene messa nel cimitero del suo proprietario. (Questa è un'azione generata dallo stato. Vedi regola 704.)
+@310.9
+Ogni battaglia ha un giocatore designato come suo protettore.
+@310.9a
+Mentre una battaglia entra nel campo di battaglia, il suo controllore sceglie un giocatore come suo protettore. Quali giocatori possono essere scelti come protettore è determinato dal suo tipo di battaglia (vedi regola 310.12). Se non ha tipi di battaglia, solo il suo controllore può esserne il protettore.
+@310.9b
+Il protettore di una battaglia non può mai attaccarla. Una battaglia può essere attaccata da qualsiasi giocatore attaccante per il quale il suo protettore è un giocatore in difesa. In particolare, una battaglia Assedio può essere attaccata dal suo stesso controllore.
+@310.9c
+Il protettore di una battaglia può bloccare le creature che attaccano quella battaglia con le creature che controlla. Le creature controllate da altri giocatori non possono bloccare quegli attaccanti.
+@310.9d
+Se il protettore di una battaglia è un giocatore diverso dal suo controllore, tutte le regole e gli effetti che fanno riferimento al «giocatore in difesa» in relazione a una battaglia attaccata si riferiscono al protettore di quella battaglia invece che al suo controllore. Vedi regola 508.5.
+@310.9e
+Se una regola o un effetto fa riferimento al giocatore che protegge una battaglia, si intende il giocatore che è il protettore di quella battaglia.
+@310.9f
+Una battaglia può avere un solo protettore alla volta. Il protettore di una battaglia smette di esserlo se un altro giocatore ne diventa il protettore.
+@310.9g
+Il protettore di una battaglia non cambia se smette di essere una battaglia o se diventa una copia di un'altra battaglia.
+@310.10
+Una battaglia non può essere assegnata a giocatori o permanenti, anche se è anche un'Aura, un Equipaggiamento o una Fortificazione. Se in qualche modo una battaglia è assegnata a un permanente, si stacca. Questa è un'azione generata dallo stato (vedi regola 704).
+@310.11
+Se una battaglia che non viene attaccata non ha alcun giocatore designato come protettore, o se il suo protettore è un giocatore che non può esserlo, il suo controllore sceglie un giocatore appropriato come protettore. Se in questo modo non è possibile scegliere alcun giocatore, la battaglia viene messa nel cimitero del suo proprietario. Questa è un'azione generata dallo stato (vedi regola 704).
+@310.12
+Alcune battaglie hanno il sottotipo Assedio. Gli Assedi sono soggetti a regole speciali.
+@310.12a
+Mentre un Assedio entra nel campo di battaglia, il suo controllore deve sceglierne il protettore tra i suoi avversari. Solo un avversario del controllore di un Assedio può esserne il protettore.
+@310.12b
+Gli Assedi hanno l'abilità intrinseca «Quando l'ultimo segnalino difesa viene rimosso da questo permanente, esilialo, poi puoi lanciarlo trasformato senza pagare il suo costo di mana».
+@311
+Piani
+@311.1
+Piano è un tipo di carta presente solo sulle carte di Magic non tradizionali. Solo la variante amichevole Planechase usa le carte piano. Vedi regola 901, «Planechase».
+@311.2
+Le carte piano restano nella zona di comando per tutta la partita, sia mentre fanno parte di un mazzo planare sia mentre sono a faccia in su. Non sono permanenti. Non possono essere lanciate. Se una carta piano dovesse lasciare la zona di comando, resta nella zona di comando.
+@311.3
+I sottotipi di piano sono elencati dopo un trattino lungo e possono essere di più parole: «Piano — Serra's Realm». Tutte le parole dopo il trattino formano, insieme, un unico sottotipo. I sottotipi planari sono detti tipi planari. Un piano può avere un solo sottotipo. Vedi regola 205.3n per l'elenco completo dei tipi planari.
+@311.4
+Una carta piano può avere un numero qualsiasi di abilità statiche, innescate e/o attivate. Finché una carta piano è a faccia in su nella zona di comando, le sue abilità statiche influiscono sulla partita, le sue abilità innescate possono innescarsi e le sue abilità attivate possono essere attivate.
+@311.5
+Il controllore di una carta piano a faccia in su è il giocatore designato come controllore planare. Normalmente il controllore planare è il giocatore attivo. Tuttavia, se l'attuale controllore planare dovesse lasciare la partita, diventa invece controllore planare il giocatore successivo nell'ordine di turno che non lascerebbe la partita, poi il vecchio controllore planare lascia la partita. Il nuovo controllore planare mantiene questa designazione finché non lascia la partita o finché un altro giocatore non diventa il giocatore attivo, a seconda di cosa avviene prima.
+@311.6
+Una carta piano a faccia in su che viene girata a faccia in giù diventa un nuovo oggetto.
+@311.7
+Ogni carta piano ha un'abilità innescata che si innesca «Ogni volta che si scatena il caos». Queste sono dette abilità del caos. Ognuna è indicata da un simbolo del caos a sinistra dell'abilità, anche se il simbolo in sé non ha alcun significato speciale nelle regole. Questa abilità si innesca se sul dado planare esce il simbolo del caos (vedi regola 901.9b), se una magia o abilità che si risolve dice che si scatena il caos, o se una magia o abilità che si risolve stabilisce che si scatena il caos per un determinato oggetto. In quest'ultimo caso, l'abilità del caos può innescarsi anche se quella carta piano è ancora nel mazzo planare ma rivelata. Un'abilità del caos è controllata dall'attuale controllore planare.
+@312
+Fenomeni
+@312.1
+Fenomeno è un tipo di carta presente solo sulle carte di Magic non tradizionali. Solo la variante amichevole Planechase usa le carte fenomeno. Vedi regola 901, «Planechase».
+@312.2
+Le carte fenomeno restano nella zona di comando per tutta la partita, sia mentre fanno parte di un mazzo planare sia mentre sono a faccia in su. Non sono permanenti. Non possono essere lanciate. Se una carta fenomeno dovesse lasciare la zona di comando, resta nella zona di comando.
+@312.3
+Le carte fenomeno non hanno sottotipi.
+@312.4
+Il controllore di una carta fenomeno a faccia in su è il giocatore designato come controllore planare. Normalmente il controllore planare è il giocatore attivo. Tuttavia, se l'attuale controllore planare dovesse lasciare la partita, diventa invece controllore planare il giocatore successivo nell'ordine di turno che non lascerebbe la partita, poi il vecchio controllore planare lascia la partita. Il nuovo controllore planare mantiene questa designazione finché non lascia la partita o finché un altro giocatore non diventa il giocatore attivo, a seconda di cosa avviene prima.
+@312.5
+Ogni carta fenomeno ha un'abilità innescata che si innesca quando la incontri. «Quando incontri [questo fenomeno]» significa «Quando togli questa carta da un mazzo planare e la giri a faccia in su».
+@312.6
+Una carta fenomeno a faccia in su che viene girata a faccia in giù diventa un nuovo oggetto.
+@312.7
+Se una carta fenomeno è a faccia in su nella zona di comando, e non è la fonte di un'abilità innescata che si è innescata ma non ha ancora lasciato la pila, il controllore planare viaggia tra i piani la prossima volta che un giocatore riceverebbe la priorità. (Questa è un'azione generata dallo stato; vedi regola 704. Vedi anche la regola 701.31, «Viaggiare tra i piani».)
+@313
+Vanguard
+@313.1
+Vanguard è un tipo di carta presente solo sulle carte di Magic non tradizionali. Solo la variante amichevole Vanguard usa le carte vanguard. Vedi regola 902, «Vanguard».
+@313.2
+Le carte vanguard restano nella zona di comando per tutta la partita. Non sono permanenti. Non possono essere lanciate. Se una carta vanguard dovesse lasciare la zona di comando, resta nella zona di comando.
+@313.3
+Le carte vanguard non hanno sottotipi.
+@313.4
+Una carta vanguard può avere un numero qualsiasi di abilità statiche, innescate e/o attivate. Finché una carta vanguard è nella zona di comando, le sue abilità statiche influiscono sulla partita, le sue abilità innescate possono innescarsi e le sue abilità attivate possono essere attivate.
+@313.5
+Il proprietario di una carta vanguard è il giocatore che ha iniziato la partita con essa nella zona di comando. Il controllore di una carta vanguard a faccia in su è il suo proprietario.
+@313.6
+Ogni carta vanguard ha un modificatore della mano stampato nel suo angolo in basso a sinistra. È un numero preceduto da un segno più, un numero preceduto da un segno meno, oppure uno zero. Questo modificatore si applica alla dimensione della mano iniziale e alla dimensione massima della mano del proprietario della carta vanguard (normalmente sette). Il numero risultante indica sia quante carte quel giocatore pesca all'inizio della partita sia la sua dimensione massima della mano. Vedi regola 103.5.
+@313.7
+Ogni carta vanguard ha un modificatore dei punti vita stampato nel suo angolo in basso a destra. È un numero preceduto da un segno più, un numero preceduto da un segno meno, oppure uno zero. Questo modificatore si applica quando si determina il totale di punti vita iniziale del proprietario della carta vanguard (normalmente 20). Vedi regola 103.4.
+@314
+Piani malvagi
+@314.1
+Piano malvagio (scheme) è un tipo di carta presente solo sulle carte di Magic non tradizionali. Solo la variante amichevole Archenemy usa le carte piano malvagio. Vedi regola 904, «Archenemy».
+@314.2
+Le carte piano malvagio restano nella zona di comando per tutta la partita, sia mentre fanno parte di un mazzo dei piani malvagi sia mentre sono a faccia in su. Non sono permanenti. Non possono essere lanciate. Se una carta piano malvagio dovesse lasciare la zona di comando, resta nella zona di comando.
+@314.3
+Le carte piano malvagio non hanno sottotipi.
+@314.4
+Una carta piano malvagio può avere un numero qualsiasi di abilità statiche, innescate e/o attivate. Finché una carta piano malvagio è a faccia in su nella zona di comando, le sue abilità statiche influiscono sulla partita, le sue abilità innescate possono innescarsi e le sue abilità attivate possono essere attivate.
+@314.5
+Il proprietario di una carta piano malvagio è il giocatore che ha iniziato la partita con essa nella zona di comando. Il controllore di una carta piano malvagio a faccia in su è il suo proprietario.
+@314.6
+Se una carta piano malvagio non continuo è a faccia in su nella zona di comando, e nessuna abilità innescata di alcun piano malvagio è in pila o in attesa di essere messa in pila, quella carta piano malvagio viene girata a faccia in giù e messa in fondo al mazzo dei piani malvagi del suo proprietario la prossima volta che un giocatore riceverebbe la priorità. (Questa è un'azione generata dallo stato. Vedi regola 704.)
+@314.7
+Se un'abilità di una carta piano malvagio include il testo «questo piano malvagio», si intende la carta piano malvagio nella zona di comando che è la fonte di quell'abilità. Questa è un'eccezione alla regola 109.2.
+@315
+Cospirazioni
+@315.1
+Le carte cospirazione sono usate solo nel gioco limitato, in particolare nella variante Conspiracy Draft (vedi regola 905). Le carte cospirazione non sono usate nel gioco costruito.
+@315.2
+All'inizio di una partita, prima che i mazzi vengano mescolati, ogni giocatore può mettere un qualsiasi numero di carte cospirazione dal proprio sideboard nella zona di comando. Le carte cospirazione con piano nascosto vengono messe nella zona di comando a faccia in giù. (Vedi regola 702.106, «Piano nascosto».)
+@315.3
+Le carte cospirazione restano nella zona di comando per tutta la partita. Non sono permanenti. Non possono essere lanciate né incluse in un mazzo. Se una carta cospirazione dovesse lasciare la zona di comando, resta nella zona di comando. Le carte cospirazione che non sono in partita non possono essere portate in partita.
+@315.4
+Le carte cospirazione non hanno sottotipi.
+@315.5
+Le carte cospirazione possono avere un numero qualsiasi di abilità statiche o innescate. Finché una carta cospirazione è a faccia in su nella zona di comando, le sue abilità statiche influiscono sulla partita e le sue abilità innescate possono innescarsi.
+@315.5a
+Le abilità delle carte cospirazione possono influire sulla procedura di inizio partita.
+@315.5b
+Le carte cospirazione a faccia in giù non hanno caratteristiche.
+@315.6
+Il proprietario di una carta cospirazione è il giocatore che l'ha messa nella zona di comando all'inizio della partita. Il controllore di una carta cospirazione è il suo proprietario.
+@315.7
+In qualsiasi momento puoi guardare una carta cospirazione a faccia in giù che controlli. Non puoi guardare le carte cospirazione a faccia in giù controllate da altri giocatori.
+@#4
+Zone
+@400
+Generale
+@400.1
+Una zona è un luogo in cui gli oggetti possono trovarsi durante una partita. Normalmente ci sono sette zone: grimorio, mano, campo di battaglia, cimitero, pila, esilio e comando. Alcune carte più vecchie usano anche la zona della posta. Ogni giocatore ha il proprio grimorio, la propria mano e il proprio cimitero. Le altre zone sono condivise da tutti i giocatori.
+@400.2
+Le zone pubbliche sono zone in cui tutti i giocatori possono vedere il fronte delle carte, tranne quelle carte che una regola o un effetto permette specificamente di tenere a faccia in giù. Cimitero, campo di battaglia, pila, esilio, posta e comando sono zone pubbliche. Le zone nascoste sono zone in cui non ci si può aspettare che tutti i giocatori vedano il fronte delle carte. Grimorio e mano sono zone nascoste, anche se tutte le carte in una di queste zone si trovano a essere rivelate.
+@400.3
+Se un oggetto dovesse andare in un grimorio, cimitero o mano diverso da quello del suo proprietario, va invece nella zona corrispondente del suo proprietario.
+@400.4
+Le carte con determinati tipi di carta non possono entrare in determinate zone.
+@400.4a
+Se una carta istantaneo o stregoneria dovesse entrare nel campo di battaglia, resta nella sua zona precedente.
+@400.4b
+Se una carta cospirazione, fenomeno, piano, piano malvagio o vanguard dovesse lasciare la zona di comando, resta nella zona di comando.
