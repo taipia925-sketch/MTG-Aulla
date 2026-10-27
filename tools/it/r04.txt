@@ -1,0 +1,189 @@
+@117.1a
+Un giocatore può lanciare una magia istantaneo in qualsiasi momento in cui ha la priorità. Un giocatore può lanciare una magia non istantaneo durante la sua fase principale, in qualsiasi momento in cui ha la priorità e la pila è vuota.
+@117.1b
+Un giocatore può attivare un'abilità attivata in qualsiasi momento in cui ha la priorità.
+@117.1c
+Un giocatore può compiere alcune azioni speciali in qualsiasi momento in cui ha la priorità. Un giocatore può compiere altre azioni speciali durante la sua fase principale, in qualsiasi momento in cui ha la priorità e la pila è vuota. Vedi regola 116, «Azioni speciali».
+@117.1d
+Un giocatore può attivare un'abilità di mana ogni volta che ha la priorità, ogni volta che sta lanciando una magia o attivando un'abilità che richiede un pagamento di mana, o ogni volta che una regola o un effetto richiede un pagamento di mana (anche durante il lancio o la risoluzione di una magia o durante l'attivazione o la risoluzione di un'abilità).
+@117.2
+Altri tipi di abilità e azioni sono generati o compiuti automaticamente dalle regole del gioco, oppure vengono compiuti dai giocatori senza ricevere la priorità.
+@117.2a
+Le abilità innescate possono innescarsi in qualsiasi momento, anche mentre una magia viene lanciata, un'abilità viene attivata o una magia o abilità si sta risolvendo. (Vedi regola 603, «Gestire le abilità innescate».) Tuttavia, nel momento in cui un'abilità si innesca non succede ancora nulla. Ogni volta che un giocatore riceverebbe la priorità, ogni abilità che si è innescata ma non è ancora stata messa in pila viene messa in pila. Vedi regola 117.5.
+@117.2b
+Le abilità statiche influiscono continuamente sulla partita. La priorità non si applica a esse. (Vedi regola 604, «Gestire le abilità statiche», e regola 611, «Effetti continui».)
+@117.2c
+Le azioni generate dal turno avvengono automaticamente quando iniziano determinate sottofasi o fasi. Vengono gestite prima che un giocatore riceva la priorità. Vedi regola 117.3a. Le azioni generate dal turno avvengono automaticamente anche alla fine di ogni sottofase e fase; dopo di esse nessun giocatore riceve la priorità. Vedi regola 703, «Azioni generate dal turno».
+@117.2d
+Le azioni generate dallo stato avvengono automaticamente quando si verificano determinate condizioni. Vedi regola 704. Vengono gestite prima che un giocatore riceva la priorità. Vedi regola 117.5.
+@117.2e
+Le magie e abilità che si risolvono possono istruire i giocatori a fare scelte o compiere azioni, o possono permettere ai giocatori di attivare abilità di mana. Anche se un giocatore lo sta facendo, nessun giocatore ha la priorità mentre una magia o abilità si sta risolvendo. Vedi regola 608, «Risolvere magie e abilità».
+@117.3
+Quale giocatore abbia la priorità è determinato dalle regole seguenti:
+@117.3a
+Il giocatore attivo riceve la priorità all'inizio della maggior parte delle sottofasi e fasi, dopo che sono state gestite le eventuali azioni generate dal turno (come pescare una carta durante la sottofase di acquisizione; vedi regola 703) e dopo che le abilità che si innescano all'inizio di quella fase o sottofase sono state messe in pila. Nessun giocatore riceve la priorità durante la sottofase di STAP. Di solito i giocatori non ricevono la priorità durante la sottofase di cancellazione (vedi regola 514.3).
+@117.3b
+Il giocatore attivo riceve la priorità dopo che una magia o abilità (diversa da un'abilità di mana) si è risolta.
+@117.3c
+Se un giocatore ha la priorità quando lancia una magia, attiva un'abilità o compie un'azione speciale, quel giocatore riceve la priorità subito dopo.
+@117.3d
+Se un giocatore ha la priorità e sceglie di non compiere alcuna azione, quel giocatore passa. Se nella sua riserva di mana c'è del mana, annuncia quale mana è presente. Poi il giocatore successivo nell'ordine di turno riceve la priorità.
+@117.4
+Se tutti i giocatori passano in successione (cioè se tutti i giocatori passano senza compiere alcuna azione tra un passaggio e l'altro), la magia o abilità in cima alla pila si risolve oppure, se la pila è vuota, la fase o sottofase termina.
+@117.5
+Ogni volta che un giocatore riceverebbe la priorità, la partita esegue prima tutte le azioni generate dallo stato applicabili come un unico evento (vedi regola 704, «Azioni generate dallo stato»), poi ripete questo procedimento finché non viene eseguita più alcuna azione generata dallo stato. Poi le abilità innescate vengono messe in pila (vedi regola 603, «Gestire le abilità innescate»). Questi passaggi si ripetono in ordine finché non vengono più eseguite azioni generate dallo stato e non si innesca più alcuna abilità. A quel punto il giocatore che avrebbe ricevuto la priorità la riceve.
+@117.6
+In una partita multigiocatore che usa l'opzione dei turni di squadra condivisi, la priorità ce l'hanno le squadre invece dei singoli giocatori. Vedi regola 805, «Opzione dei turni di squadra condivisi».
+@117.7
+Se un giocatore con la priorità lancia una magia o attiva un'abilità attivata mentre un'altra magia o abilità è già in pila, la nuova magia o abilità è stata lanciata o attivata «in risposta» alla magia o abilità precedente. La nuova magia o abilità si risolverà per prima. Vedi regola 608, «Risolvere magie e abilità».
+@118
+Costi
+@118.1
+Un costo è un'azione o un pagamento necessario per compiere un'altra azione o per impedire che un'altra azione avvenga. Per pagare un costo, un giocatore esegue le istruzioni specificate dalla magia, dall'abilità o dall'effetto che contiene quel costo.
+@118.2
+Se un costo include un pagamento di mana, il giocatore che paga il costo ha la possibilità di attivare abilità di mana. Il pagamento del costo per lanciare una magia o attivare un'abilità attivata segue i passaggi delle regole 601.2f–h.
+@118.3
+Un giocatore non può pagare un costo senza avere le risorse necessarie per pagarlo per intero. Per esempio, un giocatore con solo 1 punto vita non può pagare un costo di 2 punti vita, e un permanente già TAPpato non può essere TAPpato per pagare un costo. Vedi regola 202, «Costo di mana e colore», e regola 602, «Attivare abilità attivate».
+@118.3a
+Il mana si paga rimuovendo il mana indicato dalla riserva di mana di un giocatore. (I giocatori possono sempre pagare 0 mana.) Se dopo il pagamento nella riserva di mana del giocatore rimane mana in eccesso, il giocatore annuncia quale mana è ancora presente.
+@118.3b
+I punti vita si pagano sottraendo la quantità di punti vita indicata dal totale di punti vita del giocatore. (I giocatori possono sempre pagare 0 punti vita.)
+@118.3c
+Attivare abilità di mana non è obbligatorio, anche se pagare un costo lo è.
+@118.4
+Alcuni costi includono {X} o X. Vedi regola 107.3.
+@118.5
+Alcuni costi sono rappresentati da {0}, o vengono ridotti a {0}. L'azione necessaria a un giocatore per pagare un costo del genere è dichiarare che lo sta pagando. Anche se un costo del genere non richiede risorse, non viene pagato automaticamente.
+@118.5a
+Una magia il cui costo di mana è {0} deve comunque essere lanciata come una con un costo maggiore di zero; non si lancia da sola. Lo stesso vale per un'abilità attivata il cui costo è {0}.
+@118.6
+Alcuni oggetti non hanno costo di mana. Questo rappresenta un costo impagabile. Anche un'abilità può avere un costo impagabile se il suo costo si basa sul costo di mana di un oggetto senza costo di mana. Tentare di lanciare una magia o attivare un'abilità che ha un costo impagabile è un'azione legale. Tuttavia, tentare di pagare un costo impagabile è un'azione illegale.
+@118.6a
+Se un costo impagabile viene aumentato da un effetto o se viene imposto un costo aggiuntivo, il costo resta impagabile. Se a un costo impagabile si applica un costo alternativo, compreso un effetto che permette a un giocatore di lanciare una magia senza pagarne il costo di mana, il costo alternativo può essere pagato.
+@118.7
+Ciò che un giocatore deve effettivamente fare per pagare un costo può essere cambiato o ridotto da effetti. Se la componente di mana di un costo viene ridotta a nulla da effetti di riduzione del costo, è considerata {0}. Pagare un costo cambiato o ridotto da un effetto vale come pagare il costo originale.
+@118.7a
+Gli effetti che riducono un costo di una quantità di mana generico influiscono solo sulla componente di mana generico di quel costo. Non possono influire sulle componenti di mana colorato o incolore di quel costo.
+@118.7b
+Se un costo viene ridotto di una quantità di mana colorato o incolore, ma il costo non richiede mana di quel tipo, il costo viene ridotto di quella quantità di mana generico.
+@118.7c
+Se un costo viene ridotto di una quantità di mana colorato che supera la sua componente di mana di quel colore, la componente di mana di quel colore viene ridotta a nulla e la componente di mana generico del costo viene ridotta della differenza.
+@118.7d
+Se un costo viene ridotto di una quantità di mana incolore che supera la sua componente di mana incolore, la componente di mana incolore viene ridotta a nulla e la componente di mana generico del costo viene ridotta della differenza.
+@118.7e
+Se un costo viene ridotto di una quantità di mana rappresentata da un simbolo di mana ibrido, il giocatore che paga quel costo sceglie una metà di quel simbolo nel momento in cui si applica la riduzione del costo (vedi regola 601.2f). Se sceglie una metà colorata o incolore, il costo viene ridotto di un mana di quel tipo. Se sceglie una metà generica, il costo viene ridotto di una quantità di mana generico pari al numero di quella metà.
+@118.7f
+Se un costo viene ridotto di una quantità di mana rappresentata da un simbolo di mana phyrexiano, il costo viene ridotto di un mana del colore di quel simbolo.
+@118.7g
+Se un costo viene ridotto di una quantità di mana rappresentata da uno o più simboli di mana neve, il costo viene ridotto di quella quantità di mana generico.
+@118.8
+Alcune magie e abilità hanno costi aggiuntivi. Un costo aggiuntivo è un costo indicato nel testo delle regole di una magia, o applicato a una magia o abilità da un altro effetto, che il suo controllore deve pagare nello stesso momento in cui paga il costo di mana della magia o il costo di attivazione dell'abilità. Nota che alcuni costi aggiuntivi sono indicati tramite parole chiave; vedi regola 702.
+@118.8a
+A una magia durante il lancio o a un'abilità durante l'attivazione può essere applicato un qualsiasi numero di costi aggiuntivi. Il controllore della magia o abilità annuncia l'intenzione di pagare alcuni o tutti quei costi come descritto nella regola 601.2b.
+@118.8b
+Alcuni costi aggiuntivi sono facoltativi.
+@118.8c
+Se un effetto istruisce un giocatore a lanciare una magia «se possibile», e quella magia ha un costo aggiuntivo obbligatorio che include azioni riguardanti carte con una determinata qualità in una zona nascosta, il giocatore non è obbligato a lanciare quella magia, anche se quelle carte sono presenti in quella zona.
+@118.8d
+I costi aggiuntivi non cambiano il costo di mana di una magia, ma solo ciò che il suo controllore deve pagare per lanciarla. Le magie e abilità che chiedono il costo di mana di quella magia vedono comunque il valore originale.
+@118.9
+Alcune magie hanno costi alternativi. Un costo alternativo è un costo indicato nel testo di una magia, o applicato a essa da un altro effetto, che il suo controllore può pagare invece del costo di mana della magia. I costi alternativi di solito sono formulati come «Puoi [azione] invece di pagare il costo di mana di [questo oggetto]» oppure «Puoi lanciare [questo oggetto] senza pagare il suo costo di mana». Nota che alcuni costi alternativi sono indicati tramite parole chiave; vedi regola 702.
+@118.9a
+A una singola magia durante il lancio può essere applicato un solo costo alternativo. Il controllore della magia annuncia l'intenzione di pagare quel costo come descritto nella regola 601.2b.
+@118.9b
+I costi alternativi sono in genere facoltativi. Un effetto che ti permette di lanciare una magia può richiedere che venga pagato un determinato costo alternativo.
+@118.9c
+Un costo alternativo non cambia il costo di mana di una magia, ma solo ciò che il suo controllore deve pagare per lanciarla. Le magie e abilità che chiedono il costo di mana di quella magia vedono comunque il valore originale.
+@118.9d
+Se per lanciare una magia si sta pagando un costo alternativo, i costi aggiuntivi, gli aumenti di costo e le riduzioni di costo che influiscono su quella magia si applicano a quel costo alternativo. (Vedi regola 601.2f.)
+@118.10
+Ogni pagamento di un costo vale per una sola magia, abilità o effetto. Per esempio, un giocatore non può sacrificare una sola creatura per attivare le abilità attivate di due permanenti che richiedono ciascuna il sacrificio di una creatura come costo. Inoltre, la risoluzione di una magia o abilità non paga il costo di un'altra magia o abilità, anche se parte del suo effetto consiste nel fare ciò che l'altro costo richiede.
+@118.11
+Le azioni compiute per pagare un costo possono essere modificate da effetti. Anche in quel caso, cioè anche se le azioni compiute non corrispondono a quelle richieste, il costo è stato comunque pagato.
+Esempio: Un giocatore controlla Psychic Vortex, un incantesimo con un costo di mantenimento cumulativo di «Pesca una carta», e Obstinate Familiar, una creatura che dice «Se stai per pescare una carta, puoi invece saltare quella pescata». Il giocatore può decidere di pagare il costo di mantenimento cumulativo di Psychic Vortex e poi non pescare alcuna carta invece di pescare la quantità dovuta. Il costo di mantenimento cumulativo è stato comunque pagato.
+@118.12
+Alcune magie, abilità attivate e abilità innescate dicono «[Fai qualcosa]. Se [un giocatore] [lo fa, non lo fa o non può farlo], [effetto]» oppure «[Un giocatore] può [fare qualcosa]. Se [quel giocatore] [lo fa, non lo fa o non può farlo], [effetto]». L'azione [fai qualcosa] è un costo, pagato quando la magia o abilità si risolve. La clausola «Se [un giocatore] [lo fa, non lo fa o non può farlo]» controlla se il giocatore ha scelto di pagare un costo facoltativo o ha iniziato a pagare un costo obbligatorio, indipendentemente dagli eventi effettivamente avvenuti.
+Esempio: Controlli Standstill, un incantesimo che dice «Quando un giocatore lancia una magia, sacrifica questo incantesimo. Se lo fai, ciascuno degli avversari di quel giocatore pesca tre carte». Viene lanciata una magia e l'abilità di Standstill si innesca. Poi viene attivata un'abilità che esilia Standstill. Quando l'abilità di Standstill si risolve, non puoi pagare il costo «sacrifica Standstill». Nessun giocatore pescherà carte.
+Esempio: Il tuo avversario ha lanciato Gather Specimens, una magia che dice «Se una creatura sta per entrare nel campo di battaglia sotto il controllo di un avversario in questo turno, entra invece sotto il tuo controllo». Controlli un Dermoplasm a faccia in giù, una creatura con metamorfosi che dice «Quando questa creatura viene girata a faccia in su, puoi mettere sul campo di battaglia a faccia in su una carta creatura con metamorfosi dalla tua mano. Se lo fai, fai tornare questa creatura in mano al suo proprietario». Giri Dermoplasm a faccia in su e scegli di mettere sul campo di battaglia una carta creatura con metamorfosi dalla tua mano. A causa di Gather Specimens, entra nel campo di battaglia sotto il controllo del tuo avversario invece che sotto il tuo. Tuttavia, poiché hai scelto di pagare il costo, Dermoplasm torna comunque in mano al suo proprietario.
+@118.12a
+Alcune magie, abilità attivate e abilità innescate dicono «[Fai qualcosa] a meno che [un giocatore non faccia qualcos'altro]». Significa la stessa cosa di «[Un giocatore può fare qualcos'altro]. Se [quel giocatore non lo fa], [fai qualcosa]».
+@118.12b
+Alcuni effetti offrono a un giocatore la scelta di passare in rassegna una zona e di compiere azioni aggiuntive con le carte trovate in quella zona, seguita da una clausola «Se [un giocatore] lo fa». Questa clausola controlla se il giocatore ha scelto di passare in rassegna la zona, non se ha compiuto qualcuna delle azioni aggiuntive.
+@118.13
+Alcuni costi contengono simboli di mana che possono essere pagati in più modi. Tra questi ci sono i simboli di mana ibrido e i simboli di mana phyrexiano.
+@118.13a
+Se il costo di mana di una magia o il costo di attivazione di un'abilità attivata contiene un simbolo di mana che può essere pagato in più modi, la scelta di come pagare quel simbolo viene fatta quando il suo controllore propone quella magia o abilità (vedi regola 601.2b).
+@118.13b
+Se un costo pagato durante la risoluzione di una magia o abilità contiene un simbolo di mana che può essere pagato in più modi, il giocatore che paga quel costo sceglie come pagare quel simbolo immediatamente prima di pagarlo.
+@118.13c
+Se il costo associato a un'azione speciale contiene un simbolo di mana che può essere pagato in più modi, il giocatore che compie l'azione speciale sceglie come pagare quel simbolo immediatamente prima di pagare quel costo.
+@118.14
+Alcuni effetti dicono che per pagare un costo «si può spendere mana di qualsiasi tipo». Significa che i giocatori possono spendere mana come se fosse mana incolore o mana di qualsiasi colore per pagare quel costo. Se quell'effetto dà anche a un giocatore il permesso di lanciare magie, questo si applica solo al mana che quel giocatore spende per lanciare magie in quel modo. Vedi regola 609.4b.
+@119
+Punti vita
+@119.1
+Ogni giocatore inizia la partita con un totale di punti vita iniziale di 20. Alcune varianti hanno totali di punti vita iniziali diversi.
+@119.1a
+In una partita Gigante a Due Teste, il totale di punti vita iniziale di ogni squadra è 30. Vedi regola 810, «Variante Gigante a Due Teste».
+@119.1b
+In una partita Vanguard, il totale di punti vita iniziale di ogni giocatore è 20 più o meno il modificatore di punti vita della sua carta vanguard. Vedi regola 902, «Vanguard».
+@119.1c
+In una partita Commander, il totale di punti vita iniziale di ogni giocatore è 40. Vedi regola 903, «Commander».
+@119.1d
+In una partita Brawl a due giocatori, il totale di punti vita iniziale di ogni giocatore è 25. In una partita Brawl multigiocatore, il totale di punti vita iniziale di ogni giocatore è 30. Vedi regola 903.12, «Opzione Brawl».
+@119.1e
+In una partita Archenemy, il totale di punti vita iniziale dell'archenemy è 40. Vedi regola 904, «Archenemy».
+@119.2
+Il danno inflitto a un giocatore normalmente gli fa perdere altrettanti punti vita. Vedi regola 120.3.
+@119.3
+Se un effetto fa guadagnare o perdere punti vita a un giocatore, il totale di punti vita di quel giocatore viene modificato di conseguenza.
+@119.4
+Se un costo o un effetto permette a un giocatore di pagare una quantità di punti vita maggiore di 0, il giocatore può farlo solo se il suo totale di punti vita è maggiore o uguale alla quantità da pagare. Se un giocatore paga punti vita, il pagamento viene sottratto dal suo totale di punti vita; in altre parole, il giocatore perde quei punti vita.
+@119.4a
+Se in una partita Gigante a Due Teste un costo o un effetto permette a un giocatore di pagare una quantità di punti vita maggiore di 0, il giocatore può farlo solo se il totale di punti vita della sua squadra è maggiore o uguale alla quantità totale di punti vita che entrambi i membri della squadra stanno pagando per quel costo o effetto. Se un giocatore paga punti vita, il pagamento viene sottratto dal totale di punti vita della sua squadra.
+@119.4b
+I giocatori possono sempre pagare 0 punti vita, qualunque sia il loro totale di punti vita (o quello della loro squadra), e anche se un effetto dice che i giocatori non possono pagare punti vita.
+@119.5
+Se un effetto imposta il totale di punti vita di un giocatore a un numero specifico, il giocatore guadagna o perde la quantità di punti vita necessaria per arrivare al nuovo totale.
+@119.6
+Se un giocatore ha 0 o meno punti vita, quel giocatore perde la partita come azione generata dallo stato. Vedi regola 704.
+@119.7
+Se un effetto dice che un giocatore non può guadagnare punti vita, quel giocatore non può fare uno scambio per cui il suo totale di punti vita diventerebbe più alto; in quel caso lo scambio non avviene. Allo stesso modo, se un effetto ridistribuisce i totali di punti vita, un giocatore non può ricevere un nuovo totale di punti vita per cui il suo totale diventerebbe più alto. Inoltre, un costo che comporta che quel giocatore guadagni punti vita non può essere pagato, e un effetto di sostituzione che sostituirebbe un evento di guadagno di punti vita che riguarda quel giocatore non fa nulla.
+@119.8
+Se un effetto dice che un giocatore non può perdere punti vita, quel giocatore non può fare uno scambio per cui il suo totale di punti vita diventerebbe più basso; in quel caso lo scambio non avviene. Allo stesso modo, se un effetto ridistribuisce i totali di punti vita, un giocatore non può ricevere un nuovo totale di punti vita per cui il suo totale diventerebbe più basso. Inoltre, un costo che comporta che quel giocatore paghi punti vita non può essere pagato.
+@119.9
+Alcune abilità innescate sono scritte «Ogni volta che [un giocatore] guadagna punti vita, …». Queste abilità vengono trattate come se fossero scritte «Ogni volta che una fonte fa guadagnare punti vita a [un giocatore], …». Se un giocatore guadagna 0 punti vita, non si è verificato alcun evento di guadagno di punti vita e queste abilità non si innescano.
+@119.10
+Alcuni effetti di sostituzione sono scritti «Se [un giocatore] sta per guadagnare punti vita, …». Queste abilità vengono trattate come se fossero scritte «Se una fonte sta per far guadagnare punti vita a [un giocatore], …». Se un giocatore guadagna 0 punti vita, non si verificherebbe alcun evento di guadagno di punti vita e questi effetti non si applicano.
+@120
+Danno
+@120.1
+Gli oggetti possono infliggere danno a battaglie, creature, planeswalker e giocatori. In genere questo è svantaggioso per l'oggetto o il giocatore che riceve quel danno. Un oggetto che infligge danno è la fonte di quel danno.
+@120.1a
+Non si può infliggere danno a un oggetto che non sia una battaglia, una creatura o un planeswalker.
+@120.2
+Qualsiasi oggetto può infliggere danno.
+@120.2a
+Il danno può essere inflitto come risultato del combattimento. Ogni creatura attaccante e bloccante infligge danno da combattimento pari alla propria forza durante la sottofase del danno da combattimento.
+@120.2b
+Il danno può essere inflitto come effetto di una magia o abilità. La magia o abilità specifica quale oggetto infligge quel danno.
+@120.3
+Il danno può avere uno o più dei risultati seguenti, a seconda che chi riceve il danno sia un giocatore o un permanente, delle caratteristiche della fonte del danno e delle caratteristiche di chi riceve il danno (se è un permanente).
+@120.3a
+Il danno inflitto a un giocatore da una fonte senza infettare fa perdere a quel giocatore altrettanti punti vita.
+@120.3b
+Il danno inflitto a un giocatore da una fonte con infettare fa sì che il controllore di quella fonte dia a quel giocatore altrettanti segnalini veleno.
+@120.3c
+Il danno inflitto a un planeswalker fa rimuovere da quel planeswalker altrettanti segnalini fedeltà.
+@120.3d
+Il danno inflitto a una creatura da una fonte con avvizzire e/o infettare fa sì che il controllore di quella fonte metta altrettanti segnalini -1/-1 su quella creatura.
+@120.3e
+Il danno inflitto a una creatura da una fonte senza avvizzire né infettare fa segnare altrettanto danno su quella creatura.
+@120.3f
+Il danno inflitto da una fonte con legame vitale fa guadagnare al controllore di quella fonte altrettanti punti vita, oltre agli altri risultati del danno.
+@120.3g
+Il danno da combattimento inflitto a un giocatore da una creatura con tossico fa sì che il controllore di quella creatura dia a quel giocatore un numero di segnalini veleno pari al valore totale di tossico di quella creatura, oltre agli altri risultati del danno. Vedi regola 702.164, «Tossico».
+@120.3h
+Il danno inflitto a una battaglia fa rimuovere da quella battaglia altrettanti segnalini difesa.
+@120.4
+Il danno viene elaborato in una sequenza di quattro fasi.

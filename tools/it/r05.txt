@@ -1,0 +1,137 @@
+@120.4a
+Primo, se un effetto che sta facendo infliggere danno stabilisce che il danno in eccesso che verrebbe inflitto a un permanente viene inflitto invece a un altro permanente o giocatore, l'evento di danno viene modificato di conseguenza. Se il primo permanente è una creatura, il danno in eccesso è la quantità di danno che supera quello che sarebbe danno letale, tenendo conto del danno già segnato sulla creatura e del danno di altre fonti che verrebbe inflitto nello stesso momento. (Vedi regola 120.6.) Qualsiasi quantità di danno maggiore di 1 è danno in eccesso se la fonte che infligge quel danno a una creatura ha tocco letale. (Vedi regola 702.2.) Se il primo permanente è un planeswalker, il danno in eccesso è la quantità di danno che supera la fedeltà di quel planeswalker, tenendo conto del danno di altre fonti che verrebbe inflitto nello stesso momento. Se il primo permanente è una battaglia, il danno in eccesso è la quantità di danno che supera la difesa di quella battaglia, tenendo conto del danno di altre fonti che verrebbe inflitto nello stesso momento. Se il primo permanente ha più tipi di carta tra creatura, planeswalker e battaglia, il danno in eccesso è il maggiore tra i valori calcolati per ciascuno dei suoi tipi di carta.
+@120.4b
+Secondo, il danno viene inflitto, come modificato dagli effetti di sostituzione e di prevenzione che interagiscono con il danno. (Vedi regola 614, «Effetti di sostituzione», e regola 615, «Effetti di prevenzione».) Le abilità che si innescano quando viene inflitto danno si innescano ora e attendono di essere messe in pila.
+@120.4c
+Terzo, il danno inflitto viene tradotto nei suoi risultati, come modificati dagli effetti di sostituzione che interagiscono con quei risultati (come la perdita di punti vita o i segnalini).
+@120.4d
+Infine, l'evento di danno avviene.
+Esempio: Un giocatore che controlla Boon Reflection, un incantesimo che dice «Se stai per guadagnare punti vita, guadagni invece il doppio di quei punti vita», attacca con una creatura 3/3 con avvizzire e legame vitale. Viene bloccata da una creatura 2/2, e il giocatore in difesa lancia una magia che previene i prossimi 2 danni che verrebbero inflitti alla creatura bloccante. L'evento di danno inizia come [3 danni vengono inflitti alla creatura 2/2, 2 danni vengono inflitti alla creatura 3/3]. Si applica l'effetto di prevenzione, quindi l'evento di danno diventa [1 danno viene inflitto alla creatura 2/2, 2 danni vengono inflitti alla creatura 3/3]. Questo viene tradotto nei suoi risultati, quindi ora l'evento di danno è [un segnalino -1/-1 viene messo sulla creatura 2/2, il giocatore attivo guadagna 1 punto vita, 2 danni vengono segnati sulla creatura 3/3]. Si applica l'effetto di Boon Reflection, quindi l'evento di danno diventa [un segnalino -1/-1 viene messo sulla creatura 2/2, il giocatore attivo guadagna 2 punti vita, 2 danni vengono segnati sulla creatura 3/3]. Poi l'evento di danno avviene.
+Esempio: Il giocatore in difesa controlla una creatura e Worship, un incantesimo che dice «Se controlli una creatura, il danno che ridurrebbe il tuo totale di punti vita a meno di 1 lo riduce invece a 1». Quel giocatore è a 2 punti vita e viene attaccato da due creature 5/5 non bloccate. Il giocatore lancia Awe Strike, che dice «La prossima volta che una creatura bersaglio sta per infliggere danno in questo turno, previeni quel danno. Guadagni punti vita pari al danno prevenuto in questo modo», prendendo come bersaglio uno degli attaccanti. L'evento di danno inizia come [10 danni vengono inflitti al giocatore in difesa]. Si applica l'effetto di Awe Strike, quindi l'evento di danno diventa [5 danni vengono inflitti al giocatore in difesa, il giocatore in difesa guadagna 5 punti vita]. Questo viene tradotto nei suoi risultati, quindi ora l'evento di danno è [il giocatore in difesa perde 5 punti vita, il giocatore in difesa guadagna 5 punti vita]. L'effetto di Worship vede che l'evento di danno non ridurrebbe il totale di punti vita del giocatore a meno di 1, quindi l'effetto di Worship non si applica. Poi l'evento di danno avviene.
+@120.5
+Il danno inflitto a una creatura, a un planeswalker o a una battaglia non lo distrugge. Allo stesso modo, non lo distrugge la fonte di quel danno. Sono invece le azioni generate dallo stato che possono distruggere una creatura o mettere in altro modo un permanente nel cimitero del suo proprietario, a causa dei risultati del danno inflitto a quel permanente. Vedi regola 704.
+Esempio: Un giocatore lancia Lightning Bolt, un istantaneo che dice «Lightning Bolt infligge 3 danni a un qualsiasi bersaglio», prendendo come bersaglio una creatura 2/2. Dopo che Lightning Bolt ha inflitto 3 danni a quella creatura, la creatura viene distrutta come azione generata dallo stato. Né Lightning Bolt né il danno inflitto da Lightning Bolt hanno distrutto quella creatura.
+@120.6
+Il danno segnato su una creatura rimane fino alla sottofase di cancellazione, anche se quel permanente smette di essere una creatura. Se il danno totale segnato su una creatura è maggiore o uguale alla sua costituzione, a quella creatura è stato inflitto danno letale e viene distrutta come azione generata dallo stato (vedi regola 704). Tutto il danno segnato su un permanente viene rimosso quando si rigenera (vedi regola 701.19, «Rigenerare») e durante la sottofase di cancellazione (vedi regola 514.2).
+@120.7
+La fonte del danno è l'oggetto che l'ha inflitto. Se un effetto richiede a un giocatore di scegliere una fonte di danno, può scegliere un permanente; una magia in pila (compresa una magia permanente); qualsiasi oggetto a cui faccia riferimento un oggetto in pila, un effetto di prevenzione o di sostituzione in attesa di applicarsi, o un'abilità innescata ritardata in attesa di innescarsi (anche se quell'oggetto non è più nella zona in cui si trovava); oppure un oggetto a faccia in su nella zona di comando. Una fonte non deve essere in grado di infliggere danno per essere una scelta legale. Vedi regola 609.7, «Fonti di danno».
+@120.8
+Se una fonte dovesse infliggere 0 danni, non infligge affatto danno. Ciò significa che le abilità che si innescano quando viene inflitto danno non si innescano. Significa anche che gli effetti di sostituzione che aumenterebbero il danno inflitto da quella fonte, o che farebbero infliggere quel danno a un oggetto o giocatore diverso, non hanno alcun evento da sostituire, quindi non hanno effetto.
+@120.9
+Se un'abilità si innesca quando viene inflitto danno da una o più fonti specifiche, e l'effetto fa riferimento al «danno inflitto», si riferisce solo al danno inflitto dalle fonti specificate e non al danno inflitto nello stesso momento da altre fonti.
+@120.10
+Alcune abilità innescate controllano se a un permanente è stato inflitto danno in eccesso. Queste abilità controllano dopo che al permanente è stato inflitto danno da una o più fonti. Se quelle fonti hanno inflitto insieme a una creatura una quantità di danno maggiore del danno letale, a quella creatura è stato inflitto un danno in eccesso pari alla differenza. Se quelle fonti hanno inflitto insieme a un planeswalker una quantità di danno maggiore della fedeltà che quel planeswalker aveva prima che il danno venisse inflitto, a quel planeswalker è stato inflitto un danno in eccesso pari alla differenza. Se quelle fonti hanno inflitto insieme a una battaglia una quantità di danno maggiore della difesa che quella battaglia aveva prima che il danno venisse inflitto, a quella battaglia è stato inflitto un danno in eccesso pari alla differenza. Se un permanente ha più tipi di carta tra creatura, planeswalker e battaglia, il danno in eccesso inflitto a quel permanente è il maggiore tra i valori calcolati per ciascuno dei suoi tipi di carta.
+@121
+Pescare una carta
+@121.1
+Un giocatore pesca una carta mettendo la prima carta del suo grimorio nella sua mano. Questo avviene come azione generata dal turno durante la sottofase di acquisizione di ogni giocatore. Può avvenire anche come parte di un costo o di un effetto di una magia o abilità.
+@121.2
+Le carte possono essere pescate solo una alla volta. Se a un giocatore viene detto di pescare più carte, quel giocatore esegue altrettante pescate singole.
+@121.2a
+Un'istruzione di pescare più carte può essere modificata da effetti di sostituzione che fanno riferimento al numero di carte pescate. Questa modifica avviene prima di considerare le singole pescate. Vedi regola 616.1g.
+@121.2b
+Alcuni effetti dicono che un giocatore non può pescare più di una carta per turno. Un effetto del genere si applica alle singole pescate. Le istruzioni di pescare più carte possono comunque essere eseguite in parte. Tuttavia, se un effetto offre al giocatore la scelta di pescare più carte, il giocatore interessato non può scegliere di farlo. Allo stesso modo, il giocatore non può pagare un costo che include pescare più carte.
+@121.2c
+Se a più giocatori viene detto di pescare carte, il giocatore attivo esegue prima tutte le sue pescate, poi ogni altro giocatore, nell'ordine di turno, fa lo stesso.
+@121.2d
+Se a più giocatori viene detto di pescare carte in una partita che usa l'opzione dei turni di squadra condivisi (come una partita Gigante a Due Teste), prima ogni giocatore della squadra attiva, nell'ordine che la squadra preferisce, esegue le sue pescate, poi ogni giocatore di ogni squadra non attiva, nell'ordine di turno, fa lo stesso.
+@121.3
+Se il grimorio di un giocatore non contiene carte e un effetto offre a quel giocatore la scelta di pescare una carta, quel giocatore può scegliere di farlo. Tuttavia, se un effetto dice che un giocatore non può pescare carte e un altro effetto offre a quel giocatore la scelta di pescare una carta, quel giocatore non può scegliere di farlo.
+@121.3a
+Gli stessi principi si applicano se il giocatore che fa la scelta non è il giocatore che pescherebbe la carta. Se quest'ultimo non ha carte nel grimorio, la scelta può essere fatta. Se un effetto dice che quest'ultimo non può pescare una carta, la scelta non può essere fatta.
+@121.4
+Un giocatore che tenta di pescare una carta da un grimorio senza carte perde la partita la prossima volta che un giocatore riceverebbe la priorità. (Questa è un'azione generata dallo stato. Vedi regola 704.)
+@121.5
+Se un effetto sposta carte dal grimorio di un giocatore alla mano di quel giocatore senza usare la parola «pescare», il giocatore non ha pescato quelle carte. Questo fa differenza per le abilità che si innescano quando si pescano carte e per gli effetti che sostituiscono le pescate, così come nel caso in cui il grimorio del giocatore sia vuoto.
+@121.6
+Alcuni effetti sostituiscono le pescate.
+@121.6a
+Un effetto che sostituisce una pescata si applica anche se non si potrebbe pescare alcuna carta perché nel grimorio del giocatore interessato non ci sono carte.
+@121.6b
+Se un effetto sostituisce una pescata all'interno di una sequenza di pescate, l'effetto di sostituzione viene completato prima di riprendere la sequenza.
+@121.6c
+Alcuni effetti compiono azioni aggiuntive su una carta dopo che è stata pescata. Se la pescata viene sostituita, l'azione aggiuntiva non viene compiuta su nessuna carta pescata come risultato di quell'effetto di sostituzione o di effetti di sostituzione successivi.
+@121.7
+Alcuni effetti di sostituzione ed effetti di prevenzione portano a una o più pescate. In tal caso, se ci sono parti dell'evento originale che non sono state sostituite, quelle parti avvengono per prime, poi le pescate avvengono una alla volta.
+@121.8
+Se una magia o abilità fa pescare una carta mentre viene lanciata un'altra magia, la carta pescata viene tenuta a faccia in giù finché quella magia non risulta lanciata (vedi regola 601.2i) o finché il procedimento di lancio non viene annullato (vedi regola 733, «Gestire le azioni illegali»). Lo stesso vale in relazione a un'altra abilità che viene attivata. Se un effetto permette o istruisce un giocatore a rivelare la carta mentre la pesca, viene rivelata dopo che la magia risulta lanciata o l'abilità risulta attivata. Mentre è a faccia in giù, la carta pescata è considerata priva di caratteristiche e non può essere usata per pagare alcuna parte del costo della magia o abilità che richieda che la carta abbia caratteristiche specifiche.
+@121.9
+Se un effetto dà a un giocatore la possibilità di rivelare una carta mentre la pesca, quel giocatore può guardare quella carta mentre la pesca prima di scegliere se rivelarla.
+@122
+Segnalini
+@122.1
+Un segnalino è un indicatore posto su un oggetto o su un giocatore che ne modifica le caratteristiche e/o interagisce con una regola, un'abilità o un effetto. I segnalini non sono oggetti e non hanno caratteristiche. In particolare, un segnalino non è una pedina, e una pedina non è un segnalino. I segnalini con lo stesso nome o la stessa descrizione sono intercambiabili.
+@122.1a
+Un segnalino +X/+Y su una creatura, o su una carta creatura in una zona diversa dal campo di battaglia, dove X e Y sono numeri, aggiunge X alla forza di quell'oggetto e Y alla sua costituzione. Allo stesso modo, i segnalini -X/-Y sottraggono da forza e costituzione. Vedi regola 613.4c.
+@122.1b
+Un segnalino parola chiave su un permanente o su una carta in una zona diversa dal campo di battaglia fa ottenere a quell'oggetto quella parola chiave. Le parole chiave che un segnalino parola chiave può rappresentare sono volare, attacco improvviso, doppio attacco, tocco letale, decomposto, esaltato, rapidità, anti-malocchio, indistruttibile, legame vitale, minacciare, raggiungere, ombra, travolgere e cautela, oltre a eventuali varianti di quelle parole chiave. Vedi regola 613.1f.
+@122.1c
+Uno o più segnalini scudo su un permanente creano un unico effetto di sostituzione e un unico effetto di prevenzione che proteggono il permanente. Questi effetti sono «Se questo permanente sta per essere distrutto come risultato di un effetto, rimuovi invece un segnalino scudo da esso» e «Se sta per essere inflitto danno a questo permanente, previeni quel danno e rimuovi un segnalino scudo da esso». Vedi regola 614, «Effetti di sostituzione», e regola 615, «Effetti di prevenzione».
+@122.1d
+Uno o più segnalini stordimento su un permanente creano un unico effetto di sostituzione che impedisce al permanente di STAPparsi. Quell'effetto è «Se un permanente con un segnalino stordimento su di sé sta per STAPparsi, rimuovi invece un segnalino stordimento da esso».
+@122.1e
+Il numero di segnalini fedeltà su un planeswalker sul campo di battaglia indica quanta fedeltà ha. Un planeswalker con fedeltà 0 viene messo nel cimitero del suo proprietario come azione generata dallo stato. Vedi regola 704.
+@122.1f
+Se un giocatore ha dieci o più segnalini veleno, quel giocatore perde la partita come azione generata dallo stato. Vedi regola 704. Un giocatore è «avvelenato» se ha uno o più segnalini veleno. (Vedi regola 810 per le regole aggiuntive delle partite Gigante a Due Teste.)
+@122.1g
+Il numero di segnalini difesa su una battaglia sul campo di battaglia indica quanta difesa ha. Una battaglia con difesa 0 viene messa nel cimitero del suo proprietario se non è la fonte di un'abilità che si è innescata ma non ha ancora lasciato la pila. Questa azione generata dallo stato non usa la pila. Vedi regola 704.
+@122.1h
+Uno o più segnalini finalità su un permanente creano un unico effetto di sostituzione che impedisce al permanente di andare nel cimitero. Quell'effetto è «Se questo permanente sta per essere messo in un cimitero dal campo di battaglia, esilialo invece».
+@122.1i
+Uno o più segnalini radiazione su un giocatore fanno innescare un'abilità innescata all'inizio della fase principale pre-combattimento di quel giocatore. Vedi regola 728, «Segnalini radiazione».
+@122.1j
+Un segnalino affilatura su un Equipaggiamento dà +1/+0 alla creatura a cui quell'Equipaggiamento è assegnato.
+@122.2
+I segnalini su un oggetto non vengono mantenuti se quell'oggetto si sposta da una zona a un'altra. I segnalini non vengono «rimossi»; semplicemente cessano di esistere. Vedi regola 400.7.
+@122.3
+Se un permanente ha su di sé sia un segnalino +1/+1 sia un segnalino -1/-1, come azione generata dallo stato vengono rimossi da esso N segnalini +1/+1 e N segnalini -1/-1, dove N è il minore tra il numero di segnalini +1/+1 e quello di segnalini -1/-1 su di esso. Vedi regola 704.
+@122.4
+Se un permanente con un'abilità che dice che non può avere su di sé più di N segnalini di un certo tipo ha su di sé più di N segnalini di quel tipo, come azione generata dallo stato vengono rimossi da esso tutti quei segnalini tranne N. Vedi regola 704.
+@122.5
+Se un effetto dice di «spostare» un segnalino, significa rimuovere quel segnalino dall'oggetto su cui si trova e metterlo su un secondo oggetto. Se una di queste azioni non è possibile, non è possibile spostare il segnalino, e nessun segnalino viene rimosso o messo su nulla. Questo può succedere se il primo e il secondo oggetto sono lo stesso oggetto; se il primo oggetto non ha su di sé un segnalino del tipo appropriato; se sul secondo oggetto non si possono mettere segnalini; o se uno dei due oggetti non è più nella zona corretta.
+@122.6
+Alcune magie e abilità fanno riferimento a segnalini messi su un oggetto. Si riferiscono sia ai segnalini messi su quell'oggetto mentre è sul campo di battaglia, sia a un oggetto a cui vengono dati segnalini mentre entra nel campo di battaglia.
+@122.6a
+Se un oggetto entra nel campo di battaglia con segnalini su di sé, l'effetto che fa ricevere i segnalini all'oggetto può specificare quale giocatore mette quei segnalini su di esso. Se l'effetto non specifica un giocatore, è il controllore dell'oggetto a metterli.
+@122.7
+Un'abilità che si innesca «Quando/Ogni volta che l'N-esimo segnalino [tipo]» viene messo su un oggetto si innesca quando uno o più segnalini del tipo appropriato vengono messi sull'oggetto in modo che l'oggetto avesse meno di N segnalini prima che venissero messi e N o più segnalini dopo.
+@122.8
+Se un'abilità innescata istruisce un giocatore a mettere i segnalini di un oggetto su un altro oggetto, e la condizione di innesco o l'effetto di quell'abilità controlla che l'oggetto con quei segnalini abbia lasciato il campo di battaglia, il giocatore non sposta segnalini da un oggetto all'altro. Il giocatore mette invece sul secondo oggetto lo stesso numero di segnalini di ogni tipo che aveva il primo oggetto. Se l'abilità specifica quale tipo o quali tipi di segnalini mettere, il giocatore mette sul secondo oggetto lo stesso numero di segnalini di ciascuno di quei tipi che aveva il primo oggetto.
+@122.9
+Se un'abilità attivata di un oggetto istruisce un giocatore a mettere i suoi segnalini su un altro oggetto, e sacrificare l'oggetto con quei segnalini è un costo per attivare quell'abilità, il giocatore non sposta segnalini da un oggetto all'altro. Il giocatore mette invece sul secondo oggetto lo stesso numero di segnalini di ogni tipo che aveva il primo oggetto. Se l'abilità specificava quale tipo o quali tipi di segnalini mettere, il giocatore mette sul secondo oggetto lo stesso numero di segnalini di ciascuno di quei tipi che aveva il primo oggetto.
+@123
+Adesivi
+@123.1
+Un adesivo è un indicatore posto su un oggetto che ne modifica le caratteristiche e/o interagisce con una regola, un'abilità o un effetto. Gli adesivi non sono oggetti. In particolare, un adesivo non è un segnalino né una pedina. Le modifiche apportate a un oggetto dagli adesivi non fanno parte dei suoi valori copiabili. Ci sono quattro tipi di adesivi: adesivi nome, adesivi abilità, adesivi forza e costituzione e adesivi illustrazione.
+@123.2
+Gli adesivi si trovano nelle buste dell'espansione Unfinity, su inserti numerati. Ogni inserto ha una combinazione di adesivi predeterminata. Qualsiasi regola che fa riferimento a un foglio di adesivi si riferisce alla specifica combinazione di adesivi presente su uno di quegli inserti. I fogli di adesivi non sono carte e non hanno caratteristiche. Ogni foglio di adesivi si trova su Gatherer.Wizards.com.
+@123.2a
+Nel gioco costruito, un giocatore che sceglie di giocare con gli adesivi deve iniziare la partita con almeno dieci fogli di adesivi selezionati prima dell'inizio del gioco, e ciascuno dei suoi fogli di adesivi deve essere diverso. Non c'è un numero massimo di fogli di adesivi con cui un giocatore può iniziare la partita. Ogni giocatore che gioca con fogli di adesivi rivela tutti i suoi fogli di adesivi e ne sceglie tre a caso. Vedi regola 103, «Iniziare la partita».
+@123.2b
+Nel gioco limitato, ogni giocatore sceglie fino a tre fogli di adesivi tra quelli presenti nei prodotti sigillati che ha aperto e li rivela. Vedi regola 103, «Iniziare la partita».
+@123.2c
+Durante la partita ogni giocatore ha accesso solo agli adesivi dei fogli scelti, e quei fogli di adesivi restano rivelati.
+@123.3
+Se un effetto istruisce un giocatore a mettere un adesivo su un oggetto, quel giocatore sceglie, tra gli adesivi a cui ha accesso, un adesivo che non sia attualmente su un oggetto che possiede e lo mette su quell'oggetto.
+@123.3a
+Ogni adesivo a cui un giocatore ha accesso è distinto da ogni altro adesivo a cui ha accesso. Due adesivi non sono mai considerati lo stesso adesivo, anche se riportano lo stesso testo o le stesse informazioni.
+@123.3b
+Un giocatore non può mettere un adesivo su un oggetto che non possiede. Se un effetto glielo facesse fare, quella parte dell'effetto non fa nulla.
+@123.3c
+Un adesivo può avere un costo in biglietti rappresentato da un numero dentro un simbolo del biglietto (vedi regola 107.17a). Per mettere su un oggetto un adesivo con un costo in biglietti, il giocatore che possiede quell'oggetto deve pagare altrettanti {TK}. Se non ha abbastanza {TK}, non può mettere quell'adesivo su un oggetto.
+@123.3d
+Se un adesivo che è già su un oggetto viene spostato su un altro oggetto, il costo in biglietti di quell'adesivo non deve essere pagato di nuovo.
+@123.4
+Alcune regole ed effetti fanno riferimento a un oggetto «con adesivi». Un oggetto è «con adesivi» se attualmente ha su di sé un qualsiasi tipo di adesivo. Un oggetto senza adesivi non è un oggetto con adesivi, anche se in precedenza ne aveva.
+@123.5
+Gli adesivi su un oggetto non vengono mantenuti quando quell'oggetto si sposta in una zona nascosta. Gli adesivi vengono mantenuti quando quell'oggetto si sposta in una zona pubblica e continuano ad applicarsi al nuovo oggetto che diventa in quella zona; questa è un'eccezione alla regola 400.7.
+@123.5a
+Se una o più carte con adesivi entrano nel campo di battaglia come parte di un permanente fuso, tutti quegli adesivi si trovano sul permanente che quell'oggetto diventa sul campo di battaglia. Mantengono il loro ordine cronologico relativo.
+@123.5b
+Se un oggetto con un adesivo diventa una componente di un permanente unito sul campo di battaglia, quell'adesivo si trova su quel permanente unito.
+@123.5c
+Se un permanente fuso o unito con uno o più adesivi si sposta dal campo di battaglia a un'altra zona pubblica, solo uno degli oggetti che diventa manterrà quegli adesivi. Il suo proprietario sceglie quale degli oggetti che diventa nella nuova zona mantiene gli adesivi che si trovano su di esso. Gli effetti di quegli adesivi continueranno ad applicarsi solo a quell'oggetto.
+@123.6
+Un adesivo nome consiste solo di una o più parole. Un adesivo nome su un permanente o su una carta in una zona diversa dal campo di battaglia fa aggiungere la parola di quell'adesivo al testo del nome di quell'oggetto. Questo è un effetto che cambia il testo. Vedi regola 613.1c e regola 612, «Effetti che cambiano il testo».
+@123.6a
+Ai fini delle regole e degli effetti relativi agli adesivi nome, una «parola» nel nome di un oggetto è qualsiasi serie di caratteri diversi dallo spazio separata da altri caratteri diversi dallo spazio da uno o più spazi. Le parole con il trattino e le parole con punteggiatura sono considerate una sola parola. Gli spazi vuoti, come quello in «Wolf in ________ Clothing», non sono considerati parole nel nome di una carta.

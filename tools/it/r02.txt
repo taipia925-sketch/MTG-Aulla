@@ -1,0 +1,201 @@
+@108.4
+Una carta non ha un controllore a meno che non rappresenti un permanente o una magia; in quei casi, il suo controllore è determinato dalle regole sui permanenti o sulle magie. Vedi regole 110.2 e 112.2.
+@108.4a
+Se qualcosa richiede il controllore di una carta che non ne ha uno (perché non è un permanente né una magia), usa invece il suo proprietario.
+@108.5
+Le carte di Magic non tradizionali non possono iniziare la partita in una zona diversa dalla zona di comando (vedi regola 408). Se un effetto dovesse portare in partita da fuori dalla partita una carta di Magic non tradizionale diversa da una carta dungeon (vedi regola 309, «Dungeon»), non lo fa; quella carta resta fuori dalla partita.
+@108.6
+Per maggiori informazioni sulle carte, vedi la sezione 2, «Parti di una carta».
+@109
+Oggetti
+@109.1
+Un oggetto è un'abilità in pila, una carta, una copia di una carta, una pedina, una magia, un permanente o un emblema.
+@109.2
+Se una magia o abilità usa la descrizione di un oggetto che include un tipo o sottotipo di carta, ma non fa riferimento a una zona specifica né include la parola «carta», «magia», «fonte» o «piano malvagio», si intende un permanente di quel tipo o sottotipo sul campo di battaglia.
+@109.2a
+Se una magia o abilità usa la descrizione di un oggetto che include la parola «carta» e il nome di una zona, si intende una carta corrispondente a quella descrizione nella zona indicata.
+@109.2b
+Se una magia o abilità usa la descrizione di un oggetto che include la parola «magia», si intende una magia corrispondente a quella descrizione in pila.
+@109.2c
+Se una magia o abilità usa la descrizione di un oggetto che include la parola «fonte», si intende una fonte corrispondente a quella descrizione (una fonte di un'abilità, di danno o di mana) in qualsiasi zona. Vedi regole 113.7 e 609.7.
+@109.2d
+Se un'abilità di una carta piano malvagio include il testo «questo piano malvagio», si intende la carta piano malvagio nella zona di comando su cui quell'abilità è stampata.
+@109.3
+Le caratteristiche di un oggetto sono nome, costo di mana, colore, indicatore di colore, tipo di carta, sottotipo, supertipo, testo delle regole, abilità, forza, costituzione, fedeltà, difesa, modificatore della mano e modificatore dei punti vita. Gli oggetti possono avere alcune o tutte queste caratteristiche. Qualsiasi altra informazione su un oggetto non è una caratteristica. Per esempio, non sono caratteristiche il fatto che un permanente sia TAPpato, il bersaglio di una magia, il proprietario o il controllore di un oggetto, ciò che un'Aura incanta e così via.
+@109.4
+Solo gli oggetti in pila o sul campo di battaglia hanno un controllore. Gli oggetti che non sono né in pila né sul campo di battaglia non sono controllati da alcun giocatore. Vedi regola 108.4. Ci sono sei eccezioni a questa regola:
+@109.4a
+Il controllore di un'abilità di mana è determinato come se fosse in pila. Vedi regola 605, «Abilità di mana».
+@109.4b
+Un'abilità innescata che si è innescata ma è in attesa di essere messa in pila è controllata dal giocatore che controllava la sua fonte nel momento in cui si è innescata, a meno che non sia un'abilità innescata ritardata. Per determinare il controllore di un'abilità innescata ritardata, vedi regole 603.7d–f. Vedi anche la regola 603, «Gestire le abilità innescate».
+@109.4c
+Un emblema è controllato dal giocatore che lo mette nella zona di comando. Vedi regola 114, «Emblemi».
+@109.4d
+In una partita Planechase, una carta piano o fenomeno a faccia in su è controllata dal giocatore designato come controllore planare. Di solito è il giocatore attivo. Vedi regola 901.6.
+@109.4e
+In una partita Vanguard, ogni carta vanguard è controllata dal suo proprietario. Vedi regola 902.6.
+@109.4f
+In una partita Archenemy, ogni carta piano malvagio è controllata dal suo proprietario. Vedi regola 904.7.
+@109.4g
+In una partita Conspiracy Draft, ogni carta cospirazione è controllata dal suo proprietario. Vedi regola 905.5.
+@109.5
+Le parole «tu», «tuo» e simili su un oggetto si riferiscono al controllore dell'oggetto, al suo aspirante controllore (se un giocatore sta tentando di giocarlo, lanciarlo o attivarlo) o al suo proprietario (se non ha un controllore). Per un'abilità statica, è il controllore attuale dell'oggetto su cui si trova. Per un'abilità attivata, è il giocatore che ha attivato l'abilità. Per un'abilità innescata, è il controllore dell'oggetto nel momento in cui l'abilità si è innescata, a meno che non sia un'abilità innescata ritardata. Per determinare il controllore di un'abilità innescata ritardata, vedi regole 603.7d–f.
+@110
+Permanenti
+@110.1
+Un permanente è una carta o una pedina sul campo di battaglia. Un permanente resta sul campo di battaglia indefinitamente. Una carta o una pedina diventa un permanente quando entra nel campo di battaglia e smette di essere un permanente quando viene spostata in un'altra zona da un effetto o da una regola.
+@110.2
+Il proprietario di un permanente è lo stesso proprietario della carta che lo rappresenta (a meno che non sia una pedina; vedi regola 111.2). Il controllore di un permanente è, per impostazione predefinita, il giocatore sotto il cui controllo è entrato nel campo di battaglia. Ogni permanente ha un controllore.
+@110.2a
+Se un effetto istruisce un giocatore a mettere un oggetto sul campo di battaglia, quell'oggetto entra nel campo di battaglia sotto il controllo di quel giocatore, a meno che l'effetto non dica altrimenti.
+@110.2b
+Se un effetto fa ottenere a un giocatore il controllo di una magia permanente di un altro giocatore, il primo giocatore controlla il permanente in cui si trasforma quella magia, ma il controllore predefinito del permanente è il giocatore che ha messo quella magia in pila. (Questa distinzione è rilevante nelle partite multigiocatore; vedi regola 800.4c.)
+@110.3
+Le caratteristiche di un permanente che non è una pedina sono quelle stampate sulla sua carta, modificate da eventuali effetti continui. Vedi regola 613, «Interazione degli effetti continui».
+@110.4
+Ci sono sei tipi di permanente: artefatto, battaglia, creatura, incantesimo, terra e planeswalker. Le carte istantaneo e stregoneria non possono entrare nel campo di battaglia e quindi non possono essere permanenti. Alcune carte kindred possono entrare nel campo di battaglia e altre no, a seconda degli altri loro tipi di carta. Vedi la sezione 3, «Tipi di carta».
+@110.4a
+L'espressione «carta permanente» indica una carta che potrebbe essere messa sul campo di battaglia. In particolare, si intende una carta artefatto, battaglia, creatura, incantesimo, terra o planeswalker.
+@110.4b
+L'espressione «magia permanente» indica una magia che entrerà nel campo di battaglia come permanente durante la sua risoluzione. In particolare, si intende una magia artefatto, battaglia, creatura, incantesimo o planeswalker.
+@110.4c
+Se un permanente perde in qualche modo tutti i suoi tipi di permanente, resta sul campo di battaglia. È ancora un permanente.
+@110.5
+Lo stato di un permanente è la sua condizione fisica. Ci sono quattro categorie di stato, ognuna con due valori possibili: TAPpato/STAPpato, capovolto/non capovolto, a faccia in su/a faccia in giù e in fase/fuori fase. Ogni permanente ha sempre uno di questi valori per ciascuna categoria.
+@110.5a
+Lo stato non è una caratteristica, anche se può influire sulle caratteristiche di un permanente.
+@110.5b
+I permanenti entrano nel campo di battaglia STAPpati, non capovolti, a faccia in su e in fase, a meno che una magia o abilità non dica altrimenti.
+@110.5c
+Un permanente mantiene il proprio stato finché una magia, un'abilità o un'azione generata dal turno non lo cambia, anche se quello stato non è rilevante per esso.
+Esempio: Dimir Doppelganger dice «{1}{U}{B}: Esilia una carta creatura bersaglio da un cimitero. Questa creatura diventa una copia di quella carta, tranne per il fatto che ha questa abilità». Diventa una copia di Jushi Apprentice, una carta capovolgibile. Usando l'abilità di Jushi Apprentice, questa creatura si capovolge, diventando una copia di Tomoya the Revealer con l'abilità di Dimir Doppelganger. Se poi questo permanente diventa una copia di Runeclaw Bear, manterrà il suo stato capovolto anche se non ha alcuna rilevanza per Runeclaw Bear. Se la sua abilità di copia viene attivata di nuovo, stavolta prendendo come bersaglio una carta Nezumi Shortfang (un'altra carta capovolgibile), lo stato capovolto di questo permanente fa sì che abbia le caratteristiche di Stabwhisker the Odious (la versione capovolta di Nezumi Shortfang) con l'abilità di Dimir Doppelganger.
+@110.5d
+Solo i permanenti hanno uno stato. Le carte che non sono sul campo di battaglia non ce l'hanno. Anche se una carta esiliata può essere a faccia in giù, questo non ha alcun legame con lo stato a faccia in giù di un permanente. Allo stesso modo, le carte che non sono sul campo di battaglia non sono né TAPpate né STAPpate, indipendentemente dalla loro posizione fisica.
+@111
+Pedine
+@111.1
+Alcuni effetti mettono pedine sul campo di battaglia. Una pedina è un segnaposto usato per rappresentare qualsiasi permanente che non sia rappresentato da una carta.
+@111.2
+Il giocatore che crea una pedina ne è il proprietario. La pedina entra nel campo di battaglia sotto il controllo di quel giocatore.
+@111.3
+La magia o abilità che crea una pedina può definire i valori di un numero qualsiasi di caratteristiche della pedina. Questo diventa il «testo» della pedina. I valori delle caratteristiche definiti in questo modo sono funzionalmente equivalenti ai valori delle caratteristiche stampati su una carta; per esempio, definiscono i valori copiabili della pedina. Una pedina non ha caratteristiche che non siano definite dalla magia o abilità che l'ha creata.
+Esempio: Jade Mage ha l'abilità «{2}{G}: Crea una pedina creatura Saprolingio 1/1 verde». La pedina risultante non ha costo di mana, supertipi, testo delle regole né abilità.
+@111.4
+Una magia o abilità che crea una pedina stabilisce sia il suo nome sia il suo o i suoi sottotipi. Se la magia o abilità non specifica il nome della pedina, il suo nome è uguale al suo o ai suoi sottotipi seguiti dalla parola «Pedina» (in inglese «Token»). Una volta che una pedina è sul campo di battaglia, cambiare il suo nome non cambia i suoi sottotipi, e viceversa.
+Esempio: Dwarven Reinforcements è una stregoneria che dice, tra l'altro, «Crea due pedine creatura Nano Berserker 2/1 rosse». Le pedine create mentre si risolve si chiamano ciascuna «Dwarf Berserker Token» (Pedina Nano Berserker) e hanno ciascuna i tipi di creatura Nano e Berserker.
+Esempio: Minsc, Beloved Ranger dice, tra l'altro, «Quando Minsc entra, crea Boo, una pedina creatura Criceto 1/1 rossa leggendaria con travolgere e rapidità». Il sottotipo di quella pedina è Criceto, ma poiché Minsc specifica che il nome della pedina è Boo, né «Criceto» né «Pedina» fanno parte del suo nome.
+Esempio: Spitting Image è una stregoneria che dice, tra l'altro, «Crea una pedina che è una copia di una creatura bersaglio». Tutte le caratteristiche di quella pedina corrisponderanno alle caratteristiche copiabili della creatura bersaglio di quella magia. Se Spitting Image prende come bersaglio Doomed Dissenter, una creatura Umano, il nome della pedina creata dalla magia sarà Doomed Dissenter, non «Pedina Umano» né «Pedina Doomed Dissenter».
+@111.5
+Se una magia o abilità dovesse creare una pedina, ma una regola o un effetto stabilisce che un permanente con una o più delle caratteristiche di quella pedina non può entrare nel campo di battaglia, la pedina non viene creata. Allo stesso modo, se un effetto dovesse creare una pedina che è una copia di una carta istantaneo o stregoneria, non viene creata alcuna pedina.
+@111.6
+Una pedina è soggetta a tutto ciò che influisce sui permanenti in generale o che influisce sul tipo o sottotipo di carta della pedina. Una pedina non è una carta (anche se è rappresentata da una carta con il retro di Magic o proveniente da una busta di Magic).
+@111.7
+Una pedina che si trova in una zona diversa dal campo di battaglia cessa di esistere. Questa è un'azione generata dallo stato; vedi regola 704. (Nota che se una pedina cambia zona, le abilità innescate applicabili si innescano prima che la pedina cessi di esistere.)
+@111.8
+Una pedina che ha lasciato il campo di battaglia non può spostarsi in un'altra zona né tornare sul campo di battaglia. Se una tale pedina dovesse cambiare zona, resta invece nella sua zona attuale. Cessa di esistere la prossima volta che vengono controllate le azioni generate dallo stato; vedi regola 704.
+@111.9
+Alcuni effetti istruiscono un giocatore a creare una pedina leggendaria. Possono essere scritti come «crea [nome], una…» seguito dall'elenco delle caratteristiche della pedina. Equivale a un'istruzione di creare una pedina con le caratteristiche elencate e con il nome indicato.
+@111.10
+Alcuni effetti istruiscono un giocatore a creare una pedina predefinita. Questi effetti usano la definizione qui sotto per determinare le caratteristiche con cui viene creata la pedina. L'effetto che crea una pedina predefinita può anche modificare le caratteristiche predefinite o aggiungerne altre.
+@111.10a
+Una pedina Tesoro (Treasure) è una pedina artefatto Tesoro incolore con «{T}, Sacrifica questa pedina: Aggiungi un mana di un qualsiasi colore».
+@111.10b
+Una pedina Cibo (Food) è una pedina artefatto Cibo incolore con «{2}, {T}, Sacrifica questa pedina: Guadagni 3 punti vita».
+@111.10c
+Una pedina Oro (Gold) è una pedina artefatto Oro incolore con «Sacrifica questa pedina: Aggiungi un mana di un qualsiasi colore».
+@111.10d
+Una pedina Walker è una pedina creatura Zombie 2/2 nera chiamata Walker.
+@111.10e
+Una pedina Frammento (Shard) è una pedina incantesimo Frammento incolore con «{2}, Sacrifica questa pedina: Profetizza 1, poi pesca una carta».
+@111.10f
+Una pedina Indizio (Clue) è una pedina artefatto Indizio incolore con «{2}, Sacrifica questa pedina: Pesca una carta».
+@111.10g
+Una pedina Sangue (Blood) è una pedina artefatto Sangue incolore con «{1}, {T}, Scarta una carta, Sacrifica questa pedina: Pesca una carta».
+@111.10h
+Una pedina Pietra del Potere (Powerstone) è una pedina artefatto Pietra del Potere incolore con «{T}: Aggiungi {C}. Questo mana non può essere speso per lanciare una magia non artefatto».
+@111.10i
+Una pedina Incubatore (Incubator) è una pedina bifronte. La sua faccia anteriore è un artefatto Incubatore incolore con «{2}: Trasforma questa pedina». La sua faccia posteriore è una creatura artefatto Phyrexiano 0/0 incolore chiamata Phyrexian Token.
+@111.10j
+Una pedina Ruolo Maledetto (Cursed Role) è una pedina incantesimo Aura Ruolo incolore chiamata Maledetto (Cursed) con incanta creatura e «La creatura incantata ha forza e costituzione base 1/1».
+@111.10k
+Una pedina Ruolo Mostro (Monster Role) è una pedina incantesimo Aura Ruolo incolore chiamata Mostro (Monster) con incanta creatura e «La creatura incantata prende +1/+1 e ha travolgere».
+@111.10m
+Una pedina Ruolo Reale (Royal Role) è una pedina incantesimo Aura Ruolo incolore chiamata Reale (Royal) con incanta creatura e «La creatura incantata prende +1/+1 e ha salvaguardia {1}».
+@111.10n
+Una pedina Ruolo Stregone (Sorcerer Role) è una pedina incantesimo Aura Ruolo incolore chiamata Stregone (Sorcerer) con incanta creatura e «La creatura incantata prende +1/+1 e ha "Ogni volta che questa creatura attacca, profetizza 1"».
+@111.10p
+Una pedina Ruolo Virtuoso (Virtuous Role) è una pedina incantesimo Aura Ruolo incolore chiamata Virtuoso (Virtuous) con incanta creatura e «La creatura incantata prende +1/+1 per ogni incantesimo che controlli».
+@111.10q
+Una pedina Ruolo Malvagio (Wicked Role) è una pedina incantesimo Aura Ruolo incolore chiamata Malvagio (Wicked) con incanta creatura, «La creatura incantata prende +1/+1» e «Quando questa pedina viene messa in un cimitero dal campo di battaglia, ogni avversario perde 1 punto vita».
+@111.10r
+Una pedina Ruolo Giovane Eroe (Young Hero Role) è una pedina incantesimo Aura Ruolo incolore chiamata Giovane Eroe (Young Hero) con incanta creatura e «La creatura incantata ha "Ogni volta che questa creatura attacca, se la sua costituzione è 3 o meno, metti un segnalino +1/+1 su di essa"».
+@111.10s
+Una pedina Mappa (Map) è una pedina artefatto Mappa incolore con «{1}, {T}, Sacrifica questa pedina: Una creatura bersaglio che controlli esplora. Attiva solo come una stregoneria». Vedi regola 701.44, «Esplorare».
+@111.10t
+Una pedina Rottame (Junk) è una pedina artefatto Rottame incolore con «{T}, Sacrifica questa pedina: Esilia la prima carta del tuo grimorio. Puoi giocare quella carta in questo turno. Attiva solo come una stregoneria».
+@111.10u
+Una pedina Lander è una pedina artefatto Lander incolore con «{2}, {T}, Sacrifica questa pedina: Passa in rassegna il tuo grimorio per una carta terra base, mettila sul campo di battaglia TAPpata, poi rimescola».
+@111.10v
+Una pedina Mutageno (Mutagen) è una pedina artefatto Mutageno incolore con «{1}, {T}, Sacrifica questa pedina: Metti un segnalino +1/+1 su una creatura bersaglio. Attiva solo come una stregoneria».
+@111.10w
+Una pedina Vibranio (Vibranium) è una pedina artefatto Vibranio incolore con indistruttibile e «{T}: Aggiungi {C}. Questo mana non può essere speso per lanciare una magia non artefatto».
+@111.10x
+Una pedina Heartwood è una pedina artefatto Heartwood rossa e verde con «{T}: Aggiungi {R} o {G}».
+@111.11
+Se un effetto istruisce un giocatore a creare una pedina indicandone il nome, non definisce altre caratteristiche per quella pedina, e il nome non è uno dei tipi dell'elenco di pedine predefinite qui sopra, quel giocatore usa la carta con quel nome nel riferimento Oracle per determinare le caratteristiche di quella pedina.
+Esempio: Disa the Restless ha l'abilità «Ogni volta che una o più creature che controlli infliggono danno da combattimento a un giocatore, crea una pedina Tarmogoyf». Quando quell'abilità si risolve, il suo controllore crea una pedina con le stesse caratteristiche della carta chiamata Tarmogoyf, come stabilito dal riferimento Oracle.
+@111.12
+Se un effetto istruisce un giocatore a creare una pedina che è una copia di un oggetto inesistente, non viene creata alcuna pedina (vedi regola 707, «Copiare oggetti»). Questo non si applica a un effetto che userebbe le ultime informazioni conosciute di un oggetto.
+Esempio: Mimic Vat ha un'abilità innescata il cui effetto ti dà la possibilità di esiliare una carta, e un'abilità attivata che dice «Crea una pedina che è una copia di una carta esiliata con questo artefatto. Ha rapidità. Esiliala all'inizio della prossima sottofase finale». Se nessuna carta è stata esiliata con l'abilità innescata di Mimic Vat, non viene creata alcuna pedina.
+@111.13
+Una copia di una magia permanente diventa una pedina quando si risolve. La pedina ha le caratteristiche della magia che è diventata quella pedina. La pedina non viene «creata» ai fini degli effetti di sostituzione o delle abilità innescate che fanno riferimento alla creazione di una pedina.
+@112
+Magie
+@112.1
+Una magia è una carta in pila. Come primo passo del suo lancio (vedi regola 601, «Lanciare magie»), la carta diventa una magia e viene spostata in cima alla pila dalla zona in cui si trovava, che di solito è la mano del suo proprietario. (Vedi regola 405, «Pila».) Una magia resta in pila come magia finché non si risolve (vedi regola 608, «Risolvere magie e abilità»), viene neutralizzata (vedi regola 701.6) o lascia la pila in altro modo. Per maggiori informazioni, vedi la sezione 6, «Magie, abilità ed effetti».
+@112.1a
+Anche una copia di una magia è una magia, anche se non è associata ad alcuna carta. Vedi regola 707.10.
+@112.1b
+Alcuni effetti permettono a un giocatore di lanciare una copia di una carta; se il giocatore lo fa, anche quella copia è una magia. Vedi regola 707.12.
+@112.2
+Il proprietario di una magia è lo stesso proprietario della carta che la rappresenta, a meno che non sia una copia. In quel caso, il proprietario della magia è il giocatore sotto il cui controllo è stata messa in pila. Il controllore di una magia è, per impostazione predefinita, il giocatore che l'ha messa in pila. Ogni magia ha un controllore.
+@112.2a
+Alcuni effetti istruiscono un giocatore a creare una copia di una carta e dicono che può lanciarla. In quel caso, il proprietario di quella copia è il giocatore a cui viene detto di crearla e a cui viene dato il permesso di lanciarla.
+@112.3
+Le caratteristiche di una magia che non è una copia sono quelle stampate sulla sua carta, modificate da eventuali effetti continui. Vedi regola 613, «Interazione degli effetti continui».
+@112.4
+Se un effetto di una magia o abilità che si risolve cambia delle caratteristiche di una magia permanente, l'effetto continua ad applicarsi al permanente quando la magia si risolve. Vedi regola 400.7.
+Esempio: Se un effetto rende bianca una magia creatura nera, la creatura è bianca quando entra nel campo di battaglia e resta bianca per tutta la durata dell'effetto che ne cambia il colore.
+@113
+Abilità
+@113.1
+Un'abilità può essere una di tre cose:
+@113.1a
+Un'abilità può essere una caratteristica di un oggetto che gli permette di influire sulla partita. Le abilità di un oggetto sono definite dal suo testo delle regole o dall'effetto che l'ha creato. Le abilità possono anche essere conferite agli oggetti da regole o effetti. (Gli effetti che conferiscono abilità di solito usano le parole «ha», «hanno», «ottiene» o «ottengono».) Le abilità generano effetti. (Vedi regola 609, «Effetti».)
+@113.1b
+Un'abilità può essere qualcosa che un giocatore ha e che cambia il modo in cui la partita influisce su di lui. Normalmente un giocatore non ha abilità, a meno che non gli vengano conferite da effetti.
+@113.1c
+Un'abilità può essere un'abilità attivata o innescata in pila. Questo tipo di abilità è un oggetto. (Vedi la sezione 6, «Magie, abilità ed effetti».)
+@113.2
+Le abilità possono influire sugli oggetti su cui si trovano. Possono anche influire su altri oggetti e/o giocatori.
+@113.2a
+Le abilità possono essere vantaggiose o svantaggiose.
+Esempio: «Questa creatura non può bloccare» è un'abilità.
+@113.2b
+Un costo aggiuntivo o un costo alternativo per lanciare una carta è un'abilità della carta.
+@113.2c
+Un oggetto può avere più abilità. Se l'oggetto è rappresentato da una carta, allora, a parte alcune abilità definite che possono essere scritte sulla stessa riga (vedi regola 702, «Abilità chiave»), ogni a capo nel testo di una carta indica un'abilità separata. Se l'oggetto non è rappresentato da una carta, l'effetto che l'ha creato può avergli dato più abilità. Un oggetto può anche ricevere abilità aggiuntive da una magia o abilità. Se un oggetto ha più istanze della stessa abilità, ogni istanza funziona in modo indipendente. Questo può produrre o non produrre più effetti di una singola istanza; vedi la specifica abilità per maggiori informazioni.
+@113.2d
+Le abilità possono generare effetti singoli o effetti continui. Alcuni effetti continui sono effetti di sostituzione o effetti di prevenzione. Vedi regola 609, «Effetti».
+@113.3
+Ci sono quattro categorie generali di abilità:
+@113.3a
+Le abilità di una magia sono abilità che vengono seguite come istruzioni mentre una magia istantaneo o stregoneria si risolve. Qualsiasi testo su una magia istantaneo o stregoneria è un'abilità della magia, a meno che non sia un'abilità attivata, un'abilità innescata o un'abilità statica che soddisfa i criteri descritti nella regola 113.6.
+@113.3b
+Le abilità attivate hanno un costo e un effetto. Sono scritte come «[Costo]: [Effetto.] [Istruzioni di attivazione (se presenti).]». Un giocatore può attivare un'abilità del genere ogni volta che ha la priorità. Così facendo la mette in pila, dove resta finché non viene neutralizzata, si risolve o lascia la pila in altro modo. Vedi regola 602, «Attivare abilità attivate».
+@113.3c
+Le abilità innescate hanno una condizione di innesco e un effetto. Sono scritte come «[Condizione di innesco], [effetto]» e includono (e di solito iniziano con) le parole «quando», «ogni volta che» o «all'inizio di»/«alla». Ogni volta che si verifica l'evento di innesco, l'abilità viene messa in pila la prossima volta che un giocatore riceverebbe la priorità e resta lì finché non viene neutralizzata, si risolve o lascia la pila in altro modo. Vedi regola 603, «Gestire le abilità innescate».
+@113.3d
+Le abilità statiche sono scritte come affermazioni. Sono semplicemente vere. Le abilità statiche creano effetti continui che sono attivi finché il permanente con l'abilità è sul campo di battaglia e ha l'abilità, o finché l'oggetto con l'abilità si trova nella zona appropriata. Vedi regola 604, «Gestire le abilità statiche».
+@113.4
+Alcune abilità attivate e alcune abilità innescate sono abilità di mana. Le abilità di mana seguono regole speciali: non usano la pila e, in determinate circostanze, un giocatore può attivare abilità di mana anche se non ha la priorità. Vedi regola 605, «Abilità di mana».

@@ -1,0 +1,11 @@
+@#7
+Regole aggiuntive
+@702
+Abilità chiave
+@702.19
+Travolgere
+@702.19a
+Travolgere è un'abilità statica che modifica le regole per assegnare il danno da combattimento di una creatura attaccante. L'abilità non ha effetto quando una creatura con travolgere blocca o infligge danno non da combattimento. (Vedi regola 510, «Sottofase del danno da combattimento».)
+@@Trample
+Travolgere
+Un'abilità chiave che modifica il modo in cui una creatura assegna il danno da combattimento. Vedi regola 702.19, «Travolgere».

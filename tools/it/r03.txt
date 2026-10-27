@@ -1,0 +1,159 @@
+@113.5
+Alcune abilità attivate sono abilità di fedeltà. Le abilità di fedeltà seguono regole speciali: un giocatore può attivare un'abilità di fedeltà di un permanente che controlla in qualsiasi momento in cui ha la priorità e la pila è vuota durante una fase principale del suo turno, ma solo se nessun giocatore ha già attivato un'abilità di fedeltà di quel permanente in quel turno. Vedi regola 606, «Abilità di fedeltà».
+@113.6
+Le abilità di una magia istantaneo o stregoneria di solito funzionano solo mentre quell'oggetto è in pila. Le abilità di tutti gli altri oggetti di solito funzionano solo mentre quell'oggetto è sul campo di battaglia. Le eccezioni sono le seguenti:
+@113.6a
+Le abilità che definiscono caratteristiche funzionano ovunque, anche fuori dalla partita e prima che la partita inizi. (Vedi regola 604.3.)
+@113.6b
+Un'abilità che indica in quali zone funziona, funziona solo da quelle zone.
+@113.6c
+Un'abilità che indica in quali zone non funziona, funziona ovunque tranne che nelle zone indicate, anche fuori dalla partita e prima che la partita inizi.
+@113.6d
+Un'abilità di un oggetto che permette a un giocatore di pagare un costo alternativo invece del suo costo di mana, o che modifica in altro modo quanto costa lanciare quel particolare oggetto, funziona in pila.
+@113.6e
+Un'abilità di un oggetto che limita o modifica il modo in cui quel particolare oggetto può essere giocato o lanciato funziona in qualsiasi zona da cui potrebbe essere giocato o lanciato e anche in pila. Un'abilità di un oggetto che gli conferisce un'altra abilità che limita o modifica il modo in cui quel particolare oggetto può essere giocato o lanciato funziona solo in pila.
+@113.6f
+Un'abilità di un oggetto che limita o modifica da quali zone quel particolare oggetto può essere giocato o lanciato funziona ovunque, anche fuori dalla partita.
+@113.6g
+Un'abilità di un oggetto che stabilisce che non può essere neutralizzato o non può essere copiato funziona in pila.
+@113.6h
+Un'abilità di un oggetto che modifica il modo in cui quel particolare oggetto entra nel campo di battaglia funziona mentre quell'oggetto sta entrando nel campo di battaglia. Vedi regola 614.12.
+@113.6i
+Un'abilità di un oggetto che stabilisce che non si possono mettere segnalini su quell'oggetto funziona mentre quell'oggetto sta entrando nel campo di battaglia, oltre a funzionare mentre l'oggetto è sul campo di battaglia.
+@113.6j
+Un'abilità attivata di un oggetto con un costo che non può essere pagato mentre l'oggetto è sul campo di battaglia funziona da qualsiasi zona in cui il suo costo può essere pagato.
+@113.6k
+Una condizione di innesco che non può innescarsi dal campo di battaglia funziona in tutte le zone da cui può innescarsi. Altre condizioni di innesco della stessa abilità innescata possono funzionare in zone diverse.
+Esempio: Absolver Thrull ha l'abilità «Quando questa creatura entra o la creatura che infesta muore, distruggi un incantesimo bersaglio». La prima condizione di innesco funziona dal campo di battaglia e la seconda funziona dalla zona di esilio. (Vedi regola 702.55, «Infestare».)
+@113.6m
+Un'abilità il cui costo o effetto specifica che sposta l'oggetto su cui si trova fuori da una determinata zona funziona solo in quella zona, a meno che la sua condizione di innesco o una parte precedente del suo costo o effetto non specifichi che l'oggetto viene messo in quella zona o, se l'oggetto è un'Aura, che l'oggetto che incanta lascia il campo di battaglia. Lo stesso vale se l'effetto di quell'abilità crea un'abilità innescata ritardata il cui effetto sposta l'oggetto fuori da una determinata zona.
+Esempio: Reassembling Skeleton dice «{1}{B}: Riprendi questa carta dal tuo cimitero e mettila sul campo di battaglia TAPpata». Un giocatore può attivare questa abilità solo se Reassembling Skeleton è nel suo cimitero.
+@113.6n
+Un'abilità che modifica le regole di costruzione del mazzo funziona prima che la partita inizi. Un'abilità del genere modifica non solo le Comprehensive Rules, ma anche le Magic: The Gathering Tournament Rules e qualsiasi altro documento che stabilisca le regole di costruzione del mazzo per un formato specifico. Tuttavia, un'abilità del genere non può influire sulla legalità di una carta in un formato, compreso il fatto che sia bandita o limitata. Le Magic: The Gathering Tournament Rules attuali si trovano su WPN.Wizards.com/en/rules-documents.
+@113.6p
+Le abilità di emblemi, carte piano, carte vanguard, carte piano malvagio e carte cospirazione funzionano nella zona di comando. Vedi regola 114, «Emblemi»; regola 901, «Planechase»; regola 902, «Vanguard»; regola 904, «Archenemy»; e regola 905, «Conspiracy Draft».
+@113.7
+La fonte di un'abilità è l'oggetto che l'ha generata. La fonte di un'abilità attivata in pila è l'oggetto la cui abilità è stata attivata. La fonte di un'abilità innescata (diversa da un'abilità innescata ritardata) in pila, o di una che si è innescata ed è in attesa di essere messa in pila, è l'oggetto la cui abilità si è innescata. Per determinare la fonte di un'abilità innescata ritardata, vedi regole 603.7d–f.
+@113.7a
+Una volta attivata o innescata, un'abilità esiste in pila indipendentemente dalla sua fonte. Distruggere o rimuovere la fonte dopo quel momento non influisce sull'abilità. Nota che alcune abilità fanno fare qualcosa a una fonte (per esempio, «Questa creatura infligge 1 danno a un qualsiasi bersaglio») invece di fare direttamente qualcosa. In questi casi, qualsiasi abilità attivata o innescata che faccia riferimento a informazioni sulla fonte da usare durante l'annuncio di un'abilità attivata o la messa in pila di un'abilità innescata controlla quelle informazioni quando l'abilità viene messa in pila. Altrimenti, controlla quelle informazioni quando si risolve. In entrambi i casi, se in quel momento la fonte non è più nella zona in cui dovrebbe essere, si usano le sue ultime informazioni conosciute. La fonte può comunque compiere l'azione anche se non esiste più.
+@113.8
+Il controllore di un'abilità attivata in pila è il giocatore che l'ha attivata. Il controllore di un'abilità innescata in pila (diversa da un'abilità innescata ritardata) è il giocatore che controllava la fonte dell'abilità quando si è innescata oppure, se non aveva un controllore, il giocatore che possedeva la fonte dell'abilità quando si è innescata. Per determinare il controllore di un'abilità innescata ritardata, vedi regole 603.7d–f.
+@113.9
+Le abilità attivate e innescate in pila non sono magie, e quindi non possono essere neutralizzate da qualcosa che neutralizza solo magie. Le abilità attivate e innescate in pila possono essere neutralizzate da effetti che neutralizzano specificamente abilità. Le abilità statiche non usano la pila e quindi non possono affatto essere neutralizzate.
+@113.10
+Gli effetti possono aggiungere o rimuovere abilità agli oggetti. Un effetto che aggiunge un'abilità dice che l'oggetto «ottiene» o «ha» quell'abilità, o qualcosa di simile. Un effetto che rimuove un'abilità dice che l'oggetto «perde» quell'abilità.
+@113.10a
+Un effetto che aggiunge un'abilità attivata può includere istruzioni di attivazione per quell'abilità. Queste istruzioni diventano parte dell'abilità aggiunta all'oggetto.
+@113.10b
+Gli effetti che rimuovono un'abilità ne rimuovono tutte le istanze.
+@113.10c
+Se due o più effetti aggiungono e rimuovono la stessa abilità, in generale prevale quello più recente. Vedi regola 613 per maggiori informazioni sull'interazione degli effetti continui.
+@113.11
+Gli effetti possono impedire a un oggetto di avere una determinata abilità. Questi effetti dicono che l'oggetto «non può avere» quell'abilità. Se l'oggetto ha quell'abilità, la perde. È anche impossibile che un effetto o un segnalino parola chiave aggiunga quell'abilità all'oggetto. Se una magia o abilità che si risolve crea un effetto continuo che aggiungerebbe l'abilità indicata a un oggetto del genere, quella parte dell'effetto continuo non si applica; tuttavia, le altre parti di quell'effetto continuo si applicano comunque, e quella magia o abilità che si risolve può comunque creare altri effetti continui. Gli effetti continui creati da abilità statiche che aggiungerebbero l'abilità indicata non si applicano a quell'oggetto.
+@113.12
+Un effetto che imposta una caratteristica di un oggetto, o che afferma semplicemente una qualità di quell'oggetto, è diverso da un'abilità conferita da un effetto. Quando un oggetto «ottiene» o «ha» un'abilità, quell'abilità può essere rimossa da un altro effetto. Se un effetto definisce una caratteristica dell'oggetto («[permanente] è [valore della caratteristica]»), non sta conferendo un'abilità. (Vedi regola 604.3.) Allo stesso modo, se un effetto afferma una qualità di quell'oggetto («[creatura] non può essere bloccata», per esempio), non sta né conferendo un'abilità né impostando una caratteristica.
+Esempio: Muraganda Petroglyphs dice «Le creature senza abilità prendono +2/+2». Un Runeclaw Bear (una creatura senza abilità) incantato da un'Aura che dice «La creatura incantata ha volare» non prenderebbe +2/+2. Un Runeclaw Bear incantato da un'Aura che dice «La creatura incantata è rossa» o «La creatura incantata non può essere bloccata» prenderebbe +2/+2.
+@114
+Emblemi
+@114.1
+Alcuni effetti mettono emblemi nella zona di comando. Un emblema è un segnaposto usato per rappresentare un oggetto che ha una o più abilità, ma di solito nessun'altra caratteristica.
+@114.2
+Un effetto che crea un emblema è scritto «[Giocatore] ottiene un emblema con [abilità]». Significa che [giocatore] mette nella zona di comando un emblema con [abilità]. L'emblema è sia posseduto sia controllato da quel giocatore.
+@114.3
+Un emblema non ha caratteristiche oltre alle abilità definite dall'effetto che l'ha creato. In particolare, un emblema non ha tipi, costo di mana né colore. La maggior parte degli emblemi non ha nemmeno un nome.
+@114.4
+Le abilità degli emblemi funzionano nella zona di comando.
+@114.5
+Un emblema non è né una carta né un permanente. Emblema non è un tipo di carta.
+@115
+Bersagli
+@115.1
+Alcune magie e abilità richiedono che il loro controllore scelga uno o più bersagli. I bersagli sono gli oggetti e/o i giocatori su cui la magia o abilità avrà effetto. Questi bersagli vengono dichiarati come parte del procedimento con cui la magia o abilità viene messa in pila. I bersagli non possono essere cambiati, se non da un'altra magia o abilità che dica esplicitamente di poterlo fare.
+@115.1a
+Una magia istantaneo o stregoneria ha bersagli se la sua abilità della magia identifica qualcosa su cui avrà effetto usando l'espressione «[qualcosa] bersaglio», dove «qualcosa» è un'espressione che descrive un oggetto e/o un giocatore. Il bersaglio o i bersagli vengono scelti quando la magia viene lanciata; vedi regola 601.2c. (Se un'abilità attivata o innescata di un istantaneo o di una stregoneria usa la parola bersaglio, quell'abilità ha bersagli, ma la magia no.)
+Esempio: Una carta stregoneria ha l'abilità «Quando ricicli questa carta, una creatura bersaglio prende -1/-1 fino alla fine del turno». Questa abilità innescata ha un bersaglio, ma questo non fa sì che la carta su cui si trova abbia un bersaglio.
+@115.1b
+Le magie Aura hanno sempre un bersaglio. Il bersaglio di un'Aura è specificato dalla sua abilità chiave incanta (vedi regola 702.5, «Incanta»). Il bersaglio viene scelto quando la magia viene lanciata; vedi regola 601.2c. Un permanente Aura non ha bersagli; solo la magia ha un bersaglio. (Anche un'abilità attivata o innescata di un permanente Aura può avere bersagli.)
+@115.1c
+Un'abilità attivata ha bersagli se identifica qualcosa su cui avrà effetto usando l'espressione «[qualcosa] bersaglio», dove «qualcosa» è un'espressione che descrive un oggetto e/o un giocatore. Il bersaglio o i bersagli vengono scelti quando l'abilità viene attivata; vedi regola 602.2b.
+@115.1d
+Un'abilità innescata ha bersagli se identifica qualcosa su cui avrà effetto usando l'espressione «[qualcosa] bersaglio», dove «qualcosa» è un'espressione che descrive un oggetto e/o un giocatore. Il bersaglio o i bersagli vengono scelti quando l'abilità viene messa in pila; vedi regola 603.3d.
+@115.1e
+Alcune abilità chiave, come equipaggiare e modulare, rappresentano abilità attivate o innescate con bersagli, e alcune abilità chiave, come mutare, fanno sì che le magie abbiano bersagli. In questi casi, l'espressione «[qualcosa] bersaglio» compare nella regola di quell'abilità chiave invece che nell'abilità stessa. (Il testo di richiamo della parola chiave conterrà spesso la parola «bersaglio».) Vedi regola 702, «Abilità chiave».
+@115.2
+Solo i permanenti sono bersagli legali per magie e abilità, a meno che una magia o abilità (a) non specifichi che può bersagliare un oggetto in un'altra zona o un giocatore, oppure (b) non bersagli un oggetto che non può esistere sul campo di battaglia, come una magia o un'abilità. Vedi anche regola 115.4.
+@115.3
+Lo stesso bersaglio non può essere scelto più volte per una singola istanza della parola «bersaglio» su una magia o abilità. Se la magia o abilità usa la parola «bersaglio» in più punti, lo stesso oggetto o giocatore può essere scelto una volta per ogni istanza della parola «bersaglio» (purché soddisfi i criteri del bersaglio). Questa regola si applica sia quando si scelgono i bersagli di una magia o abilità sia quando si cambiano i bersagli o se ne scelgono di nuovi (vedi regola 115.7).
+@115.4
+Alcune magie e abilità che fanno riferimento al danno richiedono «un qualsiasi bersaglio», «un altro bersaglio», «due bersagli» o simili invece di «[qualcosa] bersaglio». Questi bersagli possono essere creature, giocatori, planeswalker o battaglie. Altri oggetti di gioco, come gli artefatti non creatura o le magie, non possono essere scelti.
+@115.5
+Una magia o abilità in pila è un bersaglio illegale per se stessa.
+@115.6
+Una magia o abilità che richiede bersagli può permettere di sceglierne zero. Si dice comunque che una magia o abilità del genere richiede bersagli, ma quella magia o abilità ha bersagli solo se ne sono stati scelti uno o più.
+@115.7
+Alcuni effetti permettono a un giocatore di cambiare il bersaglio o i bersagli di una magia o abilità, e altri effetti permettono a un giocatore di scegliere nuovi bersagli per una magia o abilità.
+@115.7a
+Se un effetto permette a un giocatore di «cambiare il bersaglio o i bersagli» di una magia o abilità, ogni bersaglio può essere cambiato solo con un altro bersaglio legale. Se un bersaglio non può essere cambiato con un altro bersaglio legale, il bersaglio originale resta invariato, anche se nel frattempo è diventato illegale. Se non tutti i bersagli vengono cambiati con altri bersagli legali, nessuno di essi viene cambiato.
+@115.7b
+Se un effetto permette a un giocatore di «cambiare un bersaglio» di una magia o abilità, si segue il procedimento descritto nella regola 115.7a, tranne che può essere cambiato solo uno di quei bersagli (invece di tutti o nessuno).
+@115.7c
+Se un effetto permette a un giocatore di «cambiare qualsiasi bersaglio» di una magia o abilità, si segue il procedimento descritto nella regola 115.7a, tranne che può essere cambiato un numero qualsiasi di quei bersagli (invece di tutti o nessuno).
+@115.7d
+Se un effetto permette a un giocatore di «scegliere nuovi bersagli» per una magia o abilità, il giocatore può lasciare invariato un numero qualsiasi di bersagli, anche se quei bersagli sarebbero illegali. Se il giocatore sceglie di cambiare alcuni o tutti i bersagli, i nuovi bersagli devono essere legali e non devono rendere illegali i bersagli rimasti invariati.
+@115.7e
+Quando si cambiano i bersagli o se ne scelgono di nuovi per una magia o abilità, per stabilire se il cambiamento è legale si valuta solo l'insieme finale dei bersagli.
+Esempio: Arc Trail è una stregoneria che dice «Arc Trail infligge 2 danni a un qualsiasi bersaglio e 1 danno a un qualsiasi altro bersaglio». I bersagli attuali di Arc Trail sono Runeclaw Bear e Llanowar Elves, in quest'ordine. Lanci Redirect, un istantaneo che dice «Puoi scegliere nuovi bersagli per una magia bersaglio», prendendo come bersaglio Arc Trail. Puoi cambiare il primo bersaglio in Llanowar Elves e il secondo in Runeclaw Bear.
+@115.7f
+Una magia o abilità può «dividere» o «distribuire» un effetto (come danni o segnalini) tra uno o più bersagli. Quando si cambiano i bersagli o se ne scelgono di nuovi per quella magia o abilità, la divisione originale non può essere cambiata.
+@115.8
+Le magie e abilità modali possono avere requisiti di bersaglio diversi per ogni modalità. Un effetto che permette a un giocatore di cambiare il bersaglio o i bersagli di una magia o abilità modale, o di sceglierne di nuovi, non permette a quel giocatore di cambiarne la modalità. (Vedi regola 700.2.)
+@115.9
+Alcuni oggetti controllano quali bersagli ha un'altra magia o abilità. A seconda della formulazione, possono controllare lo stato attuale dei bersagli, lo stato dei bersagli nel momento in cui sono stati scelti, o entrambi.
+@115.9a
+Un oggetto che cerca una «[magia o abilità] con [un certo numero di] bersagli» controlla il numero di volte in cui un oggetto o un giocatore è stato scelto come bersaglio di quella magia o abilità quando è stata messa in pila, non il numero dei suoi bersagli attualmente legali. Se lo stesso oggetto o giocatore è diventato bersaglio più di una volta, ognuna di quelle volte viene contata separatamente.
+@115.9b
+Un oggetto che cerca una «[magia o abilità] che bersaglia [qualcosa]» controlla lo stato attuale dei bersagli di quella magia o abilità. Se un oggetto che bersaglia è ancora nella zona in cui dovrebbe essere, o un giocatore che bersaglia è ancora in partita, si usano le informazioni attuali di quel bersaglio, anche se attualmente non è legale per quella magia o abilità. Se un oggetto che bersaglia non è più nella zona in cui dovrebbe essere, o un giocatore che bersaglia non è più in partita, quel bersaglio viene ignorato; le sue ultime informazioni conosciute non vengono usate.
+@115.9c
+Un oggetto che cerca una «[magia o abilità] che bersaglia solo [qualcosa]» controlla il numero di oggetti o giocatori diversi scelti come bersagli di quella magia o abilità quando è stata messa in pila (come modificati dagli effetti che hanno cambiato quei bersagli), non il numero di quegli oggetti o giocatori che sono attualmente bersagli legali. Se quel numero è uno (anche se la magia o abilità bersaglia quell'oggetto o giocatore più volte), lo stato attuale del bersaglio di quella magia o abilità viene controllato come descritto nella regola 115.9b.
+@115.10
+Le magie e le abilità possono influire su oggetti e giocatori che non bersagliano. In generale, quegli oggetti e giocatori non vengono scelti finché la magia o abilità non si risolve. Vedi regola 608, «Risolvere magie e abilità».
+@115.10a
+Il solo fatto che un oggetto o un giocatore subisca gli effetti di una magia o abilità non lo rende un bersaglio di quella magia o abilità. A meno che quell'oggetto o giocatore non sia identificato dalla parola «bersaglio» nel testo di quella magia o abilità, o nella regola di quell'abilità chiave, non è un bersaglio.
+@115.10b
+In particolare, la parola «tu» nel testo di un oggetto non indica un bersaglio.
+@116
+Azioni speciali
+@116.1
+Le azioni speciali sono azioni che un giocatore può compiere quando ha la priorità e che non usano la pila. Non vanno confuse con le azioni generate dal turno e con le azioni generate dallo stato, che la partita genera automaticamente. (Vedi regola 703, «Azioni generate dal turno», e regola 704, «Azioni generate dallo stato».)
+@116.2
+Ci sono dodici azioni speciali:
+@116.2a
+Giocare una terra è un'azione speciale. Per giocare una terra, un giocatore mette quella terra sul campo di battaglia dalla zona in cui si trovava (di solito la mano di quel giocatore). Per impostazione predefinita, un giocatore può compiere questa azione solo una volta durante ciascuno dei suoi turni. Un giocatore può compiere questa azione in qualsiasi momento in cui ha la priorità e la pila è vuota durante una fase principale del suo turno. Vedi regola 305, «Terre».
+@116.2b
+Girare a faccia in su una creatura a faccia in giù è un'azione speciale. Un giocatore può compiere questa azione in qualsiasi momento in cui ha la priorità. Vedi regola 708, «Magie e permanenti a faccia in giù».
+@116.2c
+Alcuni effetti permettono a un giocatore di compiere un'azione in un momento successivo, di solito per porre fine a un effetto continuo o per impedire che un'abilità innescata ritardata si inneschi. Farlo è un'azione speciale. Un giocatore può compiere un'azione del genere in qualsiasi momento in cui ha la priorità, a meno che quell'effetto non specifichi un'altra restrizione di tempo, finché l'effetto lo permette.
+@116.2d
+Alcuni effetti di abilità statiche permettono a un giocatore di compiere un'azione per ignorare l'effetto di quell'abilità per un certo periodo. Farlo è un'azione speciale. Un giocatore può compiere un'azione del genere in qualsiasi momento in cui ha la priorità.
+@116.2e
+Una carta (Circling Vultures) ha l'abilità «Puoi scartare Circling Vultures in qualsiasi momento in cui potresti lanciare un istantaneo». Farlo è un'azione speciale. Un giocatore può compiere un'azione del genere in qualsiasi momento in cui ha la priorità.
+@116.2f
+Un giocatore che ha in mano una carta con sospendere può esiliare quella carta. Questa è un'azione speciale. Un giocatore può compiere questa azione in qualsiasi momento in cui ha la priorità, ma solo se potrebbe iniziare a lanciare quella carta mettendola in pila. Vedi regola 702.62, «Sospendere».
+@116.2g
+Un giocatore che ha scelto un compagno può pagare {3} per mettere quella carta da fuori dalla partita nella sua mano. Questa è un'azione speciale. Un giocatore può compiere questa azione in qualsiasi momento in cui ha la priorità e la pila è vuota durante una fase principale del suo turno, ma solo se non l'ha ancora fatto in questa partita. (Vedi regola 702.139, «Compagno».)
+@116.2h
+Un giocatore che ha in mano una carta con presagire può pagare {2} ed esiliare quella carta a faccia in giù. Questa è un'azione speciale. Un giocatore può compiere questa azione in qualsiasi momento in cui ha la priorità durante il suo turno. Vedi regola 702.143, «Presagire».
+@116.2i
+In una partita Planechase, tirare il dado planare è un'azione speciale. Un giocatore può compiere questa azione in qualsiasi momento in cui ha la priorità e la pila è vuota durante una fase principale del suo turno. Compiere questa azione costa al giocatore una quantità di mana pari al numero di volte in cui ha già compiuto questa azione in quel turno. Nota che questo numero non sarà uguale al numero di volte in cui il giocatore ha tirato il dado planare in quel turno se un effetto gli ha fatto tirare il dado planare in quel turno. Vedi regola 901, «Planechase».
+@116.2j
+In una partita Conspiracy Draft, girare a faccia in su una carta cospirazione a faccia in giù nella zona di comando è un'azione speciale. Un giocatore può compiere questa azione in qualsiasi momento in cui ha la priorità. Vedi regola 905.4a.
+@116.2k
+Un giocatore che ha in mano una carta con complottare può esiliare quella carta. Questa è un'azione speciale. Un giocatore può compiere questa azione in qualsiasi momento in cui ha la priorità durante il proprio turno mentre la pila è vuota. Vedi regola 702.170, «Complottare».
+@116.2m
+Un giocatore che controlla un permanente con una o più metà bloccate (vedi regola 709.5) può pagare il costo di mana di una metà bloccata di quel permanente per dare a quel permanente la designazione di sbloccato appropriata. Questo costo è detto «costo di sblocco». Un giocatore può compiere questa azione in qualsiasi momento in cui ha la priorità e la pila è vuota durante una fase principale del suo turno.
+@116.3
+Se un giocatore compie un'azione speciale, riceve la priorità subito dopo.
+@117
+Tempistica e priorità
+@117.1
+A meno che una magia o abilità non stia istruendo un giocatore a compiere un'azione, quale giocatore possa compiere azioni in un dato momento è determinato da un sistema di priorità. Il giocatore con la priorità può lanciare magie, attivare abilità e compiere azioni speciali.

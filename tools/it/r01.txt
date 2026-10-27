@@ -1,0 +1,154 @@
+@106.4
+Quando un effetto istruisce un giocatore ad aggiungere mana, quel mana va nella riserva di mana del giocatore. Da lì può essere usato subito per pagare costi, oppure può restare nella riserva di mana del giocatore come mana non speso. La riserva di mana di ogni giocatore si svuota alla fine di ogni sottofase e fase, e si dice che il giocatore perde quel mana. Le carte con abilità che producono mana o che fanno riferimento al mana non speso hanno ricevuto errata nel riferimento Oracle™ in modo da non menzionare più esplicitamente la riserva di mana.
+@106.4a
+Se dopo aver speso mana per pagare un costo rimane del mana nella riserva di mana di un giocatore, quel giocatore annuncia quale mana è ancora presente.
+@106.4b
+Se un giocatore passa la priorità (vedi regola 117) mentre ha del mana nella riserva di mana, quel giocatore annuncia quale mana è presente.
+@106.5
+Se un'abilità dovesse produrre uno o più mana di un tipo non definito, invece non produce alcun mana.
+Esempio: Meteor Crater ha l'abilità «{T}: Scegli un colore di un permanente che controlli. Aggiungi un mana di quel colore». Se non controlli permanenti colorati, attivare l'abilità di mana di Meteor Crater non produce mana.
+@106.6
+Alcune magie o abilità che producono mana limitano il modo in cui quel mana può essere speso, hanno un effetto aggiuntivo che riguarda la magia o l'abilità per cui quel mana viene speso, oppure creano un'abilità innescata ritardata (vedi regola 603.7a) che si innesca quando quel mana viene speso. Questo non influisce sul tipo del mana.
+Esempio: La riserva di mana di un giocatore contiene {R}{G} che possono essere spesi solo per lanciare magie creatura. Quel giocatore attiva l'abilità di Doubling Cube, che dice «{3}, {T}: Raddoppia la quantità di ogni tipo di mana non speso che hai». Ora la riserva di mana del giocatore contiene {R}{R}{G}{G}, di cui {R}{G} possono essere spesi per qualsiasi cosa.
+@106.6a
+Alcuni effetti di sostituzione aumentano la quantità di mana prodotta da una magia o abilità. In questi casi, eventuali restrizioni o effetti aggiuntivi creati dalla magia o abilità si applicano a tutto il mana prodotto. Se la magia o abilità crea un'abilità innescata ritardata che si innesca quando il mana viene speso, viene creata un'abilità innescata ritardata separata per ogni mana prodotto. Se la magia o abilità crea un effetto continuo o un effetto di sostituzione nel caso in cui il mana venga speso, viene creato un effetto separato per ogni mana prodotto.
+@106.7
+Alcune abilità producono mana in base al tipo di mana che un altro permanente o altri permanenti «potrebbero produrre». Il tipo di mana che un permanente potrebbe produrre in un dato momento comprende qualsiasi tipo di mana che un'abilità di quel permanente produrrebbe se si risolvesse in quel momento, tenendo conto di eventuali effetti di sostituzione applicabili in qualsiasi ordine possibile. Ignora se i costi dell'abilità potrebbero o non potrebbero essere pagati. Se in queste condizioni quel permanente non produrrebbe alcun mana, o se non è possibile definire così alcun tipo di mana, non c'è alcun tipo di mana che possa produrre.
+Esempio: Exotic Orchard ha l'abilità «{T}: Aggiungi un mana di un qualsiasi colore che una terra controllata da un avversario potrebbe produrre». Se il tuo avversario non controlla terre, attivare l'abilità di mana di Exotic Orchard non produce mana. Lo stesso vale se tu e il tuo avversario non controllate terre diverse da Exotic Orchard. Tuttavia, se tu controlli una Foresta e un Exotic Orchard e il tuo avversario controlla un Exotic Orchard, allora ogni Exotic Orchard potrebbe produrre {G}.
+@106.8
+Se un effetto dovesse aggiungere alla riserva di mana di un giocatore del mana rappresentato da un simbolo di mana ibrido, quel giocatore sceglie una metà di quel simbolo. Se sceglie una metà colorata, alla sua riserva di mana viene aggiunto un mana di quel colore. Se sceglie una metà generica, alla sua riserva di mana viene aggiunta una quantità di mana incolore pari al numero di quella metà.
+@106.9
+Se un effetto dovesse aggiungere alla riserva di mana di un giocatore del mana rappresentato da un simbolo di mana phyrexiano, alla riserva di mana di quel giocatore viene aggiunto un mana del colore di quel simbolo.
+@106.10
+Se un effetto dovesse aggiungere alla riserva di mana di un giocatore del mana rappresentato da un simbolo di mana generico, alla riserva di mana di quel giocatore viene aggiunta quella quantità di mana incolore.
+@106.11
+Se un effetto dovesse aggiungere alla riserva di mana di un giocatore del mana rappresentato da uno o più simboli di mana neve, alla riserva di mana di quel giocatore viene aggiunta quella quantità di mana incolore.
+@106.12
+«TAPpare [un permanente] per mana» significa attivare un'abilità di mana di quel permanente che include il simbolo {T} nel suo costo di attivazione. Vedi regola 605, «Abilità di mana».
+@106.12a
+Un'abilità che si innesca ogni volta che un permanente «viene TAPpato per mana», o viene TAPpato per mana di un tipo specificato, si innesca ogni volta che una tale abilità di mana si risolve e produce mana o il tipo di mana specificato.
+@106.12b
+Un effetto di sostituzione che si applica se un permanente «viene TAPpato per mana», o viene TAPpato per mana di un tipo e/o una quantità specifici, modifica l'evento di produzione di mana mentre quell'abilità si sta risolvendo e sta producendo mana o il tipo e/o la quantità di mana specificati.
+@106.13
+Una carta (Drain Power) fa perdere a un giocatore il mana non speso e fa aggiungere a un altro «il mana perso in questo modo». (Nota che potrebbe trattarsi dello stesso giocatore.) Questo svuota la riserva di mana del primo giocatore e mette il mana così svuotato nella riserva di mana del secondo. Restano invariati i permanenti, le magie e/o le abilità che hanno prodotto quel mana, così come eventuali restrizioni o effetti aggiuntivi associati a quel mana.
+@107
+Numeri e simboli
+@107.1
+Gli unici numeri usati nel gioco di Magic sono i numeri interi.
+@107.1a
+Non puoi scegliere un numero frazionario, infliggere danni frazionari, guadagnare punti vita frazionari e così via. Se una magia o abilità potesse generare un numero frazionario, la magia o abilità ti dice se arrotondare per eccesso o per difetto.
+@107.1b
+Nella maggior parte dei casi il gioco di Magic usa solo numeri positivi e lo zero. Non puoi scegliere un numero negativo, infliggere danni negativi, guadagnare punti vita negativi e così via. Tuttavia, è possibile che un valore di gioco, come la forza di una creatura, sia minore di zero. Se un calcolo o un confronto deve usare un valore negativo, lo usa. Se un calcolo che determinerebbe il risultato di un effetto dà un numero negativo, si usa invece zero, a meno che quell'effetto non raddoppi, triplichi o imposti a un valore specifico il totale di punti vita di un giocatore o la forza e/o la costituzione di una creatura o di una carta creatura.
+Esempio: Se una creatura 3/4 prende -5/-0, è una creatura -2/4. Non assegna danno in combattimento. La somma di forza e costituzione è 2. Darle +3/+0 porterebbe la sua forza a 1.
+Esempio: Viridian Joiner è una creatura 1/2 con l'abilità «{T}: Aggiungi una quantità di {G} pari alla forza di questa creatura». Un effetto le dà -2/-0, poi la sua abilità viene attivata. L'abilità non aggiunge mana alla tua riserva di mana.
+Esempio: Chameleon Colossus è una creatura 4/4 con l'abilità «{2}{G}{G}: Questa creatura prende +X/+X fino alla fine del turno, dove X è la sua forza». Un effetto le dà -6/-0, poi la sua abilità viene attivata. Resta una creatura -2/4. Non diventa -4/2.
+@107.1c
+Se una regola o un'abilità istruisce un giocatore a scegliere «un qualsiasi numero», quel giocatore può scegliere qualsiasi numero positivo oppure zero.
+@107.2
+Se qualcosa deve usare un numero che non può essere determinato, come risultato o in un calcolo, usa invece 0.
+@107.3
+Molti oggetti usano la lettera X per rappresentare un numero che deve essere determinato. Alcuni oggetti hanno abilità che definiscono il valore di X; gli altri lasciano scegliere il valore di X al loro controllore.
+@107.3a
+Se una magia o un'abilità attivata ha un costo di mana, un costo alternativo, un costo aggiuntivo e/o un costo di attivazione che contiene {X}, [-X] o X, e il valore di X non è definito dal testo di quella magia o abilità, il controllore di quella magia o abilità sceglie e annuncia il valore di X come parte del lancio della magia o dell'attivazione dell'abilità. (Vedi regola 601, «Lanciare magie».) Mentre una magia è in pila, qualsiasi X nel suo costo di mana o in un suo costo alternativo o aggiuntivo è uguale al valore annunciato. Mentre un'abilità attivata è in pila, qualsiasi X nel suo costo di attivazione è uguale al valore annunciato.
+@107.3b
+Se un giocatore sta lanciando una magia che ha {X} nel suo costo di mana, il valore di X non è definito dal testo di quella magia, e un effetto permette a quel giocatore di lanciarla senza pagare né il suo costo di mana né un costo alternativo che include X, allora l'unica scelta legale per X è 0. Questo non si applica agli effetti che si limitano a ridurre un costo, anche se lo riducono a zero. Vedi regola 601, «Lanciare magie».
+@107.3c
+Se una magia o un'abilità attivata ha {X}, [-X] o X nel suo costo e/o nel suo testo, e il valore di X è definito dal testo di quella magia o abilità, quello è il valore di X mentre quella magia o abilità è in pila. Il controllore di quella magia o abilità non può scegliere il valore. Nota che il valore di X può cambiare mentre quella magia o abilità è in pila.
+@107.3d
+Se un costo associato a un'azione speciale, come un costo di sospendere o un costo di metamorfosi, contiene {X} o X, il valore di X viene scelto dal giocatore che compie l'azione speciale immediatamente prima di pagare quel costo.
+@107.3e
+Se una magia o abilità fa riferimento a {X} o X nel costo di mana, nel costo alternativo, nel costo aggiuntivo o nel costo di attivazione di un altro oggetto, qualsiasi X nel testo di quella magia o abilità usa il valore di X usato dall'altro oggetto.
+@107.3f
+A volte X compare nel testo di una magia o abilità ma non in un costo di mana, alternativo, aggiuntivo o di attivazione. Se il valore di X non è definito, il controllore della magia o abilità sceglie il valore di X al momento opportuno (quando viene messa in pila oppure quando si risolve).
+@107.3g
+Se una carta in una zona diversa dalla pila ha {X} nel suo costo di mana, il valore di {X} è considerato 0, anche se il valore di X è definito da qualche parte nel suo testo.
+@107.3h
+Se un effetto istruisce un giocatore a pagare il costo di mana di un oggetto che include {X}, il valore di X è considerato 0 a meno che l'oggetto non sia una magia in pila. In quel caso, il valore di X è il valore scelto o determinato quando la magia è stata lanciata.
+@107.3i
+Normalmente, tutte le X presenti su un oggetto hanno lo stesso valore in un dato momento.
+@107.3j
+Se un oggetto ottiene un'abilità, il valore di X in quell'abilità è il valore definito da quell'abilità, oppure 0 se quell'abilità non definisce un valore di X. Questa è un'eccezione alla regola 107.3i. Può succedere con effetti che aggiungono abilità, effetti che cambiano il testo o effetti di copia.
+@107.3k
+Se un'abilità attivata di un oggetto ha {X}, [-X] o X nel suo costo di attivazione, il valore di X per quell'abilità è indipendente da qualsiasi altro valore di X scelto per quell'oggetto o per altre istanze di abilità di quell'oggetto. Questa è un'eccezione alla regola 107.3i.
+@107.3m
+Se un'abilità innescata o un effetto di sostituzione di entrata nel campo di battaglia di un oggetto fa riferimento a X, e la magia che è diventata quell'oggetto risolvendosi aveva un valore di X scelto per uno dei suoi costi, il valore di X per quell'abilità è lo stesso valore di X di quella magia, anche se il valore di X per quel permanente è 0. Questa è un'eccezione alla regola 107.3i.
+@107.3n
+Se un'abilità innescata ritardata creata da una magia o abilità che si risolve fa riferimento a X, X non è definito nel testo di quell'abilità innescata, e la magia o abilità che l'ha creata aveva un valore di X scelto per uno dei suoi costi, il valore di X per l'abilità innescata è lo stesso valore di X della magia o abilità che l'ha creata.
+@107.3p
+Alcuni oggetti usano la lettera Y oltre alla lettera X. Y segue le stesse regole di X.
+@107.4
+I simboli di mana sono {W}, {U}, {B}, {R}, {G} e {C}; i simboli numerici {0}, {1}, {2}, {3}, {4} e così via; il simbolo variabile {X}; i simboli ibridi {W/U}, {W/B}, {U/B}, {U/R}, {B/R}, {B/G}, {R/G}, {R/W}, {G/W} e {G/U}; i simboli ibridi monocolore {2/W}, {2/U}, {2/B}, {2/R}, {2/G}, {C/W}, {C/U}, {C/B}, {C/R} e {C/G}; i simboli di mana phyrexiano {W/P}, {U/P}, {B/P}, {R/P} e {G/P}; i simboli phyrexiani ibridi {W/U/P}, {W/B/P}, {U/B/P}, {U/R/P}, {B/R/P}, {B/G/P}, {R/G/P}, {R/W/P}, {G/W/P} e {G/U/P}; e il simbolo di mana neve {S}.
+@107.4a
+Ci sono cinque simboli di mana colorato principali: {W} è bianco, {U} blu, {B} nero, {R} rosso e {G} verde. Questi simboli sono usati per rappresentare mana colorato, e anche per rappresentare mana colorato nei costi. Il mana colorato nei costi può essere pagato solo con mana del colore appropriato. Vedi regola 202, «Costo di mana e colore».
+@107.4b
+I simboli numerici (come {1}) e i simboli variabili (come {X}) rappresentano mana generico nei costi. Il mana generico nei costi può essere pagato con qualsiasi tipo di mana. Per maggiori informazioni su {X}, vedi regola 107.3.
+@107.4c
+Il simbolo di mana incolore {C} è usato per rappresentare un mana incolore, e anche per rappresentare un costo che può essere pagato solo con un mana incolore.
+@107.4d
+Il simbolo {0} rappresenta zero mana ed è usato per indicare un costo che può essere pagato senza risorse. (Vedi regola 118.5.)
+@107.4e
+Un simbolo di mana ibrido è anche un simbolo di mana colorato, anche se una delle sue componenti è incolore. Ognuno rappresenta un costo che può essere pagato in uno di due modi, rappresentati dalle due metà del simbolo. Un simbolo ibrido come {W/U} può essere pagato con mana bianco o blu, e un simbolo ibrido monocolore come {2/B} può essere pagato con un mana nero oppure con due mana di qualsiasi tipo. Un simbolo di mana ibrido è di tutti i colori che lo compongono.
+Esempio: {G/W}{G/W} può essere pagato spendendo {G}{G}, {G}{W} o {W}{W}.
+@107.4f
+I simboli di mana phyrexiano sono simboli di mana colorato: {W/P} è bianco, {U/P} è blu, {B/P} è nero, {R/P} è rosso e {G/P} è verde. Un simbolo di mana phyrexiano rappresenta un costo che può essere pagato con un mana del suo colore oppure pagando 2 punti vita. Esistono anche dieci simboli di mana phyrexiano ibrido. Un simbolo di mana phyrexiano ibrido rappresenta un costo che può essere pagato con un mana di uno dei suoi colori oppure pagando 2 punti vita. Un simbolo di mana phyrexiano ibrido è di entrambi i suoi colori.
+Esempio: {W/P}{W/P} può essere pagato spendendo {W}{W}, spendendo {W} e pagando 2 punti vita, oppure pagando 4 punti vita.
+@107.4g
+Nel testo delle regole, il simbolo phyrexiano {H} senza sfondo colorato indica uno qualsiasi dei quindici simboli di mana phyrexiano.
+@107.4h
+Quando è usato in un costo, il simbolo di mana neve {S} rappresenta un costo che può essere pagato con un mana di qualsiasi tipo prodotto da una fonte neve (vedi regola 106.3). Gli effetti che riducono la quantità di mana generico che paghi non influiscono sui costi {S}. Il simbolo {S} può essere usato anche per indicare mana di qualsiasi tipo prodotto da una fonte neve e speso per pagare un costo. Neve non è né un colore né un tipo di mana.
+@107.5
+Il simbolo di TAP è {T}. Il simbolo di TAP in un costo di attivazione significa «TAPpa questo permanente». Un permanente già TAPpato non può essere TAPpato di nuovo per pagare il costo. Un'abilità attivata di una creatura con il simbolo di TAP nel suo costo di attivazione non può essere attivata a meno che la creatura non sia stata continuativamente sotto il controllo del suo controllore dall'inizio del suo turno più recente. Vedi regola 302.6.
+@107.6
+Il simbolo di STAP è {Q}. Il simbolo di STAP in un costo di attivazione significa «STAPpa questo permanente». Un permanente già STAPpato non può essere STAPpato di nuovo per pagare il costo. Un'abilità attivata di una creatura con il simbolo di STAP nel suo costo di attivazione non può essere attivata a meno che la creatura non sia stata continuativamente sotto il controllo del suo controllore dall'inizio del suo turno più recente. Vedi regola 302.6.
+@107.7
+Ogni abilità attivata di un planeswalker ha un simbolo di fedeltà nel suo costo. I simboli di fedeltà positivi puntano verso l'alto e mostrano un segno più seguito da un numero. I simboli di fedeltà negativi puntano verso il basso e mostrano un segno meno seguito da un numero o da una X. I simboli di fedeltà neutri non puntano in nessuna direzione e mostrano uno 0. [+N] significa «Metti N segnalini fedeltà su questo permanente», [-N] significa «Rimuovi N segnalini fedeltà da questo permanente» e [0] significa «Metti zero segnalini fedeltà su questo permanente». I simboli di fedeltà possono comparire anche in abilità che modificano i costi di fedeltà.
+@107.8
+Il riquadro di testo di una carta livellatore contiene due simboli di livello, ognuno dei quali è un'abilità chiave che rappresenta un'abilità statica. Il simbolo di livello include un intervallo di numeri, indicato qui come «N1-N2», oppure un singolo numero seguito da un segno più, indicato qui come «N3+». Tutte le abilità stampate nella stessa fascia del riquadro di testo di un simbolo di livello fanno parte della sua abilità statica. Lo stesso vale per il riquadro di forza/costituzione stampato in quella fascia, indicato qui come «[F/C]». Vedi regola 711, «Carte livellatore».
+@107.8a
+«{LEVEL N1-N2} [Abilità] [F/C]» significa «Finché questa creatura ha su di sé almeno N1 segnalini livello, ma non più di N2 segnalini livello, ha forza e costituzione base [F/C] e ha [abilità]».
+@107.8b
+«{LEVEL N3+} [Abilità] [F/C]» significa «Finché questa creatura ha su di sé N3 o più segnalini livello, ha forza e costituzione base [F/C] e ha [abilità]».
+@107.9
+Un'icona a forma di lapide compare a sinistra del nome di molte carte del blocco di Odyssey™ con abilità rilevanti nel cimitero di un giocatore. Lo scopo dell'icona è far risaltare quelle carte quando sono in un cimitero. Questa icona non ha alcun effetto sul gioco.
+@107.10
+Un'icona del tipo compare nell'angolo in alto a sinistra di ogni carta dell'espansione Future Sight™ stampata con la cornice alternativa «timeshifted». Se la carta ha un solo tipo di carta, questa icona indica quale: segni di artigli per creatura, una fiamma per stregoneria, un fulmine per istantaneo, un'alba per incantesimo, un calice per artefatto e una coppia di cime montuose per terra. Se la carta ha più tipi di carta, lo indica una croce bianca e nera. Questa icona non ha alcun effetto sul gioco.
+@107.11
+Il simbolo Planeswalker è {PW}. Compare su una faccia del dado planare usato nella variante amichevole Planechase. Ha cinque punte in alto e si restringe in una punta in basso. Vedi regola 901, «Planechase».
+@107.12
+Il simbolo del caos è {CHAOS}. Compare su una faccia del dado planare usato nella variante amichevole Planechase, e nelle abilità che fanno riferimento ai risultati del lancio del dado planare. Ha l'aspetto di un vortice. Vedi regola 901, «Planechase».
+@107.13
+Un indicatore di colore è un simbolo circolare che compare a sinistra della riga del tipo su alcune carte. Il colore del simbolo definisce il colore o i colori della carta. Vedi regola 202, «Costo di mana e colore».
+@107.14
+Il simbolo dell'energia è {E}. Rappresenta un segnalino energia. Per pagare {E}, un giocatore rimuove un segnalino energia da se stesso.
+@107.15
+Il riquadro di testo di una carta Saga contiene simboli di capitolo, ognuno dei quali è un'abilità chiave che rappresenta un'abilità innescata. Un simbolo di capitolo include un numero romano, indicato qui come «rN». Il testo stampato nella fascia del riquadro di testo a destra di un simbolo di capitolo è l'effetto dell'abilità innescata che rappresenta. Vedi regola 714, «Carte Saga».
+@107.15a
+«{rN}—[Effetto]» significa «Quando uno o più segnalini sapere vengono messi su questa Saga, se il numero di segnalini sapere su di essa era minore di N ed è diventato almeno N, [effetto]».
+@107.15b
+«{rN1}, {rN2}—[Effetto]» equivale a «{rN1}—[Effetto]» e «{rN2}—[Effetto]».
+@107.16
+Il riquadro di testo di una carta Classe contiene barre di livello della classe, ognuna delle quali è un'abilità chiave che rappresenta sia un'abilità attivata sia un'abilità statica. Una barra di livello della classe include il costo di attivazione della sua abilità attivata e un numero di livello. Tutte le abilità stampate nella stessa sezione del riquadro di testo della barra di livello fanno parte della sua abilità statica. Vedi regola 716, «Carte Classe».
+@107.16a
+«[Costo]: Livello N — [Abilità]» significa «[Costo]: Il livello di questa Classe diventa N. Attiva solo se questa Classe è di livello N-1 e solo come una stregoneria» e «Finché questa Classe è di livello N o superiore, ha [abilità]».
+@107.17
+Il simbolo del biglietto è {TK}. Rappresenta un segnalino biglietto.
+@107.17a
+Un simbolo del biglietto con un numero al suo interno rappresenta un costo in biglietti. Per pagare quel costo, un giocatore rimuove da se stesso quel numero di segnalini biglietto.
+@107.18
+Il simbolo dell'impronta di zampa è {P}. Questo simbolo è usato per indicare le modalità di alcune magie modali, e non rappresenta un costo, mana, segnalini o alcun tipo di risorsa persistente. Vedi regola 700.2i.
+@108
+Carte
+@108.1
+Usa il riferimento Oracle per stabilire il testo di una carta. Il testo Oracle di una carta si trova nel database di carte Gatherer su Gatherer.Wizards.com.
+@108.2
+Quando una regola o il testo di una carta fa riferimento a una «carta», si intende solo una carta di Magic o un oggetto rappresentato da una carta di Magic.
+@108.2a
+La maggior parte delle partite di Magic usa solo carte di Magic tradizionali, che misurano circa 6,3 cm per 8,8 cm. Le carte di Magic tradizionali sono incluse nei mazzi dei giocatori. Alcuni formati usano anche carte di Magic non tradizionali. Le carte di Magic non tradizionali non sono incluse nei mazzi dei giocatori. Possono essere usate in mazzi supplementari. Inoltre, possono essere di grande formato, avere un retro diverso, o entrambe le cose.
+@108.2b
+Le pedine non sono considerate carte: nemmeno un accessorio di gioco delle dimensioni di una carta che rappresenta una pedina è considerato una carta ai fini delle regole.
+@108.3
+Il proprietario di una carta in partita è il giocatore che ha iniziato la partita con quella carta nel suo mazzo. Se una carta viene portata in partita da fuori dalla partita invece di iniziare nel mazzo di un giocatore, il suo proprietario è il giocatore che l'ha portata in partita. Se una carta inizia la partita nella zona di comando, il suo proprietario è il giocatore che l'ha messa nella zona di comando all'inizio della partita. La proprietà legale di una carta in partita è irrilevante per le regole del gioco, tranne che per le regole della posta. (Vedi regola 407.)
+@108.3a
+In una partita Planechase che usa l'opzione del mazzo planare singolo, il controllore planare è considerato il proprietario di tutte le carte del mazzo planare. Vedi regola 901.6.
+@108.3b
+Alcune magie e abilità permettono a un giocatore di prendere carte che possiede da fuori dalla partita e portarle in partita. (Vedi regola 400.11b.) Se una carta fuori da quella partita è coinvolta in una partita di Magic, il suo proprietario è determinato come descritto nella regola 108.3. Se una carta fuori da quella partita è nel sideboard di una partita di Magic (vedi regola 100.4), il suo proprietario è considerato il giocatore che ha iniziato la partita con quella carta nel suo sideboard. In tutti gli altri casi, il proprietario di una carta fuori dalla partita è il suo proprietario legale.

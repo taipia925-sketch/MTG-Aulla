@@ -1,0 +1,154 @@
+@123.6b
+Quando un adesivo nome viene messo su un oggetto, il controllore di quell'oggetto sceglie in quale posizione del nome dell'oggetto aggiungere la parola dell'adesivo, poi annuncia il nuovo nome dell'oggetto. Quella parola può essere aggiunta all'inizio del nome dell'oggetto o dopo un qualsiasi numero delle altre parole che compongono attualmente il nome. Il nuovo nome può essere ulteriormente modificato da altri adesivi nome. Se quell'oggetto non ha un nome, il suo nome diventa la parola aggiunta dall'adesivo nome. Gli adesivi nome non modificano né rimuovono mai le altre parole di quel nome.
+Esempio: Mentre un giocatore mette un adesivo nome con stampata la parola «Dark» su una creatura chiamata Bear Cub, il controllore di quella creatura sceglie se il nuovo nome sarà «Dark Bear Cub», «Bear Dark Cub» o «Bear Cub Dark». Poi annuncia il nuovo nome a tutti i giocatori.
+@123.6c
+Il testo che un adesivo nome sta modificando può cambiare a causa di altri effetti e/o dello stato a faccia in giù di un permanente (vedi regola 708, «Magie e permanenti a faccia in giù»). Per determinare il nome di un oggetto con uno o più adesivi nome, si parte dai valori copiabili dell'oggetto, poi si applicano l'effetto di ogni adesivo nome e ogni altro effetto che cambia il testo in ordine cronologico. La posizione di ogni adesivo nome continua a essere dopo il numero di parole che lo precedevano nel nome dell'oggetto quando è stato applicato. Se il nome attuale dell'oggetto ha meno parole, la parola dell'adesivo viene aggiunta invece alla fine del nome. La posizione e l'ordine cronologico di ogni adesivo nome su un oggetto vengono ricordati quando l'oggetto su cui si trova l'adesivo si sposta da una zona pubblica a un'altra, e continuano ad applicarsi al nuovo oggetto che diventa in quella zona (vedi regola 123.5). Questa è un'eccezione alla regola 400.7.
+Esempio: Fae of Wishes, una carta avventuriero, è in esilio con un adesivo nome che aggiunge la parola «Mana» dopo la sua seconda parola, quindi il suo nome è «Fae of Mana Wishes». Un effetto permette a quel giocatore di lanciare Granted, la sua Avventura, dall'esilio. Il nome di quella magia in pila è «Granted Mana». Dopo che quella carta è stata esiliata mentre l'Avventura si risolve, la posizione dell'adesivo (dopo la seconda parola) viene ricordata, quindi il nome della carta esiliata è di nuovo «Fae of Mana Wishes».
+Esempio: Un giocatore possiede una creatura chiamata It That Betrays sul campo di battaglia. Con gli adesivi nome aggiunge la parola «Eldrazi» al suo nome dopo la terza parola, così il nuovo nome è «It That Betrays Eldrazi». In seguito, quella creatura diventa una copia di una creatura chiamata Seeker of the Way. L'adesivo nome continua ad applicarsi dopo la terza parola, quindi il nuovo nome è «Seeker of the Eldrazi Way».
+Esempio: Una creatura con un adesivo nome viene incantata da Witness Protection, un'Aura che cambia il nome della creatura in «Legitimate Businessperson». Poiché anche Witness Protection è un effetto che cambia il testo, e ha un ordine cronologico successivo rispetto all'adesivo nome, la parola dell'adesivo nome non fa parte del nome della creatura. Il suo nome è «Legitimate Businessperson».
+@123.6d
+Alcuni effetti fanno riferimento al numero di una o più lettere specifiche su un adesivo nome. Una lettera minuscola e la corrispondente maiuscola sono la stessa lettera.
+@123.6e
+Alcuni effetti fanno riferimento al numero di «vocali diverse» su un adesivo nome. Si conta il numero di vocali diverse che compaiono su quell'adesivo, anche se una o più compaiono più di una volta. Le vocali sono A, E, I, O, U e Y. Una lettera minuscola e la corrispondente maiuscola sono la stessa lettera.
+@123.7
+Un adesivo abilità è un adesivo su cui sono stampate una o più abilità. Un adesivo abilità su un permanente o su una carta in una zona diversa dal campo di battaglia fa ottenere a quell'oggetto l'abilità stampata sull'adesivo. Vedi regola 613.1f.
+@123.7a
+Se un effetto fa riferimento a un'abilità di un adesivo abilità, si riferisce all'abilità che quell'adesivo conferisce all'oggetto su cui si trova, anche se quell'oggetto attualmente non ha quell'abilità a causa di un altro effetto.
+@123.8
+Un adesivo forza e costituzione è un adesivo su cui sono stampati due numeri e una barra, come la forza e la costituzione di una carta creatura. Un adesivo forza e costituzione su una creatura, o su una carta creatura o Veicolo in una zona diversa dal campo di battaglia, imposta la forza e la costituzione di quell'oggetto ai valori stampati sull'adesivo (vedi regola 613.4b). Se su una creatura c'è più di un adesivo forza e costituzione, si usa l'ordine cronologico per stabilire quale ha la precedenza (vedi regola 613.7).
+@123.8a
+Un effetto che fa riferimento alla forza e/o alla costituzione di un adesivo si riferisce solo ai valori di forza e/o costituzione stampati su un adesivo forza e costituzione. Non si riferisce ad alcun valore stampato su altri adesivi.
+@123.9
+Un adesivo illustrazione su un permanente non ha alcun effetto sul gioco, se non quello di fare da indicatore che altre magie e abilità possono identificare.
+@#2
+Parti di una carta
+@200
+Generale
+@200.1
+Le parti di una carta sono nome, costo di mana, illustrazione, indicatore di colore, riga del tipo, simbolo dell'espansione, riquadro di testo, forza e costituzione, fedeltà, difesa, modificatore della mano, modificatore dei punti vita, credito dell'illustrazione, testo legale e numero da collezione. Alcune carte possono avere più di una di queste parti, o di tutte.
+@200.2
+Alcune parti di una carta sono anche caratteristiche dell'oggetto che le ha. Vedi regola 109.3.
+@200.3
+Alcuni oggetti che non sono carte (pedine, copie di carte e copie di magie) hanno alcune delle parti di una carta, ma solo quelle che sono anche caratteristiche. Vedi regola 111 e regola 707.
+@201
+Nome
+@201.1
+Il nome di una carta è stampato nel suo angolo in alto a sinistra.
+@201.2
+Il nome di una carta è sempre considerato la versione inglese del suo nome, indipendentemente dalla lingua di stampa.
+@201.2a
+Due o più oggetti hanno lo stesso nome se hanno almeno un nome in comune, anche se uno o più di quegli oggetti hanno nomi aggiuntivi. Un oggetto senza nome non ha lo stesso nome di nessun altro oggetto, compreso un altro oggetto senza nome.
+@201.2b
+Alcune magie e abilità fanno riferimento a due o più oggetti con nomi diversi. Quegli oggetti hanno nomi diversi solo se ciascuno di essi ha almeno un nome e nessuna coppia di oggetti di quel gruppo ha un nome in comune.
+Esempio: Un giocatore controlla Liliana's Contract, che dice, tra l'altro, «All'inizio del tuo mantenimento, se controlli quattro o più Demoni con nomi diversi, vinci la partita». Quel giocatore controlla tre Demoni con nomi diversi e una creatura a faccia in giù senza nome, con un effetto che la rende un Demone. Poiché tra le quattro creature ce n'è una senza nome, quelle quattro creature non contano come quattro Demoni con nomi diversi. L'abilità di Liliana's Contract non si innesca.
+@201.2c
+Alcune magie o abilità controllano se un oggetto ha un nome diverso da un secondo oggetto o da un gruppo di oggetti. Il primo oggetto ha un nome diverso da quegli oggetti se ha almeno un nome e non ha nomi in comune con nessuno degli altri oggetti, anche se uno o più degli altri oggetti non hanno nome. Se il primo oggetto non ha nome, non ha un nome diverso da nessuno degli altri oggetti, anche se quegli altri oggetti hanno un nome.
+@201.3
+Alcune carte con nomi inglesi diversi vengono trattate come se avessero lo stesso nome inglese. Le coppie di carte con questa proprietà hanno nomi intercambiabili.
+@201.3a
+Ai fini di tutte le regole, abilità ed effetti che fanno riferimento al nome di una carta, gli oggetti con nomi intercambiabili hanno lo stesso nome. (Vedi regole 201.2a–b.)
+@201.3b
+Ai fini della costruzione del mazzo e della legalità nei formati, le carte con nomi intercambiabili hanno lo stesso nome.
+@201.3c
+Se una carta ha ristampe successive con nomi intercambiabili, le ristampe successive avranno nell'angolo in basso a sinistra un indicatore di nomi intercambiabili che rimanda al codice di espansione di tre lettere e al numero da collezione della stampa originale (vedi regola 213.1d).
+@201.4
+Se un effetto istruisce un giocatore a scegliere un nome di carta, il giocatore deve scegliere il nome di una carta presente nel riferimento Oracle. (Vedi regola 108.1.) Un giocatore non può scegliere il nome di una pedina, a meno che non sia anche il nome di una carta.
+@201.4a
+Se a un giocatore viene detto di scegliere un nome di carta con determinate caratteristiche, il giocatore deve scegliere il nome di una carta il cui testo Oracle corrisponde a quelle caratteristiche. (Vedi regola 108.1.)
+Esempio: Dispossess dice, tra l'altro, «Scegli un nome di carta artefatto». Il giocatore può scegliere il nome di qualsiasi carta artefatto, anche una che non è legale nel formato della partita in corso. Il giocatore non può scegliere Isola, anche se un'Isola sul campo di battaglia è stata trasformata in artefatto da qualche effetto.
+@201.4b
+Se un giocatore vuole scegliere il nome di una carta divisa, deve scegliere il nome di una delle sue metà, ma non di entrambe. (Vedi regola 709.) Se a un giocatore viene detto di scegliere un nome di carta con determinate caratteristiche, per stabilire se quel nome può essere scelto si usano solo le caratteristiche di quella metà.
+@201.4c
+Se un giocatore vuole scegliere il nome alternativo di una carta capovolgibile, può farlo. (Vedi regola 710.) Se a un giocatore viene detto di scegliere un nome di carta con determinate caratteristiche, per stabilire se quel nome può essere scelto si usano le caratteristiche della carta modificate dalle sue caratteristiche alternative.
+@201.4d
+Se un giocatore vuole scegliere il nome della faccia posteriore di una carta bifronte, può farlo. (Vedi regola 712.) Se a un giocatore viene detto di scegliere un nome di carta con determinate caratteristiche, per stabilire se quel nome può essere scelto si usano solo le caratteristiche della faccia posteriore.
+@201.4e
+Se un giocatore vuole scegliere il nome della faccia posteriore combinata di una coppia da fondere, può farlo. (Vedi regola 713.) Se a un giocatore viene detto di scegliere un nome di carta con determinate caratteristiche, per stabilire se quel nome può essere scelto si usano solo le caratteristiche della faccia posteriore combinata.
+@201.4f
+Se un giocatore vuole scegliere il nome alternativo di una carta avventuriero, può farlo. (Vedi regola 715.) Se a un giocatore viene detto di scegliere un nome di carta con determinate caratteristiche, per stabilire se quel nome può essere scelto si usano le caratteristiche della carta modificate dalle sue caratteristiche alternative.
+@201.4g
+Alcune carte hanno nomi intercambiabili (vedi regola 201.3). A tutti i fini di gioco, queste carte hanno lo stesso nome. Se un giocatore sceglie il nome di una carta che ha nomi intercambiabili, è stato scelto il nome di ciascuna di quelle carte.
+@201.5
+Il testo che fa riferimento per nome all'oggetto su cui si trova indica solo quel particolare oggetto e non altri oggetti con quel nome, indipendentemente da eventuali cambi di nome causati da effetti di gioco.
+@201.5a
+Se l'effetto di un'abilità conferisce un'altra abilità a un oggetto, e quella seconda abilità fa riferimento per nome alla fonte della prima abilità, il nome si riferisce solo all'oggetto specifico che è la fonte della prima abilità. La seconda abilità non fa riferimento ad altri oggetti con lo stesso nome della fonte della prima abilità. Tuttavia, se la seconda abilità ha anche spostato la fonte della prima abilità in un'altra zona pubblica, il nome si riferisce all'oggetto che la fonte è diventata nella nuova zona. Questo vale anche se la seconda abilità viene copiata su un nuovo oggetto.
+Esempio: Gutter Grime ha un'abilità che dice «Ogni volta che una creatura non pedina che controlli muore, metti un segnalino melma su questo incantesimo, poi crea una pedina creatura Melma verde con "La forza e la costituzione di questa pedina sono ciascuna pari al numero di segnalini melma su Gutter Grime"». L'abilità conferita alla pedina guarda solo il Gutter Grime che ha creato la pedina, non altri Gutter Grime sul campo di battaglia. Anche una copia di quella pedina avrebbe un'abilità che fa riferimento solo al Gutter Grime che ha creato la pedina originale.
+@201.5b
+Se un'abilità di un oggetto fa riferimento a quell'oggetto per nome, e un oggetto con un nome diverso ottiene quell'abilità, ogni occorrenza del primo nome nell'abilità ottenuta che si riferisce per nome al primo oggetto va trattata come il secondo nome.
+Esempio: Quicksilver Elemental dice, tra l'altro, «{U}: Questa creatura ottiene tutte le abilità attivate di una creatura bersaglio fino alla fine del turno». Se ottiene un'abilità che dice «{B}{B}: Rigenera Skithiryx», attivare quell'abilità rigenera Quicksilver Elemental, non Skithiryx, the Blight Dragon da cui ha ottenuto l'abilità.
+Esempio: Glacial Ray è un istantaneo con innestare su Arcano che dice «Glacial Ray infligge 2 danni a un qualsiasi bersaglio». Se viene innestato su un Kodama's Reach, quel Kodama's Reach infligge 2 danni al bersaglio.
+Esempio: The Ever-Changing 'Dane dice «{1}, Sacrifica un'altra creatura: The Ever-Changing 'Dane diventa una copia della creatura sacrificata, tranne per il fatto che ha questa abilità». La sua abilità viene attivata sacrificando un Runeclaw Bear. The Ever-Changing 'Dane diventa una copia di Runeclaw Bear e ottiene un'abilità che va trattata come se dicesse «{1}, Sacrifica un'altra creatura: Runeclaw Bear diventa una copia della creatura sacrificata, tranne per il fatto che ha questa abilità».
+@201.5c
+Il testo stampato su alcune carte fa riferimento a quella carta con una versione abbreviata del suo nome. Le occorrenze del nome abbreviato di una carta usate in questo modo vengono trattate come se usassero il nome completo della carta.
+@201.6
+Le versioni promozionali o con illustrazione alternativa di alcune carte hanno una seconda barra del titolo sotto la riga del nome. Il nome della carta così come compare nel riferimento Oracle è riportato nella seconda barra del titolo, mentre un nome alternativo compare nell'angolo in alto a sinistra. Ai fini della costruzione del mazzo, delle regole di gioco e degli effetti, queste carte hanno solo il nome di carta indicato nella seconda barra del titolo. Il testo delle regole può anche fare riferimento al nome alternativo di una carta; le occorrenze del nome alternativo presenti nel testo delle regole si riferiscono al nome indicato nella seconda barra del titolo. Il nome alternativo non ha alcun effetto sul gioco.
+@202
+Costo di mana e colore
+@202.1
+Il costo di mana di una carta è indicato dai simboli di mana vicino alla parte superiore della carta. (Vedi regola 107.4.) Sulla maggior parte delle carte questi simboli sono stampati nell'angolo in alto a destra. Alcune carte dell'espansione Future Sight hanno cornici alternative in cui i simboli di mana compaiono a sinistra dell'illustrazione.
+@202.1a
+Il costo di mana di un oggetto rappresenta ciò che un giocatore deve spendere dalla sua riserva di mana per lanciare quella carta. A meno che il costo di mana di un oggetto non includa simboli di mana phyrexiano (vedi regola 107.4f), pagare quel costo di mana richiede di rispettare il tipo di eventuali simboli di mana colorato o incolore oltre a pagare il mana generico indicato nel costo.
+@202.1b
+Alcuni oggetti non hanno costo di mana. Normalmente tra questi ci sono tutte le carte terra, tutte le altre carte che non hanno simboli di mana dove comparirebbe il costo di mana, le pedine (a meno che l'effetto che le crea non specifichi altrimenti) e le carte di Magic non tradizionali. Non avere costo di mana rappresenta un costo impagabile (vedi regola 118.6). Nota che le terre vengono giocate senza pagare alcun costo (vedi regola 305, «Terre»).
+@202.2
+Un oggetto è del colore o dei colori dei simboli di mana nel suo costo di mana, indipendentemente dal colore della sua cornice.
+@202.2a
+I cinque colori sono bianco, blu, nero, rosso e verde. Il simbolo di mana bianco è rappresentato da {W}, il blu da {U}, il nero da {B}, il rosso da {R} e il verde da {G}.
+Esempio: Un oggetto con costo di mana {2}{W} è bianco, un oggetto con costo di mana {2} è incolore, e uno con costo di mana {2}{W}{B} è sia bianco sia nero.
+@202.2b
+Gli oggetti senza simboli di mana colorato nel loro costo di mana sono incolori.
+@202.2c
+Un oggetto con due o più simboli di mana di colori diversi nel suo costo di mana è di ciascuno dei colori di quei simboli. La maggior parte delle carte multicolori è stampata con una cornice dorata, ma questo non è un requisito perché una carta sia multicolore.
+@202.2d
+Un oggetto con uno o più simboli di mana ibrido e/o simboli di mana phyrexiano nel suo costo di mana è di tutti i colori di quei simboli, oltre agli eventuali altri colori dell'oggetto. (La maggior parte delle carte con simboli di mana ibrido nel costo di mana è stampata con una cornice bicolore. Vedi regola 107.4e.)
+@202.2e
+Un oggetto può avere un indicatore di colore stampato a sinistra della riga del tipo. Quell'oggetto è di ciascun colore indicato da quell'indicatore di colore. (Vedi regola 204.)
+@202.2f
+Gli effetti possono cambiare il colore di un oggetto, dare un colore a un oggetto incolore o rendere incolore un oggetto colorato; vedi regola 105.3.
+@202.3
+Il valore di mana di un oggetto è un numero pari alla quantità totale di mana nel suo costo di mana, indipendentemente dal colore.
+Esempio: Un costo di mana di {3}{U}{U} corrisponde a un valore di mana di 5.
+@202.3a
+Il valore di mana di un oggetto senza costo di mana è 0, a meno che quell'oggetto non sia la faccia posteriore di un permanente o di una magia bifronte non modale, oppure un permanente fuso.
+@202.3b
+Il valore di mana della faccia posteriore di un permanente o di una magia bifronte non modale viene calcolato come se avesse il costo di mana della sua faccia anteriore. Se un permanente o una magia è una copia della faccia posteriore di un oggetto bifronte non modale (anche se la carta che rappresenta quella copia è a sua volta una carta bifronte), il valore di mana della copia è 0.
+Esempio: Huntmaster of the Fells è una carta bifronte non modale con costo di mana {2}{R}{G}. Il suo valore di mana è 4. Dopo che si è trasformata nell'altra faccia (Ravager of the Fells), il suo valore di mana resta 4.
+Esempio: Un Clone entra nel campo di battaglia come copia di Ravager of the Fells. Il suo valore di mana è 0.
+Esempio: Insectile Aberration è la faccia posteriore di una carta bifronte non modale la cui faccia anteriore ha costo di mana {U}. Diventa una copia di Ravager of the Fells. Il suo valore di mana diventa 0.
+@202.3c
+Il valore di mana di un permanente fuso viene calcolato come se avesse il costo di mana combinato delle facce anteriori di ciascuna carta che lo rappresenta. Se un permanente è una copia di un permanente fuso (anche se quella copia è rappresentata da altre due carte da fondere), il valore di mana della copia è 0.
+@202.3d
+Il valore di mana di una carta divisa che non è in pila, o di una magia divisa fusa in pila, è determinato dai costi di mana combinati delle sue metà. Altrimenti, mentre una carta divisa è in pila, il valore di mana della magia è determinato dal costo di mana della metà scelta per il lancio. Vedi regola 709, «Carte divise».
+@202.3e
+Nel calcolare il valore di mana di un oggetto con {X} nel costo di mana, X è considerato 0 mentre l'oggetto non è in pila, ed è considerato il numero scelto per esso mentre l'oggetto è in pila.
+@202.3f
+Nel calcolare il valore di mana di un oggetto con un simbolo di mana ibrido nel costo di mana, si usa la componente maggiore di ogni simbolo ibrido.
+Esempio: Il valore di mana di una carta con costo di mana {1}{W/U}{W/U} è 3.
+Esempio: Il valore di mana di una carta con costo di mana {2/B}{2/B}{2/B} è 6.
+@202.3g
+Ogni simbolo di mana phyrexiano nel costo di mana di una carta contribuisce con 1 al suo valore di mana.
+Esempio: Il valore di mana di una carta con costo di mana {1}{W/P}{W/P} è 3.
+@202.4
+Qualsiasi costo aggiuntivo indicato nel testo delle regole di un oggetto o imposto da un effetto non fa parte del costo di mana. (Vedi regola 601, «Lanciare magie».) Questi costi vengono pagati nello stesso momento degli altri costi della magia.
+@203
+Illustrazione
+@203.1
+L'illustrazione è stampata nella metà superiore di una carta e non ha alcun effetto sul gioco. Per esempio, una creatura non ha l'abilità volare a meno che non sia indicato nel suo testo delle regole, anche se è raffigurata mentre vola.
+@204
+Indicatore di colore
+@204.1
+L'indicatore di colore è stampato a sinistra della riga del tipo, subito sotto l'illustrazione. Consiste in un simbolo circolare riempito con uno o più colori. Un indicatore di colore si trova di solito su carte non terra senza costo di mana.
+@204.2
+Un oggetto con un indicatore di colore è di ciascun colore indicato da quell'indicatore di colore.
+@205
+Riga del tipo
+@205.1
+La riga del tipo è stampata subito sotto l'illustrazione. Contiene il tipo o i tipi di carta. Contiene anche il sottotipo o i sottotipi e il supertipo o i supertipi della carta, se presenti.
+@205.1a
+Alcuni effetti impostano il tipo di carta di un oggetto. Nella maggior parte di questi casi, il nuovo tipo o i nuovi tipi di carta sostituiscono tutti i tipi di carta esistenti. Tuttavia, un oggetto con il tipo di carta istantaneo o stregoneria mantiene quel tipo. I segnalini, gli adesivi, gli effetti e il danno segnato sull'oggetto restano su di esso, anche se non hanno significato per il nuovo tipo di carta. Allo stesso modo, quando un effetto imposta uno o più sottotipi di un oggetto, il nuovo sottotipo o i nuovi sottotipi sostituiscono tutti i sottotipi esistenti dell'insieme appropriato (tipi di creatura, tipi di terra, tipi di artefatto, tipi di incantesimo, tipi di planeswalker o tipi di magia). Se il tipo di carta di un oggetto viene rimosso, i sottotipi collegati a quel tipo di carta restano se sono anche sottotipi di un tipo di carta che l'oggetto ha attualmente; altrimenti vengono rimossi anch'essi per tutto il tempo in cui il tipo di carta dell'oggetto è rimosso. Rimuovere un sottotipo di un oggetto non influisce in alcun modo sui suoi tipi di carta.
+@205.1b
+Alcuni effetti cambiano il tipo di carta, il supertipo o il sottotipo di un oggetto ma specificano che l'oggetto mantiene un tipo di carta, supertipo o sottotipo precedente. In questi casi, tutti i tipi di carta, supertipi e sottotipi precedenti dell'oggetto vengono mantenuti. Questa regola si applica agli effetti che usano espressioni come «in aggiunta ai suoi altri tipi» o che affermano che qualcosa «è ancora un/una [tipo, supertipo o sottotipo]». Alcuni effetti dicono che un oggetto diventa una «creatura artefatto»; anche questi effetti permettono all'oggetto di mantenere tutti i suoi tipi di carta e sottotipi precedenti. Alcuni effetti dicono che un oggetto diventa una «creatura artefatto [tipo o tipi di creatura]»; anche questi effetti permettono all'oggetto di mantenere tutti i suoi tipi di carta e sottotipi precedenti diversi dai tipi di creatura, ma sostituiscono tutti i tipi di creatura esistenti.
+Esempio: Un'abilità dice «Tutte le terre sono creature 1/1 che sono ancora terre». Le terre interessate ora hanno due tipi di carta: creatura e terra. Se c'erano terre che erano anche artefatti prima che si applicasse l'effetto dell'abilità, quelle terre diventerebbero «creature terra artefatto», non semplicemente «creature» o «creature terra». L'effetto permette loro di mantenere sia il tipo di carta artefatto sia il tipo di carta terra. Inoltre, ogni terra interessata dall'abilità mantiene tutti i tipi di terra e i supertipi che aveva prima che l'abilità avesse effetto.
+Esempio: Un'abilità dice «Tutti gli artefatti sono creature artefatto 1/1». Se un permanente è sia un artefatto sia un incantesimo, diventerà una creatura incantesimo artefatto.
+@205.2
+Tipi di carta

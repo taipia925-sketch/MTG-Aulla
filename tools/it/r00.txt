@@ -1,0 +1,234 @@
+@#1
+Concetti di gioco
+@100
+Generale
+@100.1
+Queste regole di Magic si applicano a qualsiasi partita di Magic con due o più giocatori, comprese le partite a due giocatori e le partite multigiocatore.
+@100.1a
+Una partita a due giocatori è una partita che inizia con solo due giocatori.
+@100.1b
+Una partita multigiocatore è una partita che inizia con più di due giocatori. Vedi la sezione 8, «Regole multigiocatore».
+@100.2
+Per giocare, ogni giocatore ha bisogno del proprio mazzo di carte di Magic tradizionali, di piccoli oggetti per rappresentare pedine e segnalini e di un modo per tenere chiaramente il conto dei punti vita.
+@100.2a
+Nel gioco costruito (un modo di giocare in cui ogni giocatore crea il proprio mazzo in anticipo), ogni mazzo ha una dimensione minima di 60 carte. Un mazzo costruito può contenere un numero qualsiasi di carte terra base e non più di quattro copie di una carta con un determinato nome inglese, escluse le carte terra base. Ai fini della costruzione del mazzo, le carte con nomi intercambiabili hanno lo stesso nome inglese (vedi regola 201.3).
+@100.2b
+Nel gioco limitato (un modo di giocare in cui ogni giocatore riceve la stessa quantità di prodotto Magic sigillato, come le buste, e crea il proprio mazzo usando solo questo prodotto e carte terra base), ogni mazzo ha una dimensione minima di 40 carte. Un mazzo limitato può contenere tante copie di una carta quante ne sono incluse nel prodotto.
+@100.2c
+I mazzi Commander sono soggetti a ulteriori restrizioni e requisiti di costruzione. Vedi la regola 903, «Commander», per i dettagli.
+@100.2d
+Alcuni formati e varianti amichevoli permettono ai giocatori di usare un mazzo supplementare di carte di Magic non tradizionali (vedi regola 108.2a). Questi mazzi supplementari hanno proprie regole di costruzione. Vedi la regola 717, «Carte Attrazione»; la regola 901, «Planechase»; e la regola 904, «Archenemy».
+@100.3
+Alcune carte richiedono monete o dadi tradizionali. Alcune varianti amichevoli richiedono oggetti aggiuntivi, come carte designate in modo speciale, carte di Magic non tradizionali e dadi speciali.
+@100.4
+Ogni giocatore può avere anche un sideboard, cioè un gruppo di carte aggiuntive che il giocatore può usare per modificare il proprio mazzo tra una partita e l'altra di un incontro. Le regole e le restrizioni sul sideboard di alcuni formati sono modificate dalle Magic: The Gathering Tournament Rules (disponibili su WPN.Wizards.com/en/rules-documents).
+@100.4a
+Nel gioco costruito, un sideboard può contenere al massimo quindici carte. Il limite di quattro copie (vedi regola 100.2a) si applica al mazzo e al sideboard considerati insieme.
+@100.4b
+Nel gioco limitato tra giocatori singoli, tutte le carte del pool di un giocatore non incluse nel suo mazzo sono nel sideboard di quel giocatore.
+@100.4c
+Nel gioco limitato con la variante multigiocatore Gigante a Due Teste, tutte le carte del pool di una squadra che non sono nel mazzo di nessuno dei due giocatori sono nel sideboard di quella squadra.
+@100.4d
+Nel gioco limitato con altre varianti multigiocatore a squadre, ogni carta del pool di una squadra che non è nel mazzo di nessun giocatore viene assegnata al sideboard di uno di quei giocatori. Ogni giocatore ha il proprio sideboard; le carte non possono essere trasferite tra giocatori.
+@100.5
+Se un mazzo deve contenere almeno un certo numero di carte, quel numero è detto dimensione minima del mazzo. Non esiste una dimensione massima per i mazzi non Commander.
+@100.6
+La maggior parte dei tornei di Magic (attività di gioco organizzato in cui i giocatori competono contro altri giocatori per vincere premi) ha regole aggiuntive contenute nelle Magic: The Gathering Tournament Rules (disponibili su WPN.Wizards.com/en/rules-documents). Queste regole possono limitare l'uso di alcune carte, fino a vietare tutte le carte di alcune espansioni più vecchie.
+@100.6a
+I tornei di solito consistono in una serie di incontri. Un incontro a due giocatori di solito prevede di giocare finché un giocatore non ha vinto due partite. Un incontro multigiocatore di solito consiste in una sola partita.
+@100.6b
+I giocatori possono usare il Magic Store & Event Locator su Locator.Wizards.com per trovare tornei nella loro zona.
+@100.7
+Alcune carte sono pensate per il gioco amichevole e possono avere caratteristiche e testi non coperti da queste regole. Tra queste ci sono le carte playtest di Mystery Booster, le carte promozionali e le carte delle «Un-set» stampate con il bordo argentato, e le carte dell'espansione Unfinity™ che hanno il simbolo di una ghianda in fondo alla carta.
+@101
+Le regole d'oro di Magic
+@101.1
+Ogni volta che il testo di una carta contraddice direttamente queste regole, la carta ha la precedenza. La carta prevale solo sulla regola che si applica a quella specifica situazione. L'unica eccezione è che un giocatore può concedere la partita in qualsiasi momento (vedi regola 104.3a).
+@101.2
+Quando una regola o un effetto permette o prescrive che qualcosa accada e un altro effetto stabilisce che non può accadere, l'effetto «non può» ha la precedenza.
+Esempio: Se un effetto dice «Puoi giocare una terra aggiuntiva in questo turno» e un altro dice «Non puoi giocare terre in questo turno», vince l'effetto che ti impedisce di giocare terre.
+@101.2a
+Aggiungere abilità agli oggetti e rimuovere abilità dagli oggetti non rientra in questa regola. (Vedi regola 113.10.)
+@101.3
+Qualsiasi parte di un'istruzione impossibile da eseguire viene ignorata. (In molti casi la carta specifica le conseguenze; se non lo fa, non c'è alcun effetto.)
+@101.4
+Se più giocatori dovessero fare scelte e/o compiere azioni nello stesso momento, il giocatore attivo (il giocatore di cui è il turno) fa tutte le scelte richieste, poi il giocatore successivo nell'ordine di turno (di solito quello seduto alla sinistra del giocatore attivo) fa le scelte richieste, seguito dagli altri giocatori non attivi nell'ordine di turno. Poi le azioni avvengono simultaneamente. Questa regola è spesso chiamata regola dell'«ordine Giocatore Attivo, Giocatore Non Attivo (APNAP)».
+Esempio: Una carta dice «Ogni giocatore sacrifica una creatura». Prima il giocatore attivo sceglie una creatura che controlla. Poi ciascuno dei giocatori non attivi, nell'ordine di turno, sceglie una creatura che controlla. Poi tutte le creature scelte in questo modo vengono sacrificate simultaneamente.
+@101.4a
+Se un effetto fa scegliere a ogni giocatore una carta in una zona nascosta, come la sua mano o il suo grimorio, quelle carte possono restare a faccia in giù mentre vengono scelte. Tuttavia, ogni giocatore deve indicare chiaramente quale carta a faccia in giù sta scegliendo.
+@101.4b
+Quando fa la propria scelta, un giocatore conosce le scelte fatte dai giocatori precedenti, salvo quanto specificato nella regola 101.4a.
+@101.4c
+Se un giocatore dovesse fare più di una scelta nello stesso momento, le fa nell'ordine specificato. Se non è specificato alcun ordine, il giocatore sceglie l'ordine.
+@101.4d
+Se una scelta fatta da un giocatore non attivo obbliga il giocatore attivo, o un altro giocatore non attivo che lo precede nell'ordine di turno, a fare una scelta, l'ordine APNAP ricomincia per tutte le scelte ancora da fare.
+@101.4e
+Se più giocatori dovessero fare scelte o compiere azioni durante l'inizio della partita, il giocatore iniziale è considerato il giocatore attivo e ogni altro giocatore è considerato un giocatore non attivo.
+@102
+Giocatori
+@102.1
+Un giocatore è una delle persone che partecipano alla partita. Il giocatore attivo è il giocatore di cui è il turno. Gli altri giocatori sono giocatori non attivi.
+@102.2
+In una partita a due giocatori, l'avversario di un giocatore è l'altro giocatore.
+@102.3
+In una partita multigiocatore tra squadre, i compagni di squadra di un giocatore sono gli altri giocatori della sua squadra, e gli avversari del giocatore sono tutti i giocatori che non fanno parte della sua squadra.
+@102.4
+Una magia o abilità può usare l'espressione «la tua squadra» come abbreviazione di «tu e/o i tuoi compagni di squadra». In una partita che non è una partita multigiocatore tra squadre, «la tua squadra» significa la stessa cosa di «tu».
+@103
+Iniziare la partita
+@103.1
+All'inizio di una partita, i giocatori stabiliscono chi di loro sceglierà chi gioca il primo turno. Nella prima partita di un incontro (compreso un incontro di una sola partita), i giocatori possono usare qualsiasi metodo su cui siano d'accordo (lanciare una moneta, tirare dei dadi, ecc.). In un incontro di più partite, il perdente della partita precedente sceglie chi gioca il primo turno. Se la partita precedente è finita in parità, sceglie il giocatore che aveva fatto la scelta in quella partita. Il giocatore scelto per giocare il primo turno è il giocatore iniziale. L'ordine di turno predefinito della partita inizia dal giocatore iniziale e procede in senso orario.
+@103.1a
+In una partita che usa l'opzione dei turni di squadra condivisi, c'è una squadra iniziale invece di un giocatore iniziale.
+@103.1b
+In una partita Archenemy, questi metodi non vengono usati per stabilire chi gioca il primo turno. È invece l'archenemy a giocare il primo turno.
+@103.1c
+Una carta (Power Play) stabilisce che il suo controllore è il giocatore iniziale. Questo effetto si applica dopo che la scelta è stata fatta e prevale su questi metodi.
+@103.2
+Alcune partite richiedono passaggi aggiuntivi da compiere dopo aver stabilito il giocatore iniziale. Esegui in ordine le azioni elencate nelle regole 103.2a–e, se applicabili.
+@103.2a
+Se dei giocatori usano un sideboard (vedi regola 100.4) o carte rappresentate da carte sostitutive (vedi regola 713), quelle carte vengono messe da parte. Fatto questo, il mazzo di ogni giocatore è considerato il suo mazzo iniziale.
+@103.2b
+Se un giocatore vuole rivelare una carta con un'abilità compagno che possiede da fuori dalla partita, può farlo. Un giocatore può rivelare al massimo una carta in questo modo, e solo se il suo mazzo soddisfa la condizione dell'abilità compagno di quella carta. La carta rivelata resta fuori dalla partita. (Vedi regola 702.139, «Compagno».)
+@103.2c
+In una partita Commander, ogni giocatore mette il proprio comandante dal mazzo a faccia in su nella zona di comando. Vedi regola 903.6.
+@103.2d
+In una partita costruito, ogni giocatore che gioca con fogli di adesivi rivela tutti i suoi fogli di adesivi e ne sceglie tre a caso. In una partita limitato, ogni giocatore sceglie fino a tre fogli di adesivi tra quelli presenti nel prodotto sigillato che ha aperto e li rivela. In entrambi i casi, durante la partita quel giocatore ha accesso solo agli adesivi dei fogli scelti, e quei fogli restano rivelati. (Vedi regola 123, «Adesivi».)
+@103.2e
+In una partita Conspiracy Draft, ogni giocatore mette un qualsiasi numero di carte cospirazione dal proprio sideboard nella zona di comando. Vedi regola 905.4.
+@103.3
+Dopo aver stabilito il giocatore iniziale ed eseguito gli eventuali passaggi aggiuntivi, ogni giocatore mescola il proprio mazzo in modo che le carte siano in ordine casuale. Ogni giocatore può poi mescolare o tagliare i mazzi dei suoi avversari. I mazzi dei giocatori diventano i loro grimori.
+@103.3a
+In una partita che usa uno o più mazzi supplementari di carte non tradizionali (vedi regola 100.2d), il proprietario di ogni mazzo supplementare lo mescola in modo che le carte siano in ordine casuale. Ogni giocatore può poi mescolare o tagliare i mazzi supplementari dei suoi avversari.
+@103.4
+Ogni giocatore inizia la partita con un totale di punti vita iniziale di 20. Alcune varianti hanno totali di punti vita iniziali diversi.
+@103.4a
+In una partita Gigante a Due Teste, il totale di punti vita iniziale di ogni squadra è 30.
+@103.4b
+In una partita Vanguard, il totale di punti vita iniziale di ogni giocatore è 20 più o meno il modificatore di punti vita della sua carta vanguard.
+@103.4c
+In una partita Commander, il totale di punti vita iniziale di ogni giocatore è 40.
+@103.4d
+In una partita Brawl a due giocatori, il totale di punti vita iniziale di ogni giocatore è 25. In una partita Brawl multigiocatore, il totale di punti vita iniziale di ogni giocatore è 30.
+@103.4e
+In una partita Archenemy, il totale di punti vita iniziale dell'archenemy è 40.
+@103.5
+Ogni giocatore pesca un numero di carte pari alla propria dimensione della mano iniziale, che normalmente è sette. (Alcuni effetti possono modificare la dimensione della mano iniziale di un giocatore.) Un giocatore insoddisfatto della propria mano iniziale può fare mulligan. Prima il giocatore iniziale dichiara se farà mulligan. Poi ogni altro giocatore, nell'ordine di turno, fa lo stesso. Una volta che ogni giocatore ha fatto la propria dichiarazione, tutti i giocatori che hanno deciso di fare mulligan lo fanno contemporaneamente. Per fare mulligan, un giocatore rimescola nel grimorio le carte che ha in mano, pesca una nuova mano di carte pari alla propria dimensione della mano iniziale, poi mette in fondo al grimorio, in qualsiasi ordine, un numero di quelle carte pari al numero di mulligan fatti finora. Quando un giocatore sceglie di non fare mulligan, le carte rimaste diventano la sua mano di apertura, e quel giocatore non può fare altri mulligan. Questo procedimento si ripete finché nessun giocatore fa mulligan. Un giocatore può fare mulligan finché la sua mano di apertura non sarebbe di zero carte; dopo di che non può fare altri mulligan.
+@103.5a
+In una partita Vanguard, la dimensione della mano iniziale di ogni giocatore è sette più o meno il modificatore della mano della sua carta vanguard.
+@103.5b
+Se un effetto permette a un giocatore di compiere un'azione «in qualsiasi momento in cui [quel giocatore] potrebbe fare mulligan», il giocatore può compiere quell'azione in un momento in cui dichiarerebbe se fare mulligan. Non deve per forza essere il primo giro di mulligan. Altri giocatori potrebbero aver già fatto le loro dichiarazioni di mulligan quando il giocatore ha la possibilità di compiere questa azione. Se il giocatore compie l'azione, poi dichiara se farà mulligan.
+@103.5c
+In una partita multigiocatore e in qualsiasi partita Brawl, il primo mulligan fatto da un giocatore non conta per il numero di carte che quel giocatore metterà in fondo al grimorio né per il numero di mulligan che può fare. I mulligan successivi contano normalmente.
+@103.5d
+In una partita multigiocatore che usa l'opzione dei turni di squadra condivisi, prima ogni giocatore della squadra iniziale dichiara se farà mulligan, poi i giocatori di ogni altra squadra, nell'ordine di turno, fanno lo stesso. I compagni di squadra possono consultarsi mentre decidono. Poi tutti i mulligan vengono fatti contemporaneamente. Un giocatore può fare mulligan anche dopo che un compagno di squadra ha deciso di tenere la propria mano di apertura.
+@103.6
+Alcune carte permettono a un giocatore di compiere azioni con esse dalla sua mano di apertura. Una volta completato il procedimento di mulligan (vedi regola 103.5), il giocatore iniziale può compiere tali azioni in qualsiasi ordine. Poi ogni altro giocatore, nell'ordine di turno, può fare lo stesso.
+@103.6a
+Se una carta permette a un giocatore di iniziare la partita con quella carta sul campo di battaglia, il giocatore che compie questa azione mette quella carta sul campo di battaglia.
+@103.6b
+Se una carta permette a un giocatore di rivelarla dalla sua mano di apertura, il giocatore che compie questa azione la rivela. La carta resta rivelata finché non inizia il primo turno. Ogni carta può essere rivelata in questo modo una sola volta.
+@103.6c
+In una partita multigiocatore che usa l'opzione dei turni di squadra condivisi, prima ogni giocatore della squadra iniziale, nell'ordine che la squadra preferisce, può compiere tali azioni. I compagni di squadra possono consultarsi mentre decidono. Poi ogni giocatore di ogni altra squadra, nell'ordine di turno, fa lo stesso.
+@103.7
+In una partita Planechase, il giocatore iniziale toglie la prima carta del proprio mazzo planare e la gira a faccia in su. Se è una carta fenomeno, il giocatore la mette in fondo al proprio mazzo planare e ripete questo procedimento finché non viene girata a faccia in su una carta piano. La carta piano a faccia in su diventa il piano iniziale. (Vedi regola 901, «Planechase».)
+@103.8
+Il giocatore iniziale gioca il suo primo turno.
+@103.8a
+In una partita a due giocatori, il giocatore che gioca per primo salta la sottofase di acquisizione (vedi regola 504, «Sottofase di acquisizione») del suo primo turno.
+@103.8b
+In una partita Gigante a Due Teste, la squadra che gioca per prima salta la sottofase di acquisizione del suo primo turno.
+@103.8c
+In tutte le altre partite multigiocatore, nessun giocatore salta la sottofase di acquisizione del suo primo turno.
+@104
+Terminare la partita
+@104.1
+Una partita termina immediatamente quando un giocatore vince, quando la partita finisce in parità o quando la partita viene ricominciata.
+@104.2
+Ci sono diversi modi per vincere la partita.
+@104.2a
+Un giocatore ancora in partita vince la partita se tutti i suoi avversari hanno lasciato la partita. Questo avviene immediatamente e prevale su tutti gli effetti che impedirebbero a quel giocatore di vincere la partita.
+@104.2b
+Un effetto può stabilire che un giocatore vince la partita.
+@104.2c
+In una partita multigiocatore tra squadre, una squadra con almeno un giocatore ancora in partita vince la partita se tutte le altre squadre hanno lasciato la partita. Ogni giocatore della squadra vincitrice vince la partita, anche se uno o più di quei giocatori avevano perso la partita in precedenza.
+@104.2d
+In una partita Emperor, una squadra vince la partita se il suo imperatore vince la partita. (Vedi regola 809.5.)
+@104.3
+Ci sono diversi modi per perdere la partita.
+@104.3a
+Un giocatore può concedere la partita in qualsiasi momento. Un giocatore che concede lascia immediatamente la partita. Quel giocatore perde la partita.
+@104.3b
+Se il totale di punti vita di un giocatore è 0 o meno, quel giocatore perde la partita la prossima volta che un giocatore riceverebbe la priorità. (Questa è un'azione generata dallo stato. Vedi regola 704.)
+@104.3c
+Se un giocatore deve pescare più carte di quante ne restano nel suo grimorio, pesca le carte rimaste e poi perde la partita la prossima volta che un giocatore riceverebbe la priorità. (Questa è un'azione generata dallo stato. Vedi regola 704.)
+@104.3d
+Se un giocatore ha dieci o più segnalini veleno, quel giocatore perde la partita la prossima volta che un giocatore riceverebbe la priorità. (Questa è un'azione generata dallo stato. Vedi regola 704.)
+@104.3e
+Un effetto può stabilire che un giocatore perde la partita.
+@104.3f
+Se un giocatore dovesse vincere e perdere la partita simultaneamente, quel giocatore perde la partita.
+@104.3g
+In una partita multigiocatore tra squadre, una squadra perde la partita se tutti i giocatori di quella squadra hanno perso la partita.
+@104.3h
+In una partita multigiocatore che usa l'opzione del raggio d'influenza limitato (vedi regola 801), un effetto che stabilisce che un giocatore vince la partita fa invece perdere la partita a tutti gli avversari di quel giocatore che si trovano entro il suo raggio d'influenza. Questo potrebbe non far terminare la partita.
+@104.3i
+In una partita Emperor, una squadra perde la partita se il suo imperatore perde la partita. (Vedi regola 809.5.)
+@104.3j
+In una partita Commander, un giocatore a cui sono stati inflitti 21 o più danni da combattimento dallo stesso comandante nel corso della partita perde la partita. (Questa è un'azione generata dallo stato. Vedi regola 704. Vedi anche la regola 903.10.)
+@104.3k
+In un torneo, un giocatore può perdere la partita a causa di una penalità assegnata da un arbitro. Vedi regola 100.6.
+@104.4
+Ci sono diversi modi in cui la partita può finire in parità.
+@104.4a
+Se tutti i giocatori rimasti in una partita perdono simultaneamente, la partita finisce in parità.
+@104.4b
+Se una partita che non usa l'opzione del raggio d'influenza limitato (compresa una partita a due giocatori) entra in qualche modo in un «ciclo» di azioni obbligatorie, ripetendo una sequenza di eventi senza modo di fermarla, la partita finisce in parità. I cicli che contengono un'azione facoltativa non portano a una parità.
+@104.4c
+Un effetto può stabilire che la partita finisce in parità.
+@104.4d
+In una partita multigiocatore tra squadre, la partita finisce in parità se tutte le squadre rimaste perdono simultaneamente.
+@104.4e
+In una partita multigiocatore che usa l'opzione del raggio d'influenza limitato, l'effetto di una magia o abilità che stabilisce che la partita finisce in parità fa finire la partita in parità per il controllore di quella magia o abilità e per tutti i giocatori entro il suo raggio d'influenza. Solo quei giocatori lasciano la partita; la partita continua per tutti gli altri giocatori.
+@104.4f
+In una partita multigiocatore che usa l'opzione del raggio d'influenza limitato, se la partita entra in qualche modo in un «ciclo» di azioni obbligatorie, ripetendo una sequenza di eventi senza modo di fermarla, la partita finisce in parità per ogni giocatore che controlla un oggetto coinvolto in quel ciclo, e per ogni giocatore entro il raggio d'influenza di uno di quei giocatori. Solo quei giocatori lasciano la partita; la partita continua per tutti gli altri giocatori.
+@104.4g
+In una partita multigiocatore tra squadre, la partita finisce in parità per una squadra se finisce in parità per tutti i giocatori rimasti di quella squadra.
+@104.4h
+Nella variante Emperor, la partita finisce in parità per una squadra se finisce in parità per il suo imperatore. (Vedi regola 809.5.)
+@104.4i
+In un torneo, tutti i giocatori della partita possono accordarsi per una parità intenzionale. Vedi regola 100.6.
+@104.5
+Se un giocatore perde la partita, quel giocatore lascia la partita. Se la partita finisce in parità per un giocatore, quel giocatore lascia la partita. Le regole multigiocatore stabiliscono cosa succede quando un giocatore lascia la partita; vedi regola 800.4.
+@104.6
+Una carta (Karn Liberato) fa ricominciare la partita. Tutti i giocatori ancora in partita quando ricomincia iniziano immediatamente una nuova partita. Vedi regola 727, «Ricominciare la partita».
+@105
+Colori
+@105.1
+Nel gioco di Magic ci sono cinque colori: bianco, blu, nero, rosso e verde.
+@105.2
+Un oggetto può essere di uno o più dei cinque colori, oppure non avere alcun colore. Un oggetto è del colore o dei colori dei simboli di mana nel suo costo di mana, indipendentemente dal colore della sua cornice. Il colore o i colori di un oggetto possono essere definiti anche da un indicatore di colore o da un'abilità che definisce una caratteristica. Vedi regola 202.2.
+@105.2a
+Un oggetto monocolore è esattamente di uno dei cinque colori.
+@105.2b
+Un oggetto multicolore è di due o più dei cinque colori.
+@105.2c
+Un oggetto incolore non ha alcun colore.
+@105.3
+Gli effetti possono cambiare il colore di un oggetto o dare un colore a un oggetto incolore. Se un effetto dà a un oggetto un nuovo colore, il nuovo colore sostituisce tutti i colori precedenti dell'oggetto (a meno che l'effetto non dica che l'oggetto diventa di quel colore «in aggiunta» agli altri suoi colori). Gli effetti possono anche rendere incolore un oggetto colorato.
+@105.4
+Se a un giocatore viene chiesto di scegliere un colore, deve scegliere uno dei cinque colori. «Multicolore» non è un colore. Nemmeno «incolore» lo è.
+@105.5
+Se un effetto fa riferimento a una coppia di colori, si intendono esattamente due dei cinque colori. Esistono dieci coppie di colori: bianco e blu, bianco e nero, blu e nero, blu e rosso, nero e rosso, nero e verde, rosso e verde, rosso e bianco, verde e bianco, e verde e blu.
+@106
+Mana
+@106.1
+Il mana è la risorsa principale del gioco. I giocatori spendono mana per pagare costi, di solito quando lanciano magie e attivano abilità.
+@106.1a
+Ci sono cinque colori di mana: bianco, blu, nero, rosso e verde.
+@106.1b
+Ci sono sei tipi di mana: bianco, blu, nero, rosso, verde e incolore.
+@106.2
+Il mana è rappresentato dai simboli di mana (vedi regola 107.4). I simboli di mana rappresentano anche i costi di mana (vedi regola 202).
+@106.3
+Il mana è prodotto dagli effetti delle abilità di mana (vedi regola 605). Può essere prodotto anche dagli effetti di magie e dagli effetti di abilità che non sono abilità di mana. Una magia o abilità che produce mana istruisce un giocatore ad aggiungere quel mana. Se il mana è prodotto da una magia, la fonte di quel mana è quella magia. Se il mana è prodotto da un'abilità, la fonte di quel mana è la fonte di quell'abilità (vedi regola 113.7).

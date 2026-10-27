@@ -1,0 +1,1691 @@
+<title>MTG Aulla</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Segnavita per Magic: The Gathering con il regolamento ufficiale (Comprehensive Rules) consultabile in italiano e in inglese.">
+<meta name="theme-color" content="#0b0d12">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+/* Layout: il tavolo da gioco occupa tutto lo schermo (pannelli giocatore ruotati verso il proprio posto, medaglione centrale);
+   tutto il resto (menu, arbitro, impostazioni) sono strati che salgono dal basso o scorrono da destra sopra il tavolo.
+   Toni: inchiostro scuro e ottone, i cinque colori di mana per i giocatori; testo delle regole in serif da documento. */
+:root {
+  --bg: #0b0d12;
+  --surface: #13161e;
+  --raised: #1a1e28;
+  --sunken: #0f1117;
+  --line: #262b37;
+  --line-2: #343a49;
+  --ink: #eceef3;
+  --ink-2: #c9cdd8;
+  --mute: #959cae;
+  --brass: #d6ad62;
+  --brass-ink: #1a1306;
+  --brass-soft: rgba(214, 173, 98, .14);
+  --mark: rgba(214, 173, 98, .32);
+  --mark-ink: #fff4dc;
+  --danger: #ff8a7a;
+  --danger-btn: #b9342a;
+  --ok: #7fd3a4;
+  --focus: #f0c87a;
+  --scrim: rgba(3, 4, 8, .62);
+  --shadow: 0 18px 50px rgba(0, 0, 0, .45), 0 2px 6px rgba(0, 0, 0, .3);
+  --table: #07080b;
+  /* mana: [colore chiaro, colore scuro, testo] uguali in entrambi i temi */
+  --W1: #f4ead0; --W2: #cdb98a; --Wt: #2a2214;
+  --U1: #2a78d0; --U2: #0d3570;
+  --B1: #4d405c; --B2: #18131f;
+  --R1: #e05535; --R2: #7c1d10;
+  --G1: #2f9a5e; --G2: #0f4a2a;
+  --M1: #d9a93a; --M2: #6f4d0c;
+  --C1: #8a93a6; --C2: #3c4250;
+  --f-num: "Big Shoulders Display", "Barlow Condensed", "Arial Narrow", system-ui, sans-serif;
+  --f-ui: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-read: "Source Serif 4", "Iowan Old Style", Georgia, serif;
+  --f-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --ease: cubic-bezier(.2, .8, .2, 1);
+  --r: 14px;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) { :root[data-theme="system"] {
+  --bg: #f1f2f5; --surface: #ffffff; --raised: #f6f7f9; --sunken: #e9ebf0; --line: #dcdfe6; --line-2: #c5cad5;
+  --ink: #12151d; --ink-2: #2c313d; --mute: #5a6172; --brass: #8a5f12; --brass-ink: #ffffff; --brass-soft: rgba(138, 95, 18, .1);
+  --mark: rgba(214, 160, 50, .3); --mark-ink: #12151d; --danger: #b3261e; --danger-btn: #b3261e; --ok: #1d6b43; --focus: #8a5f12;
+  --scrim: rgba(10, 12, 20, .4); --shadow: 0 18px 50px rgba(20, 24, 40, .16), 0 2px 6px rgba(20, 24, 40, .08); color-scheme: light;
+} }
+:root[data-theme="light"] {
+  --bg: #f1f2f5; --surface: #ffffff; --raised: #f6f7f9; --sunken: #e9ebf0; --line: #dcdfe6; --line-2: #c5cad5;
+  --ink: #12151d; --ink-2: #2c313d; --mute: #5a6172; --brass: #8a5f12; --brass-ink: #ffffff; --brass-soft: rgba(138, 95, 18, .1);
+  --mark: rgba(214, 160, 50, .3); --mark-ink: #12151d; --danger: #b3261e; --danger-btn: #b3261e; --ok: #1d6b43; --focus: #8a5f12;
+  --scrim: rgba(10, 12, 20, .4); --shadow: 0 18px 50px rgba(20, 24, 40, .16), 0 2px 6px rgba(20, 24, 40, .08); color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { height: 100%; }
+body { margin: 0; background: var(--table); color: var(--ink); font: 400 16px/1.5 var(--f-ui); overflow: hidden; -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+a { color: var(--brass); }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.sr { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+svg.i { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+svg.i.s { width: 18px; height: 18px; }
+svg.i.l { width: 28px; height: 28px; }
+
+/* ================= TAVOLO ================= */
+#game { position: fixed; inset: 0; background: var(--table); }
+.board { position: absolute; inset: 0; display: grid; gap: 5px; padding: max(5px, env(safe-area-inset-top, 0px)) max(5px, env(safe-area-inset-right, 0px)) max(5px, env(safe-area-inset-bottom, 0px)) max(5px, env(safe-area-inset-left, 0px)); }
+.pl { position: relative; container-type: size; border-radius: 22px; overflow: hidden; color: var(--pt, #fff); background: radial-gradient(130% 110% at 50% 0%, var(--p1) 0%, var(--p2) 100%); user-select: none; -webkit-user-select: none; touch-action: manipulation; isolation: isolate; transition: filter .35s var(--ease); }
+.pl::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: radial-gradient(80% 60% at 50% 46%, rgba(255,255,255,.10), transparent 70%), repeating-linear-gradient(135deg, rgba(255,255,255,.025) 0 2px, transparent 2px 9px); }
+.pl::after { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; box-shadow: inset 0 0 0 1px rgba(255,255,255,.10); transition: box-shadow .3s var(--ease); }
+.pl.active::after { box-shadow: inset 0 0 0 3px rgba(255,255,255,.92), inset 0 0 40px rgba(255,255,255,.18); }
+.pl.out { filter: saturate(.15) brightness(.5); }
+.pl.flash { animation: flash .6s var(--ease); }
+@keyframes flash { 40% { filter: brightness(1.6); } }
+.seat { position: absolute; inset: 0; container-type: size; }
+.seat.r180 { transform: rotate(180deg); }
+.seat.r90, .seat.r270 { inset: auto; top: 50%; left: 50%; width: 100cqh; height: 100cqw; }
+.seat.r90 { transform: translate(-50%, -50%) rotate(90deg); }
+.seat.r270 { transform: translate(-50%, -50%) rotate(-90deg); }
+
+.hit { position: absolute; top: 0; bottom: 0; width: 50%; border: 0; background: transparent; color: inherit; padding: 0; display: flex; align-items: center; touch-action: manipulation; }
+.hit.minus { left: 0; justify-content: flex-start; padding-left: 7cqw; }
+.hit.plus { right: 0; justify-content: flex-end; padding-right: 7cqw; }
+.hit::before { content: ""; position: absolute; inset: 0; background: radial-gradient(70% 70% at var(--hx, 50%) 50%, rgba(255,255,255,.22), transparent 70%); opacity: 0; transition: opacity .35s; }
+.hit.minus::before { --hx: 0%; } .hit.plus::before { --hx: 100%; }
+.hit.press::before { opacity: 1; transition: opacity .05s; }
+.hit .sign { font: 600 clamp(26px, 15cqh, 60px)/1 var(--f-num); opacity: .45; transition: opacity .2s, transform .15s var(--ease); }
+.hit.press .sign { opacity: 1; transform: scale(1.3); }
+.pname { position: absolute; top: max(10px, 4cqh); left: max(12px, 4cqw); max-width: 58cqw; display: inline-flex; align-items: center; gap: 6px; font: 700 clamp(12px, 6.4cqh, 18px)/1.2 var(--f-ui); letter-spacing: .02em; opacity: .92; pointer-events: none; white-space: nowrap; }
+.pname span { overflow: hidden; text-overflow: ellipsis; }
+.pname svg { width: 1.15em; height: 1.15em; stroke: currentColor; fill: none; stroke-width: 2; flex: none; }
+.lifebox { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; pointer-events: none; }
+.life { font: 800 min(54cqh, 38cqw)/.8 var(--f-num); font-variant-numeric: tabular-nums; letter-spacing: -.01em; text-shadow: 0 6px 30px rgba(0,0,0,.25); transition: transform .14s var(--ease); padding-top: .06em; }
+.life.k3 { font-size: min(46cqh, 28cqw); }
+.life.bump { transform: scale(1.05); }
+.delta { position: absolute; top: 50%; left: 50%; transform: translate(calc(min(20cqh, 15cqw) + 6cqw), -128%); font: 600 clamp(18px, 12cqh, 44px)/1 var(--f-num); background: rgba(0,0,0,.28); border-radius: 999px; padding: .12em .42em; opacity: 0; transition: opacity .25s; pointer-events: none; }
+.delta.on { opacity: 1; }
+.pfoot { position: absolute; left: 0; right: 0; bottom: max(8px, 3cqh); display: flex; align-items: flex-end; justify-content: space-between; gap: 6px; padding: 0 max(8px, 3cqw); pointer-events: none; }
+.pbtn { pointer-events: auto; width: clamp(40px, 15cqh, 50px); height: clamp(40px, 15cqh, 50px); border-radius: 50%; border: 0; background: rgba(0,0,0,.24); color: inherit; display: grid; place-items: center; transition: background .15s, transform .15s var(--ease); }
+.pbtn:active { transform: scale(.92); background: rgba(0,0,0,.4); }
+.pbtn svg { width: 52%; height: 52%; stroke: currentColor; fill: none; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+.pbtn.ghost { visibility: hidden; }
+.chips { pointer-events: auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 5px; min-width: 0; flex: 1; max-height: 24cqh; overflow: hidden; }
+.chip { display: inline-flex; align-items: center; gap: 3px; border: 0; color: inherit; background: rgba(0,0,0,.26); border-radius: 999px; padding: 3px 9px 3px 7px; font: 600 clamp(12px, 6.6cqh, 18px)/1.1 var(--f-num); letter-spacing: .02em; min-height: 30px; }
+.chip svg { width: 1.1em; height: 1.1em; stroke: currentColor; fill: none; stroke-width: 2; }
+.chip.hot { background: rgba(0,0,0,.55); box-shadow: 0 0 0 2px var(--brass); }
+.chip i { font-style: normal; opacity: .7; font-family: var(--f-ui); font-size: .8em; font-weight: 600; }
+.outtag { position: absolute; left: 50%; top: calc(50% + min(28cqh, 20cqw)); transform: translateX(-50%); pointer-events: auto; border: 0; background: rgba(0,0,0,.72); color: #fff; border-radius: 999px; padding: 6px 14px; font: 700 clamp(11px, 5.6cqh, 15px)/1.2 var(--f-ui); white-space: nowrap; min-height: 32px; display: inline-flex; gap: 6px; align-items: center; }
+.outtag b { font-family: var(--f-mono); font-weight: 500; color: var(--brass); }
+
+/* vista locale del pannello (segnalini, danni da comandante) */
+.pview { position: absolute; inset: 0; display: flex; flex-direction: column; padding: max(8px, 3cqh) max(10px, 3cqw); gap: max(6px, 2cqh); background: rgba(0,0,0,.34); backdrop-filter: blur(2px); }
+.pview header { display: flex; align-items: center; gap: 8px; font: 700 clamp(12px, 6cqh, 17px)/1.2 var(--f-ui); }
+.pview header span { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pdone { border: 0; border-radius: 999px; background: #fff; color: #111; font: 700 clamp(12px, 5.6cqh, 15px)/1 var(--f-ui); padding: 0 16px; min-height: clamp(34px, 13cqh, 44px); }
+.cgrid { flex: 1; min-height: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(max(118px, 28cqw), 1fr)); grid-auto-rows: minmax(0, 1fr); gap: max(5px, 1.6cqh); overflow: auto; }
+.cell { position: relative; border-radius: 14px; background: rgba(0,0,0,.28); display: grid; grid-template-columns: auto 1fr auto; align-items: center; min-height: 52px; overflow: hidden; }
+.cell .lab { position: absolute; top: 5px; left: 0; right: 0; text-align: center; font: 600 clamp(10px, 4.6cqh, 13px)/1.1 var(--f-ui); opacity: .85; display: flex; align-items: center; justify-content: center; gap: 4px; pointer-events: none; padding: 0 8px; white-space: nowrap; overflow: hidden; }
+.cell .lab svg { width: 1.2em; height: 1.2em; stroke: currentColor; fill: none; stroke-width: 2; flex: none; }
+.cell .val { text-align: center; font: 800 clamp(22px, 15cqh, 52px)/1 var(--f-num); font-variant-numeric: tabular-nums; padding-top: 10px; pointer-events: none; }
+.cell button { border: 0; background: transparent; color: inherit; height: 100%; min-width: 44px; width: clamp(44px, 12cqw, 64px); font: 600 clamp(20px, 10cqh, 34px)/1 var(--f-num); }
+.cell button:active { background: rgba(255,255,255,.12); }
+.cell.cmd { background: radial-gradient(120% 120% at 50% 0%, var(--p1), var(--p2)); color: var(--pt, #fff); box-shadow: inset 0 0 0 1px rgba(255,255,255,.18); }
+.cell.cmd.hot { box-shadow: inset 0 0 0 3px #fff; }
+.pnote { font: 500 clamp(10px, 4.4cqh, 13px)/1.3 var(--f-ui); opacity: .85; text-align: center; }
+
+/* medaglione centrale */
+.hub { position: fixed; z-index: 5; width: 68px; height: 68px; border-radius: 50%; transform: translate(-50%, -50%); border: 0; padding: 0; background: radial-gradient(circle at 50% 35%, #2a2f3c, #12141b); color: #f6ead0; display: grid; place-items: center; box-shadow: 0 0 0 4px var(--table), 0 0 0 6px var(--hubc, var(--brass)), 0 10px 30px rgba(0,0,0,.6); transition: transform .18s var(--ease), box-shadow .3s; }
+.hub:active { transform: translate(-50%, -50%) scale(.92); }
+.hub .t { font: 800 1.45rem/1 var(--f-num); letter-spacing: .02em; }
+.hub .t small { font: 700 .62rem/1 var(--f-ui); letter-spacing: .12em; display: block; text-align: center; opacity: .7; margin-bottom: 2px; }
+.hub .dn { position: absolute; top: -4px; right: -4px; width: 24px; height: 24px; border-radius: 50%; background: #12141b; display: grid; place-items: center; box-shadow: 0 0 0 2px var(--table); }
+.hub .dn svg { width: 15px; height: 15px; stroke: #f6ead0; fill: none; stroke-width: 2; }
+
+/* ================= STRATI ================= */
+.layer { position: fixed; inset: 0; z-index: 20; display: flex; }
+.layer > .scrim { position: absolute; inset: 0; background: var(--scrim); }
+.panel { position: relative; background: var(--bg); color: var(--ink); display: flex; flex-direction: column; min-width: 0; box-shadow: var(--shadow); }
+.layer.sheet { align-items: flex-end; justify-content: center; }
+.layer.sheet .panel { width: min(640px, 100%); max-height: calc(100% - max(18px, env(safe-area-inset-top, 0px))); border-radius: 24px 24px 0 0; padding-bottom: env(safe-area-inset-bottom, 0px); }
+.layer.full .panel { width: 100%; height: 100%; padding-top: env(safe-area-inset-top, 0px); }
+@media (min-width: 900px) {
+  .layer.sheet { align-items: center; }
+  .layer.sheet .panel { border-radius: 24px; max-height: min(860px, calc(100% - 48px)); padding-bottom: 0; }
+  .layer.full { justify-content: flex-end; }
+  .layer.full .panel { width: min(760px, 100%); }
+  .layer.full.wide .panel { width: min(980px, 100%); }
+}
+.grab { width: 44px; height: 5px; border-radius: 5px; background: var(--line-2); margin: 10px auto 2px; flex: none; }
+@media (min-width: 900px) { .grab { display: none; } }
+.phead { display: flex; align-items: center; gap: 8px; padding: 10px max(14px, env(safe-area-inset-right, 0px)) 10px max(14px, env(safe-area-inset-left, 0px)); flex: none; }
+.phead h2 { margin: 0; font: 700 1.15rem/1.2 var(--f-ui); flex: 1; min-width: 0; letter-spacing: .01em; }
+.pbody { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: 4px max(16px, env(safe-area-inset-right, 0px)) 28px max(16px, env(safe-area-inset-left, 0px)); display: flex; flex-direction: column; gap: 22px; }
+.pfooter { flex: none; display: flex; gap: 8px; padding: 10px max(14px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(14px, env(safe-area-inset-left, 0px)); border-top: 1px solid var(--line); background: var(--bg); }
+.layer.sheet .pfooter { padding-bottom: 12px; }
+@media (prefers-reduced-motion: no-preference) {
+  .layer.in > .scrim { animation: fade .22s ease-out; }
+  .layer.sheet.in .panel { animation: up .32s var(--ease); }
+  .layer.full.in .panel { animation: up .32s var(--ease); }
+  @media (min-width: 900px) { .layer.full.in .panel { animation: side .3s var(--ease); } .layer.sheet.in .panel { animation: pop .26s var(--ease); } }
+  @keyframes fade { from { opacity: 0; } }
+  @keyframes up { from { transform: translateY(48px); opacity: .3; } }
+  @keyframes side { from { transform: translateX(48px); opacity: .3; } }
+  @keyframes pop { from { transform: scale(.96); opacity: 0; } }
+  .stag > * { animation: rise .3s var(--ease) both; }
+  .stag > *:nth-child(2) { animation-delay: .03s; } .stag > *:nth-child(3) { animation-delay: .06s; } .stag > *:nth-child(4) { animation-delay: .09s; } .stag > *:nth-child(5) { animation-delay: .12s; }
+  @keyframes rise { from { transform: translateY(8px); opacity: 0; } }
+}
+
+/* elementi comuni */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 46px; padding: 0 18px; border-radius: 14px; border: 1px solid var(--line-2); background: var(--raised); color: var(--ink); font: 600 .95rem/1.1 var(--f-ui); text-decoration: none; transition: transform .12s var(--ease), border-color .15s, background .15s; }
+.btn:active { transform: scale(.97); }
+.btn:hover { border-color: var(--brass); }
+.btn.pri { background: var(--brass); border-color: var(--brass); color: var(--brass-ink); }
+.btn.danger { background: var(--danger-btn); border-color: var(--danger-btn); color: #fff; }
+.btn.flat { background: transparent; border-color: transparent; }
+.btn.flat:hover { background: var(--raised); }
+.btn.sm { min-height: 38px; padding: 0 12px; font-size: .86rem; border-radius: 11px; }
+.btn.ico { width: 46px; padding: 0; }
+.btn.grow { flex: 1; }
+.btn[aria-pressed="true"] { border-color: var(--brass); background: var(--brass-soft); color: var(--brass); }
+.lbl { margin: 0; font: 700 .72rem/1.2 var(--f-ui); letter-spacing: .12em; text-transform: uppercase; color: var(--mute); }
+.sec { display: flex; flex-direction: column; gap: 10px; }
+.note { margin: 0; color: var(--mute); font-size: .86rem; }
+.seg { display: flex; flex-wrap: wrap; gap: 4px; background: var(--sunken); border: 1px solid var(--line); border-radius: 14px; padding: 4px; }
+.seg button { flex: 1 1 auto; border: 0; background: transparent; border-radius: 10px; min-height: 40px; padding: 0 12px; font-weight: 600; font-size: .92rem; color: var(--mute); }
+.seg button[aria-pressed="true"] { background: var(--raised); color: var(--ink); box-shadow: 0 1px 0 var(--line-2), 0 4px 12px rgba(0,0,0,.18); }
+.field { width: 100%; min-height: 48px; border-radius: 14px; border: 1px solid var(--line-2); background: var(--sunken); padding: 0 14px; color: var(--ink); }
+.field:focus { border-color: var(--brass); outline: none; box-shadow: 0 0 0 3px var(--brass-soft); }
+.switch { appearance: none; -webkit-appearance: none; width: 52px; height: 32px; border-radius: 999px; background: var(--line-2); position: relative; cursor: pointer; transition: background .2s; flex: none; margin: 0; }
+.switch::after { content: ""; position: absolute; top: 3px; left: 3px; width: 26px; height: 26px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.35); transition: transform .22s var(--ease); }
+.switch:checked { background: var(--brass); }
+.switch:checked::after { transform: translateX(20px); }
+.row { display: flex; align-items: center; gap: 14px; justify-content: space-between; padding: 12px 0; border-top: 1px solid var(--line); }
+.row:first-of-type { border-top: 0; }
+.row .t { display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1; }
+.row .t b { font-weight: 600; }
+.row .t span { color: var(--mute); font-size: .86rem; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 6px 16px; }
+.empty { border: 1px dashed var(--line-2); border-radius: 16px; padding: 18px; color: var(--mute); }
+
+/* menu */
+.msearch { display: flex; align-items: center; gap: 10px; min-height: 54px; border-radius: 16px; border: 1px solid var(--line-2); background: var(--sunken); padding: 0 8px 0 14px; color: var(--mute); }
+.msearch:focus-within { border-color: var(--brass); box-shadow: 0 0 0 3px var(--brass-soft); }
+.msearch input { flex: 1; min-width: 0; border: 0; background: transparent; outline: none; color: var(--ink); min-height: 50px; font-size: 1rem; }
+.tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.tile { overflow-wrap: anywhere; hyphens: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px; min-height: 86px; padding: 10px 6px; border-radius: 18px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font: 600 .82rem/1.2 var(--f-ui); text-align: center; transition: transform .12s var(--ease), border-color .15s; }
+.tile:hover { border-color: var(--brass); }
+.tile:active { transform: scale(.96); }
+.tile svg { width: 28px; height: 28px; color: var(--brass); }
+.tile small { color: var(--mute); font-weight: 500; font-size: .74rem; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tile.hero { background: linear-gradient(160deg, var(--brass-soft), transparent 70%), var(--surface); border-color: var(--line-2); }
+@media (max-width: 380px) { .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+h2[tabindex="-1"]:focus { outline: none; }
+.who { display: flex; flex-wrap: wrap; gap: 6px; }
+.pchip { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 14px 0 6px; border-radius: 999px; border: 1px solid var(--line-2); background: var(--surface); font-weight: 600; font-size: .88rem; color: var(--ink); }
+.pchip .dot { width: 28px; height: 28px; border-radius: 50%; background: radial-gradient(circle at 50% 30%, var(--p1), var(--p2)); box-shadow: inset 0 0 0 1px rgba(255,255,255,.2); flex: none; }
+.pchip[aria-pressed="true"] { border-color: var(--brass); background: var(--brass-soft); }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 16px; color: var(--mute); font-size: .85rem; }
+.meta b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+/* setup */
+.formats { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.fmt { text-align: left; border-radius: 16px; border: 1px solid var(--line); background: var(--surface); padding: 12px 14px; display: flex; flex-direction: column; gap: 2px; color: var(--ink); min-height: 86px; }
+.fmt b { font-weight: 700; }
+.fmt .n { font: 800 1.9rem/1 var(--f-num); color: var(--brass); }
+.fmt small { color: var(--mute); font-size: .78rem; }
+.fmt[aria-pressed="true"] { border-color: var(--brass); box-shadow: inset 0 0 0 1px var(--brass); background: linear-gradient(160deg, var(--brass-soft), transparent 70%), var(--surface); }
+.plist { display: flex; flex-direction: column; gap: 8px; }
+.prow { display: grid; grid-template-columns: 1fr; gap: 8px; padding: 12px; border-radius: 16px; background: var(--surface); border: 1px solid var(--line); }
+.prow .top { display: flex; gap: 10px; align-items: center; }
+.prow .top .dot { width: 34px; height: 34px; border-radius: 50%; background: radial-gradient(circle at 50% 30%, var(--p1), var(--p2)); flex: none; }
+.swatches { display: flex; flex-wrap: wrap; gap: 8px; }
+.sw { width: 38px; height: 38px; border-radius: 50%; border: 0; background: radial-gradient(circle at 50% 30%, var(--p1), var(--p2)); box-shadow: inset 0 0 0 1px rgba(255,255,255,.2); position: relative; }
+.sw[aria-pressed="true"]::after { content: ""; position: absolute; inset: -4px; border-radius: 50%; border: 2px solid var(--brass); }
+.inline-check { display: flex; align-items: center; gap: 10px; font-size: .9rem; color: var(--ink-2); }
+
+/* dadi */
+.dice-pick { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.die { min-height: 64px; border-radius: 16px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; font: 800 1.35rem/1 var(--f-num); }
+.die small { font: 600 .72rem/1 var(--f-ui); color: var(--mute); letter-spacing: .06em; }
+.die[aria-pressed="true"] { border-color: var(--brass); background: var(--brass-soft); }
+.result { display: grid; place-items: center; min-height: 190px; border-radius: 24px; background: radial-gradient(circle at 50% 40%, var(--brass-soft), transparent 70%), var(--surface); border: 1px solid var(--line); cursor: pointer; }
+.result .v { font: 800 7.5rem/1 var(--f-num); font-variant-numeric: tabular-nums; color: var(--ink); }
+.result .v.word { font-size: 4rem; }
+.result .v.roll { animation: shake .09s linear infinite; }
+@keyframes shake { 33% { transform: rotate(-5deg) translateY(-3px); } 66% { transform: rotate(5deg) translateY(2px); } }
+.result small { color: var(--mute); font-size: .85rem; }
+.rolls { display: flex; flex-wrap: wrap; gap: 6px; }
+.rolls span { border-radius: 10px; background: var(--surface); border: 1px solid var(--line); padding: 4px 10px; font: 700 1rem/1.2 var(--f-num); color: var(--ink-2); }
+
+/* storico */
+.spark { width: 100%; height: 120px; display: block; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: .85rem; color: var(--ink-2); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 12px; height: 12px; border-radius: 4px; background: var(--p1); }
+.log { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.log li { display: grid; grid-template-columns: 10px 1fr auto; gap: 10px; align-items: center; padding: 9px 0; border-top: 1px solid var(--line); font-size: .9rem; }
+.log li:first-child { border-top: 0; }
+.log li i { width: 10px; height: 10px; border-radius: 3px; background: var(--p1); }
+.log .tm { color: var(--mute); font-size: .78rem; margin-left: 6px; font-variant-numeric: tabular-nums; }
+.log .d { font: 700 1.1rem/1 var(--f-num); font-variant-numeric: tabular-nums; }
+.log .d.neg { color: var(--danger); } .log .d.pos { color: var(--ok); }
+
+/* ================= ARBITRO ================= */
+.rhead { padding: 6px max(12px, env(safe-area-inset-right, 0px)) 10px max(12px, env(safe-area-inset-left, 0px)); display: flex; flex-direction: column; gap: 10px; border-bottom: 1px solid var(--line); flex: none; background: var(--bg); }
+.rtop { display: flex; align-items: center; gap: 6px; }
+.rtop h2 { margin: 0; flex: 1; font: 700 1.15rem/1.2 var(--f-ui); }
+.rtop .ver { font-size: .76rem; color: var(--mute); border: 1px solid var(--line); border-radius: 999px; padding: 4px 10px; white-space: nowrap; }
+.rsearch { display: flex; align-items: flex-start; gap: 10px; border-radius: 16px; border: 1px solid var(--line-2); background: var(--sunken); padding: 0 6px 0 14px; color: var(--mute); }
+.rsearch:focus-within { border-color: var(--brass); box-shadow: 0 0 0 3px var(--brass-soft); }
+.rsearch svg { margin-top: 15px; }
+.rsearch textarea { flex: 1; min-width: 0; border: 0; background: transparent; outline: none; color: var(--ink); resize: none; font-size: 1rem; line-height: 1.45; padding: 13px 0; min-height: 50px; max-height: 30vh; }
+.rsearch .btn { margin-top: 5px; }
+.rtabs { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; margin: 0 -4px; }
+.rtabs button { border: 0; background: transparent; color: var(--mute); font-weight: 600; font-size: .9rem; padding: 8px 12px; border-radius: 10px; min-height: 40px; white-space: nowrap; }
+.rtabs button[aria-pressed="true"] { color: var(--ink); background: var(--raised); }
+.terms { display: flex; flex-wrap: wrap; gap: 6px; }
+.term { display: inline-flex; align-items: center; gap: 6px; min-height: 34px; padding: 0 6px 0 12px; border-radius: 999px; border: 0; background: var(--brass-soft); color: var(--ink); font-size: .85rem; }
+.term small { color: var(--mute); }
+.term .x { width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; color: var(--mute); font-size: 1rem; }
+.term.off { background: transparent; box-shadow: inset 0 0 0 1px var(--line-2); color: var(--mute); text-decoration: line-through; }
+.term.unk { background: transparent; box-shadow: inset 0 0 0 1px dashed var(--line-2); border: 1px dashed var(--line-2); color: var(--mute); padding-right: 12px; }
+.res { display: flex; flex-direction: column; gap: 10px; }
+.rc { border-radius: 18px; border: 1px solid var(--line); background: var(--surface); padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; cursor: pointer; transition: border-color .15s, transform .12s var(--ease); min-width: 0; text-align: left; color: var(--ink); }
+.rc:hover { border-color: var(--line-2); }
+.rc:active { transform: scale(.99); }
+.rc.best { border-color: var(--brass); background: linear-gradient(170deg, var(--brass-soft), transparent 55%), var(--surface); padding: 18px; }
+.rc .eye { font: 700 .7rem/1 var(--f-ui); letter-spacing: .12em; text-transform: uppercase; color: var(--brass); }
+.rc .hd { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.num { font: 500 .95rem/1.2 var(--f-mono); color: var(--brass); }
+.rc.best .num { font-size: 1.1rem; }
+.crumb { font-size: .78rem; color: var(--mute); overflow-wrap: anywhere; }
+.rt { margin: 0; font: 400 1.04rem/1.6 var(--f-read); color: var(--ink); overflow-wrap: anywhere; }
+.rc:not(.best) .rt { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.en { margin: 0; font: italic 400 .92rem/1.5 var(--f-read); color: var(--mute); overflow-wrap: anywhere; border-left: 2px solid var(--line-2); padding-left: 10px; }
+.ex { margin: 0; font: 400 .95rem/1.55 var(--f-read); color: var(--ink-2); border-left: 3px solid var(--brass-soft); padding-left: 12px; overflow-wrap: anywhere; }
+.ex b { font-family: var(--f-ui); font-weight: 700; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--brass); margin-right: 4px; }
+mark { background: var(--mark); color: var(--mark-ink); border-radius: 3px; padding: 0 1px; }
+.ref { font: 500 .9em var(--f-mono); color: var(--brass); background: none; border: 0; padding: 0; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
+.acts { display: flex; flex-wrap: wrap; gap: 6px; }
+.gbox { border-radius: 18px; border: 1px solid var(--line); background: var(--surface); padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
+.gbox dl { margin: 0; }
+.gbox dt { font-weight: 700; margin-top: 8px; }
+.gbox dt:first-child { margin-top: 0; }
+.gbox dt small { color: var(--mute); font-weight: 500; margin-left: 6px; }
+.gbox dd { margin: 3px 0 0; font: 400 1rem/1.55 var(--f-read); color: var(--ink-2); overflow-wrap: anywhere; }
+.topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.topic { text-align: left; border-radius: 16px; border: 1px solid var(--line); background: var(--surface); padding: 12px 14px; min-height: 74px; display: flex; flex-direction: column; justify-content: space-between; gap: 6px; color: var(--ink); font-weight: 600; font-size: .93rem; }
+.topic:hover { border-color: var(--brass); }
+.topic .num { font-size: .8rem; }
+.qlist { display: flex; flex-direction: column; }
+.qlist button { display: flex; gap: 12px; align-items: baseline; text-align: left; border: 0; background: transparent; padding: 11px 6px; border-top: 1px solid var(--line); color: var(--ink); min-height: 48px; border-radius: 0; }
+.qlist button:first-child { border-top: 0; }
+.qlist button:hover { background: var(--raised); }
+.qlist .num { min-width: 4.4em; }
+.qlist small { color: var(--mute); margin-left: auto; text-align: right; }
+.ch { border-radius: 16px; border: 1px solid var(--line); background: var(--surface); overflow: hidden; }
+.ch summary { list-style: none; display: flex; align-items: center; gap: 14px; padding: 14px 16px; cursor: pointer; min-height: 56px; font-weight: 700; }
+.ch summary::-webkit-details-marker { display: none; }
+.ch summary .n { font: 800 1.6rem/1 var(--f-num); color: var(--brass); width: 1.2em; }
+.ch summary .c { margin-left: auto; color: var(--mute); font-weight: 500; font-size: .85rem; }
+.ch .qlist { padding: 0 10px 8px; }
+.recent { display: flex; flex-wrap: wrap; gap: 6px; }
+.recent button { border-radius: 12px; border: 1px solid var(--line); background: var(--surface); color: var(--ink-2); padding: 8px 12px; font-size: .88rem; text-align: left; min-height: 40px; max-width: 100%; }
+.recent button:hover { border-color: var(--brass); }
+.tnote { font-size: .8rem; color: var(--mute); display: flex; gap: 8px; align-items: flex-start; }
+.tnote svg { width: 16px; height: 16px; flex: none; margin-top: 2px; }
+
+/* lettore */
+.rdhead { padding: 4px max(12px, env(safe-area-inset-right, 0px)) 12px max(12px, env(safe-area-inset-left, 0px)); border-bottom: 1px solid var(--line); flex: none; display: flex; flex-direction: column; gap: 6px; }
+.rdhead h2 { margin: 0 4px; font: 700 1.3rem/1.25 var(--f-ui); text-wrap: balance; }
+.rdhead h2 .num { font-size: 1.05rem; margin-right: 8px; }
+.rdhead h2 small { display: block; font: 500 .85rem/1.3 var(--f-ui); color: var(--mute); margin-top: 2px; }
+.rdhead .crumb { margin: 0 4px; }
+.rl { padding: 12px 14px; border-radius: 14px; display: flex; flex-direction: column; gap: 8px; border: 1px solid transparent; cursor: pointer; scroll-margin: 12px; }
+.rl.sub { margin-left: 16px; }
+.rl:hover { background: var(--surface); }
+.rl.sel { background: var(--surface); border-color: var(--brass); cursor: default; }
+.rl .acts { display: none; }
+.rl.sel .acts { display: flex; }
+.rl .rt .num { margin-right: 8px; }
+.untr { font-size: .78rem; color: var(--mute); font-style: normal; }
+.toast { position: fixed; left: 50%; bottom: calc(22px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); z-index: 90; background: var(--ink); color: var(--bg); border-radius: 14px; padding: 11px 18px; font-weight: 600; font-size: .92rem; box-shadow: var(--shadow); max-width: calc(100% - 32px); text-align: center; }
+@media (prefers-reduced-motion: no-preference) { .toast:not([hidden]) { animation: up .25s var(--ease); } }
+@media (prefers-reduced-motion: reduce) { .result .v.roll { animation: none; } .life, .hit .sign { transition: none; } }
+</style>
+
+<div id="game">
+  <h1 class="sr" id="h-game">MTG Aulla</h1>
+  <div class="board" id="board" role="group" aria-labelledby="h-game"></div>
+  <button type="button" class="hub" id="hub" data-act="menu"><span class="t" id="hubt"></span><span class="dn" id="hubdn" hidden></span></button>
+  <div class="sr" aria-live="polite" id="live"></div>
+</div>
+
+<!-- MENU -->
+<div class="layer sheet" id="L-menu" hidden><div class="scrim" data-act="close"></div>
+  <div class="panel" role="dialog" aria-modal="true" aria-labelledby="menu-title">
+    <div class="grab"></div>
+    <div class="phead"><h2 id="menu-title" tabindex="-1"></h2><button type="button" class="btn flat ico" data-act="close" data-i18n-aria="close">%%X%%</button></div>
+    <div class="pbody" id="menu-body"></div>
+  </div></div>
+
+<!-- ARBITRO -->
+<div class="layer full wide" id="L-rules" hidden><div class="scrim" data-act="close"></div>
+  <div class="panel" role="dialog" aria-modal="true" aria-labelledby="rules-title">
+    <div class="rhead">
+      <div class="rtop">
+        <button type="button" class="btn flat ico" data-act="close" data-i18n-aria="backGame">%%BACK%%</button>
+        <h2 id="rules-title" tabindex="-1" data-i18n="judge"></h2>
+        <span class="ver" id="rver"></span>
+      </div>
+      <form class="rsearch" id="rform" role="search">
+        %%SEARCH%%
+        <label for="rq" class="sr" data-i18n="askLabel"></label>
+        <textarea id="rq" rows="1" autocomplete="off" spellcheck="false"></textarea>
+        <button type="button" class="btn flat sm" id="rclear" data-act="rclear" hidden data-i18n="clear"></button>
+      </form>
+      <div class="rtabs" id="rtabs" role="group">
+        <button type="button" data-rtab="search" data-i18n="tSearch"></button>
+        <button type="button" data-rtab="toc" data-i18n="tToc"></button>
+        <button type="button" data-rtab="gloss" data-i18n="tGloss"></button>
+        <button type="button" data-rtab="saved" data-i18n="tSaved"></button>
+      </div>
+    </div>
+    <div class="pbody" id="rbody" style="padding-top:16px"></div>
+  </div></div>
+
+<!-- LETTORE -->
+<div class="layer full" id="L-reader" hidden><div class="scrim" data-act="close"></div>
+  <div class="panel" role="dialog" aria-modal="true" aria-labelledby="rd-title">
+    <div class="rdhead">
+      <div class="rtop">
+        <button type="button" class="btn flat sm" data-act="rd-back" id="rd-back">%%BACKS%%<span data-i18n="back"></span></button>
+        <span style="flex:1"></span>
+        <button type="button" class="btn flat sm" data-act="rd-all" id="rd-all"></button>
+        <button type="button" class="btn flat ico" data-act="close" data-i18n-aria="close">%%X%%</button>
+      </div>
+      <div class="crumb" id="rd-crumb"></div>
+      <h2 id="rd-title" tabindex="-1"></h2>
+    </div>
+    <div class="pbody" id="rd-body" style="gap:4px;padding-top:10px;padding-left:max(8px, env(safe-area-inset-left, 0px));padding-right:max(8px, env(safe-area-inset-right, 0px))"></div>
+    <div class="pfooter">
+      <button type="button" class="btn sm grow" data-act="rd-go" id="rd-prev"></button>
+      <button type="button" class="btn sm grow" data-act="rd-go" id="rd-next"></button>
+    </div>
+  </div></div>
+
+<!-- NUOVA PARTITA -->
+<div class="layer full" id="L-setup" hidden><div class="scrim" data-act="close"></div>
+  <div class="panel" role="dialog" aria-modal="true" aria-labelledby="setup-title">
+    <div class="phead"><button type="button" class="btn flat ico" data-act="close" data-i18n-aria="close">%%X%%</button><h2 id="setup-title" tabindex="-1" data-i18n="setupTitle"></h2></div>
+    <div class="pbody" id="setup-body"></div>
+    <div class="pfooter"><button type="button" class="btn pri grow" data-act="start-game" data-i18n="startGame"></button></div>
+  </div></div>
+
+<!-- DADI -->
+<div class="layer sheet" id="L-dice" hidden><div class="scrim" data-act="close"></div>
+  <div class="panel" role="dialog" aria-modal="true" aria-labelledby="dice-title">
+    <div class="grab"></div>
+    <div class="phead"><h2 id="dice-title" tabindex="-1" data-i18n="dice"></h2><button type="button" class="btn flat ico" data-act="close" data-i18n-aria="close">%%X%%</button></div>
+    <div class="pbody" id="dice-body"></div>
+  </div></div>
+
+<!-- STORICO -->
+<div class="layer sheet" id="L-history" hidden><div class="scrim" data-act="close"></div>
+  <div class="panel" role="dialog" aria-modal="true" aria-labelledby="hist-title">
+    <div class="grab"></div>
+    <div class="phead"><h2 id="hist-title" tabindex="-1" data-i18n="history"></h2><button type="button" class="btn flat ico" data-act="close" data-i18n-aria="close">%%X%%</button></div>
+    <div class="pbody" id="hist-body"></div>
+  </div></div>
+
+<!-- IMPOSTAZIONI -->
+<div class="layer full" id="L-settings" hidden><div class="scrim" data-act="close"></div>
+  <div class="panel" role="dialog" aria-modal="true" aria-labelledby="set-title">
+    <div class="phead"><button type="button" class="btn flat ico" data-act="close" data-i18n-aria="close">%%X%%</button><h2 id="set-title" tabindex="-1" data-i18n="settings"></h2></div>
+    <div class="pbody" id="set-body"></div>
+  </div></div>
+
+<div class="toast" id="toast" role="status" hidden></div>
+<input type="file" id="file" accept=".txt,text/plain" class="sr" tabindex="-1" aria-hidden="true">
+
+<script type="text/plain" id="cr">@@RULES@@</script>
+<script type="application/json" id="tr-it">@@TRANSLATION@@</script>
+<script>
+"use strict";
+/* ============================================================
+   Utilità
+   ============================================================ */
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const store = {
+  get(k, d) { try { const v = localStorage.getItem("aulla_" + k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem("aulla_" + k, JSON.stringify(v)); return true; } catch (e) { return false; } },
+  del(k) { try { localStorage.removeItem("aulla_" + k); } catch (e) {} },
+};
+const reduceMotion = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
+function rnd() { try { const a = new Uint32Array(1); crypto.getRandomValues(a); return a[0] / 4294967296; } catch (e) { return Math.random(); } }
+function toast(msg) { const t = $("toast"); t.textContent = msg; t.hidden = false; clearTimeout(toast.h); toast.h = setTimeout(() => t.hidden = true, 2600); }
+
+const settings = Object.assign({
+  lang: (navigator.language || "it").toLowerCase().startsWith("it") ? "it" : (navigator.language || "").toLowerCase().startsWith("en") ? "en" : "it",
+  theme: "dark", showEn: false, cmdLife: true, wake: true, haptic: true,
+}, store.get("settings", {}));
+const saveSettings = () => store.set("settings", settings);
+function buzz(ms) { if (settings.haptic && navigator.vibrate) try { navigator.vibrate(ms || 8); } catch (e) {} }
+
+const ICON = {
+  x: '<path d="M6 6l12 12M18 6L6 18"/>',
+  back: '<path d="M15 5l-7 7 7 7"/>',
+  fwd: '<path d="M9 5l7 7-7 7"/>',
+  search: '<circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/>',
+  poison: '<path d="M12 3.5c3 4 5.5 6.9 5.5 10a5.5 5.5 0 0 1-11 0c0-3.1 2.5-6 5.5-10z"/><path d="M10 14.2h.01M14 14.2h.01M10.3 17h3.4"/>',
+  energy: '<path d="M13 3L5.5 13.5H12L11 21l7.5-10.5H12z"/>',
+  exp: '<path d="M12 3l2.4 5.6L20 9.2l-4.3 3.9 1.2 5.9L12 16.1 7.1 19l1.2-5.9L4 9.2l5.6-.6z"/>',
+  rad: '<circle cx="12" cy="12" r="1.8"/><path d="M12 10.2V4a8 8 0 0 1 6.9 4l-5.3 3.1M13.6 13l5.3 3.1A8 8 0 0 1 12 20v-6.2M10.4 13l-5.3 3.1A8 8 0 0 1 5.1 8l5.3 3.1"/>',
+  tax: '<path d="M12 3l7 3v5.5c0 4.3-3 7.6-7 9.5-4-1.9-7-5.2-7-9.5V6z"/><path d="M9.5 12.5h5M12 10v5"/>',
+  sword: '<path d="M14.5 4H20v5.5L9.5 20 4 14.5z"/><path d="M7 12l5 5M4.5 19.5l2-2"/>',
+  counters: '<ellipse cx="12" cy="6.5" rx="7" ry="2.8"/><path d="M5 6.5v4c0 1.5 3.1 2.8 7 2.8s7-1.3 7-2.8v-4"/><path d="M5 10.5v4c0 1.5 3.1 2.8 7 2.8s7-1.3 7-2.8v-4"/><path d="M5 14.5v3c0 1.5 3.1 2.8 7 2.8s7-1.3 7-2.8v-3"/>',
+  crown: '<path d="M4 18h16M5 18l-1-10 5 4 3-6 3 6 5-4-1 10"/>',
+  flag: '<path d="M6 21V4M6 4h11l-2 4 2 4H6"/>',
+  sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12H5M19 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/>',
+  moon: '<path d="M19.5 14.5A8 8 0 0 1 9.5 4.5a8 8 0 1 0 10 10z"/>',
+  book: '<path d="M5 4.5h9.5a3 3 0 0 1 3 3v12H8a3 3 0 0 1-3-3z"/><path d="M5 16.5a3 3 0 0 1 3-3h9.5"/><path d="M9 8h5"/>',
+  next: '<path d="M5 12h13M13 6l6 6-6 6"/>',
+  d20: '<path d="M12 2.8l8 4.6v9.2l-8 4.6-8-4.6V7.4z"/><path d="M12 2.8L7.5 14h9zM4 7.4l3.5 6.6M20 7.4l-3.5 6.6M7.5 14L12 21.2l4.5-7.2"/>',
+  people: '<circle cx="9" cy="8.5" r="3"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><circle cx="17" cy="9.5" r="2.4"/><path d="M15.5 14.3a4.5 4.5 0 0 1 5.5 4.7"/>',
+  newg: '<path d="M4 12a8 8 0 1 0 2.4-5.7"/><path d="M4 4v4.5h4.5"/>',
+  hist: '<path d="M3 17l5-5 4 3 7-8"/><path d="M15 7h4v4"/>',
+  full: '<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/>',
+  gear: '<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.6 1.6 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-1.8-.3 1.6 1.6 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.6 1.6 0 0 0-1-1.5 1.6 1.6 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.6 1.6 0 0 0 .3-1.8 1.6 1.6 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.6 1.6 0 0 0 1.5-1 1.6 1.6 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.6 1.6 0 0 0 1.8.3H9a1.6 1.6 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.6 1.6 0 0 0 1 1.5 1.6 1.6 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0-.3 1.8V9a1.6 1.6 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.6 1.6 0 0 0-1.5 1z"/>',
+  undo: '<path d="M9 14L4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/>',
+  star: '<path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/>',
+  copy: '<rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5.5A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16H8"/>',
+  globe: '<circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 3.6 5.4 3.6 8.5s-1.1 5.9-3.6 8.5c-2.5-2.6-3.6-5.4-3.6-8.5s1.1-5.9 3.6-8.5z"/>',
+  info: '<circle cx="12" cy="12" r="8.5"/><path d="M12 11v5M12 8h.01"/>',
+  timer: '<circle cx="12" cy="13" r="7.5"/><path d="M12 9v4l2.5 2M10 2.5h4"/>',
+  coin: '<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="5"/>',
+};
+const icon = (n, c) => `<svg class="i ${c || ""}" viewBox="0 0 24 24" aria-hidden="true">${ICON[n]}</svg>`;
+const raw = n => `<svg viewBox="0 0 24 24" aria-hidden="true">${ICON[n]}</svg>`;
+
+/* ============================================================
+   Testi dell'interfaccia
+   ============================================================ */
+const STR = {
+  it: {
+    close: "Chiudi", back: "Indietro", backGame: "Torna alla partita", judge: "Arbitro", menu: "Partita",
+    askLabel: "Descrivi la situazione o cerca una regola", askPh: "Descrivi la situazione o cerca una regola…", clear: "Cancella",
+    tSearch: "Cerca", tToc: "Indice", tGloss: "Glossario", tSaved: "Salvate",
+    searched: "Ho cercato", ignored: "ignorate", removeTerm: "Escludi «{t}» dalla ricerca", restoreTerm: "Includi di nuovo «{t}»",
+    best: "Regola più pertinente", related: "Altre regole collegate", ofN: "{n} di {t}", asked: "Regole richieste", gloss: "Glossario ufficiale",
+    noRes: "Nessuna regola trovata. Usa i termini delle carte (es. «travolgere», «pila», «segnalino +1/+1») o scrivi un numero di regola (es. 702.19b).",
+    topics: "Argomenti", recent: "Ricerche recenti", saved: "Salvata", save: "Salva", copy: "Copia", showEn: "Originale inglese", hideEn: "Nascondi inglese",
+    copied: "Regola {id} copiata", copyFail: "Copia non riuscita: seleziona il testo a mano", example: "Esempio",
+    wholeSec: "Tutta la sezione", onlyRule: "Solo questa regola", rule: "Regola", rules: "{n} regole", noSaved: "Nessuna regola salvata. Apri una regola e tocca «Salva».",
+    noGloss: "Nessun termine trovato.", filterToc: "Filtra le sezioni", filterGloss: "Cerca nel glossario",
+    untranslated: "Testo originale: questa regola non ha ancora una traduzione per la versione caricata.",
+    trNote: "Traduzione italiana non ufficiale. In caso di dubbio fa fede il testo inglese di Wizards of the Coast (tocca «Originale inglese»).",
+    verChip: "Regole del {d}",
+    kw: "Parole chiave", kwSub: "Abilità come travolgere, volare…", kwa: "Azioni chiave", kwaSub: "Distruggere, esiliare, profetizzare…",
+    turn: "Turno {n}", tTurn: "Fasi del turno", sba: "Azioni di stato", stack: "Pila e priorità", combat: "Combattimento",
+    layers: "Effetti continui e livelli", repl: "Sostituzione e prevenzione", commander: "Commander", multi: "Multigiocatore", mull: "Mulligan", copies: "Copie", dfc: "Carte bifronte",
+    menuSearch: "Cerca una regola o descrivi la situazione", passTo: "Passa il turno", toPlayer: "a {p}", dice: "Dadi e moneta", whoStarts: "Chi inizia",
+    rulesTile: "Regole", newGame: "Nuova partita", newGameSub: "Formato, giocatori, nomi", history: "Storico", historySub: "Vita e modifiche",
+    fullscreen: "Schermo intero", settings: "Impostazioni", gameState: "Segnalini di partita", monarch: "Monarca", initiative: "Iniziativa", dayNight: "Giorno / notte",
+    nobody: "Nessuno", day: "Giorno", night: "Notte", none: "—", duration: "Durata", format: "Formato", players: "Giocatori", started: "Inizia {p}",
+    setupTitle: "Nuova partita", startGame: "Inizia la partita", playersN: "Numero di giocatori", seating: "Disposizione", seatTable: "Intorno al tavolo", seatUp: "Tutti verso di me",
+    seatHelp: "Intorno al tavolo: ogni pannello è girato verso il giocatore che siede da quel lato.", names: "Giocatori", team: "Squadra {n}", player: "Giocatore {n}",
+    partner: "Due comandanti (partner)", startLife: "Punti vita", liveApply: "Nomi, colori e disposizione si applicano subito; «Inizia la partita» azzera punti vita e segnalini.",
+    fStd: "Standard", fStdSub: "Pioneer, Modern, Draft…", fCmd: "Commander", fCmdSub: "Danno da comandante 21", fBrawl: "Brawl", fBrawlSub: "25 in due, 30 in più",
+    f2hg: "Gigante a Due Teste", f2hgSub: "Squadre, 15 veleno", fCustom: "Personalizzato", fCustomSub: "Scegli i punti vita",
+    life: "Punti vita", poison: "Veleno", energy: "Energia", exp: "Esperienza", rad: "Radiazioni", tax: "Tassa", tax2: "Tassa partner",
+    counters: "Segnalini", cmdDmg: "Danni da comandante subiti", done: "Fatto", cmdNote: "Tocca un comandante per +1. Con «−» togli.", cmdOf: "di {p}", cmd2: "{p} (2°)",
+    outLife: "Fuori", out: "Fuori", lifeOf: "{p}: {l} punti vita", counterBtn: "Segnalini di {p}", cmdBtn: "Danni da comandante di {p}",
+    plus: "{p}: più uno (tieni premuto: più dieci)", minus: "{p}: meno uno (tieni premuto: meno dieci)",
+    roll: "Tira", rollAgain: "Tocca per ritirare", heads: "Testa", tails: "Croce", coin: "Moneta", lastRolls: "Ultimi lanci",
+    undo: "Annulla ultima modifica", noHistory: "Ancora nessuna modifica in questa partita.", undone: "Annullato", lifeChart: "Andamento dei punti vita",
+    stLang: "Lingua", stLangHelp: "Interfaccia e regolamento. In italiano le regole sono tradotte; in inglese vedi il testo ufficiale.",
+    stTheme: "Tema delle schermate", tDark: "Scuro", tLight: "Chiaro", tSys: "Sistema",
+    stShowEn: "Mostra anche l'originale inglese", stShowEnHelp: "Sotto ogni regola tradotta, il testo ufficiale.",
+    stCmdLife: "Il danno da comandante toglie punti vita", stCmdLifeHelp: "Ogni +1 sul comandante toglie anche 1 punto vita.",
+    stWake: "Schermo sempre acceso", stWakeHelp: "Il telefono non va in standby durante la partita.",
+    stHaptic: "Vibrazione", stHapticHelp: "Breve vibrazione a ogni tocco, dove il telefono lo consente.",
+    stRules: "Regolamento", stVer: "Comprehensive Rules in vigore dal {d}", stVerCustom: "Comprehensive Rules in vigore dal {d} (caricate da te)",
+    stCount: "{r} regole · {g} voci di glossario · {p}% tradotto in italiano",
+    stUpdate: "Aggiorna il regolamento", stUpdateHelp: "A ogni nuova espansione Wizards aggiorna le regole. Scarica il file TXT da magic.wizards.com/rules e caricalo qui; le regole cambiate restano in inglese finché non esce una nuova traduzione.",
+    stUpload: "Carica file .txt", stBuiltin: "Usa la versione incorporata", loaded: "Regolamento del {d} caricato", older: "Il file ({d}) è più vecchio della versione incorporata",
+    notSaved: "Caricato, ma non salvato: andrà ricaricato", builtinBack: "Torno alla versione incorporata",
+    stData: "Dati", stClear: "Cancella ricerche recenti", cleared: "Ricerche recenti cancellate",
+    about: "MTG Aulla cerca e cita le regole ufficiali di Magic: The Gathering (© Wizards of the Coast) e tiene i punti vita. Non sostituisce l'arbitro: in torneo decide lui. Progetto amatoriale non ufficiale.",
+    turnToast: "Turno {n} · {p}", newGameDone: "Nuova partita", fsFail: "Schermo intero non disponibile qui",
+    ex: [
+      "La mia creatura con travolgere e tocco letale viene bloccata: quanto danno arriva al giocatore?",
+      "Se il bersaglio di una magia diventa illegale, la magia si risolve lo stesso?",
+      "Il comandante muore: posso rimetterlo nella zona di comando?",
+      "Due effetti sostitutivi modificano lo stesso evento: chi sceglie l'ordine?",
+    ],
+  },
+  en: {
+    close: "Close", back: "Back", backGame: "Back to the game", judge: "Judge", menu: "Game",
+    askLabel: "Describe the situation or look up a rule", askPh: "Describe the situation or look up a rule…", clear: "Clear",
+    tSearch: "Search", tToc: "Contents", tGloss: "Glossary", tSaved: "Saved",
+    searched: "Searched for", ignored: "ignored", removeTerm: "Leave “{t}” out", restoreTerm: "Include “{t}” again",
+    best: "Most relevant rule", related: "Related rules", ofN: "{n} of {t}", asked: "Requested rules", gloss: "Official glossary",
+    noRes: "No rules found. Use card terms (e.g. “trample”, “stack”, “+1/+1 counter”) or type a rule number (e.g. 702.19b).",
+    topics: "Topics", recent: "Recent searches", saved: "Saved", save: "Save", copy: "Copy", showEn: "English original", hideEn: "Hide English",
+    copied: "Rule {id} copied", copyFail: "Couldn't copy: select the text manually", example: "Example",
+    wholeSec: "Whole section", onlyRule: "Just this rule", rule: "Rule", rules: "{n} rules", noSaved: "No saved rules. Open a rule and tap “Save”.",
+    noGloss: "No matching terms.", filterToc: "Filter sections", filterGloss: "Search the glossary",
+    untranslated: "", trNote: "",
+    verChip: "Rules of {d}",
+    kw: "Keyword abilities", kwSub: "Trample, flying, ward…", kwa: "Keyword actions", kwaSub: "Destroy, exile, scry…",
+    turn: "Turn {n}", tTurn: "Turn structure", sba: "State-based actions", stack: "Stack and priority", combat: "Combat",
+    layers: "Continuous effects and layers", repl: "Replacement and prevention", commander: "Commander", multi: "Multiplayer", mull: "Mulligan", copies: "Copies", dfc: "Double-faced cards",
+    menuSearch: "Look up a rule or describe the situation", passTo: "Pass the turn", toPlayer: "to {p}", dice: "Dice and coin", whoStarts: "Who goes first",
+    rulesTile: "Rules", newGame: "New game", newGameSub: "Format, players, names", history: "History", historySub: "Life and changes",
+    fullscreen: "Full screen", settings: "Settings", gameState: "Game designations", monarch: "Monarch", initiative: "Initiative", dayNight: "Day / night",
+    nobody: "Nobody", day: "Day", night: "Night", none: "—", duration: "Duration", format: "Format", players: "Players", started: "{p} goes first",
+    setupTitle: "New game", startGame: "Start the game", playersN: "Number of players", seating: "Seating", seatTable: "Around the table", seatUp: "All facing me",
+    seatHelp: "Around the table: each panel faces the player sitting on that side.", names: "Players", team: "Team {n}", player: "Player {n}",
+    partner: "Two commanders (partner)", startLife: "Starting life", liveApply: "Names, colors and seating apply right away; “Start the game” resets life and counters.",
+    fStd: "Standard", fStdSub: "Pioneer, Modern, Draft…", fCmd: "Commander", fCmdSub: "21 commander damage", fBrawl: "Brawl", fBrawlSub: "25 for two, 30 for more",
+    f2hg: "Two-Headed Giant", f2hgSub: "Teams, 15 poison", fCustom: "Custom", fCustomSub: "Pick starting life",
+    life: "Life", poison: "Poison", energy: "Energy", exp: "Experience", rad: "Rad", tax: "Tax", tax2: "Partner tax",
+    counters: "Counters", cmdDmg: "Commander damage taken", done: "Done", cmdNote: "Tap a commander for +1. Use “−” to remove.", cmdOf: "{p}'s", cmd2: "{p} (2nd)",
+    outLife: "Out", out: "Out", lifeOf: "{p}: {l} life", counterBtn: "{p}'s counters", cmdBtn: "{p}'s commander damage",
+    plus: "{p}: plus one (hold: plus ten)", minus: "{p}: minus one (hold: minus ten)",
+    roll: "Roll", rollAgain: "Tap to roll again", heads: "Heads", tails: "Tails", coin: "Coin", lastRolls: "Last rolls",
+    undo: "Undo last change", noHistory: "No changes in this game yet.", undone: "Undone", lifeChart: "Life over time",
+    stLang: "Language", stLangHelp: "Interface and rules. In Italian the rules are translated; in English you see the official text.",
+    stTheme: "Screen theme", tDark: "Dark", tLight: "Light", tSys: "System",
+    stShowEn: "Also show the English original", stShowEnHelp: "Only used with Italian.",
+    stCmdLife: "Commander damage also removes life", stCmdLifeHelp: "Each +1 from a commander also takes 1 life.",
+    stWake: "Keep screen on", stWakeHelp: "Your phone won't sleep during the game.",
+    stHaptic: "Vibration", stHapticHelp: "A short buzz on each tap, where the phone allows it.",
+    stRules: "Rules", stVer: "Comprehensive Rules effective {d}", stVerCustom: "Comprehensive Rules effective {d} (loaded by you)",
+    stCount: "{r} rules · {g} glossary entries · {p}% translated into Italian",
+    stUpdate: "Update the rules", stUpdateHelp: "Wizards updates the rules with each new set. Download the TXT file from magic.wizards.com/rules and load it here.",
+    stUpload: "Load .txt file", stBuiltin: "Use the built-in version", loaded: "Rules of {d} loaded", older: "This file ({d}) is older than the built-in version",
+    notSaved: "Loaded but not saved: you'll need to load it again", builtinBack: "Back to the built-in version",
+    stData: "Data", stClear: "Clear recent searches", cleared: "Recent searches cleared",
+    about: "MTG Aulla finds and quotes the official Magic: The Gathering rules (© Wizards of the Coast) and keeps life totals. It doesn't replace a judge. Unofficial fan project.",
+    turnToast: "Turn {n} · {p}", newGameDone: "New game", fsFail: "Full screen isn't available here",
+    ex: [
+      "My creature with trample and deathtouch is blocked: how much damage goes through?",
+      "If a spell's target becomes illegal, does the spell still resolve?",
+      "My commander dies: can I put it back in the command zone?",
+      "Two replacement effects apply to the same event: who chooses the order?",
+    ],
+  },
+};
+const t = (k, v) => { let s = STR[settings.lang][k]; if (s == null) s = STR.it[k] ?? k; if (v) for (const [a, b] of Object.entries(v)) s = s.split("{" + a + "}").join(b); return s; };
+const MONTHS = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
+const fmtDate = d => { const m = /^([A-Za-z]+) (\d+), (\d{4})$/.exec(d || ""); if (!m) return d || ""; const i = MONTHS.indexOf(m[1].toLowerCase()); if (i < 0) return d;
+  try { return new Date(+m[3], i, +m[2]).toLocaleDateString(settings.lang === "it" ? "it-IT" : "en-US", { day: "numeric", month: "long", year: "numeric" }); } catch (e) { return d; } };
+const dateVal = d => { const x = Date.parse(d); return isNaN(x) ? 0 : x; };
+
+/* ============================================================
+   Regolamento: lettura del TXT ufficiale e traduzione
+   ============================================================ */
+function parseCR(text) {
+  const lines = text.replace(/\r/g, "").split("\n");
+  const m = text.match(/effective as of ([^.\n]+)\./i);
+  const date = m ? m[1].trim() : "";
+  let start = -1, gStart = -1, gEnd = lines.length, seen = 0, gSeen = 0;
+  for (let i = 0; i < lines.length; i++) {
+    const l = lines[i].trim();
+    if (l === "1. Game Concepts" && ++seen === 2) start = i;
+    if (l === "Glossary" && ++gSeen === 2) gStart = i;
+    if (l === "Credits" && gStart > 0 && i > gStart) { gEnd = i; break; }
+  }
+  if (start < 0 || gStart < 0) throw new Error(settings.lang === "it" ? "Il file non sembra il regolamento ufficiale." : "This doesn't look like the official rules file.");
+  const chapters = [], sections = {}, rules = [], byId = {};
+  let last = null;
+  for (let i = start; i < gStart; i++) {
+    const l = lines[i].trim(); if (!l) continue;
+    let x;
+    if ((x = l.match(/^(\d)\. ([\s\S]+)$/))) { chapters.push({ n: x[1], t: x[2], secs: [] }); continue; }
+    if ((x = l.match(/^(\d{3})\. ([\s\S]+)$/))) { sections[x[1]] = { n: x[1], t: x[2], rules: [] }; if (chapters.length) chapters[chapters.length - 1].secs.push(x[1]); continue; }
+    if ((x = l.match(/^(\d{3}\.\d+[a-z]?)\.?\s+([\s\S]*)$/))) {
+      last = { id: x[1], t: x[2], ex: [], sec: x[1].slice(0, 3) };
+      last.sub = /[a-z]$/.test(x[1]); last.parent = last.sub ? x[1].replace(/[a-z]$/, "") : null;
+      rules.push(last); byId[last.id] = last; if (sections[last.sec]) sections[last.sec].rules.push(last); continue;
+    }
+    if ((x = l.match(/^Example:\s*([\s\S]*)$/))) { if (last) last.ex.push(x[1]); continue; }
+    if (last) { if (last.ex.length) last.ex[last.ex.length - 1] += "\n" + l; else last.t += "\n" + l; }
+  }
+  const glossary = []; let block = [];
+  const flush = () => { if (block.length >= 2) glossary.push({ term: block[0], def: block.slice(1).join("\n") }); block = []; };
+  for (let i = gStart + 1; i < gEnd; i++) { const l = lines[i].trim(); if (!l) flush(); else block.push(l); }
+  flush();
+  if (rules.length < 1000) throw new Error(settings.lang === "it" ? "Nel file ci sono solo " + rules.length + " regole." : "Only " + rules.length + " rules in this file.");
+  return { date, chapters, sections, rules, byId, glossary, groups: rules.filter(r => !r.sub).map(r => r.id) };
+}
+// impronta del testo inglese: la traduzione vale solo se la regola non è cambiata
+function fnv(s) { let h = 0x811c9dc5; for (const ch of s) { h ^= ch.codePointAt(0); h = Math.imul(h, 0x01000193) >>> 0; } return h.toString(36); }
+const ruleHash = r => fnv(r.t + "\u0001" + r.ex.join("\u0001"));
+let TR = { r: {}, s: {}, c: {}, g: {} };
+try { TR = Object.assign(TR, JSON.parse($("tr-it").textContent)); } catch (e) {}
+const trOn = () => settings.lang === "it";
+function trRule(r) { // → {t, ex, tr}
+  if (trOn()) { const x = TR.r[r.id]; if (x && x[2] === ruleHash(r)) return { t: x[0], ex: x[1] || [], tr: true }; }
+  return { t: r.t, ex: r.ex, tr: false };
+}
+const secTitle = n => (trOn() && TR.s[n]) || (CR.sections[n] ? CR.sections[n].t : n);
+const chTitle = c => (trOn() && TR.c[c.n]) || c.t;
+const ruleTitle = id => { const r = CR.byId[id]; if (!r || !CR.topicOf[id]) return ""; return trOn() ? trRule(r).t : r.t; };
+const glossOf = g => { if (trOn() && TR.g[g.term]) return { term: TR.g[g.term][0], def: TR.g[g.term][1], en: g.term }; return { term: g.term, def: g.def, en: "" }; };
+
+/* ============================================================
+   Ricerca: inglese (radici + dizionario italiano) e testo tradotto
+   ============================================================ */
+const norm = s => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[’‘`]/g, "'").replace(/[“”«»]/g, '"');
+const EN_STOP = new Set("a an the of to in on at by for from with and or but if then than that this these those it its it's is are was were be been being as into onto any all each other another such can can't cannot may must would will has have had do does doesn't don't not no only also which who whom whose what when whenever where while there their they them he she his her you your one ones so up out itself see rule rules example i my me we our how much many get gets got did why goes go going went happen happens happened still just here like after before during way able need now".split(" "));
+function stemEn(w) {
+  if (w.length <= 3) return w;
+  w = w.replace(/'s$/, "");
+  if (/ies$/.test(w) && w.length > 4) return w.slice(0, -3) + "y";
+  if (/sses$/.test(w)) return w.slice(0, -2);
+  if (/ing$/.test(w) && w.length > 5) { w = w.slice(0, -3); if (/(.)\1$/.test(w) && !/(ll|ss)$/.test(w)) w = w.slice(0, -1); return w; }
+  if (/ed$/.test(w) && w.length > 4 && !/eed$/.test(w)) { w = w.slice(0, -2); if (/(.)\1$/.test(w) && !/(ll|ss)$/.test(w)) w = w.slice(0, -1); return w; }
+  if (/(ch|sh|x|ss|z)es$/.test(w)) return w.slice(0, -2);
+  if (/s$/.test(w) && !/(ss|us|is)$/.test(w)) return w.slice(0, -1);
+  return w;
+}
+const tokens = s => norm(s).split(/[^a-z0-9+\/'-]+/).map(x => x.replace(/^['\/-]+|['\/-]+$/g, "")).filter(Boolean);
+const stems = s => tokens(s).flatMap(x => x.split(/[-\/']/)).filter(x => x && !EN_STOP.has(x)).map(stemEn);
+const keyOf = s => stems(s).join(" ");
+// radice italiana semplice (per il testo tradotto)
+const IT_SUFFIX = ["azioni", "azione", "amenti", "amento", "mente", "ando", "endo", "anti", "ante", "ente", "enti", "ato", "ata", "ati", "ate", "uto", "uta", "uti", "ute", "ito", "ita", "iti", "ite", "are", "ere", "ire", "ano", "ono", "ino", "a", "e", "i", "o"];
+function stemIt(w) { for (const s of IT_SUFFIX) if (w.length - s.length >= 4 && w.endsWith(s)) return w.slice(0, -s.length); return w; }
+const itStems = s => norm(s).split(/[^a-z0-9]+/).filter(w => w.length > 2 && !IT_STOP.has(w)).map(stemIt);
+
+const IT_PHRASES = [
+  ["tocco letale", "deathtouch", 2], ["legame vitale", "lifelink", 2], ["doppio attacco", "double strike", 2],
+  ["attacco improvviso", "first strike", 2], ["anti[- ]?malocchio", "hexproof", 2], ["protezione da", "protection", 2],
+  ["campo di battaglia", "battlefield", 1], ["zona di comando", "command zone", 1.5], ["tassa del comandante", "commander tax", 2],
+  ["danno da comandante", "commander damage", 2], ["danni da comandante", "commander damage", 2],
+  ["azioni? (di|basate sullo|generate dallo) stato", "state-based actions", 2], ["regola della leggenda", "legend rule", 2],
+  ["leggendari[aeo]? con (lo )?stesso nome", "legend rule", 2], ["stesso nome", "same name", 1.5],
+  ["costituzione (0|zero|negativa)", "toughness 0 or less", 2], ["(lealta|fedelta) (0|zero)", "loyalty 0", 2], ["(0|zero) punti vita", "0 or less life", 2],
+  ["punti vita", "life total", 1], ["dann[oi] da combattimento", "combat damage", 1.5],
+  ["dann[oi] non da combattimento", "noncombat damage", 1.5], ["dann[oi] letal[ei]", "lethal damage", 1.5],
+  ["effett[oi] (sostitutiv[oi]|di sostituzione)", "replacement effect", 2], ["effett[oi] di prevenzione", "prevention effect", 2],
+  ["effett[oi] continu[oi]", "continuous effect", 1.5], ["abilita innescat[ae]", "triggered ability", 1.5], ["abilita attivat[ae]", "activated ability", 1.5],
+  ["abilita static[ah]e?", "static ability", 1.5], ["abilita di mana", "mana ability", 2], ["abilita di (lealta|fedelta)", "loyalty ability", 2],
+  ["costo di mana convertito", "mana value", 2], ["valore di mana", "mana value", 2], ["costo di mana", "mana cost", 1.5],
+  ["costi? aggiuntiv[oi]", "additional cost", 1.5], ["costi? alternativ[oi]", "alternative cost", 1.5],
+  ["senza pagare", "without paying its mana cost", 1.5], ["riserva di mana", "mana pool", 1.5],
+  ["fino alla fine del turno", "until end of turn", 1], ["ogni volta che", "whenever", .6], ["in risposta", "respond", 1],
+  ["a faccia in giu", "face down", 1.5], ["faccia in giu", "face down", 1.5], ["a faccia in su", "face up", 1.5], ["doppia faccia", "double-faced", 1.5],
+  ["(debolezza|mal|malattia) da evocazione", "summoning sickness", 2],
+  ["non bloccat[ao]", "unblocked", 1.5], ["rimoss[ao] dal combattimento", "removed from combat", 1.5],
+  ["dichiara(re|zione)? (gli |degli )?attaccanti", "declare attackers", 1.5], ["dichiara(re|zione)? (i |dei )?bloccanti", "declare blockers", 1.5],
+  ["inizio del combattimento", "beginning of combat", 1.5], ["fine del combattimento", "end of combat", 1.5],
+  ["sottofase finale", "end step", 1.5], ["fase finale", "ending phase", 1.5], ["fase principale", "main phase", 1.5],
+  ["sottofase di cancellazione", "cleanup", 1.5], ["sottofase di acquisizione", "draw step", 1.5], ["sottofase di mantenimento", "upkeep", 1.5],
+  ["(ciclo|loop) infinito", "loop", 1.5], ["azioni infinite", "loop", 1.5],
+  ["stesso tempo", "simultaneously", 1], ["ordine cronologico", "timestamp", 1.5], ["bersagli? illegal[ei]", "illegal target", 1.5],
+  ["terr[ae] bas[ei]", "basic land", 1.5],
+  ["segnalin[oi] \\+1/\\+1", "+1/+1 counter", 2], ["segnalin[oi] -1/-1", "-1/-1 counter", 2], ["segnalin[oi] (di )?veleno", "poison counter", 2],
+  ["segnalin[oi] (di )?(lealta|fedelta)", "loyalty counter", 2],
+  ["giocatore in difesa", "defending player", 1.5], ["giocatore (attaccante|in attacco)", "attacking player", 1.5],
+  ["al posto di", "instead", .8], ["(mazzo|grimorio) vuoto", "empty library", 2],
+  ["prende(re)? il controllo", "gain control", 1.5], ["cambi[ao] (di )?controllo", "control-changing", 1.5],
+  ["non puo essere bloccat[ao]", "can't be blocked", 1.5], ["non puo bloccare", "can't block", 1.5], ["non puo attaccare", "can't attack", 1.5],
+  ["sistema dei livelli", "layer", 2], ["giocatore attivo", "active player", 1.5], ["giocatore non attivo", "nonactive player", 1.5],
+  ["lancia(re)? una moneta", "flip coin", 1.5], ["tira(re)? (un )?dado", "roll die", 1.5], ["chi inizia", "starting player", 1.5],
+];
+const IT_WORDS = {
+  travolg: "trample", volare: "flying", volant: "flying", vola: "flying", cautela: "vigilance", rapidita: "haste",
+  raggiungere: "reach", portata: "reach", minacci: "menace", indistruttib: "indestructible", salvaguardia: "ward",
+  protezion: "protection", velo: "shroud", lampo: "flash", difensore: "defender", intimid: "intimidate", paura: "fear",
+  infett: "infect", tossic: "toxic", avvizz: "wither", prodezza: "prowess", cascata: "cascade", convoc: "convoke",
+  potenziamento: "kicker", metamorfosi: "morph", manifest: "manifest", profetizz: "scry", sorvegli: "surveil",
+  macin: "mill", lott: "fight", esplor: "explore", prolifer: "proliferate", persist: "persist", follia: "madness",
+  sospend: "suspend", tempesta: "storm", dragare: "dredge", esaltat: "exalted", annient: "annihilator", affinita: "affinity",
+  fuga: "escape", presag: "foretell", dissotterr: "unearth", avventur: "adventure", capitol: "chapter", monarca: "monarch",
+  iniziativa: "initiative", sotterrane: "dungeon", emblem: "emblem", mutar: "mutate", devozion: "devotion",
+  conferir: "bestow", riconfigur: "reconfigure", equipagg: "equip", veicol: "vehicle", manovr: "crew", aura: "aura",
+  incanta: "enchant", ciclo: "cycling", esumar: "delve", trasform: "transform", bifront: "double-faced",
+  giorno: "day", notte: "night", rigener: "regenerate", fase: "phase", sottofase: "step",
+  attacc: "attack", blocc: "block", difes: "defending", combatt: "combat", creatur: "creature", dann: "damage",
+  letal: "lethal", magia: "spell", magie: "spell", incantesim: "enchantment", artefatt: "artifact", terra: "land", terre: "land",
+  terren: "land", istantane: "instant", stregoner: "sorcery", permanent: "permanent", pedin: "token", segnalin: "counter",
+  giocator: "player", avversari: "opponent", controllor: "controller", controll: "control", propriet: "owner", bersagl: "target",
+  abilita: "ability", innesc: "trigger", attiv: "activate", statica: "static", statiche: "static", sostitu: "replacement",
+  preven: "prevent", pila: "stack", priorita: "priority", risolv: "resolve", risoluzion: "resolve",
+  lanci: "cast", gioc: "play", costo: "cost", costi: "cost", pag: "pay", riserva: "pool", colore: "color",
+  colori: "color", incolor: "colorless", mano: "hand", scart: "discard", pesc: "draw", grimori: "library", mazzo: "library",
+  cimiter: "graveyard", esili: "exile", esilio: "exile", entra: "enters", lascia: "leaves", muor: "dies", morir: "dies",
+  mort: "dies", distrug: "destroy", distrutt: "destroy", sacrific: "sacrifice", tapp: "tap", stapp: "untap",
+  turno: "turn", turni: "turn", mantenimento: "upkeep", acquisizion: "draw step", cancellazion: "cleanup", pulizia: "cleanup",
+  vita: "life", perd: "lose", vinc: "win", vittoria: "win", sconfitt: "lose", pareggi: "draw game", patta: "draw game",
+  veleno: "poison", copi: "copy", leggendar: "legendary", leggenda: "legend", forza: "power", costituzion: "toughness",
+  assegn: "assign", ordine: "order", dichiar: "declare", scegli: "choose", scelt: "choose", rivel: "reveal", cerc: "search",
+  mescol: "shuffle", nascost: "hidden", zona: "zone", zone: "zone", comandant: "commander",
+  multigiocator: "multiplayer", neutralizz: "counter", rimuov: "remove",
+  rimoss: "remove", ritorn: "return", riport: "return", guadagn: "gain", ottien: "gain", effett: "effect", livell: "layer",
+  dipendenz: "dependency", invece: "instead", modal: "mode", riduc: "reduce", riduzion: "reduce",
+  aument: "increase", gratis: "without paying its mana cost", rispond: "respond", risposta: "respond", lealta: "loyalty",
+  fedelta: "loyalty", battaglia: "battle", assedio: "siege", evocazion: "summoning sickness",
+  attaccant: "attacking", bloccant: "blocking", simultane: "simultaneously", contemporan: "simultaneously", carta: "card", carte: "card",
+  infinit: "loop", copert: "face down", scoperta: "face up", rimbalz: "return", divis: "split", doppi: "double", triplic: "triple",
+  dimezz: "half", meta: "half", arrotond: "round", valore: "value", numero: "number", quantit: "number",
+  illegal: "illegal", legal: "legal", formato: "format", torneo: "tournament", squadr: "team", compagn: "teammate", alleat: "teammate",
+  piano: "plane", piani: "plane", schema: "scheme", mostruos: "monstrosity", addestr: "training", complott: "plot", travestiment: "disguise",
+  sospett: "suspect", indag: "investigate", indizi: "clue", tesor: "treasure", cibo: "food", sangue: "blood", mappa: "map",
+  energia: "energy", esperienza: "experience", radiazion: "rad", scudo: "shield", stordiment: "stun", fiancheggi: "flanking",
+  ombra: "shadow", fasat: "phasing", evoca: "evoke", epica: "epic", duplic: "copy", clon: "copy",
+  scambi: "exchange", nome: "name", nomin: "name", tipo: "type", tipi: "type", sottotip: "subtype", supertip: "supertype",
+  base: "basic", neve: "snow", moneta: "coin", dado: "die", dadi: "die", tirar: "roll", contator: "counter", visibil: "public",
+  informazion: "information", sbirci: "look", guard: "look", mostr: "reveal", concede: "concede", abbandon: "concede", rinunci: "concede",
+  regola: "", regole: "", arbitr: "", sped: "", testa: "", croce: "", riprist: "",
+};
+const IT_STOP = new Set(("il lo la i gli le un uno una di da del dello della dei degli delle al allo alla ai agli alle dal dallo dalla dai dagli dalle nel nello nella nei negli nelle " +
+  "sul sullo sulla sui sugli sulle col coi con per tra fra a e ed o od ma se che chi cui non piu meno anche ancora gia poi quindi pero perche quando come dove cosa quale quali quanto quanta quanti quante " +
+  "io tu lui lei noi voi loro mio mia miei mie tuo tua tuoi tue suo sua suoi sue nostro nostra vostro vostra mi ti si ci vi ne li " +
+  "ha hanno ho hai abbiamo avete sono sei siamo siete era erano essere avere fa fanno fare puo posso puoi possono possiamo devo deve devono dovrebbe vorrei voglio vuole vogliono " +
+  "succede accade capita funziona vale valgono questo questa questi queste quello quella quelli quelle altro altra altri altre stesso stessa ogni tutti tutte tutto tutta " +
+  "solo sempre mai molto poco tanto prima dopo durante mentre ad ovvero oppure cioe ok si no allora tipo caso volta volte modo momento partita gioco giocata " +
+  "due tre quattro cinque sei sette otto nove dieci zero uno domanda situazione amico amici essa esso c'e viene vengono va vanno messo mette metto metti arriva arrivano appena diventa diventano " +
+  "nuovo nuova sia siano sarebbe sara").split(/\s+/));
+
+let CR = null, IDX = null, BUILTIN_DATE = "";
+function buildIndex(cr) {
+  const docs = [], df = new Map(), dfIt = new Map();
+  let total = 0, totalIt = 0;
+  const isTitle = s => s.length < 60 && !/[.:]$/.test(s.trim()) && s.split(/\s+/).length <= 7;
+  cr.topicOf = {};
+  for (const r of cr.rules) if (!r.sub && isTitle(r.t)) cr.topicOf[r.id] = r.t;
+  let translated = 0;
+  for (const r of cr.rules) {
+    const body = r.t + (r.ex.length ? "\n" + r.ex.join("\n") : "");
+    const st = stems(body), tf = new Map();
+    for (const s of st) tf.set(s, (tf.get(s) || 0) + 1);
+    for (const s of tf.keys()) df.set(s, (df.get(s) || 0) + 1);
+    total += st.length;
+    const d = { r, tf, len: st.length, normText: " " + tokens(body).join(" ") + " ", tfIt: null, lenIt: 0 };
+    const x = TR.r[r.id];
+    if (x && x[2] === ruleHash(r)) {
+      translated++;
+      const sti = itStems(x[0] + " " + (x[1] || []).join(" ")), ti = new Map();
+      for (const s of sti) ti.set(s, (ti.get(s) || 0) + 1);
+      for (const s of ti.keys()) dfIt.set(s, (dfIt.get(s) || 0) + 1);
+      d.tfIt = ti; d.lenIt = sti.length; totalIt += sti.length;
+    }
+    docs.push(d);
+  }
+  const titles = new Map();
+  for (const [id, s] of Object.entries(cr.topicOf)) if (keyOf(s)) titles.set(keyOf(s), id);
+  for (const s of Object.values(cr.sections)) if (keyOf(s.t) && !titles.has(keyOf(s.t))) titles.set(keyOf(s.t), s.n);
+  for (const d of docs) {
+    const r = d.r, base = r.sub ? r.parent : r.id;
+    d.topic = cr.topicOf[base] ? keyOf(cr.topicOf[base]) : "";
+    d.secTitle = cr.sections[r.sec] ? keyOf(cr.sections[r.sec].t) : "";
+  }
+  cr.translated = translated;
+  return { docs, df, dfIt, N: docs.length, avg: total / docs.length, avgIt: totalIt / Math.max(1, translated), titles, topics: new Set(Object.values(cr.topicOf).map(keyOf)), vocab: new Set(df.keys()) };
+}
+function interpret(q, excluded) {
+  const concepts = [], unknown = [], ruleIds = [], itWords = [];
+  let s = " " + norm(q) + " ";
+  s = s.replace(/\b(\d{3}\.\d+[a-z]?)\b/g, (m0, id) => { if (CR.byId[id]) { ruleIds.push(id); return " "; } return m0; });
+  s = s.replace(/\b(regol[ae]|rules?|sezione|section) (\d{3})\b/g, (m0, w, id) => { if (CR.sections[id]) { ruleIds.push(id); return " "; } return m0; });
+  const add = (label, en, w) => {
+    if (!en) return;
+    const key = en.toLowerCase(), c = concepts.find(c => c.key === key);
+    if (c) { c.w = Math.max(c.w, w); if (!c.labels.includes(label)) c.labels.push(label); return; }
+    const st = stems(en); if (!st.length) return;
+    concepts.push({ key, en, labels: [label], w, st, phrase: " " + tokens(en).join(" ") + " " });
+  };
+  for (const [re, en, w] of IT_PHRASES) {
+    const rx = new RegExp("(^|[^a-z0-9])(" + re + ")(?=[^a-z0-9]|$)", "g");
+    s = s.replace(rx, (m0, pre, hit) => { add(hit.trim(), en, w); itWords.push(...itStems(hit)); return pre + " ".repeat(hit.length); });
+  }
+  const words = s.split(/[^a-z0-9+\/'-]+/).filter(Boolean);
+  const used = new Array(words.length).fill(false);
+  for (let n = 4; n >= 2; n--) for (let i = 0; i + n <= words.length; i++) {
+    if (used.slice(i, i + n).some(Boolean)) continue;
+    const ph = keyOf(words.slice(i, i + n).join(" "));
+    if (ph.includes(" ") && IDX.titles.has(ph)) { const en = words.slice(i, i + n).join(" "); add(en, en, 2); for (let k = i; k < i + n; k++) used[k] = true; }
+  }
+  const itKeys = Object.keys(IT_WORDS).sort((a, b) => b.length - a.length);
+  const wTopic = en => IDX.topics.has(keyOf(en)) ? 1.6 : 1;
+  words.forEach((w0, i) => {
+    if (used[i]) return;
+    const w = w0.replace(/^[a-z]+'/, "").replace(/'$/, "");
+    if (!w || /^[\d+\/-]+$/.test(w)) return;
+    const st = stemEn(w), isEn = IDX.vocab.has(st) && !EN_STOP.has(w);
+    if (settings.lang === "en" && isEn) { add(w, w, wTopic(w)); return; }
+    if (IT_STOP.has(w) || IT_STOP.has(w0)) return;
+    const k = itKeys.find(k => k.length <= 3 ? w === k : w.startsWith(k));
+    if (k !== undefined) { if (IT_WORDS[k]) { add(w, IT_WORDS[k], wTopic(IT_WORDS[k])); itWords.push(stemIt(w)); } return; }
+    if (EN_STOP.has(w)) return;
+    if (isEn) { add(w, w, wTopic(w)); return; }
+    const si = stemIt(w);
+    if (w.length > 2 && IDX.dfIt.has(si)) { itWords.push(si); concepts.push({ key: "it:" + si, en: w, labels: [w], w: .9, st: [], it: si, phrase: "" }); return; }
+    if (w.length > 1) unknown.push(w0);
+  });
+  for (const c of concepts) c.off = excluded.has(c.key);
+  return { concepts, unknown, ruleIds, itWords };
+}
+function search(q, excluded) {
+  const it = interpret(q, excluded || new Set());
+  const active = it.concepts.filter(c => !c.off);
+  const { docs, df, dfIt, N, avg, avgIt } = IDX, k1 = 1.2, b = 0.6;
+  const idf = (m, s) => { const n = m.get(s) || 0; return Math.log(1 + (N - n + .5) / (n + .5)); };
+  const res = [];
+  if (active.length) for (const d of docs) {
+    let score = 0, matched = 0;
+    for (const c of active) {
+      let cs = 0;
+      if (c.it) { const f = d.tfIt && d.tfIt.get(c.it); if (f) cs = idf(dfIt, c.it) * (f * (k1 + 1)) / (f + k1 * (1 - b + b * d.lenIt / avgIt)); }
+      else {
+        for (const s of c.st) { const f = d.tf.get(s); if (f) cs += idf(df, s) * (f * (k1 + 1)) / (f + k1 * (1 - b + b * d.len / avg)); }
+        if (c.st.length > 1) cs *= d.normText.includes(c.phrase) ? 1.6 : 0.45;
+        const key = c.st.join(" ");
+        if (d.topic && d.topic === key) cs += 6; else if (d.secTitle === key) cs += 2;
+      }
+      if (cs > 0) { matched++; score += cs * c.w; }
+    }
+    if (matched) { score *= 1 + 0.75 * (matched - 1); res.push({ d, score }); }
+  }
+  res.sort((a, b) => b.score - a.score);
+  const per = new Map(), top = [];
+  for (const x of res) { const g = x.d.r.parent || x.d.r.id, n = per.get(g) || 0; if (n >= 3) continue; per.set(g, n + 1); top.push(x); if (top.length === 10) break; }
+  const gloss = [];
+  for (const c of active.filter(c => c.w >= 1.5)) { const g = CR.glossary.find(g => keyOf(g.term) === c.st.join(" ")); if (g && !gloss.includes(g)) gloss.push(g); }
+  return { it, top, gloss: gloss.slice(0, 3), total: res.length };
+}
+
+/* regole usate dal segnavita e dagli argomenti, trovate per contenuto (i numeri possono cambiare) */
+const RULE = {};
+function findRules() {
+  const f = (re, pre) => { const r = CR.rules.find(r => (!pre || r.id.startsWith(pre)) && re.test(r.t)); return r ? r.id : ""; };
+  const sec = re => (Object.values(CR.sections).find(s => re.test(s.t)) || {}).n || "";
+  RULE.life = f(/has 0 or less life, that player loses/i, "704") || "704.5a";
+  RULE.poison = f(/ten or more poison counters, that player loses/i, "704") || "704.5c";
+  RULE.cmd = f(/21 or more combat damage by the same commander/i, "704") || "704.6c";
+  RULE.teamLife = f(/Two-Headed Giant game, if a team has 0 or less life/i, "704");
+  RULE.teamPoison = f(/fifteen or more poison counters/i, "704");
+  RULE.start20 = f(/starting life total of 20/i, "103") || f(/starting life total of 20/i);
+  RULE.start40 = f(/Commander game, each player.s starting life total is 40/i, "103");
+  RULE.brawl = f(/Brawl game, each player.s starting life total is 25/i, "103");
+  RULE.thg = f(/Two-Headed Giant game, each team.s starting life total is 30/i, "103");
+  RULE.noCmdBrawl = f(/Brawl games do not use the state-based action/i);
+  RULE.tax = f(/commander tax/i, "903");
+  RULE.monarch = sec(/^The Monarch$/i); RULE.initiative = sec(/^The Initiative$/i); RULE.daynight = sec(/^Day and Night$/i);
+  RULE.mull = f(/mulligan/i, "103");
+  RULE.secKw = sec(/^Keyword Abilities$/i); RULE.secKa = sec(/^Keyword Actions$/i); RULE.secSba = sec(/^State-Based Actions$/i);
+  RULE.secPrio = sec(/^Timing and Priority$/i); RULE.secLayers = sec(/^Interaction of Continuous Effects$/i); RULE.secRepl = sec(/^Replacement Effects$/i);
+  RULE.secCmd = sec(/^Commander$/i); RULE.secCopy = sec(/^Copiable Values and Copying$/i); RULE.secDfc = sec(/^Double-Faced Cards$/i);
+}
+
+/* testo con riferimenti cliccabili ed evidenziazione */
+function richText(text, hl) {
+  let h = esc(text);
+  h = h.replace(/\b(\d{3}(?:\.\d+[a-z]?)?)(?=[\s,.;:)”»]|&|$)/g, (m0, id, off, all) => {
+    const ok = id.includes(".") ? CR.byId[id] : (CR.sections[id] && /(rules?|sections?|regol[ae]|sezion[ei]|and|or|e|o|,)\s$/i.test(all.slice(Math.max(0, off - 10), off)));
+    return ok ? `<button type="button" class="ref" data-act="open-rule" data-id="${id}">${id}</button>` : m0;
+  });
+  if (hl && (hl.en.size || hl.it.size)) {
+    h = h.replace(/(<[^>]+>)|([A-Za-zÀ-ÿ’'+\/-]+)/g, (m0, tag, w) => {
+      if (tag) return tag;
+      const parts = w.split(/[-\/’']/).filter(Boolean);
+      return parts.some(p => { const n = norm(p); return hl.en.has(stemEn(n)) || (n.length > 2 && hl.it.has(stemIt(n))); }) ? `<mark>${w}</mark>` : w;
+    });
+  }
+  return h.replace(/\n/g, "<br>");
+}
+function crumbOf(r) {
+  const ch = CR.chapters.find(c => c.secs.includes(r.sec)), bits = [];
+  if (ch) bits.push(esc(ch.n + ". " + chTitle(ch)));
+  if (CR.sections[r.sec]) bits.push(esc(r.sec + ". " + secTitle(r.sec)));
+  return bits.join(" › ");
+}
+
+/* ============================================================
+   Partita
+   ============================================================ */
+const COLORS = ["U", "R", "G", "B", "W", "M", "C"];
+const pcVars = c => `--p1:var(--${c}1);--p2:var(--${c}2);--pt:${c === "W" ? "var(--Wt)" : "#fff"}`;
+const FORMATS = {
+  standard: { life: 20, n: 2, cmd: false, poison: 10 },
+  commander: { life: 40, n: 4, cmd: true, poison: 10 },
+  brawl: { life: 25, n: 2, cmd: true, poison: 10, noCmdLoss: true },
+  thg: { life: 30, n: 2, cmd: false, poison: 15, team: true },
+  custom: { life: 20, n: 2, cmd: false, poison: 10 },
+};
+const newId = i => "p" + Date.now().toString(36) + Math.floor(rnd() * 1e6).toString(36) + i;
+function freshPlayer(i, life) { return { id: newId(i), name: "", color: COLORS[i % COLORS.length], partner: false, life, c: { poison: 0, energy: 0, exp: 0, rad: 0, tax: 0, tax2: 0 }, cmd: {} }; }
+function makeGame(fmt, n, life, keep) {
+  const players = [];
+  for (let i = 0; i < n; i++) {
+    const p = freshPlayer(i, life), o = keep && keep[i];
+    if (o) { p.id = o.id; p.name = o.name; p.color = o.color; p.partner = o.partner; }
+    players.push(p);
+  }
+  return { v: 3, fmt, start: life, players, turn: 1, active: 0, monarch: null, initiative: null, day: null, log: [], startedAt: Date.now(),
+    layout: game ? game.layout : (matchMedia("(pointer: coarse)").matches ? "table" : "upright") };
+}
+let game = null;
+game = store.get("game", null);
+if (!game || game.v !== 3 || !Array.isArray(game.players) || !game.players.length) game = makeGame("standard", 2, 20);
+const F = () => FORMATS[game.fmt] || FORMATS.standard;
+const saveGame = () => { clearTimeout(saveGame.h); saveGame.h = setTimeout(() => store.set("game", game), 200); };
+const pname = (p, i) => p.name || (F().team ? t("team", { n: i + 1 }) : t("player", { n: i + 1 }));
+function outRule(p) {
+  const f = F();
+  if (p.life <= 0) return f.team ? (RULE.teamLife || RULE.life) : RULE.life;
+  if (p.c.poison >= f.poison) return f.team ? (RULE.teamPoison || RULE.poison) : RULE.poison;
+  if (f.cmd && !f.noCmdLoss && Object.values(p.cmd).some(v => v[0] >= 21 || v[1] >= 21)) return RULE.cmd;
+  return "";
+}
+const ui = { view: {} }; // vista di ogni pannello: life | counters | cmd
+
+const LAYOUTS = {
+  portrait: {
+    1: ['"p0"', [0]], 2: ['"p0" "p1"', [180, 0]], 3: ['"p0 p1" "p2 p1"', [90, 270, 90]], 4: ['"p0 p1" "p3 p2"', [90, 270, 270, 90]],
+    5: ['"p0 p1" "p4 p2" "p3 p3"', [90, 270, 270, 0, 90], "1fr 1fr .8fr"], 6: ['"p0 p1" "p5 p2" "p4 p3"', [90, 270, 270, 270, 90, 90]],
+  },
+  landscape: {
+    1: ['"p0"', [0]], 2: ['"p0 p1"', [90, 270]], 3: ['"p0 p0" "p2 p1"', [180, 0, 0]], 4: ['"p0 p1" "p3 p2"', [180, 180, 0, 0]],
+    5: ['"p0 p0 p0 p1 p1 p1" "p4 p4 p3 p3 p2 p2"', [180, 180, 0, 0, 0]], 6: ['"p0 p1 p2" "p5 p4 p3"', [180, 180, 180, 0, 0, 0]],
+  },
+};
+function geometry() {
+  const b = $("board"), W = b.clientWidth, H = b.clientHeight, n = game.players.length;
+  if (game.layout === "table") { const L = LAYOUTS[W > H ? "landscape" : "portrait"][n]; return { tpl: L[0], rows: L[2] || "", rot: L[1], land: W > H }; }
+  let best = 1, bs = 1e9;
+  for (let c = 1; c <= n; c++) { const r = Math.ceil(n / c), a = (W / c) / (H / r), sc = Math.abs(Math.log(a / 1.3)) + (r * c - n) * .25; if (sc < bs) { bs = sc; best = c; } }
+  const rws = Math.ceil(n / best), areas = [];
+  for (let r = 0; r < rws; r++) {
+    const inRow = Math.min(best, n - r * best), row = [];
+    for (let c = 0; c < best; c++) row.push("p" + (r * best + Math.min(inRow - 1, Math.floor(c * inRow / best))));
+    areas.push('"' + row.join(" ") + '"');
+  }
+  return { tpl: areas.join(" "), rows: "", rot: game.players.map(() => 0) };
+}
+function chipsHTML(p, i) {
+  const f = F(), b = [];
+  const ch = (k, v, hot, extra) => `<button type="button" class="chip${hot ? " hot" : ""}" data-act="pview" data-m="${k === "cmd" ? "cmd" : "counters"}" data-i="${i}" aria-label="${esc(t(k === "cmd" ? "cmdBtn" : "counterBtn", { p: pname(p, i) }))}">${raw(k === "cmd" ? "sword" : k)}${v}${extra || ""}</button>`;
+  if (p.c.poison) b.push(ch("poison", p.c.poison, p.c.poison >= f.poison - 3));
+  if (f.cmd) for (const [pid, v] of Object.entries(p.cmd)) {
+    const j = game.players.findIndex(x => x.id === pid); if (j < 0) continue;
+    [0, 1].forEach(k => { if (v[k]) b.push(ch("cmd", v[k], v[k] >= 15, `<i>${esc(pname(game.players[j], j).slice(0, 3))}${k ? "²" : ""}</i>`)); });
+  }
+  if (p.c.energy) b.push(ch("energy", p.c.energy));
+  if (p.c.exp) b.push(ch("exp", p.c.exp));
+  if (p.c.rad) b.push(ch("rad", p.c.rad));
+  if (f.cmd && (p.c.tax || p.c.tax2)) b.push(ch("tax", "+" + p.c.tax * 2 + (p.partner ? "/+" + p.c.tax2 * 2 : "")));
+  return b.join("");
+}
+function seatHTML(p, i, rot) {
+  const view = ui.view[i] || "life", f = F(), nm = esc(pname(p, i));
+  const marks = (game.monarch === p.id ? raw("crown") : "") + (game.initiative === p.id ? raw("flag") : "");
+  if (view === "counters") {
+    const keys = ["poison", "energy", "exp", "rad"].concat(f.cmd ? (p.partner ? ["tax", "tax2"] : ["tax"]) : []);
+    return `<div class="seat r${rot}"><div class="pview">
+      <header><span>${nm} · ${t("counters")}</span><button type="button" class="pdone" data-act="pview" data-m="life" data-i="${i}">${t("done")}</button></header>
+      <div class="cgrid">${keys.map(k => `<div class="cell"><span class="lab">${raw(k === "tax2" ? "tax" : k)}${t(k)}</span>
+        <button type="button" data-act="cstep" data-i="${i}" data-k="${k}" data-d="-1" aria-label="${esc(t(k))} −1">−</button>
+        <span class="val" aria-live="polite">${k.startsWith("tax") ? (p.c[k] ? "+" + p.c[k] * 2 : 0) : p.c[k]}</span>
+        <button type="button" data-act="cstep" data-i="${i}" data-k="${k}" data-d="1" aria-label="${esc(t(k))} +1">+</button></div>`).join("")}</div></div></div>`;
+  }
+  if (view === "cmd") {
+    const tiles = [];
+    game.players.forEach((o, j) => {
+      if (j === i) return;
+      const slots = o.partner ? [0, 1] : [0], v = p.cmd[o.id] || [0, 0];
+      slots.forEach(k => tiles.push(`<div class="cell cmd${v[k] >= 15 ? " hot" : ""}" style="${pcVars(o.color)}"><span class="lab">${esc(k ? t("cmd2", { p: pname(o, j) }) : pname(o, j))}</span>
+        <button type="button" data-act="cmdstep" data-i="${i}" data-o="${o.id}" data-k="${k}" data-d="-1" aria-label="${esc(pname(o, j))} −1">−</button>
+        <span class="val">${v[k]}</span>
+        <button type="button" data-act="cmdstep" data-i="${i}" data-o="${o.id}" data-k="${k}" data-d="1" aria-label="${esc(pname(o, j))} +1">+</button></div>`));
+    });
+    return `<div class="seat r${rot}"><div class="pview">
+      <header><span>${nm} · ${t("cmdDmg")}</span><button type="button" class="pdone" data-act="pview" data-m="life" data-i="${i}">${t("done")}</button></header>
+      <div class="cgrid">${tiles.join("")}</div></div></div>`;
+  }
+  const out = outRule(p);
+  return `<div class="seat r${rot}">
+    <button type="button" class="hit minus" data-i="${i}" data-d="-1" aria-label="${esc(t("minus", { p: pname(p, i) }))}"><span class="sign" aria-hidden="true">−</span></button>
+    <button type="button" class="hit plus" data-i="${i}" data-d="1" aria-label="${esc(t("plus", { p: pname(p, i) }))}"><span class="sign" aria-hidden="true">+</span></button>
+    <div class="pname"><span>${nm}</span>${marks}</div>
+    <div class="lifebox"><div class="life${Math.abs(p.life) >= 100 ? " k3" : ""}" id="life-${i}">${p.life}</div></div>
+    <span class="delta" id="delta-${i}" aria-hidden="true"></span>
+    ${out ? `<button type="button" class="outtag" data-act="open-rule" data-id="${out}">${t("out")} <b>${out}</b></button>` : ""}
+    <div class="pfoot">
+      <button type="button" class="pbtn" data-act="pview" data-m="counters" data-i="${i}" aria-label="${esc(t("counterBtn", { p: pname(p, i) }))}">${raw("counters")}</button>
+      <div class="chips">${chipsHTML(p, i)}</div>
+      <button type="button" class="pbtn${f.cmd && game.players.length > 1 ? "" : " ghost"}" data-act="pview" data-m="cmd" data-i="${i}" aria-label="${esc(t("cmdBtn", { p: pname(p, i) }))}" ${f.cmd && game.players.length > 1 ? "" : 'tabindex="-1" aria-hidden="true"'}>${raw("sword")}</button>
+    </div></div>`;
+}
+let geo = null;
+function renderBoard(only) {
+  const b = $("board");
+  geo = geometry();
+  b.style.gridTemplateAreas = geo.tpl; b.style.gridTemplateRows = geo.rows;
+  const n = game.players.length;
+  if (b.children.length !== n) { b.innerHTML = game.players.map((p, i) => `<section class="pl" data-i="${i}" aria-label="${esc(pname(p, i))}"></section>`).join(""); only = null; }
+  game.players.forEach((p, i) => {
+    if (only != null && only !== i) return;
+    const el = b.children[i];
+    el.style.cssText = pcVars(p.color) + `;grid-area:p${i}`;
+    el.setAttribute("aria-label", pname(p, i));
+    el.classList.toggle("active", game.active === i && n > 1);
+    el.classList.toggle("out", !!outRule(p));
+    el.innerHTML = seatHTML(p, i, geo.rot[i] || 0);
+  });
+  placeHub();
+}
+function placeHub() {
+  const b = $("board"), hub = $("hub"), r = b.getBoundingClientRect();
+  let x = r.left + r.width / 2, y = r.top + r.height / 2;
+  const n = game.players.length;
+  if (n === 1) y = r.bottom - 56;
+  else if (game.layout === "table" && n === 5 && !geo.land) y = r.top + r.height / 2.8;
+  else if (game.layout === "upright") {
+    // all'incrocio tra le prime due righe/colonne, se c'è; altrimenti sul bordo in basso
+    const rows = geo.tpl.split('" "').length;
+    if (rows > 1) y = r.top + r.height / rows; else y = r.bottom - 50;
+  }
+  hub.style.left = x + "px"; hub.style.top = y + "px";
+  const ap = game.players[game.active];
+  hub.style.setProperty("--hubc", n > 1 && ap ? `var(--${ap.color}1)` : "var(--brass)");
+  $("hubt").innerHTML = n > 1 ? `<small>${settings.lang === "it" ? "TURNO" : "TURN"}</small>${game.turn}` : raw("gear").replace("<svg", '<svg class="i"');
+  $("hub").setAttribute("aria-label", t("menu") + (n > 1 ? " · " + t("turn", { n: game.turn }) : ""));
+  const dn = $("hubdn"); dn.hidden = !game.day; if (game.day) dn.innerHTML = raw(game.day === "day" ? "sun" : "moon");
+}
+const pend = {};
+function changeLife(i, d, opts) {
+  const p = game.players[i]; if (!p) return;
+  opts = opts || {};
+  const wasOut = !!outRule(p);
+  p.life += d;
+  const P = pend[i] || (pend[i] = { d: 0, h: 0 });
+  P.d += d;
+  const L = $("life-" + i), D = $("delta-" + i);
+  if (L) { L.textContent = p.life; L.classList.toggle("k3", Math.abs(p.life) >= 100); L.classList.remove("bump"); void L.offsetWidth; L.classList.add("bump"); setTimeout(() => L.classList.remove("bump"), 140); }
+  if (D) { D.textContent = (P.d > 0 ? "+" : P.d < 0 ? "−" : "±") + Math.abs(P.d); D.classList.add("on"); }
+  clearTimeout(P.h);
+  P.h = setTimeout(() => {
+    if (P.d) logPush({ pid: p.id, k: "life", d: P.d, v: p.life });
+    P.d = 0; const D2 = $("delta-" + i); if (D2) D2.classList.remove("on");
+    $("live").textContent = t("lifeOf", { p: pname(p, i), l: p.life });
+    saveGame();
+  }, 1500);
+  if (!opts.silent) buzz(6);
+  if (!!outRule(p) !== wasOut) renderBoard(i);
+  saveGame();
+}
+function logPush(e) { e.at = Date.now(); game.log.unshift(e); if (game.log.length > 400) game.log.length = 400; }
+function bindBoard() {
+  const b = $("board");
+  let hold = null;
+  const stop = () => { if (!hold) return; clearTimeout(hold.t); clearInterval(hold.iv); hold.btn.classList.remove("press"); hold = null; };
+  b.addEventListener("pointerdown", e => {
+    const btn = e.target.closest(".hit"); if (!btn) return;
+    e.preventDefault(); stop();
+    const i = +btn.dataset.i, d = +btn.dataset.d;
+    hold = { btn, i, d, long: false }; btn.classList.add("press");
+    hold.t = setTimeout(() => { if (!hold) return; hold.long = true; changeLife(i, d * 10); buzz(20); hold.iv = setInterval(() => { changeLife(i, d * 10); buzz(20); }, 650); }, 420);
+    try { btn.setPointerCapture(e.pointerId); } catch (err) {}
+  });
+  b.addEventListener("pointerup", e => {
+    if (!hold) return; const h = hold;
+    const under = document.elementFromPoint(e.clientX, e.clientY);
+    if (!h.long && (!under || h.btn.contains(under) || under === h.btn)) changeLife(h.i, h.d);
+    stop();
+  });
+  b.addEventListener("pointercancel", stop);
+  b.addEventListener("contextmenu", e => { if (e.target.closest(".hit,.cell,.pbtn")) e.preventDefault(); });
+  b.addEventListener("click", e => { const btn = e.target.closest(".hit"); if (btn && e.detail === 0) changeLife(+btn.dataset.i, +btn.dataset.d); });
+}
+
+/* ============================================================
+   Strati (menu, arbitro, lettore, ...) e indirizzo #
+   ============================================================ */
+const LAYER_HASH = { menu: "menu", rules: "regole", setup: "nuova-partita", dice: "dadi", history: "storico", settings: "impostazioni" };
+const stack = [];
+let ignoreHash = false;
+function hashFor(name) { return name === "reader" ? "regola-" + reader.id.replace(/\./g, "-") : LAYER_HASH[name]; }
+function setHash(h, push) {
+  const target = "#" + (h || "");
+  if (location.hash === target || (!h && !location.hash)) return;
+  ignoreHash = true;
+  try { if (push) location.hash = h; else if (h) location.replace(target); else history.replaceState(null, "", location.pathname + location.search); } catch (e) {}
+  setTimeout(() => { ignoreHash = false; }, 0);
+}
+const RENDER = {};
+function openLayer(name, opts) {
+  opts = opts || {};
+  const el = $("L-" + name);
+  if (opts.replaceTop && stack.length) { const top = stack.pop(); $("L-" + top.name).hidden = true; $("L-" + top.name).classList.remove("in"); opts.pushed = top.pushed; opts.opener = top.opener; }
+  const idx = stack.findIndex(s => s.name === name);
+  if (idx < 0) {
+    const entry = { name, opener: opts.opener || document.activeElement, pushed: false };
+    stack.push(entry);
+    el.hidden = false; el.classList.remove("in"); void el.offsetWidth; el.classList.add("in");
+    el.style.zIndex = 20 + stack.length;
+    if (!opts.fromHash) { if (opts.replaceTop) { setHash(hashFor(name), false); entry.pushed = !!opts.pushed; } else { setHash(hashFor(name), true); entry.pushed = true; } }
+  }
+  if (RENDER[name]) RENDER[name](opts);
+  const f = el.querySelector("[data-autofocus]") || el.querySelector("h2[tabindex]");
+  if (f && !opts.keepFocus) setTimeout(() => f.focus({ preventScroll: true }), 30);
+  updateWake();
+}
+function closeTopRaw() {
+  const top = stack.pop(); if (!top) return;
+  const el = $("L-" + top.name); el.hidden = true; el.classList.remove("in");
+  if (top.opener && top.opener.isConnected && top.opener.focus) try { top.opener.focus({ preventScroll: true }); } catch (e) {}
+  updateWake();
+  return top;
+}
+function closeTop() {
+  const top = stack[stack.length - 1]; if (!top) return;
+  if (top.pushed) {
+    const before = stack.length;
+    history.back();
+    setTimeout(() => { if (stack.length === before && stack[stack.length - 1] === top) { closeTopRaw(); setHash(stack.length ? hashFor(stack[stack.length - 1].name) : "", false); } }, 350);
+  } else { closeTopRaw(); setHash(stack.length ? hashFor(stack[stack.length - 1].name) : "", false); }
+}
+function route() {
+  if (ignoreHash) return;
+  const h = location.hash.slice(1);
+  let target = null, rid = null;
+  const m = /^regola-(\d{3}(?:-\d+[a-z]?)?)$/.exec(h);
+  if (m) { target = "reader"; rid = m[1].replace("-", "."); }
+  else target = Object.keys(LAYER_HASH).find(k => LAYER_HASH[k] === h) || null;
+  while (stack.length && stack[stack.length - 1].name !== target) {
+    if (target && stack.some(s => s.name === target)) closeTopRaw();
+    else if (!target) closeTopRaw();
+    else break;
+  }
+  if (target === "reader" && (CR.byId[rid] || CR.sections[rid])) openRule(rid, { fromHash: true, noPush: true });
+  else if (target && target !== "reader" && !stack.some(s => s.name === target)) openLayer(target, { fromHash: true });
+}
+
+/* ---------------- menu ---------------- */
+RENDER.menu = () => {
+  $("menu-title").textContent = t("menu");
+  const n = game.players.length, f = F();
+  const next = nextActive();
+  const dur = Math.floor((Date.now() - game.startedAt) / 60000);
+  const fmtName = { standard: t("fStd"), commander: t("fCmd"), brawl: t("fBrawl"), thg: t("f2hg"), custom: t("fCustom") }[game.fmt];
+  const who = (k) => `<div class="who" role="group" aria-label="${esc(t(k))}">${game.players.map((p, i) => `<button type="button" class="pchip" style="${pcVars(p.color)}" data-act="desig" data-k="${k}" data-id="${p.id}" aria-pressed="${game[k] === p.id}"><span class="dot"></span>${esc(pname(p, i))}</button>`).join("")}</div>`;
+  $("menu-body").innerHTML = `
+    <form class="msearch" id="mform" role="search">${icon("search")}<label for="mq" class="sr">${t("menuSearch")}</label><input id="mq" placeholder="${esc(t("menuSearch"))}" autocomplete="off" enterkeyhint="search"><button type="submit" class="btn pri sm">${t("tSearch")}</button></form>
+    <div class="tiles stag">
+      ${n > 1 ? `<button type="button" class="tile hero" data-act="pass">${icon("next")}${t("passTo")}<small>${esc(t("toPlayer", { p: pname(game.players[next], next) }))}</small></button>` : ""}
+      <button type="button" class="tile" data-act="open" data-l="rules">${icon("book")}${t("rulesTile")}<small>${esc(t("judge"))}</small></button>
+      <button type="button" class="tile" data-act="open" data-l="dice">${icon("d20")}${t("dice")}</button>
+      ${n > 1 ? `<button type="button" class="tile" data-act="who-starts">${icon("people")}${t("whoStarts")}</button>` : ""}
+    </div>
+    ${n > 1 ? `<div class="sec"><h3 class="lbl">${t("gameState")}</h3>
+      <div class="sec" style="gap:6px"><span class="note">${icon("crown", "s")} ${t("monarch")}</span>${who("monarch")}</div>
+      <div class="sec" style="gap:6px"><span class="note">${icon("flag", "s")} ${t("initiative")}</span>${who("initiative")}</div>
+      <div class="sec" style="gap:6px"><span class="note">${t("dayNight")}</span><div class="seg" role="group">
+        <button type="button" data-act="day" data-v="" aria-pressed="${!game.day}">${t("none")}</button>
+        <button type="button" data-act="day" data-v="day" aria-pressed="${game.day === "day"}">${icon("sun", "s")} ${t("day")}</button>
+        <button type="button" data-act="day" data-v="night" aria-pressed="${game.day === "night"}">${icon("moon", "s")} ${t("night")}</button></div></div>
+    </div>` : ""}
+    <div class="tiles">
+      <button type="button" class="tile" data-act="open" data-l="setup">${icon("newg")}${t("newGame")}<small>${t("newGameSub")}</small></button>
+      <button type="button" class="tile" data-act="open" data-l="history">${icon("hist")}${t("history")}<small>${t("historySub")}</small></button>
+      <button type="button" class="tile" data-act="fullscreen">${icon("full")}${t("fullscreen")}</button>
+      <button type="button" class="tile" data-act="open" data-l="settings">${icon("gear")}${t("settings")}</button>
+    </div>
+    <div class="meta"><span>${t("format")} <b>${esc(fmtName)}</b></span><span>${t("players")} <b>${n}</b></span>${n > 1 ? `<span>${esc(t("turn", { n: game.turn }))}</span>` : ""}<span>${t("duration")} <b>${Math.floor(dur / 60) ? Math.floor(dur / 60) + " h " : ""}${dur % 60} min</b></span></div>`;
+  $("mform").addEventListener("submit", e => { e.preventDefault(); const q = $("mq").value.trim(); rulesState.q = q; rulesState.tab = "search"; openLayer("rules", { replaceTop: true, focusInput: !q }); if (q) remember(q); });
+};
+function nextActive() {
+  const n = game.players.length; let a = game.active, guard = 0;
+  do { a = (a + 1) % n; } while (outRule(game.players[a]) && ++guard < n);
+  return a;
+}
+
+/* ---------------- arbitro ---------------- */
+const rulesState = { tab: "search", q: "", excluded: new Set(), list: null, timer: 0, filter: "" };
+RENDER.rules = (opts) => {
+  $("rver").textContent = t("verChip", { d: fmtDate(CR.date) });
+  const rq = $("rq");
+  if (rq.value !== rulesState.q) rq.value = rulesState.q;
+  rq.placeholder = t("askPh");
+  autoGrow();
+  document.querySelectorAll("#rtabs button").forEach(b => b.setAttribute("aria-pressed", b.dataset.rtab === rulesState.tab && !rulesState.list));
+  renderRulesBody();
+  if (opts && opts.focusInput) setTimeout(() => rq.focus(), 60);
+};
+function autoGrow() { const q = $("rq"); q.style.height = "auto"; q.style.height = Math.min(q.scrollHeight, innerHeight * .3) + "px"; $("rclear").hidden = !q.value; }
+function hlSets(it) {
+  const act = it.concepts.filter(c => !c.off);
+  return { en: new Set(act.flatMap(c => c.st.filter(s => c.w >= 1.5 || (IDX.df.get(s) || 0) < IDX.N * .04))), it: new Set(it.itWords.filter(s => (IDX.dfIt.get(s) || 0) < IDX.N * .06)) };
+}
+function renderRulesBody(anim) {
+  const out = $("rbody"), q = rulesState.q.trim();
+  if (rulesState.list) { out.innerHTML = listHTML(rulesState.list); return; }
+  if (rulesState.tab === "toc") return renderToc();
+  if (rulesState.tab === "gloss") return renderGloss();
+  if (rulesState.tab === "saved") { const ids = store.get("saved", []).filter(id => CR.byId[id]); out.innerHTML = ids.length ? `<div class="res">${ids.map(id => card(CR.byId[id], null, false)).join("")}</div>` : `<div class="empty">${t("noSaved")}</div>`; return; }
+  if (!q) { out.innerHTML = homeHTML(); return; }
+  const { it, top, gloss, total } = search(q, rulesState.excluded);
+  const hl = hlSets(it); rulesState.hl = hl;
+  let h = "";
+  if (it.concepts.length || it.unknown.length) h += `<div class="sec" style="gap:8px"><h3 class="lbl">${t("searched")}</h3><div class="terms">` +
+    it.concepts.map(c => { const from = c.labels.filter(l => norm(l) !== norm(c.en));
+      return `<button type="button" class="term${c.off ? " off" : ""}" data-act="term" data-key="${esc(c.key)}" aria-pressed="${!c.off}" title="${esc((c.off ? t("restoreTerm") : t("removeTerm")).replace("{t}", c.en))}"><span><b>${esc(c.en)}</b>${from.length ? ` <small>· ${esc(from.join(", "))}</small>` : ""}</span><span class="x" aria-hidden="true">${c.off ? "+" : "×"}</span></button>`; }).join("") +
+    (it.unknown.length ? `<span class="term unk">${t("ignored")}: ${esc(it.unknown.slice(0, 8).join(", "))}</span>` : "") + `</div></div>`;
+  if (it.ruleIds.length) h += `<div class="res"><h3 class="lbl">${t("asked")}</h3>${it.ruleIds.map(id => CR.byId[id] ? card(CR.byId[id], hl, true) : `<button type="button" class="rc" data-act="open-rule" data-id="${id}"><div class="hd"><span class="num">${id}.</span><b>${esc(secTitle(id))}</b></div><span class="crumb">${t("rules", { n: CR.sections[id].rules.length })}</span></button>`).join("")}</div>`;
+  if (gloss.length) h += `<div class="gbox"><h3 class="lbl" style="color:var(--brass)">${t("gloss")}</h3><dl>${gloss.map(g => { const x = glossOf(g); return `<dt>${esc(x.term)}${x.en ? `<small>${esc(x.en)}</small>` : ""}</dt><dd>${richText(x.def)}</dd>`; }).join("")}</dl></div>`;
+  if (top.length) {
+    const first = it.ruleIds.length ? 0 : 1;
+    if (first) h += `<div class="res">${card(top[0].d.r, hl, true, t("best"))}</div>`;
+    if (top.length > first) h += `<div class="res"><h3 class="lbl">${t("related")} · ${t("ofN", { n: top.length, t: total })}</h3>${top.slice(first).map(x => card(x.d.r, hl, false)).join("")}</div>`;
+  } else if (!it.ruleIds.length) h += `<div class="empty">${t("noRes")}</div>`;
+  if (trOn() && top.length) h += `<p class="tnote">${icon("info")}${t("trNote")}</p>`;
+  out.innerHTML = h;
+  out.classList.toggle("stag", !!anim);
+}
+function card(r, hl, best, eyebrow) {
+  const x = trRule(r);
+  const ex = best ? x.ex.map(e => `<p class="ex"><b>${t("example")}</b>${richText(e, hl)}</p>`).join("") : "";
+  const en = best && x.tr && settings.showEn ? `<p class="en">${richText(r.t)}</p>` : "";
+  return `<article class="rc${best ? " best" : ""}" data-act="open-rule" data-id="${r.id}" tabindex="0" aria-label="${t("rule")} ${r.id}">
+    ${eyebrow ? `<span class="eye">${esc(eyebrow)}</span>` : ""}
+    <div class="hd"><span class="num">${r.id}</span><span class="crumb">${crumbOf(r)}</span></div>
+    <p class="rt">${richText(x.t, hl)}</p>${en}${ex}
+    ${!x.tr && trOn() && t("untranslated") ? `<span class="untr">${t("untranslated")}</span>` : ""}
+    ${best ? actsHTML(r) : ""}</article>`;
+}
+function actsHTML(r) {
+  const s = store.get("saved", []).includes(r.id), x = trRule(r);
+  return `<div class="acts">
+    <button type="button" class="btn sm" data-act="save" data-id="${r.id}" aria-pressed="${s}">${icon("star", "s")}<span>${s ? t("saved") : t("save")}</span></button>
+    <button type="button" class="btn sm" data-act="copy" data-id="${r.id}">${icon("copy", "s")}<span>${t("copy")}</span></button>
+    ${x.tr ? `<button type="button" class="btn sm" data-act="toggle-en" data-id="${r.id}" aria-pressed="${!!reader.en[r.id]}">${icon("globe", "s")}<span>${t("showEn")}</span></button>` : ""}
+  </div>`;
+}
+const TOPICS = () => [
+  { k: "kw", t: t("kw"), sub: t("kwSub"), list: "kw", n: RULE.secKw },
+  { k: "kwa", t: t("kwa"), sub: t("kwaSub"), list: "kwa", n: RULE.secKa },
+  { k: "turn", t: t("tTurn"), list: "turn", n: "500–514" },
+  { k: "combat", t: t("combat"), list: "combat", n: "506–511" },
+  { k: "stack", t: t("stack"), id: RULE.secPrio },
+  { k: "sba", t: t("sba"), id: RULE.secSba },
+  { k: "layers", t: t("layers"), id: RULE.secLayers },
+  { k: "repl", t: t("repl"), id: RULE.secRepl },
+  { k: "cmd", t: t("commander"), id: RULE.secCmd },
+  { k: "multi", t: t("multi"), list: "multi", n: "800–811" },
+  { k: "copy", t: t("copies"), id: RULE.secCopy },
+  { k: "dfc", t: t("dfc"), id: RULE.secDfc },
+  { k: "mull", t: t("mull"), id: RULE.mull },
+].filter(x => x.list || x.id);
+function homeHTML() {
+  const recent = store.get("recent", []);
+  return `<div class="sec"><h3 class="lbl">${t("topics")}</h3><div class="topics">${TOPICS().map(x => `<button type="button" class="topic" ${x.list ? `data-act="list" data-list="${x.list}"` : `data-act="open-rule" data-id="${x.id}"`}><span>${esc(x.t)}</span><span class="num">${esc(x.id || x.n || "")}</span></button>`).join("")}</div></div>
+    <div class="sec"><h3 class="lbl">${recent.length ? t("recent") : t("tSearch")}</h3><div class="recent">${(recent.length ? recent : STR[settings.lang].ex).map(e => `<button type="button" data-act="ask" data-q="${esc(e)}">${esc(e.length > 90 ? e.slice(0, 88) + "…" : e)}</button>`).join("")}</div></div>
+    ${trOn() ? `<p class="tnote">${icon("info")}${t("trNote")}</p>` : ""}`;
+}
+function listHTML(key) {
+  let title = "", items = [];
+  const secRules = n => (CR.sections[n] ? CR.sections[n].rules.filter(r => !r.sub && CR.topicOf[r.id]) : []);
+  if (key === "kw" || key === "kwa") {
+    const n = key === "kw" ? RULE.secKw : RULE.secKa; title = key === "kw" ? t("kw") : t("kwa");
+    items = secRules(n).map(r => ({ id: r.id, a: ruleTitle(r.id), b: trOn() ? r.t : "" }));
+  } else {
+    const ranges = { turn: [500, 514], combat: [506, 511], multi: [800, 811] }[key];
+    title = { turn: t("tTurn"), combat: t("combat"), multi: t("multi") }[key];
+    for (let n = ranges[0]; n <= ranges[1]; n++) if (CR.sections[n]) items.push({ id: String(n), a: secTitle(String(n)), b: trOn() ? CR.sections[n].t : "" });
+  }
+  const f = norm(rulesState.filter || "");
+  const shown = items.filter(x => !f || norm(x.a + " " + x.b + " " + x.id).includes(f));
+  return `<div class="rtop" style="gap:8px"><button type="button" class="btn flat sm" data-act="list-back">${icon("back", "s")}${t("back")}</button><h3 style="margin:0;font-size:1.1rem">${esc(title)}</h3></div>
+    ${items.length > 12 ? `<input class="field" id="lfilter" type="search" placeholder="${esc(t("filterToc"))}" value="${esc(rulesState.filter || "")}" aria-label="${esc(t("filterToc"))}">` : ""}
+    <div class="qlist card" style="padding:4px 10px">${shown.map(x => `<button type="button" data-act="open-rule" data-id="${x.id}"><span class="num">${x.id}</span><span>${esc(x.a)}</span>${x.b && x.b !== x.a ? `<small>${esc(x.b)}</small>` : ""}</button>`).join("") || `<div class="empty">${t("noGloss")}</div>`}</div>`;
+}
+function renderToc() {
+  const f = norm(rulesState.filter || "");
+  const en = f ? interpret(rulesState.filter, new Set()).concepts.map(c => norm(c.en)) : [];
+  const match = s => { const n = norm(s); return !f || n.includes(f) || en.some(e => n.includes(e)); };
+  $("rbody").innerHTML = `<input class="field" id="tfilter" type="search" placeholder="${esc(t("filterToc"))}" value="${esc(rulesState.filter || "")}" aria-label="${esc(t("filterToc"))}">` +
+    CR.chapters.map(c => {
+      const secs = c.secs.filter(n => match(n + " " + secTitle(n) + " " + CR.sections[n].t)); if (!secs.length) return "";
+      return `<details class="ch"${f ? " open" : ""}><summary><span class="n">${c.n}</span>${esc(chTitle(c))}<span class="c">${secs.length}</span></summary><div class="qlist">${secs.map(n => `<button type="button" data-act="open-rule" data-id="${n}"><span class="num">${n}</span><span>${esc(secTitle(n))}</span></button>`).join("")}</div></details>`;
+    }).join("");
+}
+function renderGloss() {
+  const f = norm(rulesState.filter || "");
+  const en = f ? interpret(rulesState.filter, new Set()).concepts.map(c => norm(c.en)) : [];
+  const list = CR.glossary.map(g => ({ g, x: glossOf(g) })).filter(({ g, x }) => { if (!f) return true; const n = norm(x.term + " " + g.term); return n.includes(f) || en.some(e => n.includes(e)) || (f.length > 3 && norm(x.def).includes(f)); });
+  list.sort((a, b) => a.x.term.localeCompare(b.x.term, settings.lang));
+  $("rbody").innerHTML = `<input class="field" id="gfilter" type="search" placeholder="${esc(t("filterGloss"))}" value="${esc(rulesState.filter || "")}" aria-label="${esc(t("filterGloss"))}">` +
+    (list.length ? `<div class="gbox"><dl>${list.slice(0, 300).map(({ x }) => `<dt>${esc(x.term)}${x.en ? `<small>${esc(x.en)}</small>` : ""}</dt><dd>${richText(x.def)}</dd>`).join("")}</dl></div>` : `<div class="empty">${t("noGloss")}</div>`);
+}
+function remember(q) { q = q.trim(); if (!q) return; const r = store.get("recent", []).filter(x => x !== q); r.unshift(q); store.set("recent", r.slice(0, 8)); }
+
+/* ---------------- lettore ---------------- */
+const reader = { id: null, all: false, back: [], en: {} };
+const groupOf = id => { const r = CR.byId[id]; return r ? (r.sub ? r.parent : r.id) : null; };
+function openRule(id, opts) {
+  opts = opts || {};
+  if (!CR.byId[id] && CR.sections[id]) id = (CR.sections[id].rules[0] || {}).id;
+  if (!CR.byId[id]) return;
+  const open = stack.some(s => s.name === "reader");
+  if (open && reader.id && reader.id !== id && !opts.noPush) reader.back.push(reader.id);
+  if (!open) reader.back = [];
+  reader.id = id; reader.all = false;
+  if (open) { RENDER.reader({ scroll: true }); setHash(hashFor("reader"), false); }
+  else openLayer("reader", { fromHash: opts.fromHash, scroll: true });
+}
+RENDER.reader = (opts) => {
+  const r = CR.byId[reader.id], g = groupOf(reader.id), sec = CR.sections[r.sec];
+  const list = reader.all ? sec.rules : sec.rules.filter(x => x.id === g || x.parent === g);
+  $("rd-crumb").innerHTML = crumbOf(r);
+  const tt = ruleTitle(g);
+  $("rd-title").innerHTML = reader.all ? `<span class="num">${sec.n}.</span>${esc(secTitle(sec.n))}${trOn() && TR.s[sec.n] ? `<small>${esc(sec.t)}</small>` : ""}`
+    : `<span class="num">${g}</span>${esc(tt || secTitle(sec.n))}${trOn() && tt && CR.topicOf[g] !== tt ? `<small>${esc(CR.topicOf[g])}</small>` : ""}`;
+  const hl = rulesState.hl;
+  $("rd-body").innerHTML = list.map(x => {
+    const tr = trRule(x), sel = x.id === reader.id, showEn = tr.tr && (settings.showEn || reader.en[x.id]);
+    return `<div class="rl${x.sub ? " sub" : ""}${sel ? " sel" : ""}" data-act="select" data-id="${x.id}" id="rl-${x.id.replace(/\./g, "-")}">
+      <p class="rt"><span class="num">${x.id}</span>${richText(tr.t, hl)}</p>
+      ${showEn ? `<p class="en">${richText(x.t)}</p>` : ""}
+      ${tr.ex.map((e, k) => `<p class="ex"><b>${t("example")}</b>${richText(e, hl)}</p>${showEn && x.ex[k] ? `<p class="en">${richText(x.ex[k])}</p>` : ""}`).join("")}
+      ${sel ? actsHTML(x) : ""}</div>`;
+  }).join("") + (trOn() ? `<p class="tnote" style="margin:12px 8px 0">${icon("info")}${t("trNote")}</p>` : "");
+  $("rd-back").hidden = !reader.back.length;
+  $("rd-all").textContent = reader.all ? t("onlyRule") : t("wholeSec") + " " + sec.n;
+  $("rd-all").hidden = !reader.all && list.length === sec.rules.length;
+  const gi = CR.groups.indexOf(g), p = CR.groups[gi - 1], n = CR.groups[gi + 1];
+  const lab = id => { const tt = ruleTitle(id); return `<span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${id}${tt ? " " + esc(tt) : ""}</span>`; };
+  $("rd-prev").innerHTML = p ? icon("back", "s") + lab(p) : ""; $("rd-prev").disabled = !p; $("rd-prev").dataset.id = p || ""; $("rd-prev").style.visibility = p ? "" : "hidden";
+  $("rd-next").innerHTML = n ? lab(n) + icon("fwd", "s") : ""; $("rd-next").disabled = !n; $("rd-next").dataset.id = n || ""; $("rd-next").style.visibility = n ? "" : "hidden";
+  if (opts && opts.scroll) requestAnimationFrame(() => {
+    const el = $("rl-" + reader.id.replace(/\./g, "-"));
+    if (el && (reader.all || reader.id !== g)) el.scrollIntoView({ block: "center" }); else $("rd-body").scrollTop = 0;
+  });
+};
+
+/* ---------------- nuova partita ---------------- */
+const setup = { fmt: null, n: null, life: null, draft: [] };
+const draft = i => { while (setup.draft.length <= i) { const k = setup.draft.length; setup.draft.push({ id: newId(k), name: "", color: COLORS[k % COLORS.length], partner: false }); } return setup.draft[i]; };
+RENDER.setup = () => {
+  if (setup.fmt == null) { setup.fmt = game.fmt; setup.n = game.players.length; setup.life = game.start; setup.draft = game.players.map(p => ({ id: p.id, name: p.name, color: p.color, partner: p.partner })); }
+  const fm = [
+    ["standard", 20, t("fStd"), t("fStdSub"), RULE.start20], ["commander", 40, t("fCmd"), t("fCmdSub"), RULE.start40],
+    ["brawl", setup.n > 2 ? 30 : 25, t("fBrawl"), t("fBrawlSub"), RULE.brawl], ["thg", 30, t("f2hg"), t("f2hgSub"), RULE.thg], ["custom", setup.life, t("fCustom"), t("fCustomSub"), ""],
+  ];
+  const isThg = setup.fmt === "thg", cmdF = FORMATS[setup.fmt].cmd;
+  $("setup-body").innerHTML = `
+    <div class="sec"><h3 class="lbl">${t("format")}</h3><div class="formats">${fm.map(([k, n, a, b, r]) => `<button type="button" class="fmt" data-act="fmt" data-f="${k}" aria-pressed="${setup.fmt === k}"><span class="n">${n}</span><b>${esc(a)}</b><small>${esc(b)}${r ? " · " + r : ""}</small></button>`).join("")}</div>
+      ${setup.fmt === "custom" ? `<label class="inline-check" for="slife">${t("startLife")}<input class="field" id="slife" type="number" inputmode="numeric" min="1" max="999" value="${setup.life}" style="max-width:120px"></label>` : ""}</div>
+    ${isThg ? "" : `<div class="sec"><h3 class="lbl">${t("playersN")}</h3><div class="seg" role="group">${[1, 2, 3, 4, 5, 6].map(k => `<button type="button" data-act="sn" data-n="${k}" aria-pressed="${setup.n === k}">${k}</button>`).join("")}</div></div>`}
+    <div class="sec"><h3 class="lbl">${t("seating")}</h3><div class="seg" role="group"><button type="button" data-act="seat" data-v="table" aria-pressed="${game.layout === "table"}">${t("seatTable")}</button><button type="button" data-act="seat" data-v="upright" aria-pressed="${game.layout === "upright"}">${t("seatUp")}</button></div><p class="note">${t("seatHelp")}</p></div>
+    <div class="sec"><h3 class="lbl">${t("names")}</h3><div class="plist">${Array.from({ length: isThg ? 2 : setup.n }, (_, i) => {
+      const p = draft(i);
+      const ph = isThg ? t("team", { n: i + 1 }) : t("player", { n: i + 1 });
+      return `<div class="prow" style="${pcVars(p.color)}"><div class="top"><span class="dot"></span><label class="sr" for="pn-${i}">${esc(ph)}</label><input class="field" id="pn-${i}" data-pn="${i}" value="${esc(p.name)}" placeholder="${esc(ph)}" maxlength="20" autocomplete="off"></div>
+        <div class="swatches" role="group" aria-label="${esc(ph)}">${COLORS.map(c => `<button type="button" class="sw" style="${pcVars(c)}" data-act="color" data-i="${i}" data-c="${c}" aria-pressed="${p.color === c}" aria-label="${c}"></button>`).join("")}</div>
+        ${cmdF ? `<label class="inline-check"><input type="checkbox" class="switch" data-partner="${i}" ${p.partner ? "checked" : ""}>${t("partner")}</label>` : ""}</div>`;
+    }).join("")}</div><p class="note">${t("liveApply")}</p></div>`;
+};
+
+/* ---------------- dadi ---------------- */
+const dice = { s: 20, last: [], v: null };
+RENDER.dice = () => {
+  const opts = [4, 6, 8, 10, 12, 20, "coin"];
+  $("dice-body").innerHTML = `<div class="dice-pick" role="group">${opts.map(s => `<button type="button" class="die" data-act="die" data-s="${s}" aria-pressed="${dice.s === s}">${s === "coin" ? icon("coin") : "d" + s}<small>${s === "coin" ? t("coin") : ""}</small></button>`).join("")}</div>
+    <button type="button" class="result" data-act="roll" data-autofocus aria-label="${t("roll")}"><span class="v${dice.v != null && isNaN(dice.v) ? " word" : ""}" id="dv" aria-live="polite">${dice.v == null ? "?" : esc(dice.v)}</span><small>${t("rollAgain")}</small></button>
+    ${dice.last.length ? `<div class="sec"><h3 class="lbl">${t("lastRolls")}</h3><div class="rolls">${dice.last.map(x => `<span>${esc(x)}</span>`).join("")}</div></div>` : ""}`;
+};
+function roll() {
+  const s = dice.s, el = $("dv");
+  const val = () => s === "coin" ? (rnd() < .5 ? t("heads") : t("tails")) : String(1 + Math.floor(rnd() * s));
+  const final = val(); let k = 0;
+  el.classList.add("roll"); el.classList.toggle("word", s === "coin");
+  const iv = setInterval(() => {
+    el.textContent = val();
+    if (++k > (reduceMotion() ? 0 : 9)) { clearInterval(iv); el.classList.remove("roll"); el.textContent = final; dice.v = final; dice.last.unshift((s === "coin" ? "" : "d" + s + ": ") + final); dice.last.length = Math.min(dice.last.length, 12); buzz(25); setTimeout(() => { if (stack.some(x => x.name === "dice")) { RENDER.dice(); } }, 900); }
+  }, 55);
+}
+
+/* ---------------- storico ---------------- */
+RENDER.history = () => {
+  const lab = e => e.k === "life" ? t("life") : e.k === "cmd" ? t("cmdDmg") : t(e.k);
+  const ps = game.players;
+  // ricostruisco la vita nel tempo andando a ritroso dal valore attuale
+  const series = ps.map(p => { const pts = [p.life]; let v = p.life; for (const e of game.log) if (e.pid === p.id && e.k === "life") { v -= e.d; pts.unshift(v); } return pts; });
+  const maxLen = Math.max(2, ...series.map(s => s.length)), all = series.flat(), lo = Math.min(0, ...all), hi = Math.max(1, ...all);
+  const W = 600, H = 120, pad = 6, X = i => pad + i * (W - 2 * pad) / (maxLen - 1), Y = v => H - pad - (v - lo) * (H - 2 * pad) / (hi - lo || 1);
+  const paths = series.map((s, j) => { const off = maxLen - s.length; return `<path d="${s.map((v, i) => (i ? "L" : "M") + X(i + off).toFixed(1) + " " + Y(v).toFixed(1)).join(" ")}" fill="none" stroke="var(--${ps[j].color}1)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="${X(maxLen - 1)}" cy="${Y(s[s.length - 1])}" r="4" fill="var(--${ps[j].color}1)"/>`; }).join("");
+  const zero = lo < 0 ? `<line x1="0" x2="${W}" y1="${Y(0)}" y2="${Y(0)}" stroke="var(--line-2)" stroke-dasharray="4 4"/>` : "";
+  $("hist-body").innerHTML = `<div class="sec"><h3 class="lbl">${t("lifeChart")}</h3>
+      <svg class="spark" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="${esc(t("lifeChart"))}">${zero}${paths}</svg>
+      <div class="legend">${ps.map((p, i) => `<span style="${pcVars(p.color)}"><i></i>${esc(pname(p, i))} <b>${p.life}</b></span>`).join("")}</div></div>
+    <div class="sec"><div class="rtop"><h3 class="lbl" style="flex:1">${t("history")}</h3>${game.log.length ? `<button type="button" class="btn sm" data-act="undo">${icon("undo", "s")}${t("undo")}</button>` : ""}</div>
+    ${game.log.length ? `<ul class="log">${game.log.slice(0, 80).map(e => { const j = ps.findIndex(p => p.id === e.pid); if (j < 0) return ""; const tm = new Date(e.at).toLocaleTimeString(settings.lang, { hour: "2-digit", minute: "2-digit" });
+      return `<li style="${pcVars(ps[j].color)}"><i></i><span><b>${esc(pname(ps[j], j))}</b> · ${esc(lab(e))}<span class="tm">${tm}</span></span><span class="d ${e.d < 0 ? "neg" : "pos"}">${e.d > 0 ? "+" : "−"}${Math.abs(e.d)} → ${e.k.startsWith("tax") ? "+" + e.v * 2 : e.v}</span></li>`; }).join("")}</ul>` : `<p class="note">${t("noHistory")}</p>`}</div>`;
+};
+function undo() {
+  const e = game.log.shift(); if (!e) return;
+  const i = game.players.findIndex(p => p.id === e.pid); if (i < 0) return;
+  const p = game.players[i];
+  if (e.k === "life") p.life -= e.d;
+  else if (e.k === "cmd") { const v = p.cmd[e.src] || [0, 0]; v[e.slot] = Math.max(0, v[e.slot] - e.d); p.cmd[e.src] = v; if (e.withLife) { const nx = game.log[0]; if (nx && nx.k === "life" && nx.pid === p.id) { p.life -= nx.d; game.log.shift(); } } }
+  else p.c[e.k] = Math.max(0, p.c[e.k] - e.d);
+  saveGame(); renderBoard(); RENDER.history(); toast(t("undone"));
+}
+
+/* ---------------- impostazioni ---------------- */
+RENDER.settings = () => {
+  const pct = Math.round(100 * CR.translated / CR.rules.length);
+  const sw = (id, on, a, b) => `<div class="row"><div class="t"><b id="${id}-l">${t(a)}</b><span>${t(b)}</span></div><input type="checkbox" class="switch" id="${id}" role="switch" aria-labelledby="${id}-l" ${on ? "checked" : ""}></div>`;
+  $("set-body").innerHTML = `
+    <div class="sec"><h3 class="lbl">${t("stLang")}</h3><div class="seg" role="group"><button type="button" data-act="lang" data-v="it" aria-pressed="${settings.lang === "it"}">Italiano</button><button type="button" data-act="lang" data-v="en" aria-pressed="${settings.lang === "en"}">English</button></div><p class="note">${t("stLangHelp")}</p></div>
+    <div class="sec"><h3 class="lbl">${t("stTheme")}</h3><div class="seg" role="group">${["dark", "light", "system"].map(v => `<button type="button" data-act="theme" data-v="${v}" aria-pressed="${settings.theme === v}">${t({ dark: "tDark", light: "tLight", system: "tSys" }[v])}</button>`).join("")}</div></div>
+    <div class="card">
+      ${sw("s-showen", settings.showEn, "stShowEn", "stShowEnHelp")}
+      ${sw("s-cmdlife", settings.cmdLife, "stCmdLife", "stCmdLifeHelp")}
+      ${sw("s-wake", settings.wake, "stWake", "stWakeHelp")}
+      ${sw("s-haptic", settings.haptic, "stHaptic", "stHapticHelp")}
+    </div>
+    <div class="sec"><h3 class="lbl">${t("stRules")}</h3><div class="card">
+      <div class="row"><div class="t"><b>${esc(t(state.custom ? "stVerCustom" : "stVer", { d: fmtDate(CR.date) }))}</b><span>${esc(t("stCount", { r: CR.rules.length.toLocaleString(settings.lang), g: CR.glossary.length, p: pct }))}</span></div></div>
+      <div class="row" style="flex-wrap:wrap"><div class="t" style="flex-basis:100%"><b>${t("stUpdate")}</b><span>${t("stUpdateHelp")}</span></div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap"><button type="button" class="btn sm" data-act="upload">${t("stUpload")}</button><a class="btn sm flat" href="https://magic.wizards.com/en/rules" target="_blank" rel="noopener">magic.wizards.com/rules ↗</a>${state.custom ? `<button type="button" class="btn sm flat" data-act="builtin">${t("stBuiltin")}</button>` : ""}</div></div>
+    </div></div>
+    <div class="sec"><h3 class="lbl">${t("stData")}</h3><div><button type="button" class="btn sm" data-act="clear-recent">${t("stClear")}</button></div></div>
+    <p class="note">${t("about")}</p>`;
+};
+function applyTheme() { document.documentElement.setAttribute("data-theme", settings.theme); }
+function applyLang() {
+  document.documentElement.lang = settings.lang;
+  document.querySelectorAll("[data-i18n]").forEach(el => el.textContent = t(el.dataset.i18n));
+  document.querySelectorAll("[data-i18n-aria]").forEach(el => el.setAttribute("aria-label", t(el.dataset.i18nAria)));
+}
+function refreshAll() { applyLang(); renderBoard(); for (const s of stack) if (RENDER[s.name]) RENDER[s.name]({ keepFocus: true }); }
+
+/* ---------------- schermo acceso ---------------- */
+let wakeLock = null;
+async function updateWake() {
+  const want = settings.wake && document.visibilityState === "visible";
+  try {
+    if (want && !wakeLock && navigator.wakeLock) { wakeLock = await navigator.wakeLock.request("screen"); wakeLock.addEventListener("release", () => { wakeLock = null; }); }
+    if (!want && wakeLock) { await wakeLock.release(); wakeLock = null; }
+  } catch (e) { wakeLock = null; }
+}
+
+/* ============================================================
+   Azioni
+   ============================================================ */
+const state = { custom: false };
+const ACT = {
+  menu: () => openLayer("menu"),
+  close: () => closeTop(),
+  open: el => { const l = el.dataset.l; if (l === "setup") { setup.fmt = null; } openLayer(l, { replaceTop: stack.length && stack[stack.length - 1].name === "menu", focusInput: l === "rules" }); },
+  pass: () => {
+    const n = game.players.length, from = game.active, to = nextActive(), first = game.first || 0;
+    for (let k = from + 1; ; k++) { if (k % n === first) { game.turn++; break; } if (k % n === to) break; }
+    game.active = to;
+    saveGame(); closeTop(); renderBoard(); buzz(14);
+    const p = game.players[game.active]; toast(t("turnToast", { n: game.turn, p: pname(p, game.active) }));
+    const el = $("board").children[game.active]; if (el) { el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash"); }
+  },
+  "who-starts": () => {
+    closeTop();
+    const n = game.players.length, pick = Math.floor(rnd() * n), els = $("board").children, steps = reduceMotion() ? 0 : n * 2 + pick;
+    let k = 0;
+    const iv = setInterval(() => {
+      [...els].forEach((el, j) => el.classList.toggle("active", j === k % n)); buzz(4);
+      if (k >= steps) { clearInterval(iv); game.active = pick; game.first = pick; game.turn = 1; saveGame(); renderBoard(); const el = els[pick]; if (el) el.classList.add("flash"); toast(t("started", { p: pname(game.players[pick], pick) })); }
+      k++;
+    }, 120);
+  },
+  desig: el => { const k = el.dataset.k; game[k] = game[k] === el.dataset.id ? null : el.dataset.id; saveGame(); renderBoard(); RENDER.menu(); el = document.querySelector(`[data-act="desig"][data-k="${k}"][data-id="${el.dataset.id}"]`); if (el) el.focus(); },
+  day: el => { game.day = el.dataset.v || null; saveGame(); placeHub(); RENDER.menu(); },
+  fullscreen: () => {
+    try {
+      if (!document.fullscreenElement && document.documentElement.requestFullscreen) document.documentElement.requestFullscreen().then(() => closeTop(), () => toast(t("fsFail")));
+      else if (document.fullscreenElement) document.exitFullscreen().then(() => closeTop());
+      else toast(t("fsFail"));
+    } catch (e) { toast(t("fsFail")); }
+  },
+  pview: el => { const i = +el.dataset.i; ui.view[i] = el.dataset.m === "life" ? "life" : el.dataset.m; renderBoard(i); buzz(6); const f = $("board").children[i].querySelector(ui.view[i] === "life" ? ".pbtn" : ".pdone"); if (f && el.matches(":focus-visible")) f.focus(); },
+  cstep: el => {
+    const i = +el.dataset.i, p = game.players[i], k = el.dataset.k, d = +el.dataset.d, v = Math.max(0, p.c[k] + d);
+    if (v === p.c[k]) return;
+    const wasOut = !!outRule(p); p.c[k] = v; logPush({ pid: p.id, k, d, v }); buzz(6); saveGame();
+    const val = el.parentElement.querySelector(".val"); if (val) val.textContent = k.startsWith("tax") ? (v ? "+" + v * 2 : 0) : v;
+    if (!!outRule(p) !== wasOut) $("board").children[i].classList.toggle("out", !wasOut);
+  },
+  cmdstep: el => {
+    const i = +el.dataset.i, p = game.players[i], o = el.dataset.o, k = +el.dataset.k, d = +el.dataset.d;
+    const v = p.cmd[o] || [0, 0], nv = Math.max(0, v[k] + d); if (nv === v[k]) return;
+    const wasOut = !!outRule(p); v[k] = nv; p.cmd[o] = v;
+    if (settings.cmdLife) { p.life -= d; logPush({ pid: p.id, k: "life", d: -d, v: p.life }); }
+    logPush({ pid: p.id, k: "cmd", src: o, slot: k, d, v: nv, withLife: settings.cmdLife }); buzz(8); saveGame();
+    el.parentElement.querySelector(".val").textContent = nv; el.parentElement.classList.toggle("hot", nv >= 15);
+    if (!!outRule(p) !== wasOut) $("board").children[i].classList.toggle("out", !wasOut);
+  },
+  "open-rule": el => openRule(el.dataset.id),
+  select: el => { if (reader.id === el.dataset.id) return; reader.id = el.dataset.id; RENDER.reader({}); setHash(hashFor("reader"), false); },
+  "rd-back": () => { const id = reader.back.pop(); if (id) { reader.id = id; reader.all = false; RENDER.reader({ scroll: true }); setHash(hashFor("reader"), false); } },
+  "rd-all": () => { reader.all = !reader.all; RENDER.reader({ scroll: true }); },
+  "rd-go": el => { if (!el.dataset.id) return; reader.id = el.dataset.id; reader.all = false; RENDER.reader({ scroll: true }); setHash(hashFor("reader"), false); },
+  "toggle-en": el => { reader.en[el.dataset.id] = !reader.en[el.dataset.id]; if (stack.some(s => s.name === "reader") && stack[stack.length - 1].name === "reader") RENDER.reader({}); else renderRulesBody(); },
+  save: el => {
+    const s = store.get("saved", []), id = el.dataset.id, k = s.indexOf(id);
+    if (k >= 0) s.splice(k, 1); else s.unshift(id);
+    store.set("saved", s); buzz(8);
+    document.querySelectorAll(`[data-act="save"][data-id="${id}"]`).forEach(b => { b.setAttribute("aria-pressed", k < 0); b.querySelector("span").textContent = k < 0 ? t("saved") : t("save"); });
+  },
+  copy: el => {
+    const r = CR.byId[el.dataset.id], x = trRule(r);
+    let txt = `${r.id} — ${x.t}${x.ex.length ? "\n" + t("example") + ": " + x.ex.join("\n" + t("example") + ": ") : ""}`;
+    if (x.tr) txt += `\n\n[EN] ${r.t}`;
+    txt += `\n(Magic: The Gathering Comprehensive Rules, ${CR.date})`;
+    try { navigator.clipboard.writeText(txt).then(() => toast(t("copied", { id: r.id })), () => toast(t("copyFail"))); } catch (e) { toast(t("copyFail")); }
+  },
+  term: el => { const k = el.dataset.key; rulesState.excluded.has(k) ? rulesState.excluded.delete(k) : rulesState.excluded.add(k); renderRulesBody(); },
+  ask: el => { rulesState.q = el.dataset.q; rulesState.excluded.clear(); rulesState.tab = "search"; rulesState.list = null; $("rq").value = rulesState.q; autoGrow(); remember(rulesState.q); RENDER.rules(); renderRulesBody(true); $("rbody").scrollTop = 0; },
+  rclear: () => { rulesState.q = ""; $("rq").value = ""; autoGrow(); renderRulesBody(); $("rq").focus(); },
+  list: el => { rulesState.list = el.dataset.list; rulesState.filter = ""; RENDER.rules(); $("rbody").scrollTop = 0; },
+  "list-back": () => { rulesState.list = null; rulesState.filter = ""; RENDER.rules(); },
+  fmt: el => { setup.fmt = el.dataset.f; const f = FORMATS[setup.fmt]; if (f.team) setup.n = 2; else if (setup.fmt !== "custom") { setup.life = setup.fmt === "brawl" ? (setup.n > 2 ? 30 : 25) : f.life; if (setup.fmt === "commander" && setup.n < 3) setup.n = 4; } RENDER.setup(); },
+  sn: el => { setup.n = +el.dataset.n; if (setup.fmt === "brawl") setup.life = setup.n > 2 ? 30 : 25; RENDER.setup(); },
+  seat: el => { game.layout = el.dataset.v; saveGame(); renderBoard(); RENDER.setup(); },
+  color: el => { const i = +el.dataset.i; draft(i).color = el.dataset.c; if (game.players[i]) { game.players[i].color = el.dataset.c; saveGame(); renderBoard(); } RENDER.setup(); const b = document.querySelector(`.sw[data-i="${i}"][data-c="${el.dataset.c}"]`); if (b) b.focus(); },
+  "start-game": () => {
+    const f = FORMATS[setup.fmt]; const n = f.team ? 2 : setup.n;
+    let life = setup.fmt === "custom" ? Math.max(1, Math.min(999, parseInt(($("slife") || {}).value, 10) || setup.life || 20)) : setup.fmt === "brawl" ? (n > 2 ? 30 : 25) : f.life;
+    for (let i = 0; i < n; i++) draft(i);
+    game = makeGame(setup.fmt, n, life, setup.draft);
+    ui.view = {}; saveGame(); $("board").innerHTML = ""; closeTop(); renderBoard(); toast(t("newGameDone")); setup.fmt = null;
+  },
+  die: el => { dice.s = el.dataset.s === "coin" ? "coin" : +el.dataset.s; dice.v = null; RENDER.dice(); roll(); },
+  roll: () => roll(),
+  undo: () => undo(),
+  lang: el => { settings.lang = el.dataset.v; saveSettings(); IDX = buildIndex(CR); refreshAll(); },
+  theme: el => { settings.theme = el.dataset.v; saveSettings(); applyTheme(); RENDER.settings(); },
+  upload: () => $("file").click(),
+  builtin: () => { store.del("rules"); loadRules($("cr").textContent, false); toast(t("builtinBack")); RENDER.settings(); },
+  "clear-recent": () => { store.set("recent", []); toast(t("cleared")); },
+};
+document.addEventListener("click", e => {
+  if (e.target.closest("a[href]")) return;
+  const el = e.target.closest("[data-act]");
+  if (el && ACT[el.dataset.act]) {
+    if ((el.dataset.act === "select" || el.classList.contains("rc")) && e.target.closest("button:not(.rc),a")) return;
+    ACT[el.dataset.act](el, e); return;
+  }
+  const rt = e.target.closest("[data-rtab]");
+  if (rt) { rulesState.tab = rt.dataset.rtab; rulesState.list = null; rulesState.filter = ""; RENDER.rules(); $("rbody").scrollTop = 0; }
+});
+document.addEventListener("change", e => {
+  const el = e.target;
+  const sw = { "s-showen": "showEn", "s-cmdlife": "cmdLife", "s-wake": "wake", "s-haptic": "haptic" }[el.id];
+  if (sw) { settings[sw] = el.checked; saveSettings(); if (sw === "wake") updateWake(); return; }
+  if (el.dataset.partner != null) { const i = +el.dataset.partner; draft(i).partner = el.checked; if (game.players[i]) { game.players[i].partner = el.checked; saveGame(); renderBoard(); } return; }
+  if (el.id === "slife") setup.life = parseInt(el.value, 10) || setup.life;
+});
+document.addEventListener("input", e => {
+  const el = e.target;
+  if (el.dataset.pn != null) { const i = +el.dataset.pn, v = el.value.slice(0, 20); draft(i).name = v; if (game.players[i]) { game.players[i].name = v; saveGame(); clearTimeout(ACT.nt); ACT.nt = setTimeout(() => renderBoard(), 150); } }
+  if (el.id === "tfilter" || el.id === "gfilter" || el.id === "lfilter") {
+    rulesState.filter = el.value; const id = el.id, pos = el.selectionStart;
+    clearTimeout(rulesState.ft); rulesState.ft = setTimeout(() => { renderRulesBody(); const n = $(id); if (n) { n.focus(); try { n.setSelectionRange(pos, pos); } catch (er) {} } }, 120);
+  }
+});
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape" && stack.length) { e.preventDefault(); closeTop(); return; }
+  if ((e.key === "Enter" || e.key === " ") && e.target.classList && e.target.classList.contains("rc")) { e.preventDefault(); openRule(e.target.dataset.id); }
+  const top = stack[stack.length - 1];
+  if (top && top.name === "reader" && !e.target.closest("input,textarea") && (e.key === "ArrowLeft" || e.key === "ArrowRight")) { const b = $(e.key === "ArrowLeft" ? "rd-prev" : "rd-next"); if (!b.disabled) b.click(); }
+});
+$("rform").addEventListener("submit", e => { e.preventDefault(); rulesState.q = $("rq").value; rulesState.tab = "search"; rulesState.list = null; remember(rulesState.q); RENDER.rules(); renderRulesBody(true); $("rq").blur(); });
+$("rq").addEventListener("input", () => {
+  autoGrow(); clearTimeout(rulesState.timer);
+  rulesState.timer = setTimeout(() => { const v = $("rq").value; if (v.trim() !== rulesState.q.trim()) rulesState.excluded.clear(); rulesState.q = v; if (rulesState.tab !== "search" || rulesState.list) { rulesState.tab = "search"; rulesState.list = null; RENDER.rules(); } else renderRulesBody(); }, 170);
+});
+$("rq").addEventListener("keydown", e => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); $("rform").requestSubmit(); } });
+$("file").addEventListener("change", e => {
+  const f = e.target.files[0]; if (!f) return;
+  const rd = new FileReader();
+  rd.onload = () => {
+    try { loadRules(rd.result, true); if (!store.set("rules", rd.result)) toast(t("notSaved")); else toast(dateVal(CR.date) < dateVal(BUILTIN_DATE) ? t("older", { d: fmtDate(CR.date) }) : t("loaded", { d: fmtDate(CR.date) })); RENDER.settings(); }
+    catch (err) { toast(err.message); }
+    e.target.value = "";
+  };
+  rd.readAsText(f, "utf-8");
+});
+window.addEventListener("hashchange", route);
+window.addEventListener("resize", () => { clearTimeout(window.rz); window.rz = setTimeout(() => renderBoard(), 80); });
+document.addEventListener("visibilitychange", updateWake);
+
+/* ============================================================
+   Avvio
+   ============================================================ */
+function loadRules(text, custom) {
+  CR = parseCR(text); IDX = buildIndex(CR); state.custom = custom; findRules();
+  for (const s of stack) if (RENDER[s.name]) RENDER[s.name]({ keepFocus: true });
+}
+function boot() {
+  applyTheme(); applyLang();
+  const builtin = $("cr").textContent;
+  BUILTIN_DATE = (builtin.match(/effective as of ([^.\n]+)\./i) || [])[1] || "";
+  const custom = store.get("rules", null);
+  let ok = false;
+  if (custom && dateVal((custom.match(/effective as of ([^.\n]+)\./i) || [])[1]) >= dateVal(BUILTIN_DATE)) { try { CR = parseCR(custom); state.custom = true; ok = true; } catch (e) {} }
+  if (!ok) { CR = parseCR(builtin); state.custom = false; }
+  IDX = buildIndex(CR); findRules();
+  renderBoard(); bindBoard();
+  if (location.hash) route();
+  updateWake();
+}
+boot();
+</script>
