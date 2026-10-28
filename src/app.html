@@ -1013,9 +1013,11 @@ const IT_PHRASES = [
   ["non puo essere bloccat[ao]", "can't be blocked", 1.5], ["non puo bloccare", "can't block", 1.5], ["non puo attaccare", "can't attack", 1.5],
   ["sistema dei livelli", "layer", 2], ["giocatore attivo", "active player", 1.5], ["giocatore non attivo", "nonactive player", 1.5],
   ["lancia(re)? una moneta", "flip coin", 1.5], ["tira(re)? (un )?dado", "roll die", 1.5], ["chi inizia", "starting player", 1.5],
+  ["primo attacco", "first strike", 2], ["debolezza da evocazione|mal di evocazione|(appena|questo turno) (entrat|giocat|evocat|lanciat)[ao]|(entrat|giocat|evocat|lanciat)[ao] (in )?questo turno", "summoning sickness", 2],
+  ["arrender(si|mi|ti)|mi arrendo|si arrende", "concede", 2], ["senza pagar(e|ne|la|lo)( il)?( suo)?( costo( di mana)?)?", "without paying its mana cost", 2],
 ];
 const IT_WORDS = {
-  travolg: "trample", volare: "flying", volant: "flying", vola: "flying", cautela: "vigilance", rapidita: "haste",
+  travolg: "trample", volare: "flying", volant: "flying", vola: "flying", cautela: "vigilance", vigilanz: "vigilance", rapidita: "haste",
   raggiungere: "reach", portata: "reach", minacci: "menace", indistruttib: "indestructible", salvaguardia: "ward",
   protezion: "protection", velo: "shroud", lampo: "flash", difensore: "defender", intimid: "intimidate", paura: "fear",
   infett: "infect", tossic: "toxic", avvizz: "wither", prodezza: "prowess", cascata: "cascade", convoc: "convoke",
@@ -1160,6 +1162,47 @@ function matchCases(q) {
     .filter(x => x.ok).sort((a, b) => b.sc - a.sc).slice(0, 2)
     .map(({ c }) => ({ ids: c[1].filter(id => CR.byId[id]), it: c[2], en: c[3] })).filter(x => x.ids.length);
 }
+/* ---------- base di conoscenza del Judge: domande già risolte (src/kb), cercate per somiglianza ---------- */
+const KB = [];
+/*@@KB@@*/
+let KBX = null, KB_AW = .8, KB_PW = .5;
+function kbFeat(q) {
+  const f = new Map(), put = (k, w) => f.set(k, Math.max(f.get(k) || 0, w));
+  const is = itStems(q);
+  is.forEach((s, j) => { put("i:" + s, 1); if (KB_AW && j) put("b:" + is[j - 1] + " " + s, KB_AW); });
+  for (const c of interpret(q, new Set()).concepts) {
+    if (c.it) { put("i:" + c.it, 1); continue; }
+    c.st.forEach(s => put("e:" + s, c.w >= 1.5 ? 1.4 : 1));
+    if (c.st.length > 1) put("p:" + c.st.join(" "), 1.6);
+  }
+  return f;
+}
+function kbIndex() {
+  if (KBX && KBX.lang === settings.lang && KBX.idx === IDX) return KBX;
+  const df = new Map(), items = KB.map(([cat, qs, kw, ids, a], i) => {
+    const ph = qs.map(kbFeat), all = new Map();
+    ph.forEach(m => m.forEach((w, k) => all.set(k, Math.max(all.get(k) || 0, w))));
+    for (const s of stems(kw)) if (!all.has("e:" + s)) all.set("e:" + s, .6);
+    for (const k of all.keys()) df.set(k, (df.get(k) || 0) + 1);
+    return { i, cat, qs, ids: ids.filter(id => CR.byId[id] || CR.sections[id]), a, ph, all };
+  });
+  const N = items.length, idf = k => Math.log(1 + N / (df.get(k) || .5));
+  const norm2 = m => Math.sqrt([...m].reduce((t, [k, w]) => t + (w * idf(k)) ** 2, 0)) || 1;
+  items.forEach(x => { x.phN = x.ph.map(norm2); x.allN = norm2(x.all); });
+  return KBX = { lang: settings.lang, idx: IDX, items, idf, norm2 };
+}
+function kbSearch(q, n) {
+  if (!KB.length || !q.trim()) return [];
+  const X = kbIndex(), qf = kbFeat(q), qn = X.norm2(qf);
+  if (!qf.size) return [];
+  const dot = m => { let t = 0; for (const [k, w] of qf) { const v = m.get(k); if (v) t += w * v * X.idf(k) ** 2; } return t; };
+  return X.items.map(x => {
+    const ph = Math.max(...x.ph.map((m, j) => dot(m) / (qn * x.phN[j])));
+    return { x, sc: KB_PW * ph + (1 - KB_PW) * dot(x.all) / (qn * x.allN) };
+  }).sort((a, b) => b.sc - a.sc).slice(0, n || 5);
+}
+const KB_MIN = .45, KB_NEAR = .28;
+const kbOn = () => settings.lang === "it" && KB.length > 0;
 function search(q, excluded) {
   const it = interpret(q, excluded || new Set());
   const active = it.concepts.filter(c => !c.off);
@@ -1274,7 +1317,7 @@ const COLOR_NAMES = { U: "colU", R: "colR", G: "colG", B: "colB", W: "colW", M: 
 Object.assign(STR.it, {
   judgeSays: "Il Judge", aiThinking: "Il Judge sta ragionando sulla situazione…", aiNote: "Risposta di Claude basata sulle Comprehensive Rules: tocca i numeri per leggere le regole. In torneo decide l'arbitro.",
   aiBadKey: "La chiave API non è valida: controllala nelle impostazioni.", aiBusy: "Troppe richieste in questo momento: riprova tra poco.", aiDenied: "Claude non è stato autorizzato per questa pagina.", aiRefused: "Claude non ha risposto a questa domanda: prova a riformularla.", aiFail: "Il Judge non ha potuto rispondere (connessione?). Sotto trovi le regole collegate.", retry: "Riprova",
-  aiHint: "Vuoi un Judge che capisce davvero la domanda? Attiva Claude nelle impostazioni: per ora rispondo solo con la ricerca nelle regole.",
+  aiHint: "Vuoi un Judge che ragiona sulla tua situazione esatta? Attiva Claude nelle impostazioni: senza, rispondo con i casi verificati e la ricerca nelle regole.",
   askJudgeSub: "Risposta ragionata sulla tua situazione", askJudgeSub0: "Risposta con la ricerca nelle regole (attiva l'IA nelle impostazioni)",
   aiArtifact: "Senza chiave: apri MTG Aulla su claude.ai, dove il Judge usa gratis il tuo account Claude.",
   aiSec: "Judge con intelligenza artificiale", aiOnClaude: "Attivo: usa il tuo account Claude. La prima domanda ti chiede il permesso.", aiOnKey: "Attivo con la tua chiave API.",
@@ -1292,12 +1335,13 @@ Object.assign(STR.it, {
   nat20: "Venti naturale!", nat1: "Uno naturale…", resultIs: "Risultato: {v}", heads: "Testa", tails: "Croce", turnShort: "Turno {n}",
   fmtType: "Formato", fmtStdTx: "Sfida classica uno contro uno.", fmtCmdTx: "Un comandante leggendario, 100 carte, ognuno contro tutti.", fmtBrawlTx: "Commander con 60 carte e un mazzo Standard.",
   f2hgTx: "Due squadre da due: vita e turno in comune.", fCustomTx: "Scegli tu i punti vita iniziali.", startLifeShort: "vita",
+  kbCase: "Caso già risolto dal Judge", kbSimilar: "Domande simili", kbBrowse: "Casi risolti dal Judge", kbCount: "{n} situazioni verificate sulle Comprehensive Rules",
   seatTableSub: "Ogni carta guarda chi le siede davanti", seatUpSub: "Tutte le carte dritte verso di te", playersShort: "{n} giocatori",
 });
 Object.assign(STR.en, {
   judgeSays: "The Judge", aiThinking: "The Judge is thinking it through…", aiNote: "Answer by Claude based on the Comprehensive Rules: tap the numbers to read the rules. At a tournament the judge decides.",
   aiBadKey: "The API key isn't valid: check it in Settings.", aiBusy: "Too many requests right now: try again shortly.", aiDenied: "Claude hasn't been allowed for this page.", aiRefused: "Claude didn't answer this question: try rephrasing it.", aiFail: "The Judge couldn't answer (connection?). Related rules are below.", retry: "Try again",
-  aiHint: "Want a Judge that really understands the question? Turn on Claude in Settings: for now I only answer by searching the rules.",
+  aiHint: "Want a Judge that reasons about your exact situation? Turn on Claude in Settings: without it I answer from verified cases and by searching the rules.",
   askJudgeSub: "A reasoned answer for your situation", askJudgeSub0: "Answer by searching the rules (turn on AI in Settings)",
   aiArtifact: "No key: open MTG Aulla on claude.ai, where the Judge uses your Claude account at no extra cost.",
   aiSec: "AI judge", aiOnClaude: "On: uses your Claude account. The first question asks for permission.", aiOnKey: "On with your API key.",
@@ -1796,9 +1840,24 @@ function ruleRows(rules) {
   return rules.map(r => { const x = trRule(r); return `<button type="button" class="flex w-full items-baseline gap-3 rounded-xl px-2 py-2.5 text-left transition hover:bg-white/5" data-act="open-rule" data-id="${r.id}"><span class="w-[4.2em] shrink-0 font-mono text-[13px] text-zinc-400">${r.id}</span><span class="line-clamp-2 text-[14px] leading-snug text-zinc-200">${esc(x.t.replace(/\n/g, " "))}</span></button>`; }).join("");
 }
 const askLabel = s => `<p class="m-0 mb-2 text-[11px] font-medium uppercase tracking-[0.14em] text-zinc-400">${esc(s)}</p>`;
+const chipRule = id => `<button type="button" class="rounded-full border border-white/10 px-3 py-1 font-mono text-[12px] text-zinc-300 hover:bg-white/5" data-act="open-rule" data-id="${id}">${id}</button>`;
+const kbBtn = x => `<button type="button" class="rounded-xl border border-white/5 bg-zinc-900/70 px-3 py-2.5 text-left text-[14px] leading-snug text-zinc-300 transition hover:bg-zinc-900" data-act="kb-open" data-i="${x.i}">${esc(x.qs[0])}</button>`;
+function kbHTML(x) {
+  return `<section class="rounded-2xl border border-white/10 bg-zinc-900 p-4">${askLabel(t("answer"))}
+    <p class="m-0 mb-2 text-[13px] text-zinc-400">${esc(t("kbCase"))}: <span class="text-zinc-200">«${esc(x.qs[0])}»</span></p>
+    <p class="m-0 text-[15px] leading-relaxed text-zinc-100">${richText(x.a)}</p>
+    ${x.ids.length ? `<div class="mt-3 flex flex-wrap gap-1.5">${x.ids.map(chipRule).join("")}</div>` : ""}</section>`;
+}
+function renderKbCat(cat) {
+  const X = kbIndex(), list = X.items.filter(x => x.cat === cat);
+  $("askbody").innerHTML = `<button type="button" class="mb-3 inline-flex h-10 items-center gap-1 rounded-full pl-2 pr-3 text-[14px] text-zinc-300 hover:bg-white/5" data-act="kb-home">${ic("back", "size-4")}${esc(t("back"))}</button>
+    ${askLabel(cat)}<div class="flex flex-col gap-1.5">${list.map(kbBtn).join("")}</div>`;
+  $("askbody").scrollTop = 0;
+}
 function renderAskHome() {
   const recent = store.get("recent", []), ex = [t("askEx1"), t("askEx2")].concat(STR[settings.lang].ex.slice(0, 2));
   $("askbody").innerHTML = `${askLabel(recent.length ? t("recent") : t("askTry"))}<div class="flex flex-col gap-1.5">${(recent.length ? recent.slice(0, 5) : ex).map(e => `<button type="button" class="rounded-xl border border-white/5 bg-zinc-900/70 px-3 py-2.5 text-left text-[14px] leading-snug text-zinc-300 transition hover:bg-zinc-900" data-act="ask-ex" data-q="${esc(e)}">${esc(e)}</button>`).join("")}</div>
+    ${kbOn() ? `<section class="mt-5">${askLabel(t("kbBrowse"))}<p class="m-0 mb-2 text-[12px] text-zinc-400">${esc(t("kbCount", { n: KB.length }))}</p><div class="flex flex-wrap gap-1.5">${[...new Set(KB.map(e => e[0]))].map(c => `<button type="button" class="h-9 rounded-full border border-white/10 px-3 text-[13px] text-zinc-200 hover:bg-white/5" data-act="kb-cat" data-c="${esc(c)}">${esc(c[0].toUpperCase() + c.slice(1))}</button>`).join("")}</div></section>` : ""}
     <p class="mt-4 text-[12px] leading-relaxed text-zinc-400">${esc(t("askHelp"))}</p>`;
 }
 /* interazioni tra le carte citate, ricavate dal testo Oracle: frasi brevi con le regole che le decidono */
@@ -1878,13 +1937,15 @@ function judgePrompt(q, cards) {
     search(cards.map(c => faceTxt(c.card, "oracle_text").replace(/\([^)]*\)/g, "")).join(" "), new Set()).top.slice(0, 8).forEach(x => add(x.d.r.id));
     analyze(cards).forEach(x => x.ids.forEach(add));
   }
+  const prec = KB.length ? kbSearch(q, 3).filter(x => x.sc >= KB_NEAR) : [];
+  prec.forEach(x => x.x.ids.forEach(add));
   CORE_RULES.forEach(add);
   const rules = [...ids].slice(0, 36).map(id => { const r = CR.byId[id]; return id + " " + r.t.replace(/\n/g, " ") + (r.ex.length ? " | Example: " + r.ex.join(" / ").replace(/\n/g, " ") : ""); }).join("\n");
   const cardTxt = cards.map(c => { const k = c.card; return `- ${k.name} | ${k.mana_cost || (k.card_faces ? k.card_faces[0].mana_cost : "")} | ${faceTxt(k, "type_line")} | ${faceTxt(k, "oracle_text").replace(/\n/g, " / ")}${k.power != null ? " | " + k.power + "/" + k.toughness : ""}${k.loyalty != null ? " | loyalty " + k.loyalty : ""}`; }).join("\n");
   return (en ? `You are an experienced Magic: The Gathering judge answering players at the table, in English.` : `Sei un arbitro esperto di Magic: The Gathering e rispondi ai giocatori al tavolo, in italiano.`) + `
 
 ${en ? "Question" : "Domanda"}: «${q}»
-${cardTxt ? `\n${en ? "Cards mentioned (official Oracle text)" : "Carte citate (testo Oracle ufficiale)"}:\n${cardTxt}\n` : ""}
+${cardTxt ? `\n${en ? "Cards mentioned (official Oracle text)" : "Carte citate (testo Oracle ufficiale)"}:\n${cardTxt}\n` : ""}${prec.length ? `\n${en ? "Similar situations already ruled by this app (verified, in Italian; use them only if they really fit)" : "Situazioni simili già risolte (verificate; usale solo se calzano davvero)"}:\n${prec.map(x => `- «${x.x.qs[0]}» → ${x.x.a} [${x.x.ids.join(", ")}]`).join("\n")}\n` : ""}
 ${en ? "Excerpts of the Comprehensive Rules in force" : "Estratti delle Comprehensive Rules in vigore"} (${CR.date}), ${en ? "official English text" : "testo ufficiale inglese"}:
 <rules>
 ${rules}
@@ -1972,6 +2033,10 @@ function renderAskQ() {
   let h0 = "";
   const decide = [...new Map([...cases.flatMap(c => c.ids.map(id => CR.byId[id])), ...kws, ...res.top.map(x => x.d.r)].filter(Boolean).map(r => [r.id, r])).values()].slice(0, 5);
   const inter = analyze(okCards);
+  const kb = kbOn() && !inter.length ? kbSearch(st.q, 6) : [], pin = kbOn() && ask.kbPin != null && kbIndex().items[ask.kbPin];
+  const kbTop = pin && pin.qs[0] === st.q ? pin : kb[0] && kb[0].sc >= KB_MIN && !cases.length ? kb[0].x : null;
+  if (kbTop === pin && pin) cases.length = 0;
+  if (kbTop) { decide.unshift(...kbTop.ids.map(id => CR.byId[id]).filter(r => r && !decide.some(d => d.id === r.id))); decide.splice(6); }
   let summary = "";
   if (inter.length) {
     const ids = [...new Set(inter.flatMap(x => x.ids))];
@@ -1980,13 +2045,16 @@ function renderAskQ() {
     h0 = `<section class="rounded-2xl border border-white/10 bg-zinc-900 p-4">${askLabel(t("answer"))}<ul class="m-0 flex list-none flex-col gap-2.5 p-0">${inter.map(x => `<li class="flex gap-2.5 text-[15px] leading-relaxed text-zinc-100"><span class="mt-[0.6em] size-1.5 shrink-0 rounded-full bg-zinc-500"></span><span>${esc(x.txt)}${x.ids.length ? ` ${x.ids.map(id => `<button type="button" class="ml-0.5 rounded-full border border-white/10 px-2 py-0.5 align-[1px] font-mono text-[11px] text-zinc-300 hover:bg-white/5" data-act="open-rule" data-id="${id}">${id}</button>`).join("")}` : ""}</span></li>`).join("")}</ul></section>`;
   }
   else if (cases.length) summary = richText(settings.lang === "en" ? cases[0].en : cases[0].it);
+  else if (kbTop) h0 = kbHTML(kbTop);
   else if (decide.length) summary = esc(sentences(trRule(decide[0]).t, 260));
   if (st.ai) { h0 = aiHTML(st.ai); summary = ""; }
   let h = h0;
-  if (!st.ai && !aiMode()) h += `<button type="button" class="mb-1 mt-3 flex w-full items-center gap-3 rounded-2xl border border-dashed border-white/10 p-3 text-left transition hover:bg-white/5" data-act="ai-setup"><span class="grid size-9 shrink-0 place-items-center rounded-full bg-zinc-800 text-zinc-100">${ic("scales", "size-5")}</span><span class="text-[13px] leading-snug text-zinc-300">${esc(t("aiHint"))}</span></button>`;
-  if (!st.ai && !aiMode() && !window.claude) h += `<a class="mb-1 flex w-full items-center gap-3 rounded-2xl border border-dashed border-white/10 p-3 text-left text-[13px] leading-snug text-zinc-300 no-underline transition hover:bg-white/5" href="https://claude.ai/artifact/JBARBSEpZMZWXebydqKnck" target="_blank" rel="noopener"><span class="grid size-9 shrink-0 place-items-center rounded-full bg-zinc-800 text-zinc-100">${ic("next", "size-5")}</span>${esc(t("aiArtifact"))}</a>`;
   if (summary) h += `<section class="rounded-2xl border border-white/10 bg-zinc-900 p-4">${askLabel(t("answer"))}<p class="m-0 text-[15px] leading-relaxed text-zinc-100">${summary}</p>
     ${(cases[0] ? cases[0].ids : decide.slice(0, 1).map(r => r.id)).length ? `<div class="mt-3 flex flex-wrap gap-1.5">${(cases[0] ? cases[0].ids : [decide[0].id]).map(id => `<button type="button" class="rounded-full border border-white/10 px-3 py-1 font-mono text-[12px] text-zinc-300 hover:bg-white/5" data-act="open-rule" data-id="${id}">${id}</button>`).join("")}</div>` : ""}</section>`;
+  const near = kb.filter(x => x.x !== kbTop && x.sc >= KB_NEAR).slice(0, 4);
+  if (near.length) h += `<section class="mt-4">${askLabel(t("kbSimilar"))}<div class="flex flex-col gap-1.5">${near.map(x => kbBtn(x.x)).join("")}</div></section>`;
+  if (!st.ai && !aiMode()) h += `<button type="button" class="mb-1 mt-4 flex w-full items-center gap-3 rounded-2xl border border-dashed border-white/10 p-3 text-left transition hover:bg-white/5" data-act="ai-setup"><span class="grid size-9 shrink-0 place-items-center rounded-full bg-zinc-800 text-zinc-100">${ic("scales", "size-5")}</span><span class="text-[13px] leading-snug text-zinc-300">${esc(t("aiHint"))}</span></button>`;
+  if (!st.ai && !aiMode() && !window.claude) h += `<a class="mb-1 flex w-full items-center gap-3 rounded-2xl border border-dashed border-white/10 p-3 text-left text-[13px] leading-snug text-zinc-300 no-underline transition hover:bg-white/5" href="https://claude.ai/artifact/JBARBSEpZMZWXebydqKnck" target="_blank" rel="noopener"><span class="grid size-9 shrink-0 place-items-center rounded-full bg-zinc-800 text-zinc-100">${ic("next", "size-5")}</span>${esc(t("aiArtifact"))}</a>`;
   if (st.cards.length) {
     h += `<section class="mt-4">${askLabel(t("cardsIn"))}<div class="flex flex-col gap-2">${st.cards.map(c => {
       if (c.state === "load") return `<div class="animate-pulse rounded-2xl border border-white/5 bg-zinc-900/60 p-3 text-[13px] text-zinc-400">${esc(t("lookingFor", { n: c.n }))}</div>`;
@@ -2569,6 +2637,9 @@ const ACT = {
   "ask-ex": el => { ask.q = el.dataset.q; $("askq").value = ask.q; remember(ask.q); askRun(true, true); },
   "ask-pick": el => { ask.pick[el.dataset.n] = el.dataset.v; if (ask.st) ask.st.cards.forEach(c => { if (c.n === el.dataset.n) c.state = "load"; }); askRun(true, true); },
   "ask-retry": () => askRun(true, true),
+  "kb-cat": el => renderKbCat(el.dataset.c),
+  "kb-home": () => renderAskHome(),
+  "kb-open": el => { const x = kbIndex().items[+el.dataset.i]; if (!x) return; ask.q = x.qs[0]; $("askq").value = ask.q; ask.kbPin = x.i; askRun(true); $("askbody").scrollTop = 0; },
   "ai-setup": () => { openLayer("settings", { replaceTop: true }); setTimeout(() => { const f = $("s-apikey"); if (f) { f.scrollIntoView({ block: "center" }); f.focus(); } }, 120); },
   "ask-from-rules": () => { ask.mode = "q"; ask.q = rulesState.q.trim(); ask.card = null; ask.autoAI = true; openLayer("ask", { replaceTop: true, opener: $("hub-ask") }); },
   "apikey-save": () => { const v = ($("s-apikey").value || "").trim(); if (!v) return; store.set("apikey", v); toast(t("aiSaved")); RENDER.settings({ keepFocus: true }); },
