@@ -2,6 +2,10 @@
    testo normalizzato senza accenti), le regole che lo decidono e una risposta breve in italiano e inglese. */
 const TRIG = "innesc|si attiv|attivan|attiva (all|quando|ogni)|trigger|abilita (di|del|all)|all'inizio|quando entra|ogni volta";
 const CASES = [
+  [["entramb|tutti e due|ambedue|tutti i giocatori|ogni giocatore|contemporane|allo stesso (tempo|momento)|nello stesso momento|simultane|both|all players|each player|at the same time", "vinc|perd|pareggi|patta|pari|chi vince|muor|muoio|a 0|a zero|0 punti|zero punti|sotto (lo )?0|win|lose|draw|tie"],
+    ["104.4a", "704.5a", "704.3"],
+    "Nessuno vince: la partita finisce in pareggio. Il danno arriva a tutti nello stesso momento; poi le azioni generate dallo stato controllano tutti i giocatori insieme e chi ha 0 o meno punti vita perde. Se perdono contemporaneamente tutti i giocatori rimasti, la partita è patta. In multigiocatore, se resta qualcuno con punti vita, la partita continua senza chi ha perso.",
+    "Nobody wins: the game is a draw. The damage is dealt to everyone at the same time; then state-based actions check all players together and everyone at 0 or less life loses. If all remaining players lose simultaneously, the game is a draw. In multiplayer, if someone still has life, the game continues without the players who lost."],
   [[TRIG, "stess|contempora|insieme|due |entramb|piu abilita|tutte e|same time|both|two|multiple|simultane", "prima|ordine|quale|chi (decide|sceglie)|order|first|which"],
     ["603.3b", "101.4", "405.5"],
     "Si innescano tutte. Prima che qualcuno riceva la priorità, chi le controlla le mette in pila nell'ordine che preferisce: l'ultima messa in pila si risolve per prima. Se appartengono a giocatori diversi, prima il giocatore attivo mette in pila le sue, poi gli altri in ordine di turno (APNAP): quindi si risolvono per prime quelle dell'ultimo giocatore.",

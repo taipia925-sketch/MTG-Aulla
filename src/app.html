@@ -421,6 +421,134 @@ mark { background: var(--mark); color: var(--mark-ink); border-radius: 3px; padd
 @media (prefers-reduced-motion: no-preference) { .toast:not([hidden]) { animation: toastin .45s var(--spring); } @keyframes toastin { from { transform: translate(-50%, 30px) scale(.9); opacity: 0; } } }
 @media (prefers-reduced-motion: reduce) { .card3d, .rcard, .life, .pl { transition: none !important; } }
 @media (pointer: coarse) { .btn.sm { min-height: 44px; } }
+/* ================= TUTTI GLI STRATI: stesso linguaggio del tavolo =================
+   Fondo quasi nero e opaco, fili sottili, titoli in carattere da carta (Cinzel), testi in Inter,
+   colori di mana solo dove hanno un significato. Niente targhe lucide né effetti 3D. */
+:root, :root[data-theme="dark"] {
+  --bg: #0c0c0e; --surface: #141417; --raised: #1f1f23; --sunken: #09090b; --line: #26262b; --line-2: #3a3a41;
+  --ink: #fafafa; --ink-2: #d4d4d8; --mute: #a1a1aa; --gold: #e3c27a; --brass: #e3c27a; --brass-soft: rgba(227, 194, 122, .12);
+  --mark: rgba(227, 194, 122, .22); --mark-ink: #fafafa; --focus: #e4e4e7; --scrim: rgba(0, 0, 0, .66);
+  --pri: #fafafa; --pri-ink: #09090b; --sel: #27272a; --sel-ink: #fafafa; --panel-line: rgba(255,255,255,.08);
+  --f-ui: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif; --f-read: "Inter", system-ui, sans-serif;
+}
+:root[data-theme="light"] {
+  --bg: #fafafa; --surface: #ffffff; --raised: #f4f4f5; --sunken: #f4f4f5; --line: #e4e4e7; --line-2: #d4d4d8;
+  --ink: #18181b; --ink-2: #3f3f46; --mute: #52525b; --gold: #8a5f12; --brass: #8a5f12; --brass-soft: rgba(138,95,18,.1); --mark: rgba(214,160,50,.3); --mark-ink: #18181b; --focus: #18181b;
+  --pri: #18181b; --pri-ink: #fafafa; --sel: #18181b; --sel-ink: #fafafa; --panel-line: rgba(0,0,0,.08);
+}
+@media (prefers-color-scheme: light) { :root[data-theme="system"] {
+  --bg: #fafafa; --surface: #ffffff; --raised: #f4f4f5; --sunken: #f4f4f5; --line: #e4e4e7; --line-2: #d4d4d8;
+  --ink: #18181b; --ink-2: #3f3f46; --mute: #52525b; --gold: #8a5f12; --brass: #8a5f12; --brass-soft: rgba(138,95,18,.1); --mark: rgba(214,160,50,.3); --mark-ink: #18181b; --focus: #18181b;
+  --pri: #18181b; --pri-ink: #fafafa; --sel: #18181b; --sel-ink: #fafafa; --panel-line: rgba(0,0,0,.08);
+} }
+body { font-family: var(--f-ui); }
+.panel { background: var(--bg); border: 1px solid var(--panel-line); box-shadow: 0 30px 80px rgba(0,0,0,.6); }
+.panel::before { display: none; }
+.layer.sheet .panel { border-bottom: 0; border-radius: 26px 26px 0 0; }
+.layer.full .panel { border-width: 0; }
+@media (min-width: 900px) { .layer.sheet .panel { border-bottom: 1px solid var(--panel-line); border-radius: 26px; } .layer.full .panel { border-width: 1px; border-radius: 26px; } }
+@media (prefers-reduced-motion: no-preference) { .layer.in .panel { animation: rise2 .3s var(--ease); } @keyframes rise2 { from { transform: translateY(22px); opacity: 0; } } }
+.grab { background: var(--line-2); }
+.phead, .rtop.plaq { background: none; box-shadow: none; color: var(--ink); border-radius: 0; margin: 0; padding: 10px max(10px, env(safe-area-inset-right, 0px)) 10px max(12px, env(safe-area-inset-left, 0px)); min-height: 60px; border-bottom: 1px solid var(--line); }
+.phead::after { display: none; }
+.phead h2, .rtop h2 { color: var(--ink); font: 700 1.15rem/1.2 var(--f-title); letter-spacing: .05em; }
+.phead h2::before, .rtop h2::before { display: none; }
+.phead .btn, .rtop.plaq .btn { color: var(--ink-2); background: transparent; border-color: transparent; }
+.phead .btn:hover, .rtop.plaq .btn:hover { background: var(--raised); }
+.phead > .btn.ico:first-child, .rtop.plaq > .btn.ico:first-child { margin-left: 0; }
+.phead .ver, .rtop .ver { color: var(--mute); background: transparent; border: 1px solid var(--line); }
+.pbody { gap: 24px; padding-top: 18px; }
+.pfooter { background: var(--bg); border-top: 1px solid var(--line); }
+.btn { background: var(--surface); border: 1px solid var(--line-2); color: var(--ink); font: 600 .95rem/1.1 var(--f-ui); box-shadow: none; }
+.btn:hover { border-color: var(--mute); }
+.btn.pri { background: var(--pri); color: var(--pri-ink); border-color: var(--pri); font: 600 1rem/1.1 var(--f-ui); letter-spacing: 0; box-shadow: none; }
+.btn[aria-pressed="true"] { background: var(--sel); color: var(--sel-ink); border-color: var(--sel); }
+.lbl { font: 600 .72rem/1.2 var(--f-ui); letter-spacing: .14em; color: var(--mute); }
+.lbl::before { display: none; }
+.lbl::after { background: var(--line); }
+.seg { background: var(--sunken); border: 1px solid var(--line); }
+.seg button { color: var(--mute); font-weight: 600; }
+.seg button[aria-pressed="true"] { background: var(--sel); color: var(--sel-ink); box-shadow: none; }
+.field, .msearch, .rsearch { background: var(--surface); border: 1px solid var(--line-2); color: var(--ink); }
+.field:focus, .rsearch:focus-within { border-color: var(--mute); box-shadow: none; }
+.switch { background: var(--line-2); box-shadow: none; }
+.switch::after { background: #fafafa; }
+.switch:checked { background: var(--gold); }
+.card, .gbox, .rc, .topic, .ch, .empty, .emb, .recent button, .seatopt { background: var(--surface); border: 1px solid var(--line); box-shadow: none; }
+.rc.best, .rl.sel { background: var(--surface); border-color: var(--line-2); box-shadow: none; }
+.rc .eye { font: 600 .72rem/1 var(--f-ui); letter-spacing: .14em; color: var(--mute); }
+.rc .hd .num { background: transparent; box-shadow: none; padding: 0; }
+.rt { font: 400 1rem/1.62 var(--f-read); }
+.ex { font: 400 .95rem/1.55 var(--f-read); border-left-color: var(--line-2); }
+.ex b { font: 600 .7rem var(--f-ui); letter-spacing: .12em; color: var(--mute); }
+.en { font-family: var(--f-read); }
+.recent button { font-family: var(--f-ui); font-style: normal; }
+.ans { background: var(--surface); color: var(--ink); border: 1px solid var(--line-2); box-shadow: none; }
+.ans .lbl { color: var(--mute); } .ans .lbl::after { background: var(--line); }
+.ans p { color: var(--ink); font: 400 1.04rem/1.58 var(--f-read); }
+.ans mark { background: var(--mark); color: var(--mark-ink); }
+.ans .refs .ref, .ans .ref { color: var(--gold); border-color: var(--line-2); background: transparent; }
+.rtabs button { font: 600 .9rem/1 var(--f-ui); letter-spacing: 0; border-radius: 10px; }
+.rtabs button[aria-pressed="true"] { background: var(--sel); color: var(--sel-ink); box-shadow: none; }
+.rhead { gap: 12px; }
+.ch summary .n { font: 700 1.3rem/1 var(--f-title); color: var(--mute); }
+.term { box-shadow: inset 0 0 0 1px var(--line-2); background: var(--surface); }
+.judgebtn { display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; border-radius: 16px; border: 1px solid var(--line-2); background: var(--surface); color: var(--ink); padding: 12px 14px; min-height: 56px; }
+.judgebtn span { display: flex; flex-direction: column; gap: 2px; } .judgebtn b { font: 700 1rem/1.2 var(--f-title); letter-spacing: .04em; } .judgebtn small { color: var(--mute); font-size: .86rem; }
+.judgebtn svg { order: 2; margin-left: auto; color: var(--mute); }
+.toast { background: var(--pri); color: var(--pri-ink); font: 600 .95rem/1.3 var(--f-ui); letter-spacing: 0; box-shadow: 0 12px 30px rgba(0,0,0,.5); }
+/* gemme, pillole, scelte */
+.gem, .pill { background: var(--surface); color: var(--ink); box-shadow: inset 0 0 0 1px var(--line-2); font: 600 1.05rem/1 var(--f-ui); transform: none; }
+.gem[aria-pressed="true"], .pill[aria-pressed="true"] { background: var(--pri); color: var(--pri-ink); box-shadow: none; transform: none; }
+.seatopt { color: var(--ink); } .seatopt[aria-pressed="true"] { border-color: var(--ink); box-shadow: none; color: var(--ink); }
+.seatopt svg { color: var(--mute); }
+.pchip { background: var(--surface); } .pchip[aria-pressed="true"] { background: var(--sel); color: var(--sel-ink); border-color: var(--sel); box-shadow: none; transform: none; }
+.pchip .dot, .legend i, .log li i, .mpick button, .mana-pip { background: rgb(var(--tint)); color: #09090b; box-shadow: none; }
+.prow .mpick button[aria-pressed="true"], .mpick button[aria-pressed="true"] { transform: none; box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px var(--ink); }
+.emb .tk { background: var(--raised); color: var(--gold); box-shadow: none; width: 52px; height: 52px; }
+.emb .tk svg { width: 26px; height: 26px; }
+.emb h3 { font: 700 1rem/1.2 var(--f-title); letter-spacing: .05em; }
+.meta { border-top: 1px solid var(--line); }
+/* formati: carte piatte con filigrana e casella dei punti vita */
+.mcard { background: var(--surface); padding: 0; border: 1px solid rgb(var(--tint) / .35); box-shadow: none; border-radius: 18px; color: var(--ink); }
+.mcard .mf { background: none; box-shadow: none; padding: 12px; gap: 10px; border-radius: 18px; }
+.mcard .mn { background: none; box-shadow: none; padding: 0; color: rgb(var(--tint)); font: 700 1rem/1.15 var(--f-title); letter-spacing: .04em; }
+.mcard .ma { background: rgb(var(--tint) / .08); box-shadow: inset 0 0 0 1px rgb(var(--tint) / .18); border-radius: 12px; }
+.mcard .ma::after { display: none; }
+.mcard .ma svg { stroke: rgb(var(--tint)); filter: none; stroke-width: 1.3; }
+.mcard .mt { background: none; box-shadow: none; padding: 0; color: var(--mute); font: 600 .72rem/1.2 var(--f-ui); letter-spacing: .1em; text-transform: uppercase; }
+.mcard .mx { background: none; box-shadow: none; padding: 0 50px 0 0; color: var(--ink-2); font: 400 .86rem/1.4 var(--f-ui); }
+.mcard .mx i { color: var(--mute); font-style: normal; }
+.mcard .pt { background: rgb(var(--tint) / .14); color: rgb(var(--tint)); box-shadow: inset 0 0 0 1px rgb(var(--tint) / .4); font: 600 1.1rem/1 var(--f-ui); right: 12px; bottom: 12px; border-radius: 10px; }
+.mcard[aria-pressed="true"] { transform: none; border-color: rgb(var(--tint)); box-shadow: 0 0 0 1px rgb(var(--tint)), 0 0 32px rgb(var(--tint) / .18); }
+.prow { background: var(--surface); border: 1px solid rgb(var(--tint) / .3); }
+.prow::before { display: none; }
+.prow .field { background: var(--bg); color: var(--ink); box-shadow: none; border: 1px solid var(--line-2); font: 600 1rem/1 var(--f-ui); }
+.prow .field::placeholder { color: var(--mute); }
+.prow .inline-check { color: var(--ink-2); text-shadow: none; }
+/* dadi */
+#L-dice .panel { background: var(--bg); }
+.tray { background: radial-gradient(70% 60% at 50% 45%, #18181b, #0c0c0e 75%); box-shadow: inset 0 0 0 1px var(--panel-line); }
+.tray::before { opacity: .5; background: repeating-radial-gradient(circle at 50% 50%, rgba(255,255,255,.04) 0 1px, transparent 1px 34px); }
+.tray .hint { font: 600 .72rem/1 var(--f-ui); letter-spacing: .14em; color: var(--mute); }
+.dres { font: 700 1.15rem/1.2 var(--f-title); letter-spacing: .06em; color: var(--ink); text-shadow: none; }
+.dres.crit { color: #f5d98a; text-shadow: none; } .dres.fail { color: #fda4af; }
+.die { background: var(--surface); border: 1px solid var(--line); color: var(--ink-2); font: 600 .8rem/1 var(--f-ui); }
+.die svg { fill: none; stroke-width: 1.4; }
+.die[aria-pressed="true"] { background: var(--sel); color: var(--sel-ink); border-color: var(--line-2); box-shadow: none; transform: none; }
+.rolls span { background: var(--surface); border: 1px solid var(--line); font: 600 .88rem/1.2 var(--f-ui); color: var(--ink-2); }
+.rolls span:first-child { border-color: var(--line-2); color: var(--ink); }
+.coin3d .cf { background: #d9b45a; box-shadow: inset 0 0 0 6px #b8913f, 0 10px 30px rgba(0,0,0,.6); color: #2a1b06; font: 700 .95rem/1.1 var(--f-title); }
+.coin3d .cf.b { background: #c9ccd1; box-shadow: inset 0 0 0 6px #9aa0a8, 0 10px 30px rgba(0,0,0,.6); color: #18181b; }
+:root[data-theme="light"] .mcard .mn, :root[data-theme="light"] .mcard .pt { color: var(--ink); }
+@media (prefers-color-scheme: light) { :root[data-theme="system"] .mcard .mn, :root[data-theme="system"] .mcard .pt { color: var(--ink); } }
+.mpick { display: flex; flex-wrap: wrap; gap: 8px; }
+.mpick button { width: 44px; height: 44px; border-radius: 50%; border: 0; display: grid; place-items: center; }
+.mpick button svg { width: 58%; height: 58%; }
+/* storico */
+.spark { background: var(--surface); border: 1px solid var(--line); }
+.log .d { font: 600 1rem/1 var(--f-ui); }
+.ltrow { border-top-color: var(--line); }
 </style>
 
 <div id="game">
@@ -1134,6 +1262,13 @@ Object.assign(ICON, {
 });
 const COLOR_NAMES = { U: "colU", R: "colR", G: "colG", B: "colB", W: "colW", M: "colM", C: "colC" };
 Object.assign(STR.it, {
+  judgeSays: "Il Judge", aiThinking: "Il Judge sta ragionando sulla situazione…", aiNote: "Risposta di Claude basata sulle Comprehensive Rules: tocca i numeri per leggere le regole. In torneo decide l'arbitro.",
+  aiBadKey: "La chiave API non è valida: controllala nelle impostazioni.", aiBusy: "Troppe richieste in questo momento: riprova tra poco.", aiDenied: "Claude non è stato autorizzato per questa pagina.", aiRefused: "Claude non ha risposto a questa domanda: prova a riformularla.", aiFail: "Il Judge non ha potuto rispondere (connessione?). Sotto trovi le regole collegate.", retry: "Riprova",
+  aiHint: "Vuoi un Judge che capisce davvero la domanda? Attiva Claude nelle impostazioni: per ora rispondo solo con la ricerca nelle regole.",
+  askJudgeSub: "Risposta ragionata sulla tua situazione", askJudgeSub0: "Risposta con la ricerca nelle regole (attiva l'IA nelle impostazioni)",
+  aiSec: "Judge con intelligenza artificiale", aiOnClaude: "Attivo: usa il tuo account Claude. La prima domanda ti chiede il permesso.", aiOnKey: "Attivo con la tua chiave API.",
+  aiKeyHelp: "Per un Judge che capisce le domande serve Claude. Crea una chiave su console.anthropic.com (si paga a consumo, pochi centesimi a domanda) e incollala qui: resta solo su questo dispositivo e viene inviata soltanto ad Anthropic.",
+  aiKeyLabel: "Chiave API Anthropic", aiSave: "Salva", aiDel: "Rimuovi la chiave", aiSaved: "Chiave salvata: il Judge ora usa Claude", aiRemoved: "Chiave rimossa",
   askJudge: "Chiedi al Judge", askQ: "Domanda", askC: "Carta", askPh2: "Es. Cosa succede se lancio Wrath of God con Teferi in campo?", cardPh: "Nome della carta (italiano o inglese)",
   rulebookFull: "Regolamento completo", rulebook: "Regolamento", emblemsShort: "Gettoni", askTry: "Prova a chiedere",
   askEx1: "Cosa succede se lancio Wrath of God con Teferi, Time Raveler in campo?", askEx2: "Posso rispondere a «Lightning Bolt» con «Giant Growth»?",
@@ -1149,6 +1284,13 @@ Object.assign(STR.it, {
   seatTableSub: "Ogni carta guarda chi le siede davanti", seatUpSub: "Tutte le carte dritte verso di te", playersShort: "{n} giocatori",
 });
 Object.assign(STR.en, {
+  judgeSays: "The Judge", aiThinking: "The Judge is thinking it through…", aiNote: "Answer by Claude based on the Comprehensive Rules: tap the numbers to read the rules. At a tournament the judge decides.",
+  aiBadKey: "The API key isn't valid: check it in Settings.", aiBusy: "Too many requests right now: try again shortly.", aiDenied: "Claude hasn't been allowed for this page.", aiRefused: "Claude didn't answer this question: try rephrasing it.", aiFail: "The Judge couldn't answer (connection?). Related rules are below.", retry: "Try again",
+  aiHint: "Want a Judge that really understands the question? Turn on Claude in Settings: for now I only answer by searching the rules.",
+  askJudgeSub: "A reasoned answer for your situation", askJudgeSub0: "Answer by searching the rules (turn on AI in Settings)",
+  aiSec: "AI judge", aiOnClaude: "On: uses your Claude account. The first question asks for permission.", aiOnKey: "On with your API key.",
+  aiKeyHelp: "A judge that understands questions needs Claude. Create a key at console.anthropic.com (pay per use, a few cents per question) and paste it here: it stays on this device and is only sent to Anthropic.",
+  aiKeyLabel: "Anthropic API key", aiSave: "Save", aiDel: "Remove key", aiSaved: "Key saved: the Judge now uses Claude", aiRemoved: "Key removed",
   askJudge: "Ask the Judge", askQ: "Question", askC: "Card", askPh2: "E.g. What happens if I cast Wrath of God with Teferi out?", cardPh: "Card name",
   rulebookFull: "Full rulebook", rulebook: "Rulebook", emblemsShort: "Designations", askTry: "Try asking",
   askEx1: "What happens if I cast Wrath of God with Teferi, Time Raveler on the battlefield?", askEx2: "Can I respond to \"Lightning Bolt\" with \"Giant Growth\"?",
@@ -1696,6 +1838,110 @@ function analyze(list) {
   }
   return out;
 }
+/* ---------- Judge con Claude: capisce la domanda, si appoggia agli estratti delle Comprehensive Rules ----------
+   Nell'artifact di claude.ai usa l'account Claude di chi guarda (capacità «sample»); sul sito usa la chiave API
+   che l'utente incolla nelle impostazioni (resta sul dispositivo e va solo ad Anthropic). Senza nessuna delle due
+   resta il motore locale (situazioni note + ricerca). */
+const AI = { sample: null };
+(async () => { try { if (window.claude && typeof window.claude.use === "function") AI.sample = await window.claude.use("sample"); } catch (e) {} if (stack.some(x => x.name === "settings")) RENDER.settings({ keepFocus: true }); })();
+const aiKey = () => store.get("apikey", "");
+const aiMode = () => AI.sample ? "claude" : aiKey() ? "api" : "";
+const CORE_RULES = ["104.2a", "104.3a", "104.4a", "117.3a", "117.4", "405.5", "608.2b", "704.3", "704.5a", "704.5c", "120.3"];
+function judgePrompt(q, cards) {
+  const en = settings.lang === "en", ids = new Set(), add = id => { if (CR.byId[id]) ids.add(id); };
+  const base = search(q, new Set());
+  base.cases.forEach(c => c.ids.forEach(add));
+  base.it.ruleIds.forEach(add);
+  base.top.slice(0, 14).forEach(x => add(x.d.r.id));
+  if (cards.length) {
+    cards.forEach(c => kwRules(c.card).forEach(r => add(r.id)));
+    search(cards.map(c => faceTxt(c.card, "oracle_text").replace(/\([^)]*\)/g, "")).join(" "), new Set()).top.slice(0, 8).forEach(x => add(x.d.r.id));
+    analyze(cards).forEach(x => x.ids.forEach(add));
+  }
+  CORE_RULES.forEach(add);
+  const rules = [...ids].slice(0, 36).map(id => { const r = CR.byId[id]; return id + " " + r.t.replace(/\n/g, " ") + (r.ex.length ? " | Example: " + r.ex.join(" / ").replace(/\n/g, " ") : ""); }).join("\n");
+  const cardTxt = cards.map(c => { const k = c.card; return `- ${k.name} | ${k.mana_cost || (k.card_faces ? k.card_faces[0].mana_cost : "")} | ${faceTxt(k, "type_line")} | ${faceTxt(k, "oracle_text").replace(/\n/g, " / ")}${k.power != null ? " | " + k.power + "/" + k.toughness : ""}${k.loyalty != null ? " | loyalty " + k.loyalty : ""}`; }).join("\n");
+  return (en ? `You are an experienced Magic: The Gathering judge answering players at the table, in English.` : `Sei un arbitro esperto di Magic: The Gathering e rispondi ai giocatori al tavolo, in italiano.`) + `
+
+${en ? "Question" : "Domanda"}: «${q}»
+${cardTxt ? `\n${en ? "Cards mentioned (official Oracle text)" : "Carte citate (testo Oracle ufficiale)"}:\n${cardTxt}\n` : ""}
+${en ? "Excerpts of the Comprehensive Rules in force" : "Estratti delle Comprehensive Rules in vigore"} (${CR.date}), ${en ? "official English text" : "testo ufficiale inglese"}:
+<rules>
+${rules}
+</rules>
+
+` + (en ? `How to answer:
+- Work out the concrete game situation and answer exactly the question asked.
+- If it names cards not listed above, use the Oracle text you know; if you can't tell which card is meant, say so.
+- Base the ruling on the Comprehensive Rules. Cite rule numbers in square brackets, e.g. [704.5a], only when you are sure they are right (prefer the excerpts).
+- If the question is ambiguous, answer the most likely case and say in one sentence what would change otherwise.
+Format (plain text, no markdown, no headings): first line = the ruling in one short sentence. Then a blank line and the explanation in 2-5 short sentences, step by step.`
+      : `Come rispondere:
+- Ricostruisci la situazione concreta di gioco e rispondi esattamente alla domanda posta.
+- Se cita carte che non sono nell'elenco sopra, usa il testo Oracle che conosci; se non capisci quale carta intende, dillo.
+- Basati sulle Comprehensive Rules. Cita i numeri di regola tra parentesi quadre, es. [704.5a], solo se sei sicuro che siano giusti (preferisci quelli negli estratti).
+- Usa la terminologia italiana ufficiale di Magic (costituzione, forza, travolgere, tocco letale, pila, priorità, azioni generate dallo stato, anti-malocchio, salvaguardia, neutralizzare, cimitero, esilio…). Puoi lasciare i nomi delle carte in inglese.
+- Se la domanda è ambigua, rispondi al caso più probabile e indica in una frase cosa cambierebbe.
+Formato (testo semplice, niente markdown, niente titoli): prima riga = il verdetto in una frase breve. Poi una riga vuota e la spiegazione in 2-5 frasi brevi, passo dopo passo.`);
+}
+async function judgeAPI(prompt, onText, signal) {
+  const res = await fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST", signal,
+    headers: { "content-type": "application/json", "x-api-key": aiKey(), "anthropic-version": "2023-06-01", "anthropic-dangerous-direct-browser-access": "true", "anthropic-beta": "server-side-fallback-2026-07-01" },
+    body: JSON.stringify({ model: "claude-opus-5-5", max_tokens: 8000, stream: true, output_config: { effort: "low" }, fallbacks: "default", messages: [{ role: "user", content: prompt }] }),
+  });
+  if (!res.ok) { const j = await res.json().catch(() => ({})); const e = new Error((j.error && j.error.message) || String(res.status)); e.status = res.status; throw e; }
+  const rd = res.body.getReader(), dec = new TextDecoder();
+  let buf = "", text = "", refused = false;
+  for (;;) {
+    const { done, value } = await rd.read(); if (done) break;
+    buf += dec.decode(value, { stream: true });
+    let i;
+    while ((i = buf.indexOf("\n\n")) >= 0) {
+      const line = buf.slice(0, i).split("\n").find(l => l.startsWith("data:")); buf = buf.slice(i + 2);
+      if (!line) continue;
+      let ev; try { ev = JSON.parse(line.slice(5)); } catch (e) { continue; }
+      if (ev.type === "content_block_delta" && ev.delta && ev.delta.type === "text_delta") { text += ev.delta.text; onText(text); }
+      else if (ev.type === "message_delta" && ev.delta && ev.delta.stop_reason === "refusal") refused = true;
+      else if (ev.type === "error") throw new Error((ev.error && ev.error.message) || "error");
+    }
+  }
+  if (refused && !text) { const e = new Error("refusal"); e.code = "refused"; throw e; }
+  return text;
+}
+async function judgeAsk(st) {
+  if (ask.ctl) ask.ctl.abort();
+  const ctl = ask.ctl = new AbortController(), q = st.q;
+  st.ai = { status: "wait", text: "" }; renderAskQ();
+  // aspetto le carte (al massimo qualche secondo) per dare a Claude il loro testo
+  await Promise.race([new Promise(r => { const chk = () => st.cards.every(c => c.state !== "load") ? r() : setTimeout(chk, 150); chk(); }), new Promise(r => setTimeout(r, 3500))]);
+  if (ctl.signal.aborted || ask.st !== st) return;
+  const prompt = judgePrompt(q, st.cards.filter(c => c.state === "ok"));
+  const onText = text => { if (ask.st !== st) return; st.ai = { status: "stream", text }; renderAskQ(); };
+  try {
+    let text;
+    if (AI.sample) text = (await AI.sample(prompt, { onText: ({ text }) => onText(text), signal: ctl.signal, effort: "low" })).text;
+    else text = await judgeAPI(prompt, onText, ctl.signal);
+    if (ask.st === st) { st.ai = { status: "done", text }; renderAskQ(); }
+  } catch (e) {
+    if (ctl.signal.aborted || (e && e.code === "cancelled")) return;
+    const code = e && (e.code || e.status);
+    const msg = code === 401 || code === 403 ? t("aiBadKey") : code === 429 || code === "rate_limited" ? t("aiBusy") : code === "not_granted" || code === "sampling_disabled" ? t("aiDenied") : code === "refused" ? t("aiRefused") : t("aiFail");
+    if (code === "not_granted" || code === "sampling_disabled") AI.sample = null;
+    if (ask.st === st) { st.ai = { status: "err", text: (e && e.text) || "", err: msg }; renderAskQ(); }
+  }
+}
+function aiHTML(ai) {
+  const head = `<div class="mb-2 flex items-center gap-2"><span class="grid size-7 place-items-center rounded-full bg-zinc-800 text-zinc-100">${ic("scales", "size-4")}</span><span class="font-[Cinzel] text-[14px] font-bold tracking-[0.06em] text-zinc-100">${esc(t("judgeSays"))}</span><span class="ml-auto rounded-full border border-white/10 px-2 py-0.5 text-[11px] text-zinc-400">Claude</span></div>`;
+  if (ai.status === "wait") return `<section class="rounded-2xl border border-white/10 bg-zinc-900 p-4">${head}<p class="m-0 animate-pulse text-[15px] text-zinc-400">${esc(t("aiThinking"))}</p></section>`;
+  const fmt = s => esc(s).replace(/\*\*(.+?)\*\*/g, "$1").replace(/\[(\d{3}(?:\.\d+[a-z]{0,2})?)\]/g, (m, id) => CR.byId[id] || CR.sections[id] ? `<button type="button" class="mx-0.5 rounded-full border border-white/10 px-2 py-0.5 align-[1px] font-mono text-[12px] text-amber-200/90 hover:bg-white/5" data-act="open-rule" data-id="${id}">${id}</button>` : `<span class="font-mono text-[12px] text-zinc-400">${id}</span>`);
+  const parts = (ai.text || "").trim().split(/\n\s*\n/), first = parts.shift() || "";
+  return `<section class="rounded-2xl border border-white/10 bg-zinc-900 p-4">${head}
+    ${first ? `<p class="m-0 text-[17px] font-semibold leading-snug text-zinc-50">${fmt(first)}</p>` : ""}
+    ${parts.map(x => `<p class="m-0 mt-3 whitespace-pre-line text-[15px] leading-relaxed text-zinc-300">${fmt(x)}</p>`).join("")}
+    ${ai.status === "err" ? `<p class="m-0 mt-3 text-[14px] text-rose-200">${esc(ai.err)}</p><button type="button" class="mt-3 h-10 rounded-full border border-white/10 px-4 text-[14px] text-zinc-200 hover:bg-white/5" data-act="ask-retry">${esc(t("retry"))}</button>` : ""}
+    ${ai.status === "done" ? `<p class="m-0 mt-3 text-[12px] text-zinc-400">${esc(t("aiNote"))}</p>` : ""}</section>`;
+}
 function renderAskQ() {
   const st = ask.st; if (!st) return;
   const okCards = st.cards.filter(c => c.state === "ok");
@@ -1715,7 +1961,9 @@ function renderAskQ() {
   }
   else if (cases.length) summary = richText(settings.lang === "en" ? cases[0].en : cases[0].it);
   else if (decide.length) summary = esc(sentences(trRule(decide[0]).t, 260));
+  if (st.ai) { h0 = aiHTML(st.ai); summary = ""; }
   let h = h0;
+  if (!st.ai && !aiMode()) h += `<button type="button" class="mb-1 mt-3 flex w-full items-center gap-3 rounded-2xl border border-dashed border-white/10 p-3 text-left transition hover:bg-white/5" data-act="ai-setup"><span class="grid size-9 shrink-0 place-items-center rounded-full bg-zinc-800 text-zinc-100">${ic("scales", "size-5")}</span><span class="text-[13px] leading-snug text-zinc-300">${esc(t("aiHint"))}</span></button>`;
   if (summary) h += `<section class="rounded-2xl border border-white/10 bg-zinc-900 p-4">${askLabel(t("answer"))}<p class="m-0 text-[15px] leading-relaxed text-zinc-100">${summary}</p>
     ${(cases[0] ? cases[0].ids : decide.slice(0, 1).map(r => r.id)).length ? `<div class="mt-3 flex flex-wrap gap-1.5">${(cases[0] ? cases[0].ids : [decide[0].id]).map(id => `<button type="button" class="rounded-full border border-white/10 px-3 py-1 font-mono text-[12px] text-zinc-300 hover:bg-white/5" data-act="open-rule" data-id="${id}">${id}</button>`).join("")}</div>` : ""}</section>`;
   if (st.cards.length) {
@@ -1723,7 +1971,7 @@ function renderAskQ() {
       if (c.state === "load") return `<div class="animate-pulse rounded-2xl border border-white/5 bg-zinc-900/60 p-3 text-[13px] text-zinc-400">${esc(t("lookingFor", { n: c.n }))}</div>`;
       if (c.state === "ok") return cardHTML(c, false);
       if (c.state === "amb") return `<div class="rounded-2xl border border-white/5 bg-zinc-900/60 p-3"><p class="m-0 mb-2 text-[13px] text-zinc-300">${esc(t("whichCard", { n: c.n }))}</p><div class="flex flex-wrap gap-1.5">${c.options.map(o => `<button type="button" class="rounded-full border border-white/10 px-3 py-1.5 text-[13px] text-zinc-200 hover:bg-white/5" data-act="ask-pick" data-n="${esc(c.n)}" data-v="${esc(o)}">${esc(o)}</button>`).join("")}</div></div>`;
-      if (c.state === "off") return `<p class="m-0 rounded-2xl border border-white/5 bg-zinc-900/60 p-3 text-[13px] text-zinc-400">${esc(t("cardsOffline"))}</p>`;
+      if (c.state === "off") return st.ai ? "" : `<p class="m-0 rounded-2xl border border-white/5 bg-zinc-900/60 p-3 text-[13px] text-zinc-400">${esc(t("cardsOffline"))}</p>`;
       return `<p class="m-0 rounded-2xl border border-white/5 bg-zinc-900/60 p-3 text-[13px] text-zinc-400">${esc(t("noCard", { n: c.n }))}</p>`;
     }).join("")}</div></section>`;
   }
@@ -1732,16 +1980,22 @@ function renderAskQ() {
   $("askbody").innerHTML = h;
   $("askcredit").textContent = okCards.length ? t("sfCredit") : "";
 }
-function askRun(deep) {
+function askRun(deep, useAI) {
   const q = ask.q.trim(), seq = ++ask.seq;
+  if (ask.ctl && useAI !== undefined) { ask.ctl.abort(); ask.ctl = null; }
   $("askclr").hidden = !q;
   if (ask.mode === "c") return askCardList(q, seq);
   if (!q) { ask.st = null; $("askcredit").textContent = ""; return renderAskHome(); }
-  const names = deep ? cardNames(q) : [];
   const prev = ask.st && ask.st.q === q ? ask.st : null;
+  // stessa domanda già elaborata (es. il ritardo dopo la digitazione arriva dopo l'invio): non ricomincio
+  if (prev && useAI === undefined && (prev.deep || !deep)) { renderAskQ(); return; }
+  if (useAI !== undefined) clearTimeout(ask.deep);
+  const names = deep ? cardNames(q) : [];
   ask.st = { q, names, cards: names.map(n => (prev && prev.cards.find(c => c.n === n && c.state !== "load")) || { n, state: "load" }) };
   renderAskQ();
-  ask.st.cards.forEach((c, k) => { if (c.state !== "load") return; lookupCard(ask.pick[c.n] || c.n, !!ask.pick[c.n]).then(r => { if (seq !== ask.seq || !ask.st) return; ask.st.cards[k] = Object.assign({ n: c.n }, r); renderAskQ(); }); });
+  const st = ask.st; st.deep = deep;
+  st.cards.forEach((c, k) => { if (c.state !== "load") return; lookupCard(ask.pick[c.n] || c.n, !!ask.pick[c.n]).then(r => { if (ask.st !== st) return; st.cards[k] = Object.assign({ n: c.n }, r); renderAskQ(); }); });
+  if (useAI && aiMode()) judgeAsk(st);
 }
 function askCardList(q, seq) {
   if (ask.card) { $("askbody").innerHTML = ask.card.state === "ok" ? `<button type="button" class="mb-3 inline-flex h-10 items-center gap-1 rounded-full pl-2 pr-3 text-[14px] text-zinc-300 hover:bg-white/5" data-act="ask-card-back">${ic("back", "size-4")}${esc(t("back"))}</button>${cardHTML(ask.card, true)}` : `<p class="text-[14px] text-zinc-400">${esc(t(ask.card.state === "off" ? "cardsOffline" : "noCard", { n: q }))}</p>`; $("askcredit").textContent = t("sfCredit"); return; }
@@ -1761,7 +2015,8 @@ RENDER.ask = () => {
   document.querySelectorAll('[data-act="ask-mode"]').forEach(b => { b.setAttribute("aria-pressed", b.dataset.v === ask.mode); b.textContent = t(b.dataset.v === "q" ? "askQ" : "askC"); });
   const f = $("askq"); f.placeholder = t(ask.mode === "q" ? "askPh2" : "cardPh"); $("askq-l").textContent = f.placeholder; if (f.value !== ask.q) f.value = ask.q;
   $("askfull").textContent = t("rulebookFull");
-  askRun(true);
+  const auto = ask.autoAI; ask.autoAI = false;
+  if (auto) { $("askq").blur(); askRun(true, true); } else askRun(true);
 };
 
 /* ---------------- gettoni di partita ---------------- */
@@ -1822,8 +2077,9 @@ function renderRulesBody(anim) {
   if (rulesState.tab === "saved") { const ids = store.get("saved", []).filter(id => CR.byId[id]); out.innerHTML = ids.length ? `<div class="res">${ids.map(id => card(CR.byId[id], null, false)).join("")}</div>` : `<div class="empty">${t("noSaved")}</div>`; return; }
   if (!q) { out.innerHTML = homeHTML(); return; }
   const { it, top, gloss, total, cases } = search(q, rulesState.excluded);
+  const askBtn = q.split(/\s+/).length >= 4 ? `<button type="button" class="judgebtn" data-act="ask-from-rules">${icon("next", "s")}<span><b>${esc(t("askJudge"))}</b><small>${esc(t(aiMode() ? "askJudgeSub" : "askJudgeSub0"))}</small></span></button>` : "";
   const hl = hlSets(it); rulesState.hl = hl;
-  let h = "";
+  let h = askBtn;
   if (it.concepts.length || it.unknown.length) h += `<div class="sec" style="gap:8px"><h3 class="lbl">${t("searched")}</h3><div class="terms">` +
     it.concepts.map(c => { const from = c.labels.filter(l => norm(l) !== norm(c.en));
       return `<button type="button" class="term${c.off ? " off" : ""}" data-act="term" data-key="${esc(c.key)}" aria-pressed="${!c.off}" title="${esc((c.off ? t("restoreTerm") : t("removeTerm")).replace("{t}", c.en))}"><span>${settings.lang === "it" && from.length ? `<b>${esc(from.join(", "))}</b> <small>· ${esc(c.en)}</small>` : `<b>${esc(c.en)}</b>${from.length ? ` <small>· ${esc(from.join(", "))}</small>` : ""}`}</span><span class="x" aria-hidden="true">${c.off ? "+" : "×"}</span></button>`; }).join("") +
@@ -2213,6 +2469,12 @@ RENDER.settings = () => {
       ${sw("s-cmdlife", settings.cmdLife, "ltLink", "", !f.cmd)}
       <div class="row"><button type="button" class="btn sm" data-act="open" data-l="setup">${t("ltMore")}</button></div>
     </div></div>
+    <div class="sec"><h3 class="lbl">${t("aiSec")}</h3><div class="card">
+      ${AI.sample ? `<div class="row"><div class="t"><b>${t("aiOnClaude")}</b></div></div>` : `
+      ${aiKey() ? `<div class="row"><div class="t"><b>${t("aiOnKey")}</b><span>••••${esc(aiKey().slice(-4))}</span></div><button type="button" class="btn sm" data-act="apikey-del">${t("aiDel")}</button></div>` : ""}
+      <div class="row" style="flex-wrap:wrap"><div class="t" style="flex-basis:100%"><label for="s-apikey"><b>${t("aiKeyLabel")}</b></label><span>${t("aiKeyHelp")}</span></div>
+        <div style="display:flex;gap:8px;width:100%"><input class="field" id="s-apikey" type="password" autocomplete="off" spellcheck="false" placeholder="sk-ant-…" style="flex:1"><button type="button" class="btn pri sm" data-act="apikey-save">${t("aiSave")}</button></div></div>`}
+    </div></div>
     <div class="sec"><h3 class="lbl">${t("stLang")}</h3><div class="seg" role="group"><button type="button" data-act="lang" data-v="it" aria-pressed="${settings.lang === "it"}">Italiano</button><button type="button" data-act="lang" data-v="en" aria-pressed="${settings.lang === "en"}">English</button></div><p class="note">${t("stLangHelp")}</p></div>
     <div class="sec"><h3 class="lbl">${t("stTheme")}</h3><div class="seg" role="group">${["dark", "light", "system"].map(v => `<button type="button" data-act="theme" data-v="${v}" aria-pressed="${settings.theme === v}">${t({ dark: "tDark", light: "tLight", system: "tSys" }[v])}</button>`).join("")}</div></div>
     <div class="sec"><h3 class="lbl">${t("ltApp")}</h3><div class="card">
@@ -2283,8 +2545,13 @@ const ACT = {
   "ask-open": () => openLayer("ask", { opener: $("hub-ask") }),
   "ask-mode": el => { ask.mode = el.dataset.v; ask.card = null; RENDER.ask(); $("askq").focus(); },
   "ask-clear": () => { ask.q = ""; ask.card = null; $("askq").value = ""; askRun(true); $("askq").focus(); },
-  "ask-ex": el => { ask.q = el.dataset.q; $("askq").value = ask.q; remember(ask.q); askRun(true); },
-  "ask-pick": el => { ask.pick[el.dataset.n] = el.dataset.v; if (ask.st) ask.st.cards.forEach(c => { if (c.n === el.dataset.n) c.state = "load"; }); askRun(true); },
+  "ask-ex": el => { ask.q = el.dataset.q; $("askq").value = ask.q; remember(ask.q); askRun(true, true); },
+  "ask-pick": el => { ask.pick[el.dataset.n] = el.dataset.v; if (ask.st) ask.st.cards.forEach(c => { if (c.n === el.dataset.n) c.state = "load"; }); askRun(true, true); },
+  "ask-retry": () => askRun(true, true),
+  "ai-setup": () => { openLayer("settings", { replaceTop: true }); setTimeout(() => { const f = $("s-apikey"); if (f) { f.scrollIntoView({ block: "center" }); f.focus(); } }, 120); },
+  "ask-from-rules": () => { ask.mode = "q"; ask.q = rulesState.q.trim(); ask.card = null; ask.autoAI = true; openLayer("ask", { replaceTop: true, opener: $("hub-ask") }); },
+  "apikey-save": () => { const v = ($("s-apikey").value || "").trim(); if (!v) return; store.set("apikey", v); toast(t("aiSaved")); RENDER.settings({ keepFocus: true }); },
+  "apikey-del": () => { store.del("apikey"); toast(t("aiRemoved")); RENDER.settings({ keepFocus: true }); },
   "ask-card": async el => { const v = el.dataset.v; if (ask.mode !== "c") { ask.mode = "c"; RENDER.ask(); } ask.q = v; $("askq").value = v; $("askbody").innerHTML = `<div class="animate-pulse rounded-2xl border border-white/5 bg-zinc-900/60 p-3 text-[13px] text-zinc-400">${esc(t("lookingFor", { n: v }))}</div>`; const seq = ++ask.seq; const r = await lookupCard(v, true); if (seq !== ask.seq) return; ask.card = r; askRun(); $("askbody").scrollTop = 0; },
   "ask-card-back": () => { ask.card = null; askRun(); },
   "ask-full": () => { rulesState.q = ask.mode === "q" ? ask.q : ""; rulesState.tab = "search"; rulesState.list = null; openLayer("rules", { replaceTop: true, focusInput: !rulesState.q }); },
@@ -2411,7 +2678,7 @@ $("file").addEventListener("change", e => {
   };
   rd.readAsText(f, "utf-8");
 });
-$("askform").addEventListener("submit", e => { e.preventDefault(); ask.q = $("askq").value; ask.card = null; remember(ask.q); askRun(true); $("askq").blur(); });
+$("askform").addEventListener("submit", e => { e.preventDefault(); ask.q = $("askq").value; ask.card = null; remember(ask.q); askRun(true, true); $("askq").blur(); });
 $("askq").addEventListener("input", () => { ask.q = $("askq").value; ask.card = null; askRun(false); clearTimeout(ask.deep); if (ask.mode === "q") ask.deep = setTimeout(() => askRun(true), 750); });
 window.addEventListener("hashchange", route);
 window.addEventListener("resize", () => { closeRing(); clearTimeout(window.rz); window.rz = setTimeout(() => renderBoard(), 80); });
