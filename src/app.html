@@ -113,7 +113,9 @@ svg.mana { fill: currentColor; stroke: none; }
 .pl.nmside .nmrow { justify-content: flex-end; padding-right: 64px; }
 .pl.nmstart .nmrow { justify-content: flex-start; padding-left: 64px; }
 .pl.nmbottom .nmrow { top: auto; bottom: 5cqh; }
-.pl.nmbottom .chips { bottom: auto; top: 4cqh; }
+.pl.nmbottom .chips { bottom: calc(5cqh + clamp(18px, 6.5cqh, 24px) + 8px); }
+.pl.nmbottom .lifebox { padding-bottom: 22cqh; }
+.pl.chside .chips { justify-content: flex-end; } .pl.chstart .chips { justify-content: flex-start; }
 .chips { flex-wrap: nowrap; justify-content: safe center; overflow-x: auto; scrollbar-width: none; }
 .chips::-webkit-scrollbar { display: none; }
 .front { transition: opacity .2s ease; }
@@ -560,6 +562,9 @@ body { font-family: var(--f-ui); }
 .log .d { font: 600 1rem/1 var(--f-ui); }
 .ltrow { border-top-color: var(--line); }
 .ans p.kbq { font-size: .86rem; line-height: 1.4; opacity: .8; }
+.cdisc .cring { background: conic-gradient(rgb(var(--tint)) calc(var(--p) * 1turn), rgb(var(--tint) / .2) 0); }
+.cdisc { touch-action: manipulation; -webkit-touch-callout: none; user-select: none; }
+.pl:not(.out) .cdisc:has(.text-rose-200) .cring { box-shadow: 0 0 0 2px rgb(253 164 175 / .55); }
 </style>
 
 <div id="game">
@@ -811,7 +816,7 @@ const STR = {
     f2hg: "Gigante a Due Teste", f2hgSub: "Squadre, 15 veleno", fCustom: "Personalizzato", fCustomSub: "Scegli i punti vita",
     life: "Punti vita", poison: "Veleno", energy: "Energia", exp: "Esperienza", rad: "Radiazioni", tax: "Tassa", tax2: "Tassa partner",
     counters: "Segnalini", cmdDmg: "Danni da comandante subiti", done: "Fatto", cmdNote: "Tocca un comandante per +1. Con «−» togli.", cmdOf: "di {p}", cmd2: "{p} (2°)",
-    outLife: "Fuori", out: "Eliminato", lifeOf: "{p}: {l} punti vita", counterBtn: "Segnalini di {p}", cmdBtn: "Danni da comandante di {p}",
+    outLife: "Fuori", out: "Eliminato", lifeOf: "{p}: {l} punti vita", counterBtn: "Segnalini di {p}", cmdBtn: "Danni da comandante di {p}", cmdDisc: "Danni dal comandante di {p}: {v} su 21. Tocca per +1, tieni premuto per −1", cmdLive: "{p}: {v} danni da comandante, {l} punti vita",
     plus: "{p}: più uno (tieni premuto: più dieci)", minus: "{p}: meno uno (tieni premuto: meno dieci)",
     roll: "Tira", rollAgain: "Tocca per ritirare", heads: "Testa", tails: "Croce", coin: "Moneta", lastRolls: "Ultimi lanci",
     undo: "Annulla ultima modifica", noHistory: "Ancora nessuna modifica in questa partita.", undone: "Annullato", lifeChart: "Andamento dei punti vita",
@@ -867,7 +872,7 @@ const STR = {
     f2hg: "Two-Headed Giant", f2hgSub: "Teams, 15 poison", fCustom: "Custom", fCustomSub: "Pick starting life",
     life: "Life", poison: "Poison", energy: "Energy", exp: "Experience", rad: "Rad", tax: "Tax", tax2: "Partner tax",
     counters: "Counters", cmdDmg: "Commander damage taken", done: "Done", cmdNote: "Tap a commander for +1. Use “−” to remove.", cmdOf: "{p}'s", cmd2: "{p} (2nd)",
-    outLife: "Out", out: "Out", lifeOf: "{p}: {l} life", counterBtn: "{p}'s counters", cmdBtn: "{p}'s commander damage",
+    outLife: "Out", out: "Out", lifeOf: "{p}: {l} life", counterBtn: "{p}'s counters", cmdBtn: "{p}'s commander damage", cmdDisc: "Damage from {p}'s commander: {v} of 21. Tap for +1, hold for −1", cmdLive: "{p}: {v} commander damage, {l} life",
     plus: "{p}: plus one (hold: plus ten)", minus: "{p}: minus one (hold: minus ten)",
     roll: "Roll", rollAgain: "Tap to roll again", heads: "Heads", tails: "Tails", coin: "Coin", lastRolls: "Last rolls",
     undo: "Undo last change", noHistory: "No changes in this game yet.", undone: "Undone", lifeChart: "Life over time",
@@ -1416,15 +1421,36 @@ function chipsHTML(p, i) {
   const f = F(), b = [];
   const ch = (k, v, hot, extra) => `<button type="button" class="${hot ? "chip inline-flex h-8 items-center gap-1 rounded-full border border-rose-300/40 bg-rose-950/60 px-2.5 text-[13px] font-medium tabular-nums text-rose-100" : "chip inline-flex h-8 items-center gap-1 rounded-full border border-white/5 bg-zinc-800/80 px-2.5 text-[13px] font-medium tabular-nums text-zinc-200"}" data-act="pview" data-m="${k === "cmd" ? "cmd" : "counters"}" data-i="${i}" aria-label="${esc(t(k === "cmd" ? "cmdBtn" : "counterBtn", { p: pname(p, i) }))}">${ic(k === "cmd" ? "sword" : k, "size-3.5 opacity-70")}${v}${extra || ""}</button>`;
   if (p.c.poison) b.push(ch("poison", p.c.poison, p.c.poison >= f.poison - 3));
-  if (f.cmd) for (const [pid, v] of Object.entries(p.cmd)) {
-    const j = game.players.findIndex(x => x.id === pid); if (j < 0) continue;
-    [0, 1].forEach(k => { if (v[k]) b.push(ch("cmd", v[k], v[k] >= 15, `<i class="not-italic text-[11px] text-zinc-400">${esc(pname(game.players[j], j).slice(0, 3))}${k ? "²" : ""}</i>`)); });
-  }
   if (p.c.energy) b.push(ch("energy", p.c.energy));
   if (p.c.exp) b.push(ch("exp", p.c.exp));
   if (p.c.rad) b.push(ch("rad", p.c.rad));
   if (f.cmd && (p.c.tax || p.c.tax2)) b.push(ch("tax", "+" + p.c.tax * 2 + (p.partner ? "/+" + p.c.tax2 * 2 : "")));
   return b.join("");
+}
+/* danni da comandante sempre a vista sul fronte: un disco per ogni comandante avversario,
+   col suo colore; l'anello si riempie verso 21. Tocco = +1, tieni premuto = −1. */
+function cmdDiscs(p, i) {
+  const f = F(); if (!f.cmd || f.noCmdLoss || game.players.length < 2) return "";
+  return game.players.map((o, j) => j === i ? "" : (o.partner ? [0, 1] : [0]).map(k => {
+    const v = (p.cmd[o.id] || [0, 0])[k], hot = v >= 15, who = k ? t("cmd2", { p: pname(o, j) }) : pname(o, j);
+    return `<button type="button" class="cdisc relative grid size-11 shrink-0 place-items-center rounded-full transition active:scale-90" style="${pcVars(o.color)};--p:${Math.min(1, v / 21)}" data-act="cmdtap" data-i="${i}" data-o="${o.id}" data-k="${k}" aria-label="${esc(t("cmdDisc", { p: who, v }))}">
+      <span class="cring absolute inset-0 rounded-full" aria-hidden="true"></span>
+      <span class="relative grid size-[calc(100%-6px)] place-items-center rounded-full bg-zinc-950 text-[15px] font-semibold tabular-nums ${hot ? "text-rose-200" : v ? "text-zinc-50" : "text-zinc-400"}" aria-hidden="true">${v}</span>
+      <span class="absolute -bottom-0.5 -right-0.5 grid size-[18px] place-items-center rounded-full bg-[rgb(var(--tint))] text-zinc-950 shadow-[0_0_0_2px_rgb(9_9_11)]" aria-hidden="true">${k ? `<b class="text-[10px] leading-none">2</b>` : mana(o.color).replace('class="mana"', 'class="mana size-[70%]"')}</span></button>`;
+  }).join("")).join("");
+}
+function cmdApply(i, o, k, d) { // → nuovo valore, oppure null se non cambia nulla
+  const p = game.players[i], v = p.cmd[o] || [0, 0], nv = Math.max(0, v[k] + d); if (nv === v[k]) return null;
+  const wasOut = !!outRule(p), dd = nv - v[k]; v[k] = nv; p.cmd[o] = v;
+  if (settings.cmdLife) { p.life -= dd; logPush({ pid: p.id, k: "life", d: -dd, v: p.life }); }
+  logPush({ pid: p.id, k: "cmd", src: o, slot: k, d: dd, v: nv, withLife: settings.cmdLife }); buzz(dd > 0 ? 8 : [6, 30, 6]); saveGame();
+  const el = $("board").children[i];
+  if (!!outRule(p) !== wasOut) { renderBoard(i); if (!wasOut) buzz([20, 40, 40]); }
+  else if (el && !el.classList.contains("flipped")) { const fr = el.querySelector(".front"); if (fr) fr.innerHTML = frontHTML(p, i); }
+  const L = $("life-" + i); if (L && settings.cmdLife) pulse(L, "tap", 140);
+  if (el) pulse(el, dd > 0 ? "dn" : "up", 320);
+  $("live").textContent = t("cmdLive", { p: pname(p, i), v: nv, l: p.life });
+  return nv;
 }
 function frontHTML(p, i) {
   const out = outRule(p), nm = esc(pname(p, i));
@@ -1435,9 +1461,9 @@ function frontHTML(p, i) {
     <div class="nmrow pointer-events-none absolute inset-x-0 top-[5cqh] z-[1] flex items-center justify-center gap-2 px-16">
       <span class="grid size-[clamp(18px,6.5cqh,24px)] shrink-0 place-items-center rounded-full bg-[rgb(var(--tint))] text-zinc-950 shadow-[0_0_0_2px_rgba(0,0,0,0.5)]">${mana(p.color).replace('class="mana"', 'class="mana size-[66%]"')}</span><span class="nm truncate font-[Cinzel] text-[clamp(12px,4.8cqh,17px)] font-bold tracking-[0.08em] text-[rgb(var(--tint))]">${nm}</span>${tok}</div>
     <button type="button" class="opt absolute right-[2.5cqw] top-[3cqh] z-[3] grid size-11 place-items-center rounded-full text-zinc-400 transition hover:bg-white/5 hover:text-zinc-100 active:scale-90" data-act="pview" data-m="counters" data-i="${i}" aria-label="${esc(t("counterBtn", { p: pname(p, i) }))}">${ic("sliders", "size-5")}</button>
-    <div class="pointer-events-none absolute inset-0 z-[1] grid place-items-center"><div class="life${Math.abs(p.life) >= 100 ? " k3" : ""} font-semibold leading-none tracking-[-0.045em] text-zinc-50" id="life-${i}">${p.life}</div></div>
+    <div class="lifebox pointer-events-none absolute inset-0 z-[1] grid place-items-center"><div class="life${Math.abs(p.life) >= 100 ? " k3" : ""} font-semibold leading-none tracking-[-0.045em] text-zinc-50" id="life-${i}">${p.life}</div></div>
     <span class="delta pointer-events-none absolute left-1/2 z-[2] -translate-x-1/2 rounded-full bg-zinc-800/90 px-2.5 py-0.5 text-[clamp(12px,5.5cqh,20px)] font-medium tabular-nums opacity-0 transition-opacity duration-300" id="delta-${i}" aria-hidden="true"></span>
-    <div class="chips absolute inset-x-0 bottom-[4cqh] z-[2] flex justify-center gap-1 overflow-hidden px-3">${chipsHTML(p, i)}</div>
+    <div class="chips absolute inset-x-0 bottom-[4cqh] z-[2] flex items-center justify-center gap-1.5 overflow-hidden px-3">${cmdDiscs(p, i)}${chipsHTML(p, i)}</div>
     ${out ? `<button type="button" class="outtag absolute bottom-[4cqh] left-1/2 z-[3] -translate-x-1/2 whitespace-nowrap rounded-full border border-white/10 bg-zinc-900 px-4 py-2 text-[13px] font-medium text-zinc-200" data-act="open-rule" data-id="${out}">${t("out")} · <span class="font-mono text-zinc-400">${out}</span></button>` : ""}`;
 }
 function backHTML(p, i) {
@@ -1510,6 +1536,7 @@ function placeHub() {
   const n = game.players.length;
   if (n === 1) y = r.bottom - 52;
   else if (game.layout === "table" && n === 5 && !geo.land) y = r.top + r.height / 2.8;
+  else if (game.layout === "table" && n === 6 && F().cmd) { if (geo.land) x = r.left + r.width / 3; else y = r.top + r.height / 3; } // sull'incrocio dei pannelli: lascia liberi i bordi con i danni da comandante
   else if (game.layout === "upright") {
     const rows = geo.tpl.split('" "').length;
     if (rows > 1) y = r.top + r.height / rows; else y = r.bottom - 48;
@@ -1522,7 +1549,11 @@ function placeHub() {
     // lo stesso per il nome: se i comandi centrali lo coprono va verso un'estremità
     el.classList.remove("nmside", "nmstart", "nmbottom"); const row = el.querySelector(".front .nmrow");
     const hits = () => [...row.children].some(n => { const c = n.getBoundingClientRect(); return c.width && c.right > hr.left - pad && c.left < hr.right + pad && c.bottom > hr.top - pad && c.top < hr.bottom + pad; });
-    if (row && hits()) { el.classList.add("nmside"); if (hits()) { el.classList.remove("nmside"); el.classList.add("nmstart"); if (hits()) { el.classList.remove("nmstart"); el.classList.add("nmbottom"); } } } });
+    if (row && hits()) { el.classList.add("nmside"); if (hits()) { el.classList.remove("nmside"); el.classList.add("nmstart"); if (hits()) { el.classList.remove("nmstart"); el.classList.add("nmbottom"); } } }
+    // e per i danni da comandante: se il centro li copre li sposto verso un lato
+    el.classList.remove("chside", "chstart"); const ch = el.querySelector(".front .chips");
+    const chHits = () => [...ch.children].some(n => { const c = n.getBoundingClientRect(); return c.right > hr.left - pad && c.left < hr.right + pad && c.bottom > hr.top - pad && c.top < hr.bottom + pad; });
+    if (ch && chHits()) { el.classList.add("chside"); if (chHits()) { el.classList.replace("chside", "chstart"); if (chHits()) el.classList.remove("chstart"); } } });
   $("hubm").setAttribute("aria-label", t("actions"));
   $("hub-ask").setAttribute("aria-label", t("askJudge")); $("hub-ask").title = t("askJudge");
   const dn = $("hubdn"); dn.hidden = !game.day; if (game.day) dn.innerHTML = ic(game.day === "day" ? "sun" : "moon", "size-4");
@@ -1553,11 +1584,14 @@ function changeLife(i, d, opts) {
 }
 function logPush(e) { e.at = Date.now(); game.log.unshift(e); if (game.log.length > 400) game.log.length = 400; }
 /* tocco = ±1, tieni premuto = ±10 ripetuto, trascina in su/giù sul pannello = scorri i punti vita */
+const cmdHold = { t: 0, skip: false };
 function bindBoard() {
   const b = $("board");
   let hold = null;
   const stop = () => { if (!hold) return; clearTimeout(hold.t); clearInterval(hold.iv); hold.btn.classList.remove("press"); hold = null; };
   b.addEventListener("pointerdown", e => {
+    const cd = e.target.closest(".cdisc");
+    if (cd) { clearTimeout(cmdHold.t); cmdHold.skip = false; cmdHold.t = setTimeout(() => { cmdHold.skip = true; cmdApply(+cd.dataset.i, cd.dataset.o, +cd.dataset.k, -1); }, 480); return; }
     const btn = e.target.closest(".hit"); if (!btn) return;
     e.preventDefault(); stop();
     const i = +btn.dataset.i, d = +btn.dataset.d, rot = (geo && geo.rot[i]) || 0;
@@ -1579,7 +1613,9 @@ function bindBoard() {
     stop();
   });
   b.addEventListener("pointercancel", stop);
-  b.addEventListener("contextmenu", e => { if (e.target.closest(".hit,.cell,.opt")) e.preventDefault(); });
+  const cmdStop = () => clearTimeout(cmdHold.t);
+  ["pointerup", "pointercancel", "pointerleave"].forEach(ev => b.addEventListener(ev, cmdStop));
+  b.addEventListener("contextmenu", e => { if (e.target.closest(".hit,.cell,.opt,.cdisc")) e.preventDefault(); });
   b.addEventListener("click", e => { const btn = e.target.closest(".hit"); if (btn && e.detail === 0) changeLife(+btn.dataset.i, +btn.dataset.d); });
 }
 
@@ -2524,13 +2560,13 @@ const ACT = {
     if (!!outRule(p) !== wasOut) $("board").children[i].classList.toggle("out", !wasOut);
   },
   cmdstep: el => {
-    const i = +el.dataset.i, p = game.players[i], o = el.dataset.o, k = +el.dataset.k, d = +el.dataset.d;
-    const v = p.cmd[o] || [0, 0], nv = Math.max(0, v[k] + d); if (nv === v[k]) return;
-    const wasOut = !!outRule(p); v[k] = nv; p.cmd[o] = v;
-    if (settings.cmdLife) { p.life -= d; logPush({ pid: p.id, k: "life", d: -d, v: p.life }); }
-    logPush({ pid: p.id, k: "cmd", src: o, slot: k, d, v: nv, withLife: settings.cmdLife }); buzz(8); saveGame();
+    const i = +el.dataset.i, nv = cmdApply(i, el.dataset.o, +el.dataset.k, +el.dataset.d); if (nv == null) return;
     el.parentElement.querySelector(".val").textContent = nv; el.parentElement.classList.toggle("hot", nv >= 15);
-    if (!!outRule(p) !== wasOut) $("board").children[i].classList.toggle("out", !wasOut);
+  },
+  cmdtap: el => {
+    if (cmdHold.skip) { cmdHold.skip = false; return; } // il rilascio dopo la pressione lunga (−1) non conta come tocco
+    const i = +el.dataset.i, o = el.dataset.o, k = el.dataset.k, kb = document.activeElement === el;
+    if (cmdApply(i, o, +k, 1) != null && kb) { const n = document.querySelector(`.pl[data-i="${i}"] .cdisc[data-o="${o}"][data-k="${k}"]`); if (n) n.focus({ preventScroll: true }); }
   },
   "open-rule": el => openRule(el.dataset.id),
   select: el => { if (reader.id === el.dataset.id) return; reader.id = el.dataset.id; RENDER.reader({}); setHash(hashFor("reader"), false); },
