@@ -30,7 +30,7 @@ KB.push(
 ["commander", ["Punti vita iniziali in Commander", "Commander parte da 40?", "Vita iniziale Brawl"], "starting life 40 commander brawl",
   ["903.7", "103.4c"],
   "In Commander ogni giocatore parte con 40 punti vita. In Brawl si parte da 25 in due giocatori e 30 in multigiocatore."],
-["multigiocatore", ["Un giocatore lascia la partita: cosa succede alle sue carte?", "Concede in multigiocatore e le sue creature?", "Giocatore eliminato e le sue carte"], "leaves game objects owned leave",
+["multigiocatore", ["Un giocatore lascia la partita: cosa succede alle sue carte?", "Concede in multigiocatore e le sue creature?", "Giocatore eliminato e le sue carte", "Se un giocatore concede le sue carte restano in gioco?", "Chi si arrende in Commander: le sue creature spariscono?"], "leaves game objects owned leave",
   ["800.4a"],
   "Quando un giocatore lascia la partita, tutto ciò che possiede la lascia con lui; finiscono gli effetti che gli davano il controllo di cose altrui, e le sue magie e abilità in pila spariscono."],
 ["multigiocatore", ["Se elimino un giocatore che controlla la mia creatura rubata?", "Creatura rubata e giocatore eliminato", "Torna la mia creatura se l'avversario perde?"], "leaves game control effects end",
