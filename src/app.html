@@ -1456,7 +1456,7 @@ Object.assign(STR.it, {
   nat20: "Venti naturale!", nat1: "Uno naturale…", resultIs: "Risultato: {v}", heads: "Testa", tails: "Croce", turnShort: "Turno {n}",
   fmtType: "Formato", fmtStdTx: "Sfida classica uno contro uno.", fmtCmdTx: "Un comandante leggendario, 100 carte, ognuno contro tutti.", fmtBrawlTx: "Commander con 60 carte e un mazzo Standard.",
   f2hgTx: "Due squadre da due: vita e turno in comune.", fCustomTx: "Scegli tu i punti vita iniziali.", startLifeShort: "vita",
-  kbCase: "Caso già risolto dal Judge", rulesAbout: "Regole che ne parlano", kbNear: "Rispondo alla situazione più vicina che conosco", kbFromRules: "Dal regolamento ufficiale", kbRule: "Ecco cosa dice la regola più pertinente:", kbOr: "Oppure intendevi", kbNoneTx: "Scrivi la situazione con qualche parola in più (le carte coinvolte, cosa vuoi fare) e ti rispondo con il caso e le regole giuste.", kbSimilar: "Domande simili", kbBrowse: "Casi risolti dal Judge", kbCount: "{n} situazioni risolte a mano, più tutte le parole chiave, il glossario e le sezioni del regolamento",
+  kbCase: "Caso già risolto dal Judge", rulesAbout: "Regole che ne parlano", kbNear: "Rispondo alla situazione più vicina che conosco", kbFromRules: "Dal regolamento ufficiale", kbRule: "Ecco cosa dice la regola più pertinente:", kbOr: "Oppure intendevi", kbNoneTx: "Scrivi la situazione con qualche parola in più (le carte coinvolte, cosa vuoi fare) e ti rispondo con il caso e le regole giuste.", kbSimilar: "Domande simili", kbBrowse: "Sfoglia per argomento", kbCount: "Non sai cosa chiedere? Scegli un argomento e tocca una domanda per leggere la risposta.", kbTap: "Tocca una domanda per vedere la risposta.",
   seatTableSub: "Ogni carta guarda chi le siede davanti", seatUpSub: "Tutte le carte dritte verso di te", playersShort: "{n} giocatori",
 });
 Object.assign(STR.en, {
@@ -1994,16 +1994,29 @@ function kbHTML(x, near) {
     <p class="m-0 text-[15px] leading-relaxed text-zinc-100">${richText(x.a)}</p>
     ${x.ids.length ? `<div class="mt-3 flex flex-wrap gap-1.5">${x.ids.map(chipRule).join("")}</div>` : ""}</section>`;
 }
-function renderKbCat(cat) {
-  const X = kbIndex(), list = X.items.filter(x => x.cat === cat);
+/* argomenti per sfogliare le domande già risolte: gruppi comprensibili al posto delle categorie interne */
+const KB_GROUPS = [
+  ["Basi del gioco", "Mazzo, turno, mana, terre, mulligan, come si vince", ["basi", "mazzo", "turno", "mana", "terre", "mulligan", "partita", "fine partita", "informazioni", "testo delle carte"]],
+  ["Quando puoi agire", "Pila, priorità, rispondere, lanciare, costi", ["priorità", "pila", "lancio", "costi"]],
+  ["Combattimento", "Attaccare, bloccare, danno, travolgere e simili", ["combattimento"]],
+  ["Parole chiave", "Volare, tocco letale, lampo, cascata, pedine…", ["parole chiave", "azioni chiave", "parole d'abilità", "pedine"]],
+  ["Commander e multigiocatore", "Comandante, tassa, danno da comandante, più avversari", ["commander", "multigiocatore"]],
+  ["Carte famose", "Sol Ring, Rhystic Study, Teferi, combo e interazioni", ["carte", "interazioni"]],
+  ["Regole avanzate", "Abilità innescate, livelli, copie, sostituzioni, zone", ["innescate", "sostituzione", "prevenzione", "livelli", "copie", "stato", "zone", "segnalini", "carte speciali", "planeswalker"]],
+  ["Gergo da tavolo", "ETB, tutor, ramp, wrath, blink, fizzare…", ["gergo"]],
+];
+function renderKbCat(g) {
+  const G = KB_GROUPS[+g]; if (!G) return renderAskHome();
+  const X = kbIndex();
   $("askbody").innerHTML = `<button type="button" class="mb-3 inline-flex h-10 items-center gap-1 rounded-full pl-2 pr-3 text-[14px] text-zinc-300 hover:bg-white/5" data-act="kb-home">${ic("back", "size-4")}${esc(t("back"))}</button>
-    ${askLabel(cat)}<div class="flex flex-col gap-1.5">${list.map(kbBtn).join("")}</div>`;
+    <h3 class="m-0 mb-1 text-[17px] font-semibold text-zinc-50">${esc(G[0])}</h3><p class="m-0 mb-3 text-[13px] text-zinc-400">${esc(t("kbTap"))}</p>
+    <div class="flex flex-col gap-1.5">${X.items.filter(x => x.from === "kb" && G[2].includes(x.cat)).map(kbBtn).join("")}</div>`;
   $("askbody").scrollTop = 0;
 }
 function renderAskHome() {
   const recent = store.get("recent", []), ex = [t("askEx1"), t("askEx2")].concat(STR[settings.lang].ex.slice(0, 2));
   $("askbody").innerHTML = `${askLabel(recent.length ? t("recent") : t("askTry"))}<div class="flex flex-col gap-1.5">${(recent.length ? recent.slice(0, 5) : ex).map(e => `<button type="button" class="rounded-xl border border-white/5 bg-zinc-900/70 px-3 py-2.5 text-left text-[14px] leading-snug text-zinc-300 transition hover:bg-zinc-900" data-act="ask-ex" data-q="${esc(e)}">${esc(e)}</button>`).join("")}</div>
-    ${kbOn() ? `<section class="mt-5">${askLabel(t("kbBrowse"))}<p class="m-0 mb-2 text-[12px] text-zinc-400">${esc(t("kbCount", { n: KB.length }))}</p><div class="flex flex-wrap gap-1.5">${[...new Set(KB.map(e => e[0]))].map(c => `<button type="button" class="h-9 rounded-full border border-white/10 px-3 text-[13px] text-zinc-200 hover:bg-white/5" data-act="kb-cat" data-c="${esc(c)}">${esc(c[0].toUpperCase() + c.slice(1))}</button>`).join("")}</div></section>` : ""}
+    ${kbOn() ? `<section class="mt-6">${askLabel(t("kbBrowse"))}<p class="m-0 mb-2 text-[13px] leading-snug text-zinc-400">${esc(t("kbCount"))}</p><div class="-mx-2 flex flex-col">${KB_GROUPS.map((G, k) => `<button type="button" class="flex min-h-[56px] items-center gap-3 rounded-xl px-2 py-2.5 text-left transition hover:bg-white/5" data-act="kb-cat" data-c="${k}"><span class="min-w-0 flex-1"><span class="block text-[15px] font-medium text-zinc-100">${esc(G[0])}</span><span class="block text-[13px] leading-snug text-zinc-400">${esc(G[1])}</span></span><span class="shrink-0 text-[13px] tabular-nums text-zinc-400">${KB.filter(e => G[2].includes(e[0])).length}</span>${ic("next", "size-4 shrink-0 text-zinc-500")}</button>`).join("")}</div></section>` : ""}
     <p class="mt-4 text-[12px] leading-relaxed text-zinc-400">${esc(t("askHelp"))}</p>`;
 }
 /* interazioni tra le carte citate, ricavate dal testo Oracle: frasi brevi con le regole che le decidono */
