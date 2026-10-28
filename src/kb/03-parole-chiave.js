@@ -135,7 +135,7 @@ KB.push(
 ["parole chiave", ["Equipaggiare: quando posso farlo?", "Equip in risposta?", "Equipaggiare una creatura avversaria"], "equip sorcery your creature",
   ["702.6a"],
   "Equipaggiare si attiva solo a velocità stregoneria e solo su una creatura che controlli. Se la creatura muore o smette di essere una creatura, l'Equipaggiamento resta sul campo, non attaccato."],
-["parole chiave", ["Il bersaglio dell'aura diventa illegale", "Aura con bersaglio illegale alla risoluzione", "Incanta creatura e la creatura sparisce", "L'aura in pila non ha più un bersaglio legale, cosa succede alla magia aura?", "Aura lanciata su una creatura che muore in risposta"], "aura spell target illegal graveyard",
+["parole chiave", ["Il bersaglio dell'aura diventa illegale", "Aura con bersaglio illegale alla risoluzione", "Incanta creatura e la creatura sparisce", "L'aura in pila non ha più un bersaglio legale, cosa succede alla magia aura?", "Aura lanciata su una creatura che muore in risposta", "Ho lanciato un'aura sulla creatura dell'avversario e lui la uccide in risposta: dove va l'aura?", "La creatura bersaglio della mia aura muore in risposta"], "aura spell target illegal graveyard",
   ["303.4a", "608.3b"],
   "Un'Aura è una magia con bersaglio: se alla risoluzione il bersaglio è illegale non si risolve e va nel cimitero. Se poi la creatura incantata lascia il campo, l'Aura va nel cimitero come azione generata dallo stato."],
 ["parole chiave", ["Un'aura messa sul campo senza lanciarla bersaglia?", "Aura che entra senza essere lanciata e anti-malocchio", "Mettere un'aura in gioco senza lanciarla", "Metto in gioco un'aura dal cimitero: devo bersagliare?", "Aura rianimata: a cosa si attacca?"], "aura put onto battlefield not cast doesn't target",

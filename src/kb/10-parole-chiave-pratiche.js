@@ -78,7 +78,7 @@ KB.push(
 ["pedine", ["Come funzionano le pedine mappa?", "Pedina Mappa cosa fa?", "Map token"], "map token explore sorcery",
   ["111.10s"],
   "Una pedina Mappa è un artefatto con «{1}, {T}, sacrifica questa pedina: la creatura bersaglio che controlli esplora. Attiva solo come una stregoneria»."],
-["pedine", ["Come funzionano le pedine tesoro?", "Tesoro dà mana di qualsiasi colore?", "Il tesoro si può usare subito?", "Posso usare un tesoro per pagare la tassa del comandante?", "Il mana del tesoro paga qualsiasi costo?"], "treasure token sacrifice add one mana any color",
+["pedine", ["Come funzionano le pedine tesoro?", "Tesoro dà mana di qualsiasi colore?", "Il tesoro si può usare subito?", "Posso usare un tesoro per pagare la tassa del comandante?", "Il mana del tesoro paga qualsiasi costo?", "Posso lanciare una magia se non ho abbastanza terre ma ho tesori?", "Pagare una magia con i tesori"], "treasure token sacrifice add one mana any color",
   ["111.10a"],
   "Una pedina Tesoro è un artefatto con «{T}, sacrifica questa pedina: aggiungi un mana di qualsiasi colore». Puoi usarla subito (non è una creatura) e come abilità di mana non usa la pila."],
 ["pedine", ["Come funzionano le pedine indizio?", "Pedina Indizio quanto costa usarla?", "Investigare cosa fa?"], "clue token 2 sacrifice draw",

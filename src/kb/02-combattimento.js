@@ -24,7 +24,7 @@ KB.push(
 ["combattimento", ["Bloccato da due creature come divido il danno?", "Chi decide l'ordine del danno tra più bloccanti?", "Attaccante bloccato da più creature"], "divided among blocking creatures",
   ["510.1c"],
   "Chi controlla l'attaccante divide il danno come preferisce tra i bloccanti: non esiste più l'ordine di assegnazione del danno e non serve assegnare danno letale al primo prima di passare al secondo."],
-["combattimento", ["Una creatura può bloccare più attaccanti?", "Bloccare due creature con una sola", "Un bloccante contro più attaccanti"], "block more than one creature",
+["combattimento", ["Una creatura può bloccare più attaccanti?", "Bloccare due creature con una sola", "Un bloccante contro più attaccanti", "Ho attaccato con 3 creature, lui ne blocca 2 con una sola creatura: è possibile?", "Una sola creatura blocca due attaccanti?"], "block more than one creature",
   ["509.1a"],
   "Normalmente una creatura blocca un solo attaccante. Può bloccarne di più solo se un effetto lo dice (es. «può bloccare un'ulteriore creatura»); allora divide il suo danno tra loro."],
 ["combattimento", ["Posso bloccare con più creature lo stesso attaccante?", "Più bloccanti su un attaccante", "Bloccare in due una creatura grande"], "multiple blockers one attacker",

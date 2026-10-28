@@ -1196,6 +1196,8 @@ const KB_SLANG = [
   ["hp|pv|vite|life", "punti vita"], ["lifegain|gain life", "guadagnare punti vita"],
   ["removal|rimozion[ei]", "rimozione distruggere esiliare"], ["trick", "istantaneo in combattimento"], ["burn", "danno"],
   ["dies|die|morire|morta|morto|morte|muoiono|muoio|muore", "muore cimitero"],
+  ["nn", "non"], ["cn", "con"], ["xke|xche|xk|perke", "perche"], ["x turno", "per turno"], ["cmq", "comunque"], ["tox", "tossico"], ["funzia|funge", "funziona"],
+  ["first player|primo giocatore", "chi gioca per primo"], ["(creatura|creature) nuov[ae]|nuov[ae] (creatura|creature)", "creatura appena entrata"], ["avv", "avversario"],
   ["ban|bann\\w*|bandit\\w*", "bandita lista ban"], ["proxy|proxare|stampat\\w*", "proxy"], ["edh", "commander comandante"],
   ["ira di dio", "wrath of god"], ["spade in vomeri", "swords to plowshares"], ["sentiero verso l'? ?esilio", "path to exile"], ["crescita gigante|giant growth", "giant growth +3/+3"],
   ["rituale oscuro", "dark ritual"], ["anello solare", "sol ring"], ["lab ?man", "laboratory maniac"], ["oracolo di thassa", "thassa's oracle"], ["anello dell'oblio|o-?ring", "oblivion ring"],
@@ -1336,7 +1338,7 @@ function kbSearch(q, n) {
     return { x, sc: x.w * (KB_PW * ph + (1 - KB_PW) * da / (qn * x.allN) * cov(da)) };
   }).sort((a, b) => b.sc - a.sc).slice(0, n || 5);
 }
-const KB_MIN = .3, KB_NEAR = .18, KB_LOW = .17;
+const KB_MIN = .2, KB_NEAR = .15, KB_LOW = .12;
 const kbOn = () => settings.lang === "it" && KB.length > 0;
 function search(q, excluded) {
   const it = interpret(q, excluded || new Set());
@@ -1463,11 +1465,11 @@ Object.assign(STR.it, {
   nat20: "Venti naturale!", nat1: "Uno naturale…", resultIs: "Risultato: {v}", heads: "Testa", tails: "Croce", turnShort: "Turno {n}",
   fmtType: "Formato", fmtStdTx: "Sfida classica uno contro uno.", fmtCmdTx: "Un comandante leggendario, 100 carte, ognuno contro tutti.", fmtBrawlTx: "Commander con 60 carte e un mazzo Standard.",
   f2hgTx: "Due squadre da due: vita e turno in comune.", fCustomTx: "Scegli tu i punti vita iniziali.", startLifeShort: "vita",
-  kbCase: "Caso già risolto dal Judge", rulesAbout: "Regole che ne parlano", kbNear: "Rispondo alla situazione più vicina che conosco", kbFromRules: "Dal regolamento ufficiale", kbRule: "Ecco cosa dice la regola più pertinente:", kbOr: "Oppure intendevi", kbUnk: "Non conosco «{w}»: controlla com'è scritta, oppure ecco la cosa più vicina che ho trovato.", kbNoneTx: "Scrivi la situazione con qualche parola in più (le carte coinvolte, cosa vuoi fare) e ti rispondo con il caso e le regole giuste.", kbSimilar: "Domande simili", kbBrowse: "Sfoglia per argomento", kbCount: "Non sai cosa chiedere? Scegli un argomento e tocca una domanda per leggere la risposta.", kbTap: "Tocca una domanda per vedere la risposta.",
+  kbCase: "Caso già risolto dal Judge", rulesAbout: "Regole che ne parlano", kbNear: "Rispondo alla situazione più vicina che conosco", kbFromRules: "Dal regolamento ufficiale", kbRule: "Ecco cosa dice la regola più pertinente:", kbOr: "Oppure intendevi", rulingsFit: "Chiarimenti ufficiali di Wizards su queste carte (in inglese)", kbUnk: "Non conosco «{w}»: controlla com'è scritta, oppure ecco la cosa più vicina che ho trovato.", kbNoneTx: "Scrivi la situazione con qualche parola in più (le carte coinvolte, cosa vuoi fare) e ti rispondo con il caso e le regole giuste.", kbSimilar: "Domande simili", kbBrowse: "Sfoglia per argomento", kbCount: "Non sai cosa chiedere? Scegli un argomento e tocca una domanda per leggere la risposta.", kbTap: "Tocca una domanda per vedere la risposta.",
   seatTableSub: "Ogni carta guarda chi le siede davanti", seatUpSub: "Tutte le carte dritte verso di te", playersShort: "{n} giocatori",
 });
 Object.assign(STR.en, {
-  askJudgeSub: "Closest solved case and deciding rules", rulesAbout: "Rules on the topic", kbNear: "Answering the closest situation I know", kbFromRules: "From the official rules", kbRule: "Here is what the most relevant rule says:", kbOr: "Or did you mean", kbUnk: "I don't know «{w}»: check the spelling; here is the closest thing I found.", kbNoneTx: "Describe the situation with a few more words (the cards involved, what you want to do) and I will answer with the right rules.",
+  askJudgeSub: "Closest solved case and deciding rules", rulesAbout: "Rules on the topic", kbNear: "Answering the closest situation I know", kbFromRules: "From the official rules", kbRule: "Here is what the most relevant rule says:", kbOr: "Or did you mean", rulingsFit: "Official Wizards rulings on these cards", kbUnk: "I don't know «{w}»: check the spelling; here is the closest thing I found.", kbNoneTx: "Describe the situation with a few more words (the cards involved, what you want to do) and I will answer with the right rules.",
   askJudge: "Ask the Judge", askQ: "Question", askC: "Card", askPh2: "E.g. What happens if I cast Wrath of God with Teferi out?", cardPh: "Card name",
   rulebookFull: "Full rulebook", rulebook: "Rulebook", emblemsShort: "Designations", askTry: "Try asking",
   askEx1: "What happens if I cast Wrath of God with Teferi, Time Raveler on the battlefield?", askEx2: "Can I respond to \"Lightning Bolt\" with \"Giant Growth\"?",
@@ -1921,6 +1923,40 @@ function sf(path) {
 }
 const NAME_STOP = new Set("cosa se quando come posso può puo il lo la le gli i un una uno che chi perché perche dove what if when how can does do the my mio mia io in con e ed o ma per ho ha si mi ti ci il nel nella sul sulla dopo prima".split(" "));
 /* nomi di carta nella domanda: tra virgolette o [[…]], altrimenti parole con l'iniziale maiuscola ("Wrath of God", "Teferi") */
+/* elenco di tutti i nomi di carte (Scryfall), scaricato una volta e conservato: così riconosco le carte
+   anche scritte in minuscolo ("teferi's protection come funziona") */
+const CAT = { names: null, idx: null, loading: false };
+function catLoad() {
+  if (CAT.idx || CAT.loading) return;
+  const saved = store.get("cardnames", null);
+  if (saved && saved.n && Date.now() - saved.at < 30 * 864e5) { catIndex(saved.n.split("\n")); return; }
+  if (!navigator.onLine) { if (saved && saved.n) catIndex(saved.n.split("\n")); return; }
+  CAT.loading = true;
+  sf("/catalog/card-names").then(r => { const n = (r.data || []).filter(x => x && x.length < 60); if (n.length > 1000) { try { store.set("cardnames", { at: Date.now(), n: n.join("\n") }); } catch (e) {} catIndex(n); } })
+    .catch(() => { if (saved && saved.n) catIndex(saved.n.split("\n")); }).finally(() => { CAT.loading = false; });
+}
+function catIndex(list) {
+  const stop = new Set(["island", "swamp", "mountain", "forest", "plains", "wastes"]);
+  for (const r of CR.rules) if (/^70[12]\.\d+$/.test(r.id)) stop.add(norm(r.t.trim()));
+  for (const g of CR.glossary) stop.add(norm(g.term));
+  const idx = new Map();
+  for (const full of list) for (const face of full.split(" // ")) {
+    const w = norm(face).replace(/[^a-z0-9' -]+/g, " ").split(/\s+/).filter(Boolean);
+    if (!w.length || stop.has(w.join(" ")) || (w.length === 1 && w[0].length < 6)) continue;
+    const k = w[0]; if (!idx.has(k)) idx.set(k, []); idx.get(k).push([w, full]);
+  }
+  CAT.idx = idx;
+}
+function catFind(q) {
+  if (!CAT.idx) return [];
+  const w = norm(q).replace(/[’]/g, "'").replace(/[^a-z0-9' -]+/g, " ").split(/\s+/).filter(Boolean), out = [];
+  for (let i = 0; i < w.length; i++) {
+    let best = null;
+    for (const [nw, full] of CAT.idx.get(w[i]) || []) if (nw.length <= w.length - i && nw.every((x, k) => x === w[i + k]) && (!best || nw.length > best[0].length)) best = [nw, full];
+    if (best) { out.push(best[1]); i += best[0].length - 1; }
+  }
+  return out;
+}
 function cardNames(q) {
   const out = [], add = s => { s = s.trim().replace(/[,.;:!?]+$/, ""); if (s.length >= 3 && !out.some(o => o.toLowerCase() === s.toLowerCase())) out.push(s); };
   q = q.replace(/\[\[([^\]]+)\]\]|"([^"]{2,60})"|«([^»]{2,60})»|“([^”]{2,60})”/g, (m, a, b, c, d) => { add(a || b || c || d); return " "; });
@@ -1934,6 +1970,7 @@ function cardNames(q) {
     if (w.length === 1 && m.index === 0 && (IT_WORDS[norm(s)] !== undefined || IT_STOP.has(norm(s)))) continue;
     if (s) add(s);
   }
+  for (const n of catFind(q)) add(n);
   return out.slice(0, 4);
 }
 const faceTxt = (c, k) => c[k] || (c.card_faces ? c.card_faces.map(f => f[k] || "").filter(Boolean).join("\n//\n") : "");
@@ -2084,6 +2121,20 @@ function analyze(list) {
   }
   return out;
 }
+/* tra i chiarimenti ufficiali (Wizards, via Scryfall) delle carte citate, quelli che parlano della domanda */
+function pickRulings(q, cards) {
+  const qs = new Set();
+  for (const c of interpret(kbNorm(q), new Set()).concepts) c.st.forEach(x => qs.add(x));
+  for (const w of tokens(q)) { const x = stemEn(w); if (w.length > 3 && IDX.vocab.has(x) && !EN_STOP.has(w)) qs.add(x); }
+  cards.forEach(c => stems(c.card.name).forEach(x => qs.delete(x)));
+  const idf = x => Math.log(1 + IDX.N / ((IDX.df.get(x) || 0) + 1)), out = [];
+  for (const c of cards) for (const r of c.rulings || []) {
+    const rs = new Set(stems(r.comment)); let sc = 0, n = 0;
+    for (const x of qs) if (rs.has(x)) { sc += idf(x); n++; }
+    if (n) out.push({ c, r, n, sc: sc / Math.sqrt(1 + rs.size / 30) });
+  }
+  return out.sort((a, b) => b.sc - a.sc).filter(x => x.sc >= 2.5).slice(0, 3);
+}
 function renderAskQ() {
   const st = ask.st; if (!st) return;
   const okCards = st.cards.filter(c => c.state === "ok");
@@ -2097,7 +2148,8 @@ function renderAskQ() {
   const kb = kbOn() && !inter.length ? kbSearch(st.q, 6) : [], pin = kbOn() && ask.kbPin != null && kbIndex().items[ask.kbPin];
   const kbTop = pin && pin.qs[0] === st.q ? pin : kb[0] && kb[0].sc >= KB_MIN ? kb[0].x : null;
   // non sicuro: rispondo comunque col caso più vicino, dicendo a quale domanda sto rispondendo
-  const kbNear = !kbTop && !inter.length && kb[0] && kb[0].sc >= KB_LOW ? kb[0].x : null;
+  const words = kbNorm(st.q).split(/[^a-z0-9]+/).filter(w => w.length > 2 && !IT_STOP.has(w) && !EN_STOP.has(w) && !/^(ciao|salve|grazie|stai|sto|bene|okay|hey|ehi|buongiorno|buonasera)$/.test(w)).length;
+  const kbNear = !kbTop && !inter.length && kb[0] && kb[0].sc >= (words < 2 ? KB_MIN : KB_LOW) ? kb[0].x : null;
   const kbShown = kbTop || kbNear;
   if (kbShown) { decide.unshift(...kbShown.ids.map(id => CR.byId[id]).filter(r => r && !decide.some(d => d.id === r.id))); decide.splice(6); }
   if (inter.length) {
@@ -2107,9 +2159,11 @@ function renderAskQ() {
     h0 = `<section class="rounded-2xl border border-white/10 bg-zinc-900 p-4">${askLabel(t("answer"))}<ul class="m-0 flex list-none flex-col gap-2.5 p-0">${inter.map(x => `<li class="flex gap-2.5 text-[15px] leading-relaxed text-zinc-100"><span class="mt-[0.6em] size-1.5 shrink-0 rounded-full bg-zinc-500"></span><span>${esc(x.txt)}${x.ids.length ? ` ${x.ids.map(id => `<button type="button" class="ml-0.5 rounded-full border border-white/10 px-2 py-0.5 align-[1px] font-mono text-[11px] text-zinc-300 hover:bg-white/5" data-act="open-rule" data-id="${id}">${id}</button>`).join("")}` : ""}</span></li>`).join("")}</ul></section>`;
   }
   else if (kbShown) h0 = kbHTML(kbShown, !kbTop, kbTop ? [] : kbUnknown(st.q));
-  else if (decide.length) h0 = `<section class="rounded-2xl border border-white/10 bg-zinc-900 p-4">${askLabel(t("answer"))}${(u => u.length ? `<p class="m-0 mb-2 text-[13px] text-amber-200/90">${esc(t("kbUnk", { w: u.slice(0, 3).join("», «") }))}</p>` : "")(kbOn() ? kbUnknown(st.q) : [])}<p class="m-0 mb-2 text-[13px] text-zinc-400">${esc(t("kbRule"))}</p><p class="m-0 text-[15px] leading-relaxed text-zinc-100">${richText(sentences(trRule(decide[0]).t, 420))}</p><div class="mt-3 flex flex-wrap gap-1.5">${chipRule(decide[0].id)}</div></section>`;
+  else if (decide.length && words > 0) h0 = `<section class="rounded-2xl border border-white/10 bg-zinc-900 p-4">${askLabel(t("answer"))}${(u => u.length ? `<p class="m-0 mb-2 text-[13px] text-amber-200/90">${esc(t("kbUnk", { w: u.slice(0, 3).join("», «") }))}</p>` : "")(kbOn() ? kbUnknown(st.q) : [])}<p class="m-0 mb-2 text-[13px] text-zinc-400">${esc(t("kbRule"))}</p><p class="m-0 text-[15px] leading-relaxed text-zinc-100">${richText(sentences(trRule(decide[0]).t, 420))}</p><div class="mt-3 flex flex-wrap gap-1.5">${chipRule(decide[0].id)}</div></section>`;
   else h0 = `<section class="rounded-2xl border border-white/10 bg-zinc-900 p-4">${askLabel(t("answer"))}<p class="m-0 text-[14px] leading-relaxed text-zinc-300">${esc(t("kbNoneTx"))}</p></section>`;
   let h = h0;
+  const rul = okCards.length ? pickRulings(st.q, okCards) : [];
+  if (rul.length) h += `<section class="mt-4 rounded-2xl border border-white/10 bg-zinc-900 p-4">${askLabel(t("rulingsFit"))}<div class="flex flex-col gap-3">${rul.map(x => `<div><p class="m-0 text-[12px] font-medium text-zinc-400">${esc(x.c.card.name)} · ${esc(x.r.published_at)}</p><p class="m-0 mt-0.5 text-[14px] leading-relaxed text-zinc-100" lang="en">${symText(x.r.comment)}</p></div>`).join("")}</div></section>`;
   const near = kb.filter(x => x.x !== kbShown && x.sc >= KB_NEAR * (kbTop ? 1 : .6)).slice(0, kbTop ? 4 : 5);
   if (near.length) h += `<section class="mt-4">${askLabel(t(kbTop ? "kbSimilar" : "kbOr"))}<div class="flex flex-col gap-1.5">${near.map(x => kbBtn(x.x)).join("")}</div></section>`;
   if (st.cards.length) {
@@ -2155,6 +2209,7 @@ function askCardList(q, seq) {
   }, 220);
 }
 RENDER.ask = () => {
+  catLoad();
   $("ask-title").textContent = t("askJudge");
   document.querySelectorAll('[data-act="ask-mode"]').forEach(b => { b.setAttribute("aria-pressed", b.dataset.v === ask.mode); b.textContent = t(b.dataset.v === "q" ? "askQ" : "askC"); });
   const f = $("askq"); f.placeholder = t(ask.mode === "q" ? "askPh2" : "cardPh"); $("askq-l").textContent = f.placeholder; if (f.value !== ask.q) f.value = ask.q;

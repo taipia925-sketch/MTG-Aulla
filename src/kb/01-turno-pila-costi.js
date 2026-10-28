@@ -43,7 +43,7 @@ KB.push(
 ["pila", ["Come si risolve la pila?", "La pila si risolve dall'ultima magia?", "Ordine di risoluzione della pila"], "stack last in first out resolves",
   ["405.2", "405.5", "608.1"],
   "La pila si risolve dall'alto: l'ultima magia o abilità aggiunta si risolve per prima. Dopo ogni risoluzione i giocatori ricevono di nuovo la priorità e possono aggiungere altre cose."],
-["pila", ["Posso rispondere a un'abilità innescata?", "Si può rispondere a un'abilità attivata?", "Le abilità vanno in pila?"], "abilities use the stack respond",
+["pila", ["Posso rispondere a un'abilità innescata?", "Si può rispondere a un'abilità attivata?", "Le abilità vanno in pila?", "L'avversario ha un'abilità che si innesca quando lancio una magia: posso rispondere?", "Rispondere a un'abilità innescata dell'avversario"], "abilities use the stack respond",
   ["405.1", "602.2a", "603.3"],
   "Sì: le abilità attivate e innescate vanno in pila come le magie, quindi si può rispondere. Fanno eccezione le abilità di mana e le azioni speciali, che non usano la pila."],
 ["pila", ["Se distruggo la creatura l'abilità che ha attivato si annulla?", "Uccidere la fonte ferma l'abilità in pila?", "L'abilità in pila esiste anche se la carta è morta?", "Uccido la creatura in risposta alla sua abilità attivata: l'abilità si risolve lo stesso?", "L'abilità resta in pila anche se la sua fonte muore?"], "ability independent of source",
