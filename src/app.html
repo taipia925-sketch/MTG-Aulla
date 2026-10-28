@@ -85,7 +85,7 @@ svg.mana { fill: currentColor; stroke: none; }
   padding: max(8px, env(safe-area-inset-top, 0px)) max(8px, env(safe-area-inset-right, 0px)) max(8px, env(safe-area-inset-bottom, 0px)) max(8px, env(safe-area-inset-left, 0px)); }
 #fx { position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 40; }
 .pl { position: relative; container-type: size; border-radius: clamp(18px, 6cqmin, 30px); overflow: hidden; isolation: isolate; background: #141417; color: #fafafa; font-family: var(--f-life);
-  border: 1px solid rgb(var(--tint) / .22); user-select: none; -webkit-user-select: none; touch-action: manipulation;
+  border: 1.5px solid rgb(var(--tint) / .45); user-select: none; -webkit-user-select: none; touch-action: manipulation;
   transition: border-color .35s var(--ease), opacity .35s, filter .4s, box-shadow .35s var(--ease); }
 .pl.up, .pl.dn { border-color: rgb(var(--tint) / .55); transition-duration: .06s; }
 .pl.out { opacity: .55; filter: grayscale(.7); }
@@ -93,7 +93,7 @@ svg.mana { fill: currentColor; stroke: none; }
 .pl.pick { border-color: rgb(var(--tint)); box-shadow: 0 0 0 1px rgb(var(--tint)), 0 0 40px rgb(var(--tint) / .22); }
 .board.dim .pl { opacity: .45; }
 .seat { position: absolute; inset: 0; container-type: size;
-  background: radial-gradient(75% 65% at 50% 50%, rgb(var(--tint) / .11), transparent 75%), linear-gradient(180deg, rgb(var(--tint) / .06), transparent 45%); }
+  background: radial-gradient(75% 65% at 50% 50%, rgb(var(--tint) / .17), transparent 75%), linear-gradient(180deg, rgb(var(--tint) / .09), transparent 45%); }
 .seat::after { content: ""; position: absolute; inset: clamp(5px, 1.8cqmin, 9px); border: 1px solid rgb(var(--tint) / .13); border-radius: calc(clamp(18px, 6cqmin, 30px) - clamp(5px, 1.8cqmin, 9px)); pointer-events: none; }
 .seat.r180 { transform: rotate(180deg); }
 .seat.r90, .seat.r270 { inset: auto; top: 50%; left: 50%; width: 100cqh; height: 100cqw; }
@@ -565,6 +565,19 @@ body { font-family: var(--f-ui); }
 .cdisc .cring { background: conic-gradient(rgb(var(--tint)) calc(var(--p) * 1turn), rgb(var(--tint) / .2) 0); }
 .cdisc { touch-action: manipulation; -webkit-touch-callout: none; user-select: none; }
 .pl:not(.out) .cdisc:has(.text-rose-200) .cring { box-shadow: 0 0 0 2px rgb(253 164 175 / .55); }
+/* modalità sole: massimo contrasto per giocare all'aperto */
+[data-sun="1"] body, [data-sun="1"] #board { background: #000 !important; }
+[data-sun="1"] .pl { background: #000; border: 3px solid rgb(var(--tint)); }
+[data-sun="1"] .seat { background: none; }
+[data-sun="1"] .seat::after, [data-sun="1"] .wm { display: none; }
+[data-sun="1"] .life { color: #fff; font-weight: 800; }
+[data-sun="1"] .nm { color: #fff !important; font-weight: 800; }
+[data-sun="1"] .hit .ctl { background: #fff; border-color: #fff; color: #000; }
+[data-sun="1"] .hit.press .ctl { background: rgb(var(--tint)); border-color: rgb(var(--tint)); color: #000; }
+[data-sun="1"] .opt { color: #fff; }
+[data-sun="1"] .cdisc > span:nth-child(2) { color: #fff; font-weight: 800; }
+[data-sun="1"] .cdisc .cring { background: conic-gradient(rgb(var(--tint)) calc(var(--p) * 1turn), rgb(255 255 255 / .35) 0); }
+[data-sun="1"] .delta { background: #fff; color: #000; }
 </style>
 
 <div id="game">
@@ -731,7 +744,7 @@ function toast(msg, act) {
 
 const settings = Object.assign({
   lang: (navigator.language || "it").toLowerCase().startsWith("it") ? "it" : (navigator.language || "").toLowerCase().startsWith("en") ? "en" : "it",
-  theme: "dark", showEn: false, cmdLife: true, wake: true, haptic: true, gameOver: true,
+  theme: "dark", showEn: false, cmdLife: true, sun: false, wake: true, haptic: true, gameOver: true,
 }, store.get("settings", {}));
 const saveSettings = () => store.set("settings", settings);
 function buzz(ms) { if (settings.haptic && navigator.vibrate) try { navigator.vibrate(ms || 8); } catch (e) {} }
@@ -1465,11 +1478,11 @@ Object.assign(STR.it, {
   nat20: "Venti naturale!", nat1: "Uno naturale…", resultIs: "Risultato: {v}", heads: "Testa", tails: "Croce", turnShort: "Turno {n}",
   fmtType: "Formato", fmtStdTx: "Sfida classica uno contro uno.", fmtCmdTx: "Un comandante leggendario, 100 carte, ognuno contro tutti.", fmtBrawlTx: "Commander con 60 carte e un mazzo Standard.",
   f2hgTx: "Due squadre da due: vita e turno in comune.", fCustomTx: "Scegli tu i punti vita iniziali.", startLifeShort: "vita",
-  kbCase: "Caso già risolto dal Judge", rulesAbout: "Regole che ne parlano", kbNear: "Rispondo alla situazione più vicina che conosco", kbFromRules: "Dal regolamento ufficiale", kbRule: "Ecco cosa dice la regola più pertinente:", kbOr: "Oppure intendevi", retry: "Riprova", llmSec: "Judge che ragiona", llmTitle: "Intelligenza artificiale sul telefono", llmTx: "Gratis, senza account: scegli un modello e scaricalo una volta (meglio col Wi-Fi); resta sul telefono e poi funziona anche offline. Su iPhone e telefoni con poca memoria scegli «Mini». Ragiona sulla tua domanda usando i casi verificati, le regole e i testi delle carte. È un modello piccolo: può sbagliare, per questo sotto la sua risposta resta sempre il caso verificato.", llmOffBtn: "Spento", llmMini: "Mini · {s}", llmLight: "Leggero · {s}", llmBest: "Preciso · {s}", llmCached: "Scaricato sul telefono: pronto da usare.", llmNotCached: "Non ancora scaricato ({s}). Premi il pulsante per scaricarlo adesso (meglio col Wi-Fi e con lo schermo acceso).", llmChecking: "Controllo cosa c'è sul telefono…", llmDownload: "Scarica adesso · {s}", llmStart: "Avvia adesso", llmDelete: "Elimina dal telefono", llmF32: "Questo telefono non supporta la mezza precisione: uso la variante compatibile, che chiede più memoria.", llmF32b: "Se non parte, scegli «Mini».", llmWhyMem: "memoria insufficiente: scegli un modello più piccolo, per esempio «Mini»", llmWhyF16: "la scheda grafica non supporta questo modello: scegli «Mini»", llmWhyNet: "download non riuscito: controlla la connessione e riprova", llmOff: "Spento: il Judge risponde con i casi verificati.", llmIdle: "Attivo.", llmLoading: "Preparo il Judge che ragiona: {p}% (la prima volta scarica il modello)", llmReady: "Pronto: il Judge ragiona su ogni domanda.", llmErr: "Non riesco ad avviarlo su questo dispositivo ({e}).", llmNo: "Questo browser non supporta WebGPU, che serve per far girare l'IA sul telefono. Funziona con Chrome su Android e con Safari su iPhone recenti (iOS 26).", llmHint: "Vuoi un Judge che ragiona sulla tua situazione? Attiva l'IA sul telefono nelle impostazioni: è gratis e funziona anche offline.", llmSays: "Il Judge ragiona", llmBadge: "IA sul telefono", llmThinking: "Il Judge sta ragionando…", llmNote: "Ragionamento dell'IA sul telefono basato sui casi e sulle regole qui sotto: può sbagliare, in caso di dubbio vale il caso verificato.", llmFail: "Il Judge che ragiona non è riuscito a rispondere.", llmVerified: "Caso verificato", rulingsFit: "Chiarimenti ufficiali di Wizards su queste carte (in inglese)", kbUnk: "Non conosco «{w}»: controlla com'è scritta, oppure ecco la cosa più vicina che ho trovato.", kbNoneTx: "Scrivi la situazione con qualche parola in più (le carte coinvolte, cosa vuoi fare) e ti rispondo con il caso e le regole giuste.", kbSimilar: "Domande simili", kbBrowse: "Sfoglia per argomento", kbCount: "Non sai cosa chiedere? Scegli un argomento e tocca una domanda per leggere la risposta.", kbTap: "Tocca una domanda per vedere la risposta.",
+  kbCase: "Caso già risolto dal Judge", rulesAbout: "Regole che ne parlano", kbNear: "Rispondo alla situazione più vicina che conosco", kbFromRules: "Dal regolamento ufficiale", kbRule: "Ecco cosa dice la regola più pertinente:", kbOr: "Oppure intendevi", retry: "Riprova", stSun: "Modalità sole", stSunHelp: "Massimo contrasto per giocare all'aperto: sfondo nero, bordi colorati pieni, numeri e pulsanti bianchi.", sunOn: "Modalità sole", sunOff: "Esci da modalità sole", sunOnT: "Modalità sole attiva", sunOffT: "Modalità sole disattivata", llmSec: "Judge che ragiona", llmTitle: "Intelligenza artificiale sul telefono", llmTx: "Gratis, senza account: scegli un modello e scaricalo una volta (meglio col Wi-Fi); resta sul telefono e poi funziona anche offline. Su iPhone e telefoni con poca memoria scegli «Mini». Ragiona sulla tua domanda usando i casi verificati, le regole e i testi delle carte. È un modello piccolo: può sbagliare, per questo sotto la sua risposta resta sempre il caso verificato.", llmOffBtn: "Spento", llmMini: "Mini · {s}", llmLight: "Leggero · {s}", llmBest: "Preciso · {s}", llmCached: "Scaricato sul telefono: pronto da usare.", llmNotCached: "Non ancora scaricato ({s}). Premi il pulsante per scaricarlo adesso (meglio col Wi-Fi e con lo schermo acceso).", llmChecking: "Controllo cosa c'è sul telefono…", llmDownload: "Scarica adesso · {s}", llmStart: "Avvia adesso", llmDelete: "Elimina dal telefono", llmF32: "Questo telefono non supporta la mezza precisione: uso la variante compatibile, che chiede più memoria.", llmF32b: "Se non parte, scegli «Mini».", llmWhyMem: "memoria insufficiente: scegli un modello più piccolo, per esempio «Mini»", llmWhyF16: "la scheda grafica non supporta questo modello: scegli «Mini»", llmWhyNet: "download non riuscito: controlla la connessione e riprova", llmOff: "Spento: il Judge risponde con i casi verificati.", llmIdle: "Attivo.", llmLoading: "Preparo il Judge che ragiona: {p}% (la prima volta scarica il modello)", llmReady: "Pronto: il Judge ragiona su ogni domanda.", llmErr: "Non riesco ad avviarlo su questo dispositivo ({e}).", llmNo: "Questo browser non supporta WebGPU, che serve per far girare l'IA sul telefono. Funziona con Chrome su Android e con Safari su iPhone recenti (iOS 26).", llmHint: "Vuoi un Judge che ragiona sulla tua situazione? Attiva l'IA sul telefono nelle impostazioni: è gratis e funziona anche offline.", llmSays: "Il Judge ragiona", llmBadge: "IA sul telefono", llmThinking: "Il Judge sta ragionando…", llmNote: "Ragionamento dell'IA sul telefono basato sui casi e sulle regole qui sotto: può sbagliare, in caso di dubbio vale il caso verificato.", llmFail: "Il Judge che ragiona non è riuscito a rispondere.", llmVerified: "Caso verificato", rulingsFit: "Chiarimenti ufficiali di Wizards su queste carte (in inglese)", kbUnk: "Non conosco «{w}»: controlla com'è scritta, oppure ecco la cosa più vicina che ho trovato.", kbNoneTx: "Scrivi la situazione con qualche parola in più (le carte coinvolte, cosa vuoi fare) e ti rispondo con il caso e le regole giuste.", kbSimilar: "Domande simili", kbBrowse: "Sfoglia per argomento", kbCount: "Non sai cosa chiedere? Scegli un argomento e tocca una domanda per leggere la risposta.", kbTap: "Tocca una domanda per vedere la risposta.",
   seatTableSub: "Ogni carta guarda chi le siede davanti", seatUpSub: "Tutte le carte dritte verso di te", playersShort: "{n} giocatori",
 });
 Object.assign(STR.en, {
-  askJudgeSub: "Closest solved case and deciding rules", rulesAbout: "Rules on the topic", kbNear: "Answering the closest situation I know", kbFromRules: "From the official rules", kbRule: "Here is what the most relevant rule says:", kbOr: "Or did you mean", retry: "Retry", llmSec: "Reasoning judge", llmTitle: "On-device AI", llmTx: "Free, no account: the model downloads once and then works offline. Only available in Italian for now.", llmOffBtn: "Off", llmMini: "Mini · {s}", llmLight: "Light · {s}", llmBest: "Accurate · {s}", llmCached: "Downloaded: ready.", llmNotCached: "Not downloaded yet ({s}).", llmChecking: "Checking…", llmDownload: "Download now · {s}", llmStart: "Start now", llmDelete: "Remove from device", llmF32: "No half-precision support: using the compatible variant.", llmF32b: "If it fails, choose Mini.", llmWhyMem: "not enough memory: choose a smaller model", llmWhyF16: "GPU doesn't support this model: choose Mini", llmWhyNet: "download failed: check your connection", llmOff: "Off.", llmIdle: "On: starts with the first question.", llmLoading: "Preparing the reasoning judge: {p}%", llmReady: "Ready.", llmErr: "Can't start it on this device ({e}).", llmNo: "This browser doesn't support WebGPU.", llmHint: "Turn on the on-device AI in Settings.", llmSays: "The Judge reasons", llmBadge: "On-device AI", llmThinking: "The Judge is thinking…", llmNote: "On-device AI answer based on the cases and rules below: it can be wrong.", llmFail: "The reasoning judge couldn't answer.", llmVerified: "Verified case", rulingsFit: "Official Wizards rulings on these cards", kbUnk: "I don't know «{w}»: check the spelling; here is the closest thing I found.", kbNoneTx: "Describe the situation with a few more words (the cards involved, what you want to do) and I will answer with the right rules.",
+  askJudgeSub: "Closest solved case and deciding rules", rulesAbout: "Rules on the topic", kbNear: "Answering the closest situation I know", kbFromRules: "From the official rules", kbRule: "Here is what the most relevant rule says:", kbOr: "Or did you mean", retry: "Retry", stSun: "Sunlight mode", stSunHelp: "Maximum contrast for playing outdoors.", sunOn: "Sunlight mode", sunOff: "Exit sunlight mode", sunOnT: "Sunlight mode on", sunOffT: "Sunlight mode off", llmSec: "Reasoning judge", llmTitle: "On-device AI", llmTx: "Free, no account: the model downloads once and then works offline. Only available in Italian for now.", llmOffBtn: "Off", llmMini: "Mini · {s}", llmLight: "Light · {s}", llmBest: "Accurate · {s}", llmCached: "Downloaded: ready.", llmNotCached: "Not downloaded yet ({s}).", llmChecking: "Checking…", llmDownload: "Download now · {s}", llmStart: "Start now", llmDelete: "Remove from device", llmF32: "No half-precision support: using the compatible variant.", llmF32b: "If it fails, choose Mini.", llmWhyMem: "not enough memory: choose a smaller model", llmWhyF16: "GPU doesn't support this model: choose Mini", llmWhyNet: "download failed: check your connection", llmOff: "Off.", llmIdle: "On: starts with the first question.", llmLoading: "Preparing the reasoning judge: {p}%", llmReady: "Ready.", llmErr: "Can't start it on this device ({e}).", llmNo: "This browser doesn't support WebGPU.", llmHint: "Turn on the on-device AI in Settings.", llmSays: "The Judge reasons", llmBadge: "On-device AI", llmThinking: "The Judge is thinking…", llmNote: "On-device AI answer based on the cases and rules below: it can be wrong.", llmFail: "The reasoning judge couldn't answer.", llmVerified: "Verified case", rulingsFit: "Official Wizards rulings on these cards", kbUnk: "I don't know «{w}»: check the spelling; here is the closest thing I found.", kbNoneTx: "Describe the situation with a few more words (the cards involved, what you want to do) and I will answer with the right rules.",
   askJudge: "Ask the Judge", askQ: "Question", askC: "Card", askPh2: "E.g. What happens if I cast Wrath of God with Teferi out?", cardPh: "Card name",
   rulebookFull: "Full rulebook", rulebook: "Rulebook", emblemsShort: "Designations", askTry: "Try asking",
   askEx1: "What happens if I cast Wrath of God with Teferi, Time Raveler on the battlefield?", askEx2: "Can I respond to \"Lightning Bolt\" with \"Giant Growth\"?",
@@ -1589,8 +1602,8 @@ function cmdApply(i, o, k, d) { // → nuovo valore, oppure null se non cambia n
 function frontHTML(p, i) {
   const out = outRule(p), nm = esc(pname(p, i));
   const tok = (game.monarch === p.id ? ic("crown", "size-4 text-amber-200/90") : "") + (game.initiative === p.id ? ic("flag", "size-4 text-amber-200/90") : "");
-  return `<button type="button" class="hit minus absolute inset-y-0 left-0 z-0 flex w-1/2 items-center justify-start border-0 bg-transparent p-0 pl-[4cqw] text-zinc-300" data-i="${i}" data-d="-1" aria-label="${esc(t("minus", { p: pname(p, i) }))}"><span class="ctl grid size-[clamp(38px,13cqh,52px)] place-items-center rounded-full border border-white/10 bg-white/[0.03] transition duration-150">${ic("minus", "size-1/2")}</span></button>
-    <button type="button" class="hit plus absolute inset-y-0 right-0 z-0 flex w-1/2 items-center justify-end border-0 bg-transparent p-0 pr-[4cqw] text-zinc-300" data-i="${i}" data-d="1" aria-label="${esc(t("plus", { p: pname(p, i) }))}"><span class="ctl grid size-[clamp(38px,13cqh,52px)] place-items-center rounded-full border border-white/10 bg-white/[0.03] transition duration-150">${ic("plus", "size-1/2")}</span></button>
+  return `<button type="button" class="hit minus absolute inset-y-0 left-0 z-0 flex w-1/2 items-center justify-start border-0 bg-transparent p-0 pl-[5cqw] text-white" data-i="${i}" data-d="-1" aria-label="${esc(t("minus", { p: pname(p, i) }))}"><span class="ctl grid size-[clamp(46px,17cqh,74px)] place-items-center rounded-full border-2 border-white/40 bg-white/[0.09] transition duration-150">${ic("minus", "size-[55%] [stroke-width:2.6]")}</span></button>
+    <button type="button" class="hit plus absolute inset-y-0 right-0 z-0 flex w-1/2 items-center justify-end border-0 bg-transparent p-0 pr-[5cqw] text-white" data-i="${i}" data-d="1" aria-label="${esc(t("plus", { p: pname(p, i) }))}"><span class="ctl grid size-[clamp(46px,17cqh,74px)] place-items-center rounded-full border-2 border-white/40 bg-white/[0.09] transition duration-150">${ic("plus", "size-[55%] [stroke-width:2.6]")}</span></button>
     <div class="wm pointer-events-none absolute inset-0 grid place-items-center text-[rgb(var(--tint))]" aria-hidden="true">${mana(p.color).replace('class="mana"', 'class="mana size-[min(80cqh,58cqw)] opacity-[0.1]"')}</div>
     <div class="nmrow pointer-events-none absolute inset-x-0 top-[5cqh] z-[1] flex items-center justify-center gap-2 px-16">
       <span class="grid size-[clamp(18px,6.5cqh,24px)] shrink-0 place-items-center rounded-full bg-[rgb(var(--tint))] text-zinc-950 shadow-[0_0_0_2px_rgba(0,0,0,0.5)]">${mana(p.color).replace('class="mana"', 'class="mana size-[66%]"')}</span><span class="nm truncate font-[Cinzel] text-[clamp(12px,4.8cqh,17px)] font-bold tracking-[0.08em] text-[rgb(var(--tint))]">${nm}</span>${tok}</div>
@@ -1876,6 +1889,7 @@ function ringItems() {
   it.push({ act: "open", l: "history", ic: "hist", c: "B", a: t("history") });
   it.push({ act: "open", l: "rules", ic: "book", c: "U", a: t("rulebook") });
   it.push({ act: "open", l: "setup", ic: "newg", c: "M", a: t("newGame") });
+  it.push({ act: "sun", ic: "sun", c: "W", a: t(settings.sun ? "sunOff" : "sunOn") });
   it.push({ act: "open", l: "settings", ic: "gear", c: "C", a: t("settings") });
   return it;
 }
@@ -2796,6 +2810,7 @@ RENDER.settings = () => {
     <div class="sec"><h3 class="lbl">${t("stTheme")}</h3><div class="seg" role="group">${["dark", "light", "system"].map(v => `<button type="button" data-act="theme" data-v="${v}" aria-pressed="${settings.theme === v}">${t({ dark: "tDark", light: "tLight", system: "tSys" }[v])}</button>`).join("")}</div></div>
     <div class="sec"><h3 class="lbl">${t("ltApp")}</h3><div class="card">
       ${sw("s-showen", settings.showEn, "stShowEn", "stShowEnHelp")}
+      ${sw("s-sun", settings.sun, "stSun", "stSunHelp")}
       ${sw("s-wake", settings.wake, "stWake", "stWakeHelp")}
       ${sw("s-haptic", settings.haptic, "stHaptic", "stHapticHelp")}
       <div class="row"><button type="button" class="btn sm" data-act="fullscreen">${icon("full", "s")}${t("fullscreen")}</button></div>
@@ -2809,7 +2824,7 @@ RENDER.settings = () => {
     <p class="note">${t("about")}</p>`;
 };
 
-function applyTheme() { document.documentElement.setAttribute("data-theme", settings.theme); }
+function applyTheme() { document.documentElement.setAttribute("data-theme", settings.theme); document.documentElement.setAttribute("data-sun", settings.sun ? "1" : "0"); }
 function applyLang() {
   document.documentElement.lang = settings.lang;
   document.querySelectorAll("[data-i18n]").forEach(el => el.textContent = t(el.dataset.i18n));
@@ -2865,6 +2880,7 @@ const ACT = {
   "ask-ex": el => { ask.q = el.dataset.q; $("askq").value = ask.q; remember(ask.q); askRun(true, true); },
   "ask-pick": el => { ask.pick[el.dataset.n] = el.dataset.v; if (ask.st) ask.st.cards.forEach(c => { if (c.n === el.dataset.n) c.state = "load"; }); askRun(true, true); },
   "kb-cat": el => renderKbCat(el.dataset.c),
+  sun: () => { settings.sun = !settings.sun; saveSettings(); applyTheme(); closeRing(); toast(t(settings.sun ? "sunOnT" : "sunOffT")); },
   "llm-retry": () => { if (ask.st) llmAsk(ask.st); },
   "llm-setup": () => { openLayer("settings", { replaceTop: true }); setTimeout(() => { const f = $("llm-sec"); if (f) f.scrollIntoView({ block: "center" }); }, 150); },
   "llm-set": async el => {
@@ -2966,8 +2982,8 @@ document.addEventListener("click", e => {
 });
 document.addEventListener("change", e => {
   const el = e.target;
-  const sw = { "s-showen": "showEn", "s-cmdlife": "cmdLife", "s-wake": "wake", "s-haptic": "haptic", "s-gameover": "gameOver" }[el.id];
-  if (sw) { settings[sw] = el.checked; saveSettings(); if (sw === "wake") updateWake(); if (sw === "gameOver") renderBoard(); return; }
+  const sw = { "s-showen": "showEn", "s-cmdlife": "cmdLife", "s-sun": "sun", "s-wake": "wake", "s-haptic": "haptic", "s-gameover": "gameOver" }[el.id];
+  if (sw) { settings[sw] = el.checked; saveSettings(); if (sw === "wake") updateWake(); if (sw === "gameOver") renderBoard(); if (sw === "sun") applyTheme(); return; }
   if (el.id === "s-playcmd") { relaunch({ cmd: el.checked, life: el.checked && game.start < 40 ? 40 : !el.checked && game.start === 40 ? 20 : game.start }); return; }
   if (el.dataset.partner != null) { const i = +el.dataset.partner; draft(i).partner = el.checked; if (game.players[i]) { game.players[i].partner = el.checked; saveGame(); renderBoard(); } return; }
   if (el.id === "slife") setup.life = parseInt(el.value, 10) || setup.life;
