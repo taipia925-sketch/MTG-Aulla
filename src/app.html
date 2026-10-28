@@ -88,7 +88,8 @@ svg.mana { fill: currentColor; stroke: none; }
   border: 1px solid rgb(var(--tint) / .22); user-select: none; -webkit-user-select: none; touch-action: manipulation;
   transition: border-color .35s var(--ease), opacity .35s, filter .4s, box-shadow .35s var(--ease); }
 .pl.up, .pl.dn { border-color: rgb(var(--tint) / .55); transition-duration: .06s; }
-.pl.out { opacity: .4; filter: grayscale(.7); }
+.pl.out { opacity: .55; filter: grayscale(.7); }
+.pl.out .chips { display: none; }
 .pl.pick { border-color: rgb(var(--tint)); box-shadow: 0 0 0 1px rgb(var(--tint)), 0 0 40px rgb(var(--tint) / .22); }
 .board.dim .pl { opacity: .45; }
 .seat { position: absolute; inset: 0; container-type: size;
@@ -110,11 +111,16 @@ svg.mana { fill: currentColor; stroke: none; }
 .delta.on { opacity: 1; } .delta.neg { color: #fda4af; } .delta.pos { color: #a7f3d0; }
 .pl.optl .opt { right: auto; left: 2.5cqw; }
 .pl.nmside .nmrow { justify-content: flex-end; padding-right: 64px; }
+.pl.nmstart .nmrow { justify-content: flex-start; padding-left: 64px; }
+.pl.nmbottom .nmrow { top: auto; bottom: 5cqh; }
+.pl.nmbottom .chips { bottom: auto; top: 4cqh; }
+.chips { flex-wrap: nowrap; justify-content: safe center; overflow-x: auto; scrollbar-width: none; }
+.chips::-webkit-scrollbar { display: none; }
 .front { transition: opacity .2s ease; }
 .pl.flipped .front { opacity: 0; }
 .back { opacity: 0; visibility: hidden; transform: scale(.985); transition: opacity .2s ease, transform .2s var(--ease), visibility 0s linear .2s; }
 .pl.flipped .back { opacity: 1; visibility: visible; transform: none; transition-delay: 0s; }
-.cgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(max(116px, 27cqw), 1fr)); grid-auto-rows: minmax(0, 1fr); }
+.cgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(max(116px, 27cqw), 1fr)); grid-auto-rows: minmax(52px, 1fr); }
 .cell.cmd.hot { border-color: rgb(253 164 175 / .6); }
 @container (max-width: 330px) { .btab span { display: none; } }
 @container (max-height: 260px) and (min-aspect-ratio: 3/2) {
@@ -542,6 +548,10 @@ body { font-family: var(--f-ui); }
 .coin3d .cf.b { background: #c9ccd1; box-shadow: inset 0 0 0 6px #9aa0a8, 0 10px 30px rgba(0,0,0,.6); color: #18181b; }
 :root[data-theme="light"] .mcard .mn, :root[data-theme="light"] .mcard .pt { color: var(--ink); }
 @media (prefers-color-scheme: light) { :root[data-theme="system"] .mcard .mn, :root[data-theme="system"] .mcard .pt { color: var(--ink); } }
+#askq:focus-visible { outline: none; }
+#askform:focus-within { border-color: rgb(255 255 255 / .45); }
+.tray { min-height: min(260px, 42vh); }
+@media (max-height: 500px) { .dicebody { gap: 8px; } .die { min-height: 52px; } }
 .mpick { display: flex; flex-wrap: wrap; gap: 8px; }
 .mpick button { width: 44px; height: 44px; border-radius: 50%; border: 0; display: grid; place-items: center; }
 .mpick button svg { width: 58%; height: 58%; }
@@ -1266,6 +1276,7 @@ Object.assign(STR.it, {
   aiBadKey: "La chiave API non è valida: controllala nelle impostazioni.", aiBusy: "Troppe richieste in questo momento: riprova tra poco.", aiDenied: "Claude non è stato autorizzato per questa pagina.", aiRefused: "Claude non ha risposto a questa domanda: prova a riformularla.", aiFail: "Il Judge non ha potuto rispondere (connessione?). Sotto trovi le regole collegate.", retry: "Riprova",
   aiHint: "Vuoi un Judge che capisce davvero la domanda? Attiva Claude nelle impostazioni: per ora rispondo solo con la ricerca nelle regole.",
   askJudgeSub: "Risposta ragionata sulla tua situazione", askJudgeSub0: "Risposta con la ricerca nelle regole (attiva l'IA nelle impostazioni)",
+  aiArtifact: "Senza chiave: apri MTG Aulla su claude.ai, dove il Judge usa gratis il tuo account Claude.",
   aiSec: "Judge con intelligenza artificiale", aiOnClaude: "Attivo: usa il tuo account Claude. La prima domanda ti chiede il permesso.", aiOnKey: "Attivo con la tua chiave API.",
   aiKeyHelp: "Per un Judge che capisce le domande serve Claude. Crea una chiave su console.anthropic.com (si paga a consumo, pochi centesimi a domanda) e incollala qui: resta solo su questo dispositivo e viene inviata soltanto ad Anthropic.",
   aiKeyLabel: "Chiave API Anthropic", aiSave: "Salva", aiDel: "Rimuovi la chiave", aiSaved: "Chiave salvata: il Judge ora usa Claude", aiRemoved: "Chiave rimossa",
@@ -1288,6 +1299,7 @@ Object.assign(STR.en, {
   aiBadKey: "The API key isn't valid: check it in Settings.", aiBusy: "Too many requests right now: try again shortly.", aiDenied: "Claude hasn't been allowed for this page.", aiRefused: "Claude didn't answer this question: try rephrasing it.", aiFail: "The Judge couldn't answer (connection?). Related rules are below.", retry: "Try again",
   aiHint: "Want a Judge that really understands the question? Turn on Claude in Settings: for now I only answer by searching the rules.",
   askJudgeSub: "A reasoned answer for your situation", askJudgeSub0: "Answer by searching the rules (turn on AI in Settings)",
+  aiArtifact: "No key: open MTG Aulla on claude.ai, where the Judge uses your Claude account at no extra cost.",
   aiSec: "AI judge", aiOnClaude: "On: uses your Claude account. The first question asks for permission.", aiOnKey: "On with your API key.",
   aiKeyHelp: "A judge that understands questions needs Claude. Create a key at console.anthropic.com (pay per use, a few cents per question) and paste it here: it stays on this device and is only sent to Anthropic.",
   aiKeyLabel: "Anthropic API key", aiSave: "Save", aiDel: "Remove key", aiSaved: "Key saved: the Judge now uses Claude", aiRemoved: "Key removed",
@@ -1397,8 +1409,8 @@ function frontHTML(p, i) {
     <button type="button" class="opt absolute right-[2.5cqw] top-[3cqh] z-[3] grid size-11 place-items-center rounded-full text-zinc-400 transition hover:bg-white/5 hover:text-zinc-100 active:scale-90" data-act="pview" data-m="counters" data-i="${i}" aria-label="${esc(t("counterBtn", { p: pname(p, i) }))}">${ic("sliders", "size-5")}</button>
     <div class="pointer-events-none absolute inset-0 z-[1] grid place-items-center"><div class="life${Math.abs(p.life) >= 100 ? " k3" : ""} font-semibold leading-none tracking-[-0.045em] text-zinc-50" id="life-${i}">${p.life}</div></div>
     <span class="delta pointer-events-none absolute left-1/2 z-[2] -translate-x-1/2 rounded-full bg-zinc-800/90 px-2.5 py-0.5 text-[clamp(12px,5.5cqh,20px)] font-medium tabular-nums opacity-0 transition-opacity duration-300" id="delta-${i}" aria-hidden="true"></span>
-    <div class="chips absolute inset-x-0 bottom-[5cqh] z-[2] flex justify-center gap-1.5 overflow-hidden px-16">${chipsHTML(p, i)}</div>
-    ${out ? `<button type="button" class="outtag absolute bottom-[16cqh] left-1/2 z-[3] -translate-x-1/2 whitespace-nowrap rounded-full border border-white/10 bg-zinc-900 px-4 py-2 text-[13px] font-medium text-zinc-200" data-act="open-rule" data-id="${out}">${t("out")} · <span class="font-mono text-zinc-400">${out}</span></button>` : ""}`;
+    <div class="chips absolute inset-x-0 bottom-[4cqh] z-[2] flex justify-center gap-1 overflow-hidden px-3">${chipsHTML(p, i)}</div>
+    ${out ? `<button type="button" class="outtag absolute bottom-[4cqh] left-1/2 z-[3] -translate-x-1/2 whitespace-nowrap rounded-full border border-white/10 bg-zinc-900 px-4 py-2 text-[13px] font-medium text-zinc-200" data-act="open-rule" data-id="${out}">${t("out")} · <span class="font-mono text-zinc-400">${out}</span></button>` : ""}`;
 }
 function backHTML(p, i) {
   const view = ui.view[i] && ui.view[i] !== "life" ? ui.view[i] : "counters", f = F();
@@ -1480,7 +1492,9 @@ function placeHub() {
   [...b.children].forEach(el => { el.classList.remove("optl"); const o = el.querySelector(".front .opt"); if (!o) return; const a = o.getBoundingClientRect();
     if (a.right > hr.left - pad && a.left < hr.right + pad && a.bottom > hr.top - pad && a.top < hr.bottom + pad) el.classList.add("optl");
     // lo stesso per il nome: se i comandi centrali lo coprono va verso un'estremità
-    el.classList.remove("nmside"); const nr = el.querySelector(".front .nmrow .nm"); if (nr) { const c = nr.getBoundingClientRect(); if (c.right > hr.left - pad && c.left < hr.right + pad && c.bottom > hr.top - pad && c.top < hr.bottom + pad) el.classList.add("nmside"); } });
+    el.classList.remove("nmside", "nmstart", "nmbottom"); const row = el.querySelector(".front .nmrow");
+    const hits = () => [...row.children].some(n => { const c = n.getBoundingClientRect(); return c.width && c.right > hr.left - pad && c.left < hr.right + pad && c.bottom > hr.top - pad && c.top < hr.bottom + pad; });
+    if (row && hits()) { el.classList.add("nmside"); if (hits()) { el.classList.remove("nmside"); el.classList.add("nmstart"); if (hits()) { el.classList.remove("nmstart"); el.classList.add("nmbottom"); } } } });
   $("hubm").setAttribute("aria-label", t("actions"));
   $("hub-ask").setAttribute("aria-label", t("askJudge")); $("hub-ask").title = t("askJudge");
   const dn = $("hubdn"); dn.hidden = !game.day; if (game.day) dn.innerHTML = ic(game.day === "day" ? "sun" : "moon", "size-4");
@@ -1739,7 +1753,13 @@ async function lookupCard(name, exact) {
       if (!s || !s.data || !s.data.length) return { state: "none" };
       c = s.data[0]; if (c.lang !== "en" && c.oracle_id) { const en = await sf(`/cards/named?exact=${encodeURIComponent(c.name)}`).catch(() => null); if (en) c = en; }
     }
-    const it = settings.lang === "it" ? sf(`/cards/search?q=${encodeURIComponent('!"' + c.name + '" lang:it')}&unique=prints`).then(r => r.data && r.data[0]).catch(() => null) : Promise.resolve(null);
+    // stampa italiana: solo se è davvero la stessa carta (stesso oracle_id) e il testo ha una lunghezza plausibile; preferisco le espansioni normali e la più recente
+    const it = settings.lang === "it" ? sf(`/cards/search?q=${encodeURIComponent('!"' + c.name + '" lang:it')}&unique=prints`).then(r => {
+      const en = faceTxt(c, "oracle_text").length, NORMAL = /^(core|expansion|masters|commander|draft_innovation|starter|duel_deck)$/;
+      const ok = (r.data || []).filter(x => x.oracle_id === c.oracle_id && x.lang === "it" && faceTxt(x, "printed_text") && (!en || Math.abs(faceTxt(x, "printed_text").length - en) < en * .8 + 30));
+      ok.sort((a, b) => (NORMAL.test(b.set_type) - NORMAL.test(a.set_type)) || String(b.released_at).localeCompare(String(a.released_at)));
+      return ok[0] || null;
+    }).catch(() => null) : Promise.resolve(null);
     const rl = c.rulings_uri ? sf(`/cards/${c.id}/rulings`).then(r => r.data || []).catch(() => []) : Promise.resolve([]);
     const [itc, rulings] = await Promise.all([it, rl]);
     return { state: "ok", card: c, it: itc, rulings };
@@ -1753,7 +1773,7 @@ function kwRules(card) {
   return (card.keywords || []).map(k => CR.rules.find(r => !r.sub && /^70[12]\./.test(r.id) && (CR.topicOf[r.id] || "").toLowerCase() === k.toLowerCase())).filter(Boolean);
 }
 function cardHTML(res, full) {
-  const c = res.card, it = res.it, img = (c.image_uris || (c.card_faces && c.card_faces[0].image_uris) || {}).small;
+  const c = res.card, it = res.it, img = ((it && (it.image_uris || (it.card_faces && it.card_faces[0].image_uris))) || c.image_uris || (c.card_faces && c.card_faces[0].image_uris) || {}).small;
   const name = it && it.printed_name ? it.printed_name : c.name, type = (it && faceTxt(it, "printed_type_line")) || faceTxt(c, "type_line");
   const text = (it && faceTxt(it, "printed_text")) || faceTxt(c, "oracle_text");
   const pt = c.power != null ? `${c.power}/${c.toughness}` : c.loyalty != null ? `◆ ${c.loyalty}` : "";
@@ -1964,6 +1984,7 @@ function renderAskQ() {
   if (st.ai) { h0 = aiHTML(st.ai); summary = ""; }
   let h = h0;
   if (!st.ai && !aiMode()) h += `<button type="button" class="mb-1 mt-3 flex w-full items-center gap-3 rounded-2xl border border-dashed border-white/10 p-3 text-left transition hover:bg-white/5" data-act="ai-setup"><span class="grid size-9 shrink-0 place-items-center rounded-full bg-zinc-800 text-zinc-100">${ic("scales", "size-5")}</span><span class="text-[13px] leading-snug text-zinc-300">${esc(t("aiHint"))}</span></button>`;
+  if (!st.ai && !aiMode() && !window.claude) h += `<a class="mb-1 flex w-full items-center gap-3 rounded-2xl border border-dashed border-white/10 p-3 text-left text-[13px] leading-snug text-zinc-300 no-underline transition hover:bg-white/5" href="https://claude.ai/artifact/JBARBSEpZMZWXebydqKnck" target="_blank" rel="noopener"><span class="grid size-9 shrink-0 place-items-center rounded-full bg-zinc-800 text-zinc-100">${ic("next", "size-5")}</span>${esc(t("aiArtifact"))}</a>`;
   if (summary) h += `<section class="rounded-2xl border border-white/10 bg-zinc-900 p-4">${askLabel(t("answer"))}<p class="m-0 text-[15px] leading-relaxed text-zinc-100">${summary}</p>
     ${(cases[0] ? cases[0].ids : decide.slice(0, 1).map(r => r.id)).length ? `<div class="mt-3 flex flex-wrap gap-1.5">${(cases[0] ? cases[0].ids : [decide[0].id]).map(id => `<button type="button" class="rounded-full border border-white/10 px-3 py-1 font-mono text-[12px] text-zinc-300 hover:bg-white/5" data-act="open-rule" data-id="${id}">${id}</button>`).join("")}</div>` : ""}</section>`;
   if (st.cards.length) {
