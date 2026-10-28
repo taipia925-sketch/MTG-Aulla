@@ -1196,6 +1196,7 @@ const KB_SLANG = [
   ["hp|pv|vite|life", "punti vita"], ["lifegain|gain life", "guadagnare punti vita"],
   ["removal|rimozion[ei]", "rimozione distruggere esiliare"], ["trick", "istantaneo in combattimento"], ["burn", "danno"],
   ["dies|die|morire|morta|morto|morte|muoiono|muoio|muore", "muore cimitero"],
+  ["ban|bann\\w*|bandit\\w*", "bandita lista ban"], ["proxy|proxare|stampat\\w*", "proxy"], ["edh", "commander comandante"],
   ["ira di dio", "wrath of god"], ["spade in vomeri", "swords to plowshares"], ["sentiero verso l'? ?esilio", "path to exile"], ["crescita gigante|giant growth", "giant growth +3/+3"],
   ["rituale oscuro", "dark ritual"], ["anello solare", "sol ring"], ["lab ?man", "laboratory maniac"], ["oracolo di thassa", "thassa's oracle"], ["anello dell'oblio|o-?ring", "oblivion ring"],
   ["artista del sangue", "blood artist"], ["luna di sangue", "blood moon"], ["tutore demoniaco", "demonic tutor"], ["tempesta di cervelli|brainstorm", "brainstorm"],
@@ -1313,6 +1314,12 @@ function lev(a, b, max) {
     if (lo > max) return max + 1; prev = cur;
   }
   return prev[b.length];
+}
+/* parole della domanda che non compaiono né nei casi né nel regolamento (es. «bracket» prima che esistesse il caso) */
+function kbUnknown(q) {
+  const X = kbIndex();
+  return [...new Set(kbNorm(q).split(/[^a-z0-9']+/).map(w => w.replace(/^[a-z]+'/, "")).filter(w => w.length >= 4 && !IT_STOP.has(w) && !EN_STOP.has(w)))]
+    .filter(w => !X.df.has("i:" + stemIt(w)) && !IDX.vocab.has(stemEn(w)) && !kbTypo(X, stemIt(w)) && !IDX.dfIt.has(stemIt(w)));
 }
 function kbSearch(q, n) {
   if (!KB.length || !q.trim()) return [];
@@ -1456,11 +1463,11 @@ Object.assign(STR.it, {
   nat20: "Venti naturale!", nat1: "Uno naturale…", resultIs: "Risultato: {v}", heads: "Testa", tails: "Croce", turnShort: "Turno {n}",
   fmtType: "Formato", fmtStdTx: "Sfida classica uno contro uno.", fmtCmdTx: "Un comandante leggendario, 100 carte, ognuno contro tutti.", fmtBrawlTx: "Commander con 60 carte e un mazzo Standard.",
   f2hgTx: "Due squadre da due: vita e turno in comune.", fCustomTx: "Scegli tu i punti vita iniziali.", startLifeShort: "vita",
-  kbCase: "Caso già risolto dal Judge", rulesAbout: "Regole che ne parlano", kbNear: "Rispondo alla situazione più vicina che conosco", kbFromRules: "Dal regolamento ufficiale", kbRule: "Ecco cosa dice la regola più pertinente:", kbOr: "Oppure intendevi", kbNoneTx: "Scrivi la situazione con qualche parola in più (le carte coinvolte, cosa vuoi fare) e ti rispondo con il caso e le regole giuste.", kbSimilar: "Domande simili", kbBrowse: "Sfoglia per argomento", kbCount: "Non sai cosa chiedere? Scegli un argomento e tocca una domanda per leggere la risposta.", kbTap: "Tocca una domanda per vedere la risposta.",
+  kbCase: "Caso già risolto dal Judge", rulesAbout: "Regole che ne parlano", kbNear: "Rispondo alla situazione più vicina che conosco", kbFromRules: "Dal regolamento ufficiale", kbRule: "Ecco cosa dice la regola più pertinente:", kbOr: "Oppure intendevi", kbUnk: "Non conosco «{w}»: controlla com'è scritta, oppure ecco la cosa più vicina che ho trovato.", kbNoneTx: "Scrivi la situazione con qualche parola in più (le carte coinvolte, cosa vuoi fare) e ti rispondo con il caso e le regole giuste.", kbSimilar: "Domande simili", kbBrowse: "Sfoglia per argomento", kbCount: "Non sai cosa chiedere? Scegli un argomento e tocca una domanda per leggere la risposta.", kbTap: "Tocca una domanda per vedere la risposta.",
   seatTableSub: "Ogni carta guarda chi le siede davanti", seatUpSub: "Tutte le carte dritte verso di te", playersShort: "{n} giocatori",
 });
 Object.assign(STR.en, {
-  askJudgeSub: "Closest solved case and deciding rules", rulesAbout: "Rules on the topic", kbNear: "Answering the closest situation I know", kbFromRules: "From the official rules", kbRule: "Here is what the most relevant rule says:", kbOr: "Or did you mean", kbNoneTx: "Describe the situation with a few more words (the cards involved, what you want to do) and I will answer with the right rules.",
+  askJudgeSub: "Closest solved case and deciding rules", rulesAbout: "Rules on the topic", kbNear: "Answering the closest situation I know", kbFromRules: "From the official rules", kbRule: "Here is what the most relevant rule says:", kbOr: "Or did you mean", kbUnk: "I don't know «{w}»: check the spelling; here is the closest thing I found.", kbNoneTx: "Describe the situation with a few more words (the cards involved, what you want to do) and I will answer with the right rules.",
   askJudge: "Ask the Judge", askQ: "Question", askC: "Card", askPh2: "E.g. What happens if I cast Wrath of God with Teferi out?", cardPh: "Card name",
   rulebookFull: "Full rulebook", rulebook: "Rulebook", emblemsShort: "Designations", askTry: "Try asking",
   askEx1: "What happens if I cast Wrath of God with Teferi, Time Raveler on the battlefield?", askEx2: "Can I respond to \"Lightning Bolt\" with \"Giant Growth\"?",
@@ -1988,8 +1995,9 @@ function ruleRows(rules) {
 const askLabel = s => `<p class="m-0 mb-2 text-[11px] font-medium uppercase tracking-[0.14em] text-zinc-400">${esc(s)}</p>`;
 const chipRule = id => `<button type="button" class="rounded-full border border-white/10 px-3 py-1 font-mono text-[12px] text-zinc-300 hover:bg-white/5" data-act="open-rule" data-id="${id}">${id}</button>`;
 const kbBtn = x => `<button type="button" class="rounded-xl border border-white/5 bg-zinc-900/70 px-3 py-2.5 text-left text-[14px] leading-snug text-zinc-300 transition hover:bg-zinc-900" data-act="kb-open" data-i="${x.i}">${esc(x.qs[0])}</button>`;
-function kbHTML(x, near) {
+function kbHTML(x, near, unk) {
   return `<section class="rounded-2xl border border-white/10 bg-zinc-900 p-4">${askLabel(t("answer"))}
+    ${unk && unk.length ? `<p class="m-0 mb-2 text-[13px] text-amber-200/90">${esc(t("kbUnk", { w: unk.slice(0, 3).join("», «") }))}</p>` : ""}
     <p class="m-0 mb-2 text-[13px] text-zinc-400">${esc(t(near ? "kbNear" : x.from === "kb" ? "kbCase" : "kbFromRules"))}: <span class="text-zinc-200">«${esc(x.qs[0])}»</span></p>
     <p class="m-0 text-[15px] leading-relaxed text-zinc-100">${richText(x.a)}</p>
     ${x.ids.length ? `<div class="mt-3 flex flex-wrap gap-1.5">${x.ids.map(chipRule).join("")}</div>` : ""}</section>`;
@@ -2098,8 +2106,8 @@ function renderAskQ() {
     decide.splice(6);
     h0 = `<section class="rounded-2xl border border-white/10 bg-zinc-900 p-4">${askLabel(t("answer"))}<ul class="m-0 flex list-none flex-col gap-2.5 p-0">${inter.map(x => `<li class="flex gap-2.5 text-[15px] leading-relaxed text-zinc-100"><span class="mt-[0.6em] size-1.5 shrink-0 rounded-full bg-zinc-500"></span><span>${esc(x.txt)}${x.ids.length ? ` ${x.ids.map(id => `<button type="button" class="ml-0.5 rounded-full border border-white/10 px-2 py-0.5 align-[1px] font-mono text-[11px] text-zinc-300 hover:bg-white/5" data-act="open-rule" data-id="${id}">${id}</button>`).join("")}` : ""}</span></li>`).join("")}</ul></section>`;
   }
-  else if (kbShown) h0 = kbHTML(kbShown, !kbTop);
-  else if (decide.length) h0 = `<section class="rounded-2xl border border-white/10 bg-zinc-900 p-4">${askLabel(t("answer"))}<p class="m-0 mb-2 text-[13px] text-zinc-400">${esc(t("kbRule"))}</p><p class="m-0 text-[15px] leading-relaxed text-zinc-100">${richText(sentences(trRule(decide[0]).t, 420))}</p><div class="mt-3 flex flex-wrap gap-1.5">${chipRule(decide[0].id)}</div></section>`;
+  else if (kbShown) h0 = kbHTML(kbShown, !kbTop, kbTop ? [] : kbUnknown(st.q));
+  else if (decide.length) h0 = `<section class="rounded-2xl border border-white/10 bg-zinc-900 p-4">${askLabel(t("answer"))}${(u => u.length ? `<p class="m-0 mb-2 text-[13px] text-amber-200/90">${esc(t("kbUnk", { w: u.slice(0, 3).join("», «") }))}</p>` : "")(kbOn() ? kbUnknown(st.q) : [])}<p class="m-0 mb-2 text-[13px] text-zinc-400">${esc(t("kbRule"))}</p><p class="m-0 text-[15px] leading-relaxed text-zinc-100">${richText(sentences(trRule(decide[0]).t, 420))}</p><div class="mt-3 flex flex-wrap gap-1.5">${chipRule(decide[0].id)}</div></section>`;
   else h0 = `<section class="rounded-2xl border border-white/10 bg-zinc-900 p-4">${askLabel(t("answer"))}<p class="m-0 text-[14px] leading-relaxed text-zinc-300">${esc(t("kbNoneTx"))}</p></section>`;
   let h = h0;
   const near = kb.filter(x => x.x !== kbShown && x.sc >= KB_NEAR * (kbTop ? 1 : .6)).slice(0, kbTop ? 4 : 5);
