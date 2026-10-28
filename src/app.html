@@ -1125,8 +1125,9 @@ function interpret(q, excluded) {
     const st = stems(en); if (!st.length) return;
     concepts.push({ key, en, labels: [label], w, st, phrase: " " + tokens(en).join(" ") + " " });
   };
-  for (const [re, en, w] of IT_PHRASES) {
-    const rx = new RegExp("(^|[^a-z0-9])(" + re + ")(?=[^a-z0-9]|$)", "g");
+  if (!interpret.rx) interpret.rx = IT_PHRASES.map(([re, en, w]) => [new RegExp("(^|[^a-z0-9])(" + re + ")(?=[^a-z0-9]|$)", "g"), en, w]);
+  for (const [rx, en, w] of interpret.rx) {
+    rx.lastIndex = 0;
     s = s.replace(rx, (m0, pre, hit) => { add(hit.trim(), en, w); itWords.push(...itStems(hit)); return pre + " ".repeat(hit.length); });
   }
   const words = s.split(/[^a-z0-9+\/'-]+/).filter(Boolean);
@@ -1136,7 +1137,7 @@ function interpret(q, excluded) {
     const ph = keyOf(words.slice(i, i + n).join(" "));
     if (ph.includes(" ") && IDX.titles.has(ph)) { const en = words.slice(i, i + n).join(" "); add(en, en, 2); for (let k = i; k < i + n; k++) used[k] = true; }
   }
-  const itKeys = Object.keys(IT_WORDS).sort((a, b) => b.length - a.length);
+  const itKeys = interpret.keys || (interpret.keys = Object.keys(IT_WORDS).sort((a, b) => b.length - a.length));
   const wTopic = en => IDX.topics.has(keyOf(en)) ? 1.6 : 1;
   words.forEach((w0, i) => {
     if (used[i]) return;
@@ -1168,43 +1169,167 @@ function matchCases(q) {
 /* ---------- base di conoscenza del Judge: domande già risolte (src/kb), cercate per somiglianza ---------- */
 const KB = [];
 /*@@KB@@*/
-let KBX = null, KB_AW = .8, KB_PW = .5;
+let KBX = null, KB_AW = .8, KB_PW = .5, KB_CV = 1;
+/* gergo da tavolo e inglese → parole del regolamento italiano (vale per le domande e per i casi) */
+const KB_SLANG = [
+  ["etb|e\\.t\\.b|enter the battlefield|entra in gioco|entrano in gioco|entrare in gioco", "entra nel campo di battaglia"],
+  ["ltb|leaves the battlefield", "lascia il campo di battaglia"],
+  ["pw|pws", "planeswalker"],
+  ["cmc|mv|mana value|costo (di mana )?convertito|costo convertito di mana", "valore di mana"],
+  ["(\\+1/\\+1|-1/-1|veleno|poison|loyalty|fedelta) counters?", "$1 segnalino"], ["gratis|gratuitamente|free", "senza pagare il costo di mana"],
+  ["counter(are|ata|ato|ate|ati|o|a|i|ano|arla|arlo|arle|arli|ano|abile)|counterspell|controspell|contromagi[ae]", "neutralizzare magia"],
+  ["fizz\\w*|sfizz\\w*", "bersaglio illegale non si risolve"],
+  ["blink\\w*|flicker\\w*", "esiliare e rimettere sul campo di battaglia"],
+  ["bounc\\w*", "rimettere in mano"],
+  ["tutor\\w*", "passare in rassegna cercare nel grimorio"],
+  ["ramp\\w*", "mana terre aggiuntive"],
+  ["wrath|board ?wipe|sweeper|spazzat\\w*|sweep\\w*", "distruggi tutte le creature"],
+  ["mill|millare|millo|millato|millata|millati", "macinare"],
+  ["scry\\w*", "profetizzare"], ["surveil\\w*", "sorvegliare"], ["loot\\w*", "pescare e scartare"],
+  ["gy|graveyard|yard", "cimitero"], ["library", "grimorio"], ["deck|mazzo", "mazzo grimorio"],
+  ["stack", "pila"], ["upkeep", "mantenimento"], ["draw step", "sottofase di acquisizione"], ["end step|end of turn|eot", "sottofase finale fine del turno"],
+  ["cleanup", "cancellazione"], ["combat", "combattimento"], ["blocker", "bloccante"], ["attacker", "attaccante"],
+  ["summoning sickness|summoning sick|mal di evocazione|malattia da evocazione|sick", "debolezza da evocazione"],
+  ["cmdr|commander|generale|comandanti", "comandante commander"], ["command zone", "zona di comando"], ["commander tax|tassa", "tassa del comandante"],
+  ["sac|sacc(are|o|a|ato|ata|ati)|sacrifice", "sacrificare"], ["token[s]?", "pedina"], ["mana pool|pool", "riserva di mana"],
+  ["spell[s]?", "magia"], ["untap\\w*", "stappare"], ["tap|tapped|tappo|tappi|tappa", "tappare"],
+  ["hp|pv|vite|life", "punti vita"], ["lifegain|gain life", "guadagnare punti vita"],
+  ["removal|rimozion[ei]", "rimozione distruggere esiliare"], ["trick", "istantaneo in combattimento"], ["burn", "danno"],
+  ["dies|die|morire|morta|morto|morte|muoiono|muoio|muore", "muore cimitero"],
+  ["ira di dio", "wrath of god"], ["spade in vomeri", "swords to plowshares"], ["sentiero verso l'? ?esilio", "path to exile"], ["crescita gigante|giant growth", "giant growth +3/+3"],
+  ["rituale oscuro", "dark ritual"], ["anello solare", "sol ring"], ["lab ?man", "laboratory maniac"], ["oracolo di thassa", "thassa's oracle"], ["anello dell'oblio|o-?ring", "oblivion ring"],
+  ["artista del sangue", "blood artist"], ["luna di sangue", "blood moon"], ["tutore demoniaco", "demonic tutor"], ["tempesta di cervelli|brainstorm", "brainstorm"],
+  ["fetchland[s]?|fetch", "fetch land"], ["dual ?land[s]?", "terra doppia"], ["shockland[s]?", "shock land"],
+  ["the ring|il ring|l'ring", "l'anello"], ["delve|scavare", "esumare delve"], ["riciclare|riciclo|landcycling|cyclare|ciclare", "ciclo"],
+  ["saccheggiare|saccheggio|looting", "pescare e scartare"], ["proc|procca|proccare", "si innesca"], ["ko", "muore"],
+  ["dmg|damage", "danno"], ["draw|drawing", "pescare"], ["discard", "scartare"], ["exile|exiled", "esiliare"],
+  ["ward", "salvaguardia"], ["hexproof", "anti-malocchio"], ["shroud", "velo"], ["trample", "travolgere"], ["lifelink", "legame vitale"],
+  ["deathtouch", "tocco letale"], ["first strike", "attacco improvviso"], ["double strike", "doppio attacco"], ["flying", "volare"],
+  ["reach", "raggiungere"], ["vigilance|vigilanza", "cautela"], ["haste", "rapidita"], ["menace|minaccia", "minacciare"],
+  ["indestructible", "indistruttibile"], ["flash", "lampo"], ["defender", "difensore"], ["protection", "protezione"],
+  ["instant[s]?|istante", "istantaneo"], ["sorcer(y|ies)", "stregoneria"], ["enchantment[s]?", "incantesimo"], ["artifact[s]?", "artefatto"],
+  ["creature", "creatura"], ["land[s]?", "terra"], ["basic", "base"], ["nonbasic|non basic", "non base"], ["loyalty", "fedelta"],
+  ["\\+\\d+/\\+\\d+|\\+x/\\+x", "bonus forza costituzione"], ["-\\d+/-\\d+|-x/-x", "malus forza costituzione"],
+  ["trigger\\w*", "abilita innescata"], ["priority", "priorita"], ["respond\\w*|risposta", "rispondere in risposta"],
+  ["layer[s]?", "livelli"], ["timestamp", "marca temporale"], ["replacement", "sostituzione"],
+];
+const KB_SLANG_RX = KB_SLANG.map(([a, b]) => [new RegExp("(^| )(" + a + ")(?= |$)", "g"), b]);
+// "$1" nel sostituto = il primo gruppo della voce (es. «+1/+1 counter» → «+1/+1 segnalino»)
+function kbNorm(q) {
+  let s = " " + norm(q).replace(/[^a-z0-9+\/'{}\-]+/g, " ").replace(/'/g, "' ") + " ";
+  for (const [re, to] of KB_SLANG_RX) s = s.replace(re, (m0, pre, all, g1) => pre + to.replace("$1", g1 || ""));
+  return s;
+}
 function kbFeat(q) {
   const f = new Map(), put = (k, w) => f.set(k, Math.max(f.get(k) || 0, w));
-  const is = itStems(q);
-  is.forEach((s, j) => { put("i:" + s, 1); if (KB_AW && j) put("b:" + is[j - 1] + " " + s, KB_AW); });
-  for (const c of interpret(q, new Set()).concepts) {
+  const s = kbNorm(q), is = itStems(s);
+  is.forEach((x, j) => { put("i:" + x, 1); if (KB_AW && j) put("b:" + is[j - 1] + " " + x, KB_AW); });
+  for (const c of interpret(s, new Set()).concepts) {
     if (c.it) { put("i:" + c.it, 1); continue; }
-    c.st.forEach(s => put("e:" + s, c.w >= 1.5 ? 1.4 : 1));
+    c.st.forEach(x => put("e:" + x, c.w >= 1.5 ? 1.4 : 1));
     if (c.st.length > 1) put("p:" + c.st.join(" "), 1.6);
   }
   return f;
 }
-function kbIndex() {
-  if (KBX && KBX.lang === settings.lang && KBX.idx === IDX) return KBX;
-  const df = new Map(), items = KB.map(([cat, qs, kw, ids, a], i) => {
+/* voci ricavate dal regolamento tradotto: ogni parola chiave (701-702), ogni voce del glossario, ogni sezione */
+function kbAuto() {
+  const out = [], seen = new Set(), clean = s => s.replace(/\s*\((Vedi|See)[^)]*\)/g, "").replace(/\n/g, " ").trim();
+  const short = (s, n) => { const o = []; for (const x of s.split(/(?<=[.;])\s+/)) { if ((o.join(" ") + x).length > n && o.length) break; o.push(x); } return o.join(" "); };
+  const names = s => s.split(/\s*\(|\)\s*/).map(x => x.trim()).filter(Boolean);
+  for (const r of CR.rules) {
+    if (r.sub || !/^70[12]\.\d+$/.test(r.id) || /^70[12]\.1$/.test(r.id)) continue;
+    const it = trRule(r); if (!it.tr) continue;
+    const subs = CR.rules.filter(x => x.parent === r.id).slice(0, 3).map(x => ({ id: x.id, t: trRule(x) })).filter(x => x.t.tr);
+    if (!subs.length) continue;
+    const nm = names(it.t), en = r.t.trim(), a = short(subs.map(x => clean(x.t.t)).join(" "), 650);
+    nm.concat(en).forEach(n => seen.add(norm(n)));
+    out.push([r.id.startsWith("701") ? "azioni chiave" : "parole chiave", [`Come funziona ${nm[0]}?`, `Cosa fa ${nm[0]}?`, `Cosa vuol dire ${nm[0]}?`, `${nm[0]} ${en}`].concat(nm.slice(1).map(n => `Come funziona ${n}?`)), en, subs.slice(0, 2).map(x => x.id), a, "rule"]);
+  }
+  for (const g of CR.glossary) {
+    const x = TR.g[g.term]; if (!x || seen.has(norm(g.term)) || seen.has(norm(x[0]))) continue;
+    const def = clean(x[1]); if (def.length < 25 || /^(Vedi|See) /.test(def)) continue;
+    const ids = [...new Set((x[1].match(/\b\d{3}(?:\.\d+[a-z]?)?\b/g) || []).filter(id => CR.byId[id] || CR.sections[id]))].slice(0, 3);
+    out.push(["glossario", [`Cosa vuol dire ${x[0]}?`, `Cos'è ${x[0]}?`, `${x[0]} ${g.term}`], g.term, ids, short(def, 650), "gloss"]);
+    seen.add(norm(g.term)); seen.add(norm(x[0]));
+  }
+  for (const s of Object.values(CR.sections)) {
+    const n = +s.n; if (n < 100 || n >= 800 || s.n === "701" || s.n === "702") continue;
+    const tit = TR.s[s.n]; if (!tit || seen.has(norm(tit)) || /^(Generale|Varie|Introduzione)$/i.test(tit)) continue;
+    const rs = s.rules.filter(r => !r.sub).slice(0, 2).map(r => ({ id: r.id, t: trRule(r) })).filter(x => x.t.tr);
+    if (!rs.length) continue;
+    out.push(["regolamento", [`${tit}`, `Come funziona ${tit}?`, `Cos'è ${tit}?`], s.t, rs.map(x => x.id), short(rs.map(x => clean(x.t.t)).join(" "), 650), "sec"]);
+    seen.add(norm(tit));
+  }
+  return out;
+}
+/* l'indice si prepara a pezzi nei momenti liberi (kbWarm); se serve prima, si completa subito */
+let KBB = null;
+function kbBegin() {
+  if (KBB && KBB.lang === settings.lang && KBB.idx === IDX) return KBB;
+  return KBB = { lang: settings.lang, idx: IDX, src: KB.map(e => e.concat("kb")).concat(trOn() ? kbAuto() : []), items: [], df: new Map() };
+}
+function kbStep(B, n) {
+  const end = Math.min(B.src.length, B.items.length + n);
+  for (let i = B.items.length; i < end; i++) {
+    const [cat, qs, kw, ids, a, from] = B.src[i];
     const ph = qs.map(kbFeat), all = new Map();
     ph.forEach(m => m.forEach((w, k) => all.set(k, Math.max(all.get(k) || 0, w))));
     for (const s of stems(kw)) if (!all.has("e:" + s)) all.set("e:" + s, .6);
-    for (const k of all.keys()) df.set(k, (df.get(k) || 0) + 1);
-    return { i, cat, qs, ids: ids.filter(id => CR.byId[id] || CR.sections[id]), a, ph, all };
-  });
-  const N = items.length, idf = k => Math.log(1 + N / (df.get(k) || .5));
+    for (const k of all.keys()) B.df.set(k, (B.df.get(k) || 0) + 1);
+    B.items.push({ i, cat, qs, ids: ids.filter(id => CR.byId[id] || CR.sections[id]), a, ph, all, from, w: from === "kb" ? 1 : .9 });
+  }
+  return B.items.length === B.src.length;
+}
+function kbIndex() {
+  if (KBX && KBX.lang === settings.lang && KBX.idx === IDX) return KBX;
+  const B = kbBegin(); kbStep(B, Infinity);
+  const { items, df } = B, N = items.length, idf = k => Math.log(1 + N / (df.get(k) || .5));
   const norm2 = m => Math.sqrt([...m].reduce((t, [k, w]) => t + (w * idf(k)) ** 2, 0)) || 1;
   items.forEach(x => { x.phN = x.ph.map(norm2); x.allN = norm2(x.all); });
-  return KBX = { lang: settings.lang, idx: IDX, items, idf, norm2 };
+  const vocab = [...df.keys()].filter(k => k.startsWith("i:")).map(k => k.slice(2)).filter(w => w.length >= 4);
+  return KBX = { lang: settings.lang, idx: IDX, items, idf, norm2, df, vocab, fix: new Map() };
+}
+function kbWarm() {
+  if (!kbOn() || (KBX && KBX.lang === settings.lang && KBX.idx === IDX)) return;
+  const B = kbBegin();
+  (window.requestIdleCallback || (f => setTimeout(f, 30)))(() => { if (KBB !== B) return; if (kbStep(B, 40)) kbIndex(); else kbWarm(); });
+}
+/* parole scritte male: la più vicina del vocabolario dei casi (1 errore fino a 6 lettere, 2 oltre) */
+function kbTypo(X, w) {
+  if (X.fix.has(w)) return X.fix.get(w);
+  let best = null, bd = 9;
+  const max = w.length >= 7 ? 2 : 1;
+  for (const v of X.vocab) {
+    if (Math.abs(v.length - w.length) > max || v[0] !== w[0] && max < 2) continue;
+    const d = lev(w, v, max); if (d < bd || (d === bd && (X.df.get("i:" + v) || 0) > (X.df.get("i:" + best) || 0))) { bd = d; best = v; }
+  }
+  const r = bd <= max ? best : null; X.fix.set(w, r); return r;
+}
+function lev(a, b, max) {
+  let prev = Array.from({ length: b.length + 1 }, (_, j) => j);
+  for (let i = 1; i <= a.length; i++) {
+    const cur = [i]; let lo = i;
+    for (let j = 1; j <= b.length; j++) { cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)); if (cur[j] < lo) lo = cur[j]; }
+    if (lo > max) return max + 1; prev = cur;
+  }
+  return prev[b.length];
 }
 function kbSearch(q, n) {
   if (!KB.length || !q.trim()) return [];
-  const X = kbIndex(), qf = kbFeat(q), qn = X.norm2(qf);
+  const X = kbIndex(), qf = kbFeat(q);
+  for (const [k, w] of [...qf]) if (k.startsWith("i:") && !X.df.has(k) && k.length >= 6) { const v = kbTypo(X, k.slice(2)); if (v) { qf.delete(k); qf.set("i:" + v, w * .9); } }
   if (!qf.size) return [];
+  const qn = X.norm2(qf);
   const dot = m => { let t = 0; for (const [k, w] of qf) { const v = m.get(k); if (v) t += w * v * X.idf(k) ** 2; } return t; };
+  // copertura: quanta parte della domanda la voce spiega (una voce generica non deve battere quella specifica)
+  const cov = d => KB_CV ? 1 - KB_CV + KB_CV * Math.min(1, d / (qn * qn)) ** .5 : 1;
   return X.items.map(x => {
-    const ph = Math.max(...x.ph.map((m, j) => dot(m) / (qn * x.phN[j])));
-    return { x, sc: KB_PW * ph + (1 - KB_PW) * dot(x.all) / (qn * x.allN) };
+    const ph = Math.max(...x.ph.map((m, j) => { const d = dot(m); return d / (qn * x.phN[j]) * cov(d); }));
+    const da = dot(x.all);
+    return { x, sc: x.w * (KB_PW * ph + (1 - KB_PW) * da / (qn * x.allN) * cov(da)) };
   }).sort((a, b) => b.sc - a.sc).slice(0, n || 5);
 }
-const KB_MIN = .45, KB_NEAR = .28;
+const KB_MIN = .3, KB_NEAR = .18, KB_LOW = .17;
 const kbOn = () => settings.lang === "it" && KB.length > 0;
 function search(q, excluded) {
   const it = interpret(q, excluded || new Set());
@@ -1331,11 +1456,11 @@ Object.assign(STR.it, {
   nat20: "Venti naturale!", nat1: "Uno naturale…", resultIs: "Risultato: {v}", heads: "Testa", tails: "Croce", turnShort: "Turno {n}",
   fmtType: "Formato", fmtStdTx: "Sfida classica uno contro uno.", fmtCmdTx: "Un comandante leggendario, 100 carte, ognuno contro tutti.", fmtBrawlTx: "Commander con 60 carte e un mazzo Standard.",
   f2hgTx: "Due squadre da due: vita e turno in comune.", fCustomTx: "Scegli tu i punti vita iniziali.", startLifeShort: "vita",
-  kbCase: "Caso già risolto dal Judge", rulesAbout: "Regole che ne parlano", kbNone: "Nessun caso certo", kbNoneTx: "Non ho una risposta sicura per questa domanda e preferisco non tirare a indovinare. Prova a riformularla, guarda le domande simili o leggi le regole qui sotto.", kbSimilar: "Domande simili", kbBrowse: "Casi risolti dal Judge", kbCount: "{n} situazioni verificate sulle Comprehensive Rules",
+  kbCase: "Caso già risolto dal Judge", rulesAbout: "Regole che ne parlano", kbNear: "Rispondo alla situazione più vicina che conosco", kbFromRules: "Dal regolamento ufficiale", kbRule: "Ecco cosa dice la regola più pertinente:", kbOr: "Oppure intendevi", kbNoneTx: "Scrivi la situazione con qualche parola in più (le carte coinvolte, cosa vuoi fare) e ti rispondo con il caso e le regole giuste.", kbSimilar: "Domande simili", kbBrowse: "Casi risolti dal Judge", kbCount: "{n} situazioni risolte a mano, più tutte le parole chiave, il glossario e le sezioni del regolamento",
   seatTableSub: "Ogni carta guarda chi le siede davanti", seatUpSub: "Tutte le carte dritte verso di te", playersShort: "{n} giocatori",
 });
 Object.assign(STR.en, {
-  askJudgeSub: "Closest solved case and deciding rules", rulesAbout: "Rules on the topic", kbNone: "No sure answer", kbNoneTx: "I don't have a sure answer for this question and would rather not guess. Try rewording it or read the rules below.",
+  askJudgeSub: "Closest solved case and deciding rules", rulesAbout: "Rules on the topic", kbNear: "Answering the closest situation I know", kbFromRules: "From the official rules", kbRule: "Here is what the most relevant rule says:", kbOr: "Or did you mean", kbNoneTx: "Describe the situation with a few more words (the cards involved, what you want to do) and I will answer with the right rules.",
   askJudge: "Ask the Judge", askQ: "Question", askC: "Card", askPh2: "E.g. What happens if I cast Wrath of God with Teferi out?", cardPh: "Card name",
   rulebookFull: "Full rulebook", rulebook: "Rulebook", emblemsShort: "Designations", askTry: "Try asking",
   askEx1: "What happens if I cast Wrath of God with Teferi, Time Raveler on the battlefield?", askEx2: "Can I respond to \"Lightning Bolt\" with \"Giant Growth\"?",
@@ -1863,9 +1988,9 @@ function ruleRows(rules) {
 const askLabel = s => `<p class="m-0 mb-2 text-[11px] font-medium uppercase tracking-[0.14em] text-zinc-400">${esc(s)}</p>`;
 const chipRule = id => `<button type="button" class="rounded-full border border-white/10 px-3 py-1 font-mono text-[12px] text-zinc-300 hover:bg-white/5" data-act="open-rule" data-id="${id}">${id}</button>`;
 const kbBtn = x => `<button type="button" class="rounded-xl border border-white/5 bg-zinc-900/70 px-3 py-2.5 text-left text-[14px] leading-snug text-zinc-300 transition hover:bg-zinc-900" data-act="kb-open" data-i="${x.i}">${esc(x.qs[0])}</button>`;
-function kbHTML(x) {
+function kbHTML(x, near) {
   return `<section class="rounded-2xl border border-white/10 bg-zinc-900 p-4">${askLabel(t("answer"))}
-    <p class="m-0 mb-2 text-[13px] text-zinc-400">${esc(t("kbCase"))}: <span class="text-zinc-200">«${esc(x.qs[0])}»</span></p>
+    <p class="m-0 mb-2 text-[13px] text-zinc-400">${esc(t(near ? "kbNear" : x.from === "kb" ? "kbCase" : "kbFromRules"))}: <span class="text-zinc-200">«${esc(x.qs[0])}»</span></p>
     <p class="m-0 text-[15px] leading-relaxed text-zinc-100">${richText(x.a)}</p>
     ${x.ids.length ? `<div class="mt-3 flex flex-wrap gap-1.5">${x.ids.map(chipRule).join("")}</div>` : ""}</section>`;
 }
@@ -1950,18 +2075,22 @@ function renderAskQ() {
   const inter = analyze(okCards);
   const kb = kbOn() && !inter.length ? kbSearch(st.q, 6) : [], pin = kbOn() && ask.kbPin != null && kbIndex().items[ask.kbPin];
   const kbTop = pin && pin.qs[0] === st.q ? pin : kb[0] && kb[0].sc >= KB_MIN ? kb[0].x : null;
-  if (kbTop) { decide.unshift(...kbTop.ids.map(id => CR.byId[id]).filter(r => r && !decide.some(d => d.id === r.id))); decide.splice(6); }
+  // non sicuro: rispondo comunque col caso più vicino, dicendo a quale domanda sto rispondendo
+  const kbNear = !kbTop && !inter.length && kb[0] && kb[0].sc >= KB_LOW ? kb[0].x : null;
+  const kbShown = kbTop || kbNear;
+  if (kbShown) { decide.unshift(...kbShown.ids.map(id => CR.byId[id]).filter(r => r && !decide.some(d => d.id === r.id))); decide.splice(6); }
   if (inter.length) {
     const ids = [...new Set(inter.flatMap(x => x.ids))];
     decide.unshift(...ids.map(id => CR.byId[id]).filter(r => r && !decide.some(d => d.id === r.id)));
     decide.splice(6);
     h0 = `<section class="rounded-2xl border border-white/10 bg-zinc-900 p-4">${askLabel(t("answer"))}<ul class="m-0 flex list-none flex-col gap-2.5 p-0">${inter.map(x => `<li class="flex gap-2.5 text-[15px] leading-relaxed text-zinc-100"><span class="mt-[0.6em] size-1.5 shrink-0 rounded-full bg-zinc-500"></span><span>${esc(x.txt)}${x.ids.length ? ` ${x.ids.map(id => `<button type="button" class="ml-0.5 rounded-full border border-white/10 px-2 py-0.5 align-[1px] font-mono text-[11px] text-zinc-300 hover:bg-white/5" data-act="open-rule" data-id="${id}">${id}</button>`).join("")}` : ""}</span></li>`).join("")}</ul></section>`;
   }
-  else if (kbTop) h0 = kbHTML(kbTop);
-  else h0 = `<section class="rounded-2xl border border-dashed border-white/10 p-4">${askLabel(t("kbNone"))}<p class="m-0 text-[14px] leading-relaxed text-zinc-300">${esc(t("kbNoneTx"))}</p></section>`;
+  else if (kbShown) h0 = kbHTML(kbShown, !kbTop);
+  else if (decide.length) h0 = `<section class="rounded-2xl border border-white/10 bg-zinc-900 p-4">${askLabel(t("answer"))}<p class="m-0 mb-2 text-[13px] text-zinc-400">${esc(t("kbRule"))}</p><p class="m-0 text-[15px] leading-relaxed text-zinc-100">${richText(sentences(trRule(decide[0]).t, 420))}</p><div class="mt-3 flex flex-wrap gap-1.5">${chipRule(decide[0].id)}</div></section>`;
+  else h0 = `<section class="rounded-2xl border border-white/10 bg-zinc-900 p-4">${askLabel(t("answer"))}<p class="m-0 text-[14px] leading-relaxed text-zinc-300">${esc(t("kbNoneTx"))}</p></section>`;
   let h = h0;
-  const near = kb.filter(x => x.x !== kbTop && x.sc >= KB_NEAR).slice(0, 4);
-  if (near.length) h += `<section class="mt-4">${askLabel(t("kbSimilar"))}<div class="flex flex-col gap-1.5">${near.map(x => kbBtn(x.x)).join("")}</div></section>`;
+  const near = kb.filter(x => x.x !== kbShown && x.sc >= KB_NEAR * (kbTop ? 1 : .6)).slice(0, kbTop ? 4 : 5);
+  if (near.length) h += `<section class="mt-4">${askLabel(t(kbTop ? "kbSimilar" : "kbOr"))}<div class="flex flex-col gap-1.5">${near.map(x => kbBtn(x.x)).join("")}</div></section>`;
   if (st.cards.length) {
     h += `<section class="mt-4">${askLabel(t("cardsIn"))}<div class="flex flex-col gap-2">${st.cards.map(c => {
       if (c.state === "load") return `<div class="animate-pulse rounded-2xl border border-white/5 bg-zinc-900/60 p-3 text-[13px] text-zinc-400">${esc(t("lookingFor", { n: c.n }))}</div>`;
@@ -1971,7 +2100,7 @@ function renderAskQ() {
       return `<p class="m-0 rounded-2xl border border-white/5 bg-zinc-900/60 p-3 text-[13px] text-zinc-400">${esc(t("noCard", { n: c.n }))}</p>`;
     }).join("")}</div></section>`;
   }
-  if (decide.length) h += `<section class="mt-4">${askLabel(t(inter.length || kbTop ? "decides" : "rulesAbout"))}<div class="-mx-2">${ruleRows(decide)}</div></section>`;
+  if (decide.length) h += `<section class="mt-4">${askLabel(t(inter.length || kbShown ? "decides" : "rulesAbout"))}<div class="-mx-2">${ruleRows(decide)}</div></section>`;
   if (!h) h = `<p class="text-[14px] text-zinc-400">${esc(t("noRes"))}</p>`;
   $("askbody").innerHTML = h;
   $("askcredit").textContent = okCards.length ? t("sfCredit") : "";
@@ -2687,6 +2816,8 @@ function boot() {
   if (custom && dateVal((custom.match(/effective as of ([^.\n]+)\./i) || [])[1]) >= dateVal(BUILTIN_DATE)) { try { CR = parseCR(custom); state.custom = true; ok = true; } catch (e) {} }
   if (!ok) { CR = parseCR(builtin); state.custom = false; }
   IDX = buildIndex(CR); findRules();
+  // preparo in anticipo l'indice del Judge, così la prima domanda è immediata
+  setTimeout(() => { try { kbWarm(); } catch (e) {} }, 800);
   $("sigil").innerHTML = sigilSVG();
   $("hub-ask").innerHTML = ic("scales", "size-[22px]"); $("hubm").innerHTML = `<svg class="size-7" viewBox="0 0 28 28" aria-hidden="true">${["W", "U", "B", "R", "G"].map((c, k) => { const a = -Math.PI / 2 + k * 2 * Math.PI / 5, x = 14 + Math.cos(a) * 8.6, y = 14 + Math.sin(a) * 8.6; return `<circle cx="${x.toFixed(2)}" cy="${y.toFixed(2)}" r="4.1" fill="rgb(${TINT[c].split(" ").join(",")})" stroke="#09090b" stroke-width="1.2"/>`; }).join("")}</svg>`; DIE.init($("dcv"));
   renderBoard(); bindBoard();
